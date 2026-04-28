@@ -1,0 +1,79 @@
+{
+  "date": "2026-04-02",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Fourteenth standup Apr 2: 64 learn guides (+2 since v12). Design-v3 fixed critical tokenomics 'use client' conflict + UX audit on 6 pages. Community-v3 drafted tweets #340-344 covering Liberation Day tariffs ($5T+ S&P wipeout), Drift $286M exploit, extreme fear DCA analysis. Newsletter v21. F&G 8-12 range, BTC $66.2K. Metaplanet bought 5,075 BTC ($405M). 70 agent runs today ($6,516 human-equivalent). P0: commit+deploy still critical — 15 uncommitted files.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE LAST STANDUP (v12→v13): 2 new learn pages on disk (64 total, up from 62). No new build cycle ran — content growth came from prior build cycles materializing. Design-v3 polished 6 pages with UX fixes. Community-v3 produced Liberation Day tariff-themed content cycle.",
+          "DESIGN-V3 SHIPPED: Fixed critical tokenomics page 'use client' + metadata export conflict (build-breaking). L2 guide: semantic <article> element, scrollMarginTop on all h2s, <nav aria-label> on ToC, JSON-LD moved to top. CL guide: increased ToC touch targets to 44px for mobile accessibility. All 6 today's learn pages verified with OG images.",
+          "COMMUNITY-V3 SHIPPED: 5 tweets (#340-344) for Apr 14-19 covering Liberation Day tariff shock ($5T+ S&P wipeout, BTC -3%), DeFi Vaults education, Drift Protocol $286M exploit alert, extreme fear DCA historical analysis (+62% median 90-day return from sub-10 F&G), weekly builder roundup. Newsletter v21 'Liberation Day Shakes Markets, Fear Stays Extreme'. 2 new social card SVGs.",
+          "MARKET CONTEXT (LIVE): BTC $66,246-$66,478 (-3%), ETH ~$1,950 (-4.4%), F&G 8-12 (conflicting sources, still extreme fear — 46-60+ consecutive days). Total market cap ~$2.23T-$2.37T. Liberation Day tariffs: 10% baseline on 50+ countries, up to 50% reciprocal, effective Apr 5-9. S&P 500 lost $5T+ (largest single-event wipeout on record).",
+          "POSITIVE SIGNALS: Metaplanet purchased 5,075 BTC for $405M — now world's 3rd largest corporate BTC holder (40,177 BTC total). Stablecoin supply $316B ATH with 84.68% of total volume — widest fear-liquidity divergence ever. Historical sub-10 F&G median 90-day return: +62%. Nansen: 70% probability market bottoms by June.",
+          "INFRASTRUCTURE: 64 page.tsx files in learn directory. 631 published pages in registry. 109 published slugs still missing page.tsx (unchanged). 141 TS errors in 4 files (non-blocking). 15 uncommitted files. 6/6 API routes present and structurally healthy.",
+          "NO GSC/VERCEL ANALYTICS accessible from sandbox — all metrics derived from local file analysis + web search + agent reports."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE ACTIVITY (v12→v13): 3 agents produced new work since last standup — design-v3 (UX audit + critical build fix on 6 pages), community-v3 (tweets #340-344, newsletter v21, 2 social cards), eod-v9 (QA cycle-close confirming 631 pages, no regressions). No new build or publish cycles ran.",
+          "CONTENT VELOCITY: 64 learn guides on disk (+2 since v12). 344 tweets drafted through Apr 19. Newsletter at v21. 7 courses launched. Content pipeline well ahead of deployment — bottleneck remains commit+deploy.",
+          "P0 — COMMIT + DEPLOY (ESCALATED, 6TH+ STANDUP): 15 uncommitted files including 3 modified source files + 12 new assets. Production last deployed at commit e3f63fc. Design-v3 fixed a build-breaking 'use client' conflict — this fix is trapped in uncommitted state. Every hour of delay = lost organic discovery, especially with Liberation Day driving peak crypto search interest.",
+          "P1 — 109 MISSING PAGE.TSX FILES (UNCHANGED 6+ STANDUPS): wallets (18), investing/best (15), taxes (15), learn (27), blog (9), courses (6), others (19). Requires dedicated page-scaffold sprint.",
+          "P2 — EULER-V2 MISSING JSON-LD: EOD-v9 identified euler-v2-modular-lending-guide-2026 lacks JSON-LD structured data (regression gap from build cycle).",
+          "P3 — DEFI-YIELDS FALLBACK: Only API route without hardcoded fallback. Unchanged 7+ cycles.",
+          "P4 — 141 TS ERRORS: crypto-arbitrage, lido-v3, rwa-yield pages + structured-data.examples.ts. Non-blocking (ignoreBuildErrors). Unchanged."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — COMMIT + DEPLOY (P0, CRITICAL): 15 uncommitted files including a build-breaking fix (tokenomics 'use client' removal) trapped in working tree. Liberation Day tariffs just triggered the largest single-event S&P wipeout in history — crypto search demand is spiking NOW. F&G at 8-12 means peak fear = peak search for 'is crypto safe', 'DCA strategy', 'what are tariffs doing to crypto'. Our 64 learn guides + 7 courses are exactly what searchers need, but none of the new content is deployed. Non-negotiable: resolve commit blockers, push all changes, trigger Vercel auto-deploy.",
+          "PRIORITY 2 — CAPITALIZE ON LIBERATION DAY SEARCH SPIKE: Trump's tariff announcement is the biggest macro story of 2026 so far. Community-v3 already drafted timely content (tweets #340-344, newsletter v21). Deploy enables indexing of our tariff-adjacent guides (stablecoins, DCA, portfolio rebalancing, fear & greed tool). Window is 48-72 hours before search intent decays.",
+          "PRIORITY 3 — SCAFFOLD MISSING 109 PAGE.TSX + FIX EULER-V2 JSON-LD: Two structural gaps: (a) 109 published slugs returning 404 on indexed URLs, (b) euler-v2 missing JSON-LD (new regression). Both require code changes but are quick wins once deploy pipeline is unblocked. Start with learn (27) and wallets (18) categories for maximum coverage."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "STALE — 15 files uncommitted, build fix trapped", "pct": 30, "color": "#ef4444" },
+          { "label": "Learn Pages on Disk", "value": "64 (+2 since v12)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Pages (registry)", "value": "631", "pct": 85, "color": "#4ade80" },
+          { "label": "OG Image Coverage", "value": "64/64 learn pages verified", "pct": 100, "color": "#4ade80" },
+          { "label": "Missing page.tsx for Published", "value": "109 (unchanged 6+ cycles)", "pct": 17, "color": "#ef4444" },
+          { "label": "Tweets Drafted", "value": "344 through Apr 19", "pct": 100, "color": "#4ade80" },
+          { "label": "Newsletters Drafted", "value": "v21 — Liberation Day Shakes Markets", "pct": 100, "color": "#4ade80" },
+          { "label": "Courses Live", "value": "7 structured curricula", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6/6 (defi-yields lacks fallback)", "pct": 83, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "141 in 4 files (non-blocking)", "pct": 85, "color": "#06b6d4" },
+          { "label": "F&G Index", "value": "8-12 — Extreme Fear (46-60+ consecutive days)", "pct": 10, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "$66,246-$66,478 (-3% Liberation Day)", "pct": 35, "color": "#f59e0b" },
+          { "label": "S&P 500 Impact", "value": "-$5T+ (largest single-event drop ever)", "pct": 5, "color": "#ef4444" },
+          { "label": "Metaplanet BTC Buy", "value": "5,075 BTC ($405M) — 3rd largest corporate holder", "pct": 90, "color": "#4ade80" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH — 84.68% of volume", "pct": 98, "color": "#4ade80" },
+          { "label": "Agent Reports Today", "value": "~70 (across all agents)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "4 of 6 (design, community, eod, standup)", "pct": 67, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~4.25h", "pct": 41, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$209 (design $60 + community $41 + eod $63 + standup $45)", "pct": 18, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$6,516 (standup×13=$585, build×16=$3,728, publish×1=$55, design×14=$840, community×15=$615, eod×11=$693) — ~70 runs", "pct": 55, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome JS fetch to Resend API blocked (CORS/network restriction from browser context) — consistent with all previous cycles"
+  }
+}

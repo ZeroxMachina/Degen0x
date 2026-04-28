@@ -1,0 +1,60 @@
+{
+  "date": "2026-03-16",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v7: 331 PUBLISHED_PAGES stable, build on output:standalone, 6/6 API routes healthy with correct TTLs, CRITICAL staged next.config.ts still removes standalone output — must not be committed, rate limiter 0/6 public routes, 438 files staged uncommitted, FOMC T-2 (Mar 18) window active.",
+    "sections": [
+      {
+        "title": "QA Sweep",
+        "items": [
+          "TypeScript errors in src/lib/structured-data.examples.ts (JSX syntax in .ts file — pre-existing, non-blocking due to ignoreBuildErrors:true)",
+          "100 pages in published-pages.ts missing page.tsx files — these slugs are listed as published but have no corresponding page component; affects /learn/*, /wallets/*, /taxes/*, /investing/best/*, /blog/* and others",
+          "Latest commit 1b4a15e (Fix ecosystem + courses routes, fix Stargate JSX error) touched 25 files — no regressions detected in reviewed components",
+          "Published page count: 331 — unchanged from v6"
+        ]
+      },
+      {
+        "title": "Data Pipeline Health",
+        "items": [
+          "All 6 public API routes present and structurally healthy: fear-greed (10m TTL), trending (5m TTL), market-metrics (1m TTL), market-dominance (5m TTL), prices (1m TTL), defi-yields (5m TTL)",
+          "Cache-Control headers set correctly with stale-while-revalidate on all routes",
+          "CARRY-OVER: Rate limiter (src/lib/rate-limiter.ts) exists but wired to /api/health only — 0/6 public data routes protected against abuse",
+          "defi-yields deviates from standard pattern: no in-memory FALLBACK constant, uses error-only fallback path — lower resilience than other routes"
+        ]
+      },
+      {
+        "title": "DevOps / Deployment",
+        "items": [
+          "Working next.config.ts has output:standalone confirmed — production deploy is healthy",
+          "CRITICAL (carry-over): Staged next.config.ts removes output:standalone AND removes webpack __dirname fix AND bumps staticGenerationMaxConcurrency from 4→8 — committing this as-is would break the Vercel build",
+          "788 total changed files / 438 staged — large uncommitted surface area persists from previous cycles",
+          "Latest deployed commit: 1b4a15e — fix to ecosystem + courses routes is live"
+        ]
+      },
+      {
+        "title": "PM Wrap-up",
+        "items": [
+          "Shipped this cycle: Sprint 59 (App Store v2, 176 dApps, ecosystem tabs), Day 15 publish batch (+3 learn guides), multiple build fixes (SSR, dynamic imports, edge runtime, Stargate JSX)",
+          "FOMC window opens Mar 18 (T-2 days) — high-signal publishing opportunity for macro/BTC content",
+          "Carry-over blockers: (1) staged next.config.ts must be fixed before next deploy, (2) rate limiter needs wiring to 6 public routes, (3) 100 queued pages need page.tsx files before they can go live",
+          "Recommended next cycle priority: fix staged next.config.ts → deploy clean build → wire rate limiter to prices + trending routes"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "331", "pct": 80, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Staged Files", "value": "438 files", "pct": 40, "color": "#f59e0b" },
+          { "label": "Missing page.tsx", "value": "100 slugs", "pct": 30, "color": "#f59e0b" },
+          { "label": "TS Errors (non-blocking)", "value": "4 errors in examples.ts", "pct": 85, "color": "#06b6d4" },
+          { "label": "next.config.ts (staged)", "value": "CRITICAL — removes standalone", "pct": 5, "color": "#ef4444" },
+          { "label": "FOMC Window", "value": "T-2 (Mar 18)", "pct": 70, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

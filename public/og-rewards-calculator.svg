@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1525"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  <circle cx="1000" cy="450" r="220" fill="#22c55e" opacity="0.06"/>
+  <text x="80" y="100" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#6366f1">degen0x</text>
+  <text x="80" y="210" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3">Crypto Rewards</text>
+  <text x="80" y="280" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3">Calculator</text>
+  <text x="80" y="330" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Estimate your annual crypto card rewards by spending</text>
+  <!-- Reward display -->
+  <rect x="700" y="150" width="420" height="300" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="910" y="210" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#8b949e" text-anchor="middle">Estimated Annual Rewards</text>
+  <text x="910" y="290" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="900" fill="#22c55e" text-anchor="middle">$1,440</text>
+  <text x="910" y="330" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#8b949e" text-anchor="middle">Based on $2,000/mo spending at 6% avg</text>
+  <rect x="780" y="370" width="260" height="48" rx="12" fill="#6366f1"/>
+  <text x="910" y="400" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Calculate Yours Free</text>
+  <text x="600" y="590" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681" text-anchor="middle">degen0x.com — Free Crypto Tools</text>
+</svg>

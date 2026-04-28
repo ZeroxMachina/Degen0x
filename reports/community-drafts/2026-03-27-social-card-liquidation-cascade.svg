@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="fearBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="10%" style="stop-color:#ef4444"/>
+      <stop offset="10%" style="stop-color:#30363d"/>
+      <stop offset="100%" style="stop-color:#30363d"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Red glow accent (top right) -->
+  <circle cx="1050" cy="80" r="200" fill="url(#redGlow)" filter="url(#softGlow)"/>
+
+  <!-- Top gradient bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brand)"/>
+
+  <!-- ALERT badge -->
+  <rect x="60" y="40" rx="6" ry="6" width="120" height="28" fill="#ef4444" opacity="0.15"/>
+  <rect x="60" y="40" rx="6" ry="6" width="120" height="28" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <text x="120" y="59" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#ef4444" text-anchor="middle" letter-spacing="0.1em">LIQUIDATION</text>
+
+  <!-- degen0x logo text -->
+  <text x="1140" y="60" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#6366f1" text-anchor="end" opacity="0.8">degen0x</text>
+
+  <!-- Main headline -->
+  <text x="60" y="120" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">$258M Liquidated in 4 Hours</text>
+  <text x="60" y="165" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#8b949e">$450M wiped in 24h — 89% were longs</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1: BTC -->
+  <rect x="60" y="200" rx="16" ry="16" width="250" height="130" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="232" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">BITCOIN</text>
+  <text x="80" y="272" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#e6edf3">$66,000</text>
+  <text x="80" y="305" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#ef4444">-5.0% ▼</text>
+  <text x="185" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">2-week low</text>
+
+  <!-- Card 2: ETH -->
+  <rect x="330" y="200" rx="16" ry="16" width="250" height="130" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="350" y="232" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">ETHEREUM</text>
+  <text x="350" y="272" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#e6edf3">$1,981</text>
+  <text x="350" y="305" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#ef4444">-4.2% ▼</text>
+  <text x="450" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Broke $2K</text>
+
+  <!-- Card 3: Liquidations -->
+  <rect x="600" y="200" rx="16" ry="16" width="250" height="130" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="620" y="232" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#ef4444" letter-spacing="0.05em">LIQUIDATIONS (24H)</text>
+  <text x="620" y="272" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#ef4444" filter="url(#glow)">$450M</text>
+  <text x="620" y="305" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#f59e0b">89% Longs</text>
+
+  <!-- Card 4: Fear & Greed -->
+  <rect x="870" y="200" rx="16" ry="16" width="270" height="130" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="890" y="232" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">FEAR &amp; GREED INDEX</text>
+  <text x="890" y="278" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="900" fill="#ef4444" filter="url(#glow)">10</text>
+  <text x="945" y="272" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#ef4444">Extreme Fear</text>
+  <text x="890" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">46-day streak — lowest since FTX</text>
+
+  <!-- Fear gauge bar -->
+  <rect x="60" y="360" rx="6" ry="6" width="1080" height="12" fill="#1e2433"/>
+  <rect x="60" y="360" rx="6" ry="6" width="108" height="12" fill="#ef4444" opacity="0.8"/>
+  <text x="60" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#ef4444">EXTREME FEAR</text>
+  <text x="330" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">FEAR</text>
+  <text x="560" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">NEUTRAL</text>
+  <text x="810" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">GREED</text>
+  <text x="1050" y="392" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">EXTREME GREED</text>
+
+  <!-- Context panel -->
+  <rect x="60" y="420" rx="12" ry="12" width="1080" height="100" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="80" y="450" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#6366f1" letter-spacing="0.05em">THIS WEEK'S CONVERGENCE</text>
+  <text x="80" y="478" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#8b949e">SEC ruled on 91 crypto ETFs • $14B options expired • BTC -47% from ATH • Halving day 703 of ~777</text>
+  <text x="80" y="502" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#8b949e">ADA added to Hashdex Nasdaq ETF • Peter Brandt targets $49K • Iran conflict day 28 • BTC -24% YTD</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="545" width="1200" height="85" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="580" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6366f1" font-weight="700">degen0x.com/tools/fear-greed-timeline</text>
+  <text x="60" y="605" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">Track crypto fear, DCA strategies, and risk analysis — all free, no signup</text>
+
+  <text x="1140" y="595" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e" text-anchor="end">March 27, 2026</text>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brand)"/>
+</svg>

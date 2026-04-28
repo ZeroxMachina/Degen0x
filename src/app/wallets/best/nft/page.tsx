@@ -1,0 +1,162 @@
+import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductCard from "@/components/ProductCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import FAQSection from "@/components/FAQSection";
+import ComparisonTable from "@/components/ComparisonTable";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import { nftWallets, walletComparisonItems } from "@/data/wallets";
+import Link from "next/link";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+export const metadata: Metadata = {
+  title: `Best NFT Wallets of 2026 - Top Wallets for NFTs | degen0x`,
+  description: `Compare the best wallets for NFTs in ${CURRENT_YEAR}. Phantom, MetaMask, Rabby and more. Expert-tested for NFT display, minting, trading, and multi-chain collections.`,
+  alternates: { canonical: "/wallets/best/nft" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const faqs = [
+  { question: "What is the best wallet for NFTs?", answer: "Phantom offers the best NFT experience with its beautiful gallery display, collection grouping, floor price data, and spam NFT detection. It supports NFTs on Solana, Ethereum, Polygon, and Bitcoin (Ordinals). MetaMask is the most widely compatible for Ethereum NFT marketplaces like OpenSea and Blur." },
+  { question: "Can I view my NFTs in my wallet?", answer: "Yes. Most modern wallets automatically detect and display your NFTs. Phantom, MetaMask, Trust Wallet, and Coinbase Wallet all show NFT galleries. The quality of the display varies: Phantom has the richest NFT interface, while others provide basic image previews with collection information." },
+  { question: "Should I use a hardware wallet for NFTs?", answer: "If you hold valuable NFTs, using a hardware wallet adds significant security. You can connect a Ledger to MetaMask or Phantom to sign NFT transactions while keeping your keys offline. This protects against phishing attacks that target NFT collectors." },
+];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Nft', },
+  ],
+};
+
+export default function BestNFTWalletsPage() {
+  const comparisonItems = [
+    walletComparisonItems["phantom"],
+    walletComparisonItems["metamask"],
+    walletComparisonItems["rabby"],
+    walletComparisonItems["trust-wallet"],
+  ];
+
+  return (
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="Wallets"
+        url="/wallets/best/nft"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/nft" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/nft" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="wallets"
+      />      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Crypto Wallets", href: "/wallets" },
+          { label: "Best Wallets", href: "/wallets/best" },
+          { label: "NFT Wallets", href: "/wallets/best/nft" },
+        ]}
+      />
+      <AffiliateDisclosure />
+      <header className="mb-10">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best NFT Wallets of {CURRENT_MONTH} {CURRENT_YEAR}</h1>
+        <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
+          The right wallet makes collecting, viewing, and trading NFTs seamless. We tested the leading wallets
+          for NFT gallery quality, marketplace compatibility, multi-chain collection support, and security features
+          that protect against the scams targeting NFT collectors.
+        </p>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-2">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      </header>
+
+      <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Quick Verdict</h2>
+        <p className="text-[var(--color-text-secondary)]">
+          <strong className="text-[var(--color-text)]">Phantom</strong> has the best NFT experience across Solana, Ethereum, and
+          Bitcoin Ordinals. For Ethereum-only collectors, <strong className="text-[var(--color-text)]">MetaMask</strong> is the
+          most widely compatible with NFT marketplaces. <strong className="text-[var(--color-text)]">Rabby</strong> adds security
+          with transaction simulation that helps prevent NFT-related scams.
+        </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our security team stress-tests every wallet we review. We check firmware signing, key derivation paths, and potential supply chain attack surfaces.
+          </p>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best NFT Wallets, Ranked</h2>
+        <div className="space-y-6">
+          {nftWallets.map((product, index) => (
+            <ProductCard key={product.name} product={product} rank={index + 1} categorySlug="wallets" />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <ComparisonTable
+          items={comparisonItems}
+          features={["Type", "Price", "Supported Coins", "NFT Support", "DeFi Access", "Mobile App", "Open Source"]}
+          title="NFT Wallet Comparison"
+        />
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Related Guides</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/wallets/reviews/phantom" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Phantom Review</h3>
+            <p className="text-xs text-[var(--color-text-secondary)]">Best overall NFT wallet</p>
+          </Link>
+          <Link href="/wallets/best/solana" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Best Solana Wallets</h3>
+            <p className="text-xs text-[var(--color-text-secondary)]">Top wallets for Solana NFTs</p>
+          </Link>
+          <Link href="/wallets/learn/wallet-security-best-practices" className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover">
+            <h3 className="font-semibold text-[var(--color-text)] text-sm">Security Best Practices</h3>
+            <p className="text-xs text-[var(--color-text-secondary)]">Protect your NFT collection</p>
+          </Link>
+        </div>
+      </section>
+
+      <FAQSection faqs={faqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/nft", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/nft", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
+  );
+}
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/wallets/best/android" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Android</a>
+  <a href="/wallets/best/australia" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Australia</a>
+  <a href="/wallets/best/beginners" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Beginners</a>
+  <a href="/wallets/best/bitcoin" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitcoin</a>
+  <a href="/wallets/best/browser-extension" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Browser Extension</a>
+  <a href="/wallets/best/canada" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Canada</a>
+  <a href="/wallets/best/custodial" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Custodial</a>
+  <a href="/wallets/best/defi" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Defi</a>
+</nav>

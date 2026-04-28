@@ -1,0 +1,58 @@
+{
+  "date": "2026-04-10",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 4 new learn pages (Hyperliquid, GPU Compute, Virtuals, Aave V4) for UX issues, fixed OG metadata on GPU Compute page, copied missing Hyperliquid OG image, and added BackToTop component to Aave V4 page.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Aave V4 guide: added missing BackToTop component import and placement at page bottom for consistent scroll-to-top behavior",
+          "GPU Compute guide: fixed OG image metadata referencing .png when only .svg exists — changed both openGraph and twitter image URLs to .svg",
+          "Hyperliquid perp-dex guide: confirmed tables use overflow-x:auto for mobile; inline structured data and breadcrumb present (functional but not using shared components)",
+          "Virtuals Protocol guide: cleanest implementation — uses Breadcrumb, BackToTop, StructuredData components, proper OG metadata, mobile overflow on tables. No changes needed.",
+          "Monad blockchain guide (recently unblocked): uses dynamic OG API route, all 3 shared components present. No changes needed.",
+          "Recommendation carry-forward: Hyperliquid and Aave V4 use inline breadcrumbs instead of shared Breadcrumb component — consider refactoring for consistency in a future cycle"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-hyperliquid-2026.svg (1200x630) — copied from Degen0x build to cryptodegen/public/; candlestick chart visualization with HYPE stats, DeFi/Trading badges, degen0x brand treatment",
+          "No new OG images needed to be created from scratch — GPU Compute (.svg already existed, metadata fixed), Virtuals (og-virtuals-protocol-guide.svg present), Aave V4 (og-aave-v4-guide.png/svg both present)"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "hyperliquid-perp-dex-trading-guide-2026: OG image was missing in cryptodegen (fixed), inline StructuredData + breadcrumb (functional), BackToTop present, tables mobile-friendly",
+          "decentralized-gpu-compute-guide-2026: OG metadata format mismatch .png vs .svg (fixed), StructuredData + BackToTop present, missing Breadcrumb component (uses inline nav)",
+          "virtuals-protocol-guide: fully compliant — all shared components, correct OG metadata, mobile-friendly tables",
+          "aave-v4-guide: BackToTop missing (fixed), StructuredData present, missing Breadcrumb component (uses inline nav), OG images exist",
+          "monad-blockchain-guide (bonus check): fully compliant, uses dynamic OG API"
+        ]
+      },
+      {
+        "title": "Programmer Refinements",
+        "items": [
+          "Added BackToTop import and component to aave-v4-guide/page.tsx (2 line changes)",
+          "Fixed OG image URL in decentralized-gpu-compute-guide-2026/page.tsx: .png → .svg in both openGraph.images and twitter.images",
+          "Copied og-hyperliquid-2026.svg from Degen0x/public/ to cryptodegen/public/",
+          "Carry-forward: extract shared LearnPageLayout component to reduce duplication across learn guides (flagged in previous design cycle, still relevant)"
+        ]
+      },
+      {
+        "title": "Component Compliance Matrix",
+        "items": [
+          "Breadcrumb: 2/5 pages use shared component (Virtuals, Monad); 3/5 use inline nav (Hyperliquid, GPU Compute, Aave V4)",
+          "BackToTop: 5/5 pages now have it (Aave V4 fixed this cycle)",
+          "StructuredData: 4/5 pages use shared component; Hyperliquid uses inline script tag (functionally equivalent)",
+          "Mobile table overflow: 4/4 pages with tables use overflow-x:auto correctly",
+          "OG images: 5/5 pages now have valid OG image references with existing files"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

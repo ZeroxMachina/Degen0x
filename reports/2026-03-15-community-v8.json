@@ -1,0 +1,60 @@
+{
+  "date": "2026-03-15",
+  "block": "community",
+  "cycle": "v8",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v8: identified bitcoin-strategic-reserve-guide, tokenized-treasuries-guide-2026, sonic-blockchain-guide, genius-act-stablecoin-guide, and best-meme-coin-launchpads-2026 as net-new pages since v7; drafted 8-post Bitcoin Strategic Reserve Twitter thread, Tokenized Treasuries tweet ($25B hook), GENIUS Act tweet, Sonic blockchain tweet, and meme launchpads engagement tweet; Discord/Telegram announcement for all 4 guides; Thursday newsletter section with BTC reserve as lead story and RWA/Sonic in supporting roles; created 2 SVG social cards saved to /public/.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (8 posts): Bitcoin Strategic Reserve — hook on US holding 325K BTC / largest sovereign holder; how the US accumulated via law enforcement seizures; 5-country reserve race (US 325K, Bhutan 13K, El Salvador 6K, Brazil target); Bhutan's quiet hydro mining operation; supply math (1.6% locked, ETFs add another 2%); centralization counter-argument; legislative risk (executive order not codified); CTA to /learn/bitcoin-strategic-reserve-guide + interactive SovereignBTCTracker",
+          "Tweet: Tokenized Treasuries — $25B hook; BlackRock BUIDL $2.3B / Ondo $1.8B / Franklin Templeton; 4–5% APY on T-bills without leaving wallet; 'RWAs aren't coming, they're here'; CTA to /learn/tokenized-treasuries-guide-2026",
+          "Tweet: GENIUS Act Stablecoins — first major US stablecoin law; USDC/USDT 1:1 reserve + monthly attestation requirement; $10T stablecoin transaction volume context; CTA to /learn/genius-act-stablecoin-guide",
+          "Tweet: Sonic Blockchain — Fantom's successor; $153M → $1.54B TVL; 400K TPS + 720ms finality; FeeM gives devs 90% of fees; CTA to /learn/sonic-blockchain-guide",
+          "Tweet: Best Meme Coin Launchpads — community/engagement angle; ranked by rug risk, tokenomics, builder usage; light degen humor; CTA to /learn/best-meme-coin-launchpads-2026",
+          "Discord/Telegram announcement: all 4 net-new guides with one-liners; no signup callout; formatted with emojis and direct URLs",
+          "Newsletter section (Thursday send): Bitcoin Strategic Reserve as lead story ($25B RWA secondary); Tokenized Treasuries deep-dive; GENIUS Act explainer; Degen Corner: Sonic FeeM model as the DeFi builder incentive unlock; 3 subject line variants provided",
+          "Posting schedule: Sunday PM — BTC Reserve thread + Discord announce; Monday — Tokenized Treasuries tweet; Tuesday — GENIUS Act tweet; Wednesday — Sonic + Meme Launchpads tweets; Thursday — Newsletter send"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/bitcoin-strategic-reserve-guide", "value": "325K BTC sovereign story; interactive SovereignBTCTracker; macro policy narrative", "pct": 96, "color": "#f59e0b" },
+          { "label": "/tools/dca-calculator", "value": "Evergreen #1 traffic driver — amplify on BTC volatility events", "pct": 92, "color": "#4ade80" },
+          { "label": "/learn/tokenized-treasuries-guide-2026", "value": "$25B RWA market; BlackRock/Ondo/Franklin; 4–5% APY on-chain T-bill yield", "pct": 91, "color": "#22d3ee" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "Carry-forward v7 — ~30d to mainnet; EIP-7702 smart wallets narrative live", "pct": 90, "color": "#8b5cf6" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "Carry-forward v7 — March 15 Q4 deadline today; April 15 looming; peak search intent", "pct": 89, "color": "#f59e0b" },
+          { "label": "/learn/genius-act-stablecoin-guide", "value": "GENIUS Act signed July 2025; high policy search intent; USDC/USDT compliance deadline", "pct": 88, "color": "#06b6d4" },
+          { "label": "/learn/sonic-blockchain-guide", "value": "Fantom → Sonic rebrand; $153M → $1.54B TVL; 400K TPS; FeeM builder incentive model", "pct": 85, "color": "#4ade80" },
+          { "label": "/learn/best-meme-coin-launchpads-2026", "value": "Community engagement magnet; degens love launchpad comparisons and rankings", "pct": 82, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-bitcoin-strategic-reserve-guide.svg — 1200×630 social card: decorative BTC ring with orbit lines and country flag dots (US/Bhutan/El Salvador/Brazil), ₿ symbol with amber glow, '325,000 BTC' and '1.6% of 21M' and '5+ Stacking' data pills, LIVE TRACKER green badge, BITCOIN STRATEGIC RESERVE gold gradient headline, dark #080d1c background. Saved to /public/social-bitcoin-strategic-reserve-guide.svg",
+          "social-tokenized-treasuries-guide-2026.svg — 1200×630 social card: right-panel glass card with $25B+ as hero number (green-cyan gradient), protocol breakdown bars (BlackRock BUIDL $2.3B / Ondo $1.8B / Franklin $900M+ with proportional progress bars), 4–5% APY yield tile, multi-chain network tags (Ethereum/Solana/Polygon), TOKENIZED TREASURIES 2026 cyan headline, feature pills (No Lockups / 4–5% APY / On-Chain). Saved to /public/social-tokenized-treasuries-guide-2026.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Site is Day 15/16 — GSC organic signals imminent (day 14–21 window per standup-v5 and standup-v6); first impressions data could arrive any time today or tomorrow",
+          "Analytics basis for v8 content selection: content freshness score + narrative heat + keyword search intent + event proximity",
+          "Bitcoin Strategic Reserve scored 96/100 — the largest sovereign BTC policy story of 2026; 'bitcoin strategic reserve', 'how much bitcoin does US government have', 'sovereign bitcoin reserve' are all high-volume, high-intent queries; SovereignBTCTracker component adds a unique interactive data hook no competitor has",
+          "Tokenized Treasuries scored 91/100 — RWA narrative is the institutional DeFi story of 2026; '$25B on-chain' is the kind of concrete number that drives social sharing; query clusters: 'tokenized treasury', 'blackrock buidl', 'ondo finance usdy', 'how to buy tokenized bonds'",
+          "GENIUS Act scored 88/100 — high policy search intent from crypto holders needing to understand stablecoin regulation impact; query cluster: 'genius act stablecoin', 'usdc regulation 2026', 'tether regulation us'",
+          "Sonic scored 85/100 — strong ecosystem narrative momentum; FeeM model is genuinely differentiated and appealing to the developer/builder Twitter audience",
+          "Net-new pages covered in v8 (not in v1–v7): bitcoin-strategic-reserve-guide, tokenized-treasuries-guide-2026, genius-act-stablecoin-guide, sonic-blockchain-guide, best-meme-coin-launchpads-2026",
+          "Social drafts saved to /reports/community-drafts/2026-03-15-social-drafts-v8.md",
+          "Social cards saved to /public/social-bitcoin-strategic-reserve-guide.svg and /public/social-tokenized-treasuries-guide-2026.svg",
+          "Posting schedule: Sunday PM BTC Reserve thread + Discord announce → Monday Tokenized Treasuries → Tuesday GENIUS Act → Wednesday Sonic + Meme Launchpads → Thursday Newsletter"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

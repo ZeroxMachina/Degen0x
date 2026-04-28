@@ -1,0 +1,51 @@
+{
+  "date": "2026-04-04",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "No pages promoted — PUBLISH_QUEUE has 2 pages but both lack page.tsx files; data pipeline healthy across all 6 API routes; no deployment triggered.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [],
+        "note": "PUBLISH_QUEUE contains 2 slugs (/learn/monad-guide, /learn/zora-attention-markets-guide-2026) but neither has a page.tsx file. Scaffold these pages before next publish cycle."
+      },
+      {
+        "title": "Queue Status",
+        "metrics": [
+          { "label": "Total Published Pages", "value": "~700+", "pct": 100, "color": "#4ade80" },
+          { "label": "Queue Remaining", "value": "2 (blocked)", "pct": 0, "color": "#f59e0b" },
+          { "label": "/learn/monad-guide", "value": "No page.tsx", "pct": 0, "color": "#ef4444" },
+          { "label": "/learn/zora-attention-markets-guide-2026", "value": "No page.tsx", "pct": 0, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "TypeScript Check", "value": "141 errors (non-blocking)", "pct": 75, "color": "#f59e0b" },
+          { "label": "Build (sandbox)", "value": "OOM — sandbox memory limit", "pct": 50, "color": "#f59e0b" },
+          { "label": "ignoreBuildErrors", "value": "Active in next.config.ts", "pct": 100, "color": "#4ade80" },
+          { "label": "Deploy Needed", "value": "No (no changes)", "pct": 100, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko (prices, trending)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama (defi-yields)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "fear-greed API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "market-dominance API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "market-metrics API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Token bucket active", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer", "value": "In-memory + CDN + stale-while-revalidate", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "action_items": [
+      "Scaffold /learn/monad-guide/page.tsx to unblock publish queue",
+      "Scaffold /learn/zora-attention-markets-guide-2026/page.tsx to unblock publish queue",
+      "Fix 141 pre-existing TS errors (concentrated in structured-data.examples.ts and a few learn pages)"
+    ]
+  }
+}

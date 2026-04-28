@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="60%" style="stop-color:#09101f"/>
+      <stop offset="100%" style="stop-color:#060b18"/>
+    </linearGradient>
+    <!-- Purple accent -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <!-- Green gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+    <!-- Red gradient -->
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <!-- Brand signature gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e6edf3"/>
+      <stop offset="70%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <!-- Options curve gradient -->
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444" stop-opacity="0.7"/>
+      <stop offset="40%" style="stop-color:#f59e0b" stop-opacity="0.8"/>
+      <stop offset="70%" style="stop-color:#22c55e" stop-opacity="0.9"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="chartClip">
+      <rect x="660" y="120" width="480" height="340" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative background blobs -->
+  <circle cx="900" cy="200" r="240" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="1100" cy="480" r="160" fill="#6366f1" opacity="0.06"/>
+  <circle cx="100" cy="480" r="200" fill="#4f46e5" opacity="0.04"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- RIGHT PANEL: Options payoff chart visualization -->
+  <!-- Chart card (glass) -->
+  <rect x="660" y="120" width="480" height="340" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#glowPurple)"/>
+
+  <!-- Chart background grid lines -->
+  <g clip-path="url(#chartClip)" opacity="0.2">
+    <line x1="660" y1="200" x2="1140" y2="200" stroke="#30363d" stroke-width="1"/>
+    <line x1="660" y1="250" x2="1140" y2="250" stroke="#30363d" stroke-width="1"/>
+    <line x1="660" y1="300" x2="1140" y2="300" stroke="#30363d" stroke-width="1"/>
+    <line x1="660" y1="350" x2="1140" y2="350" stroke="#30363d" stroke-width="1"/>
+    <line x1="660" y1="400" x2="1140" y2="400" stroke="#30363d" stroke-width="1"/>
+    <line x1="740" y1="120" x2="740" y2="460" stroke="#30363d" stroke-width="1"/>
+    <line x1="820" y1="120" x2="820" y2="460" stroke="#30363d" stroke-width="1"/>
+    <line x1="900" y1="120" x2="900" y2="460" stroke="#30363d" stroke-width="1"/>
+    <line x1="980" y1="120" x2="980" y2="460" stroke="#30363d" stroke-width="1"/>
+    <line x1="1060" y1="120" x2="1060" y2="460" stroke="#30363d" stroke-width="1"/>
+  </g>
+
+  <!-- Chart title -->
+  <text x="900" y="152" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#8b949e" text-anchor="middle" letter-spacing="1">CALL OPTION PAYOFF</text>
+
+  <!-- Strike price vertical line -->
+  <line x1="900" y1="168" x2="900" y2="448" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.7"/>
+  <text x="904" y="184" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#f59e0b" opacity="0.9">STRIKE</text>
+
+  <!-- Zero line (horizontal) -->
+  <line x1="668" y1="350" x2="1132" y2="350" stroke="#8b949e" stroke-width="1" opacity="0.5"/>
+  <text x="672" y="346" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8b949e" opacity="0.7">0</text>
+
+  <!-- LOSS area (left of strike — flat at -premium) -->
+  <path d="M 668 380 L 900 380" stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.8"/>
+  <!-- Fill area below zero left of strike -->
+  <path d="M 668 350 L 668 380 L 900 380 L 900 350 Z" fill="#ef4444" opacity="0.08"/>
+
+  <!-- PROFIT area (right of strike — rising) -->
+  <path d="M 900 380 L 1132 195" stroke="url(#curveGrad)" stroke-width="2.5" fill="none"/>
+  <!-- Fill profit area above zero right of strike -->
+  <path d="M 900 350 L 900 380 L 1132 195 L 1132 350 Z" fill="#22c55e" opacity="0.08"/>
+
+  <!-- Breakeven point dot -->
+  <circle cx="934" cy="350" r="5" fill="#f59e0b" filter="url(#softGlow)"/>
+  <text x="940" y="345" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#f59e0b">breakeven</text>
+
+  <!-- PROFIT label -->
+  <text x="1060" y="225" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#22c55e">↑ PROFIT</text>
+  <!-- LOSS label -->
+  <text x="692" y="406" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#ef4444">↓ LIMITED LOSS</text>
+
+  <!-- Premium annotation -->
+  <text x="760" y="367" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8b949e">− premium</text>
+
+  <!-- Chart x-axis labels -->
+  <text x="740" y="465" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">$60K</text>
+  <text x="820" y="465" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">$65K</text>
+  <text x="900" y="465" font-family="Inter, Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">$70K</text>
+  <text x="980" y="465" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">$75K</text>
+  <text x="1060" y="465" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">$80K</text>
+
+  <!-- Feature pills below chart -->
+  <!-- Pill: Covered Calls -->
+  <rect x="668" y="478" width="136" height="28" rx="8" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="736" y="496" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">Covered Calls</text>
+
+  <!-- Pill: Protective Puts -->
+  <rect x="812" y="478" width="136" height="28" rx="8" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="880" y="496" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#ef4444" text-anchor="middle">Protective Puts</text>
+
+  <!-- Pill: Greeks -->
+  <rect x="956" y="478" width="136" height="28" rx="8" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="1024" y="496" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle">Delta / Gamma</text>
+
+  <!-- LEFT content area -->
+  <!-- degen0x logo text -->
+  <text x="64" y="72" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#6366f1" letter-spacing="0.5">degen0x</text>
+  <text x="64" y="92" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#8b949e" letter-spacing="1">degen0x.com</text>
+
+  <!-- Divider -->
+  <rect x="64" y="108" width="40" height="2" fill="url(#purpleGrad)" rx="1"/>
+
+  <!-- GUIDE label -->
+  <rect x="64" y="128" width="90" height="26" rx="13" fill="rgba(139,92,246,0.15)"/>
+  <rect x="64" y="128" width="90" height="26" rx="13" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.5"/>
+  <text x="109" y="145" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle" letter-spacing="1">GUIDE</text>
+
+  <!-- Main title -->
+  <text x="64" y="222" font-family="Inter, Arial, sans-serif" font-size="55" font-weight="900" fill="#e6edf3" letter-spacing="-1.2">CRYPTO</text>
+  <text x="64" y="285" font-family="Inter, Arial, sans-serif" font-size="55" font-weight="900" fill="url(#titleGrad)" letter-spacing="-1.2">OPTIONS</text>
+  <text x="64" y="348" font-family="Inter, Arial, sans-serif" font-size="55" font-weight="900" fill="#e6edf3" letter-spacing="-1.2">TRADING</text>
+
+  <!-- Subtitle -->
+  <text x="64" y="388" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="400" fill="#8b949e">Defined risk. Income on holdings. Downside protection.</text>
+
+  <!-- Feature list -->
+  <g transform="translate(64, 418)">
+    <!-- Row 1 -->
+    <circle cx="8" cy="8" r="3.5" fill="#22c55e"/>
+    <text x="22" y="13" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e6edf3">Calls, puts, spreads explained</text>
+
+    <circle cx="8" cy="38" r="3.5" fill="#8b5cf6"/>
+    <text x="22" y="43" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e6edf3">Read an options chain</text>
+
+    <circle cx="8" cy="68" r="3.5" fill="#f59e0b"/>
+    <text x="22" y="73" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e6edf3">Delta, gamma, theta &amp; vega</text>
+
+    <circle cx="310" cy="8" r="3.5" fill="#06b6d4"/>
+    <text x="324" y="13" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e6edf3">Earn yield on idle crypto</text>
+
+    <circle cx="310" cy="38" r="3.5" fill="#ef4444"/>
+    <text x="324" y="43" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e6edf3">Hedge against drawdowns</text>
+
+    <circle cx="310" cy="68" r="3.5" fill="#4ade80"/>
+    <text x="324" y="73" font-family="Inter, Arial, sans-serif" font-size="14" fill="#e6edf3">Where to trade crypto options</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="582" width="1200" height="48" fill="rgba(255,255,255,0.02)"/>
+  <rect x="0" y="582" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="64" y="611" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#6366f1">degen0x.com</text>
+  <text x="180" y="611" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="400" fill="#8b949e">/learn/crypto-options-trading-guide</text>
+  <text x="1120" y="611" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#8b5cf6" text-anchor="end">Beginner → Advanced</text>
+</svg>

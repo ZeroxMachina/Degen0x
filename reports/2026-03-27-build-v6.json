@@ -1,0 +1,49 @@
+{
+  "date": "2026-03-27",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Built 2 new learn guides covering Shared Sequencing & Decentralized Sequencers (Espresso Network, based sequencing) and Wrapped Bitcoin Comparison (wBTC vs cbBTC vs tBTC vs LBTC vs sBTC), both added to PUBLISH_QUEUE with full SEO metadata and structured data.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Shared Sequencing: Espresso Network launched mainnet Feb 12, 2026 — first production shared sequencer for Ethereum rollups. HotShot consensus achieves ~6-second finality with 100+ nodes. $60M funding from a16z, Sequoia, Electric Capital. ESP token at ~$30.6M circulating market cap. Active integrations with Arbitrum, Polygon, Optimism. Competitor Astria shut down Dec 2025 after raising $18M — validates difficulty of shared sequencer business model.",
+          "Wrapped Bitcoin Market: 300K+ BTC ($25B) wrapped across 10+ tokens. wBTC at 43% share (declining from monopoly), cbBTC at 25% (fastest growing, ~87K BTC / $6B cap), BTCB at 22%, LBTC at ~5% (peaked 20K BTC, now ~11K), tBTC at ~3% (growing among DeFi purists). wBTC controversy around Justin Sun/BiT Global joint venture led MakerDAO to tighten risk parameters and Coinbase to delist wBTC. cbBTC notably lacks proof-of-reserves unlike wBTC.",
+          "Both topics identified as genuine content gaps after exhaustive analysis of 269 existing learn pages. Selected based on March 2026 trending narratives (Espresso mainnet launch, Bitcoin DeFi/BTCfi growth) and practical user demand."
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "Shared Sequencing guide: ~3200 words, 12 min read, 10 sections + 6 FAQs. Covers what shared sequencing is, the centralized sequencer problem (censorship/MEV/SPOF/fragmentation), how shared sequencing works, Espresso Network deep dive (HotShot consensus, integrations, ESP token), based sequencing alternative, comparison table (shared vs based vs centralized), cross-rollup composability, risks (adoption chicken-and-egg, Astria failure, revenue cannibalization), 2026 outlook.",
+          "Wrapped Bitcoin Comparison guide: ~3400 words, 13 min read, 11 sections + 6 FAQs. Covers what wrapped Bitcoin is, market overview with share breakdown, individual deep dives on wBTC (Justin Sun controversy), cbBTC (missing proof-of-reserves), tBTC (threshold cryptography), LBTC (liquid staking), sBTC (Bitcoin-native), side-by-side comparison table across 11 dimensions, decision framework (which to use when), comprehensive risk analysis."
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/shared-sequencing-decentralized-sequencers-guide-2026", "status": "pass" },
+          { "slug": "/learn/wrapped-bitcoin-comparison-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Shared Sequencing: Title 'Shared Sequencing & Decentralized Sequencers Guide 2026: Espresso, Based Rollups & More | degen0x', target keyword 'shared sequencing guide 2026', 10 keywords, Article + FAQ JSON-LD schemas, OG + Twitter Card, canonical URL, breadcrumbs, 5 internal links (MEV guide, modular blockchain, Pectra upgrade, cross-chain interoperability, based rollups)",
+          "Wrapped Bitcoin: Title 'Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs LBTC | degen0x', target keyword 'wrapped bitcoin comparison 2026', 10 keywords, Article + FAQ JSON-LD schemas, OG + Twitter Card, canonical URL, breadcrumbs, 5 internal links (Bitcoin L2, BTC LSTs, Stacks sBTC, Babylon staking, RWA guide)",
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts for next daily rollout"
+        ]
+      },
+      {
+        "title": "Build Verification",
+        "items": [
+          "TypeScript compilation: 0 new errors from new pages (142 pre-existing errors in 5 other files only)",
+          "Page structure validation: Shared Sequencing = 10 sections + 6 FAQs, Wrapped BTC = 11 sections + 6 FAQs",
+          "Both pages match established template pattern (Metadata, StructuredData, Breadcrumb, BackToTop, dark theme, TOC, comparison tables, callouts, FAQ schema)"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"]
+  }
+}

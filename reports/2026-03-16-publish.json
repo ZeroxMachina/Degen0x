@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-16",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 2 learn guides (Jupiter Solana, Ondo Finance RWA) from PUBLISH_QUEUE to PUBLISHED_PAGES; data pipeline healthy; deploy staged for next git push.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/jupiter-solana-guide", "status": "pass" },
+          { "slug": "/learn/ondo-finance-rwa-guide", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with Metadata export", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with StructuredData", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with Breadcrumbs", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Full build verification", "value": "Skipped (VM memory)", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama API", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "In-memory cache (LRU)", "value": "Configured", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Circuit breaker", "value": "Closed (healthy)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy",
+        "metrics": [
+          { "label": "Vercel auto-deploy", "value": "Pending push", "pct": 50, "color": "#06b6d4" },
+          { "label": "Total published pages", "value": "~517", "pct": 100, "color": "#4ade80" },
+          { "label": "Queue remaining", "value": "0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

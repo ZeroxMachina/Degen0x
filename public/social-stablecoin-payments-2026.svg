@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="60%" style="stop-color:#0c1128"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <!-- Brand signature gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e2e8f0"/>
+      <stop offset="55%" style="stop-color:#a5b4fc"/>
+      <stop offset="100%" style="stop-color:#67e8f9"/>
+    </linearGradient>
+    <!-- Glow effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Glass surface -->
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="1200" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative ambient orbs -->
+  <circle cx="950" cy="120" r="200" fill="#4f46e5" opacity="0.08"/>
+  <circle cx="1050" cy="480" r="160" fill="#0891b2" opacity="0.07"/>
+  <circle cx="200" cy="520" r="180" fill="#d97706" opacity="0.05"/>
+  <circle cx="80" cy="100" r="130" fill="#6366f1" opacity="0.06"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse" opacity="0.04">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#8b949e" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Top accent bar (gradient) -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- degen0x logo area (top-left) -->
+  <!-- Logo circle -->
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="50%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <filter id="logoGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="64" cy="50" r="22" fill="url(#logoGrad)" filter="url(#logoGlow)" opacity="0.95"/>
+  <text x="64" y="57" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="-0.5">0x</text>
+  <!-- Wordmark -->
+  <text x="98" y="57" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3" letter-spacing="-0.5">degen0x</text>
+
+  <!-- GENIUS Act badge -->
+  <rect x="72" y="100" width="200" height="34" rx="17" fill="rgba(16,185,129,0.15)" stroke="#22c55e" stroke-width="1" opacity="0.9"/>
+  <text x="172" y="122" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#22c55e">✓  GENIUS Act — Now Law</text>
+
+  <!-- Main Title -->
+  <text x="72" y="215" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="900" letter-spacing="-2" fill="url(#titleGrad)">Stablecoin Payments</text>
+  <text x="72" y="289" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="900" letter-spacing="-2" fill="url(#titleGrad)">Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="72" y="340" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#8b949e">GENIUS Act · Cross-Border Transfers · USDT vs USDC vs EURC</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1 -->
+  <rect x="72" y="385" width="230" height="100" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="87" y="415" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#8b949e">On-chain tx volume</text>
+  <text x="87" y="452" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#22c55e" letter-spacing="-1">$8.9T</text>
+  <text x="87" y="474" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6e7681">H1 2025 alone</text>
+
+  <!-- Card 2 -->
+  <rect x="322" y="385" width="230" height="100" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="337" y="415" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#8b949e">Wire vs Stablecoin</text>
+  <text x="337" y="452" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#06b6d4" letter-spacing="-1">33× cheaper</text>
+  <text x="337" y="474" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6e7681">$825 → ~$40 on $50K</text>
+
+  <!-- Card 3 -->
+  <rect x="572" y="385" width="230" height="100" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="587" y="415" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#8b949e">Market cap (2025)</text>
+  <text x="587" y="452" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#f59e0b" letter-spacing="-1">$310B+</text>
+  <text x="587" y="474" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6e7681">→ $1T by late 2026</text>
+
+  <!-- Right side decorative visualization — stablecoin logos/circles -->
+  <circle cx="960" cy="300" r="110" fill="rgba(6,182,212,0.06)" stroke="rgba(6,182,212,0.15)" stroke-width="1"/>
+  <circle cx="960" cy="300" r="75" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <!-- USDC token -->
+  <circle cx="960" cy="300" r="44" fill="rgba(10,120,255,0.18)" stroke="rgba(10,120,255,0.4)" stroke-width="1.5"/>
+  <text x="960" y="307" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#60a5fa">USDC</text>
+  <!-- Orbiting tokens -->
+  <circle cx="1060" cy="240" r="28" fill="rgba(38,161,123,0.18)" stroke="rgba(38,161,123,0.4)" stroke-width="1.5"/>
+  <text x="1060" y="247" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#34d399">USDT</text>
+  <circle cx="870" cy="220" r="24" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.35)" stroke-width="1.5"/>
+  <text x="870" y="227" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" fill="#fbbf24">EURC</text>
+  <circle cx="1075" cy="370" r="22" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.35)" stroke-width="1.5"/>
+  <text x="1075" y="377" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" fill="#c4b5fd">PYUSD</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)" stroke-width="0"/>
+  <text x="72" y="614" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#6e7681">degen0x.com/learn/stablecoin-payments-guide-2026</text>
+  <text x="1128" y="614" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#6366f1">degen0x.com</text>
+</svg>

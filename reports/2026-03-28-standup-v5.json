@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-28",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 5 standup (Mar 28 evening). BTC $66,246 (flat, $66K support holding). ETH $1,985 (sub-$2K day 3+). F&G 12–13 (Extreme Fear, 48+ day streak). DELTA: Uncommitted files 298→309 (+11). build-3 shipped DYOR Token Research Guide (940 lines) + Crypto Leverage Trading Guide (1,203 lines). design-v4 fixed critical Next.js metadata/client-component conflicts on both new pages + created 6 OG images. Deploy blocked 15th consecutive cycle. 22 total agent runs today.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: $66,245.92 (−3.85% 24h). Flat since cycle 4. $66K support holding for 3rd+ day. Down ~24.6% YTD, 48% from Oct 2025 ATH ($126K). BTC dominance 56.1%. Iran/geopolitical tensions + tariff uncertainty remain primary macro headwinds.",
+          "ETH: $1,984.63 (−4.05% 24h). Slipped below $1,997 from last cycle. Sub-$2K now persistent. ETH/BTC ~0.030 (multi-year low). ETH dominance 10.1%. $253M mystery whale accumulation since Mar 1 continues.",
+          "F&G INDEX: 12–13 (Extreme Fear). Back to 12 after brief bounce to 23 seen in some feeds — deep fear floor. 48+ day streak, longest since post-FTX collapse. Total market cap $2.37T (−3.1%). Volume $107B (near 30-day avg $108B).",
+          "ETF FLOWS: Bitcoin ETF 4-week inflow streak BROKEN confirmed. $296M weekly outflows. Mar 27: −$225.6M (IBIT −$201.67M, BITB −$18.60M, ARKB −$5.35M). Mar 28: −$171M (largest daily redemption in 3 weeks). Analysts: capital 'avoiding directional risk' pending geopolitical clarity.",
+          "DELTA FROM CYCLE 4 (standup-v4): BTC $66K→$66.2K (flat). ETH $1,997→$1,985 (slight decline). F&G reading variable (12–23 depending on source, deep fear either way). Uncommitted files 298→309 (+11). 2 new learn guides built + 6 OG images + critical Next.js fixes applied. No new commits. No new deploys."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE 5 OF MARCH 28. Four full rotations (all 6 agents) completed + partial cycle 5. 21 agent runs prior to this standup + this standup = 22 total today. Breakdown: standup×5, build×3, publish×2, design×4, community×4, eod×4.",
+          "WHAT SHIPPED SINCE CYCLE 4: build-3 created 2 new learn guides — DYOR Token Research Guide (940 lines, 4,500 words, 8 sections, 6 FAQs) and Crypto Leverage Trading Guide (1,203 lines, 5,500 words, 9 sections, platform comparison table, 6 FAQs). Both added to PUBLISH_QUEUE. design-v4 fixed 3 critical bugs per page (use client + metadata conflict, schema param names, StructuredData prop) — these would have caused Next.js build failures. Created 6 OG SVG images. community-v5 drafted tweets #217-219 + Newsletter v36 Weekend Infrastructure Edition + TradFi-DeFi Bridge SVG social card. eod-v4 confirmed 308 uncommitted files (now 309), 145 TS errors stable, 6 API routes healthy.",
+          "CARRY-OVER BLOCKERS (CRITICAL): (1) Deploy — 309 uncommitted files (+11 from cycle 4), 15th cycle flagging P0. (2) 2 PUBLISH_QUEUE items blocked (wallet security slug mismatch + restaking no page.tsx). (3) 105 legacy published slugs missing page.tsx (81.9% coverage at 477/582). (4) 145 TS errors in 6 files (stable, non-blocking). (5) Full build OOM in VM — Vercel CI untested.",
+          "GIT STATUS: HEAD at 21aaf5b (unchanged since Mar 25 batch deploy). 309 files pending (31 modified + 278 untracked). All changes additive.",
+          "PUBLISHED PAGES: 582 live (2 promoted earlier today: Solana LST, RWA vs DeFi Yield). PUBLISH_QUEUE: 4 items (2 ready: DYOR + Leverage Trading; 2 blocked: wallet security + restaking). Content velocity today: 10 pages built (Citrea, Unichain, Railgun, AI Agents, Solana LST, RWA Yield, TON DeFi, Sui DeFi, DYOR, Leverage Trading). 222 tweets drafted cumulative. 36 newsletter versions."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [CRITICAL, 15th CONSECUTIVE CYCLE]: 309 uncommitted files spanning 3 days and 22+ agent runs. Every learn guide, OG image, UX fix, and metadata correction is invisible to production. Google cannot index new pages. The DYOR and Leverage Trading guides target evergreen high-volume keywords with zero degen0x coverage — every hour undeployed is lost search traffic. Jefe: one git commit + push unlocks everything. 5-minute action, highest leverage possible.",
+          "PRIORITY 2 — PROMOTE DYOR + LEVERAGE GUIDES TO PUBLISHED_PAGES: Both guides are built, SEO-optimized, have OG images, and design-v4 fixed critical build-breaking bugs. Move from PUBLISH_QUEUE → PUBLISHED_PAGES in next publish cycle. Also promote TON DeFi + Sui DeFi guides (built cycle 3, audited, ready).",
+          "PRIORITY 3 — FIX 2 BLOCKED QUEUE ITEMS: wallet-security slug mismatch and restaking missing page.tsx have been blocked for 15+ cycles. Either scaffold the correct pages or update slugs in PUBLISH_QUEUE. Quick fix, unblocks 2 more pages for indexing."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — 309 files pending deploy (CRITICAL)", "pct": 8, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "582 total (2 promoted earlier today)", "pct": 97, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "4 pages (2 ready + 2 blocked)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Pages Built Today", "value": "10 (incl. DYOR + Leverage Trading this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "OG Images Created Today", "value": "14 (8 prior + 6 this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "Critical Bugs Fixed This Cycle", "value": "6 (3 per page: metadata/client conflicts, schema params, StructuredData props)", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Posts Drafted Today", "value": "12 tweets (#211-222) + Newsletter v36", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "309 (+11 since last cycle)", "pct": 5, "color": "#ef4444" },
+          { "label": "Page.tsx Coverage", "value": "~82% (477/582 published slugs)", "pct": 82, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6/6 (correct cache TTLs + fallbacks)", "pct": 100, "color": "#4ade80" },
+          { "label": "TS Errors", "value": "145 in 6 files (stable, non-blocking)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$66,246 (−3.85% 24h, $66K support)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "$1,985 (−4.05% 24h, sub-$2K persistent)", "pct": 35, "color": "#ef4444" },
+          { "label": "Fear & Greed", "value": "12–13 (Extreme Fear, 48+ day streak)", "pct": 12, "color": "#ef4444" },
+          { "label": "ETF Flows (Weekly)", "value": "−$296M (4-week inflow streak BROKEN)", "pct": 10, "color": "#ef4444" },
+          { "label": "ETF Daily (Mar 28)", "value": "−$171M (largest in 3 weeks)", "pct": 10, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "5 of 6 (build, design, community, eod + this standup)", "pct": 83, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~9.25h (5 agents)", "pct": 90, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$442 (build $233 + design $60 + community $41 + eod $63 + standup $45)", "pct": 89, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,690 (22 agent runs across ~4.2 rotations)", "pct": 14, "color": "#4ade80" },
+          { "label": "Agents Ran Today (total)", "value": "22 runs (standup×5, build×3, publish×2, design×4, community×4, eod×4)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Cost Breakdown Today", "value": "Standup $225 + Build $699 + Publish $110 + Design $240 + Community $164 + EOD $252", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — api.resend.com fetch blocked from browser context (CORS/network restriction). Same infrastructure limitation as all previous cycles. Manual send or server-side relay needed."
+  }
+}

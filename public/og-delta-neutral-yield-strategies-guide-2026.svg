@@ -1,0 +1,70 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.8" />
+    </linearGradient>
+
+    <radialGradient id="glowCircle1" cx="20%" cy="20%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0" />
+    </radialGradient>
+
+    <radialGradient id="glowCircle2" cx="80%" cy="80%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <!-- Decorative gradient circles -->
+  <circle cx="100" cy="100" r="200" fill="url(#glowCircle1)"/>
+  <circle cx="1100" cy="550" r="250" fill="url(#glowCircle2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Balance/Scales motif (stylized) -->
+  <g opacity="0.08">
+    <!-- Scale beam -->
+    <line x1="950" y1="500" x2="1150" y2="500" stroke="url(#mainGradient)" stroke-width="3" stroke-linecap="round"/>
+    <!-- Left pan -->
+    <circle cx="970" cy="530" r="30" fill="none" stroke="url(#mainGradient)" stroke-width="2"/>
+    <!-- Right pan -->
+    <circle cx="1130" cy="530" r="30" fill="none" stroke="url(#mainGradient)" stroke-width="2"/>
+    <!-- Fulcrum -->
+    <polygon points="1050,500 1040,480 1060,480" fill="url(#mainGradient)" opacity="0.5"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="160" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#e6edf3" letter-spacing="-1">
+    Delta-Neutral
+  </text>
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#e6edf3" letter-spacing="-1">
+    Yield Strategies
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="310" font-family="Arial, sans-serif" font-size="32" font-weight="500" fill="#8b949e">
+    Basis Trading &amp; Funding Rate Arbitrage | Guide 2026
+  </text>
+
+  <!-- Gradient line accent -->
+  <line x1="60" y1="330" x2="400" y2="330" stroke="url(#mainGradient)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Footer: degen0x.com -->
+  <text x="60" y="590" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#e6edf3">
+    degen0x.com
+  </text>
+
+  <!-- Subtle gradient indicator -->
+  <circle cx="1100" cy="90" r="8" fill="url(#mainGradient)" opacity="0.6"/>
+</svg>

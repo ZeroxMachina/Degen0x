@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="tonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0088CC;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#229ED9;stop-opacity:0.3" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <circle cx="150" cy="100" r="180" fill="url(#tonGradient)" filter="url(#softGlow)"/>
+  <circle cx="1050" cy="550" r="220" fill="url(#tonGradient)" filter="url(#softGlow)"/>
+
+  <g opacity="0.18">
+    <circle cx="950" cy="120" r="50" stroke="#0088CC" stroke-width="2" fill="none"/>
+    <circle cx="950" cy="120" r="35" stroke="#229ED9" stroke-width="1" fill="none"/>
+    <circle cx="950" cy="120" r="20" stroke="#06b6d4" stroke-width="1" fill="none"/>
+    <polygon points="950,70 990,140 910,140" fill="none" stroke="#0088CC" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <g opacity="0.15" filter="url(#glow)">
+    <circle cx="200" cy="500" r="55" stroke="#229ED9" stroke-width="2" fill="none"/>
+    <circle cx="170" cy="480" r="20" fill="#0088CC" opacity="0.4"/>
+    <circle cx="230" cy="520" r="20" fill="#229ED9" opacity="0.4"/>
+  </g>
+
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="#e6edf3">TON DeFi</text>
+  <text x="60" y="180" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="#e6edf3">Ecosystem 2026</text>
+
+  <text x="60" y="245" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#8b949e">Telegram's Blockchain Goes DeFi</text>
+
+  <g opacity="0.05">
+    <rect x="60" y="280" width="1080" height="280" rx="16" fill="url(#mainGradient)"/>
+  </g>
+
+  <rect x="80" y="300" width="300" height="240" rx="12" fill="#1a1f35" stroke="#0088CC" stroke-width="1" opacity="0.7"/>
+  <circle cx="130" cy="340" r="20" fill="url(#mainGradient)"/>
+  <text x="170" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#8b949e">User Base</text>
+  <text x="100" y="385" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#06b6d4">950M</text>
+  <text x="100" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">Telegram users</text>
+
+  <rect x="450" y="300" width="300" height="240" rx="12" fill="#1a1f35" stroke="#229ED9" stroke-width="1" opacity="0.7"/>
+  <circle cx="500" cy="340" r="20" fill="url(#mainGradient)"/>
+  <text x="540" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#8b949e">DeFi Growth</text>
+  <text x="470" y="385" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#22c55e">Explosive</text>
+  <text x="470" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">New protocols</text>
+
+  <rect x="820" y="300" width="320" height="240" rx="12" fill="#1a1f35" stroke="#0891b2" stroke-width="1" opacity="0.7"/>
+  <circle cx="870" cy="340" r="20" fill="url(#mainGradient)"/>
+  <text x="910" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#8b949e">Integration</text>
+  <text x="840" y="385" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#f59e0b">Mini Apps</text>
+  <text x="840" y="415" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">Native support</text>
+
+  <text x="1140" y="610" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#8b949e" text-anchor="end">degen0x.com</text>
+
+  <line x1="60" y1="625" x2="1140" y2="625" stroke="url(#mainGradient)" stroke-width="2" opacity="0.5"/>
+</svg>

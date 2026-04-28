@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="50%" style="stop-color:#0a1a2e"/>
+      <stop offset="100%" style="stop-color:#0a2e1a"/>
+    </linearGradient>
+    <linearGradient id="accentTeal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="accentLime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#84cc16"/>
+      <stop offset="100%" style="stop-color:#a3e635"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="40" x2="1200" y2="40" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="80" x2="1200" y2="80" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="160" x2="1200" y2="160" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="280" x2="1200" y2="280" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="320" x2="1200" y2="320" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="440" x2="1200" y2="440" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="520" x2="1200" y2="520" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="560" x2="1200" y2="560" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="60" y1="0" x2="60" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="180" y1="0" x2="180" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="240" y1="0" x2="240" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="360" y1="0" x2="360" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="420" y1="0" x2="420" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="480" y1="0" x2="480" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="540" y1="0" x2="540" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#22d3ee" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="300" cy="200" r="130" fill="#06b6d4" opacity="0.06" filter="url(#glow2)"/>
+  <circle cx="900" cy="400" r="110" fill="#84cc16" opacity="0.06" filter="url(#glow2)"/>
+  <circle cx="600" cy="100" r="90" fill="#22d3ee" opacity="0.04" filter="url(#glow2)"/>
+
+  <!-- Top badge -->
+  <rect x="60" y="40" width="280" height="28" rx="14" fill="#06b6d4" opacity="0.15"/>
+  <text x="200" y="59" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#06b6d4" text-anchor="middle" letter-spacing="2">DePIN · MACHINE ECONOMY · 2026</text>
+
+  <!-- Main headline -->
+  <text x="60" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="#ffffff">peaq — The L1 Where</text>
+  <text x="60" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="#22d3ee">Machines Earn Crypto</text>
+
+  <!-- Three feature cards -->
+  <!-- Machine IDs -->
+  <rect x="60" y="210" width="345" height="120" rx="12" fill="#111827" stroke="#06b6d4" stroke-width="1.5" opacity="0.95"/>
+  <text x="80" y="245" font-family="system-ui, sans-serif" font-size="22" fill="#06b6d4">🤖</text>
+  <text x="110" y="245" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Machine IDs</text>
+  <text x="80" y="270" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Self-sovereign identity for devices.</text>
+  <text x="80" y="290" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Every machine gets a verifiable onchain ID.</text>
+  <text x="80" y="315" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#06b6d4">DEVICE IDENTITY LAYER</text>
+
+  <!-- Machine DeFi -->
+  <rect x="425" y="210" width="345" height="120" rx="12" fill="#111827" stroke="#84cc16" stroke-width="1.5" opacity="0.95"/>
+  <text x="445" y="245" font-family="system-ui, sans-serif" font-size="22" fill="#84cc16">⚡</text>
+  <text x="475" y="245" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Machine DeFi</text>
+  <text x="445" y="270" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Lending, staking, and micropayments</text>
+  <text x="445" y="290" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">between autonomous machines.</text>
+  <text x="445" y="315" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#84cc16">M2M FINANCE</text>
+
+  <!-- 50+ DePIN Projects -->
+  <rect x="790" y="210" width="345" height="120" rx="12" fill="#111827" stroke="#fbbf24" stroke-width="1.5" opacity="0.95"/>
+  <text x="810" y="245" font-family="system-ui, sans-serif" font-size="22" fill="#fbbf24">🌐</text>
+  <text x="840" y="245" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">50+ DePIN Projects</text>
+  <text x="810" y="270" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Wireless, compute, robotics, sensors.</text>
+  <text x="810" y="290" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">The machine ecosystem on one chain.</text>
+  <text x="810" y="315" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#fbbf24">FULL ECOSYSTEM</text>
+
+  <!-- Machine economy flow -->
+  <rect x="60" y="360" width="1080" height="70" rx="10" fill="#111827" opacity="0.7"/>
+
+  <rect x="90" y="375" width="180" height="40" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1"/>
+  <text x="180" y="400" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#06b6d4" text-anchor="middle">IoT Devices</text>
+
+  <text x="295" y="400" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">→</text>
+
+  <rect x="320" y="375" width="180" height="40" rx="8" fill="#1e293b" stroke="#84cc16" stroke-width="1"/>
+  <text x="410" y="400" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#84cc16" text-anchor="middle">peaq L1</text>
+
+  <text x="525" y="400" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">→</text>
+
+  <rect x="550" y="375" width="180" height="40" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="1"/>
+  <text x="640" y="400" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fbbf24" text-anchor="middle">Machine DeFi</text>
+
+  <text x="755" y="400" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">→</text>
+
+  <rect x="780" y="375" width="180" height="40" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1"/>
+  <text x="870" y="400" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#a78bfa" text-anchor="middle">Crypto Rewards</text>
+
+  <text x="985" y="400" font-family="system-ui, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">→</text>
+
+  <rect x="1010" y="375" width="110" height="40" rx="8" fill="#1e293b" stroke="#22d3ee" stroke-width="1"/>
+  <text x="1065" y="400" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#22d3ee" text-anchor="middle">You Earn</text>
+
+  <!-- Stat panels -->
+  <rect x="60" y="460" width="255" height="50" rx="8" fill="#1e293b"/>
+  <text x="80" y="483" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">MACHINE ECONOMY BY 2030</text>
+  <text x="275" y="494" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#06b6d4" text-anchor="end">$2.2T</text>
+
+  <rect x="335" y="460" width="255" height="50" rx="8" fill="#1e293b"/>
+  <text x="355" y="483" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">DePIN PROJECTS ON PEAQ</text>
+  <text x="550" y="494" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#84cc16" text-anchor="end">50+</text>
+
+  <rect x="610" y="460" width="255" height="50" rx="8" fill="#1e293b"/>
+  <text x="630" y="483" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">POLKADOT SDK</text>
+  <text x="825" y="494" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fbbf24" text-anchor="end">Interoperable</text>
+
+  <rect x="885" y="460" width="255" height="50" rx="8" fill="#1e293b"/>
+  <text x="905" y="483" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">MACHINE MICROPAYMENTS</text>
+  <text x="1100" y="494" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#a78bfa" text-anchor="end">$0.001/tx</text>
+
+  <!-- CTA bar -->
+  <rect x="0" y="545" width="1200" height="85" fill="#111827" opacity="0.9"/>
+  <rect x="0" y="545" width="1200" height="2" fill="url(#accentTeal)"/>
+  <text x="60" y="585" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Read the full guide</text>
+  <text x="60" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#06b6d4">degen0x.com/learn/peaq-depin-robotics-guide-2026</text>
+  <text x="700" y="585" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Also read:</text>
+  <text x="700" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#84cc16">degen0x.com/learn/ai-depin-crypto-guide</text>
+  <text x="1140" y="593" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="end">degen0x</text>
+</svg>

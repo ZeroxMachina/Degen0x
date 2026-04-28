@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1a2e"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="180" fill="#8b5cf6" opacity="0.04"/>
+  <circle cx="150" cy="500" r="120" fill="#06b6d4" opacity="0.04"/>
+
+  <!-- Logo area -->
+  <text x="60" y="56" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="0.05em">DEGEN0X</text>
+
+  <!-- Main title -->
+  <text x="60" y="130" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">AI Tokens Break Away</text>
+  <text x="60" y="180" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">From the Pack</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="220" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">30% sector rally while 38% of altcoins sit near all-time lows</text>
+
+  <!-- Token performance cards -->
+  <!-- TAO Card -->
+  <rect x="60" y="260" width="340" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="60" y="260" width="340" height="140" rx="16" fill="url(#greenGrad)" opacity="0.3"/>
+  <text x="90" y="305" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">BITTENSOR</text>
+  <text x="90" y="345" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="#22c55e" filter="url(#glow)">TAO +90%</text>
+  <text x="90" y="378" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">Decentralized ML subnets</text>
+
+  <!-- RENDER Card -->
+  <rect x="430" y="260" width="340" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="430" y="260" width="340" height="140" rx="16" fill="url(#greenGrad)" opacity="0.2"/>
+  <text x="460" y="305" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">RENDER</text>
+  <text x="460" y="345" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="#22c55e" filter="url(#glow)">RNDR +40%</text>
+  <text x="460" y="378" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">GPU compute marketplace</text>
+
+  <!-- FET Card -->
+  <rect x="800" y="260" width="340" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="800" y="260" width="340" height="140" rx="16" fill="url(#greenGrad)" opacity="0.15"/>
+  <text x="830" y="305" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">ASI ALLIANCE</text>
+  <text x="830" y="345" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="#22c55e" filter="url(#glow)">FET +24%</text>
+  <text x="830" y="378" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">Merged 3 AI protocols</text>
+
+  <!-- Catalyst pills -->
+  <rect x="60" y="430" width="220" height="36" rx="18" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="100" y="453" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#a78bfa">🧠 NVIDIA $1T Demand</text>
+
+  <rect x="300" y="430" width="230" height="36" rx="18" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="340" y="453" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22d3ee">⚡ Agentic AI Systems</text>
+
+  <rect x="550" y="430" width="260" height="36" rx="18" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="590" y="453" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">💎 Decentralized Compute</text>
+
+  <!-- Market context bar -->
+  <rect x="60" y="490" width="1080" height="50" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="90" y="521" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">BTC $68,500</text>
+  <text x="250" y="521" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">ETH $2,137</text>
+  <text x="400" y="521" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ef4444">F&amp;G 8/100</text>
+  <text x="530" y="521" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">AI Sector +30%</text>
+  <text x="710" y="521" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">Stablecoins $316B ATH</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="560" width="1200" height="70" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="600" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026</text>
+  <text x="1060" y="600" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">Apr 2026</text>
+</svg>

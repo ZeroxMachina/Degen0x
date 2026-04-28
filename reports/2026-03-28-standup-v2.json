@@ -1,0 +1,76 @@
+{
+  "date": "2026-03-28",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 2 standup (Mar 28 evening). BTC $66,000–$66,194 (flat since morning, $66K support holding). ETH $1,976–$1,997 (sub-$2K day 3+). F&G 12 (Extreme Fear, 49+ day streak). All 6 agents completed first full rotation today ($497 human-equiv). 273 uncommitted files (+2 from eod). Deploy remains P0 for 12th consecutive cycle. SEC Mar 27 ruling results still mixed — 91 apps across 24 tokens, outcomes emerging gradually. March ETF inflows slowed to $890M (vs $3.3B Feb).",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: $66,000–$66,194. Flat since morning standup ($66,008–$66,350). Testing critical $66K support for 2nd day. Down 24.6% YTD, 48% from Oct 2025 ATH. Iran/geopolitical tensions remain primary macro headwind. Institutional holders reportedly absorbing supply at these levels.",
+          "ETH: $1,976–$1,997. Sub-$2K for 3rd+ consecutive day. ETH/BTC at 0.0301 (lowest since Feb 2024). Market cap ~$233B. $253M mystery whale accumulation since Mar 1.",
+          "F&G INDEX: 12 (Extreme Fear). 49+ consecutive days — longest streak since post-FTX Oct 2022. BTC dominance rising to 55.9% = classic risk-off rotation. Historically, sustained sub-15 readings precede 30-90 day reversals with median +38.4% BTC return.",
+          "ETF FLOWS: March total $890M (sharp decline from Feb's record $3.3B). $1.47B inflows Mar 9-17, then $129M outflow on FOMC day (Mar 18). Significant reallocation toward tokenized RWAs — especially U.S. Treasury products. Combined AUM ~$128B across all U.S. spot BTC ETFs.",
+          "SEC ETF RULING (Mar 27): 91 applications across 24 tokens had final deadline. Results emerging gradually — not a single big announcement. XRP spot ETFs already live ($1.44B cumulative inflows). SOL/LTC staking ETFs trading. 16 tokens classified as digital commodities (Mar 17). Remaining approvals/extensions/rejections still trickling out.",
+          "DELTA FROM LAST CYCLE (eod): BTC stable ($66K range unchanged). ETH stable (sub-$2K unchanged). F&G unchanged at 12. Uncommitted files 271→273 (+2, community draft assets). No new commits. No new pages published. Market in holding pattern."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE 2 OF MARCH 28. First full rotation (all 6 agents) completed earlier today. This standup opens cycle 2. Yesterday (Mar 27) completed 9 full rotations across 47 agent runs totaling ~$3,795 human-equiv.",
+          "WHAT SHIPPED TODAY (CYCLE 1): 2 new learn guides (Citrea Bitcoin ZK rollup, Unichain Uniswap L2) built with full SEO. 2 pages promoted from queue (Railgun privacy DeFi, No-code AI trading agents). 4 OG images created. UX fixes on 2 pages. 4 social posts drafted (#211-216 w/ whale accumulation narrative). Newsletter v35. 2 SVG social cards. All 6 automated reports written.",
+          "CARRY-OVER BLOCKERS: (1) Deploy — 273 uncommitted files (242 untracked + 31 modified), 12th cycle flagging P0. (2) 2 PUBLISH_QUEUE items blocked (wallet security slug mismatch + restaking no page.tsx). (3) 105 legacy published slugs missing page.tsx. (4) 142 TS errors in 5 files (stable). (5) 17 duplicate slugs in PUBLISHED_PAGES (cosmetic). (6) Full build OOM (Bus error) — Vercel should handle but untested.",
+          "GIT STATUS: HEAD at 21aaf5b. No new commits since. 273 files pending (was 157 at Mar 27 day-start → 250 end of Mar 27 → 257 Mar 28 morning → 271 eod → 273 now). All changes additive.",
+          "PUBLISHED PAGES: 577 live (was 556 at morning standup — community report updated count). Content velocity: ~4 pages/day average this week."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [CRITICAL, 12th CONSECUTIVE CYCLE]: 273 uncommitted files. This is now a 2-day backlog spanning 7+ full agent rotations. Every learn page, OG image, UX fix, and promoted page from 50+ agent runs is invisible to production. Google cannot index, users cannot see. One git commit + Vercel push unlocks everything. Jefe: this is the single highest-leverage 5-minute action possible.",
+          "PRIORITY 2 — SEC RULING REACTIVE CONTENT: Mar 27 was the biggest ETF decision day in crypto history. Results are still emerging but the news window is NOW. Build: 'SEC March 27 ETF Ruling: Full Breakdown', 'Which Crypto ETFs Got Approved in 2026', 'What SOL/LTC/DOGE ETF Decisions Mean'. Every hour of delay = lost search intent capture.",
+          "PRIORITY 3 — EXTREME FEAR + WHALE NARRATIVE: F&G at 12 for 49+ days while 270K BTC whale accumulation is the biggest since 2013. This divergence (smart money buying while retail panics) is a powerful content narrative. Our whale tracker, fear-greed timeline, and DCA calculator are already top performers — double down with fresh guides and social amplification."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — 273 files pending deploy (CRITICAL)", "pct": 15, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "577 total (+21 from morning count)", "pct": 98, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "2 pages blocked (slug mismatch + no page.tsx)", "pct": 40, "color": "#f59e0b" },
+          { "label": "Pages Built Today", "value": "4 (Citrea, Unichain, Railgun, AI Agents)", "pct": 100, "color": "#4ade80" },
+          { "label": "OG Images Created Today", "value": "4 + 2 SVG social cards", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Posts Drafted Today", "value": "6 tweets (#211-216) + Discord/TG recap + Newsletter v35", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "273 (242 untracked + 31 modified)", "pct": 5, "color": "#ef4444" },
+          { "label": "Page.tsx Coverage", "value": "~82% (451/556 published slugs)", "pct": 82, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6/6 (correct cache TTLs)", "pct": 100, "color": "#4ade80" },
+          { "label": "TS Errors", "value": "142 in 5 files (stable)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$66,000–$66,194 ($66K support holding)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "$1,976–$1,997 (sub-$2K, day 3+)", "pct": 35, "color": "#ef4444" },
+          { "label": "Fear & Greed", "value": "12 (Extreme Fear — 49+ day streak)", "pct": 12, "color": "#ef4444" },
+          { "label": "ETF Flows (March)", "value": "$890M (down from $3.3B Feb)", "pct": 27, "color": "#f59e0b" },
+          { "label": "SEC ETF Ruling", "value": "Results trickling — XRP/SOL live, rest TBD", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$542 (1 full rotation $497 + this standup $45)", "pct": 5, "color": "#4ade80" },
+          { "label": "Agents Ran Today (total)", "value": "7 runs (standup×2 + build + publish + design + community + eod)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — Chrome fetch to api.resend.com failed (CORS/egress block from sandboxed browser). Same infrastructure limitation as all previous cycles. Manual send or allowlist change needed."
+  }
+}

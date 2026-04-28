@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-23",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audited and polished today's two build-cycle pages (Solana Firedancer Guide 2026, Bitcoin Covenants & OP_CAT Guide 2026). Created OG images for both, added ToC hover underlines, focus-visible states for related links, and mobile-responsive timeline grid.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added hover underline on Table of Contents links (toc-link class) for both pages — improves discoverability of clickable items",
+          "Added focus-visible styling on related article links for both pages — keyboard navigation now shows same highlight as hover (background + border accent + lift)",
+          "Added mobile-responsive timeline grid on Firedancer page — grid-template-columns shrinks from 100px to 80px at 480px breakpoint to prevent text clipping",
+          "Both pages already had solid accessibility: focus-visible outlines on all links/buttons, aria-labels on tables and breadcrumbs, semantic HTML structure",
+          "Both pages use responsive grids (repeat(auto-fit, minmax(...))) and clamp() for fluid typography — mobile layout verified as solid",
+          "Both pages have table-scroll-hint for mobile comparison tables and overflowX: auto with WebkitOverflowScrolling: touch",
+          "Both pages use inline breadcrumbs rather than the shared Breadcrumb component (minor inconsistency, not blocking — consistent with other learn pages)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-solana-firedancer-guide-2026.svg (1200x630) — dark theme with Solana green/purple gradient title, 3 key stats (1M+ TPS, 20%+ adoption, +18-28 bps rewards), tile architecture diagram (5 tiles with connections), performance comparison bars (Firedancer vs Agave), category badges",
+          "OG image: og-bitcoin-covenants-opcat-guide-2026.svg (1200x630) — dark theme with Bitcoin orange/blue gradient title, 4 proposal pills (OP_CAT/OP_CTV/CSFS/LNHANCE), 3 use case cards (Vaults/Bridges/DEX), covenant enforcement flow diagram (UTXO→Verify→Allow/Block), category badges"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/solana-firedancer-guide-2026 — 829 lines, 8 sections + FAQ, comparison table, architecture tiles grid, milestone timeline. UX: solid. Enhanced with ToC hover underlines, related link focus-visible, and mobile timeline fix.",
+          "/learn/bitcoin-covenants-opcat-guide-2026 — 797 lines, 8 sections + FAQ, 4-column comparison table, proposal cards, use case grid. UX: solid. Enhanced with ToC hover underlines and related link focus-visible."
+        ]
+      },
+      {
+        "title": "Notes",
+        "items": [
+          "Pages from previous design report still missing OG images: megaeth-guide-2026, nftfi-nft-finance-guide-2026, story-protocol-ip-tokenization-guide, solana-blinks-actions-guide-2026, bitcoin-supply-shock-guide-2026 — recommend addressing in next design cycle",
+          "Both new pages reference OG PNG in metadata (og-*-guide-2026.png) but SVGs were created — PNG conversion needed for production social previews"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

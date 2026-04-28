@@ -1,0 +1,70 @@
+{
+  "date": "2026-03-29",
+  "block": "standup",
+  "cycle": "v4",
+  "report": {
+    "status": "completed",
+    "summary": "Fourth standup of Mar 29. Three full rotations complete today (15 agent runs). BTC nudging up ~$66,194-$66,943, ETH ~$1,995 stable, F&G 10-25 (extreme fear 51+ days). 421 uncommitted files (Day 5 imminent). 2 new learn pages built this rotation (passive income + beginners guide), publish queue emptied to 0 active, 3 UX fixes + 2 OG images + 3 tweets + Q1 scorecard SVG shipped. Deploy remains existential P0.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: ~$66,194–$66,943 (slight uptick from v3's $66,008–$66,194). MetaMask spot $66,194, CoinDesk showing $66,943. Holding above $66K for 5th consecutive day. Iran tensions + oil >$100 still headwinds but whale accumulation continues — exchange reserves at 7-year lows.",
+          "ETH: ~$1,995 (flat from v3). Weekly range $1,950–$2,120. Down 60% from ATH $4,951 (Aug 2025). 24h volume $3.78B. ETH/BTC ratio ~0.030 still depressed.",
+          "F&G INDEX: CoinMarketCap 25 (Extreme Fear), Blockchain Magazine 12 (Mar 28), SpotedCrypto 14 (Mar 26). Extended streak now 51+ days — longest since FTX collapse. No change from v3.",
+          "DELTA FROM v3 STANDUP: BTC slightly higher ($66,194-$66,943 vs $66,008-$66,194). ETH flat ($1,995). F&G unchanged. Uncommitted files 420→421 (+1). Page.tsx 1,233 (stable from EOD v3). Published slugs 583 unique (stable). PUBLISH_QUEUE emptied to 0 active items."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "THREE FULL ROTATIONS COMPLETE TODAY: 15 agent runs since midnight (3× standup, 2× build, 1× publish, 3× design, 3× community, 3× eod). This standup starts rotation 4 (16th run).",
+          "WHAT SHIPPED SINCE v3 STANDUP: (1) BUILD v2: 2 new learn pages — Crypto Passive Income Guide 2026 (~3,200 words, staking/restaking/yield farming/lending) and Cryptocurrency Beginners Guide 2026 (~3,200 words, complete onboarding). Both added to PUBLISH_QUEUE. (2) DESIGN v3: 2 OG images (passive income, beginners guide), 3 UX fixes (broken Link JSX in beginners guide, table min-widths for mobile, iOS touch-scroll). (3) COMMUNITY v3: 3 tweets (#243-245: Q1 scorecard thread, NYSE x Securitize, UK donation ban), newsletter v40 addendum, Q1 Scorecard SVG social card. (4) EOD v3: Full QA pass — 147 TS errors (+2 non-blocking), 1,233 page.tsx on disk, 583 unique published slugs, PUBLISH_QUEUE emptied.",
+          "CARRY-OVER BLOCKERS (UNCHANGED): (1) P0 CRITICAL — 421 uncommitted files, HEAD at 21aaf5b since Mar 25 (Day 5 imminent). (2) P1 — 2 blocked queue items (wallet-security slug mismatch, restaking missing page.tsx) — moved to comments, not blocking queue. (3) P2 — 105 legacy slugs missing page.tsx (~82% coverage). (4) P3 — 147 TS errors (non-blocking, +2 from new learn pages). (5) P3 — CoinGecko free tier rate limit risk.",
+          "GIT STATUS: 421 files pending (+1 from v3). 31 files changed, 992 insertions, 595 deletions. All additive — no conflict risk. 2 new learn pages + 2 OG images + 3 UX fixes all in working tree."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [DAY 5 IMMINENT, EXISTENTIAL]: 421 uncommitted files. Every hour = lost indexing for 77+ published slugs, 14+ learn pages (including new passive income + beginners guides), 6+ OG images, UX fixes — all invisible to Google. Jefe action needed: `git add -A && git commit -m 'batch deploy' && git push`. This has been P0 for 4 consecutive standups. Zero build work matters until this ships.",
+          "PRIORITY 2 — Q1 CLOSE CONTENT (TOMORROW IS LAST TRADING DAY): Mar 30 = last trading day of Q1 2026. BTC -24.6% YTD, ETH -60%, SOL -72% — worst Q1 since 2022. 3 tweets queued (#243-245), Q1 Scorecard SVG created, newsletter v40 addendum drafted. Build cycle should produce dedicated Q1 retrospective page. Time-sensitive — every hour of delay = missed SEO window.",
+          "PRIORITY 3 — PROMOTE NEW LEARN PAGES + UNBLOCK 2 QUEUE ITEMS: (a) Promote crypto-passive-income-guide-2026 and cryptocurrency-beginners-guide-2026 from PUBLISH_QUEUE. (b) Fix wallet-security slug mismatch. (c) Scaffold restaking-comparison page.tsx. Clearing these maximizes the next deploy's content payload."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "STALE — 421 files pending, Day 5 imminent (CRITICAL)", "pct": 3, "color": "#ef4444" },
+          { "label": "Published Pages (published-pages.ts)", "value": "~946 (in working tree, not deployed)", "pct": 95, "color": "#f59e0b" },
+          { "label": "Unique Published Slugs (Set)", "value": "583 (verified, 17 dupes removed)", "pct": 60, "color": "#4ade80" },
+          { "label": "Page.tsx Files on Disk", "value": "1,233 (+2 from v3)", "pct": 90, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "0 active (2 blocked in comments)", "pct": 95, "color": "#4ade80" },
+          { "label": "Missing page.tsx (legacy)", "value": "~105 slugs", "pct": 17, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "421 (+1 from v3)", "pct": 3, "color": "#ef4444" },
+          { "label": "TS Errors", "value": "147 in 6 files (non-blocking, +2 from v3)", "pct": 20, "color": "#f59e0b" },
+          { "label": "API Routes", "value": "6/6 healthy on disk", "pct": 100, "color": "#4ade80" },
+          { "label": "BTC Price", "value": "~$66,194–$66,943 (slight uptick)", "pct": 48, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$1,995 (flat, testing $2K support)", "pct": 33, "color": "#f59e0b" },
+          { "label": "Fear & Greed", "value": "10-25 (Extreme Fear, 51+ day streak)", "pct": 12, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (full rotation since v3)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h (all 6 agents)", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: standup $45 + build $233 + publish $55 + design $60 + community $41 + eod $63)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,193 (16 runs: 4×standup $180 + 2×build $466 + 1×publish $55 + 3×design $180 + 3×community $123 + 3×eod $189)", "pct": 10, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — api.resend.com blocked from browser (CORS/Failed to fetch). Same sandbox egress limitation as all previous cycles. Manual send or server-side relay needed."
+  }
+}

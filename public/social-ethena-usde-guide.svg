@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Dark background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="60%" stop-color="#0a1128"/>
+      <stop offset="100%" stop-color="#060b18"/>
+    </linearGradient>
+    <!-- Brand signature gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="50%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <!-- Green glow for yield -->
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Purple glow for DeFi -->
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Cyan glow accent -->
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Card glass -->
+    <linearGradient id="cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.07)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <!-- Logo gradient -->
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="logoGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative glow circles -->
+  <ellipse cx="900" cy="200" rx="320" ry="280" fill="url(#purpleGlow)"/>
+  <ellipse cx="200" cy="450" rx="280" ry="240" fill="url(#greenGlow)"/>
+  <ellipse cx="1050" cy="520" rx="200" ry="180" fill="url(#cyanGlow)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.04" stroke="#6366f1" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#brandGrad)"/>
+
+  <!-- Logo mark (top-left) -->
+  <g filter="url(#logoGlow)" transform="translate(56, 44)">
+    <circle cx="20" cy="20" r="20" fill="url(#logoGrad)" opacity="0.9"/>
+    <text x="20" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="900" fill="#e0e7ff" text-anchor="middle">0x</text>
+  </g>
+  <text x="88" y="70" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#a5b4fc">degen0x</text>
+
+  <!-- Category pill -->
+  <rect x="56" y="108" width="130" height="30" rx="15" fill="rgba(139,92,246,0.2)" stroke="rgba(139,92,246,0.4)" stroke-width="1"/>
+  <text x="121" y="128" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#c4b5fd" text-anchor="middle">DeFi Guide</text>
+
+  <!-- Main title -->
+  <text x="56" y="205" font-family="'Inter', sans-serif" font-size="68" font-weight="900" letter-spacing="-2" fill="url(#titleGrad)" filter="url(#textGlow)">What Is Ethena?</text>
+  <text x="56" y="279" font-family="'Inter', sans-serif" font-size="68" font-weight="900" letter-spacing="-2" fill="#e6edf3">USDe &amp; the Internet Bond</text>
+
+  <!-- Subtitle -->
+  <text x="56" y="330" font-family="'Inter', sans-serif" font-size="22" fill="#8b949e">Delta-hedged synthetic dollar · sUSDe yield explained · $6.7B TVL</text>
+
+  <!-- 3 stat cards -->
+  <!-- Card 1: TVL -->
+  <rect x="56" y="368" width="220" height="108" rx="16" fill="url(#cardGlass)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="166" y="405" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" font-weight="500">Total Value Locked</text>
+  <text x="166" y="445" font-family="'Inter', sans-serif" font-size="34" font-weight="800" fill="#4ade80" text-anchor="middle">$6.7B</text>
+  <text x="166" y="467" font-family="'Inter', sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">March 2026</text>
+
+  <!-- Card 2: sUSDe APY -->
+  <rect x="296" y="368" width="220" height="108" rx="16" fill="url(#cardGlass)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="406" y="405" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" font-weight="500">sUSDe Yield Range</text>
+  <text x="406" y="445" font-family="'Inter', sans-serif" font-size="34" font-weight="800" fill="url(#brandGrad)" text-anchor="middle">10–40%</text>
+  <text x="406" y="467" font-family="'Inter', sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">APY (market-driven)</text>
+
+  <!-- Card 3: Revenue -->
+  <rect x="536" y="368" width="220" height="108" rx="16" fill="url(#cardGlass)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="646" y="405" font-family="'Inter', sans-serif" font-size="13" fill="#8b949e" text-anchor="middle" font-weight="500">Protocol Revenue (90d)</text>
+  <text x="646" y="445" font-family="'Inter', sans-serif" font-size="34" font-weight="800" fill="#67e8f9" text-anchor="middle">$79M</text>
+  <text x="646" y="467" font-family="'Inter', sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">#4 stablecoin issuer</text>
+
+  <!-- How it works mini-diagram (right side) -->
+  <rect x="800" y="100" width="360" height="430" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="980" y="140" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#c4b5fd" text-anchor="middle" letter-spacing="1">HOW IT WORKS</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1 -->
+  <rect x="824" y="158" width="312" height="64" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="840" y="182" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#a5b4fc">STEP 1</text>
+  <text x="840" y="200" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Deposit ETH → mint USDe</text>
+  <text x="840" y="215" font-family="'Inter', sans-serif" font-size="12" fill="#8b949e">stETH used as collateral</text>
+
+  <!-- Arrow -->
+  <line x1="980" y1="222" x2="980" y2="242" stroke="#4f46e5" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="974,238 980,250 986,238" fill="#4f46e5"/>
+
+  <!-- Step 2 -->
+  <rect x="824" y="252" width="312" height="64" rx="12" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="840" y="276" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#67e8f9">STEP 2</text>
+  <text x="840" y="294" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Ethena shorts $ETH perp</text>
+  <text x="840" y="309" font-family="'Inter', sans-serif" font-size="12" fill="#8b949e">Delta-neutral hedge → stable $1 peg</text>
+
+  <!-- Arrow -->
+  <line x1="980" y1="316" x2="980" y2="336" stroke="#0891b2" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="974,332 980,344 986,332" fill="#0891b2"/>
+
+  <!-- Step 3 -->
+  <rect x="824" y="346" width="312" height="64" rx="12" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="840" y="370" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#4ade80">STEP 3</text>
+  <text x="840" y="388" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#e6edf3">Stake USDe → sUSDe</text>
+  <text x="840" y="403" font-family="'Inter', sans-serif" font-size="12" fill="#8b949e">Earn staking yield + funding rates</text>
+
+  <!-- Arrow -->
+  <line x1="980" y1="410" x2="980" y2="430" stroke="#22c55e" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="974,426 980,438 986,426" fill="#22c55e"/>
+
+  <!-- Result badge -->
+  <rect x="840" y="440" width="280" height="64" rx="12" fill="rgba(251,191,36,0.12)" stroke="rgba(251,191,36,0.35)" stroke-width="1"/>
+  <text x="980" y="465" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#fbbf24" text-anchor="middle">RESULT: Internet Bond</text>
+  <text x="980" y="483" font-family="'Inter', sans-serif" font-size="13" fill="#e6edf3" text-anchor="middle">Dollar-stable · Yield-bearing</text>
+  <text x="980" y="498" font-family="'Inter', sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">No migration needed</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="598" width="1200" height="32" fill="rgba(255,255,255,0.025)"/>
+  <rect x="0" y="598" width="1200" height="1" fill="rgba(255,255,255,0.08)"/>
+  <text x="56" y="619" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#6366f1">degen0x.com/learn/ethena-usde-guide</text>
+  <text x="1144" y="619" font-family="'Inter', sans-serif" font-size="14" fill="#6e7681" text-anchor="end">degen0x.com</text>
+</svg>

@@ -1,0 +1,96 @@
+{
+  "date": "2026-03-16",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "EOD v16 cycle-close (Mar 16): Quiet cycle — no new commits since Day 42 publish. Morpho Protocol guide (build-v14) sitting in working tree with 468 modified files blocked by git index.lock. TS errors steady at 42 (2 files). Rate limiter still 0/6 — 12th consecutive flag, FOMC T-2. All 6 API route files structurally healthy. PUBLISH_QUEUE at 2 items (stablechains + crypto-index-funds).",
+    "sections": [
+      {
+        "title": "QA Sweep",
+        "items": [
+          "No new commits since last cycle (latest: cb65a9d — Day 42 publish). All recent work trapped in working tree by git index.lock.",
+          "Morpho Protocol guide (build-v14) scaffolded with page.tsx + MorphoVaultExplorer.tsx interactive component — sitting uncommitted.",
+          "PUBLISH_QUEUE: 2 items — /learn/stablechains-guide-2026 (page.tsx ✓) and /learn/crypto-index-funds-guide-2026 (page.tsx ✓, 2 TS errors: unescaped > in JSX).",
+          "PUBLISHED_PAGES: 366 raw slugs, ~353 unique after dedup. ~102 slugs missing page.tsx (~29%) — persistent carry-over, concentrated in /learn, /taxes, /wallets, /investing/best, /blog.",
+          "TypeScript: 42 errors across 2 files — 40 in structured-data.examples.ts (JSX in .ts file, rename to .tsx), 2 in crypto-index-funds-guide-2026/page.tsx. Non-blocking (ignoreBuildErrors: true).",
+          "Lint: next lint misconfigured ('Invalid project directory' error). Not blocking builds but should be fixed.",
+          "Last 10 published pages all have valid page.tsx files — no new regressions this cycle."
+        ]
+      },
+      {
+        "title": "QA Metrics",
+        "metrics": [
+          { "label": "Published slugs (unique)", "value": "353", "pct": 90, "color": "#4ade80" },
+          { "label": "Slugs with page.tsx", "value": "~251/353 (71%)", "pct": 71, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE integrity", "value": "2/2 have page.tsx", "pct": 100, "color": "#4ade80" },
+          { "label": "TS errors (non-blocking)", "value": "42 (2 files)", "pct": 70, "color": "#f59e0b" },
+          { "label": "New regressions this cycle", "value": "0", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline Health",
+        "items": [
+          "/api/prices — CoinGecko /coins/markets, 60s in-memory TTL, s-maxage=60, stale cache fallback ✓",
+          "/api/fear-greed — alternative.me FNG, 600s in-memory TTL, s-maxage=600, no hardcoded fallback ⚠",
+          "/api/trending — CoinGecko /search/trending, 300s in-memory TTL, s-maxage=300, no hardcoded fallback ⚠",
+          "/api/market-metrics — CoinGecko global + FNG aggregated, 60s TTL, Promise.allSettled, FULL hardcoded fallback ✓",
+          "/api/market-dominance — CoinGecko global, 300s in-memory TTL, s-maxage=300, FULL FALLBACK_DATA ✓",
+          "/api/defi-yields — DefiLlama via lib/defillama, HTTP cache only (no in-memory TTL), s-maxage=300, NO fallback — returns 500 on error ⚠",
+          "PERSISTENT FLAG: checkRateLimit() NOT applied to any of the 6 public API routes. Only found in /api/cache-stats (5 refs) and /api/health (20 refs). 12th consecutive cycle flagged. FOMC Wed Mar 18 (T-2) — traffic spike risk on unprotected endpoints."
+        ]
+      },
+      {
+        "title": "Data Pipeline Metrics",
+        "metrics": [
+          { "label": "API routes present", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "Routes with fallback data", "value": "3/6", "pct": 50, "color": "#f59e0b" },
+          { "label": "Routes with rate limiter", "value": "0/6", "pct": 0, "color": "#ef4444" },
+          { "label": "Cache TTL coverage", "value": "5/6 in-memory", "pct": 83, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "DevOps Status",
+        "items": [
+          "Vercel deployment: Last deploy from Day 42 publish (cb65a9d). No new commits — no new deploy triggered or needed.",
+          "Next.js 16.1.6 with --webpack flag. ignoreBuildErrors: true in next.config.ts. No vercel.json (default config).",
+          "git index.lock persists (created Mar 16 13:06) — blocking ALL commits. 468 modified/untracked files in working tree (up from 457 in eod-v15). Critical operational bottleneck growing each cycle.",
+          "Security headers configured: X-DNS-Prefetch-Control, X-Content-Type-Options, Referrer-Policy. Static assets immutable cache (31536000s).",
+          "next lint misconfigured — returns 'Invalid project directory' error. Non-blocking for Vercel but degrades local QA."
+        ]
+      },
+      {
+        "title": "DevOps Metrics",
+        "metrics": [
+          { "label": "Latest deploy live", "value": "Yes (Day 42)", "pct": 100, "color": "#4ade80" },
+          { "label": "Build config health", "value": "OK (ignoreBuildErrors)", "pct": 85, "color": "#4ade80" },
+          { "label": "git index.lock", "value": "BLOCKED (468 files)", "pct": 0, "color": "#ef4444" },
+          { "label": "Vercel trial remaining", "value": "~4 days", "pct": 20, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Project Manager — Cycle Summary",
+        "items": [
+          "QUIET CYCLE — No new commits or deploys since last cycle. Morpho Protocol guide (build-v14) is the latest content asset, sitting uncommitted.",
+          "Community v31 was the latest active workstream: SEC-CFTC MOU regulatory content, BTC $74K fear cycle narrative, Aave V4 launch, Lido V3 strategy, 2 new social SVG cards.",
+          "Today's output: 14 build cycles, 31 community cycles, 13 design cycles, 9 publish cycles, 16 EOD cycles (this is v16). Extremely productive day across all workstreams.",
+          "PUBLISH_QUEUE: 2 items ready. crypto-index-funds needs 2 TS fixes before promotion. Morpho guide not yet in queue (needs commit first).",
+          "CARRY-OVER: git index.lock removal [P0], rate limiter wiring [P0], Vercel payment [P0-Jefe], crypto-index-funds TS fix [P1], defi-yields fallback data [P1], lint config fix [P2], published-pages dedup [P2]."
+        ]
+      },
+      {
+        "title": "Blockers — Jefe Attention Required",
+        "items": [
+          "🔴 [P0] git index.lock — blocking ALL commits since 13:06 today. 468 modified files growing. Must rm .git/index.lock and carefully stage+commit.",
+          "🔴 [P0] Rate limiter: 0/6 public API routes protected. FOMC Wed Mar 18 (T-2). 12th consecutive cycle flagged — highest priority technical debt.",
+          "🔴 [P0] Vercel trial ~4 days remaining — add payment method or risk service interruption.",
+          "🟡 [P1] crypto-index-funds-guide-2026 has 2 TS errors (unescaped > in JSX at lines 531/533) — fix before promoting.",
+          "🟡 [P1] defi-yields API has no fallback data — returns 500 on DefiLlama outage.",
+          "🟡 [P1] next lint misconfigured — 'Invalid project directory' error on npm run lint.",
+          "🟡 ~29% published slugs (102) missing page.tsx — returning 404 to crawlers.",
+          "🟢 [P2] 12 duplicate entries in PUBLISHED_PAGES set — cosmetic cleanup."
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-17",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Day 56 publish cycle: promoted 2 pages from PUBLISH_QUEUE to PUBLISHED_PAGES (Sui Blockchain Guide 2026 + Crypto Portfolio Rebalancing Guide 2026), passed QA, and deployed to production — deployment HmWMpiP7u initializing on Vercel.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/sui-blockchain-guide-2026", "status": "pass" },
+          { "slug": "/learn/crypto-portfolio-rebalancing-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages Exist (page.tsx)", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 Heading", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Meta Title & Description", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "OG Tags", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Twitter Card", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD Structured Data", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumb Component", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Mobile Responsive (overflowX)", "value": "2/2", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko /api/prices", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Cache TTL (prices)", "value": "60s in-mem", "pct": 100, "color": "#4ade80" },
+          { "label": "Stale Fallback", "value": "Present", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama /api/defi-yields", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Cache TTL (yields)", "value": "300s CDN", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy",
+        "metrics": [
+          { "label": "Deployment ID", "value": "HmWMpiP7u", "pct": 100, "color": "#06b6d4" },
+          { "label": "Environment", "value": "Production", "pct": 100, "color": "#4ade80" },
+          { "label": "Status", "value": "Initializing", "pct": 80, "color": "#f59e0b" },
+          { "label": "PUBLISH_QUEUE Remaining", "value": "0 pages", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

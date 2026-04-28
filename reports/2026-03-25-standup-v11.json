@@ -1,0 +1,89 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 11,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v11: MAJOR DELTA — HEAD.lock cleared, batch commit 21aaf5b deployed 170+ pages (18 guides, 5 ecosystem pages, OG images, UX fixes). Uncommitted files 824→13. Published slugs 508→528. index.lock still present. Build-v10 shipped Congressional Tokenization Hearing + BitGo IPO guides (~6,000 words). Community-v10 drafted posts #136–138 (Congress recap, BitGo earnings preview, options $14.16B update). MARKET: BTC $70,602 flat. F&G 11 (Extreme Fear — 46+ days). Congressional tokenization hearing completed with bipartisan positive tone. Thu Mar 27 remains convergence day: $14.16B options expiry + SEC 91 ETF rulings. 1,172 page.tsx files (+2). 58 agent runs today ($4,672). P0 RESOLVED (partially): deploy now possible, index.lock remains.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "🚨 MAJOR DELTA — GIT CRISIS PARTIALLY RESOLVED: HEAD.lock removed. Batch commit 21aaf5b landed at 09:26 UTC — 'batch deploy: 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes'. Uncommitted files dropped from 824 to 13. The 10-day deploy blockade is broken.",
+          "DELTA SINCE v10: Build-v10 shipped 2 new learn guides: Congressional Tokenization Hearing Guide 2026 (~3,000 words, House Financial Services hearing, Modernizing Markets Through Tokenization Act + Capital Markets Technology Modernization Act, $26.48B RWA market) + BitGo IPO Guide (~3,000 words, first crypto custody IPO, $BTGO NYSE, $212.8M raised, FY2025 earnings Mar 26). Both added to PUBLISH_QUEUE (batch 12).",
+          "Community-v10 drafted posts #136 (Congressional hearing recap), #137 (BitGo earnings preview), #138 (Options expiry $14.16B update). 2 SVG social cards (Congress Tokenization Recap, BitGo IPO Earnings). Newsletter v23 addendum v10. Calendar v37 (16 posts Wed-Mon).",
+          "Design-v10 and EOD-v10 completed full cycles (reports filed).",
+          "MARKET (fresh search Mar 25): BTC $70,602 (flat, geopolitical relief rally after Trump postponed Iran strikes 5 days). ETH ~$2,158. F&G 11 (Extreme Fear — 46+ consecutive days below 25). Market cap ~$2.5T. Stablecoins $312B ATH. BTC dominance ~56.5%.",
+          "CATALYST UPDATE: Options expiry revised to $14.16B (max pain $75K, BTC at $70.6K = gravitational pull UP). Congressional tokenization hearing completed today with bipartisan positive tone — Nasdaq tokenized securities already approved, CLARITY Act stablecoin deal done 'in principle'. Thu Mar 27: SEC rules on 91 ETF applications (XRP/SOL/LTC/DOGE spot).",
+          "LOCAL METRICS: 1,172 page.tsx files (+2 from v10). 528 published slugs (+20 from v10 via batch commit). PUBLISH_QUEUE: 2 items (Congressional Tokenization + BitGo IPO). 13 uncommitted files (down from 824). TS errors: ~142 (stable). index.lock persists."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "🟢 BLOCKER RESOLVED [P0]: HEAD.lock cleared. Batch commit 21aaf5b deployed 170+ pages to git. Uncommitted files 824→13. Deploy path is OPEN. index.lock still present but not blocking commits.",
+          "DONE SINCE v10: Build-v10 shipped Congressional Tokenization Hearing + BitGo IPO (2 pages, ~6,000 words). Community-v10 drafted 3 posts (#136–138) + 2 SVG cards + newsletter v10 + calendar v37. Design-v10 + EOD-v10 completed full cycles.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE: 2 items (ready for promotion in next publish cycle). 528 published slugs (+20 via batch). 1,172 page.tsx files. Today's cumulative: 20 guides, 5 ecosystem pages, 24+ OG images, 29+ social posts, 24+ SVG cards, 10+ newsletters, 49+ UX fixes.",
+          "REMAINING BLOCKERS: index.lock still present (.git/index.lock from Mar 25 09:58). Next git add/commit will fail unless removed. Jefe action: rm .git/index.lock.",
+          "CARRY-OVER [P1]: 103+ published slugs missing page.tsx. Ecosystem Pendle page 'use client' — no server Metadata. Rate limiter 0/6 routes. 142 TS errors.",
+          "CARRY-OVER [P2]: 17 duplicate slugs. ~120 learn pages missing OG images. Vercel deploy needed to push commit 21aaf5b to production.",
+          "TODAY'S AGENT RUNS: standup×11, build×9, design×10, community×10, publish×8, eod×10 = 58 total."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — VERCEL DEPLOY + CLEAR index.lock: The batch commit is in git but NOT in production yet. Vercel needs to pick up commit 21aaf5b. Also rm .git/index.lock to unblock future commits. The 170+ pages are committed but users still can't see them until Vercel deploys.",
+          "PRIORITY 2 — PROMOTE PUBLISH_QUEUE (BATCH 12): Congressional Tokenization Hearing + BitGo IPO are queue-ready. Both are time-sensitive — hearing was today, BitGo earnings tomorrow Mar 26. Promote and deploy ASAP for search capture.",
+          "PRIORITY 3 — THURSDAY CONTENT BLITZ: 48 hours to convergence day (Mar 27). $14.16B options expiry + SEC 91 ETF rulings. Ensure fear-greed-timeline, options-calculator, etf-guide, sec-digital-commodities-classification-guide are all in PUBLISHED_PAGES and reachable in production. Community has posts #133–138 scheduled across the event.",
+          "STRATEGIC NOTE: The deploy blockade is broken — this is the single biggest operational improvement in 10 days. If Vercel picks up 21aaf5b, we go from ~338 production pages to 500+. That's a 50% increase in indexed surface area hitting Google right before the biggest catalyst week of Q1 2026. F&G at 11 (Extreme Fear, 46+ days) with $312B stablecoins and $14.16B options = coiled spring. Agent spend today: $4,672 across 58 runs. Marginal cost: ~$0."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel) — needs redeploy for 21aaf5b", "pct": 80, "color": "#f59e0b" },
+          { "label": "Published Slugs", "value": "528 unique (+20 from v10 batch)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (Congressional Tokenization + BitGo IPO)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Batch Commit", "value": "21aaf5b — 170+ pages committed", "pct": 100, "color": "#4ade80" },
+          { "label": "Deploy Gap", "value": "Commit ready, Vercel redeploy needed", "pct": 70, "color": "#f59e0b" },
+          { "label": "Total page.tsx Files", "value": "1,172 (+2 since v10)", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "13 (down from 824!)", "pct": 95, "color": "#4ade80" },
+          { "label": "HEAD.lock", "value": "CLEARED ✓", "pct": 100, "color": "#4ade80" },
+          { "label": "index.lock", "value": "STILL PRESENT — needs manual rm", "pct": 10, "color": "#ef4444" },
+          { "label": "Today's Output", "value": "20 guides, 24+ OG images, 29+ posts, 24+ SVG cards, 49+ UX fixes", "pct": 100, "color": "#4ade80" },
+          { "label": "Git Lock Age", "value": "HEAD.lock resolved, index.lock since 09:58 today", "pct": 60, "color": "#f59e0b" },
+          { "label": "TypeScript Errors", "value": "~142 (stable)", "pct": 15, "color": "#f59e0b" },
+          { "label": "API Rate Limiter", "value": "0/6 core routes covered", "pct": 0, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "$70,602 (flat, geopolitical relief rally)", "pct": 70, "color": "#06b6d4" },
+          { "label": "ETH Price", "value": "~$2,158", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "11 (Extreme Fear — 46+ days)", "pct": 11, "color": "#ef4444" },
+          { "label": "Total Market Cap", "value": "~$2.5T", "pct": 56, "color": "#06b6d4" },
+          { "label": "Stablecoins", "value": "$312B ATH (dry powder)", "pct": 97, "color": "#4ade80" },
+          { "label": "Options Expiry (Fri)", "value": "$14.16B — max pain $75K (BTC below = pull UP)", "pct": 97, "color": "#f59e0b" },
+          { "label": "SEC ETF Deadline", "value": "91 applications — Thu Mar 27 (2 days)", "pct": 95, "color": "#f59e0b" },
+          { "label": "Congress Hearing", "value": "Completed today — bipartisan positive on tokenization", "pct": 100, "color": "#4ade80" },
+          { "label": "Tax Deadline", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 4, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$4,672 (58 runs: standup×11 $495 + build×9 $2,097 + publish×8 $440 + design×10 $600 + community×10 $410 + eod×10 $630)", "pct": 39, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "🎉 Deploy Blockade", "value": "BROKEN — HEAD.lock cleared, 170+ pages committed", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API fetch failed (CORS/network restriction from browser context). Persistent issue across all cycles. Report saved locally."
+  }
+}

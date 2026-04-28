@@ -1,0 +1,58 @@
+{
+  "date": "2026-03-27",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audited 4 new learn guides (Wallet Security, Restaking Comparison, DeFi Lending, DeFi Yield Aggregators), created 2 OG images (1200x630 SVG), and implemented 14 UX refinements including critical bug fixes, semantic HTML, accessibility, and responsive improvements.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "DeFi Lending page: Removed invalid 'use client' directive that conflicted with Next.js metadata export — critical bug fix preventing SSR metadata",
+          "DeFi Lending page: Fixed component imports from wrong path (@/lib/structured-data → individual @/components/* imports)",
+          "DeFi Lending page: Fixed StructuredData prop name from schema={} to data={} matching project convention",
+          "DeFi Lending page: Fixed OG image reference from non-existent og-defi-lending-2026.jpg to new og-defi-lending-protocol-comparison-2026.svg",
+          "DeFi Lending page: Made H1 responsive using clamp(28px, 5vw, 48px) instead of fixed 48px",
+          "DeFi Lending page: Added Home link to Breadcrumb for consistent navigation",
+          "DeFi Lending page: Converted ToC from <div> to semantic <nav> with aria-label",
+          "DeFi Lending page: Wrapped content in semantic <article> tag for SEO and accessibility",
+          "DeFi Lending page: Added role='region', aria-label, tabIndex, and WebkitOverflowScrolling to comparison table for accessible mobile scrolling",
+          "DeFi Yield page: Fixed duplicate style prop bug (React only applies last style prop, losing base styles)",
+          "DeFi Yield page: Added aria-label to ToC nav element",
+          "DeFi Yield page: Wrapped content in semantic <article> tag",
+          "DeFi Yield page: Added role='region', aria-label, tabIndex, and WebkitOverflowScrolling to comparison table",
+          "Wallet Security page: Converted ToC from <div> to semantic <nav> with aria-label"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: defi-lending-protocol-comparison-2026 (1200x630 SVG) — dark theme with protocol TVL bar chart (Aave $40B+, Morpho $5.8B, Compound $3B+, Fluid $1.9B), DeFi/Lending/Comparison badges, $45B+ total lending stat card",
+          "OG image: defi-yield-aggregators-guide-2026 (1200x630 SVG) — dark theme with 4 protocol cards (Yearn $1B+, Beefy $316M+, Pendle $5B+, Sommelier $100M+), DeFi/Yield/Guide badges, APY ranges, $1.7B+ sector stat"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Deferred)",
+        "items": [
+          "Style inconsistency across pages: Lending uses glass callouts with indigo border; Yield uses standard boxes; Wallet uses custom color system — recommend shared article layout component",
+          "FAQ styling differs: Lending uses H3+P blocks; Yield and Wallet use card-based boxes — recommend standardizing",
+          "No data freshness indicators on any page — recommend adding 'Data via CoinGecko' trust signals per design system",
+          "Restaking Comparison exists as data-only (learn-20260327.ts) but has no page.tsx — needs scaffolding or dynamic route rendering"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_created": [
+      "public/og-defi-lending-protocol-comparison-2026.svg",
+      "public/og-defi-yield-aggregators-guide-2026.svg"
+    ],
+    "files_modified": [
+      "src/app/learn/defi-lending-protocol-comparison-2026/page.tsx",
+      "src/app/learn/defi-yield-aggregators-guide-2026/page.tsx",
+      "src/app/learn/crypto-wallet-security-guide-2026/page.tsx"
+    ],
+    "pages_audited": 4,
+    "issues_fixed": 14,
+    "issues_deferred": 4
+  }
+}

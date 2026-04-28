@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAccent4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad4)"/>
+  <rect width="1200" height="8" fill="url(#gradAccent4)"/>
+
+  <!-- decorative circles -->
+  <circle cx="155" cy="170" r="50" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="1075" cy="505" r="50" fill="none" stroke="#4f46e5" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="1080" cy="145" r="40" fill="none" stroke="#0891b2" stroke-width="1" opacity="0.15"/>
+
+  <!-- decorative pie chart and yes/no probability bars -->
+  <g opacity="0.35">
+    <!-- pie chart segments -->
+    <path d="M 1005 380 L 1005 330 A 50 50 0 0 1 1040 345 Z" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <path d="M 1005 380 L 1040 345 A 50 50 0 0 1 1000 425 Z" fill="none" stroke="#0891b2" stroke-width="2"/>
+    <path d="M 1005 380 L 1000 425 A 50 50 0 0 1 1005 330 Z" fill="none" stroke="#d97706" stroke-width="2"/>
+
+    <!-- probability bars -->
+    <g transform="translate(955, 460)">
+      <!-- YES bar -->
+      <text x="0" y="8" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0891b2">YES</text>
+      <rect x="0" y="15" width="65" height="8" fill="none" stroke="#0891b2" stroke-width="1.5" rx="1"/>
+      <rect x="0" y="15" width="48" height="8" fill="#0891b2" opacity="0.3" rx="1"/>
+
+      <!-- NO bar -->
+      <text x="0" y="50" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#d97706">NO</text>
+      <rect x="0" y="57" width="65" height="8" fill="none" stroke="#d97706" stroke-width="1.5" rx="1"/>
+      <rect x="0" y="57" width="32" height="8" fill="#d97706" opacity="0.3" rx="1"/>
+    </g>
+  </g>
+
+  <!-- badge -->
+  <text x="80" y="120" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#06b6d4" opacity="0.9">PREDICTION MARKETS</text>
+
+  <!-- title -->
+  <text x="80" y="260" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">Polymarket &amp; Prediction</text>
+  <text x="80" y="310" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">Markets Guide 2026</text>
+
+  <!-- subtitle -->
+  <text x="80" y="370" font-family="Inter, sans-serif" font-size="17" fill="#8b949e">Betting on outcomes with crypto — how prediction markets work</text>
+
+  <!-- degen0x branding -->
+  <text x="1120" y="600" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="end" opacity="0.8">degen0x.com</text>
+
+  <!-- bottom gradient line -->
+  <rect y="622" width="1200" height="8" fill="url(#gradAccent4)" opacity="0.5"/>
+</svg>

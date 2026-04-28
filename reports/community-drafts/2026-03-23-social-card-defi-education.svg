@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0a1228"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0.08"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.08"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.08"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Ambient glow circles -->
+  <circle cx="200" cy="300" r="200" fill="#4f46e5" opacity="0.06" filter="url(#softglow)"/>
+  <circle cx="1000" cy="350" r="180" fill="#0891b2" opacity="0.05" filter="url(#softglow)"/>
+  <circle cx="600" cy="500" r="150" fill="#d97706" opacity="0.04" filter="url(#softglow)"/>
+
+  <!-- Grid pattern overlay -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Logo area -->
+  <g transform="translate(60, 40)">
+    <circle cx="16" cy="16" r="16" fill="#4f46e5" opacity="0.8"/>
+    <text x="16" y="21" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">0x</text>
+    <text x="42" y="22" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">degen0x</text>
+  </g>
+
+  <!-- Badge -->
+  <rect x="60" y="85" width="130" height="28" rx="14" fill="#8b5cf6" opacity="0.2"/>
+  <rect x="60" y="85" width="130" height="28" rx="14" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+  <text x="125" y="104" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#a78bfa" text-anchor="middle">DeFi Education</text>
+
+  <!-- Main title -->
+  <text x="60" y="165" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">The DeFi Encyclopedia</text>
+  <text x="60" y="215" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#8b949e">Flash Loans · Vaults · Protocols · Strategies</text>
+
+  <!-- Three feature cards -->
+  <!-- Card 1: Flash Loans -->
+  <g transform="translate(60, 255)">
+    <rect width="340" height="160" rx="16" fill="url(#card1)"/>
+    <rect width="340" height="160" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <!-- Lightning icon -->
+    <text x="24" y="42" font-size="24">⚡</text>
+    <text x="56" y="42" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Flash Loans</text>
+    <text x="24" y="72" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Borrow millions with zero collateral.</text>
+    <text x="24" y="92" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Repay in a single transaction block.</text>
+    <!-- Stats row -->
+    <rect x="24" y="112" width="90" height="30" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="69" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">$30B+ Vol</text>
+    <rect x="122" y="112" width="85" height="30" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="164.5" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">0.05% Fee</text>
+    <rect x="215" y="112" width="100" height="30" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="265" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">0 Collateral</text>
+  </g>
+
+  <!-- Card 2: DeFi Vaults -->
+  <g transform="translate(420, 255)">
+    <rect width="340" height="160" rx="16" fill="url(#card2)"/>
+    <rect width="340" height="160" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="24" y="42" font-size="24">🏦</text>
+    <text x="56" y="42" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">DeFi Vaults</text>
+    <text x="24" y="72" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Auto-compounding yield strategies.</text>
+    <text x="24" y="92" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">6 vault types from lending to options.</text>
+    <!-- Stats row -->
+    <rect x="24" y="112" width="90" height="30" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="69" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#06b6d4" text-anchor="middle">$12B+ TVL</text>
+    <rect x="122" y="112" width="85" height="30" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="164.5" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#06b6d4" text-anchor="middle">6 Types</text>
+    <rect x="215" y="112" width="100" height="30" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="265" y="132" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#06b6d4" text-anchor="middle">3-25% APY</text>
+  </g>
+
+  <!-- Card 3: 86 Protocols -->
+  <g transform="translate(780, 255)">
+    <rect width="360" height="160" rx="16" fill="url(#card3)"/>
+    <rect width="360" height="160" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="24" y="42" font-size="24">🌐</text>
+    <text x="56" y="42" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">86 Protocols</text>
+    <text x="24" y="72" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Deep dives on every major protocol.</text>
+    <text x="24" y="92" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Aave · Eigen · Jupiter · Arbitrum + more</text>
+    <!-- Protocol tags -->
+    <rect x="24" y="112" width="60" height="26" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="54" y="130" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle">Aave</text>
+    <rect x="92" y="112" width="80" height="26" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="132" y="130" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle">EigenLayer</text>
+    <rect x="180" y="112" width="65" height="26" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="212.5" y="130" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle">Jupiter</text>
+    <rect x="253" y="112" width="80" height="26" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="293" y="130" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#a78bfa" text-anchor="middle">Arbitrum</text>
+  </g>
+
+  <!-- Bottom section -->
+  <!-- Stat highlights bar -->
+  <g transform="translate(60, 450)">
+    <rect width="1080" height="60" rx="12" fill="rgba(255,255,255,0.03)"/>
+    <rect width="1080" height="60" rx="12" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="80" y="36" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#22c55e" text-anchor="middle">440+</text>
+    <text x="80" y="52" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">PAGES LIVE</text>
+
+    <line x1="180" y1="12" x2="180" y2="48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="290" y="36" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#06b6d4" text-anchor="middle">86</text>
+    <text x="290" y="52" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">PROTOCOL DEEP DIVES</text>
+
+    <line x1="420" y1="12" x2="420" y2="48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="540" y="36" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#818cf8" text-anchor="middle">110+</text>
+    <text x="540" y="52" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">FREE TOOLS</text>
+
+    <line x1="660" y1="12" x2="660" y2="48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="780" y="36" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#f59e0b" text-anchor="middle">174+</text>
+    <text x="780" y="52" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">LEARN GUIDES</text>
+
+    <line x1="900" y1="12" x2="900" y2="48" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="1000" y="36" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#ef4444" text-anchor="middle">$0</text>
+    <text x="1000" y="52" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">COST TO USE</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="540" width="1200" height="90" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="582" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">degen0x.com/ecosystem</text>
+  <text x="60" y="606" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Free crypto tools, guides, and protocol deep dives. No signup required.</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent)"/>
+</svg>

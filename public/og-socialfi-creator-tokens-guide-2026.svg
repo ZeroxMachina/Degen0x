@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0f2e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Accent bar top -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Logo circle top-left -->
+  <circle cx="60" cy="60" r="35" fill="#1a1f3a" stroke="url(#accentGradient)" stroke-width="2" opacity="0.8"/>
+  <text x="60" y="70" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#e6edf3" text-anchor="middle" dominant-baseline="middle">0x</text>
+
+  <!-- Decorative elements - Social tokens -->
+  <!-- Token 1 - top right -->
+  <circle cx="1080" cy="80" r="25" fill="#1a1f3a" stroke="#0891b2" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="1080" cy="80" r="18" fill="none" stroke="#0891b2" stroke-width="1" opacity="0.4"/>
+  <text x="1080" y="88" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0891b2" text-anchor="middle">♣</text>
+
+  <!-- Token 2 - middle right -->
+  <circle cx="1100" cy="300" r="22" fill="#1a1f3a" stroke="#4f46e5" stroke-width="1.5" opacity="0.6"/>
+  <text x="1100" y="308" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#4f46e5" text-anchor="middle">◆</text>
+
+  <!-- Token 3 - bottom right -->
+  <circle cx="1070" cy="530" r="28" fill="#1a1f3a" stroke="#d97706" stroke-width="1.5" opacity="0.6"/>
+  <text x="1070" y="540" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#d97706" text-anchor="middle">★</text>
+
+  <!-- Social icons left side -->
+  <g opacity="0.5">
+    <circle cx="40" cy="300" r="20" fill="none" stroke="#4f46e5" stroke-width="1.5"/>
+    <text x="40" y="308" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4f46e5" text-anchor="middle">f</text>
+  </g>
+
+  <g opacity="0.5">
+    <circle cx="40" cy="380" r="20" fill="none" stroke="#0891b2" stroke-width="1.5"/>
+    <text x="40" y="388" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0891b2" text-anchor="middle">◉</text>
+  </g>
+
+  <g opacity="0.5">
+    <circle cx="40" cy="460" r="20" fill="none" stroke="#d97706" stroke-width="1.5"/>
+    <text x="40" y="468" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706" text-anchor="middle">◈</text>
+  </g>
+
+  <!-- Glass-morphism card background -->
+  <rect x="120" y="100" width="1000" height="380" fill="#ffffff" opacity="0.03" rx="16" backdrop-filter="blur(10px)"/>
+  <rect x="120" y="100" width="1000" height="380" fill="none" stroke="url(#accentGradient)" stroke-width="1" opacity="0.3" rx="16"/>
+
+  <!-- Main title -->
+  <text x="600" y="200" font-family="Inter, sans-serif" font-size="56" font-weight="700" fill="#e6edf3" text-anchor="middle" letter-spacing="-0.5">SocialFi & Creator Tokens Guide</text>
+  <text x="600" y="250" font-family="Inter, sans-serif" font-size="50" font-weight="700" fill="url(#accentGradient)" text-anchor="middle" letter-spacing="-0.5">2026</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="320" font-family="Inter, sans-serif" font-size="24" font-weight="400" fill="#8b949e" text-anchor="middle">The Complete Guide to Social Finance</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="622" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- Footer text -->
+  <text x="1140" y="610" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#8b949e" text-anchor="end">degen0x.com</text>
+
+  <!-- Decorative network nodes -->
+  <circle cx="200" cy="520" r="3" fill="#4f46e5" opacity="0.6"/>
+  <circle cx="280" cy="550" r="2" fill="#0891b2" opacity="0.5"/>
+  <circle cx="350" cy="510" r="3" fill="#d97706" opacity="0.6"/>
+  <line x1="200" y1="520" x2="280" y2="550" stroke="#4f46e5" stroke-width="1" opacity="0.3"/>
+  <line x1="280" y1="550" x2="350" y2="510" stroke="#0891b2" stroke-width="1" opacity="0.3"/>
+</svg>

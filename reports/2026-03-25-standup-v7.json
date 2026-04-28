@@ -1,0 +1,88 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 7,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v7: Delta since v6 — build-v6 shipped Governance Security Attack Vectors + Funding Rate Arbitrage guides (2 pages, ~690 lines, both clean). Design-v6 UX-audited 4 pages, created 2 OG images, applied 9 fixes (BackToTop, risk badge colors, a11y text sizing). Community-v6 drafted posts #128-129 (Congress tokenization hearing LIVE, SEC 16 digital commodities), 2 SVG cards, newsletter v23 addendum v6. Publish-v5 confirmed queue empty, all APIs healthy. EOD-v6 promoted EIP-7702 + Passkey Wallets to PUBLISHED, refilled queue to 2. BTC $70,600 (geopolitical relief rally +5% from Mon low). ETH ~$2,166. F&G 11 (Extreme Fear Day 46+). Git locks Day 10 — 807 files, ~170+ deploy gap. 39 agent runs today ($2,958). P0 unchanged: clear git locks + deploy.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v6: Build-v6 completed Governance Security Attack Vectors (~310 lines, 5 attack vectors, 5 case studies, 6 defense mechanisms, 5 FAQs) + Funding Rate Arbitrage Guide (~380 lines, 3 core strategies, returns table, 5 risk categories, CEX vs DEX comparison, 5 FAQs). Both pages CLEAN — 0 new TS errors. Design-v6 UX-audited all 4 recent pages, created 2 branded OG images, applied 9 fixes including BackToTop components, risk badge color differentiation, min 14px body text a11y compliance.",
+          "Community-v6 drafted posts #128-129: Congress tokenization hearing LIVE ($26.48B RWA on-chain, BlackRock/JPMorgan live products, CLARITY Act), SEC 16 digital commodities classification (BTC/ETH/SOL/XRP + 12 more, 5-category framework). 2 SVG social cards + newsletter v23 addendum v6 (regulatory clarity mega-narrative) + content calendar v33.",
+          "EOD-v6 confirmed: TS errors stable at 142 (no regression). EIP-7702 + Passkey Wallets promoted from queue to PUBLISHED. PUBLISH_QUEUE refilled to 2 items (governance-security, funding-rate-arbitrage). 807 uncommitted files. 502 unique published slugs.",
+          "MARKET UPDATE (fresh web search): BTC ~$70,600 (relief rally +5% from Monday's sub-$68K dip on Middle East de-escalation). ETH ~$2,166 (+$24 from yesterday). F&G Index: 11 (Extreme Fear — 46+ consecutive days, longest since FTX Nov 2022). Total market cap ~$2.50T. ETF inflows: $2.5B March total, 4th straight positive week ($95M week ending Mar 20). YTD outflows shrunk from -$6.4B to near flat.",
+          "KEY NARRATIVE: Regulatory clarity mega-cycle — Congress tokenization hearing TODAY (Mar 25), SEC's 16 digital commodity classifications (Mar 17), CLARITY Act stablecoin deal 99% done. First-ever formal commodity classifications + congressional legitimization converging while F&G sits at 11. $26.48B RWA on-chain. Institutional accumulation ($2.5B ETF inflows) diverges from extreme fear sentiment.",
+          "LOCAL METRICS: 1,164 page.tsx files (+2 from v6). 502 unique published slugs (+2 from v6). PUBLISH_QUEUE: 2 items. Deploy gap: ~170+ pages. 807 uncommitted files. TS errors: 142 (stable). Git locks Day 10."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE v6: Build-v6 shipped Governance Security + Funding Rate Arbitrage (both clean). EOD-v6 promoted EIP-7702 + Passkey Wallets to PUBLISHED_PAGES. Design-v6 created 2 OG images + 9 UX fixes across 4 pages. Community-v6 drafted 2 social posts + 2 SVG cards + newsletter addendum v6 + calendar v33. Publish-v5 confirmed APIs healthy, no queue items to promote at that time.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE: 2 items (governance-security, funding-rate-arbitrage). 502 unique published slugs. 1,164 page.tsx files. Today's total across 6 full cycles + 7 standups: 12 guides, 7 ecosystem pages, 11 OG images, 20 social posts, 16 SVG cards, 6 newsletters, 31+ UX fixes, 1 interactive calculator, global a11y improvements.",
+          "BLOCKER [P0 — DAY 10]: Git locks (.git/HEAD.lock + .git/index.lock). 807 uncommitted files. ALL content since Mar 17 local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push.",
+          "BLOCKER [P1]: 103+ published slugs missing page.tsx (wallets, taxes, investing, learn fundamentals).",
+          "STABLE [P1]: TS errors at 142 across 5 files — no new regression. JSX escaping pattern in lido-v3 (94), structured-data (40), crypto-arbitrage (4), institutional-crypto (2), crypto-index-funds (2).",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes.",
+          "CARRY-OVER [P2]: 17 duplicate slugs in published-pages.ts (519 entries, 502 unique).",
+          "TODAY'S AGENT RUNS: standup×6→7, build×5→5, design×7, community×7, publish×6, eod×7 = 38 + this standup = 39 total."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY (DAY 10 — CRITICAL): 170+ pages trapped behind git locks. Regulatory clarity content is breaking NOW — Congress tokenization hearing TODAY, SEC commodity classifications published Mar 17. Our RWA guide, regulations page, and new governance security content need to be indexable immediately. Every hour without deploy = compounding lost organic traffic during the biggest cluster of crypto regulatory events in US history.",
+          "PRIORITY 2 — PROMOTE GOVERNANCE-SECURITY + FUNDING-RATE-ARBITRAGE: PUBLISH_QUEUE has 2 fresh items. Both are timely topics — governance security (DAO attacks trending after $780M+ lost in 2025) and funding rate arbitrage (relevant in compressed-rate environments). Promote to PUBLISHED_PAGES in next publish cycle. Both pages have clean TS, OG images, a11y compliance, and full SEO metadata.",
+          "PRIORITY 3 — TAX PAGES (APRIL 15 = 21 DAYS): 8 tax-related published slugs have no page.tsx. Tax season search volume peaks in next 2 weeks — hard deadline. After April 15, traffic drops 90%. Next build cycle should prioritize crypto-tax-guide, tax-loss-harvesting, and related pages.",
+          "STRATEGIC NOTE: Regulatory clarity mega-cycle creates once-in-cycle content opportunity: Congress hearing + SEC classifications + CLARITY Act stablecoin deal all converging in Mar-Apr 2026. F&G at 11 for 46+ days while institutional money flows in ($2.5B March ETF inflows). BTC holding $70K despite extreme fear. Options expiry Thu ($13.5B on Deribit) could trigger volatility catalyst. Content library is perfectly positioned — 502 published slugs covering every major narrative — we just need it deployed. Agent spend today: $2,958 across 39 runs. Marginal cost: ~$0. Human equivalent: $2,958."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "502 unique (+2 from v6)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (governance-security, funding-rate-arbitrage)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Pages in Production", "value": "~338 (stale commit e999560, Mar 17)", "pct": 67, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "~170+ pages not live (34% unreachable)", "pct": 34, "color": "#ef4444" },
+          { "label": "Total page.tsx Files", "value": "1,164 (+2 since v6)", "pct": 100, "color": "#4ade80" },
+          { "label": "Missing page.tsx", "value": "103+ published slugs without page.tsx", "pct": 20, "color": "#ef4444" },
+          { "label": "Today's Output", "value": "12 guides, 11 OG images, 20 posts, 16 SVG cards, 31+ UX fixes, global a11y", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "8 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "10 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "807 (stable from v6)", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "142 (stable — no regression)", "pct": 15, "color": "#f59e0b" },
+          { "label": "API Routes", "value": "6/6 present, 0/6 rate-limited", "pct": 75, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$70,600 (relief rally +5% from Mon)", "pct": 70, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$2,166 (+$24 from yesterday)", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "11 (Extreme Fear — Day 46+ streak)", "pct": 11, "color": "#ef4444" },
+          { "label": "Total Market Cap", "value": "~$2.50T", "pct": 55, "color": "#06b6d4" },
+          { "label": "ETF Inflows (Mar)", "value": "$2.5B — 4th straight positive week", "pct": 90, "color": "#4ade80" },
+          { "label": "RWA On-Chain", "value": "$26.48B (+5.25% 30d)", "pct": 85, "color": "#4ade80" },
+          { "label": "Options Expiry", "value": "$13.5B Thu Mar 27 (Deribit)", "pct": 95, "color": "#f59e0b" },
+          { "label": "Tax Deadline", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (all agents)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h (full rotation)", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: standup $45 + build $233 + publish $55 + design $60 + community $41 + eod $63)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$2,958 (39 runs: standup×7 $315 + build×5 $1,165 + publish×6 $330 + design×7 $420 + community×7 $287 + eod×7 $441)", "pct": 25, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "10 days of content trapped — 170+ pages behind git locks", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from Chrome (CORS/network block on api.resend.com). Persistent issue across all cycles. Report saved locally."
+  }
+}

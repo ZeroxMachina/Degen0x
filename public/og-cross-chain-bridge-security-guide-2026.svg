@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Gradient accent bar at top -->
+  <rect width="1200" height="8" fill="url(#gradAccent)"/>
+
+  <!-- Bridge security visualization -->
+  <!-- Left chain -->
+  <circle cx="180" cy="200" r="40" fill="none" stroke="#4f46e5" stroke-width="2" opacity="0.4"/>
+  <line x1="180" y1="160" x2="180" y2="240" stroke="#4f46e5" stroke-width="1" opacity="0.3"/>
+
+  <!-- Security barrier in middle -->
+  <rect x="480" y="140" width="240" height="120" fill="none" stroke="#d97706" stroke-width="3" rx="10" opacity="0.4"/>
+  <text x="600" y="210" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" fill="#d97706" opacity="0.6">🔒 SECURE</text>
+
+  <!-- Right chain -->
+  <circle cx="1020" cy="200" r="40" fill="none" stroke="#0891b2" stroke-width="2" opacity="0.4"/>
+  <line x1="1020" y1="160" x2="1020" y2="240" stroke="#0891b2" stroke-width="1" opacity="0.3"/>
+
+  <!-- Bridge connection -->
+  <line x1="220" y1="200" x2="480" y2="200" stroke="#0891b2" stroke-width="2" opacity="0.5"/>
+  <line x1="720" y1="200" x2="980" y2="200" stroke="#0891b2" stroke-width="2" opacity="0.5"/>
+
+  <!-- Decorative right side -->
+  <circle cx="950" cy="500" r="50" fill="none" stroke="#4f46e5" stroke-width="2" opacity="0.25"/>
+  <circle cx="950" cy="500" r="30" fill="none" stroke="#4f46e5" stroke-width="1" opacity="0.15"/>
+
+  <!-- Title -->
+  <text x="600" y="380" font-family="Inter, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">
+    Cross-Chain Bridge Security
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="440" font-family="Inter, sans-serif" font-size="24" text-anchor="middle" fill="#8b949e">
+    Safe Interoperability and Risk Management
+  </text>
+
+  <!-- Footer branding -->
+  <text x="1150" y="600" font-family="Inter, sans-serif" font-size="16" text-anchor="end" fill="#6e7681">
+    degen0x.com
+  </text>
+
+  <!-- Decorative dots -->
+  <circle cx="100" cy="500" r="4" fill="#d97706" opacity="0.6"/>
+  <circle cx="600" cy="80" r="4" fill="#0891b2" opacity="0.5"/>
+  <circle cx="1100" cy="350" r="4" fill="#4f46e5" opacity="0.5"/>
+</svg>

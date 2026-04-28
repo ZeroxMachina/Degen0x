@@ -1,0 +1,105 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#1a0a0a"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f85149"/>
+      <stop offset="100%" stop-color="#f0883e"/>
+    </linearGradient>
+    <linearGradient id="dangerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accent2)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="1000" cy="150" r="200" fill="#ef4444" opacity="0.04"/>
+  <circle cx="900" cy="450" r="140" fill="#f59e0b" opacity="0.04"/>
+  <circle cx="150" cy="520" r="80" fill="#6366f1" opacity="0.04"/>
+
+  <!-- Warning shield icon -->
+  <g transform="translate(80, 75)" filter="url(#glow2)">
+    <path d="M30 8 L55 18 L55 40 C55 58 45 72 30 78 C15 72 5 58 5 40 L5 18 Z" fill="url(#dangerGrad)" opacity="0.9"/>
+    <text x="30" y="52" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#e6edf3" text-anchor="middle">!</text>
+  </g>
+
+  <!-- degen0x logo text -->
+  <text x="145" y="112" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#818cf8">degen0x</text>
+
+  <!-- Title -->
+  <text x="80" y="210" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="url(#titleGrad2)">DeFi Liquidation</text>
+  <text x="80" y="268" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="url(#titleGrad2)">Protection Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="318" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Tools, strategies &amp; smart vaults to safeguard your positions</text>
+
+  <!-- Protection flow diagram -->
+  <g transform="translate(80, 360)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="200" height="55" rx="10" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-width="1"/>
+    <text x="100" y="23" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f87171" text-anchor="middle">DETECT</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Health Factor Drops</text>
+
+    <!-- Arrow 1 -->
+    <text x="218" y="35" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#6e7681">→</text>
+
+    <!-- Step 2 -->
+    <rect x="245" y="0" width="200" height="55" rx="10" fill="rgba(245,158,11,0.12)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="345" y="23" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#fbbf24" text-anchor="middle">AUTOMATE</text>
+    <text x="345" y="42" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Flash Loan Repay</text>
+
+    <!-- Arrow 2 -->
+    <text x="463" y="35" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#6e7681">→</text>
+
+    <!-- Step 3 -->
+    <rect x="490" y="0" width="200" height="55" rx="10" fill="rgba(34,197,94,0.12)" stroke="#22c55e" stroke-width="1"/>
+    <text x="590" y="23" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#4ade80" text-anchor="middle">PROTECTED</text>
+    <text x="590" y="42" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Position Preserved</text>
+  </g>
+
+  <!-- Platform chips -->
+  <g transform="translate(80, 450)">
+    <rect x="0" y="0" width="120" height="36" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1"/>
+    <text x="60" y="23" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#58a6ff" text-anchor="middle">DeFi Saver</text>
+
+    <rect x="140" y="0" width="100" height="36" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1"/>
+    <text x="190" y="23" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#58a6ff" text-anchor="middle">Morpho</text>
+
+    <rect x="260" y="0" width="100" height="36" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1"/>
+    <text x="310" y="23" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#58a6ff" text-anchor="middle">Kamino</text>
+
+    <rect x="380" y="0" width="100" height="36" rx="8" fill="rgba(88,166,255,0.12)" stroke="#58a6ff" stroke-width="1"/>
+    <text x="430" y="23" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#58a6ff" text-anchor="middle">Pendle</text>
+  </g>
+
+  <!-- Stat box -->
+  <g transform="translate(800, 360)">
+    <rect x="0" y="0" width="320" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="24" y="35" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Feb 2026 Liquidation Wave</text>
+    <text x="24" y="70" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">382 users saved</text>
+    <text x="24" y="105" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#22c55e">91.6%</text>
+    <text x="175" y="105" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">on fees ($7.7M)</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="rgba(255,255,255,0.03)"/>
+  <text x="80" y="621" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6e7681">degen0x.com</text>
+  <text x="1120" y="621" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">March 2026</text>
+</svg>

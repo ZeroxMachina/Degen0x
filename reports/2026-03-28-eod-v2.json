@@ -1,0 +1,63 @@
+{
+  "date": "2026-03-28",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Steady-state cycle: no new deploys since Mar 25 batch deploy; 105 published slugs still missing page.tsx files; 145 TS errors in 6 files (non-blocking, isolated to examples + 5 learn pages); all 6 API routes structurally healthy with proper cache TTLs and fallbacks.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "Page Existence Audit: 577 published slugs, 472 have page.tsx (81.6%), 105 missing — mostly learn guides (28), wallets (19), taxes (15), investing/best (13), blog posts (9), compare/exchanges (1), defi-lending/reviews (1), trading (1)",
+          "TypeScript: 145 errors across 6 files — structured-data.examples.ts (syntax errors, non-blocking example file) + 5 learn guide pages (crypto-arbitrage, crypto-index-funds, institutional-crypto-adoption, lido-v3-stvaults, rwa-yield-vs-defi-yield)",
+          "No new pages built or published this cycle — last commit was Mar 25 batch deploy (170+ pages, 18 guides, 5 ecosystem pages)",
+          "No regressions detected since last cycle — codebase unchanged"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes present and structurally sound: prices (CoinGecko, 60s TTL), fear-greed (Alternative.me, 600s TTL), trending (CoinGecko, 300s TTL), market-metrics (CoinGecko+Alternative.me, 60s TTL), market-dominance (CoinGecko, 300s TTL), defi-yields (DefiLlama, 300s TTL)",
+          "Cache strategy: all routes use in-memory cache + Cache-Control headers with stale-while-revalidate — properly layered",
+          "Fallback handling: all routes have graceful degradation — stale cache served on API failure, static fallback data as last resort",
+          "No rate limit hits observable from code review — health endpoint has 100/min rate limit, others rely on upstream CoinGecko free-tier limits",
+          "Note: health endpoint uses mock service checks (random-based) rather than real upstream pings — acceptable for current stage"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Latest commit: 21aaf5b (Mar 25) — batch deploy of 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes",
+          "No new commits today (Mar 28) — production should match last deploy",
+          "Cannot verify live Vercel deployment status (egress blocked to degen0x.com from this environment)",
+          "No error spikes detectable from codebase review — no new code changes since last successful deploy",
+          "Build health: TS errors exist but are isolated to non-critical files (examples + 5 learn pages) — production build likely unaffected if these files are excluded or ts-nocheck'd"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "Shipped this cycle: No new code shipped — steady state since Mar 25 batch deploy",
+          "Carry-over: 105 published slugs without page.tsx need to be either built or removed from published-pages.ts to avoid 404s on indexed URLs",
+          "Carry-over: 145 TS errors in 6 files should be resolved before next deploy",
+          "Carry-over: 5 learn guide pages with TS errors need fixes (crypto-arbitrage, crypto-index-funds, institutional-crypto-adoption, lido-v3-stvaults, rwa-yield-vs-defi-yield)",
+          "No blockers requiring Jefe's immediate attention — platform is stable"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages (with page.tsx)", "value": "472 / 577", "pct": 82, "color": "#f59e0b" },
+          { "label": "Missing page.tsx", "value": "105 pages", "pct": 18, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "145 in 6 files", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "6 / 6", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Strategy", "value": "All routes cached", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback Coverage", "value": "All routes covered", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "3 days", "pct": 50, "color": "#06b6d4" },
+          { "label": "New Commits Today", "value": "0", "pct": 0, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

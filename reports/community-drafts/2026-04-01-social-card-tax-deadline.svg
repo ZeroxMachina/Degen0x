@@ -1,0 +1,89 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgTax" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0c0f20"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <linearGradient id="brandGradTax" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="urgentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgTax)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#urgentGrad)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="1100" cy="100" r="180" fill="#ef4444" opacity="0.03"/>
+  <circle cx="100" cy="550" r="160" fill="#f59e0b" opacity="0.03"/>
+
+  <!-- Logo -->
+  <text x="60" y="55" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="url(#brandGradTax)">degen0x</text>
+
+  <!-- Deadline badge -->
+  <rect x="880" y="28" width="260" height="44" rx="22" fill="url(#urgentGrad)" opacity="0.9"/>
+  <text x="1010" y="56" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">14 DAYS TO APRIL 15</text>
+
+  <!-- Title section -->
+  <text x="60" y="135" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Crypto Tax Guide 2026</text>
+  <text x="60" y="180" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#8b949e">Every scenario. Every DeFi edge case. One guide.</text>
+
+  <!-- Four taxable event cards in 2x2 grid -->
+  <!-- Card 1: Trading -->
+  <rect x="60" y="220" width="530" height="85" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="105" cy="262" r="24" fill="rgba(239,68,68,0.15)"/>
+  <text x="105" y="269" font-family="Inter, system-ui, sans-serif" font-size="20" text-anchor="middle" fill="#ef4444">$</text>
+  <text x="145" y="252" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Token Swaps &amp; Trading</text>
+  <text x="145" y="278" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Every token-to-token swap is a taxable event — yes, even DEX trades</text>
+
+  <!-- Card 2: DeFi Yield -->
+  <rect x="610" y="220" width="530" height="85" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="655" cy="262" r="24" fill="rgba(245,158,11,0.15)"/>
+  <text x="655" y="269" font-family="Inter, system-ui, sans-serif" font-size="20" text-anchor="middle" fill="#f59e0b">%</text>
+  <text x="695" y="252" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">DeFi Yield &amp; Staking</text>
+  <text x="695" y="278" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Staking rewards taxed at receipt (income) + at sale (capital gains)</text>
+
+  <!-- Card 3: NFTs -->
+  <rect x="60" y="320" width="530" height="85" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="105" cy="362" r="24" fill="rgba(139,92,246,0.15)"/>
+  <text x="105" y="369" font-family="Inter, system-ui, sans-serif" font-size="18" text-anchor="middle" fill="#8b5cf6">N</text>
+  <text x="145" y="352" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">NFT Sales &amp; Royalties</text>
+  <text x="145" y="378" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Collectible tax rules apply — up to 28% rate on long-term gains</text>
+
+  <!-- Card 4: Airdrops -->
+  <rect x="610" y="320" width="530" height="85" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="655" cy="362" r="24" fill="rgba(6,182,212,0.15)"/>
+  <text x="655" y="369" font-family="Inter, system-ui, sans-serif" font-size="18" text-anchor="middle" fill="#06b6d4">A</text>
+  <text x="695" y="352" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Airdrops &amp; Forks</text>
+  <text x="695" y="378" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Taxed as ordinary income at fair market value on receipt date</text>
+
+  <!-- SEC clarification highlight -->
+  <rect x="60" y="430" width="1080" height="70" rx="14" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <rect x="60" y="430" width="4" height="70" rx="2" fill="#22c55e"/>
+  <text x="90" y="460" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#22c55e">NEW IN 2026:</text>
+  <text x="225" y="460" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#e6edf3">SEC confirmed — airdrops, staking rewards, and wrapped non-security tokens are NOT securities</text>
+  <text x="90" y="484" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Token taxonomy published Q1 2026 — first comprehensive classification in history</text>
+
+  <!-- CTA section -->
+  <rect x="60" y="525" width="1080" height="52" rx="12" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="90" y="557" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">Free. No signup. Every crypto tax scenario covered.</text>
+  <text x="1110" y="557" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6366f1" text-anchor="end">Read the full guide →</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="url(#brandGradTax)">degen0x.com</text>
+  <text x="1140" y="616" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">degen0x.com/learn/crypto-tax-guide-2026</text>
+</svg>

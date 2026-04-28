@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-17",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 1 page (yield-bearing-stablecoins) from queue to published (578 total). Data pipelines healthy. Deploy pending — Chrome extension disconnected and Vercel CLI unavailable; manual redeploy via Vercel dashboard required.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/yield-bearing-stablecoins", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Page exists (page.tsx)", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 tag present", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumbs present", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata export", "value": "0/1 (client component)", "pct": 0, "color": "#f59e0b" },
+          { "label": "Build (full)", "value": "OOM in VM", "pct": 0, "color": "#f59e0b" },
+          { "label": "TypeScript (no new errors)", "value": "Pass", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko (3 routes)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama (1 route)", "value": "Fair — no fallback data", "pct": 75, "color": "#f59e0b" },
+          { "label": "Fear & Greed Index", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Circuit Breaker", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer (LRU + TTL)", "value": "Healthy", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Deploy status", "value": "Pending — manual redeploy needed", "pct": 0, "color": "#f59e0b" },
+          { "label": "Reason", "value": "Chrome ext disconnected, no Vercel CLI", "pct": 0, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "Queue is now empty — no pages remaining to publish",
+      "Pre-existing TS errors in structured-data.examples.ts and crypto-index-funds page (42 errors, 2 files) — not related to this publish",
+      "yield-bearing-stablecoins page is a 'use client' component without server-side metadata export — consider adding a layout.tsx with metadata for SEO",
+      "DefiLlama /api/defi-yields has no hardcoded fallback data — recommend adding one"
+    ]
+  }
+}

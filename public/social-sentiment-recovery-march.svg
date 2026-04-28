@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgSent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#14261a"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <filter id="glowG">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgSent)"/>
+
+  <!-- Subtle graph lines -->
+  <g opacity="0.05">
+    <line x1="100" y1="480" x2="1100" y2="480" stroke="#fff" stroke-width="1"/>
+    <line x1="100" y1="380" x2="1100" y2="380" stroke="#fff" stroke-width="1"/>
+    <line x1="100" y1="280" x2="1100" y2="280" stroke="#fff" stroke-width="1"/>
+    <line x1="100" y1="180" x2="1100" y2="180" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Y-axis labels -->
+  <text x="70" y="485" font-family="system-ui, sans-serif" font-size="10" fill="#475569" text-anchor="end">0</text>
+  <text x="70" y="385" font-family="system-ui, sans-serif" font-size="10" fill="#475569" text-anchor="end">25</text>
+  <text x="70" y="285" font-family="system-ui, sans-serif" font-size="10" fill="#475569" text-anchor="end">50</text>
+  <text x="70" y="185" font-family="system-ui, sans-serif" font-size="10" fill="#475569" text-anchor="end">75</text>
+
+  <!-- Fear & Greed path - showing recovery from ATL 5 to 28 -->
+  <!-- Approximate F&G over ~6 weeks: starts ~40, drops to 5, recovers to 28 -->
+  <polyline points="
+    100,320
+    160,340
+    220,370
+    280,400
+    340,430
+    400,460
+    430,475
+    460,470
+    490,460
+    520,455
+    550,440
+    580,435
+    610,430
+    640,425
+    670,410
+    700,405
+    730,410
+    760,400
+    790,395
+    820,400
+    850,390
+    880,385
+    910,380
+    940,375
+    970,370
+    1000,368
+    1030,365
+    1060,360
+    1100,365
+  " fill="none" stroke="#4ade80" stroke-width="3" opacity="0.8"/>
+
+  <!-- ATL marker -->
+  <circle cx="430" cy="475" r="8" fill="#ef4444" opacity="0.8"/>
+  <circle cx="430" cy="475" r="14" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+  <text x="430" y="510" font-family="system-ui, sans-serif" font-size="14" fill="#ef4444" text-anchor="middle" font-weight="bold">ATL: 5</text>
+  <text x="430" y="526" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Feb 6</text>
+
+  <!-- Today marker -->
+  <circle cx="1100" cy="365" r="8" fill="#4ade80" opacity="0.8" filter="url(#glowG)"/>
+  <circle cx="1100" cy="365" r="14" fill="none" stroke="#4ade80" stroke-width="1" opacity="0.4"/>
+  <text x="1100" y="350" font-family="system-ui, sans-serif" font-size="14" fill="#4ade80" text-anchor="middle" font-weight="bold">28</text>
+  <text x="1100" y="400" font-family="system-ui, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Mar 17</text>
+
+  <!-- 25 threshold line -->
+  <line x1="100" y1="380" x2="1100" y2="380" stroke="#f59e0b" stroke-width="1" stroke-dasharray="6 4" opacity="0.4"/>
+  <text x="1110" y="384" font-family="system-ui, sans-serif" font-size="10" fill="#f59e0b">25</text>
+
+  <!-- Title -->
+  <text x="600" y="60" font-family="system-ui, sans-serif" font-size="34" fill="#ffffff" text-anchor="middle" font-weight="bold">Crypto Fear &amp; Greed: Recovery Mode</text>
+  <text x="600" y="95" font-family="system-ui, sans-serif" font-size="18" fill="#94a3b8" text-anchor="middle">38 days of extreme fear — the longest since mid-2022</text>
+
+  <!-- Historical comparisons -->
+  <g transform="translate(120, 120)">
+    <rect x="0" y="0" rx="8" ry="8" width="220" height="50" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+    <text x="15" y="22" font-family="system-ui, sans-serif" font-size="11" fill="#ef4444" font-weight="bold">COVID Crash (2020)</text>
+    <text x="15" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">F&amp;G low: 8 → then +1,400%</text>
+  </g>
+
+  <g transform="translate(370, 120)">
+    <rect x="0" y="0" rx="8" ry="8" width="220" height="50" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-width="1" opacity="0.6"/>
+    <text x="15" y="22" font-family="system-ui, sans-serif" font-size="11" fill="#f59e0b" font-weight="bold">Luna Collapse (2022)</text>
+    <text x="15" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">F&amp;G low: 6 → then +158%</text>
+  </g>
+
+  <g transform="translate(620, 120)">
+    <rect x="0" y="0" rx="8" ry="8" width="220" height="50" fill="#8b5cf6" fill-opacity="0.08" stroke="#8b5cf6" stroke-width="1" opacity="0.6"/>
+    <text x="15" y="22" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6" font-weight="bold">FTX Implosion (2022)</text>
+    <text x="15" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">F&amp;G low: 10 → then +300%</text>
+  </g>
+
+  <g transform="translate(870, 120)">
+    <rect x="0" y="0" rx="8" ry="8" width="220" height="50" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-width="1.5" opacity="0.9"/>
+    <text x="15" y="22" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80" font-weight="bold">NOW (2026)</text>
+    <text x="15" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">F&amp;G low: 5 → recovering...</text>
+  </g>
+
+  <!-- Bottom stats bar -->
+  <rect x="0" y="540" width="1200" height="90" fill="#000" fill-opacity="0.4"/>
+
+  <text x="200" y="570" font-family="system-ui, sans-serif" font-size="24" fill="#4ade80" text-anchor="middle" font-weight="bold">$73,930</text>
+  <text x="200" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">BTC PRICE</text>
+
+  <text x="400" y="570" font-family="system-ui, sans-serif" font-size="24" fill="#06b6d4" text-anchor="middle" font-weight="bold">$767M</text>
+  <text x="400" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">ETF INFLOWS (5-DAY)</text>
+
+  <text x="600" y="570" font-family="system-ui, sans-serif" font-size="24" fill="#f59e0b" text-anchor="middle" font-weight="bold">38 DAYS</text>
+  <text x="600" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">EXTREME FEAR STREAK</text>
+
+  <text x="800" y="570" font-family="system-ui, sans-serif" font-size="24" fill="#8b5cf6" text-anchor="middle" font-weight="bold">5 → 28</text>
+  <text x="800" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">F&amp;G RECOVERY</text>
+
+  <text x="1000" y="570" font-family="system-ui, sans-serif" font-size="24" fill="#22d3ee" text-anchor="middle" font-weight="bold">FOMC</text>
+  <text x="1000" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">DECISION TOMORROW</text>
+
+  <text x="600" y="622" font-family="system-ui, sans-serif" font-size="13" fill="#4ade80" text-anchor="middle" font-weight="bold">degen0x.com</text>
+
+  <!-- Corner accent -->
+  <rect x="0" y="0" width="4" height="630" fill="#4ade80"/>
+</svg>

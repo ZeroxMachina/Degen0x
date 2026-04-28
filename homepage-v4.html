@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>degen0x - Crypto Magazine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-light: #f0f2f8;
+            --bg-dark: #080d1c;
+            --primary: #6366f1;
+            --secondary: #06b6d4;
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --card-border: rgba(0, 0, 0, 0.06);
+            --text-dark: #1a1a2e;
+            --text-light: #666;
+            --border-radius-lg: 20px;
+            --border-radius-sm: 14px;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 3rem 0;
+        }
+
+        .hero-left h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero-left p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 450px;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius-sm);
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #4f46e5;
+            transform: translateY(-2px);
+        }
+
+        /* Featured Card Right */
+        .featured-hero {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .featured-hero h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .featured-hero p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .featured-hero a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .featured-hero a:hover {
+            color: var(--secondary);
+        }
+
+        /* Section */
+        .section {
+            padding: 3rem 0;
+            border-top: 1px solid var(--card-border);
+        }
+
+        .section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        /* Editorial Grid */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .editorial-large {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .editorial-large:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .editorial-large h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .editorial-large p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .editorial-cta {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .editorial-cta:hover {
+            color: var(--secondary);
+        }
+
+        /* Editorial Small Stack */
+        .editorial-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .editorial-small {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .editorial-small:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .editorial-small h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .editorial-small p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Category Strip - Horizontal Scroll */
+        .category-strip {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            scroll-behavior: smooth;
+        }
+
+        .category-strip::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .category-strip::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .category-strip::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+        }
+
+        .category-card {
+            min-width: 140px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+            font-weight: 700;
+        }
+
+        .category-card p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* Trending Guides */
+        .trending-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .trending-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .trending-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .trending-number {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(99, 102, 241, 0.1);
+            line-height: 1;
+        }
+
+        .trending-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+        }
+
+        .guide-pill {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Newsletter Banner */
+        .newsletter-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--border-radius-lg);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .newsletter-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .newsletter-banner p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: var(--border-radius-sm);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+        }
+
+        .newsletter-form button {
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid white;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--card-border);
+            margin-top: 4rem;
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .editorial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-left h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-left h1 {
+                font-size: 1.75rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .trending-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-banner {
+                padding: 2rem 1.5rem;
+            }
+
+            .newsletter-banner h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trending-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">degen0x</div>
+            <nav>
+                <a href="#exchanges">Exchanges</a>
+                <a href="#wallets">Wallets</a>
+                <a href="#learn">Learn</a>
+                <a href="#tools">Tools</a>
+                <a href="#compare">Compare</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-left">
+                <h1>The Definitive Crypto Guide</h1>
+                <p>Independent comparisons and research to help you navigate crypto exchanges, wallets, DeFi, taxes, and more.</p>
+                <a href="#" class="btn btn-primary">Explore Guides</a>
+            </div>
+            <div class="featured-hero">
+                <h3>Best Exchanges of March 2026</h3>
+                <p>Compare Coinbase, Binance, Kraken, and 47 other exchanges. Updated weekly with the latest fees, features, and security ratings.</p>
+                <a href="#">Read the comparison →</a>
+            </div>
+        </section>
+
+        <!-- Editorial Grid -->
+        <section class="section">
+            <div class="editorial-grid">
+                <div class="editorial-large">
+                    <h3>Crypto for Complete Beginners</h3>
+                    <p>Just getting started in crypto? This comprehensive guide covers everything from blockchain basics to setting up your first wallet. Learn about exchanges, security best practices, and how to invest safely without getting scammed.</p>
+                    <a href="#" class="editorial-cta">Read the guide →</a>
+                </div>
+                <div class="editorial-stack">
+                    <div class="editorial-small">
+                        <h3>Hardware Wallet Showdown</h3>
+                        <p>Ledger vs Trezor vs SafePal. We tested all three with a detailed comparison of security, ease of use, and price.</p>
+                        <a href="#" class="editorial-cta">Compare →</a>
+                    </div>
+                    <div class="editorial-small">
+                        <h3>DeFi Yield Guide</h3>
+                        <p>Maximize your crypto returns. Compare APYs across Aave, Compound, Curve, and emerging protocols.</p>
+                        <a href="#" class="editorial-cta">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Strip -->
+        <section class="section">
+            <h2>Browse Categories</h2>
+            <div class="category-strip">
+                <div class="category-card">
+                    <div class="category-icon">💱</div>
+                    <h4>Exchanges</h4>
+                    <p>8 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🔐</div>
+                    <h4>Wallets</h4>
+                    <p>6 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📈</div>
+                    <h4>Investing</h4>
+                    <p>7 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💰</div>
+                    <h4>DeFi</h4>
+                    <p>9 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h4>Taxes</h4>
+                    <p>5 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h4>Learning</h4>
+                    <p>12 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🃏</div>
+                    <h4>NFTs</h4>
+                    <p>4 guides</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💳</div>
+                    <h4>Cards</h4>
+                    <p>6 guides</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Guides -->
+        <section class="section">
+            <h2>Trending Now</h2>
+            <div class="trending-grid">
+                <div class="trending-card">
+                    <div class="trending-number">01</div>
+                    <h3>Best Staking Platforms</h3>
+                    <span class="guide-pill">Investing</span>
+                </div>
+                <div class="trending-card">
+                    <div class="trending-number">02</div>
+                    <h3>Crypto Tax Software</h3>
+                    <span class="guide-pill">Taxes</span>
+                </div>
+                <div class="trending-card">
+                    <div class="trending-number">03</div>
+                    <h3>DeFi Security Best Practices</h3>
+                    <span class="guide-pill">Security</span>
+                </div>
+                <div class="trending-card">
+                    <div class="trending-number">04</div>
+                    <h3>Web3 for Business</h3>
+                    <span class="guide-pill">Web3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Banner -->
+        <section class="newsletter-banner">
+            <h2>Stay Ahead of the Market</h2>
+            <p>Get weekly guides and market insights delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="your@email.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 degen0x. Independent crypto research and comparisons.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Privacy • Terms • Contact</p>
+    </footer>
+</body>
+</html>

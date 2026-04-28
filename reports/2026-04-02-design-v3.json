@@ -1,0 +1,50 @@
+{
+  "date": "2026-04-02",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audit and fixes for 6 new learn guides from today's build cycles — fixed L2 guide semantic HTML, scroll anchoring, and ToC accessibility; resolved critical tokenomics page 'use client' + metadata export conflict; verified all OG images present.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "L2 Guide: Changed root element from <div> to semantic <article> for proper document structure and SEO",
+          "L2 Guide: Moved JSON-LD structured data script from bottom to top of render (consistent with CL guide pattern)",
+          "L2 Guide: Wrapped Table of Contents in <nav aria-label='Table of Contents'> for screen reader navigation",
+          "L2 Guide: Added scrollMarginTop: 24 to all 10 h2 section headings — ToC anchor links now scroll to correct position without header overlap",
+          "L2 Guide + CL Guide: Increased ToC link touch targets to 44px min-height with 6px vertical padding for mobile accessibility compliance",
+          "Tokenomics Guide: Removed erroneous 'use client' directive — page uses no client-side hooks (useState/useEffect/etc.) and the directive caused a build-breaking conflict with 'export const metadata' (Next.js server components only)"
+        ]
+      },
+      {
+        "title": "Visuals Verified",
+        "items": [
+          "OG image verified: og-ethereum-l2-guide.svg (1200x630) — already existed, properly referenced in metadata",
+          "OG image verified: og-concentrated-liquidity.svg (1200x630) — already existed, properly referenced in metadata",
+          "OG image verified: og-tokenomics-2026.svg (1200x630) — already existed, properly referenced in metadata",
+          "OG image verified: og-flash-loans-2026.svg (1200x630) — already existed, properly referenced in metadata",
+          "OG image verified: og-crypto-portfolio-rebalancing-guide-2026.svg — created in earlier design cycle",
+          "OG image verified: og-crypto-staking-2026.svg — created in earlier design cycle",
+          "No new OG images needed — all 6 pages from today's builds have custom OG images"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/ethereum-layer-2-ecosystem-guide-2026 — 4 issues found (no semantic <article>, missing scrollMarginTop on sections, ToC not wrapped in <nav>, structured data at bottom), all resolved",
+          "/learn/concentrated-liquidity-lp-strategies-guide-2026 — 1 issue found (ToC link touch targets below 44px), resolved",
+          "/learn/tokenomics-crypto-token-economics-guide-2026 — 1 critical issue found ('use client' + metadata export conflict causing build failure), resolved by removing unnecessary 'use client'",
+          "/learn/crypto-portfolio-rebalancing-guide-2026 — already polished in earlier design cycle, no new issues",
+          "/learn/crypto-staking-guide-2026 — already polished in earlier design cycle, no new issues",
+          "/learn/flash-loans-defi-guide-2026 — good: has scrollMarginTop, semantic nav, proper ToC accessibility"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_modified": [
+      "src/app/learn/ethereum-layer-2-ecosystem-guide-2026/page.tsx",
+      "src/app/learn/concentrated-liquidity-lp-strategies-guide-2026/page.tsx",
+      "src/app/learn/tokenomics-crypto-token-economics-guide-2026/page.tsx"
+    ]
+  }
+}

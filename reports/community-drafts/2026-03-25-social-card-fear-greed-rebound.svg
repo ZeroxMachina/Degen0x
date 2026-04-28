@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1225"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="fearBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="14%" stop-color="#ef4444"/>
+      <stop offset="14%" stop-color="#1a1a2e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1a1a2e" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent2)"/>
+
+  <!-- Logo -->
+  <text x="60" y="55" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="0.05em">DEGEN0X</text>
+  <text x="155" y="55" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">FEAR &amp; GREED TRACKER</text>
+
+  <!-- Main F&G display -->
+  <text x="60" y="145" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Fear &amp; Greed Crashed to 8. Then Bounced.</text>
+  <text x="60" y="185" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">3rd single-digit reading in index history | Still deep in Extreme Fear at 14</text>
+
+  <!-- Giant numbers display -->
+  <rect x="60" y="215" width="520" height="200" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- The 8 -->
+  <text x="120" y="370" font-family="Inter, system-ui, sans-serif" font-size="120" font-weight="900" fill="#ef4444" filter="url(#glow2)" opacity="0.6">8</text>
+  <text x="100" y="400" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#ef4444">INTRADAY LOW</text>
+
+  <!-- Arrow -->
+  <text x="260" y="340" font-family="Inter, system-ui, sans-serif" font-size="48" fill="#6e7681">→</text>
+
+  <!-- The 14 -->
+  <text x="370" y="370" font-family="Inter, system-ui, sans-serif" font-size="120" font-weight="900" fill="#f59e0b" filter="url(#glow2)">14</text>
+  <text x="370" y="400" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#f59e0b">CURRENT</text>
+
+  <!-- Fear gauge bar -->
+  <rect x="60" y="430" width="520" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="60" y="430" width="73" rx="4" height="8" fill="#ef4444"/>
+  <circle cx="133" cy="434" r="6" fill="#f59e0b" stroke="#080d1c" stroke-width="2"/>
+  <text x="60" y="460" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">0 — Extreme Fear</text>
+  <text x="480" y="460" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="end">100 — Extreme Greed</text>
+
+  <!-- Historical comparison panel -->
+  <rect x="620" y="215" width="520" height="200" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="645" y="253" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e" letter-spacing="0.05em">PRIOR SINGLE-DIGIT READINGS</text>
+
+  <!-- COVID 2020 -->
+  <rect x="645" y="272" width="470" height="48" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+  <text x="665" y="295" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">March 2020</text>
+  <text x="665" y="312" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">COVID Crash</text>
+  <text x="1090" y="298" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#22c55e" text-anchor="end">+156%</text>
+  <text x="1090" y="314" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="end">12-month return</text>
+
+  <!-- Terra/Luna 2022 -->
+  <rect x="645" y="328" width="470" height="48" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+  <text x="665" y="351" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">June 2022</text>
+  <text x="665" y="368" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">Terra/Luna + 3AC</text>
+  <text x="1090" y="354" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#22c55e" text-anchor="end">+260%</text>
+  <text x="1090" y="370" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="end">18-month return</text>
+
+  <!-- March 2026 -->
+  <rect x="645" y="384" width="470" height="28" rx="10" fill="rgba(249,115,22,0.1)" stroke="rgba(249,115,22,0.2)" stroke-width="1"/>
+  <text x="665" y="404" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">March 2026</text>
+  <text x="1090" y="404" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="end">YOU ARE HERE</text>
+
+  <!-- Bottom stat bar -->
+  <rect x="60" y="480" width="1080" height="65" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="110" y="507" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.04em">30D AVG RETURN</text>
+  <text x="110" y="530" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e">+18%</text>
+  <text x="195" y="530" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">from F&amp;G &lt;25</text>
+
+  <line x1="340" y1="490" x2="340" y2="540" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="385" y="507" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.04em">FEAR STREAK</text>
+  <text x="385" y="530" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#ef4444">46+ Days</text>
+  <text x="470" y="530" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">below 25</text>
+
+  <line x1="600" y1="490" x2="600" y2="540" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="645" y="507" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.04em">ETF INFLOWS</text>
+  <text x="645" y="530" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#22c55e">$2.5B March</text>
+
+  <line x1="830" y1="490" x2="830" y2="540" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="875" y="507" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="0.04em">OPTIONS EXPIRY</text>
+  <text x="875" y="530" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#f59e0b">$13.5B Thu</text>
+
+  <!-- Tagline -->
+  <text x="60" y="576" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#e6edf3" opacity="0.85">The market has never been this afraid while the fundamentals were this strong.</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e">degen0x.com/tools/fear-greed-timeline</text>
+  <text x="1060" y="616" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">Mar 25, 2026</text>
+</svg>

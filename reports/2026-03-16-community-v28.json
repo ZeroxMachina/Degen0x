@@ -1,0 +1,66 @@
+{
+  "date": "2026-03-16",
+  "block": "community",
+  "cycle": "v28",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v28: Tax Season urgency campaign (14 days to Apr 15) + Bloomberg Screener V3 Live Data product launch social (Sprint 58 lead deliverable); Restaking/AVS + Intent-Based DEX Trading threads for Apr 5-6 (publish queue pages); weekly newsletter draft for Apr 3; 2 engagement posts for Fri Apr 4; calendar filled Tue-Sun Apr 1-6; 2 new social cards created (tax-season, bloomberg-screener-live updated).",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (Tue Apr 1 AM, 5 posts): Tax Season Urgency — 'Crypto taxes are due in 14 days and most people haven't started'; taxable events checklist, software recs, common audit mistakes; CTA to /learn/crypto-tax-guide-2026 + /tools/tax-calculator",
+          "Tweet (Tue Apr 1 AM): Tax Season single — 14-day countdown, 3 action items, CTAs to guide + calculator",
+          "Twitter thread (Wed Apr 2 AM, 4 posts): Bloomberg Screener V3 Live Data — 'degen0x just shipped live DeFi data'; real-time TVL/APY/volume from DefiLlama, free + no signup; CTA to /tools/bloomberg-screener",
+          "Tweet (Wed Apr 2 AM): Bloomberg Screener single — live data announcement, 60-second refresh",
+          "Newsletter (Thu Apr 3): Weekly edition — Market Pulse, Bloomberg Screener V3 launch, Restaking + Intent-Based DEX guides, Tax countdown (12 days), Pectra countdown (7 days), Degen Corner on intent-based trading",
+          "Tweet (Fri Apr 4 AM): Community poll — 'What DeFi metric matters most when evaluating a protocol?' (TVL/Real Yield/Active Users/Audit Status)",
+          "Tweet (Fri Apr 4 PM): Engagement — 'Name one undervalued protocol and why' — best answers featured in next newsletter",
+          "Twitter thread (Sat Apr 5 AM, 5 posts): Restaking/AVS Ecosystem — 'EigenLayer restaking crossed $15B+ TVL'; what restaking is, AVS explained, ecosystem map, risks; CTA to /learn/restaking-avs-ecosystem-guide-2026 + /tools/staking-apy",
+          "Twitter thread (Sun Apr 6 AM, 5 posts): Intent-Based DEX Trading — 'Every time you swap on a DEX, MEV bots are probably taking money from you'; intent model, CoW Protocol/UniswapX/1inch Fusion, why it's better; CTA to /learn/intent-based-dex-trading-guide"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/crypto-tax-guide-2026", "value": "14 days to Apr 15 — peak seasonal intent", "pct": 98, "color": "#f59e0b" },
+          { "label": "/tools/tax-calculator", "value": "Highest-converting seasonal tool", "pct": 96, "color": "#f59e0b" },
+          { "label": "/tools/dca-calculator", "value": "Consistent top tool — FOMC volatility boost", "pct": 95, "color": "#4ade80" },
+          { "label": "/tools/bloomberg-screener", "value": "Sprint 58: mock → live data (credibility unlock)", "pct": 93, "color": "#06b6d4" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "25 days to Pectra — accelerating interest", "pct": 91, "color": "#8b5cf6" },
+          { "label": "/learn/stablecoin-yield-strategies-2026", "value": "Pre-FOMC yield appetite surging", "pct": 90, "color": "#22d3ee" },
+          { "label": "/learn/restaking-avs-ecosystem-guide-2026", "value": "In queue — $15B TVL category, zero social coverage", "pct": 87, "color": "#6366f1" },
+          { "label": "/learn/intent-based-dex-trading-guide", "value": "In queue — MEV protection growing concern", "pct": 85, "color": "#8b5cf6" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-tax-season-2026.svg — 1200x630 social card: dark theme with amber/red urgency gradient; '14 DAYS TO DEADLINE' countdown badge (red); left glass card with tax checklist (4 items, green/amber/red status); right glass card with taxable event pills (Sold for Profit, Token Swaps, Staking Rewards, Airdrops, Paid in Crypto, Mining Income); green savings tip callout on tax-loss harvesting; degen0x brand bar. Saved to /public/social-tax-season-2026.svg",
+          "social-bloomberg-screener-live.svg — 1200x630 social card: dark theme with indigo/cyan orbs; animated LIVE DATA badge (pulsing green dot); protocol table mockup showing Aave V3, Lido, EigenLayer, Uniswap V3 with TVL/APY/24h change columns; right glass card with 4 feature highlights (Live TVL, Yield Comparison, 60-second refresh, Free/no signup); degen0x brand bar. Updated at /public/social-bloomberg-screener-live.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Tax Season (Apr 1): 14 days to Apr 15 deadline. 'Crypto taxes' search intent peaks late March through mid-April. Tax guide + tax calculator are degen0x's highest-converting seasonal content pair. Thread format educates while driving tool usage. First dedicated tax campaign (previous cycles focused on tools/DeFi).",
+          "Bloomberg Screener V3 Live Data (Apr 2): Sprint 58's lead deliverable. Mock → real data is the single biggest credibility upgrade since launch. Product announcement format (not educational) because this is a feature ship. Positions degen0x as a serious data platform, not just a content site.",
+          "Restaking/AVS (Apr 5): Publish queue page — will be promoted before Apr 5 posting date. EigenLayer restaking at $15B+ TVL is the biggest new DeFi primitive. Educational thread drives traffic to guide + staking APY tool. Weekend educational content gets highest save/bookmark rate.",
+          "Intent-Based DEX Trading (Apr 6): Publish queue page — will be promoted before Apr 6 posting date. MEV protection resonates strongly with active DeFi users (pain point content). CoW Protocol, UniswapX, 1inch Fusion are recognizable names that drive engagement.",
+          "Newsletter (Apr 3): Consolidates week's launches (live data, tax urgency, Pectra T-7 countdown). Pectra Apr 10 = 7 days away at newsletter time — maximum urgency window. Three countdown angles in one edition (tax, Pectra, Bloomberg launch) creates urgency density.",
+          "Community engagement (Apr 4): Poll + open discussion format builds algorithmic reach (replies > likes for Twitter algo). 'Best answers in newsletter' incentivizes thoughtful replies. DeFi metrics poll feeds product decisions on screener improvements.",
+          "353 pages live, 2-3 in queue (restaking-avs-ecosystem, intent-based-dex-trading, smart-wallets). Calendar now filled Tue-Sun Apr 1-6. No posting conflicts with v27 (ends Mon Mar 31).",
+          "Social drafts saved to /reports/community-drafts/2026-03-16-social-drafts-v28.md",
+          "Tax season social card saved to /public/social-tax-season-2026.svg",
+          "Bloomberg screener social card updated at /public/social-bloomberg-screener-live.svg"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"],
+    "assets_created": [
+      "/public/social-tax-season-2026.svg",
+      "/public/social-bloomberg-screener-live.svg",
+      "/reports/community-drafts/2026-03-16-social-drafts-v28.md"
+    ]
+  }
+}

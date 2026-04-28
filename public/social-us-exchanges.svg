@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="60%" style="stop-color:#0a1228"/>
+      <stop offset="100%" style="stop-color:#0d0f1f"/>
+    </linearGradient>
+    <!-- Brand signature gradient (indigo → cyan → amber) -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <!-- Title gradient fill -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0e7ff"/>
+      <stop offset="50%" style="stop-color:#a5f3fc"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+    <!-- Glass card gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.07)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <!-- Coinbase blue glow -->
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Cyan glow -->
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0"/>
+    </radialGradient>
+    <!-- Logo gradient -->
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="50%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative ambient glows -->
+  <ellipse cx="200" cy="180" rx="280" ry="200" fill="url(#glowBlue)" opacity="0.6"/>
+  <ellipse cx="1050" cy="420" rx="240" ry="180" fill="url(#glowCyan)" opacity="0.5"/>
+  <ellipse cx="650" cy="580" rx="320" ry="120" fill="url(#glowBlue)" opacity="0.3"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Subtle dot grid texture -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.03)"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- ============ LEFT COLUMN ============ -->
+
+  <!-- degen0x logo circle -->
+  <circle cx="62" cy="56" r="22" fill="url(#logoGrad)" opacity="0.9" filter="url(#glow)"/>
+  <text x="62" y="62" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-0.5">0x</text>
+
+  <!-- degen0x wordmark -->
+  <text x="94" y="62" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="-0.3">degen0x.com</text>
+
+  <!-- US Flag badge -->
+  <rect x="44" y="100" width="52" height="26" rx="6" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="70" y="118" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#a5b4fc" text-anchor="middle">🇺🇸 US</text>
+
+  <!-- Main title -->
+  <text x="44" y="180" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900" fill="url(#titleGrad)" letter-spacing="-1.5" filter="url(#softGlow)">Best Crypto</text>
+  <text x="44" y="242" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900" fill="url(#titleGrad)" letter-spacing="-1.5" filter="url(#softGlow)">Exchanges in</text>
+  <text x="44" y="304" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900" fill="url(#titleGrad)" letter-spacing="-1.5" filter="url(#softGlow)">the US — 2026</text>
+
+  <!-- Subtitle -->
+  <text x="44" y="345" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="400" fill="#8b949e" letter-spacing="0">SEC-compliant • FDIC-insured USD • No VPN required</text>
+
+  <!-- Divider line -->
+  <line x1="44" y1="372" x2="540" y2="372" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Stat pills row -->
+  <rect x="44" y="388" width="148" height="36" rx="8" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="118" y="411" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#4ade80" text-anchor="middle">4 Regulated Platforms</text>
+
+  <rect x="204" y="388" width="128" height="36" rx="8" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+  <text x="268" y="411" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#22d3ee" text-anchor="middle">No Offshore Risk</text>
+
+  <rect x="344" y="388" width="140" height="36" rx="8" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+  <text x="414" y="411" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#a5b4fc" text-anchor="middle">Full Tax Reporting</text>
+
+  <!-- Bottom URL badge -->
+  <rect x="44" y="560" width="270" height="38" rx="10" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="179" y="584" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#a5b4fc" text-anchor="middle">degen0x.com/exchanges/best/us</text>
+
+  <!-- ============ RIGHT COLUMN — Exchange Cards ============ -->
+
+  <!-- Card 1: Coinbase -->
+  <rect x="600" y="52" width="560" height="118" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Blue accent left bar -->
+  <rect x="600" y="52" width="4" height="118" rx="2" fill="#6366f1"/>
+  <!-- Exchange icon area -->
+  <circle cx="652" cy="111" r="28" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="652" y="118" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#818cf8" text-anchor="middle">CB</text>
+  <!-- Exchange name + badge -->
+  <text x="698" y="96" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#e6edf3" letter-spacing="-0.4">Coinbase</text>
+  <rect x="820" y="78" width="88" height="22" rx="6" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="864" y="93" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#4ade80" text-anchor="middle">NASDAQ: COIN</text>
+  <!-- Differentiator -->
+  <text x="698" y="118" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#8b949e">Best UX • FDIC-insured USD • Built-in 1099 tax forms</text>
+  <!-- Best for tag -->
+  <rect x="698" y="130" width="104" height="24" rx="6" fill="rgba(99,102,241,0.1)"/>
+  <text x="750" y="146" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#a5b4fc" text-anchor="middle">✓ Best for Beginners</text>
+
+  <!-- Card 2: Kraken -->
+  <rect x="600" y="186" width="560" height="118" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="600" y="186" width="4" height="118" rx="2" fill="#06b6d4"/>
+  <circle cx="652" cy="245" r="28" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <text x="652" y="252" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#22d3ee" text-anchor="middle">KR</text>
+  <text x="698" y="230" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#e6edf3" letter-spacing="-0.4">Kraken</text>
+  <rect x="812" y="212" width="106" height="22" rx="6" fill="rgba(6,182,212,0.12)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="865" y="227" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#22d3ee" text-anchor="middle">Since 2011 — Indie</text>
+  <text x="698" y="252" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#8b949e">Lowest fees • Margin + futures • Proof of Reserves</text>
+  <rect x="698" y="264" width="108" height="24" rx="6" fill="rgba(6,182,212,0.08)"/>
+  <text x="752" y="280" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#22d3ee" text-anchor="middle">✓ Best for Low Fees</text>
+
+  <!-- Card 3: Gemini -->
+  <rect x="600" y="320" width="560" height="118" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="600" y="320" width="4" height="118" rx="2" fill="#d97706"/>
+  <circle cx="652" cy="379" r="28" fill="rgba(217,119,6,0.12)" stroke="rgba(217,119,6,0.2)" stroke-width="1"/>
+  <text x="652" y="386" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900" fill="#f59e0b" text-anchor="middle">GE</text>
+  <text x="698" y="364" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#e6edf3" letter-spacing="-0.4">Gemini</text>
+  <rect x="806" y="346" width="116" height="22" rx="6" fill="rgba(217,119,6,0.12)" stroke="rgba(217,119,6,0.3)" stroke-width="1"/>
+  <text x="864" y="361" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#fbbf24" text-anchor="middle">NYDFS Regulated</text>
+  <text x="698" y="386" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#8b949e">Strictest compliance • SOC 2 Type 2 • Institutional-grade</text>
+  <rect x="698" y="398" width="120" height="24" rx="6" fill="rgba(217,119,6,0.08)"/>
+  <text x="758" y="414" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#fbbf24" text-anchor="middle">✓ Best for Compliance</text>
+
+  <!-- Card 4: Crypto.com -->
+  <rect x="600" y="454" width="560" height="118" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="600" y="454" width="4" height="118" rx="2" fill="#8b5cf6"/>
+  <circle cx="652" cy="513" r="28" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="652" y="520" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="900" fill="#a78bfa" text-anchor="middle">CRO</text>
+  <text x="698" y="498" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#e6edf3" letter-spacing="-0.4">Crypto.com</text>
+  <rect x="836" y="480" width="88" height="22" rx="6" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="880" y="495" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#c4b5fd" text-anchor="middle">Metal Visa Card</text>
+  <text x="698" y="520" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#8b949e">CRO staking rewards • BTC/ETH cashback Visa card</text>
+  <rect x="698" y="532" width="116" height="24" rx="6" fill="rgba(139,92,246,0.08)"/>
+  <text x="756" y="548" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#c4b5fd" text-anchor="middle">✓ Best for Rewards</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="rgba(0,0,0,0.3)"/>
+  <text x="600" y="620" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#6e7681" text-anchor="middle">No sponsored rankings — degen0x.com/exchanges/best/us — Updated March 2026</text>
+</svg>

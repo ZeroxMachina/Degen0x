@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f1629"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="fearGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="180" fill="#4f46e5" opacity="0.04"/>
+  <circle cx="150" cy="500" r="140" fill="#0891b2" opacity="0.03"/>
+
+  <!-- Badge: REGULATORY SHIFT -->
+  <rect x="40" y="32" width="230" height="30" rx="15" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <circle cx="58" cy="47" r="4" fill="#22c55e">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="72" y="52" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e" letter-spacing="1.5">REGULATORY SHIFT</text>
+
+  <!-- Logo -->
+  <text x="1100" y="52" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="end" filter="url(#glow)">degen0x</text>
+
+  <!-- Main Headline -->
+  <text x="40" y="115" font-family="Inter, system-ui, sans-serif" font-size="38" font-weight="900" fill="url(#greenGrad)" letter-spacing="-0.5">Staking Reclassified</text>
+  <text x="40" y="155" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="400" fill="#8b949e">SEC + CFTC declare staking "administrative activity" — not a security</text>
+
+  <!-- 4 Metric Cards -->
+  <!-- Card 1: 16 Tokens -->
+  <rect x="40" y="190" width="270" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="60" y="222" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="1">TOKENS RECLASSIFIED</text>
+  <text x="60" y="262" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="#22c55e">16</text>
+  <text x="60" y="285" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">ETH, SOL, ADA, DOT, AVAX</text>
+  <text x="60" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">+ 11 more as commodities</text>
+
+  <!-- Card 2: Lido DAO -->
+  <rect x="330" y="190" width="270" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="350" y="222" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="1">LDO SURGING</text>
+  <text x="350" y="262" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="#22c55e">$LDO</text>
+  <text x="350" y="285" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">28% of all staked ETH</text>
+  <text x="350" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#22c55e">Regulatory risk removed</text>
+
+  <!-- Card 3: BTC Price -->
+  <rect x="620" y="190" width="270" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="640" y="222" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="1">BTC PRICE</text>
+  <text x="640" y="262" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="#ef4444">$66,008</text>
+  <text x="640" y="285" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ef4444">-48% from $126K ATH</text>
+  <text x="640" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">270K BTC whale accumulation</text>
+
+  <!-- Card 4: Fear & Greed -->
+  <rect x="910" y="190" width="250" height="130" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="930" y="222" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="1">FEAR &amp; GREED</text>
+  <text x="930" y="262" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="#ef4444">12</text>
+  <text x="930" y="285" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#ef4444">Day 48 — Extreme Fear</text>
+  <text x="930" y="305" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#f59e0b">2 days from all-time record</text>
+
+  <!-- Fear Gauge Bar -->
+  <rect x="40" y="345" width="1120" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="40" y="345" width="134" height="8" rx="4" fill="url(#fearGrad)"/>
+  <circle cx="174" cy="349" r="6" fill="#ef4444" filter="url(#glow)"/>
+  <text x="190" y="354" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">12/100 — 48 consecutive days in extreme fear</text>
+
+  <!-- Solana LST Section -->
+  <rect x="40" y="380" width="545" height="140" rx="16" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+  <text x="60" y="410" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#a78bfa" letter-spacing="0.5">NEW GUIDE: SOLANA LST COMPARISON</text>
+
+  <!-- LST bars -->
+  <text x="60" y="440" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">JitoSOL</text>
+  <rect x="140" y="428" width="320" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="140" y="428" width="320" height="16" rx="4" fill="rgba(99,102,241,0.3)"/>
+  <text x="468" y="441" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">14.3M SOL</text>
+
+  <text x="60" y="465" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">mSOL</text>
+  <rect x="140" y="453" width="320" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="140" y="453" width="271" height="16" rx="4" fill="rgba(6,182,212,0.3)"/>
+  <text x="419" y="466" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">12.1M SOL</text>
+
+  <text x="60" y="490" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">INF</text>
+  <rect x="140" y="478" width="320" height="16" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="140" y="478" width="67" height="16" rx="4" fill="rgba(217,119,6,0.3)"/>
+  <text x="215" y="491" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f59e0b">8.5% APY (highest)</text>
+
+  <text x="60" y="510" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">$8B+ total Solana liquid staking TVL</text>
+
+  <!-- RWA Section -->
+  <rect x="615" y="380" width="545" height="140" rx="16" fill="rgba(6,182,212,0.06)" stroke="rgba(6,182,212,0.15)" stroke-width="1"/>
+  <text x="635" y="410" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#06b6d4" letter-spacing="0.5">NEW GUIDE: RWA vs DeFi YIELD</text>
+
+  <text x="635" y="440" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Tokenized Treasuries</text>
+  <text x="635" y="460" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#22c55e">$12B</text>
+  <text x="748" y="460" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">onchain (+140% in 15mo)</text>
+
+  <text x="635" y="488" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">BlackRock BUIDL $1.9B @ 3.5% • Ondo USDY $1.4B @ 4.8%</text>
+  <text x="635" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">Private Credit $3.2B (+180%) • DeFi 2-8% variable</text>
+
+  <!-- Context strip -->
+  <rect x="40" y="540" width="1120" height="40" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="60" y="565" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">
+    Morgan Stanley MSBT 0.14% • SEC 16-Token Commodity Ruling • 270K BTC Whale Accumulation • $14B Options Expiry • 577 Pages Live
+  </text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="596" width="1200" height="34" fill="rgba(0,0,0,0.3)"/>
+  <text x="40" y="618" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="url(#brandGrad)">degen0x.com</text>
+  <text x="1160" y="618" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Free crypto tools &amp; research — no signup required</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

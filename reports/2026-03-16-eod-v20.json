@@ -1,0 +1,75 @@
+{
+  "date": "2026-03-16",
+  "block": "eod",
+  "version": "v20",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle v20: git index.lock persists (14+ hours, 533 uncommitted files). 3 new learn guides built since last EOD (Hyperliquid, FOMC, PEAQ DePIN). PUBLISH_QUEUE rotated to Hyperliquid + FOMC. 378 published pages stable. 42 TS errors unchanged. 0/6 API routes have rate limiting (16th consecutive flag). FOMC T-2.",
+    "sections": [
+      {
+        "title": "QA Sweep",
+        "items": [
+          "No new commits since cb65a9d (Day 42 publish) — git index.lock continues blocking all commits (created 13:06 today, now 14+ hours).",
+          "Working tree: 533 uncommitted files (up from 513 in v19, net +20). 43 modified tracked files + 490 new untracked files.",
+          "3 new learn guide page.tsx files created since last EOD: hyperliquid-trading-guide, fomc-fed-rate-crypto-guide, peaq-depin-robotics-guide-2026.",
+          "PUBLISHED_PAGES: 378 slugs stable. ~102 slugs served by dynamic [slug] route (no dedicated page.tsx) — known, not a regression.",
+          "PUBLISH_QUEUE: 2 items — /learn/hyperliquid-trading-guide, /learn/fomc-fed-rate-crypto-guide (rotated from fair-token-launches + peaq-depin).",
+          "TypeScript: 42 errors across 2 files (unchanged) — 40 in structured-data.examples.ts (JSX in .ts needs .tsx rename), 2 in crypto-index-funds-guide-2026 (unescaped <> in JSX). Non-blocking (ignoreBuildErrors: true).",
+          "Local build: Bus error (OOM) — VM memory insufficient for 826+ page build. Vercel production builds unaffected (8GB machines).",
+          "No new regressions detected this cycle."
+        ]
+      },
+      {
+        "title": "Data Pipeline Health",
+        "items": [
+          "/api/prices — CoinGecko, 60s TTL, s-maxage=60, stale-while-revalidate=120. Stale cache fallback. No rate limiter.",
+          "/api/fear-greed — alternative.me, 600s TTL, s-maxage=600, stale-while-revalidate=1200. Stale cache fallback. No rate limiter.",
+          "/api/trending — CoinGecko, 300s TTL, s-maxage=300, stale-while-revalidate=600. Stale cache fallback. No rate limiter.",
+          "/api/market-metrics — CoinGecko aggregated, 60s TTL, s-maxage=60, stale-while-revalidate=120. Mock data fallback. No rate limiter.",
+          "/api/market-dominance — CoinGecko, 300s TTL, s-maxage=300, stale-while-revalidate=600. Full hardcoded FALLBACK_DATA + stale cache. No rate limiter.",
+          "/api/defi-yields — DefiLlama, HTTP cache only (no in-memory TTL). Returns 500 on failure. No fallback data, no rate limiter.",
+          "All 6 routes share api-helpers.ts circuit breaker (5 failures, 1min reset) + exponential backoff.",
+          "PERSISTENT: checkRateLimit() exists in rate-limiter.ts but wired to 0/6 public API routes — 16th consecutive cycle flagged. FOMC Wed Mar 18 (T-2) traffic spike risk.",
+          "Cannot verify live endpoints — VM egress blocked for degen0x.com and upstream APIs (CoinGecko, DefiLlama, alternative.me)."
+        ]
+      },
+      {
+        "title": "DevOps Status",
+        "items": [
+          "Latest deploy: cb65a9d (Day 42 publish). No new commits possible — git index.lock blocking.",
+          "git index.lock: created 13:06 Mar 16 — now 14+ hours. 533 uncommitted files (up from 513 in v19).",
+          "Next.js config stable: standalone output, ignoreBuildErrors: true, staticGenerationMaxConcurrency: 4, workerThreads: false.",
+          "Middleware: 127 lines, PILLAR_PAGES inlined, security headers + robots tags + cache-control all configured.",
+          "Vercel trial expiry flagged in v19 (~3 days remaining). Jefe action required.",
+          "No incidents detected. Vercel deployment presumed healthy (sandbox cannot verify externally).",
+          "90+ files touched since last EOD across API routes, data files, learn pages, lib utilities — all uncommitted."
+        ]
+      },
+      {
+        "title": "Project Manager — Cycle Summary",
+        "items": [
+          "BUILT THIS CYCLE: 3 new learn guides (Hyperliquid Trading, FOMC Fed Rate Impact, PEAQ DePIN Robotics). All uncommitted due to git lock.",
+          "PUBLISH_QUEUE ROTATED: Now contains hyperliquid-trading-guide + fomc-fed-rate-crypto-guide (2 items). Previous items (fair-token-launches + peaq-depin) presumably promoted or built as page.tsx.",
+          "DELTA SINCE v19: Working tree +20 files (513→533). 90+ files modified across API routes, data layers, pages, and utilities.",
+          "NOTHING SHIPPED — all work trapped behind git index.lock. 0 commits, 0 deploys this cycle.",
+          "CARRY-OVER (priority): (1) [P0] rm .git/index.lock — single biggest blocker, 14+ hours, 533 files at risk. (2) [P0] Vercel trial ~3 days — site goes dark. (3) [P0] Batch-commit 533 files after lock removal. (4) [P0] Apply checkRateLimit to 6 API routes (16 cycles overdue, FOMC T-2). (5) [P1] Rename structured-data.examples.ts → .tsx. (6) [P1] Fix unescaped JSX in crypto-index-funds-guide. (7) [P1] Add fallback data to defi-yields.",
+          "BLOCKER FOR JEFE: git index.lock must be removed (rm .git/index.lock) before any work can ship. 533 files of uncommitted work at risk. Vercel trial nearing expiry."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "378", "pct": 92, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "533", "pct": 15, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "42 (2 files)", "pct": 60, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "6/6 (code audit)", "pct": 85, "color": "#4ade80" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Git Lock Duration", "value": "14+ hours", "pct": 5, "color": "#ef4444" },
+          { "label": "PUBLISH_QUEUE", "value": "2 pages", "pct": 80, "color": "#4ade80" },
+          { "label": "Build Status (local)", "value": "OOM — Bus error", "pct": 30, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

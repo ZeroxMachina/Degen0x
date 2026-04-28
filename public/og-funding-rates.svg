@@ -1,0 +1,81 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="topGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bullGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="bearGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <!-- Top gradient bar -->
+  <rect width="1200" height="8" fill="url(#topGradient)"/>
+
+  <!-- Decorative circles background -->
+  <circle cx="1050" cy="500" r="100" fill="#10b981" opacity="0.08"/>
+  <circle cx="150" cy="200" r="90" fill="#ef4444" opacity="0.08"/>
+
+  <!-- Logo area -->
+  <text x="40" y="60" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="2">
+    degen0x
+  </text>
+
+  <!-- Main title -->
+  <text x="40" y="150" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1">
+    Crypto Funding
+  </text>
+  <text x="40" y="215" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1">
+    Rates
+  </text>
+
+  <!-- Subtitle -->
+  <text x="40" y="270" font-family="Inter, sans-serif" font-size="22" fill="#8b949e">
+    Track perpetual futures funding across exchanges
+  </text>
+
+  <!-- Chart visualization on right side -->
+  <g opacity="0.8">
+    <!-- Grid lines -->
+    <line x1="820" y1="120" x2="1050" y2="120" stroke="#374151" stroke-width="1" opacity="0.3"/>
+    <line x1="820" y1="160" x2="1050" y2="160" stroke="#374151" stroke-width="1" opacity="0.3"/>
+    <line x1="820" y1="200" x2="1050" y2="200" stroke="#374151" stroke-width="1" opacity="0.3"/>
+    <line x1="820" y1="240" x2="1050" y2="240" stroke="#374151" stroke-width="1" opacity="0.3"/>
+
+    <!-- Positive funding bars (green) -->
+    <rect x="840" y="180" width="35" height="60" fill="url(#bullGradient)" stroke="#10b981" stroke-width="1"/>
+    <rect x="885" y="160" width="35" height="80" fill="url(#bullGradient)" stroke="#10b981" stroke-width="1"/>
+    <rect x="930" y="140" width="35" height="100" fill="url(#bullGradient)" stroke="#10b981" stroke-width="1"/>
+
+    <!-- Negative funding bars (red) -->
+    <rect x="975" y="210" width="35" height="30" fill="url(#bearGradient)" stroke="#ef4444" stroke-width="1"/>
+    <rect x="1020" y="195" width="35" height="45" fill="url(#bearGradient)" stroke="#ef4444" stroke-width="1"/>
+  </g>
+
+  <!-- Center axis line -->
+  <line x1="820" y1="240" x2="1050" y2="240" stroke="#4f46e5" stroke-width="2" opacity="0.5"/>
+
+  <!-- Bottom branding -->
+  <text x="40" y="595" font-family="Inter, sans-serif" font-size="16" fill="#8b949e" letter-spacing="0.5">
+    degen0x.com
+  </text>
+
+  <!-- Accent line -->
+  <line x1="40" y1="300" x2="150" y2="300" stroke="url(#topGradient)" stroke-width="3" stroke-linecap="round"/>
+</svg>

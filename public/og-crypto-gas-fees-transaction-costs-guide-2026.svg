@@ -1,0 +1,75 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  <!-- Decorative elements -->
+  <circle cx="1000" cy="200" r="140" fill="#f59e0b" opacity="0.04"/>
+  <circle cx="900" cy="380" r="100" fill="#10b981" opacity="0.04"/>
+  <!-- Fee chart decoration -->
+  <g transform="translate(780, 140)" opacity="0.6">
+    <rect x="0" y="0" width="340" height="200" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="20" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e">Gas Fee Trend (ETH Mainnet)</text>
+    <!-- Simplified downward line chart -->
+    <polyline points="30,60 70,55 110,80 150,70 190,50 230,45 270,65 310,40" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="30,60 70,55 110,80 150,70 190,50 230,45 270,65 310,40 310,170 30,170" fill="url(#chartGrad)"/>
+    <!-- Grid lines -->
+    <line x1="30" y1="170" x2="310" y2="170" stroke="#30363d" stroke-width="1"/>
+    <!-- Labels -->
+    <text x="30" y="188" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6e7681">2021</text>
+    <text x="170" y="188" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6e7681">2024</text>
+    <text x="300" y="188" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#6e7681" text-anchor="end">2026</text>
+  </g>
+  <!-- L2 comparison boxes -->
+  <g transform="translate(780, 370)">
+    <rect x="0" y="0" width="105" height="60" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="52" y="24" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e" text-anchor="middle">Ethereum</text>
+    <text x="52" y="46" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="#f59e0b" text-anchor="middle">$0.44</text>
+    <rect x="115" y="0" width="105" height="60" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="167" y="24" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e" text-anchor="middle">Arbitrum</text>
+    <text x="167" y="46" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="#22c55e" text-anchor="middle">$0.009</text>
+    <rect x="230" y="0" width="105" height="60" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="282" y="24" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b949e" text-anchor="middle">Solana</text>
+    <text x="282" y="46" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800" fill="#22c55e" text-anchor="middle">$0.001</text>
+  </g>
+  <!-- Logo -->
+  <text x="60" y="72" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#818cf8" opacity="0.9">degen0x</text>
+  <!-- Category badges -->
+  <rect x="60" y="140" width="120" height="24" rx="6" fill="#d2691e" opacity="0.12"/>
+  <text x="120" y="156" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#f0883e" text-anchor="middle">Blockchain Basics</text>
+  <rect x="188" y="140" width="80" height="24" rx="6" fill="#d9a024" opacity="0.12"/>
+  <text x="228" y="156" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#fbbf24" text-anchor="middle">Beginner</text>
+  <!-- Title -->
+  <text x="60" y="220" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="url(#titleGrad)">Crypto Gas Fees &amp;</text>
+  <text x="60" y="272" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="url(#titleGrad)">Transaction Costs</text>
+  <text x="60" y="322" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#e6edf3">A 2026 Guide</text>
+  <!-- Subtitle -->
+  <text x="60" y="370" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#8b949e">EIP-1559 · Layer 2 savings of 90%+ · Account abstraction</text>
+  <text x="60" y="395" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#8b949e">Practical strategies to minimize gas costs across chains</text>
+  <!-- Key stat callout -->
+  <rect x="60" y="430" width="280" height="50" rx="10" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="200" y="461" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#22c55e" text-anchor="middle">L2 fees dropped 90% since EIP-4844</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="610" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e">degen0x.com</text>
+  <text x="1140" y="610" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">Updated March 2026</text>
+</svg>

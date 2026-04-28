@@ -1,0 +1,58 @@
+{
+  "date": "2026-03-23",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Fixed critical FAQ structured data bug affecting 64+ pages, added responsive h1 sizing to 5 new learn pages, and created 7 missing OG images for today's content.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "CRITICAL FIX: generateFAQSchema now accepts both q/a shorthand and question/answer formats — 64+ learn pages had broken FAQ structured data producing undefined values in Google rich results",
+          "Fixed combineSchemas to accept variadic arguments (spread operator) matching actual page usage patterns",
+          "Added responsive h1 sizing via clamp(28px, 5vw, 48px) to 5 new learn pages: tokenized-gold-guide-2026, amm-liquidity-pools-guide-2026, real-yield-defi-guide-2026, solana-blinks-actions-guide-2026, nftfi-nft-finance-guide-2026",
+          "2 pages already had responsive sizing (bitcoin-supply-shock uses Tailwind responsive classes, solana-token-extensions uses rem units)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: tokenized-gold-guide-2026 (1200x630 SVG)",
+          "OG image: amm-liquidity-pools-guide-2026 (1200x630 SVG)",
+          "OG image: solana-blinks-actions-guide-2026 (1200x630 SVG)",
+          "OG image: solana-token-extensions-guide-2026 (1200x630 SVG)",
+          "OG image: ethereum-fusaka-glamsterdam-guide-2026 (1200x630 SVG)",
+          "OG image: cross-chain-bridge-security-guide-2026 (1200x630 SVG)",
+          "OG image: best-perpetual-dex-comparison-2026 (1200x630 SVG)"
+        ]
+      },
+      {
+        "title": "Files Modified",
+        "items": [
+          "src/lib/structured-data.ts — FAQItem interface now supports q/a shorthand; generateFAQSchema uses fallback resolution; combineSchemas accepts variadic args",
+          "src/app/learn/tokenized-gold-guide-2026/page.tsx — responsive h1",
+          "src/app/learn/amm-liquidity-pools-guide-2026/page.tsx — responsive h1",
+          "src/app/learn/real-yield-defi-guide-2026/page.tsx — responsive h1",
+          "src/app/learn/solana-blinks-actions-guide-2026/page.tsx — responsive h1",
+          "src/app/learn/nftfi-nft-finance-guide-2026/page.tsx — responsive h1"
+        ]
+      },
+      {
+        "title": "Files Created",
+        "items": [
+          "public/og-tokenized-gold-guide-2026.svg",
+          "public/og-amm-liquidity-pools-guide-2026.svg",
+          "public/og-solana-blinks-actions-guide-2026.svg",
+          "public/og-solana-token-extensions-guide-2026.svg",
+          "public/og-ethereum-fusaka-glamsterdam-guide-2026.svg",
+          "public/og-cross-chain-bridge-security-guide-2026.svg",
+          "public/og-best-perpetual-dex-comparison-2026.svg"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "issues_found": 3,
+    "issues_fixed": 3,
+    "issues_deferred": []
+  }
+}

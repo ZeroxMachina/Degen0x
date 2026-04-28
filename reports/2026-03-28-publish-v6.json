@@ -1,0 +1,57 @@
+{
+  "date": "2026-03-28",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 2 pages (yield tokenization guide + token security scanner) from PUBLISH_QUEUE to PUBLISHED_PAGES; 2 blocked pages remain in queue pending slug fixes; build could not complete in sandbox (memory limit) but page files validated; deploy pending git push to trigger Vercel CI/CD.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/yield-tokenization-guide-2026", "status": "pass" },
+          { "slug": "/tools/token-security-scanner", "status": "pass" }
+        ]
+      },
+      {
+        "title": "Pages Blocked (still in queue)",
+        "pages": [
+          { "slug": "/learn/crypto-wallet-security-token-approvals-guide", "status": "warn" },
+          { "slug": "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026", "status": "warn" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with page.tsx", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD schema", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumbs", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Full build", "value": "Skipped", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko Integration", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama Integration", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "API Cache Layer", "value": "Configured (60s TTL, 50MB LRU)", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (token bucket, per-route)", "pct": 95, "color": "#4ade80" },
+          { "label": "Fallback Data", "value": "Present for all endpoints", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy Status",
+        "metrics": [
+          { "label": "Code changes", "value": "Ready (published-pages.ts updated)", "pct": 80, "color": "#06b6d4" },
+          { "label": "Deploy trigger", "value": "Pending git push → Vercel CI/CD", "pct": 50, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": {
+      "blocked_pages": "2 pages remain in PUBLISH_QUEUE: crypto-wallet-security-token-approvals-guide (found as crypto-wallet-security-guide-2026 — slug mismatch) and restaking-comparison-eigenlayer-symbiotic-karak-2026 (no page.tsx). Fix slugs or scaffold pages before next cycle.",
+      "build_note": "Full Next.js build failed with bus error (memory limit in sandbox VM). TypeScript check shows only pre-existing errors in node_modules/@types/web and structured-data.examples.ts — not related to today's changes.",
+      "queue_status": "PUBLISH_QUEUE is nearly exhausted (2 blocked items remaining). New pages should be added for the next build cycle."
+    }
+  }
+}

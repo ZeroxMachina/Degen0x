@@ -1,0 +1,70 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v8: Steady-state — TS errors stable at 142, uncommitted files up 818 (from 816 in v7), git locks now Day 10, no new commits or deploys. All 6 API route files healthy locally; 0/6 core routes have rate limiters.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "TypeScript errors stable at 142 — all in structured-data.examples.ts (non-critical reference file), no new regressions",
+          "All 6 API route files present and valid: prices, trending, fear-greed, market-dominance, market-metrics, defi-yields",
+          "523 published page entries (506 unique) — 17 duplicate entries still pending cleanup",
+          "103 published slugs still missing page.tsx files — unchanged from v7, no new missing pages",
+          "Live site checks blocked by egress proxy — unable to verify HTTP 200s this cycle (last verified in v7: 5/5 critical OK)",
+          "No new page.tsx files created since v7 — no new pages to validate"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 API route files present locally with correct cache headers configured",
+          "Cache TTLs verified: prices (swr:120s), trending (swr:600s), fear-greed (swr:1200s), market-dominance (swr:600s), market-metrics (swr:120s), defi-yields (custom CACHE_DURATION)",
+          "Production checks blocked by egress proxy — last verified in v7: 4/5 endpoints healthy, /api/market-metrics still 404 in production (exists locally, not deployed)",
+          "Rate limiter coverage: 0/6 core data routes — still no rate limiting on prices, trending, fear-greed, market-dominance, market-metrics, defi-yields (carry-over P1)",
+          "CoinGecko free tier risk unchanged — no API key configured",
+          "524 items remain in PUBLISH_QUEUE awaiting deployment"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "CRITICAL: Git lock files persist — .git/HEAD.lock (Mar 16) + .git/index.lock (Mar 16) — DAY 10 of blocker",
+          "818 uncommitted files (up from 816 in v7 — 2 new files this cycle, likely report files)",
+          "Last deployed commit: e999560 (Mar 17) — 'publish: promote 2 pages to production (Day 62)'",
+          "Deploy gap: ~8 days since last push — ~170+ locally-built pages not live",
+          "No new commits today — all work blocked behind git locks",
+          "REQUIRES JEFE ACTION: rm .git/index.lock .git/HEAD.lock && git add -A && git commit && git push"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: No new work landed — monitoring-only cycle",
+          "Delta from v7: uncommitted files 816→818 (+2 report files), all other metrics unchanged",
+          "CARRY-OVER BLOCKERS: (1) Git locks Day 10, (2) 818 files need commit+deploy, (3) rate limiter gap, (4) 103 missing page.tsx files",
+          "PUBLISH_QUEUE: 524 items queued, 2 at top ready (ethereum-layer-2-comparison-guide, onchain-order-book-clob-dex-guide)",
+          "RISK: Deploy gap growing — blast radius increases with each cycle. Recommend clearing git locks and batching a deploy ASAP",
+          "ATTENTION NEEDED: Git locks are the #1 blocker for all forward progress"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Pages Live (Production)", "value": "5/5 critical OK (last verified v7)", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes (Local)", "value": "6/6 files present", "pct": 100, "color": "#4ade80" },
+          { "label": "API Endpoints (Prod)", "value": "4/5 healthy (last verified v7)", "pct": 80, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "142 (stable)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Published Pages", "value": "506 unique / 523 entries", "pct": 63, "color": "#06b6d4" },
+          { "label": "Uncommitted Files", "value": "818 files", "pct": 8, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "8 days (Mar 17)", "pct": 12, "color": "#ef4444" },
+          { "label": "Git Lock Duration", "value": "10 days", "pct": 5, "color": "#ef4444" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Missing page.tsx", "value": "103 slugs", "pct": 20, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

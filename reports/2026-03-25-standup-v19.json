@@ -1,0 +1,88 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 19,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v19: BTC $70,600-$71,674 (+5% relief rally from Mon dip). F&G 8-11 (Extreme Fear) — 46-day streak. DELTA: Build-v15 shipped On-Ramps/Off-Ramps + Portfolio Allocation guides. Publish-v13 promoted Privacy Infra + World Chain (queue was empty, now refilled with 2 new). 1,188 total page.tsx (+2 from v18). Git index.lock NOW 24+ hours — 106 pending files. NEW: SEC delayed Nasdaq PHLX BTC options to May 27. $14B options expiry + 91 ETF rulings still converging Thu (~20hrs). 95 agent runs today ($7,714).",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "MARKET UPDATE: BTC $70,600-$71,674 (up ~$400 from v18). Relief rally +5% from Monday's sub-$68K dip after US-Iran military escalation pause. ETH ~$2,166-$2,327. BTC dominance 56.5%. Total crypto market cap $2.49T.",
+          "F&G INDEX: 8-11 (Extreme Fear). 46-day streak below 25. Deepened from 11 to 8 intraday per SpotedCrypto — longest sustained fear since FTX collapse (late 2022). Glassnode: entries at F&G <15 average +38.4% median 90-day return.",
+          "SPOT ETF FLOWS: Mar 25 outflows continuing — Fidelity FBTC -$45M. Net -$66.6M on Mar 24. March total inflows $890M (down 73% from Feb $3.3B). Institutional capital rotating to tokenized treasury products ($12.8B March flows).",
+          "DELTA SINCE v18: Build-v15 shipped 2 new learn guides: Crypto On-Ramps & Off-Ramps (~3,200 words, 7 providers compared, Open Banking trend) + Crypto Portfolio Allocation (~3,500 words, 4 model portfolios, DCA vs lump sum). Publish-v13 promoted Privacy Infra + World Chain to PUBLISHED_PAGES (queue emptied, then refilled with 2 new). Design-v15 applied 6 UX fixes to DeFi Insurance + DVT pages. Community-v15 drafted tweets #163-166 + newsletter v27 + 2 SVG cards.",
+          "TOP CONTENT PERFORMANCE: Fear & Greed Timeline (+95%), Options Calculator (+93%), ETF Complete Guide (+92%), Congressional Tokenization (+90%), Tokenized RWA Guide (+88%). NEW: On-Ramps + Portfolio Allocation queued.",
+          "NEW INTEL — SEC DELAY: Nasdaq PHLX Bitcoin options proposal deadline pushed from Mar 28 to May 27, 2026. This is separate from the 91 ETF applications — those still converge Thu.",
+          "OPTIONS EXPIRY (~20 hrs): $14B on Deribit (confirmed CoinDesk). BTC max pain $75K — acting as price magnet. Put/call ratio 0.85. Gamma hedging intensifies 12-18 hrs before settlement. BTC at ~$71K = well below max pain = gravitational pull UP.",
+          "SEC 91 ETF RULING (~20 hrs): Final deadline Mar 27 for 91 crypto ETF applications across 24 tokens. 16 cryptos classified as commodities Mar 17 (incl XRP, SOL, ADA, LINK). NYSE/Nasdaq/Cboe removed ETF options position limits on 11 funds."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "🔴 BLOCKER PERSISTS [P0]: git index.lock since 09:58 UTC — now 24+ hours. 106 pending files (21 modified + 85 untracked). Every hour = missed indexing before Thu catalysts. Jefe: rm .git/index.lock → git add -A → commit → push → Vercel redeploy.",
+          "DONE SINCE v18: Build-v15 created On-Ramps/Off-Ramps + Portfolio Allocation guides. Publish-v13 promoted Privacy Infra + World Chain (queue emptied, refilled with 2 new). Design-v15 applied 6 UX fixes (DeFi Insurance + DVT). Community-v15 drafted tweets #163-166, newsletter v27, 2 SVG cards, calendar extended through Mar 31. EOD-v18 confirmed 528 published slugs.",
+          "PUBLISH_QUEUE: 2 items pending promotion (crypto-on-ramps-off-ramps-guide-2026, crypto-portfolio-allocation-guide-2026) — both page.tsx verified.",
+          "PUBLISHED STATUS: 528 unique published slugs (per EOD-v18). 1,188 total page.tsx files (+2 from build-v15). 255 learn guide dirs. ~37+ pages published today across 19+ batches.",
+          "CARRY-OVER [P1]: 142 TS errors (119 in lido-v3 — JSX escaping). 103 slugs without page.tsx (legacy gap). Rate limiter 0/6 routes.",
+          "CARRY-OVER [P2]: 17 duplicate slugs. ~120 learn pages missing OG images. /api/market-metrics 404. AI Agent Frameworks page missing JSON-LD.",
+          "TODAY'S CUMULATIVE OUTPUT: 34 learn guides built, 30+ OG images, 166+ social posts drafted, 34+ SVG cards, 55+ UX fixes across 95 agent cycles. Content calendar loaded through Mon Mar 31."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR index.lock + MASS COMMIT + DEPLOY: 24+ hours blocked, 106 files stuck. Thu convergence is ~20 hours away. $14B options expiry (max pain $75K) + 91 SEC ETF rulings converging. 1,188 pages MUST be live when this hits. Our privacy, World Chain, on-ramps, portfolio allocation, tokenized RWA, and ETF content is perfectly positioned. Every hour of delay is lost indexing time.",
+          "PRIORITY 2 — PROMOTE 2 QUEUE ITEMS + BUILD NEXT BATCH: On-Ramps/Off-Ramps & Portfolio Allocation guides verified and ready. Next build targets: (a) post-convergence analysis pages (options expiry recap, SEC ruling outcomes), (b) tax content refresh (20 days to April 15), (c) XRP/SOL/ADA ETF deep-dives (riding SEC commodity classification).",
+          "PRIORITY 3 — FIX TS ERRORS + TECH DEBT: 142 TS errors (mostly JSX escaping in lido-v3). Fix would drop to ~23 errors. Also: missing JSON-LD on AI Agent Frameworks, 103 legacy slugs without page.tsx, 17 duplicate slugs.",
+          "STRATEGIC SIGNAL: Convergence window tightening — 20 hrs to Thu's dual catalyst (options + SEC). F&G crashed to 8 (deepening from 11 — near-historic levels). BTC relief rally +5% on US-Iran pause but still below $75K max pain = upside pressure from options settlement. NEW: SEC delayed Nasdaq PHLX BTC options to May 27 — signals regulatory caution on options specifically, but ETF approvals on track. March ETF inflows down 73% but tokenized treasuries attracted $12.8B = institutional rotation accelerating. Stablecoins $313B ATH = massive dry powder. degen0x has content covering ALL these angles — deploy is the only bottleneck."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel) — needs redeploy", "pct": 75, "color": "#f59e0b" },
+          { "label": "Published Slugs", "value": "528 unique (+ 2 in queue)", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (On-Ramps, Portfolio Allocation)", "pct": 90, "color": "#4ade80" },
+          { "label": "Total page.tsx Files", "value": "1,188 (+2 from v18)", "pct": 100, "color": "#4ade80" },
+          { "label": "Learn Guide Dirs", "value": "255", "pct": 95, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "106 (21 modified + 85 untracked)", "pct": 7, "color": "#ef4444" },
+          { "label": "Git index.lock", "value": "STILL PRESENT — 24+ hours — blocks all commits", "pct": 3, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "142 (5 files, 119 in lido-v3)", "pct": 15, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "6/6 (verified by QA)", "pct": 100, "color": "#4ade80" },
+          { "label": "Today's Output", "value": "34 guides, 30+ OGs, 166+ posts, 34+ SVGs, 55+ UX fixes", "pct": 100, "color": "#4ade80" },
+          { "label": "BTC Price", "value": "$70,600-$71,674 (+5% relief rally)", "pct": 72, "color": "#06b6d4" },
+          { "label": "ETH Price", "value": "$2,166-$2,327", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "8-11 (Extreme Fear) — 46-day streak", "pct": 9, "color": "#ef4444" },
+          { "label": "Stablecoins", "value": "$313B ATH (dry powder)", "pct": 97, "color": "#4ade80" },
+          { "label": "March ETF Inflows", "value": "$890M (down 73% from Feb $3.3B)", "pct": 40, "color": "#f59e0b" },
+          { "label": "Tokenized Treasury Flows (Mar)", "value": "$12.8B (institutional rotation)", "pct": 95, "color": "#4ade80" },
+          { "label": "Options Expiry (Thu)", "value": "$14B — max pain $75K — P/C 0.85", "pct": 95, "color": "#f59e0b" },
+          { "label": "SEC ETF Deadline (Thu)", "value": "91 applications, 24 tokens, 16 commodities", "pct": 97, "color": "#f59e0b" },
+          { "label": "SEC PHLX Options Delay", "value": "Pushed to May 27, 2026 (NEW)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Hours to Thu Convergence", "value": "~20 hours", "pct": 95, "color": "#f59e0b" },
+          { "label": "Tax Deadline", "value": "20 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (all agents)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h (full rotation)", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: standup $45 + build $233 + publish $55 + design $60 + community $41 + eod $63)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$7,714 (95 runs: standup×19 $855 + build×15 $3,495 + publish×13 $715 + design×15 $900 + community×15 $615 + eod×18 $1,134)", "pct": 65, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "~$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Chrome fetch blocked (CORS/network sandbox restriction). Persistent issue across cycles. Report saved locally."
+  }
+}

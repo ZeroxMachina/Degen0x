@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0f1629"/>
+    </linearGradient>
+    <linearGradient id="solGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9945FF"/>
+      <stop offset="100%" style="stop-color:#14F195"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(153,69,255,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(20,241,149,0.06)"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative orbs -->
+  <circle cx="950" cy="120" r="180" fill="#9945FF" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="200" cy="500" r="140" fill="#14F195" opacity="0.05" filter="url(#glow)"/>
+
+  <!-- Top badge -->
+  <rect x="40" y="30" width="340" height="36" rx="18" fill="url(#solGrad)" opacity="0.9"/>
+  <text x="210" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1.5">SOLANA DEVELOPER PLATFORM</text>
+
+  <!-- Main headline -->
+  <text x="60" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="800" fill="#ffffff">Mastercard. Western Union.</text>
+  <text x="60" y="168" font-family="system-ui, -apple-system, sans-serif" font-size="38" font-weight="800" fill="#ffffff">Worldpay. Building on Solana.</text>
+
+  <!-- Subheadline -->
+  <text x="60" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#94a3b8">Production enterprise toolkit launched March 24, 2026</text>
+
+  <!-- Partner cards row -->
+  <!-- Mastercard -->
+  <rect x="60" y="245" width="340" height="110" rx="12" fill="url(#cardGrad)" stroke="#9945FF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#9945FF" letter-spacing="1">MASTERCARD</text>
+  <text x="80" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#e2e8f0">Stablecoin Settlement</text>
+  <text x="80" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Exploring USDC/USDT settlement rails</text>
+  <text x="80" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">on Solana for merchant payments</text>
+
+  <!-- Western Union -->
+  <rect x="420" y="245" width="340" height="110" rx="12" fill="url(#cardGrad)" stroke="#14F195" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="440" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#14F195" letter-spacing="1">WESTERN UNION</text>
+  <text x="440" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#e2e8f0">Cross-Border Payments</text>
+  <text x="440" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Testing stablecoin-powered</text>
+  <text x="440" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">international transfers on Solana</text>
+
+  <!-- Worldpay -->
+  <rect x="780" y="245" width="340" height="110" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="800" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#f59e0b" letter-spacing="1">WORLDPAY</text>
+  <text x="800" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#e2e8f0">Merchant Settlement</text>
+  <text x="800" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">Tokenized assets and merchant</text>
+  <text x="800" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">payment settlement infrastructure</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="385" width="260" height="80" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">SOL STABLECOIN SUPPLY</text>
+  <text x="80" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#14F195">$15.7B ATH</text>
+
+  <rect x="340" y="385" width="260" height="80" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="360" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">MONTHLY STABLECOIN TX</text>
+  <text x="360" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#9945FF">$650B</text>
+
+  <rect x="620" y="385" width="260" height="80" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="640" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">INFRA PARTNERS</text>
+  <text x="640" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#f59e0b">20+</text>
+
+  <rect x="900" y="385" width="240" height="80" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="920" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">SEC STATUS</text>
+  <text x="920" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#22c55e">Commodity</text>
+
+  <!-- SDP Modules -->
+  <rect x="60" y="490" width="540" height="55" rx="10" fill="rgba(153,69,255,0.08)" stroke="#9945FF" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="80" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#9945FF">SDP MODULES AT LAUNCH</text>
+  <text x="80" y="535" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">Issuance (stablecoins, RWAs, tokenized deposits)  |  Payments (fiat + stablecoin flows, on/off-ramps)  |  Trading (Q4 2026)</text>
+
+  <!-- Signal box -->
+  <rect x="620" y="490" width="520" height="55" rx="10" fill="rgba(20,241,149,0.08)" stroke="#14F195" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="640" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#14F195">SOLANA MARCH 2026 MILESTONES</text>
+  <text x="640" y="535" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">SEC commodity ✓  Walmart OnePay ✓  $15.7B stablecoin ✓  Enterprise SDP ✓</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="605" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="url(#solGrad)">degen0x.com</text>
+  <text x="1140" y="605" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b" text-anchor="end">March 24, 2026</text>
+</svg>

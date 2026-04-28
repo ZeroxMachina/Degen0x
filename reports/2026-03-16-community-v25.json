@@ -1,0 +1,63 @@
+{
+  "date": "2026-03-16",
+  "block": "community",
+  "cycle": "v25",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v25: Crypto Inheritance Planning + Parallel EVM Guide double-launch social content (build-v10, zero prior coverage); FOMC T-2 reactive content framework for Wed Mar 18; tax season 29-day countdown tweet; 2 new social cards created; posting schedule extended Tue-Wed Mar 25-26; newsletter amendments for Thu Mar 19.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter thread (Tue Mar 25 AM, 5 posts): Crypto Inheritance Planning — '$30B in crypto is stuck in wallets nobody can access'; estate tax drop to ~$7M; 4 solutions compared (Casa, Inheriti, MPC, smart contracts); 5 biggest mistakes; CTA to /learn/crypto-inheritance-planning",
+          "Tweet (Tue Mar 25 AM): Inheritance Planning punchy single — 17% of US adults hold crypto, almost none have an estate plan; $30B locked stat; IRS taxable event warning",
+          "Twitter thread (Wed Mar 26, 5 posts): Parallel EVM Guide — 'The Race to 100K TPS'; Monad 10K TPS ($244M raised, $153M TVL), Sei 28.3K batched TPS (390ms finality), MegaETH 100K+ target (10ms blocks); technical execution methods; use cases unlocked",
+          "Tweet (Wed Mar 26): Parallel EVM single — side-by-side comparison: Ethereum ~15 TPS vs Monad/Sei/MegaETH benchmarks",
+          "Tweet (Wed Mar 18 AM): FOMC prep — what matters for crypto, rate decision timing, forward guidance angle, DCA calculator CTA",
+          "Tweet (Wed Mar 18 PM): FOMC reactive — post-announcement framework with portfolio tracker + DCA calculator CTAs",
+          "Tweet (Tue Mar 18 AM): Tax season 29-day countdown — IRS watching, Coinbase/Kraken reporting, CTA to /learn/crypto-tax-guide-2026",
+          "Newsletter amendments (Thu Mar 19): Inheritance Planning + Parallel EVM added to NEW ON DEGEN0X section; Degen Corner updated with $30B locked wallets thesis + estate tax exemption drop"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/tools/dca-calculator", "value": "#1 Tool — FOMC T-2 spike window", "pct": 97, "color": "#4ade80" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "29 days to Apr 15 — peak US tax intent", "pct": 94, "color": "#f59e0b" },
+          { "label": "/learn/stablecoin-yield-strategies-2026", "value": "DeFi yield queries surging pre-FOMC", "pct": 92, "color": "#22d3ee" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "24 days to Apr 10 — EIP-7702 countdown", "pct": 91, "color": "#8b5cf6" },
+          { "label": "/tools/altcoin-etf-tracker", "value": "Only free altcoin ETF tracker — unique positioning", "pct": 91, "color": "#06b6d4" },
+          { "label": "/learn/crypto-inheritance-planning", "value": "NET-NEW (v25 lead): $30B locked, estate tax drop, 4 solutions", "pct": 85, "color": "#f59e0b" },
+          { "label": "/learn/parallel-evm-guide", "value": "NET-NEW (v25): Monad $153M TVL, Sei 28.3K TPS, MegaETH 100K+", "pct": 83, "color": "#6366f1" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-crypto-inheritance-planning.svg — 1200x630 social card: amber-to-red gradient theme; '$30B LOCKED FOREVER' badge; 3 stat chips (17% holders, ~$7M exemption, -46% drop); 4 solution cards (Casa/Inheriti/MPC/Smart Contracts); right panel with lock icon, inheritance flow diagram (Your Assets → Estate Plan → Your Heirs), warning section, checklist; degen0x brand bar. Saved to /public/social-crypto-inheritance-planning.svg",
+          "social-parallel-evm-guide.svg — 1200x630 social card: indigo-to-cyan-to-green theme; 'SCALING THE EVM' badge; TPS comparison bar chart (Ethereum 15 → Monad 10K → Sei 28.3K → MegaETH 100K+); 3 protocol detail cards; right panel with sequential vs parallel execution visual (1000x faster), 3 technique rows (optimistic execution, state access lists, pipelining); degen0x brand bar. Saved to /public/social-parallel-evm-guide.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "Crypto Inheritance: Estate tax exemption dropped from $13M to ~$7M in 2026 — timely, evergreen, strong search intent. $30B locked stat is shareable. Tax season (29 days to Apr 15) amplifies urgency. Cross-links to crypto-tax-guide-2026 and bitcoin-security-guide.",
+          "Parallel EVM: Monad mainnet Nov 2025 with $153M TVL already. Sei and MegaETH competing aggressively. Infrastructure narrative investors are watching for 2026. Cross-links to ethereum-pectra-upgrade-guide and layer2-scaling-guide.",
+          "FOMC (Wed Mar 18): Fed days consistently drive crypto search spikes. Pre/post tweets with tool CTAs (DCA calculator, portfolio tracker) convert volatility anxiety into traffic. CRITICAL: rate limiter must be wired before FOMC — 0/6 endpoints protected.",
+          "Tax season countdown: 29 days to Apr 15. Tax guide is highest-signal content (+90%). Weekly countdown tweets planned through deadline.",
+          "343 pages live, 4 remaining in queue (advanced-defi-strategies, news, crypto-inheritance-planning, parallel-evm-guide). Build-v10 added 2 new guides to queue.",
+          "Social calendar now covers through Wed Mar 26 with no posting conflicts. v25 extends into Tue-Wed Mar 25-26 (open days) and adds FOMC-day reactive framework for Wed Mar 18.",
+          "Social drafts saved to /reports/community-drafts/2026-03-16-social-drafts-v25.md",
+          "Inheritance planning social card saved to /public/social-crypto-inheritance-planning.svg",
+          "Parallel EVM social card saved to /public/social-parallel-evm-guide.svg"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"],
+    "assets_created": [
+      "/public/social-crypto-inheritance-planning.svg",
+      "/public/social-parallel-evm-guide.svg",
+      "/reports/community-drafts/2026-03-16-social-drafts-v25.md"
+    ]
+  }
+}

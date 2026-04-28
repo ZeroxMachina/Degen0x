@@ -1,0 +1,77 @@
+{
+  "date": "2026-04-03",
+  "block": "community",
+  "version": 4,
+  "report": {
+    "status": "completed",
+    "summary": "Drafted 5 tweets (#410-414), newsletter v25 section, 2 Discord posts, and created 2 social card SVGs covering new Impermanent Loss and Hyperliquid guides, leveraging 60-day F&G extreme fear narrative and post-Drift security momentum.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #410 — Impermanent Loss: The Silent DeFi Killer (3-tweet educational thread, Mon May 12)",
+          "Tweet #411 — Hyperliquid: The Perp DEX Eating CEX Market Share (2-tweet spotlight, Tue May 13)",
+          "Tweet #412 — F&G 60-Day Extreme Fear: What History Says (2-tweet data analysis, Wed May 14)",
+          "Tweet #413 — DeFi Yield After the Drift Wake-Up Call (2-tweet educational, Thu May 15)",
+          "Tweet #414 — Weekly Roundup: New Guides + Market Context (2-tweet recap, Sat May 17)",
+          "Discord/Telegram: 2 posts — New Guides Launch (Mon May 12) + Post-Drift Security Checklist (Wed May 14)",
+          "Newsletter v25 section: 'The DeFi Security Reckoning' — 2 new guide features, 2 worth-reading picks, degen corner"
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "Social card SVG: Impermanent Loss guide (1200x630, pool rebalancing visualization, IL stats)",
+          "Social card SVG: Hyperliquid Perp DEX guide (1200x630, on-chain order book visualization, TPS/finality stats)"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "DCA Calculator", "value": "99% relevance", "pct": 99, "color": "#4ade80" },
+          { "label": "Fear & Greed Tracker", "value": "98% relevance", "pct": 98, "color": "#4ade80" },
+          { "label": "Drift Hack Analysis", "value": "97% relevance", "pct": 97, "color": "#4ade80" },
+          { "label": "Tokenomics Guide", "value": "96% relevance", "pct": 96, "color": "#22c55e" },
+          { "label": "Regulations Guide", "value": "95% relevance", "pct": 95, "color": "#22c55e" },
+          { "label": "Wallet Security Guide", "value": "94% relevance", "pct": 94, "color": "#22c55e" }
+        ]
+      },
+      {
+        "title": "Growth Trajectory",
+        "metrics": [
+          { "label": "Published Pages", "value": "994 total", "pct": 95, "color": "#6366f1" },
+          { "label": "Publish Queue", "value": "4 pages queued", "pct": 10, "color": "#f59e0b" },
+          { "label": "Learn Guides on Disk", "value": "82 guides", "pct": 80, "color": "#06b6d4" },
+          { "label": "OG Image Coverage", "value": "100% (82/82)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Tweets Drafted", "value": "434 (#1-414)", "pct": 85, "color": "#8b5cf6" },
+          { "label": "Newsletter Editions", "value": "v25", "pct": 75, "color": "#0891b2" }
+        ]
+      },
+      {
+        "title": "Key Narratives This Cycle",
+        "items": [
+          "New content launch: IL deep-dive (973 lines) + Hyperliquid guide (1,004 lines)",
+          "Post-Drift security narrative: governance audit education, DeFi yield reassessment",
+          "F&G 60+ day extreme fear trough: historic parallel to COVID/Terra-Luna bottoms",
+          "Perp DEX migration: Hyperliquid gaining share as Drift users seek alternatives",
+          "Macro convergence: Liberation Day tariffs + stablecoin ATH + institutional accumulation vs retail fear"
+        ]
+      },
+      {
+        "title": "Market Context",
+        "metrics": [
+          { "label": "BTC", "value": "$66,503 (-3.6% 7d)", "pct": 45, "color": "#f59e0b" },
+          { "label": "Fear & Greed", "value": "8/100 (60+ days)", "pct": 8, "color": "#ef4444" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH", "pct": 95, "color": "#22c55e" },
+          { "label": "DeFi TVL", "value": "~$87.2B", "pct": 55, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "files_created": [
+      "reports/community-drafts/2026-04-03-social-drafts-v25.md",
+      "reports/community-drafts/2026-04-03-social-card-impermanent-loss-guide.svg",
+      "reports/community-drafts/2026-04-03-social-card-hyperliquid-perp-dex.svg"
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

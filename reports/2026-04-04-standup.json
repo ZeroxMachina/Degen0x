@@ -1,0 +1,82 @@
+{
+  "date": "2026-04-04",
+  "block": "standup",
+  "version": 2,
+  "report": {
+    "status": "completed",
+    "summary": "Standup v2 Apr 4: 7 agent runs since v1 across all 6 types. Build added 2 new guides (Onchain Order Books/CLOBs, Crypto Prime Brokerage). Publish promoted 5 pages (perpetual futures, pump.fun, restaking, soneium, stablecoin comparison). Community drafted tweets #490-494 + newsletter v51. Design polished both new guides with OG images + UX fixes. 678 published slugs, 7 in queue, 122 uncommitted files. Deploy debt at 34th escalation — production frozen since Apr 2.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE v1 → v2: 7 agent runs — build×1, publish×1, community×1, design×1, eod×1, standup×1 (prior) + this run. Full cycle rotation completed.",
+          "BUILD OUTPUT: 2 new learn guides — Onchain Order Books & CLOBs (3,000+ words, dYdX v4, Sei, Orderly, Hyperliquid 200K+ daily traders) and Crypto Prime Brokerage (2,800+ words, FalconX, Coinbase Prime, Hidden Road $1.25B acquisition, Anchorage Digital). Both with Article + FAQPage + BreadcrumbList structured data.",
+          "PUBLISH OUTPUT: 5 pages promoted from queue → PUBLISHED_PAGES: perpetual-futures-guide, pump-fun-memecoins, restaking-eigenlayer, soneium-guide, stablecoin-comparison. QA passed (H1, breadcrumbs, valid TSX). 7 pages remain in queue.",
+          "COMMUNITY OUTPUT: 5 tweets drafted (#490-494) covering onchain CLOBs, prime brokerage ($1.25B Hidden Road), 685-page milestone, ZK coprocessors, weekend signal roundup. Newsletter v51 'The Institutions Are Here'. 2 new social card SVGs. Content calendar through Jun 27.",
+          "DESIGN OUTPUT: UX audit on both new guides — Prime Brokerage got breadcrumbs, clickable TOC, section IDs, responsive typography, mobile table scroll, accessibility fixes. 2 OG images created (order book viz + institutional architecture diagram).",
+          "CONTENT PIPELINE: 678 published slugs (confirmed from file), 7 in queue. 114 learn dirs in Degen0x staging. 313 learn pages in cryptodegen. 8+ new guides built since last deploy awaiting commit.",
+          "MARKET: BTC ~$66,650 (stable). F&G 9 (Extreme Fear, 5+ days). Stablecoins $316B ATH. Iran war headlines suppressing risk. Thin Saturday liquidity.",
+          "EGRESS: Sandbox blocks CoinGecko, GSC, Vercel, alternative.me. Market data from web search. No live traffic delta available."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SINCE v1: 7 agent runs — build (Onchain CLOBs + Prime Brokerage), publish (5 pages promoted), community (tweets + newsletter + social cards), design (UX audit + OG images), eod (QA cycle-close), standup (this run).",
+          "TODAY'S TOTAL: 8 agent runs — standup×2 ($90), build×1 ($233), publish×1 ($55), community×1 ($41), design×1 ($60), eod×1 ($63). Total human-equiv: $542.",
+          "P0 — COMMIT + DEPLOY (34TH ESCALATION): Deploy debt CRITICAL++. 122 uncommitted files. Production frozen at e3f63fc since Apr 2 (3 days). 678 published slugs in registry vs what's live. 8+ new guides trapped behind uncommitted code. Publish agent promoted 5 more pages today but they can't go live without deploy. JEFE ACTION REQUIRED.",
+          "P1 — 8+ GUIDES AWAITING DEPLOY: Jupiter DEX, Crypto KYC, ZK Coprocessors, Polygon AggLayer, Glamsterdam, Restaking Wars, Onchain CLOBs, Crypto Prime Brokerage. All built with full SEO but unreachable by users.",
+          "P2 — QUEUE STATUS: 7 pages remain in PUBLISH_QUEUE (monad-guide, symbiotic-restaking, token-vesting-explained, validator-staking-guide, zero-knowledge-proofs, zksync-era-guide, zora-attention-markets-guide-2026). 2 have no page.tsx (monad, zora).",
+          "P3 — TECHNICAL DEBT: 111 phantom slugs (missing page.tsx), 141 TS errors in 4 files (non-blocking), 0/6 API rate limiting, 1/6 routes with fallback data. defi-yields route most fragile.",
+          "P4 — CARRY-OVER: mev-guide and solana-vs-ethereum warn status. defi-yields API hardening deferred."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — COMMIT + DEPLOY (P0 — 34TH ESCALATION): 3 days of agent output trapped. 122 uncommitted files, 678 published slugs, 8+ new guides covering hot narratives (institutional infra, onchain CLOBs, ZK, compliance). Content freshness decaying hourly. Today's publish batch (5 pages) is invisible without deploy. Deploy urgency: MAXIMUM.",
+          "PRIORITY 2 — CLEAR REMAINING QUEUE (7 PAGES): 5 of 7 queue pages have valid page.tsx (symbiotic-restaking, token-vesting, validator-staking, zero-knowledge-proofs, zksync-era). Promote in next publish cycle. Fix or scaffold monad-guide and zora page.tsx before promoting those 2.",
+          "PRIORITY 3 — INSTITUTIONAL NARRATIVE MOMENTUM: Onchain CLOBs (Hyperliquid 200K+ daily traders) and Prime Brokerage ($1.25B Hidden Road) guides are perfectly timed for the institutional infrastructure narrative during extreme fear. Deploy would let these capture organic search while the topic is hot."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "FROZEN — e3f63fc (3 days, 34th escalation)", "pct": 2, "color": "#ef4444" },
+          { "label": "Published Slugs (registry)", "value": "678 (confirmed from file)", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "7 remaining (5 ready, 2 need page.tsx)", "pct": 58, "color": "#06b6d4" },
+          { "label": "Learn Pages (Degen0x staging)", "value": "114 dirs", "pct": 100, "color": "#4ade80" },
+          { "label": "Learn Pages (cryptodegen)", "value": "313 with page.tsx", "pct": 100, "color": "#4ade80" },
+          { "label": "Guides Awaiting Deploy", "value": "8+ (CLOBs, Prime Brokerage, Jupiter, KYC, ZK, AggLayer, Glamsterdam, Restaking)", "pct": 30, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "122 files", "pct": 5, "color": "#ef4444" },
+          { "label": "Phantom Published Slugs", "value": "111 (missing page.tsx)", "pct": 16, "color": "#ef4444" },
+          { "label": "Tweets Drafted (cumulative)", "value": "494+", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Cards (OG SVGs)", "value": "106+", "pct": 100, "color": "#4ade80" },
+          { "label": "API Fallback Coverage", "value": "1/6 routes", "pct": 17, "color": "#ef4444" },
+          { "label": "Rate Limiting Coverage", "value": "0/6 public routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Build Status", "value": "PASSES (141 TS errors, non-blocking)", "pct": 70, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "~$66,650 (stable)", "pct": 50, "color": "#f59e0b" },
+          { "label": "F&G Index", "value": "9/100 — Extreme Fear (5+ days)", "pct": 9, "color": "#ef4444" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH", "pct": 99, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup × $45)", "pct": 1, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$542 (8 runs: standup×2 $90 + build×1 $233 + publish×1 $55 + community×1 $41 + design×1 $60 + eod×1 $63)", "pct": 5, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Apr 3)", "value": "$7,496 (86 runs across all 6 agents)", "pct": 63, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Resend API blocked by browser CORS (Failed to fetch from google.com context). Consistent with prior cycles. Report saved to reports/ folder."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Fixed OptionsPnLCalculator chart fill rendering bug and mobile input UX, added calculator to DeFi Options ToC, and added keyboard focus-visible styles to both new learn pages.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "OptionsPnLCalculator: Fixed SVG profit/loss fill path rendering — previous .filter() approach created broken non-contiguous paths when P&L crossed zero; replaced with proper clamp-to-zero fill tracing that correctly renders contiguous green (profit) and red (loss) regions",
+          "OptionsPnLCalculator: Added inputMode='decimal' to all numeric inputs — triggers numeric keyboard on mobile/touch devices instead of full alpha keyboard",
+          "DeFi Options Trading Guide: Added 'Interactive P&L Calculator' to Table of Contents with anchor id='pnl-calculator' — calculator was previously invisible in page navigation",
+          "DeFi Options Trading Guide: Added focus-visible outline styles (2px solid #6366f1) to all links and buttons for WCAG keyboard navigation compliance",
+          "Ethereum 2026 Upgrade Roadmap: Added focus-visible outline styles (2px solid #6366f1) to all links for WCAG keyboard navigation compliance"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "No new OG images needed — both ethereum-2026-upgrade-roadmap and defi-options-trading-guide already have SVG + PNG OG images from previous build cycle"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (No Action Needed)",
+        "items": [
+          "Ethereum Upgrade Roadmap: Timeline table has proper overflow-x-auto with touch scrolling, role='region', and aria-label — mobile handling is solid",
+          "Ethereum Upgrade Roadmap: Holder/Staker/L2 card grid uses auto-fit minmax(240px, 1fr) — degrades cleanly to single column on mobile",
+          "Ethereum Upgrade Roadmap: Breadcrumb, ToC, header badges, FAQ, and related articles follow established degen0x article layout pattern — no changes needed",
+          "DeFi Options Guide: Protocol comparison cards and table both have proper responsive handling and overflow scrolling",
+          "DeFi Options Guide: Risk section cards use consistent warning styling with red borders — clear visual hierarchy",
+          "OptionsPnLCalculator: Already has aria-live='polite' on results, aria-pressed on toggle buttons, fieldsets with legends, and 44px min-height touch targets — strong accessibility baseline"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_modified": [
+      "src/components/OptionsPnLCalculator.tsx",
+      "src/app/learn/defi-options-trading-guide/page.tsx",
+      "src/app/learn/ethereum-2026-upgrade-roadmap/page.tsx"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
+  <circle cx="160" cy="120" r="80" fill="#10b981" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1050" cy="510" r="115" fill="#059669" opacity="0.06" filter="url(#glow)"/>
+  <rect x="60" y="60" width="170" height="40" rx="20" fill="#10b981" opacity="0.15" stroke="#10b981" stroke-width="2"/>
+  <text x="145" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">PAYMENTS</text>
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="42" font-weight="bold" fill="url(#titleGradient)">Stablecoin Payments</text>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">Infrastructure powering crypto-native commerce</text>
+  <g>
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="800" cy="180" r="20" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="2"/>
+    <text x="800" y="186" font-family="system-ui, sans-serif" font-size="12" fill="#10b981" text-anchor="middle" font-weight="bold">A</text>
+    <circle cx="1000" cy="180" r="20" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="2"/>
+    <text x="1000" y="186" font-family="system-ui, sans-serif" font-size="12" fill="#10b981" text-anchor="middle" font-weight="bold">B</text>
+    <path d="M 820 180 L 980 180" stroke="#10b981" stroke-width="2" opacity="0.7"/>
+    <path d="M 825 175 L 815 185 M 975 175 L 985 185" stroke="#10b981" stroke-width="1.5" fill="none"/>
+    <g>
+      <circle cx="820" cy="280" r="18" fill="#059669" opacity="0.8" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M 810 280 L 830 280 M 820 270 L 820 290" stroke="#10b981" stroke-width="1" opacity="0.8"/>
+    </g>
+    <g>
+      <circle cx="920" cy="280" r="18" fill="#059669" opacity="0.8" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M 910 280 L 930 280 M 920 270 L 920 290" stroke="#10b981" stroke-width="1" opacity="0.8"/>
+    </g>
+    <g>
+      <circle cx="1020" cy="280" r="18" fill="#059669" opacity="0.8" stroke="#10b981" stroke-width="1.5"/>
+      <path d="M 1010 280 L 1030 280 M 1020 270 L 1020 290" stroke="#10b981" stroke-width="1" opacity="0.8"/>
+    </g>
+    <path d="M 820 260 L 820 280 M 920 260 L 920 280 M 1020 260 L 1020 280" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+    <text x="900" y="410" font-family="system-ui, sans-serif" font-size="14" fill="#10b981" text-anchor="middle">Payment Flow</text>
+  </g>
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
+</svg>

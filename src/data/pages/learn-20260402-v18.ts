@@ -1,0 +1,70 @@
+// ─── Learn Pages: April 2, 2026 (Build v18) ─────────────────────────────────
+// Topics: Sui & Move Blockchain Ecosystem Guide 2026
+
+import { PageData } from "@/lib/types";
+
+export const suiMoveBlockchainEcosystemGuide2026Page: PageData = {
+  slug: "/learn/sui-move-blockchain-ecosystem-guide-2026",
+  title: "Sui & Move Blockchain Guide 2026 — Ecosystem, DeFi & Beyond | degen0x",
+  description:
+    "Complete guide to Sui blockchain and the Move programming language in 2026. Explore Sui's object-centric model, DeFi protocols (NAVI, Scallop, Cetus), tokenomics, and roadmap.",
+  category: "learn",
+  subcategory: "layer-1",
+  tags: [
+    "sui",
+    "move-language",
+    "layer-1",
+    "sui-defi",
+    "navi-protocol",
+    "scallop",
+    "cetus",
+    "mysten-labs",
+    "aptos",
+    "object-centric",
+    "mysticeti",
+    "walrus",
+  ],
+  publishedAt: "2026-04-02T00:00:00Z",
+  updatedAt: "2026-04-02T00:00:00Z",
+  difficulty: "advanced",
+  readingTime: 15,
+  wordCount: 2800,
+  author: "degen0x",
+  status: "queued",
+  seo: {
+    targetKeyword: "sui blockchain move ecosystem guide 2026",
+    secondaryKeywords: [
+      "sui defi protocols 2026",
+      "move programming language blockchain",
+      "sui vs aptos",
+      "sui navi scallop cetus",
+      "sui tvl 2026",
+      "object-centric blockchain model",
+      "mysten labs sui stack",
+      "sui token unlocks april 2026",
+    ],
+    schemas: ["Article", "FAQPage"],
+    internalLinks: [
+      "/learn/ethereum-layer-2-ecosystem-guide-2026",
+      "/learn/parallel-evm-monad-megaeth-guide-2026",
+      "/learn/concentrated-liquidity-lp-strategies-guide-2026",
+      "/learn/crypto-wallet-security-guide-2026",
+      "/learn/defi-insurance-risk-protection-guide-2026",
+      "/learn/crypto-lending-borrowing-defi-guide-2026",
+    ],
+  },
+  toc: [
+    { id: "what-is-sui", title: "What Is Sui?" },
+    { id: "object-centric-model", title: "Object-Centric Data Model" },
+    { id: "move-programming", title: "Move Programming Language" },
+    { id: "ecosystem-overview", title: "Sui Ecosystem Overview" },
+    { id: "defi-protocols", title: "Top Sui DeFi Protocols" },
+    { id: "sui-stack", title: "Sui Stack & Developer Tools" },
+    { id: "tokenomics", title: "Token Economics & Unlocks" },
+    { id: "roadmap-2026", title: "2026 Roadmap" },
+    { id: "risks", title: "Risks & Security Challenges" },
+    { id: "sui-vs-aptos", title: "Sui vs Aptos & Other L1s" },
+    { id: "getting-started", title: "Getting Started with Sui" },
+    { id: "faq", title: "FAQ" },
+  ],
+};

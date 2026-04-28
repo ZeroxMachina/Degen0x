@@ -1,0 +1,62 @@
+{
+  "date": "2026-03-17",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Day 57 publish cycle: promoted /learn/bitcoin-liquid-staking-tokens-guide-2026 from PUBLISH_QUEUE to PUBLISHED_PAGES (QUEUE now empty), all QA checks passed, Vercel production redeploy triggered (Dkt9eF3dQ). Note: git index.lock prevented commit — changes are in working tree; manual git commit needed to persist to repo.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/bitcoin-liquid-staking-tokens-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "page.tsx exists", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Title tag present", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Meta description present", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 present", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "StructuredData (Article + HowTo + FAQ)", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumb component", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "OpenGraph tags", "value": "1/1", "pct": 100, "color": "#4ade80" },
+          { "label": "Interactive component (BitcoinLSTYieldEstimator)", "value": "present", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript errors (production code)", "value": "0", "pct": 100, "color": "#4ade80" },
+          { "label": "TS errors in examples file (pre-existing)", "value": "known", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko /api/prices", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache TTL (prices)", "value": "60s", "pct": 100, "color": "#4ade80" },
+          { "label": "Stale-while-revalidate", "value": "120s", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama /api/defi-yields", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache TTL (yields)", "value": "300s", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback data", "value": "Configured", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Active", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Deployment ID", "value": "Dkt9eF3dQ", "pct": 100, "color": "#06b6d4" },
+          { "label": "Environment", "value": "Production", "pct": 100, "color": "#4ade80" },
+          { "label": "Status at trigger", "value": "Building", "pct": 100, "color": "#06b6d4" },
+          { "label": "Domains", "value": "degen0x.com", "pct": 100, "color": "#4ade80" },
+          { "label": "Git lock (index.lock)", "value": "WARN: commit pending", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Publish Queue",
+        "metrics": [
+          { "label": "Pages promoted (Day 57)", "value": "1", "pct": 100, "color": "#4ade80" },
+          { "label": "Queue remaining", "value": "0", "pct": 100, "color": "#4ade80" },
+          { "label": "Total published pages", "value": "566+", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

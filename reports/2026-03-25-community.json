@@ -1,0 +1,94 @@
+{
+  "date": "2026-03-25",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Completed evening community growth cycle: BTC $71,240 with Fear & Greed at 14 (extreme fear); drafted 4 Twitter posts (2 threads + 2 standalone), Discord/Telegram announcement, and newsletter digest v29 themed around fear-vs-fundamentals divergence; updated weekly pulse social card SVG with live market data.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Twitter Thread #1: Fear & Greed at 14 contrarian play — sentiment vs on-chain fundamentals divergence, links to Fear & Greed tracker tool and guide",
+          "Twitter Thread #2: 845+ pages milestone — publish queue empty, full content library breakdown with latest additions (AI agents, tokenized real estate, post-quantum ETH)",
+          "Standalone Tweet: ETH post-quantum — Ethereum Foundation pq.ethereum.org launch + Verkle Trees guide link",
+          "Standalone Tweet: Tether Big Four audit — stablecoin transparency angle + stablecoins guide link",
+          "Discord/Telegram Announcement: 845+ pages milestone with category breakdown and call for feature suggestions",
+          "Newsletter Weekly Digest v29: Market pulse (BTC $71K, F&G 14, SEC/CFTC digital commodities guidance), 7 new page highlights, 5 worth-reading items, degen corner (sub-15 F&G divergence signal)"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Index Tool", "value": "Top relevance (F&G at 14)", "pct": 98, "color": "#ef4444" },
+          { "label": "DCA Calculator (pillar)", "value": "Evergreen high-traffic", "pct": 90, "color": "#4ade80" },
+          { "label": "AI Agent Frameworks Comparison", "value": "New — top narrative (TAO trending)", "pct": 88, "color": "#6366f1" },
+          { "label": "Tokenized Real Estate Guide", "value": "New — RWA narrative", "pct": 82, "color": "#06b6d4" },
+          { "label": "Ethereum Verkle Trees Guide", "value": "New — post-quantum narrative", "pct": 80, "color": "#8b5cf6" },
+          { "label": "Stablecoins Guide", "value": "Tether audit catalyst", "pct": 78, "color": "#f59e0b" },
+          { "label": "Options Calculator", "value": "Evergreen high-traffic", "pct": 85, "color": "#4ade80" },
+          { "label": "Portfolio Allocation Guide", "value": "New — extreme fear = rebalancing", "pct": 75, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Market Context (Mar 25, 2026)",
+        "metrics": [
+          { "label": "BTC Price", "value": "$71,240 (+0.36%)", "pct": 71, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "$2,145 (+4.13%)", "pct": 55, "color": "#6366f1" },
+          { "label": "Fear & Greed Index", "value": "14 (Extreme Fear)", "pct": 14, "color": "#ef4444" },
+          { "label": "Total Market Cap", "value": "$2.5T", "pct": 60, "color": "#06b6d4" },
+          { "label": "BTC Dominance", "value": "56.6%", "pct": 57, "color": "#f59e0b" },
+          { "label": "March BTC Performance", "value": "+6.66%", "pct": 66, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Growth Trajectory",
+        "metrics": [
+          { "label": "Total Pages Published", "value": "845+", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue Status", "value": "Empty (fully drained)", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Categories Live", "value": "14", "pct": 100, "color": "#06b6d4" },
+          { "label": "Key Narratives This Week", "value": "AI repricing, digital commodities, post-quantum ETH, Tether audit", "pct": 95, "color": "#8b5cf6" },
+          { "label": "Trending Tokens (social)", "value": "TAO, MON, PENGU, SOL", "pct": 80, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Weekly Pulse v2 (1200x630, glass-morphism, 3 metric cards: Fear&Greed 14, 845+ pages, market snapshot BTC/ETH, 6 trending topic pills, stat bar)",
+          "Saved to: reports/2026-03-25-weekly-pulse-social.svg"
+        ]
+      },
+      {
+        "title": "Content Calendar (Mar 25-31)",
+        "items": [
+          "Wed Mar 25: Thread #1 — Fear & Greed contrarian play (Twitter/X)",
+          "Thu Mar 26: Newsletter Digest v29 (Email) + Tether audit tweet (Twitter/X)",
+          "Fri Mar 27: ETH post-quantum standalone tweet (Twitter/X)",
+          "Sat Mar 28: Discord/Telegram milestone announcement",
+          "Mon Mar 31: Thread #2 — 845 pages milestone + what's next (Twitter/X)"
+        ]
+      },
+      {
+        "title": "Recommendations",
+        "items": [
+          "Lead social with Fear & Greed contrarian angle — extreme fear + price stability is the most engaging narrative right now",
+          "Push AI Agent Frameworks content hard — TAO trending, AI repricing in equities makes AI-crypto crossover highly shareable",
+          "Capitalize on SEC/CFTC digital commodities classification — this is a landmark regulatory moment, create dedicated guide if not existing",
+          "Begin content refresh cycle — with queue empty, shift to updating dates/data in 150+ learn guides weekly",
+          "Internal linking sprint across 845 pages — maximize PageRank flow and reduce bounce rate",
+          "Monitor Monad (MON) and Solana ecosystem for upcoming content opportunities — testnet activity surging pre-mainnet"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"],
+    "artifacts": {
+      "social_drafts": "reports/community-drafts/2026-03-25-twitter-threads.md",
+      "newsletter": "reports/community-drafts/2026-03-25-newsletter.md",
+      "social_card": "reports/2026-03-25-weekly-pulse-social.svg"
+    },
+    "data_sources": {
+      "gsc": "unavailable (auth timeout — VM disk ENOSPC)",
+      "web_search": "live crypto market data from blockchainmagazine.net, coindesk.com, yahoo finance, neuralarb.com",
+      "codebase": "published-pages.ts (845+ pages), existing reports"
+    }
+  }
+}

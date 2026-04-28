@@ -1,0 +1,50 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Refactored whale-watch page (fixed broken CSS vars + metadata), improved courses mobile layout, added loading skeletons, created OG image for whale-watch.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "whale-watch: Split into server page + client component — metadata now works correctly (was silently ignored in 'use client' file)",
+          "whale-watch: Replaced all broken CSS variables (var(--bg), var(--text), etc.) with correct design system tokens (var(--color-bg), var(--glass-bg), etc.)",
+          "whale-watch: Added glass-morphism styling to match site design language (backdrop blur, glass borders, rounded corners)",
+          "whale-watch: Added loading skeleton with shimmer animation for initial data load",
+          "whale-watch: Added proper Breadcrumb navigation (was missing entirely)",
+          "whale-watch: Fixed stat cards grid from md:grid-cols-2 to grid-cols-2 for better mobile layout (2-up on small screens)",
+          "whale-watch: Added ARIA labels to filters (htmlFor + id), transaction type icons, live badge, progress bars, and feed region",
+          "whale-watch: Wrapped filters in semantic fieldset/legend for screen readers",
+          "whale-watch: Added proper TypeScript interfaces (WhaleTx, TopWhale, AccumulationZone) replacing 'any' types",
+          "courses/[slug]: Fixed grid-cols-4 → grid-cols-2 sm:grid-cols-4 for responsive stats row",
+          "courses/[slug]: Increased minimum font size from 10px to 11px for accessibility compliance",
+          "courses/[slug]: Added aria-label='Breadcrumb' to nav element and aria-current='page' to active breadcrumb item",
+          "courses/[slug]: Added OG image + Twitter card metadata (was missing)",
+          "badges: Changed hardcoded background #0d1117 to var(--color-bg) for theme consistency",
+          "badges/loading: Updated skeleton to use design system CSS variables instead of hardcoded rgba values",
+          "courses: Added loading.tsx skeleton with shimmer animation for course hub"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: whale-watch (1200x630) — SVG + PNG with live badge, stat cards, chart line, brand gradient",
+          "Verified existing OG images: badges (1200x630), courses (1200x630) already present"
+        ]
+      },
+      {
+        "title": "Accessibility Fixes",
+        "items": [
+          "Added aria-hidden='true' to all decorative Lucide icons across whale-watch",
+          "Added aria-label to transaction type icons (Buy/Sell/Transfer)",
+          "Added role='status' to LIVE badge",
+          "Added role='region' aria-label to transaction feed",
+          "Added role='progressbar' with aria-valuenow/min/max to accumulation bars",
+          "Added focus ring styles (focus:ring-2 focus:ring-[#6366f1]) to all form inputs"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

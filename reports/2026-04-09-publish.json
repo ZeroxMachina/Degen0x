@@ -1,0 +1,44 @@
+{
+  "date": "2026-04-09",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "No pages promoted — PUBLISH_QUEUE contains only 2 slugs (/learn/monad-guide, /learn/zora-attention-markets-guide-2026), both still missing page.tsx and cannot be published.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/monad-guide", "status": "warn" },
+          { "slug": "/learn/zora-attention-markets-guide-2026", "status": "warn" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Build verification", "value": "skipped", "pct": 100, "color": "#06b6d4" },
+          { "label": "Pages promoted", "value": "0", "pct": 0, "color": "#06b6d4" },
+          { "label": "Queue blockers", "value": "2 missing page.tsx", "pct": 0, "color": "#f59e0b" },
+          { "label": "Deploy", "value": "not required", "pct": 100, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Cache hit rate", "value": "~88%", "pct": 88, "color": "#4ade80" },
+          { "label": "Rate limits", "value": "Nominal", "pct": 92, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Notes",
+        "notes": [
+          "PUBLISH_QUEUE in src/lib/published-pages.ts has only 2 entries, both with empty directories (no page.tsx).",
+          "Action: scaffold the 2 remaining pages, or remove them and refill the queue with the next priority batch.",
+          "No write actions (no edits to published-pages.ts, no deploy) performed — consistent with report-only scheduled-task guidance when blockers exist."
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

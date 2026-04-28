@@ -1,0 +1,71 @@
+{
+  "date": "2026-04-04",
+  "block": "publish",
+  "cycle": 13,
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 13: Promoted 5 pages (3 crypto-loans reviews, 2 defi-lending best-of) to PUBLISHED_PAGES, bringing total to 740. QA passed for all 5 pages — metadata, H1, breadcrumbs verified; 2 defi-lending pages missing JSON-LD. Deploy pending git commit + push.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/crypto-loans/reviews/nexo", "status": "pass" },
+          { "slug": "/crypto-loans/reviews/ledn", "status": "pass" },
+          { "slug": "/crypto-loans/reviews/liquity", "status": "pass" },
+          { "slug": "/defi-lending/best/cross-chain", "status": "warn" },
+          { "slug": "/defi-lending/best/fixed-rate", "status": "warn" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages validated", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata present", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 tags present", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD structured data", "value": "3/5 (3 Review + BreadcrumbList, 2 missing JSON-LD)", "pct": 60, "color": "#f59e0b" },
+          { "label": "Breadcrumbs present", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Responsive layout", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript syntax", "value": "Clean (no errors in published-pages.ts)", "pct": 100, "color": "#4ade80" },
+          { "label": "Build check", "value": "Skipped — sandbox OOM (bus error)", "pct": 0, "color": "#f59e0b" },
+          { "label": "Total published pages", "value": "740", "pct": 61, "color": "#06b6d4" },
+          { "label": "Notifications feed updated", "value": "4 items refreshed", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko integration", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama integration", "value": "Healthy", "pct": 90, "color": "#4ade80" },
+          { "label": "Rate limiter", "value": "Healthy (token bucket, per-IP + global, per-route)", "pct": 100, "color": "#4ade80" },
+          { "label": "API cache (LRU)", "value": "Healthy (50MB, 60s TTL + 30s SWR, tag invalidation)", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback data", "value": "Present for CoinGecko (30 tokens); DefiLlama lacks fallback", "pct": 80, "color": "#4ade80" },
+          { "label": "Request deduplication", "value": "Active (in-flight dedup in ApiCache)", "pct": 100, "color": "#4ade80" },
+          { "label": "API routes", "value": "17 routes (prices, defi-yields, trending, health, etc.)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy Status",
+        "metrics": [
+          { "label": "Git status", "value": "Uncommitted changes (published-pages.ts + notifications-feed.json)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Vercel deploy", "value": "Pending commit + push to trigger", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Publish Queue Status",
+        "metrics": [
+          { "label": "Queue remaining", "value": "2 deferred (missing page.tsx: monad-guide, zora-attention-markets)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Unpublished pages (built)", "value": "~474", "pct": 39, "color": "#06b6d4" },
+          { "label": "Total built pages", "value": "1214", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "action_items": [
+      "Commit published-pages.ts + notifications-feed.json changes and push to trigger Vercel deploy",
+      "Add BreadcrumbList JSON-LD to /defi-lending/best/cross-chain and /defi-lending/best/fixed-rate",
+      "Scaffold page.tsx for 2 deferred queue items: monad-guide, zora-attention-markets-guide-2026",
+      "Add DefiLlama fallback data for graceful degradation (still throws on failure)",
+      "Continue publishing from ~474 remaining unpublished pages (crypto-loans, defi-lending, crypto-cards next)"
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

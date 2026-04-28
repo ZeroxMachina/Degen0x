@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Production build
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Debug
+.pnp.cjs
+.pnp.loader.mjs
+
+# LibreOffice lockfiles
+.~lock.*.xlsx#
+.~lock.*.docx#
+.~lock.*.pptx#
+
+# Session temp / auto-memory
+/tmp/
+.auto-memory/
+build.log

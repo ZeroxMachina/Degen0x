@@ -1,0 +1,70 @@
+{
+  "date": "2026-03-24",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v14: +4 pages built (layer-3-chains, mpc-wallets, onchain-identity-reputation, leveraged-tokens) and +4 slugs promoted in batches 15-16 since v13. Publish queue now EMPTY. 502 published slugs total, 103 still missing page.tsx. 46 TS errors unchanged. Deploy drift now 7 days — P0 blocker persists.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "PAGE AUDIT: 502 published slugs (up from ~481 in v13 due to batches 15-16 additions). 103 missing page.tsx files — same gap across /blog, /taxes, /investing/best, /wallets, /defi-lending sections. No new gaps introduced.",
+          "NEW PAGE.TSX FILES SINCE v13: 4 new files — leveraged-tokens-guide-2026, layer-3-chains-guide-2026, onchain-identity-reputation-guide-2026, mpc-wallets-guide-2026. All have backing code ready.",
+          "PUBLISH QUEUE DELTA: 4 items drained since v13 — depin-earning + btcfi-yield-strategies (batch 15), layer-3-chains + mpc-wallets (batch 16). Queue is now EMPTY.",
+          "TYPESCRIPT: 46 errors across 3 files — unchanged from v13. Files: crypto-arbitrage-strategies-guide-2026/page.tsx (unescaped > chars), crypto-index-funds-guide-2026/page.tsx (same pattern), structured-data.examples.ts (syntax). Non-blocking due to ignoreBuildErrors.",
+          "NO NEW REGRESSIONS: No commits since Mar 17 (e999560). No code-level changes to introduce regressions.",
+          "NETWORK NOTE: Egress blocked — could not verify live HTTP status codes. Carrying forward prior verified data (homepage 200, H1 confirmed in v12)."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "EGRESS BLOCKED: Could not reach degen0x.com APIs this cycle. All 6 route statuses carried forward from v12 verified data.",
+          "CARRIED STATUS — /api/health: healthy (CoinGecko 65ms, cache 45ms, rate limit 1499/1500). /api/prices: Live BTC/ETH with sparklines. /api/fear-greed: Active (value 11, Extreme Fear at v12 check). /api/trending: CoinGecko trending coins. /api/market-dominance: BTC 56.36%, ETH 10.35%, total $2.46T.",
+          "STILL 404 IN PROD — /api/market-metrics: Route exists locally (src/app/api/market-metrics/route.ts, 5KB) but is uncommitted. Will resolve with next deploy. P1.",
+          "LOCAL API ROUTES: 16 API route directories confirmed under src/app/api/ — including market-metrics, defi-yields, newsletter, news-rss, notifications, standup-email, og, subscribe.",
+          "CACHE TTLs: Configured correctly — prices 60s, trending 300s, fear-greed 600s, market-dominance 300s. No local changes to cache config this cycle.",
+          "RATE LIMITING: Still missing on 6 core data routes — P1 carry-over from prior cycles."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "DEPLOY DRIFT [P0]: 7 days since last code commit (e999560, Mar 17). All Vercel deploys since are redeploys of same snapshot.",
+          "UNCOMMITTED WORK: 48 files changed, 4,354 insertions, 3,464 deletions. 4 new page.tsx files this cycle alone.",
+          "CRITICAL UNCOMMITTED: published-pages.ts (+172 lines), middleware.ts, 20+ new page routes, /api/market-metrics route, smoke tests.",
+          "PRODUCTION GAP: ~160+ pages promoted locally since Mar 17 are invisible to production and Google crawlers. Includes all batches 1-16 of 2026-03-24.",
+          "EGRESS NOTE: Could not verify Vercel dashboard or live deployment status. Carrying forward v12 verified status: builds 'Ready'."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DELTA THIS CYCLE (v14 vs v13): +4 page.tsx files built (leveraged-tokens, layer-3-chains, onchain-identity-reputation, mpc-wallets). +4 slugs promoted in batches 15-16. Publish queue drained to EMPTY.",
+          "PUBLISH QUEUE: EMPTY — all items promoted. No pending queue items for next cycle.",
+          "ACTION REQUIRED [P0]: Commit and deploy. 7-day drift is #1 blocker. 48 changed files including 160+ promoted pages invisible to users and crawlers.",
+          "ACTION REQUIRED [P1]: Fix /api/market-metrics 404 — route exists locally, just needs to be in the next commit/deploy.",
+          "ACTION REQUIRED [P1]: Fix 46 TS errors in 3 files — unescaped > in JSX (2 learn pages) + syntax in structured-data.examples.ts.",
+          "ACTION REQUIRED [P2]: Scaffold 103 missing page.tsx files for published slugs across /blog, /taxes, /investing/best, /wallets, /defi-lending.",
+          "CARRY-OVER: Rate-limit 6 core API routes, build /trading hub, build /compare/exchanges hub, scaffold missing page.tsx files."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "API Routes Healthy (Prod)", "value": "5/6 (carried)", "pct": 83, "color": "#f59e0b" },
+          { "label": "Published Slugs", "value": "502", "pct": 96, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "399/502", "pct": 79, "color": "#f59e0b" },
+          { "label": "TypeScript Errors", "value": "46 (3 files)", "pct": 25, "color": "#f59e0b" },
+          { "label": "Deploy Drift", "value": "7 days", "pct": 15, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "48 changed", "pct": 10, "color": "#ef4444" },
+          { "label": "Vercel Build Status", "value": "Ready (carried)", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "EMPTY ✓", "pct": 100, "color": "#4ade80" },
+          { "label": "New page.tsx This Cycle", "value": "4", "pct": 85, "color": "#4ade80" },
+          { "label": "Egress Status", "value": "Blocked", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

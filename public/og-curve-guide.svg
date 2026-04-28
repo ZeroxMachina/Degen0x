@@ -1,0 +1,103 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e83e8c"/>
+      <stop offset="50%" stop-color="#bc8cff"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="curveGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e83e8c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e83e8c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="150" r="200" fill="#e83e8c" opacity="0.04"/>
+  <circle cx="900" cy="450" r="140" fill="#bc8cff" opacity="0.04"/>
+  <circle cx="150" cy="550" r="100" fill="#e83e8c" opacity="0.03"/>
+
+  <!-- Logo area -->
+  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="0.1em">DEGEN0X.COM</text>
+
+  <!-- Category badge -->
+  <rect x="60" y="100" width="130" height="28" rx="14" fill="#e83e8c20" stroke="#e83e8c40" stroke-width="1"/>
+  <text x="125" y="119" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#e83e8c" text-anchor="middle">STABLECOIN DEX</text>
+
+  <!-- Protocol icon -->
+  <rect x="60" y="155" width="64" height="64" rx="16" fill="#e83e8c20" stroke="#e83e8c40" stroke-width="1"/>
+  <text x="92" y="198" font-family="Inter, system-ui, sans-serif" font-size="36" text-anchor="middle">🌀</text>
+
+  <!-- Title -->
+  <text x="140" y="185" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="#e6edf3" letter-spacing="-0.02em">Curve Finance</text>
+  <text x="140" y="215" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Stablecoin &amp; LST AMM · Complete 2026 Guide</text>
+
+  <!-- Stat cards row -->
+  <g transform="translate(60, 260)">
+    <rect width="160" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">TVL</text>
+    <text x="16" y="58" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#e83e8c">$1.8B</text>
+  </g>
+  <g transform="translate(236, 260)">
+    <rect width="160" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">DAILY VOLUME</text>
+    <text x="16" y="58" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#58a6ff">$200M+</text>
+  </g>
+  <g transform="translate(412, 260)">
+    <rect width="160" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">TOKEN</text>
+    <text x="16" y="58" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#bc8cff">$CRV</text>
+  </g>
+  <g transform="translate(588, 260)">
+    <rect width="160" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="16" y="30" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">POOLS</text>
+    <text x="16" y="58" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#3fb950">500+</text>
+  </g>
+
+  <!-- StableSwap curve visualization -->
+  <g transform="translate(830, 250)">
+    <rect width="310" height="290" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="20" y="30" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">StableSwap vs Constant Product</text>
+    <!-- Axes -->
+    <line x1="40" y1="250" x2="280" y2="250" stroke="#30363d" stroke-width="1"/>
+    <line x1="40" y1="50" x2="40" y2="250" stroke="#30363d" stroke-width="1"/>
+    <text x="160" y="275" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6e7681" text-anchor="middle">Token A Reserve</text>
+    <!-- Constant product curve (Uniswap x*y=k) -->
+    <path d="M60,70 Q80,100 100,140 Q130,190 180,220 Q230,240 270,245" fill="none" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4,4" opacity="0.5"/>
+    <text x="270" y="235" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#58a6ff" opacity="0.7">x·y=k</text>
+    <!-- StableSwap curve (flatter in the middle) -->
+    <path d="M55,60 Q60,80 65,140 Q70,180 100,210 Q160,240 220,245 Q250,247 265,248" fill="none" stroke="#e83e8c" stroke-width="2.5"/>
+    <text x="100" y="198" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#e83e8c">StableSwap</text>
+    <!-- Low slippage zone highlight -->
+    <rect x="80" y="195" width="130" height="45" rx="6" fill="#e83e8c" opacity="0.08" stroke="#e83e8c" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <text x="145" y="230" font-family="Inter, system-ui, sans-serif" font-size="9" fill="#e83e8c" text-anchor="middle" opacity="0.8">Low slippage zone</text>
+  </g>
+
+  <!-- Bottom content -->
+  <text x="60" y="420" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#e6edf3">Deepest stablecoin liquidity · veCRV tokenomics</text>
+  <text x="60" y="448" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#e6edf3">crvUSD stablecoin · Curve Wars &amp; bribes</text>
+
+  <!-- Tags -->
+  <g transform="translate(60, 475)">
+    <rect width="90" height="26" rx="13" fill="#e83e8c20"/>
+    <text x="45" y="18" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#e83e8c" text-anchor="middle">Stablecoins</text>
+    <rect x="100" width="100" height="26" rx="13" fill="#bc8cff20"/>
+    <text x="150" y="18" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#bc8cff" text-anchor="middle">Multi-chain</text>
+    <rect x="210" width="80" height="26" rx="13" fill="#3fb95020"/>
+    <text x="250" y="18" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#3fb950" text-anchor="middle">veCRV</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="620" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#6e7681">degen0x.com/ecosystem/curve</text>
+  <text x="1140" y="620" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#6e7681" text-anchor="end">2026 Guide</text>
+</svg>

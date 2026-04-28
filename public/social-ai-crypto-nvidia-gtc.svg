@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1428"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="aiGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="roundCard1"><rect x="60" y="280" width="250" height="160" rx="16"/></clipPath>
+    <clipPath id="roundCard2"><rect x="330" y="280" width="250" height="160" rx="16"/></clipPath>
+    <clipPath id="roundCard3"><rect x="600" y="280" width="250" height="160" rx="16"/></clipPath>
+    <clipPath id="roundCard4"><rect x="870" y="280" width="270" height="160" rx="16"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="200" cy="300" r="200" fill="#8b5cf6" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="900" cy="200" r="180" fill="#06b6d4" opacity="0.05" filter="url(#softGlow)"/>
+  <circle cx="600" cy="500" r="150" fill="#22c55e" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brand)"/>
+
+  <!-- Badge: NVIDIA GTC 2026 -->
+  <rect x="60" y="36" width="190" height="32" rx="16" fill="#8b5cf6" opacity="0.2"/>
+  <rect x="60" y="36" width="190" height="32" rx="16" fill="none" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="155" y="57" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#c4b5fd" text-anchor="middle" letter-spacing="0.05em">NVIDIA GTC 2026</text>
+
+  <!-- Badge: AI + CRYPTO -->
+  <rect x="265" y="36" width="130" height="32" rx="16" fill="#06b6d4" opacity="0.15"/>
+  <rect x="265" y="36" width="130" height="32" rx="16" fill="none" stroke="#06b6d4" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="330" y="57" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#67e8f9" text-anchor="middle" letter-spacing="0.05em">AI + CRYPTO</text>
+
+  <!-- Main Title -->
+  <text x="60" y="120" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="900" fill="url(#brand)" letter-spacing="-0.02em">AI Crypto Tokens Surge</text>
+  <text x="60" y="168" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="700" fill="#e6edf3" letter-spacing="-0.01em">Jensen Huang Outlines Next-Gen AI Infra</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="210" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#8b949e">Decentralized AI narrative accelerates — tokens rally 10-14% as Nvidia unveils next phase</text>
+
+  <!-- Divider line -->
+  <line x1="60" y1="240" x2="1140" y2="240" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Section label -->
+  <text x="60" y="268" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681" letter-spacing="0.1em">TOP MOVERS — 24H</text>
+
+  <!-- Card 1: TAO -->
+  <rect x="60" y="280" width="250" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="80" y="312" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Bittensor</text>
+  <text x="80" y="340" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#e6edf3">TAO</text>
+  <rect x="155" y="322" width="65" height="24" rx="12" fill="rgba(34,197,94,0.15)"/>
+  <text x="187" y="339" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e" text-anchor="middle">+14%</text>
+  <text x="80" y="375" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">Decentralized ML</text>
+  <!-- Mini chart up -->
+  <polyline points="80,420 110,415 140,408 170,412 200,400 230,390 260,385 290,378" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="290" cy="378" r="3" fill="#8b5cf6" filter="url(#glow)"/>
+
+  <!-- Card 2: FET -->
+  <rect x="330" y="280" width="250" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <text x="350" y="312" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Fetch.ai</text>
+  <text x="350" y="340" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#e6edf3">FET</text>
+  <rect x="420" y="322" width="65" height="24" rx="12" fill="rgba(34,197,94,0.15)"/>
+  <text x="452" y="339" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e" text-anchor="middle">+14%</text>
+  <text x="350" y="375" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">AI Agent Economy</text>
+  <polyline points="350,420 380,418 410,410 440,413 470,402 500,392 530,386 560,380" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="560" cy="380" r="3" fill="#06b6d4" filter="url(#glow)"/>
+
+  <!-- Card 3: NEAR -->
+  <rect x="600" y="280" width="250" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="620" y="312" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">NEAR Protocol</text>
+  <text x="620" y="340" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#e6edf3">NEAR</text>
+  <rect x="710" y="322" width="65" height="24" rx="12" fill="rgba(34,197,94,0.15)"/>
+  <text x="742" y="339" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e" text-anchor="middle">+10%</text>
+  <text x="620" y="375" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">AI Chain Abstraction</text>
+  <polyline points="620,420 650,416 680,412 710,414 740,406 770,398 800,393 830,388" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="830" cy="388" r="3" fill="#6366f1" filter="url(#glow)"/>
+
+  <!-- Card 4: VIRTUAL -->
+  <rect x="870" y="280" width="270" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+  <text x="890" y="312" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Virtuals Protocol</text>
+  <text x="890" y="340" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#e6edf3">VIRTUAL</text>
+  <rect x="1012" y="322" width="108" height="24" rx="12" fill="rgba(139,92,246,0.15)"/>
+  <text x="1066" y="339" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#c4b5fd" text-anchor="middle">17,700 agents</text>
+  <text x="890" y="375" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">$480M mcap · AI Launchpad</text>
+  <polyline points="890,420 920,414 950,408 980,410 1010,400 1040,392 1070,384 1100,376 1120,370" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="1120" cy="370" r="3" fill="#f59e0b" filter="url(#glow)"/>
+
+  <!-- Stats bar -->
+  <rect x="60" y="465" width="1080" height="56" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Stat pills -->
+  <text x="90" y="498" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681">GRASS</text>
+  <text x="145" y="498" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e">+10%</text>
+
+  <line x1="200" y1="478" x2="200" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="225" y="498" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681">WLD</text>
+  <text x="265" y="498" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e">+10%</text>
+
+  <line x1="320" y1="478" x2="320" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="345" y="498" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681">DeFAI Narrative</text>
+  <text x="462" y="498" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#8b5cf6">Accelerating</text>
+
+  <line x1="560" y1="478" x2="560" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="585" y="498" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681">Virtuals Revenue</text>
+  <text x="710" y="498" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">$39.5M+</text>
+
+  <line x1="785" y1="478" x2="785" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="810" y="498" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681">BTC</text>
+  <text x="842" y="498" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">$73,138</text>
+
+  <line x1="930" y1="478" x2="930" y2="508" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="955" y="498" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#6e7681">Fear &amp; Greed</text>
+  <text x="1055" y="498" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444">15</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="546" width="1200" height="84" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="546" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Logo circle -->
+  <circle cx="90" cy="588" r="18" fill="none" stroke="url(#brand)" stroke-width="2"/>
+  <text x="90" y="594" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="800" fill="#e6edf3" text-anchor="middle">0x</text>
+
+  <text x="120" y="584" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">degen0x.com</text>
+  <text x="120" y="602" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">Free crypto tools, guides &amp; research — no signup required</text>
+
+  <!-- CTA -->
+  <rect x="880" y="570" width="260" height="38" rx="19" fill="url(#brand)"/>
+  <text x="1010" y="594" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Read the DeFAI Guide →</text>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brand)"/>
+</svg>

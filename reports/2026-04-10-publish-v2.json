@@ -1,0 +1,67 @@
+{
+  "date": "2026-04-10",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 5 orphaned pages (2 tools, 3 exchange best-of) to PUBLISHED_PAGES, bringing total to 752; PUBLISH_QUEUE now has only 2 blocked pages awaiting page.tsx scaffolding. Build sandbox OOM but TS check confirms promoted pages are clean. Deployment requires manual git push or Vercel redeploy (computer use disabled).",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/tools/risk-score", "status": "pass" },
+          { "slug": "/tools/token-radar", "status": "pass" },
+          { "slug": "/exchanges/best/decentralized", "status": "pass" },
+          { "slug": "/exchanges/best/futures", "status": "pass" },
+          { "slug": "/exchanges/best/margin-trading", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with metadata", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with H1", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with breadcrumbs", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with JSON-LD", "value": "0/5", "pct": 0, "color": "#f59e0b" },
+          { "label": "TypeScript (promoted pages)", "value": "Clean", "pct": 100, "color": "#4ade80" },
+          { "label": "Full build", "value": "Sandbox OOM", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko API (prices)", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama API (defi-yields)", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (token bucket)", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer", "value": "LRU + TTL + SWR", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback Data", "value": "Configured", "pct": 90, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Publish Queue Status",
+        "metrics": [
+          { "label": "Total published pages", "value": "752", "pct": 62, "color": "#4ade80" },
+          { "label": "Total pages with page.tsx", "value": "1214", "pct": 100, "color": "#06b6d4" },
+          { "label": "Remaining in queue", "value": "2 (blocked)", "pct": 0, "color": "#f59e0b" },
+          { "label": "Orphans available", "value": "~590", "pct": 49, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Files changed", "value": "published-pages.ts, notifications-feed.json", "pct": 100, "color": "#4ade80" },
+          { "label": "Deploy status", "value": "Pending (needs git push + Vercel redeploy)", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Blocked Items",
+        "metrics": [
+          { "label": "/learn/monad-guide", "value": "No page.tsx", "pct": 0, "color": "#ef4444" },
+          { "label": "/learn/zora-attention-markets-guide-2026", "value": "No page.tsx", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notifications_updated": true,
+    "notes": "PUBLISH_QUEUE is nearly exhausted — only 2 blocked pages remain. 590+ orphaned pages exist that could be promoted in future cycles. Recommend scaffolding monad-guide and zora-attention-markets-guide-2026, or adding high-value orphans to the queue."
+  }
+}

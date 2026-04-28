@@ -1,0 +1,69 @@
+{
+  "date": "2026-04-01",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close Apr 1 v7: New commit 3b2dd28 landed — removed 'use client' from 4 learn pages fixing Vercel build. TS errors dropped 147→141. 1,240 pages on disk, 626 published slugs. 6/6 API routes present. 29 uncommitted files (report growth). Deploy still pending push.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "NEW COMMIT since v5: 3b2dd28 'fix: remove use client from 4 learn pages that export metadata (fixes Vercel build)' — build-breaking conflict resolved for unichain, verkle-trees, appchains, solana-token-extensions guides.",
+          "1,240 page.tsx files on disk — STABLE. No new pages created or deleted this cycle.",
+          "626 published slugs in working tree. PUBLISH_QUEUE empty. /courses/* added to PUBLISHED_PAGES in latest commit.",
+          "141 TypeScript errors — DOWN from 147 in v5 (6 errors eliminated by removing 'use client' directives). Non-blocking (ignoreBuildErrors: true).",
+          "5 modified learn pages in working tree — all server components, no 'use client' conflicts. Metadata exports present on all 5.",
+          "109 published slugs still missing page.tsx — up from 103 (courses/* slugs added to published list without page.tsx yet). Needs scaffolding cycle.",
+          "Network egress blocked — cannot verify live HTTP status codes from sandbox."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6/6 core API routes present on disk: prices, fear-greed, trending, market-metrics, market-dominance, defi-yields — all with route.ts files.",
+          "13 total API routes on disk (including cache-stats, health, news-rss, newsletter, notifications, og, admin, standup-email, subscribe).",
+          "No code changes to any API route this cycle. Caching layers and fallback patterns unchanged.",
+          "Fallback gap persists: defi-yields still lacks stale fallback — low priority, unchanged all day.",
+          "CoinGecko free tier in use — rate limit risk on cold-cache bursts persists. No pro key configured.",
+          "Network egress blocked — cannot verify live API responses, data freshness, or upstream health from sandbox."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "HEAD commit: 3b2dd28 (NEW since v5's 5dad971) — 'fix: remove use client from 4 learn pages that export metadata (fixes Vercel build)'. Build fix commit landed.",
+          "29 uncommitted files (up from 26 in v5). Delta: +3 new report/standup JSONs from automated cycles.",
+          "7 modified tracked files: 5 learn page.tsx files + 2 skill files. All learn pages now clean server components.",
+          "DEPLOY STATUS: Latest commit fixes a real Vercel build issue. If auto-deploy is enabled on push, this should have triggered. Cannot verify Vercel dashboard — egress blocked.",
+          "Production build expected to succeed — 141 TS errors are non-blocking. The 'use client' + metadata conflict that broke builds is now resolved.",
+          "Uncommitted changes (published-pages.ts mods, OG SVGs, community drafts) still need commit+push to go live."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: Build fix commit 3b2dd28 — resolved 'use client' + metadata export conflict on 4 learn guides. Added /courses/* to published pages.",
+          "TS ERROR TREND: 147→141 (improving). Build health trending positive.",
+          "CARRY-OVER: 109 published slugs without page.tsx (courses/* newly added). Needs dedicated scaffolding sprint.",
+          "CARRY-OVER: 29 uncommitted files need commit+push. Includes 5 modified learn pages, 3 OG SVGs, community drafts, and automated reports.",
+          "CARRY-OVER: defi-yields fallback data gap — low priority but persistent.",
+          "NO BLOCKERS requiring Jefe's immediate attention. Build fix landed cleanly. Next action: commit uncommitted changes and push to trigger Vercel deploy."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Pages on Disk", "value": "1,240", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs", "value": "626", "pct": 51, "color": "#06b6d4" },
+          { "label": "TypeScript Errors", "value": "141 (↓6)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes (6/6)", "value": "6/6 on disk", "pct": 100, "color": "#4ade80" },
+          { "label": "Missing page.tsx", "value": "109 slugs", "pct": 17, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "29", "pct": 40, "color": "#f59e0b" },
+          { "label": "Build Health", "value": "Fix landed", "pct": 85, "color": "#4ade80" },
+          { "label": "Live Endpoint Check", "value": "Egress blocked", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

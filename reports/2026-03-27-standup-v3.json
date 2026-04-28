@@ -1,0 +1,84 @@
+{
+  "date": "2026-03-27",
+  "block": "standup",
+  "version": 3,
+  "report": {
+    "status": "completed",
+    "summary": "SEC ETF mega-ruling day in progress — 91 apps across 24 tokens awaiting decisions. BTC volatile between $66.6K-$68.8K, ETH holding ~$1,989 after breaking $2K. F&G still 10-13 (Extreme Fear, 48+ day streak). All 6 agents completed full cycle this hour. 169 uncommitted files remain P0 blocker — 4 new perp DEX/ZK learn pages built but invisible to users until deploy.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: $66,587-$68,787 range today (volatile). Fortune reports $66,587 at 9AM ET (-$2,860 from yesterday). Investing.com shows $68,787 intraday. Down ~$20,660 YoY. Intraday swings of 4% reflect SEC ruling + options expiry aftermath.",
+          "ETH: $1,988.69 at 9AM ET (-$84.64 from yesterday). Still below $2K psychological support. OG ICO whale sold 11,552 ETH ($23.4M) at avg $2,027 — accelerating sell pressure. Market cap ~$233B.",
+          "F&G INDEX: 10-13 (Extreme Fear). FearGreedMeter reads 10, TechFlow reads 13. 48+ day fear streak extends — longest since Oct 2025. CoinStats outlier at 29 (Fear).",
+          "ETF FLOWS: Mar 26 saw -$171.3M to -$340M net outflows (sources vary). IBIT -$41.9M, FBTC -$32.8M, BITB -$33.1M. Whipsaw continues — Mar 24 had +$180M inflows. March total flows down 73% vs Feb.",
+          "SEC ETF RULING — IN PROGRESS: 91 applications, 24 tokens. Deadline is today. 16 cryptos pre-classified as commodities (Mar 17 joint SEC/CFTC ruling). Tokens with CME futures history expected to fare best. Results expected throughout the day.",
+          "OPTIONS EXPIRY: $13.5-14.16B settled at 08:00 UTC. Max pain was $75K BTC. Post-settlement volatility ongoing — contributing to wide BTC trading range.",
+          "DELTA FROM LAST STANDUP (v2): BTC range widened upward ($66.6K→$68.8K intraday vs flat $66.6K). ETH stable at ~$1,989. F&G unchanged (10-13). All 6 agents completed full cycle again. Uncommitted files grew 169 (was 157). SEC ruling results still pending."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "FULL CYCLE COMPLETED (AGAIN): All 6 agents ran in the past hour — standup-v2, build-v2, publish-v2, design, community-v2, eod-v3. This is the 2nd full rotation today.",
+          "BUILD CYCLE v2: 2 new perp DEX learn pages — 'Perp DEX Wars 2026' comparison (Hyperliquid vs Aster vs Lighter vs Paradex, ~3,100 words) and 'Paradex ZK Perpetuals Guide' (~2,600 words). Both with Article + FAQ schema, cross-linked.",
+          "PUBLISH CYCLE v2: 2 more guides promoted (Virtuals Protocol, GRASS DePIN). Queue drained to 0. Total published ~556.",
+          "DESIGN CYCLE: 2 OG images created (Virtuals, GRASS SVGs), 6 broken OG paths fixed (.png→.svg), aria-labels added, disclaimer sections added. 4 UX issues deferred (spacing, focus styles, heading hierarchy, TOC hover).",
+          "COMMUNITY CYCLE v2: 5 new tweet drafts (#178-182) spotlighting 4 new guides. 2 SVG social cards (Perp DEX Wars, Content Drop). Newsletter v29 addendum. Calendar extended through Mon Mar 30.",
+          "EOD-QA CYCLE v3: 556 published slugs verified. 102 TS errors in 4 files (stable — JSX escaping issues). 0/6 API routes have rate limiting. 168 uncommitted files counted.",
+          "BLOCKER [P0]: 169 uncommitted files (↑12 from v2's 157, ↑13 from eod's 168). Growing every cycle. 4 new learn pages, OG images, published-pages.ts updates — all invisible until git push → Vercel deploy.",
+          "BLOCKER [P1]: Disk at 80% (2.0G free). Slightly improved from v2's 82%/1.8G — possibly temp files cleaned. Still tight for Next.js builds.",
+          "CARRY-OVER: 102 TS errors (JSX escaping), 0/6 rate-limited API routes, 4/6 API routes missing fallback data, ~103 legacy slugs missing page.tsx, 4 deferred UX issues."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [CRITICAL, 3rd CONSECUTIVE CYCLE]: 169 uncommitted files. 6 new learn pages (Virtuals, GRASS, Paradex, Perp DEX Wars + earlier batch) built but zero users can see them. SEC ruling results will drive search spikes TODAY — our content must be live. Jefe: git add + commit + push is the single highest-ROI action right now.",
+          "PRIORITY 2 — SEC RULING REACTIVE CONTENT: As results drop, build cycle should pivot to reactive pages. Pre-draft templates: 'SEC March 27 ETF Ruling: Full Breakdown', 'Which Crypto ETFs Got Approved'. The 4-8 hour window after announcements is when search intent peaks. We have the infrastructure — 556 pages proves we can ship fast.",
+          "PRIORITY 3 — RATE LIMITER ACTIVATION: 0/6 API routes protected. Rate limiter code exists at src/lib/rate-limiter.ts but no route imports it. CoinGecko free tier (10-30 calls/min) is exposed. One traffic spike from SEC ruling could exhaust our API quota and break live price data across the entire site. 10-minute fix, high impact."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — 169 files pending deploy (CRITICAL)", "pct": 45, "color": "#ef4444" },
+          { "label": "Published Slugs", "value": "~556 (4 new learn pages + 2 promoted this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Built Today", "value": "6 learn pages + 12 UX fixes + 5 promoted + 2 OG images", "pct": 95, "color": "#4ade80" },
+          { "label": "VM Disk", "value": "80% used (2.0G free) — slightly improved", "pct": 80, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "169 on main (↑12 from last standup)", "pct": 10, "color": "#ef4444" },
+          { "label": "API Routes", "value": "6/6 healthy, correct cache TTLs", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "0/6 core routes protected", "pct": 0, "color": "#ef4444" },
+          { "label": "TS Errors", "value": "102 in 4 files (stable, JSX escaping)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$66.6K-$68.8K (volatile, SEC day)", "pct": 55, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "$1,989 (below $2K, 2nd day)", "pct": 40, "color": "#ef4444" },
+          { "label": "Fear & Greed", "value": "10-13 (Extreme Fear — 48+ day streak)", "pct": 10, "color": "#ef4444" },
+          { "label": "ETF Flows (Mar 26)", "value": "-$171M to -$340M net outflows", "pct": 18, "color": "#ef4444" },
+          { "label": "SEC ETF Ruling", "value": "IN PROGRESS — 91 apps, results pending", "pct": 50, "color": "#f59e0b" },
+          { "label": "Options Expiry", "value": "$14.16B SETTLED — post-settlement volatility", "pct": 100, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (all ran in past hour)", "pct": 100, "color": "#4ade80" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (all 6 agents)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$2,479 (13 runs: 3×standup + 2×build + 2×publish + 1×design + 2×community + 3×eod)", "pct": 21, "color": "#4ade80" },
+          { "label": "Today's Breakdown", "value": "$135 standup + $466 build + $110 publish + $60 design + $82 community + $189 eod", "pct": 100, "color": "#06b6d4" },
+          { "label": "Today's Human-Hours", "value": "~51h (13 agent runs)", "pct": 21, "color": "#4ade80" },
+          { "label": "Cumulative Through Mar 25", "value": "$8,390 (105 runs)", "pct": 71, "color": "#06b6d4" },
+          { "label": "Cumulative Including Today", "value": "~$10,869 ($8,390 + $2,479)", "pct": 89, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — Resend API fetch failed from Chrome (CORS/network restriction on degen0x.com origin). Same failure mode as v2. Network egress to api.resend.com blocked from browser context. Manual send or external trigger needed."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-03-22",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Idle cycle — zero new commits since Mar 17 (Day 64); 414 published slugs with 311 page.tsx present; uncommitted working tree modifications detected across ~20 files; 4 carry-over items unchanged; defi-yields fallback remains only critical gap.",
+    "sections": [
+      {
+        "title": "QA Sweep",
+        "items": [
+          "Page audit: 414 published slugs parsed (+2 from last cycle), 311 have page.tsx files (+2), 103 pre-scaffolded future pages (unchanged)",
+          "Publish queue: EMPTY — all planned pages promoted to production",
+          "No new commits since e999560 (Mar 17, Day 64) — zero regression risk from deployed code",
+          "Uncommitted modifications detected in working tree: ~20+ files including middleware.ts, next.config.ts, layout.tsx, globals.css, multiple page.tsx files (airdrops, compare/exchanges, crypto-cards, gamification, learn guides, market-recap, not-found)",
+          "Known JSX issue persists: crypto-index-funds-guide-2026/page.tsx has unescaped > in string literals; low severity due to ignoreBuildErrors:true",
+          "Live HTTP verification blocked by sandbox egress — cannot confirm 200s directly",
+          "No new deployed code — no new test failures possible in production"
+        ]
+      },
+      {
+        "title": "Data Pipeline Health",
+        "items": [
+          "/api/prices — CoinGecko markets, 60s TTL, in-memory cache + stale fallback ✓, X-Cache-Source header ✓",
+          "/api/trending — CoinGecko trending, 300s TTL, in-memory cache + stale-on-catch fallback ✓, MISSING X-Cache-Source header",
+          "/api/fear-greed — alternative.me, 600s TTL, in-memory cache + stale-on-catch fallback ✓, MISSING X-Cache-Source header",
+          "/api/market-metrics — CoinGecko global + fear-greed, 60s TTL, in-memory cache ✓, uses X-Cache instead of X-Cache-Source (inconsistent)",
+          "/api/market-dominance — CoinGecko global, 300s TTL, in-memory cache + FALLBACK_DATA constant ✓, X-Cache-Source ✓ (best pattern)",
+          "CRITICAL: /api/defi-yields — DefiLlama, 300s cache headers only, NO in-memory cache, NO fallback data — returns 500 on upstream failure (UNCHANGED from last cycle)",
+          "Auxiliary routes present: cache-stats, health, news-rss, newsletter, notifications, og, standup-email, subscribe — not part of core 6 public data routes"
+        ]
+      },
+      {
+        "title": "Infrastructure & Deployment",
+        "items": [
+          "Latest deploy: commit e999560 (Day 64 publish, Mar 17) — 6 days idle, no new deploys",
+          "Uncommitted working tree changes NOT deployed — production unchanged",
+          "next.config: standalone output, trailingSlash, ignoreBuildErrors:true, staticGenerationMaxConcurrency:4, workerThreads:false — stable",
+          "Middleware: Edge-compatible, PILLAR_PAGES inlined, security headers present",
+          "Static assets: Cache-Control immutable 1yr max-age on _next/static — correct",
+          "Cannot verify live Vercel status from sandbox — no egress access to degen0x.com"
+        ]
+      },
+      {
+        "title": "PM Wrap-Up",
+        "items": [
+          "Shipped this cycle: Nothing — site idle since Day 64 publish (Mar 17)",
+          "Uncommitted work in progress: ~20+ modified files in working tree — needs review and commit decision",
+          "Publish queue: EMPTY — next pages require new content scaffolding",
+          "Carry-over (critical): Add fallback data + in-memory cache to /api/defi-yields — only route that 500s on upstream failure",
+          "Carry-over (medium): Add X-Cache-Source headers to /api/trending and /api/fear-greed",
+          "Carry-over (medium): Rename X-Cache to X-Cache-Source in /api/market-metrics for consistency",
+          "Carry-over (low): Fix JSX unescaped > in crypto-index-funds-guide-2026/page.tsx",
+          "NEW flag: Uncommitted modifications in working tree should be reviewed — risk of drift between local and deployed state",
+          "103 published slugs still lack page.tsx — future content placeholders, not regressions",
+          "No urgent blockers requiring Jefe's attention — site is stable but idle"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "414", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "311 / 414", "pct": 75, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "5 / 6", "pct": 83, "color": "#f59e0b" },
+          { "label": "API Routes with Fallback", "value": "5 / 6", "pct": 83, "color": "#f59e0b" },
+          { "label": "Cache Header Consistency", "value": "3 / 6", "pct": 50, "color": "#f59e0b" },
+          { "label": "Days Since Last Deploy", "value": "6", "pct": 40, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "~20+", "pct": 30, "color": "#f59e0b" },
+          { "label": "Regression Risk", "value": "None (prod)", "pct": 100, "color": "#4ade80" },
+          { "label": "Carry-Over Items", "value": "4 + 1 new", "pct": 35, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

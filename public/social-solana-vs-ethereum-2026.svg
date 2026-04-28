@@ -1,0 +1,249 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="50%" stop-color="#0a0f20"/>
+      <stop offset="100%" stop-color="#070c1a"/>
+    </linearGradient>
+
+    <!-- Brand signature gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- ETH panel gradient -->
+    <linearGradient id="ethGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- SOL panel gradient -->
+    <linearGradient id="solGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c7d2fe"/>
+      <stop offset="50%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+
+    <!-- ETH glow -->
+    <filter id="ethGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- SOL glow -->
+    <filter id="solGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Subtle glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Small glow -->
+    <filter id="smallGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ETH circle gradient -->
+    <radialGradient id="ethCircle" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <!-- SOL circle gradient -->
+    <radialGradient id="solCircle" cx="70%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip path for rounded rect -->
+    <clipPath id="roundedClip">
+      <rect width="1200" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Atmospheric glow circles -->
+  <circle cx="280" cy="200" r="300" fill="url(#ethCircle)"/>
+  <circle cx="920" cy="220" r="280" fill="url(#solCircle)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="157" x2="1200" y2="157" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="314" x2="1200" y2="314" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="471" x2="1200" y2="471" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="630" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="900" y1="0" x2="900" y2="630" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Header section -->
+  <!-- degen0x wordmark top-left -->
+  <text x="48" y="52" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" letter-spacing="0.08em" fill="#6366f1" opacity="0.9">degen0x</text>
+  <text x="48" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400" fill="#8b949e" letter-spacing="0.05em">degen0x.com/learn/solana-vs-ethereum-2026</text>
+
+  <!-- Badge top-right -->
+  <rect x="1060" y="30" width="96" height="26" rx="13" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+  <text x="1108" y="47" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#a5b4fc" text-anchor="middle" letter-spacing="0.05em">2026 DATA</text>
+
+  <!-- Main Title -->
+  <text x="600" y="138" font-family="Inter, system-ui, sans-serif" font-size="58" font-weight="900" letter-spacing="-0.03em" text-anchor="middle" fill="url(#titleGrad)">Solana vs Ethereum</text>
+  <text x="600" y="175" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="400" fill="#8b949e" text-anchor="middle" letter-spacing="0.01em">Post-Fusaka · Post-Alpenglow · The Real Numbers</text>
+
+  <!-- Divider under title -->
+  <rect x="500" y="192" width="200" height="2" rx="1" fill="url(#brandGrad)" opacity="0.6"/>
+
+  <!-- ===== ETH PANEL (left) ===== -->
+  <!-- ETH glass card -->
+  <rect x="48" y="216" width="520" height="342" rx="20" fill="url(#ethGrad)" stroke="rgba(99,102,241,0.2)" stroke-width="1.5"/>
+  <!-- ETH inner glow top edge -->
+  <rect x="48" y="216" width="520" height="3" rx="2" fill="rgba(99,102,241,0.5)" opacity="0.6"/>
+
+  <!-- ETH chain icon area -->
+  <!-- Diamond ETH logo (simplified) -->
+  <g transform="translate(72, 240)">
+    <polygon points="18,0 36,18 18,28 0,18" fill="rgba(99,102,241,0.3)" stroke="#6366f1" stroke-width="1.5"/>
+    <polygon points="18,5 30,18 18,24 6,18" fill="#6366f1" opacity="0.8"/>
+    <text x="18" y="22" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="800" fill="white" text-anchor="middle">Ξ</text>
+  </g>
+
+  <!-- ETH chain name -->
+  <text x="120" y="258" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#c7d2fe" letter-spacing="-0.01em">Ethereum + L2s</text>
+  <text x="120" y="278" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6366f1" font-weight="500">Post-Fusaka (Dec 2025)</text>
+
+  <!-- ETH Metrics -->
+  <!-- Metric row 1: TPS -->
+  <rect x="68" y="300" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="88" y="321" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">THROUGHPUT</text>
+  <text x="88" y="342" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">Base: ~1,000 TPS · Arbitrum: ~4,000 TPS</text>
+  <text x="528" y="342" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22c55e" text-anchor="end">↑</text>
+
+  <!-- Metric row 2: Fees -->
+  <rect x="68" y="360" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="88" y="381" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">AVG TX FEE</text>
+  <text x="88" y="402" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">$0.001–$0.003 (L2s)</text>
+  <rect x="370" y="386" width="72" height="20" rx="10" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="406" y="400" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">-85% YoY</text>
+
+  <!-- Metric row 3: TVL -->
+  <rect x="68" y="420" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="88" y="441" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">DEFI TVL</text>
+  <text x="88" y="462" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#a5b4fc">$85B+</text>
+  <text x="188" y="462" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">L1 + L2 combined</text>
+  <!-- TVL bar -->
+  <rect x="360" y="450" width="170" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="360" y="450" width="146" height="6" rx="3" fill="url(#brandGrad)" opacity="0.9"/>
+
+  <!-- Metric row 4: Dev activity -->
+  <rect x="68" y="480" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="88" y="501" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">MONTHLY ACTIVE DEVS</text>
+  <text x="88" y="522" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">7,200+ devs</text>
+  <text x="260" y="522" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#8b949e">Solidity · EVM-compatible</text>
+
+  <!-- ETH ETF badge -->
+  <rect x="68" y="540" width="230" height="28" rx="8" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.25)" stroke-width="1"/>
+  <text x="183" y="558" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#22c55e" text-anchor="middle">✓ ETH ETF LIVE — $28B AUM</text>
+
+  <!-- ETH strength tag -->
+  <rect x="310" y="540" width="238" height="28" rx="8" fill="rgba(99,102,241,0.1)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+  <text x="429" y="558" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" fill="#a5b4fc" text-anchor="middle">DeFi · Institutional · Security</text>
+
+  <!-- ===== VS divider ===== -->
+  <circle cx="600" cy="380" r="32" fill="#0a0f20" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <text x="600" y="387" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="900" fill="#8b949e" text-anchor="middle">VS</text>
+  <!-- vertical lines to VS circle -->
+  <line x1="600" y1="216" x2="600" y2="348" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="600" y1="412" x2="600" y2="558" stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- ===== SOL PANEL (right) ===== -->
+  <!-- SOL glass card -->
+  <rect x="632" y="216" width="520" height="342" rx="20" fill="url(#solGrad)" stroke="rgba(6,182,212,0.2)" stroke-width="1.5"/>
+  <!-- SOL inner glow top edge -->
+  <rect x="632" y="216" width="520" height="3" rx="2" fill="rgba(6,182,212,0.5)" opacity="0.6"/>
+
+  <!-- SOL chain icon (circle with rays) -->
+  <g transform="translate(656, 238)">
+    <circle cx="18" cy="16" r="16" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1.5"/>
+    <!-- SOL logo bars -->
+    <rect x="8" y="9" width="20" height="3" rx="1.5" fill="#06b6d4"/>
+    <rect x="8" y="14.5" width="20" height="3" rx="1.5" fill="#67e8f9" opacity="0.8"/>
+    <rect x="8" y="20" width="20" height="3" rx="1.5" fill="#06b6d4"/>
+  </g>
+
+  <!-- SOL chain name -->
+  <text x="706" y="258" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#67e8f9" letter-spacing="-0.01em">Solana</text>
+  <text x="706" y="278" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#06b6d4" font-weight="500">Post-Alpenglow (2026)</text>
+
+  <!-- SOL Metrics -->
+  <!-- Metric row 1: TPS -->
+  <rect x="652" y="300" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="672" y="321" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">THROUGHPUT</text>
+  <text x="672" y="342" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">~65,000 TPS sustained</text>
+  <rect x="972" y="328" width="130" height="20" rx="10" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="1037" y="342" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">150ms finality</text>
+
+  <!-- Metric row 2: Fees -->
+  <rect x="652" y="360" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="672" y="381" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">AVG TX FEE</text>
+  <text x="672" y="402" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">&lt;$0.001 per tx</text>
+  <rect x="880" y="386" width="100" height="20" rx="10" fill="rgba(251,191,36,0.15)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="930" y="400" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#fbbf24" text-anchor="middle">Cheapest</text>
+
+  <!-- Metric row 3: TVL -->
+  <rect x="652" y="420" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="672" y="441" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">DEFI TVL</text>
+  <text x="672" y="462" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800" fill="#67e8f9">$12B</text>
+  <text x="752" y="462" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Jupiter · Jito · Sanctum</text>
+  <!-- TVL bar (proportional to ETH) -->
+  <rect x="944" y="450" width="170" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+  <rect x="944" y="450" width="41" height="6" rx="3" fill="#06b6d4" opacity="0.9"/>
+
+  <!-- Metric row 4: Dev activity -->
+  <rect x="652" y="480" width="480" height="52" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="672" y="501" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="500" letter-spacing="0.04em">MONTHLY ACTIVE DEVS</text>
+  <text x="672" y="522" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#e6edf3">3,400+ devs</text>
+  <rect x="840" y="506" width="122" height="20" rx="10" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="901" y="520" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#22c55e" text-anchor="middle">+42% YoY fastest</text>
+
+  <!-- SOL ETF badge -->
+  <rect x="652" y="540" width="230" height="28" rx="8" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.25)" stroke-width="1"/>
+  <text x="767" y="558" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#fbbf24" text-anchor="middle">◷ SOL ETF — Filing In Progress</text>
+
+  <!-- SOL strength tag -->
+  <rect x="894" y="540" width="238" height="28" rx="8" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.25)" stroke-width="1"/>
+  <text x="1013" y="558" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500" fill="#67e8f9" text-anchor="middle">Consumer · Payments · Speed</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="594" width="1200" height="36" fill="rgba(255,255,255,0.02)" stroke="none"/>
+  <rect x="0" y="594" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Bottom content -->
+  <text x="48" y="617" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#6366f1">degen0x.com</text>
+  <text x="148" y="617" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">· Full breakdown with live metrics</text>
+
+  <!-- Bottom right: source note -->
+  <text x="1152" y="617" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="end">Data: Mar 2026 · Electric Capital · DefiLlama</text>
+
+  <!-- Decorative: gradient dots bottom-center -->
+  <circle cx="580" cy="580" r="3" fill="#6366f1" opacity="0.5"/>
+  <circle cx="600" cy="580" r="3" fill="#06b6d4" opacity="0.5"/>
+  <circle cx="620" cy="580" r="3" fill="#d97706" opacity="0.5"/>
+</svg>

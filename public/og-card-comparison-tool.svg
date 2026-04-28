@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1525"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  <circle cx="150" cy="500" r="200" fill="#8b5cf6" opacity="0.08"/>
+  <circle cx="1050" cy="150" r="180" fill="#06b6d4" opacity="0.06"/>
+  <text x="80" y="100" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#6366f1">degen0x</text>
+  <text x="80" y="210" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3">Crypto Card</text>
+  <text x="80" y="280" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="900" fill="#e6edf3">Comparison Tool</text>
+  <text x="80" y="330" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Side-by-side comparison of 10+ crypto debit cards</text>
+  <!-- Mini cards -->
+  <rect x="700" y="140" width="180" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="790" y="190" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="middle">Crypto.com</text>
+  <text x="790" y="215" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="900" fill="#22c55e" text-anchor="middle">5%</text>
+  <text x="790" y="240" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Cashback</text>
+  <rect x="910" y="140" width="180" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1000" y="190" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="middle">Coinbase</text>
+  <text x="1000" y="215" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="900" fill="#06b6d4" text-anchor="middle">4%</text>
+  <text x="1000" y="240" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Cashback</text>
+  <rect x="700" y="280" width="180" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="790" y="330" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="middle">Binance</text>
+  <text x="790" y="355" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="900" fill="#f59e0b" text-anchor="middle">8%</text>
+  <text x="790" y="380" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Max Cashback</text>
+  <rect x="910" y="280" width="180" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1000" y="330" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="middle">Gemini</text>
+  <text x="1000" y="355" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="900" fill="#8b5cf6" text-anchor="middle">3%</text>
+  <text x="1000" y="380" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Dining</text>
+  <rect x="80" y="390" width="240" height="48" rx="12" fill="#6366f1"/>
+  <text x="200" y="420" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Compare Cards Free</text>
+  <text x="600" y="590" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681" text-anchor="middle">degen0x.com — Free Crypto Card Comparison</text>
+</svg>

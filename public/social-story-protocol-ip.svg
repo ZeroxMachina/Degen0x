@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0a1e"/>
+      <stop offset="50%" style="stop-color:#1a1035"/>
+      <stop offset="100%" style="stop-color:#0d1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#c084fc"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#a78bfa" stroke-width="0.5">
+    <line x1="0" y1="0" x2="1200" y2="630"/>
+    <line x1="200" y1="0" x2="1200" y2="500"/>
+    <line x1="400" y1="0" x2="1200" y2="400"/>
+    <line x1="0" y1="200" x2="800" y2="630"/>
+    <line x1="0" y1="400" x2="500" y2="630"/>
+    <line x1="600" y1="0" x2="1200" y2="300"/>
+  </g>
+
+  <!-- Badge -->
+  <rect x="40" y="32" width="280" height="36" rx="18" fill="url(#accent1)" opacity="0.15"/>
+  <rect x="40" y="32" width="280" height="36" rx="18" fill="none" stroke="url(#accent1)" stroke-width="1" opacity="0.6"/>
+  <text x="180" y="56" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#c084fc" text-anchor="middle" letter-spacing="2">ONCHAIN IP · 2026</text>
+
+  <!-- Main Title -->
+  <text x="60" y="120" font-family="system-ui,-apple-system,sans-serif" font-size="48" font-weight="800" fill="#ffffff" letter-spacing="-1">Story Protocol</text>
+  <text x="60" y="170" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="400" fill="#a78bfa">The IP Revolution Goes Onchain</text>
+
+  <!-- 3 Feature Cards -->
+  <!-- Card 1: Programmable IP -->
+  <rect x="60" y="210" width="340" height="140" rx="16" fill="#1e1540" opacity="0.8"/>
+  <rect x="60" y="210" width="340" height="140" rx="16" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.4"/>
+  <text x="80" y="245" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#a78bfa" letter-spacing="1.5">PROGRAMMABLE IP</text>
+  <text x="80" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="400" fill="#e2e8f0">Register, license &amp; monetize</text>
+  <text x="80" y="297" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="400" fill="#e2e8f0">creative works via smart contracts</text>
+  <text x="80" y="330" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#4ade80">$140M+ Raised</text>
+
+  <!-- Card 2: IP Graph -->
+  <rect x="430" y="210" width="340" height="140" rx="16" fill="#1e1540" opacity="0.8"/>
+  <rect x="430" y="210" width="340" height="140" rx="16" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.4"/>
+  <text x="450" y="245" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#818cf8" letter-spacing="1.5">IP GRAPH</text>
+  <text x="450" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="400" fill="#e2e8f0">Full provenance tracking for</text>
+  <text x="450" y="297" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="400" fill="#e2e8f0">every remix &amp; derivative work</text>
+  <text x="450" y="330" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#22d3ee">Auto Royalties</text>
+
+  <!-- Card 3: AI + IP -->
+  <rect x="800" y="210" width="340" height="140" rx="16" fill="#1e1540" opacity="0.8"/>
+  <rect x="800" y="210" width="340" height="140" rx="16" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.4"/>
+  <text x="820" y="245" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#22d3ee" letter-spacing="1.5">AI × IP</text>
+  <text x="820" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="400" fill="#e2e8f0">AI agents license IP</text>
+  <text x="820" y="297" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="400" fill="#e2e8f0">programmatically via PIL</text>
+  <text x="820" y="330" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#fbbf24">Agent Commerce</text>
+
+  <!-- Stats Row -->
+  <rect x="60" y="380" width="260" height="90" rx="12" fill="#0f1729" opacity="0.7"/>
+  <text x="80" y="415" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1">ASTER CHAIN</text>
+  <text x="80" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="24" font-weight="700" fill="#ffffff">IP-Native L1</text>
+
+  <rect x="350" y="380" width="260" height="90" rx="12" fill="#0f1729" opacity="0.7"/>
+  <text x="370" y="415" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1">LICENSE MODEL</text>
+  <text x="370" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="24" font-weight="700" fill="#ffffff">PIL Framework</text>
+
+  <rect x="640" y="380" width="260" height="90" rx="12" fill="#0f1729" opacity="0.7"/>
+  <text x="660" y="415" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1">CROSS-CHAIN</text>
+  <text x="660" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="24" font-weight="700" fill="#ffffff">Cosmos IBC</text>
+
+  <rect x="930" y="380" width="210" height="90" rx="12" fill="#0f1729" opacity="0.7"/>
+  <text x="950" y="415" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1">ECOSYSTEM</text>
+  <text x="950" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="24" font-weight="700" fill="#ffffff">100+ dApps</text>
+
+  <!-- CTA Section -->
+  <rect x="60" y="500" width="520" height="52" rx="12" fill="url(#accent1)" opacity="0.12"/>
+  <rect x="60" y="500" width="520" height="52" rx="12" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.3"/>
+  <text x="80" y="532" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="600" fill="#e2e8f0">Deep Dive →  </text>
+  <text x="200" y="532" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#c084fc">degen0x.com/learn/story-protocol-ip-guide</text>
+
+  <!-- Bottom Bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#0a0612"/>
+  <text x="60" y="616" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#a78bfa">degen0x</text>
+  <text x="140" y="616" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="400" fill="#64748b">Crypto Tools, Data &amp; Research</text>
+  <text x="1140" y="616" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="end">degen0x.com</text>
+</svg>

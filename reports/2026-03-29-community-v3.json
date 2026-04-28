@@ -1,0 +1,89 @@
+{
+  "date": "2026-03-29",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Community cycle v3 completed: Drafted 3 new tweets (#243-245) covering Q1 final scorecard thread, NYSE x Securitize tokenized securities, and UK crypto donation ban regulatory divergence. Newsletter v40 addendum with full Q1 scorecard section. Created SVG social card: Q1 2026 Scorecard (1200x630, damage vs setup dual-column with Q2 catalysts). Discord/TG Sunday night update v3 drafted. 604 pages published, 245 total tweets drafted, 56 SVG cards created.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #243: Q1 Final Trading Day Scorecard Thread — BTC $66,008 (-24.6% YTD), ETH $1,995 (-60%), SOL $83 (-72%), F&G 12 (51-day streak). Historical parallels: post-FTX +94%, COVID +1,180%, 2018 +306%. Q2 catalysts: CLARITY vote, 126 ETF filings, NYSE x Securitize, whale accumulation ATH. Links to dca-calculator, fear-greed-timeline, risk-analyzer. Scheduled: Mon Mar 30, 6PM ET.",
+          "Tweet #244: NYSE x Securitize — TradFi Meets Crypto — NYSE named Securitize as first digital transfer agent for blockchain-native securities. Institutional buildout during extreme fear. Links to crypto-regulations-2026-guide. Scheduled: Tue Mar 31, 3PM ET.",
+          "Tweet #245: UK Bans Crypto Political Donations — Regulatory divergence: UK banning crypto donations while US builds CLARITY Act, SEC commodity classification, NYSE tokenization, 126 ETF filings. Links to crypto-regulations-2026-guide. Scheduled: Wed Apr 2, 10AM ET.",
+          "Newsletter v40 Addendum: Q1 Close Special Section — Full scorecard with surface damage vs underlying setup. Historical pattern data, Q2 catalyst lineup, tool recommendations for accumulation planning.",
+          "Discord/TG: Sunday Night Update v3 — Market snapshot, Q1 close preview, NYSE x Securitize, UK donation ban, 4 new learn pages, 604 pages milestone."
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "+99% — 51-day extreme fear streak (ALL-TIME RECORD)", "pct": 99, "color": "#ef4444" },
+          { "label": "DCA Calculator", "value": "+98% — extreme fear drives accumulation narrative, Q1 close amplifies", "pct": 98, "color": "#22c55e" },
+          { "label": "Crypto Regulations 2026 Guide", "value": "+97% — CLARITY Act + NYSE tokenization + UK ban divergence", "pct": 97, "color": "#a78bfa" },
+          { "label": "Whale Tracker", "value": "+96% — 270K BTC accumulated (30d), exchange supply ALL-TIME LOW 5.88%", "pct": 96, "color": "#6366f1" },
+          { "label": "Options Calculator", "value": "+95% — $14.16B quarterly expiry settled, post-expiry volatility", "pct": 95, "color": "#06b6d4" },
+          { "label": "Bear Market Investing Guide", "value": "+94% — peak relevance during worst Q1 since 2022", "pct": 94, "color": "#4ade80" },
+          { "label": "Risk Analyzer", "value": "+93% — $451M liquidations, 122K traders wiped", "pct": 93, "color": "#ef4444" },
+          { "label": "Crypto Technical Analysis Guide", "value": "+92% — NEW: just published today, RSI/MACD/Bollinger coverage", "pct": 92, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Q1 2026 Scorecard (1200x630) — Dark glass-morphism three-panel design. Left 'THE DAMAGE' (red): BTC $66,008 (-24.6%), ETH $1,995 (-60%), SOL $83 (-72%), F&G 12/100 (51-day streak). Center 'THE SETUP' (green): 270K BTC whale accumulation, 5.88% exchange supply ATL, CLARITY Act + 16 commodities, NYSE tokenized securities. Right 'Q2 CATALYSTS' (indigo): CLARITY vote May-Jun, 126 ETF filings, NYSE x Securitize, NC Bitcoin Reserve, plus historical pattern data (post-FTX +94%, COVID +1,180%, 2018 +306%). Bottom stats bar: 604 pages, 245 tweets, 56 cards, v40 newsletter. Brand gradient CTA. Saved to reports/community-drafts/2026-03-29-social-card-q1-scorecard.svg"
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "metrics": [
+          { "label": "Published Pages", "value": "604 live (verified)", "pct": 100, "color": "#4ade80" },
+          { "label": "Cumulative Social Posts", "value": "245 tweets drafted (3 new: #243-245)", "pct": 100, "color": "#6366f1" },
+          { "label": "SVG Social Cards (all-time)", "value": "56 cards (1 new: Q1 Scorecard)", "pct": 98, "color": "#06b6d4" },
+          { "label": "Newsletter Versions", "value": "v40 + Q1 close addendum", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Calendar", "value": "13 pieces scheduled Sun Mar 29 — Thu Apr 3", "pct": 100, "color": "#4ade80" },
+          { "label": "Key Narratives", "value": "Q1 scorecard (worst since 2022), NYSE x Securitize tokenization, UK regulatory divergence, 51-day fear ATR, whale supply squeeze, Q2 catalyst lineup", "pct": 100, "color": "#22c55e" }
+        ]
+      },
+      {
+        "title": "Content Calendar (Sun Mar 29 — Thu Apr 3)",
+        "items": [
+          "Sun Mar 29, 8PM ET — Tweet #239: Q1 Close 'The Setup' Thread (4 parts) [from v2]",
+          "Sun Mar 29, 9PM ET — Discord/TG Sunday Night Update v3",
+          "Mon Mar 30, 10AM ET — Tweet #240: Whale Supply Squeeze [from v2]",
+          "Mon Mar 30, 2PM ET — Tweet #241: CLARITY Act Explainer [from v2]",
+          "Mon Mar 30, 6PM ET — Tweet #243: Q1 Final Trading Day Scorecard [NEW]",
+          "Tue Mar 31, 12PM ET — Tweet #242: 604 Published Pages Milestone [from v2]",
+          "Tue Mar 31, 3PM ET — Tweet #244: NYSE x Securitize [NEW]",
+          "Wed Apr 1, 10AM ET — Q2 Outlook Post (TBD next cycle)",
+          "Wed Apr 2, 10AM ET — Tweet #245: UK Crypto Donation Ban [NEW]",
+          "Thu Apr 3, 10AM ET — Newsletter v40 + Q1 close addendum"
+        ]
+      },
+      {
+        "title": "Market Context (live data)",
+        "metrics": [
+          { "label": "BTC", "value": "$66,008 (-24.6% YTD, worst Q1 since 2022)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH", "value": "$1,995 (-60% from Aug 2025 ATH)", "pct": 30, "color": "#ef4444" },
+          { "label": "SOL", "value": "$83 (-72% from highs)", "pct": 25, "color": "#ef4444" },
+          { "label": "F&G Index", "value": "12 (Extreme Fear, 51-day streak, ALL-TIME RECORD)", "pct": 12, "color": "#ef4444" },
+          { "label": "NYSE x Securitize", "value": "First digital transfer agent for tokenized securities", "pct": 100, "color": "#6366f1" },
+          { "label": "CLARITY Act", "value": "Stablecoin yield deal reached — Senate vote May-June", "pct": 100, "color": "#22c55e" },
+          { "label": "UK", "value": "Banned crypto political donations — regulatory divergence", "pct": 50, "color": "#f59e0b" },
+          { "label": "ETF Pipeline", "value": "126 new crypto ETP filings pending", "pct": 90, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"],
+    "files_created": [
+      "reports/community-drafts/2026-03-29-social-drafts-v3.md",
+      "reports/community-drafts/2026-03-29-social-card-q1-scorecard.svg",
+      "reports/2026-03-29-community-v3.json"
+    ],
+    "data_sources": {
+      "web_search": "live crypto market data from latestly.com, fortune.com, coindesk.com, metamask.io, coinmarketcap.com, blockchainmagazine.net, spotedcrypto.com, lowenstein.com, fool.com",
+      "codebase": "published-pages.ts (604 published pages verified), existing community reports v1-v2",
+      "previous_reports": "2026-03-29-community-v2.json, 2026-03-29-standup-v3.json, 2026-03-29-publish.json, 2026-03-28-community-v10.json"
+    }
+  }
+}

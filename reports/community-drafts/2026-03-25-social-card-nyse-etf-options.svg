@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="signatureGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropShadow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feMerge>
+        <feMergeNode in="offsetblur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <!-- Accent stripe top -->
+  <rect width="1200" height="4" fill="url(#signatureGradient2)"/>
+
+  <!-- Glass panel background -->
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Left decorative - Chain breaking visual -->
+  <g id="left-decor" opacity="0.15">
+    <circle cx="120" cy="140" r="6" fill="#6366f1" filter="url(#glow2)"/>
+    <line x1="130" y1="140" x2="160" y2="140" stroke="#6366f1" stroke-width="3" stroke-dasharray="8,4"/>
+    <circle cx="170" cy="140" r="6" fill="#06b6d4" filter="url(#glow2)"/>
+  </g>
+
+  <!-- Right decorative upward arrow burst -->
+  <g id="right-decor" opacity="0.2">
+    <line x1="1080" y1="480" x2="1080" y2="380" stroke="url(#arrowGradient)" stroke-width="4" filter="url(#glow2)"/>
+    <polygon points="1080,360 1065,390 1095,390" fill="url(#arrowGradient)" filter="url(#glow2)"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="110" font-family="Inter, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="#e6edf3">
+    NYSE Removes ETF Options Limits
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="165" font-family="Inter, sans-serif" font-size="26" font-weight="500" text-anchor="middle" fill="#8b949e">
+    11 Spot BTC &amp; ETH Funds — No More 25K Contract Cap
+  </text>
+
+  <!-- Main visual: Breaking chains and upward momentum -->
+  <g id="main-visual">
+    <!-- Left chain (broken) -->
+    <g id="chain-left">
+      <circle cx="280" cy="280" r="16" fill="none" stroke="rgba(239,68,68,0.6)" stroke-width="3"/>
+      <circle cx="280" cy="280" r="10" fill="none" stroke="rgba(239,68,68,0.4)" stroke-width="1" stroke-dasharray="3,2"/>
+      <line x1="296" y1="280" x2="340" y2="280" stroke="rgba(239,68,68,0.5)" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="280" y="330" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#8b949e">
+        OLD LIMIT
+      </text>
+    </g>
+
+    <!-- Central breaking point with sparkle effect -->
+    <g id="break-point" filter="url(#glow2)">
+      <circle cx="600" cy="280" r="28" fill="rgba(99,102,241,0.2)" stroke="url(#arrowGradient)" stroke-width="3"/>
+      <line x1="570" y1="250" x2="630" y2="310" stroke="url(#arrowGradient)" stroke-width="3" opacity="0.6"/>
+      <line x1="630" y1="250" x2="570" y2="310" stroke="url(#arrowGradient)" stroke-width="3" opacity="0.6"/>
+      <polygon points="600,240 595,260 605,260" fill="#f59e0b" opacity="0.8"/>
+      <polygon points="600,320 595,300 605,300" fill="#f59e0b" opacity="0.8"/>
+    </g>
+
+    <!-- Right arrow (unlimited) -->
+    <g id="arrow-right">
+      <line x1="660" y1="280" x2="880" y2="280" stroke="url(#arrowGradient)" stroke-width="4" filter="url(#glow2)"/>
+      <polygon points="900,280 860,265 860,295" fill="url(#arrowGradient)" filter="url(#glow2)"/>
+      <text x="900" y="330" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#22c55e">
+        UNLIMITED
+      </text>
+    </g>
+  </g>
+
+  <!-- Key stat badge -->
+  <g id="stat-badge">
+    <rect x="350" y="410" width="500" height="90" rx="12" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.3)" stroke-width="2"/>
+    <text x="600" y="440" font-family="Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#8b949e">
+      INSTITUTIONAL-GRADE TRADING
+    </text>
+    <text x="600" y="480" font-family="Inter, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#06b6d4">
+      FLEX Trading Now Live
+    </text>
+  </g>
+
+  <!-- Fund count highlight -->
+  <g id="fund-count">
+    <g id="badge-btc">
+      <rect x="180" y="540" width="120" height="50" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+      <text x="240" y="560" font-family="Inter, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e6edf3">
+        6 BTC Funds
+      </text>
+    </g>
+    <g id="badge-eth">
+      <rect x="340" y="540" width="120" height="50" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+      <text x="400" y="560" font-family="Inter, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e6edf3">
+        5 ETH Funds
+      </text>
+    </g>
+    <g id="badge-total">
+      <rect x="500" y="540" width="200" height="50" rx="8" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.4)" stroke-width="2"/>
+      <text x="600" y="560" font-family="Inter, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#f59e0b">
+        11 Total Available
+      </text>
+    </g>
+  </g>
+
+  <!-- Footer - Link -->
+  <text x="600" y="595" font-family="Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#6366f1">
+    degen0x.com/learn/crypto-etfs-complete-guide
+  </text>
+
+  <!-- Footer - Branding -->
+  <text x="40" y="610" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#8b949e">
+    degen0x
+  </text>
+  <rect x="1120" y="598" width="40" height="22" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+  <text x="1140" y="613" font-family="Inter, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#6366f1">
+    ETF
+  </text>
+</svg>

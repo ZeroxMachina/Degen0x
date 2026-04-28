@@ -1,0 +1,140 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import ReviewPage from "@/components/ReviewPage";
+import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
+
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+export const metadata: Metadata = {
+  title: `BitPay App Review (2026) | degen0x`,
+  description: `In-depth BitPay app review for ${CURRENT_YEAR}. Wallet features, bill pay, Visa card, merchant payments, supported cryptocurrencies, fees, and security.`,
+  alternates: { canonical: "/spending/reviews/bitpay-app" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bitpay App', },
+  ],
+};
+
+export default function BitPayAppReviewPage() {
+  return (
+    <>
+      <ReviewSchema
+        itemName="BitPay App Review (2026)"
+        url="https://degen0x.com/spending/reviews/bitpay-app"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
+      <ReviewPage
+      product={{
+        name: "BitPay",
+        slug: "bitpay-app",
+        rating: 4.1,
+        description: "BitPay is a veteran crypto payments platform offering a wallet app, Visa debit card, bill pay, and merchant payment processing for Bitcoin, Ethereum, and",
+        pros: [
+          "Visa debit card for spending crypto at any Visa merchant",
+          "Bill pay feature for rent, utilities, and other expenses",
+          "Supports Bitcoin, Ethereum, and major stablecoins",
+          "Long track record since 2011",
+        ],
+        cons: [
+          "Limited altcoin support compared to competitors",
+          "Card only available in the US",
+          "Conversion fees can add up on frequent transactions",
+        ],
+        bestFor: "US-based users who want an all-in-one crypto spending solution with a debit card and bill pay",
+        affiliateUrl: "#",
+        category: "spending",
+      }}
+      categoryName="Crypto Spending"
+      categorySlug="spending"
+      overview="BitPay has been a cornerstone of the crypto payments ecosystem since 2011, serving as both a merchant payment processor and a consumer-facing spending platform. The BitPay app combines a non-custodial wallet with a prepaid Visa debit card and a bill pay service, creating a comprehensive solution for converting and spending crypto in everyday life. Users can store Bitcoin, Ethereum, and several stablecoins, then spend them through the card at millions of Visa merchants or pay bills directly from the app."
+      sections={[
+        { id: "wallet", title: "Wallet Features", content: "The BitPay wallet is non-custodial, meaning you control your private keys. It supports Bitcoin, Bitcoin Cash, Ethereum, Dogecoin, Litecoin, and stablecoins including USDC, BUSD, and DAI. The wallet includes built-in exchange functionality through partner integrations, allowing you to swap between supported assets. Multi-signature security is available for shared wallets. The wallet also supports importing existing wallets via recovery phrases." },
+        { id: "card", title: "BitPay Visa Card", content: "The BitPay Visa prepaid debit card lets you spend crypto anywhere Visa is accepted. You load the card by converting crypto from your BitPay wallet into US dollars. The card has no annual fee and charges a 1% conversion fee when loading. ATM withdrawals are available at Allpoint ATMs for free and $2.50 at other ATMs. The card supports Apple Pay and Google Pay for contactless payments." },
+        { id: "billpay", title: "Bill Pay Service", content: "BitPay bill pay allows you to pay bills from your crypto balance. Supported bill types include rent, utilities, phone, internet, insurance, and credit card payments. The service converts your crypto to fiat and sends the payment via ACH transfer. A 1% network cost applies to bill payments. Processing times are typically 1-3 business days. This feature is currently available only in the US." },
+      ]}
+      fees={{
+        "Card Annual Fee": "Free",
+        "Card Loading Fee": "1% conversion",
+        "ATM Withdrawal (Allpoint)": "Free",
+        "ATM Withdrawal (Other)": "$2.50",
+        "Bill Pay Fee": "1% network cost",
+        "Wallet Transfers": "Network fees only",
+      }}
+      security={[
+        "Non-custodial wallet with user-controlled private keys",
+        "Multi-signature wallet support for shared accounts",
+        "Biometric authentication (Face ID, fingerprint)",
+        "PIN protection for card transactions",
+        "12-word recovery phrase backup",
+      ]}
+      features={[
+        "Non-custodial multi-currency wallet",
+        "Prepaid Visa debit card with Apple Pay and Google Pay",
+        "Bill pay for rent, utilities, and more",
+        "In-app crypto exchange and swaps",
+        "Gift card purchasing for major retailers",
+        "QR code payments at BitPay merchants",
+      ]}
+      faqs={[
+        { question: "Is the BitPay wallet custodial or non-custodial?", answer: "The BitPay wallet is non-custodial. You hold your own private keys and have full control over your funds. BitPay cannot access or freeze your wallet. You are responsible for backing up your 12-word recovery phrase." },
+        { question: "Can I use the BitPay card outside the US?", answer: "The BitPay Visa card is currently only available to US residents. International users can still use the BitPay wallet for storing crypto, making merchant payments, and purchasing gift cards." },
+        { question: "What cryptocurrencies does BitPay support?", answer: "BitPay supports Bitcoin, Bitcoin Cash, Ethereum, Dogecoin, Litecoin, Shiba Inu, and stablecoins including USDC, BUSD, DAI, and GUSD. The supported list is periodically expanded." },
+      ]}
+      relatedReviews={[
+        { name: "Crypto.com Pay", slug: "crypto-com-pay" },
+        { name: "CoinGate", slug: "coingate" },
+        { name: "NOWPayments", slug: "nowpayments" },
+      ]}
+      relatedGuides={[
+        { title: "Best Crypto Bill Pay", href: "/spending/best/bill-pay" },
+        { title: "Bitcoin Payments Guide", href: "/spending/learn/bitcoin-payments-guide" },
+      ]}
+    />
+      <ArticleSchema
+        headline="BitPay App Review (2026) | degen0x"
+        description="In-depth BitPay app review for ${CURRENT_YEAR}. Wallet features, bill pay, Visa card, merchant payments, supported cryptocurrencies, fees, and security."
+        url="https://degen0x.com/spending/reviews/bitpay-app"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/bitpay-app" />
+        <ReadingTime />
+      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallet Features", "description": "BitPay is a veteran crypto payments platform offering a wallet app, Visa debit card, bill pay, and merchant payment processing for Bitcoin, Ethereum, and", "url": "https://degen0x.com/spending/reviews/bitpay-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/spending/reviews/bitpay" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitpay</a>
+  <a href="/spending/reviews/coingate" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coingate</a>
+  <a href="/spending/reviews/crypto-com-pay" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Pay</a>
+  <a href="/spending/reviews/flexa" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Flexa</a>
+  <a href="/spending/reviews/fold-app" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Fold App</a>
+  <a href="/spending/reviews/lolli" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Lolli</a>
+  <a href="/spending/reviews/moon-browser" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Moon Browser</a>
+  <a href="/spending/reviews/nowpayments" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Nowpayments</a>
+</nav>
+      <MethodologyBlock variant="review" />
+      </>
+  );
+}

@@ -1,0 +1,115 @@
+// ─── Learn Pages: April 3, 2026 (Build v8) ─────────────────────────────────
+// Topics: veTokenomics & Vote-Escrowed Tokens, Crypto Custody Solutions
+
+import { PageData } from "@/lib/types";
+
+export const vetokenomicsGuide2026Page: PageData = {
+  slug: "/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026",
+  title: "veTokenomics Guide 2026 — Vote-Escrowed Tokens & DeFi Governance | degen0x",
+  description:
+    "Complete guide to veTokenomics in 2026. Learn how vote-escrowed tokens work — from Curve's veCRV pioneer model to bribe markets, gauge wars, and why Pendle is moving beyond ve. Lock mechanics, governance power, and revenue sharing explained.",
+  category: "learn",
+  subcategory: "defi",
+  tags: [
+    "vetokenomics",
+    "vote-escrowed-tokens",
+    "veCRV",
+    "curve-finance",
+    "convex-finance",
+    "gauge-voting",
+    "bribe-markets",
+    "votium",
+    "hidden-hand",
+    "veBAL",
+    "aerodrome",
+    "pendle-spendle",
+    "defi-governance",
+    "curve-wars",
+  ],
+  publishedAt: "2026-04-03T00:00:00Z",
+  updatedAt: "2026-04-03T00:00:00Z",
+  difficulty: "intermediate",
+  readingTime: 12,
+  wordCount: 3200,
+  status: "queued",
+  seo: {
+    targetKeyword: "vetokenomics vote escrowed tokens defi governance guide 2026",
+    titleTag: "veTokenomics Guide 2026 — Vote-Escrowed Tokens & DeFi Governance | degen0x",
+    metaDescription:
+      "Complete veTokenomics guide for 2026. How vote-escrowed tokens work — Curve veCRV, gauge voting, bribe markets, Convex, Aerodrome, and why Pendle is moving beyond ve locks.",
+    schemas: ["Article", "FAQPage", "BreadcrumbList"],
+    internalLinks: [
+      "/learn/yield-farming-defi-strategies-guide-2026",
+      "/learn/dao-governance-onchain-voting-guide-2026",
+      "/learn/tokenomics-crypto-token-economics-guide-2026",
+      "/learn/concentrated-liquidity-lp-strategies-guide-2026",
+      "/learn/real-yield-defi-protocol-revenue-guide-2026",
+    ],
+  },
+  toc: [
+    "What Are veTokens & veTokenomics?",
+    "How Vote-Escrowed Tokens Work",
+    "The Curve Wars: A Case Study",
+    "Major veTokenomics Protocols in 2026",
+    "Bribe Markets & Meta-Governance",
+    "The Pendle Pivot: Moving Beyond ve",
+    "Benefits & Risks of veTokenomics",
+    "FAQ",
+  ],
+};
+
+export const cryptoCustodyGuide2026Page: PageData = {
+  slug: "/learn/crypto-custody-solutions-institutional-mpc-guide-2026",
+  title: "Crypto Custody Solutions Guide 2026 — Institutional MPC, HSM & Multi-Sig | degen0x",
+  description:
+    "Complete guide to institutional crypto custody in 2026. Compare MPC wallets, HSM vaults, and multi-sig solutions from Fireblocks, Coinbase Custody, Anchorage, and BitGo. Regulatory requirements, insurance, and self-custody vs institutional tradeoffs.",
+  category: "learn",
+  subcategory: "infrastructure",
+  tags: [
+    "crypto-custody",
+    "institutional-custody",
+    "mpc-wallets",
+    "multi-party-computation",
+    "hsm-security",
+    "multi-sig",
+    "fireblocks",
+    "coinbase-custody",
+    "anchorage-digital",
+    "bitgo",
+    "qualified-custodian",
+    "sab-121",
+    "digital-asset-security",
+    "institutional-crypto",
+  ],
+  publishedAt: "2026-04-03T00:00:00Z",
+  updatedAt: "2026-04-03T00:00:00Z",
+  difficulty: "intermediate",
+  readingTime: 14,
+  wordCount: 3500,
+  status: "queued",
+  seo: {
+    targetKeyword: "crypto custody solutions institutional mpc guide 2026",
+    titleTag: "Crypto Custody Solutions Guide 2026 — Institutional MPC, HSM & Multi-Sig | degen0x",
+    metaDescription:
+      "Complete institutional crypto custody guide for 2026. Compare MPC, HSM, and multi-sig from Fireblocks, Coinbase Custody, Anchorage, and BitGo. Regulations, insurance, and security explained.",
+    schemas: ["Article", "FAQPage", "BreadcrumbList"],
+    internalLinks: [
+      "/learn/crypto-wallet-security-guide-2026",
+      "/learn/institutional-defi-onchain-finance-guide-2026",
+      "/learn/mica-regulation-eu-crypto-compliance-guide-2026",
+      "/learn/smart-wallets-account-abstraction-guide-2026",
+      "/learn/rwa-tokenization-real-world-assets-guide-2026",
+    ],
+  },
+  toc: [
+    "What Is Crypto Custody?",
+    "Why Institutional Custody Matters",
+    "MPC Wallets: How Multi-Party Computation Works",
+    "HSM-Based Custody: Hardware Security Modules",
+    "Multi-Sig vs MPC vs HSM: Comparison",
+    "Top Institutional Custody Providers in 2026",
+    "Regulatory Landscape & Compliance",
+    "Self-Custody vs Institutional Custody",
+    "FAQ",
+  ],
+};

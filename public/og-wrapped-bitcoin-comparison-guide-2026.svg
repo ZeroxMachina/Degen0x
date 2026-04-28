@@ -1,0 +1,78 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1524"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#c9d1d9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Bitcoin symbol visual -->
+  <g filter="url(#glow)" opacity="0.15">
+    <circle cx="960" cy="240" r="110" fill="none" stroke="#f59e0b" stroke-width="3"/>
+    <text x="960" y="265" font-family="system-ui, sans-serif" font-size="80" font-weight="800" fill="#f59e0b" text-anchor="middle">&#8383;</text>
+  </g>
+
+  <!-- Wrapped chains arrows -->
+  <g opacity="0.1">
+    <rect x="840" y="380" width="80" height="36" rx="6" fill="#6366f1"/>
+    <text x="880" y="403" font-family="system-ui, sans-serif" font-size="11" fill="#e6edf3" text-anchor="middle">ETH</text>
+    <rect x="940" y="380" width="80" height="36" rx="6" fill="#ef4444"/>
+    <text x="980" y="403" font-family="system-ui, sans-serif" font-size="11" fill="#e6edf3" text-anchor="middle">Solana</text>
+    <rect x="1040" y="380" width="80" height="36" rx="6" fill="#22c55e"/>
+    <text x="1080" y="403" font-family="system-ui, sans-serif" font-size="11" fill="#e6edf3" text-anchor="middle">L2s</text>
+    <line x1="960" y1="350" x2="880" y2="380" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="960" y1="350" x2="980" y2="380" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="960" y1="350" x2="1080" y2="380" stroke="#f59e0b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Badge -->
+  <rect x="60" y="80" width="100" height="28" rx="6" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1"/>
+  <text x="110" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" text-anchor="middle">LEARN</text>
+
+  <!-- Title -->
+  <text x="60" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Wrapped Bitcoin</text>
+  <text x="60" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">Comparison Guide</text>
+  <text x="60" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)">2026</text>
+
+  <text x="60" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#8b949e">WBTC vs cbBTC vs tBTC vs sBTC — which wrapped BTC is safest?</text>
+
+  <!-- Stats -->
+  <g>
+    <rect x="60" y="370" width="170" height="80" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="80" y="405" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f59e0b">WBTC</text>
+    <text x="80" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8b949e">Custodial (BitGo)</text>
+
+    <rect x="245" y="370" width="170" height="80" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="265" y="405" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#3b82f6">cbBTC</text>
+    <text x="265" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8b949e">Coinbase backed</text>
+
+    <rect x="430" y="370" width="170" height="80" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="450" y="405" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#22c55e">tBTC</text>
+    <text x="450" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8b949e">Decentralized</text>
+
+    <rect x="615" y="370" width="170" height="80" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <text x="635" y="405" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#8b5cf6">sBTC</text>
+    <text x="635" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8b949e">Stacks native</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="590" width="1200" height="40" fill="#0a0f1a"/>
+  <text x="60" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#58a6ff">degen0x.com</text>
+  <text x="1140" y="615" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#484f58" text-anchor="end">2026 Guide</text>
+</svg>

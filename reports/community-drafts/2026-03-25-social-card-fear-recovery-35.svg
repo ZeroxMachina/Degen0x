@@ -1,0 +1,119 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="signatureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <!-- Accent stripe top -->
+  <rect width="1200" height="4" fill="url(#signatureGradient)"/>
+
+  <!-- Glass panel background -->
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Left decorative element -->
+  <circle cx="100" cy="100" r="80" fill="rgba(99,102,241,0.1)" filter="url(#glow)"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(99,102,241,0.2)" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Right decorative element -->
+  <circle cx="1100" cy="520" r="100" fill="rgba(6,182,212,0.1)" filter="url(#glow)"/>
+  <circle cx="1100" cy="520" r="100" fill="none" stroke="rgba(6,182,212,0.2)" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Title -->
+  <text x="600" y="110" font-family="Inter, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#e6edf3">
+    Fear &amp; Greed: 8 → 35
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="165" font-family="Inter, sans-serif" font-size="28" font-weight="500" text-anchor="middle" fill="#8b949e">
+    46-Day Extreme Fear Streak May Be Breaking
+  </text>
+
+  <!-- Gauge Container -->
+  <g id="gauge-group">
+    <!-- Gauge background track -->
+    <rect x="150" y="240" width="900" height="80" rx="40" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+    <!-- Gauge colored track (gradient) -->
+    <rect x="150" y="240" width="900" height="80" rx="40" fill="url(#gaugeGradient)" opacity="0.3"/>
+
+    <!-- Gauge indicator bar at position 8/100 -->
+    <rect x="150" y="240" width="72" height="80" rx="40" fill="#ef4444" filter="url(#glow)"/>
+
+    <!-- Gauge indicator bar at position 35/100 -->
+    <rect x="465" y="240" width="315" height="80" rx="40" fill="url(#gaugeGradient)" filter="url(#glow)"/>
+
+    <!-- Start label (8) -->
+    <g id="label-8">
+      <circle cx="150" cy="360" r="35" fill="rgba(255,255,255,0.06)" stroke="rgba(239,68,68,0.4)" stroke-width="2"/>
+      <text x="150" y="375" font-family="Inter, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ef4444">
+        8
+      </text>
+    </g>
+
+    <!-- End label (35) -->
+    <g id="label-35">
+      <circle cx="780" cy="360" r="35" fill="rgba(255,255,255,0.06)" stroke="rgba(245,158,11,0.4)" stroke-width="2"/>
+      <text x="780" y="375" font-family="Inter, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#f59e0b">
+        35
+      </text>
+    </g>
+
+    <!-- Gauge labels -->
+    <text x="150" y="420" font-family="Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#8b949e">
+      EXTREME FEAR
+    </text>
+    <text x="780" y="420" font-family="Inter, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#8b949e">
+      FEAR
+    </text>
+  </g>
+
+  <!-- Stats row -->
+  <g id="stats">
+    <text x="350" y="500" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#8b949e">
+      Recovery Signal:
+    </text>
+    <text x="350" y="535" font-family="Inter, sans-serif" font-size="28" font-weight="bold" fill="#22c55e">
+      ↗ +337% in 46 Days
+    </text>
+
+    <text x="750" y="500" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#8b949e">
+      Chart Pattern:
+    </text>
+    <text x="750" y="535" font-family="Inter, sans-serif" font-size="28" font-weight="bold" fill="#06b6d4">
+      Potential Bottom
+    </text>
+  </g>
+
+  <!-- Footer - Link -->
+  <text x="600" y="595" font-family="Inter, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#6366f1">
+    degen0x.com/tools/fear-greed-timeline
+  </text>
+
+  <!-- Footer - Branding -->
+  <text x="40" y="610" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#8b949e">
+    degen0x
+  </text>
+  <rect x="1120" y="598" width="40" height="22" rx="4" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+  <text x="1140" y="613" font-family="Inter, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#6366f1">
+    FG
+  </text>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 2 new learn guides (Katana Perps, Tokenized Funds) for UX issues — fixed missing BackToTop components, added Related Articles sections, corrected mobile-responsive grid on Tokenized Funds comparison, and fixed mismatched OG image references in structured data metadata.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Katana Perps guide: Added BackToTop component for long-form scroll navigation (2,800-word article)",
+          "Tokenized Funds guide: Added BackToTop component for long-form scroll navigation (3,200-word article)",
+          "Katana Perps guide: Added Related Articles & Tools section with 3 contextual links (Perpetual DEX Guide, Hyperliquid Ecosystem, Funding Rate Tracker) to improve internal linking and reduce bounce",
+          "Tokenized Funds guide: Added Related Articles & Tools section with 4 contextual links (Tokenized Treasuries, RWA Tokenization, MiCA Regulation, Portfolio Tracker) to improve internal linking and reduce bounce",
+          "Tokenized Funds guide: Fixed 'Traditional Fund vs Tokenized Fund' comparison grid from fixed 2-column (gridTemplateColumns: '1fr 1fr') to responsive layout (repeat(auto-fit, minmax(280px, 1fr))) — cards now stack properly on mobile instead of squeezing into unreadable columns",
+          "Both pages: Fixed OG image references in articleSchema metadata — corrected filenames from non-existent .png paths to actual .svg file paths (og-katana-perps-idex-acquisition-guide.svg, og-tokenized-funds-institutional-defi-guide.svg)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG images already existed from previous design cycle (v9) — verified: og-katana-perps-idex-acquisition-guide.svg (1200x630, DeFi badge) and og-tokenized-funds-institutional-defi-guide.svg (1200x630, RWA badge)",
+          "No new OG images required — fixed metadata references to correctly point to existing SVG assets"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/katana-perps-idex-acquisition-guide — 3 UX fixes applied (BackToTop, Related Articles, OG ref)",
+          "/learn/tokenized-funds-institutional-defi-guide — 4 UX fixes applied (BackToTop, Related Articles, mobile grid, OG ref)",
+          "TypeScript compilation verified — no errors in modified files (only pre-existing @types/web conflicts in node_modules)"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

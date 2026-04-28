@@ -1,0 +1,68 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audit of 5 newly published pages (Day 42 batch). Fixed missing metadata, StructuredData, BackToTop, FAQ sections, and navigation on Compound, Curve, and AI DePIN guides. Created 3 new OG images for pages missing them.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "AI DePIN guide: Added full Table of Contents with 8 section anchors and scroll-mt-8 for smooth navigation on a 17-min read article",
+          "AI DePIN guide: Added StructuredData with article + FAQ schema for rich snippet eligibility",
+          "AI DePIN guide: Replaced <a> tags with Next.js <Link> components in breadcrumb for client-side navigation",
+          "AI DePIN guide: Added BackToTop component for long-scroll UX",
+          "AI DePIN guide: Enhanced metadata with keywords, openGraph, and twitter card fields (was minimal)",
+          "Compound ecosystem page: Created layout.tsx with full SEO metadata (was missing — use client page cannot export metadata)",
+          "Compound ecosystem page: Added FAQ section with 4 collapsible Q&As using details elements",
+          "Compound ecosystem page: Added Related Ecosystem Guides section with 3 cross-links (Curve, DeFi Lending, DCA Calculator)",
+          "Compound ecosystem page: Added BackToTop component",
+          "Curve ecosystem page: Created layout.tsx with full SEO metadata (same use client metadata issue)",
+          "Curve ecosystem page: Added FAQ section with 4 collapsible Q&As (veCRV, Curve Wars, crvUSD, StableSwap)",
+          "Curve ecosystem page: Added Related Ecosystem Guides section with 3 cross-links (Compound, Yield Farming, DCA Calculator)",
+          "Curve ecosystem page: Added BackToTop component"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: compound-guide (1200x630) — green Compound brand theme with bank icon, 4 stat cards (TVL $2.1B, Markets, $COMP, Comet V3), supply APY bar chart visualization",
+          "OG image: curve-guide (1200x630) — pink Curve brand theme with swirl icon, 4 stat cards (TVL $1.8B, $200M+ volume, $CRV, 500+ pools), StableSwap vs constant-product curve diagram",
+          "OG image: ai-depin-crypto-guide (1200x630) — green/cyan AI theme, 4 stat cards (50-80% savings, $200B+ market, 50%+ CAGR, 4+ projects), distributed GPU network node visualization"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Backlog for Future Cycles)",
+        "items": [
+          "Chain abstraction guide and prediction markets guide already had good UX patterns (StructuredData, BackToTop, OG images) — no changes needed",
+          "Compound and Curve stat cards use hardcoded values — consider adding live data fetching with isLive indicators in future cycle",
+          "52 learn pages still missing custom OG images (down from 55 after this cycle)",
+          "Ecosystem pages would benefit from a standardized template matching the learn guide pattern (ToC, structured data, FAQ)",
+          "Consider adding Data updated freshness indicators to ecosystem protocol stat cards"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "pages_audited": [
+      "learn/chain-abstraction-guide-2026",
+      "learn/crypto-prediction-markets-guide-2026",
+      "ecosystem/compound",
+      "ecosystem/curve",
+      "learn/ai-depin-crypto-guide"
+    ],
+    "files_modified": [
+      "src/app/learn/ai-depin-crypto-guide/page.tsx",
+      "src/app/ecosystem/compound/page.tsx",
+      "src/app/ecosystem/compound/layout.tsx",
+      "src/app/ecosystem/curve/page.tsx",
+      "src/app/ecosystem/curve/layout.tsx",
+      "public/og-compound-guide.svg",
+      "public/og-compound-guide.png",
+      "public/og-curve-guide.svg",
+      "public/og-curve-guide.png",
+      "public/og-ai-depin-crypto-guide.svg",
+      "public/og-ai-depin-crypto-guide.png"
+    ],
+    "og_images_remaining": 52
+  }
+}

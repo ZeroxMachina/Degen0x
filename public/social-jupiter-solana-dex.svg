@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="50%" style="stop-color:#1a0f2e"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="jupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c7f284"/>
+      <stop offset="100%" style="stop-color:#19fb9b"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c7f284"/>
+      <stop offset="100%" style="stop-color:#19fb9b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="1200" y2="630" stroke="#c7f284" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="1200" y2="400" stroke="#c7f284" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="800" y2="630" stroke="#c7f284" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="1200" y2="200" stroke="#19fb9b" stroke-width="0.5"/>
+  </g>
+
+  <!-- Decorative orbit rings -->
+  <ellipse cx="950" cy="120" rx="180" ry="60" fill="none" stroke="#c7f284" stroke-width="0.5" opacity="0.12" transform="rotate(-15 950 120)"/>
+  <ellipse cx="950" cy="120" rx="130" ry="45" fill="none" stroke="#19fb9b" stroke-width="0.5" opacity="0.1" transform="rotate(-15 950 120)"/>
+  <circle cx="1070" cy="90" r="5" fill="#c7f284" opacity="0.3"/>
+
+  <!-- Badge -->
+  <rect x="60" y="40" width="260" height="32" rx="16" fill="none" stroke="#c7f284" stroke-width="1" opacity="0.6"/>
+  <text x="190" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#c7f284" text-anchor="middle" font-weight="600" letter-spacing="2">SOLANA DEFI · 2026</text>
+
+  <!-- Main headline -->
+  <text x="60" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="48" fill="#ffffff" font-weight="800">Jupiter — Solana's</text>
+  <text x="60" y="185" font-family="system-ui, -apple-system, sans-serif" font-size="48" fill="url(#jupGrad)" font-weight="800">Everything DEX</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="225" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#94a3b8" font-weight="400">Swaps · Limit Orders · DCA · Perps · Launchpad</text>
+
+  <!-- Feature cards row -->
+  <!-- Card 1: Aggregator -->
+  <rect x="60" y="260" width="250" height="130" rx="12" fill="#0f172a" stroke="#c7f284" stroke-width="1" opacity="0.9"/>
+  <rect x="60" y="260" width="250" height="4" rx="2" fill="#c7f284"/>
+  <text x="80" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#c7f284" font-weight="700">Metis Routing</text>
+  <text x="80" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Best price across every</text>
+  <text x="80" y="343" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Solana DEX, instantly</text>
+  <text x="80" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#c7f284" font-weight="800">#1 by Volume</text>
+
+  <!-- Card 2: DCA + Perps -->
+  <rect x="330" y="260" width="250" height="130" rx="12" fill="#0f172a" stroke="#19fb9b" stroke-width="1" opacity="0.9"/>
+  <rect x="330" y="260" width="250" height="4" rx="2" fill="#19fb9b"/>
+  <text x="350" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#19fb9b" font-weight="700">DCA + Perps</text>
+  <text x="350" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Dollar-cost average natively</text>
+  <text x="350" y="343" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">+ 100x leverage perps onchain</text>
+  <text x="350" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#19fb9b" font-weight="800">Full Suite</text>
+
+  <!-- Card 3: LFG Launchpad -->
+  <rect x="600" y="260" width="250" height="130" rx="12" fill="#0f172a" stroke="#a78bfa" stroke-width="1" opacity="0.9"/>
+  <rect x="600" y="260" width="250" height="4" rx="2" fill="#a78bfa"/>
+  <text x="620" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#a78bfa" font-weight="700">LFG Launchpad</text>
+  <text x="620" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Fair token launches on</text>
+  <text x="620" y="343" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Solana, community-driven</text>
+  <text x="620" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#a78bfa" font-weight="800">JUP Governance</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="415" width="180" height="70" rx="10" fill="#0f172a" opacity="0.7"/>
+  <text x="150" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#c7f284" text-anchor="middle" font-weight="600" letter-spacing="1">SOLANA L1</text>
+  <text x="150" y="472" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">400ms Finality</text>
+
+  <rect x="260" y="415" width="180" height="70" rx="10" fill="#0f172a" opacity="0.7"/>
+  <text x="350" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#19fb9b" text-anchor="middle" font-weight="600" letter-spacing="1">ULTRA-LOW FEES</text>
+  <text x="350" y="472" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">&lt;$0.01 per swap</text>
+
+  <rect x="460" y="415" width="180" height="70" rx="10" fill="#0f172a" opacity="0.7"/>
+  <text x="550" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" font-weight="600" letter-spacing="1">JUP AIRDROP</text>
+  <text x="550" y="472" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Largest on Solana</text>
+
+  <rect x="660" y="415" width="180" height="70" rx="10" fill="#0f172a" opacity="0.7"/>
+  <text x="750" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#f59e0b" text-anchor="middle" font-weight="600" letter-spacing="1">ALL-IN-ONE</text>
+  <text x="750" y="472" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Swap + DCA + Perps</text>
+
+  <!-- CTA bar -->
+  <rect x="0" y="520" width="1200" height="110" fill="#0a0f1a" opacity="0.85"/>
+  <rect x="0" y="520" width="1200" height="2" fill="url(#accentGrad)" opacity="0.6"/>
+  <text x="60" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#c7f284" font-weight="700">READ THE FULL GUIDE</text>
+  <text x="60" y="595" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#64748b">degen0x.com/learn/jupiter-solana-guide</text>
+
+  <!-- degen0x logo area -->
+  <text x="1140" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#ffffff" text-anchor="end" font-weight="800" opacity="0.9">degen<tspan fill="#c7f284">0x</tspan></text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="fearGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="redGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Red radial glow behind the number -->
+  <circle cx="600" cy="280" r="250" fill="url(#redGlow)"/>
+
+  <!-- Glass card background -->
+  <rect x="60" y="60" width="1080" height="510" rx="24" ry="24"
+        fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- degen0x logo text -->
+  <text x="100" y="115" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="url(#brandGrad)" letter-spacing="-0.02em">degen0x</text>
+
+  <!-- Badge: ALL-TIME RECORD -->
+  <rect x="870" y="90" width="230" height="36" rx="18" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="985" y="114" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444" text-anchor="middle" letter-spacing="0.08em">ALL-TIME RECORD</text>
+
+  <!-- Giant "50" number -->
+  <text x="600" y="310" font-family="Inter, system-ui, sans-serif" font-size="180" font-weight="900" fill="#ef4444" text-anchor="middle" letter-spacing="-0.04em" filter="url(#glow)" opacity="0.95">50</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="355" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400" fill="#8b949e" text-anchor="middle">CONSECUTIVE DAYS IN EXTREME FEAR</text>
+
+  <!-- Main title -->
+  <text x="600" y="175" font-family="Inter, system-ui, sans-serif" font-size="38" font-weight="800" fill="#e6edf3" text-anchor="middle" letter-spacing="-0.02em">Fear &amp; Greed Index</text>
+
+  <!-- Fear bar visualization -->
+  <rect x="200" y="400" width="800" height="14" rx="7" fill="rgba(255,255,255,0.06)"/>
+  <rect x="200" y="400" width="104" height="14" rx="7" fill="url(#fearGrad)"/>
+  <!-- Current reading marker -->
+  <circle cx="304" cy="407" r="8" fill="#ef4444" stroke="#080d1c" stroke-width="3" filter="url(#glow)"/>
+  <!-- Bar labels -->
+  <text x="200" y="438" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681">0 — Extreme Fear</text>
+  <text x="1000" y="438" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">100 — Extreme Greed</text>
+  <text x="304" y="438" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#ef4444" text-anchor="middle">13</text>
+
+  <!-- Stats boxes -->
+  <!-- Box 1: vs FTX -->
+  <rect x="140" y="470" width="260" height="72" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="270" y="500" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Post-FTX Streak</text>
+  <text x="270" y="526" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3" text-anchor="middle">38 days</text>
+
+  <!-- Box 2: vs Crypto Winter -->
+  <rect x="420" y="470" width="260" height="72" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="550" y="500" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Crypto Winter 2022</text>
+  <text x="550" y="526" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3" text-anchor="middle">42 days</text>
+
+  <!-- Box 3: Median return -->
+  <rect x="700" y="470" width="310" height="72" rx="14" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="855" y="500" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Median 90-Day Return (F&amp;G &lt;15)</text>
+  <text x="855" y="526" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#22c55e" text-anchor="middle">+38.4%</text>
+
+  <!-- Bottom URL bar -->
+  <rect x="0" y="622" width="1200" height="8" fill="url(#brandGrad)"/>
+  <text x="1100" y="610" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#6e7681" text-anchor="end">degen0x.com/tools/fear-greed-timeline</text>
+</svg>

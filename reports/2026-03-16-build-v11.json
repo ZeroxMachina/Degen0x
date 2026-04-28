@@ -1,0 +1,45 @@
+{
+  "date": "2026-03-16",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Researched and built two new learn guides: Sui Blockchain Guide and On-Chain Analytics for Crypto Trading, both added to PUBLISH_QUEUE",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Sui blockchain: $600M TVL (peaked $2.6B), 168M active addresses, 54+ DeFi protocols, Move language object-centric model, 297K theoretical TPS, sub-500ms finality",
+          "Sui ecosystem: Suilend ($745M peak TVL), NAVI Protocol ($723M peak), Cetus DEX, DeepBook CLOB, USDsui stablecoin launched March 2026",
+          "SUI token: $1.06 price, $4.1B market cap, 3.9B/10B circulating, ATH $5.37 (Jan 2025), 42.9M token unlock April 2026",
+          "On-chain analytics: MVRV Z-Score at 1.2 (not overheated), SOPR below 1.0 (loss realization), declining exchange reserves — conditions similar to pre-rally Q4 2023",
+          "Key tools: Glassnode (7,500+ metrics), Nansen (500M+ labeled addresses), Dune Analytics (100+ chains), Santiment (social + on-chain), CheckOnChain (free BTC charts)",
+          "Core framework: MVRV Z-Score + SOPR + Exchange Netflows + ETF Flows as the four pillars of on-chain analysis"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "Sui Blockchain Guide (~3,000 words, 12 min read) — covers object-centric model, Move language, DeFi ecosystem (Suilend, NAVI, Cetus, DeepBook), tokenomics, Sui vs Solana/Ethereum comparison, risks, 2026 roadmap",
+          "On-Chain Analytics for Crypto Trading (~3,500 words, 14 min read) — covers MVRV Z-Score, SOPR (with LTH/STH variants), exchange flows, whale tracking, NUPL, HODL Waves, hash rate, ETF flows, tool comparison, and a 4-layer analysis framework"
+        ]
+      },
+      {
+        "pages": [
+          { "slug": "/learn/sui-blockchain-guide", "status": "pass" },
+          { "slug": "/learn/on-chain-analytics-guide", "status": "pass" }
+        ],
+        "title": "Pages Scaffolded"
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "sui-blockchain-guide: Title 'Sui Blockchain Guide (2026) — Move Language, Object Model & DeFi | degen0x' (65 chars), targets 'sui blockchain guide', 'sui move language', 'sui defi'",
+          "on-chain-analytics-guide: Title 'On-Chain Analytics for Crypto Trading (2026) — MVRV, SOPR & More | degen0x' (73 chars), targets 'on-chain analytics', 'MVRV Z-Score', 'SOPR crypto'",
+          "Both pages include 5 FAQs targeting People Also Ask queries, 5 related article internal links, structured TOC with anchor links",
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold"]
+  }
+}

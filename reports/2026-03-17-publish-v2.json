@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-17",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Batch 2 publish cycle: promoted 2 learn guides (Bitcoin Runes, Farcaster SocialFi) from PUBLISH_QUEUE to PUBLISHED_PAGES; QA passed on all SEO markers; deploy blocked by git index.lock — file changes saved, commit pending.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/bitcoin-runes-guide-2026", "status": "pass" },
+          { "slug": "/learn/farcaster-socialfi-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with H1 tag", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with Meta Tags", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with JSON-LD (Article + FAQ)", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with Breadcrumbs", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with OG/Twitter Cards", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Full Build", "value": "Skipped (VM OOM)", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko (/api/prices, /api/trending)", "value": "Code Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama (/api/defi-yields)", "value": "Code Healthy (no fallback)", "pct": 80, "color": "#f59e0b" },
+          { "label": "Alternative.me (/api/fear-greed)", "value": "Code Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (token bucket, 3/15 routes)", "pct": 60, "color": "#f59e0b" },
+          { "label": "Ext API Connectivity", "value": "Not testable (sandbox)", "pct": 50, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "File Changes", "value": "Saved to published-pages.ts", "pct": 75, "color": "#06b6d4" },
+          { "label": "Git Commit", "value": "Blocked (index.lock)", "pct": 0, "color": "#f59e0b" },
+          { "label": "Vercel Deploy", "value": "Pending commit + push", "pct": 0, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "PUBLISH_QUEUE is now empty — both queued pages promoted",
+      "Total PUBLISHED_PAGES: ~541 (539 prior + 2 new)",
+      "Git index.lock from prior process prevents commit — manually remove .git/index.lock then: git add src/lib/published-pages.ts && git commit -m 'publish: Mar 17 batch 2' && git push",
+      "Pre-existing TS errors in structured-data.examples.ts (unrelated to this publish)",
+      "Full build skipped due to VM memory constraints — Vercel build validates on deploy"
+    ]
+  }
+}

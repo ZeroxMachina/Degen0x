@@ -1,0 +1,115 @@
+{
+  "date": "2026-03-17",
+  "block": "community",
+  "version": "v8",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v8 — BTC BREAKS $75K: 6-week high, 25% recovery from Feb $60K bottom, $540M+ shorts liquidated, ETF inflow streak extended to 6 days ($962.8M since Mar 9), F&G recovering through 30+, Strategy Inc. 738,731 BTC (targeting 1M), FOMC T-24h (dot plot is the signal), oil easing / Hormuz fears declining, tax deadline 27 days; social card created ($75K breakout infographic with recovery chart + 8 metric panels); 6 tweets + Discord briefing + newsletter DEGEN CORNER insert drafted; 400 published pages, 2 in queue.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet 1 (Tue immediate): $75K breakout — 6-week high, 25% from bottom, $540M liquidations, 6-day ETF streak; CTA to /tools/fear-greed-timeline",
+          "Twitter Thread (Tue, 3 posts): Institutional bid is back — $962.8M ETF inflows since Mar 9, BlackRock/Fidelity leading, extreme fear pattern analysis (COVID +1400%, Luna +158%, FTX +300%), Strategy 17,994 BTC buy; CTAs to /tools/whale-tracker + /learn/fomc-fed-rate-crypto-guide",
+          "Tweet 3 (Tue evening): FOMC eve — dot plot scenarios (2 cuts = $80K+, 0 cuts = $65K), first meeting with Iran oil + tariffs in projections, Powell second-to-last; CTA to /learn/fomc-fed-rate-crypto-guide",
+          "Tweet 4 (Wed): Tax season 27 days — 1099 filing, all DeFi events taxable; CTAs to /tools/tax-calculator + /learn/crypto-tax-guide-2026",
+          "Tweet 5 (Tue): Short squeeze data — $540M+ liquidations, bears getting punished; CTA to /tools/liquidation-heatmap",
+          "Tweet 6 (Tue/Wed): Strategy 1M BTC target — 738,731 held, 17,994 bought last week, ~6,158/week needed; CTA to /tools/whale-tracker",
+          "Discord/Telegram: $75K breakout briefing — full data dump with scenarios and tool links",
+          "Newsletter insert: DEGEN CORNER update for Thu Mar 19 — $75K recovery narrative, institutional reaccumulation, $540M liquidation squeeze, Strategy 1M target, FOMC wildcard, oil easing, 400 pages milestone"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          {
+            "label": "/tools/fear-greed-timeline",
+            "value": "Peak relevance — F&G recovery from 5→30+, 39-day streak, $75K breakout narrative",
+            "pct": 99,
+            "color": "#22c55e"
+          },
+          {
+            "label": "/learn/fomc-fed-rate-crypto-guide",
+            "value": "FOMC T-24h — decision tomorrow 2pm ET, dot plot is the key signal",
+            "pct": 97,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/tools/whale-tracker",
+            "value": "Strategy 738K BTC + $962M ETF inflows = institutional tracking demand at peak",
+            "pct": 95,
+            "color": "#8b5cf6"
+          },
+          {
+            "label": "/tools/liquidation-heatmap",
+            "value": "NEW RELEVANCE — $540M+ liquidations, short squeeze driving the $75K breakout",
+            "pct": 93,
+            "color": "#ef4444"
+          },
+          {
+            "label": "/tools/dca-calculator",
+            "value": "Accumulation narrative confirmed — 25% recovery from bottom validates DCA strategy",
+            "pct": 91,
+            "color": "#4ade80"
+          },
+          {
+            "label": "/learn/crypto-tax-guide-2026",
+            "value": "27 days to April 15 — peak commercial intent window continues",
+            "pct": 89,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/tools/tax-calculator",
+            "value": "Tax season + new 1099 reporting = high-intent tool traffic",
+            "pct": 87,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/learn/cross-chain-interoperability-guide-2026",
+            "value": "Newly published (Day 55) — freshly indexed, building impressions",
+            "pct": 72,
+            "color": "#06b6d4"
+          }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-75k-breakout-etf-surge-2026.svg — 1200x630 social card: BTC price recovery chart ($60K Feb bottom → $75,272 current with +25% callout, ETF inflow start marker), 8 glass-morphism metric panels (ETF $962.8M 6-day streak, $540M+ short liquidations, Strategy 738,731 BTC targeting 1M, F&G 5→30+ recovery, FOMC T-24h, 400 published pages, 27 days tax deadline, Powell May 23 exit); dark bg with green/cyan/purple accent orbs, brand gradient bars."
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "400 published pages (398 unique routes + 2 duplicates in file), 2 in PUBLISH_QUEUE (Sui Blockchain Guide 2026 + Portfolio Rebalancing Guide 2026).",
+          "BTC at $75,272 (+3.80% 24h) — broke $75K for first time in 6 weeks. 25% recovery from Feb $60K bottom.",
+          "Fear & Greed recovering: 5 (Feb 6 ATL) → 15 (Mar 10) → 28-42 range (Mar 17, varies by provider). ~39+ consecutive days in extreme fear zone ending.",
+          "ETF 6-day inflow streak — longest since October. $962.8M total since Mar 9. BlackRock and Fidelity leading.",
+          "Short liquidations: $540M+ in 24 hours. Breakout driven by put option expiry hedging + short squeeze, not new buying.",
+          "Strategy Inc. holds 738,731 BTC. Added 17,994 last week at ~$71K avg. Targeting 1M BTC by year-end (~6,158/week).",
+          "Oil prices easing — Strait of Hormuz fears declining. Brent pulling back from $105+ highs. Less inflation pressure.",
+          "FOMC decision tomorrow Mar 18 at 2pm ET. 94-99% hold probability. Dot plot median (1→2 cuts = bullish, 1→0 = bearish). Powell's second-to-last meeting.",
+          "Historical FOMC pattern: BTC declined after 7 of 8 FOMC meetings in 2025 — 'sell the news' risk even with dovish outcome.",
+          "Tax season 27 days to April 15. Exchanges now file 1099s. Commercial intent pages at peak window.",
+          "Social drafts saved to /reports/community-drafts/2026-03-17-social-drafts-v8.md"
+        ]
+      },
+      {
+        "title": "Key Narratives for This Cycle",
+        "items": [
+          "PRIMARY: $75K breakout — the recovery narrative is now confirmed with a 25% bounce. The lead story shifts from 'sentiment recovering' (v7) to 'price confirming the recovery.' Short squeeze + ETF inflows + institutional buying = trifecta.",
+          "SECONDARY: FOMC eve — T-24h to dot plot. Educate audience on what to watch. But warn of the 'sell the news' pattern (7/8 declines post-FOMC in 2025).",
+          "TERTIARY: Institutional reaccumulation — Strategy targeting 1M BTC, ETF 6-day streak, Coinbase Premium positive. The smart money narrative is the strongest engagement driver.",
+          "CAUTION: Breakout fragility — analysts note the move was driven by put expiry hedging + short squeeze, not strong new buying. The rally may be technically driven, not conviction-driven. Don't over-promise.",
+          "EVERGREEN: Tax season 27 days + DCA accumulation signal + 400 pages milestone."
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"],
+    "files_created": [
+      "reports/community-drafts/2026-03-17-social-drafts-v8.md",
+      "public/social-75k-breakout-etf-surge-2026.svg",
+      "reports/2026-03-17-community-v8.json"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a0a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg3)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#f59e0b" opacity="0.8"/>
+  <!-- Header -->
+  <text x="60" y="75" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" letter-spacing="3">REGULATION UPDATE</text>
+  <text x="60" y="130" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700">CLARITY Act: Four-Way Deadlock</text>
+  <text x="60" y="165" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18">The biggest crypto bill in years is stuck — here's why</text>
+  <!-- Four deadlock blocks -->
+  <rect x="60" y="195" width="260" height="150" rx="14" fill="url(#amberGlow)" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="90" y="232" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="2">BLOCK 1</text>
+  <text x="90" y="265" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600">Stablecoin Yield</text>
+  <text x="90" y="292" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">Industry vs. Banks</text>
+  <text x="90" y="325" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">✓ DEAL REACHED</text>
+  <rect x="340" y="195" width="260" height="150" rx="14" fill="url(#amberGlow)" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="370" y="232" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="2">BLOCK 2</text>
+  <text x="370" y="265" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600">Jurisdiction</text>
+  <text x="370" y="292" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">SEC vs. CFTC</text>
+  <text x="370" y="325" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">✗ CONTESTED</text>
+  <rect x="620" y="195" width="260" height="150" rx="14" fill="url(#amberGlow)" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="650" y="232" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="2">BLOCK 3</text>
+  <text x="650" y="265" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600">DeFi Provisions</text>
+  <text x="650" y="292" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">Illicit finance concerns</text>
+  <text x="650" y="325" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">✗ CONTESTED</text>
+  <rect x="900" y="195" width="260" height="150" rx="14" fill="url(#amberGlow)" stroke="#ef4444" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="930" y="232" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="2">BLOCK 4</text>
+  <text x="930" y="265" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600">Ethics Language</text>
+  <text x="930" y="292" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">Structural critics</text>
+  <text x="930" y="325" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">✗ CONTESTED</text>
+  <!-- Timeline bar -->
+  <rect x="60" y="390" width="1080" height="80" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#f59e0b" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="100" y="420" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" letter-spacing="1">TIMELINE</text>
+  <text x="100" y="452" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="16">Recess ends Apr 13 → Committee markup late Apr → Floor vote May → Midterms Nov</text>
+  <!-- Polymarket -->
+  <rect x="60" y="490" width="540" height="50" rx="10" fill="#ffffff" fill-opacity="0.04"/>
+  <text x="90" y="522" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="15">Polymarket: Signed in 2026</text>
+  <text x="420" y="522" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700">72%</text>
+  <text x="470" y="522" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14">(up from 60%)</text>
+  <!-- Footer -->
+  <text x="60" y="580" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">degen0x</text>
+  <text x="60" y="608" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14">The leading crypto comparison and review platform</text>
+  <text x="1060" y="608" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="14">April 2026</text>
+</svg>

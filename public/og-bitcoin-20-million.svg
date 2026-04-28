@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+
+    <!-- Brand accent gradient (indigo→cyan→amber) -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+
+    <!-- Title text gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="60%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f0883e"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Soft glow for orbs -->
+    <filter id="orbGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+    </filter>
+
+    <!-- Logo gradient -->
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="50%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative glow orbs -->
+  <circle cx="950" cy="120" r="180" fill="#f59e0b" opacity="0.06" filter="url(#orbGlow)"/>
+  <circle cx="1100" cy="400" r="150" fill="#4f46e5" opacity="0.08" filter="url(#orbGlow)"/>
+  <circle cx="200" cy="500" r="120" fill="#0891b2" opacity="0.07" filter="url(#orbGlow)"/>
+
+  <!-- Accent bar at top -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#brandGrad)"/>
+
+  <!-- Bitcoin circle decoration (right side) -->
+  <circle cx="950" cy="315" r="200" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.08"/>
+  <circle cx="950" cy="315" r="160" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.06"/>
+  <circle cx="950" cy="315" r="120" fill="rgba(245,158,11,0.06)" stroke="#f59e0b" stroke-width="1.5" opacity="0.15"/>
+
+  <!-- Bitcoin ₿ symbol (large, decorative) -->
+  <text x="950" y="355" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="900" fill="#f59e0b" opacity="0.18" text-anchor="middle">₿</text>
+
+  <!-- Supply progress bar area (decorative, right side) -->
+  <rect x="760" y="420" width="360" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="760" y="420" width="342" height="8" rx="4" fill="url(#brandGrad)" opacity="0.7"/>
+  <!-- 95.24% label -->
+  <text x="1130" y="418" font-family="system-ui, sans-serif" font-size="13" fill="#f59e0b" text-anchor="end" opacity="0.8">95.24%</text>
+  <text x="760" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e" opacity="0.7">20M mined</text>
+  <text x="1120" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="end" opacity="0.7">21M cap</text>
+
+  <!-- degen0x logo mark (top-left) -->
+  <rect x="48" y="44" width="36" height="36" rx="10" fill="url(#logoGrad)" opacity="0.95"/>
+  <text x="66" y="68" font-family="system-ui, -apple-system, monospace" font-size="14" font-weight="900" fill="white" text-anchor="middle">0x</text>
+  <text x="93" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="800" fill="#e6edf3" letter-spacing="-0.5">degen0x</text>
+
+  <!-- Category badge -->
+  <rect x="48" y="130" width="90" height="26" rx="13" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.35)" stroke-width="1"/>
+  <text x="93" y="148" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f59e0b" text-anchor="middle" letter-spacing="0.5">BITCOIN</text>
+
+  <!-- Main title line 1 -->
+  <text x="48" y="250" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="900" fill="url(#titleGrad)" letter-spacing="-2">20 Million</text>
+
+  <!-- Main title line 2 -->
+  <text x="48" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="66" font-weight="900" fill="#e6edf3" letter-spacing="-1.5">Bitcoin Mined</text>
+
+  <!-- Subtitle -->
+  <text x="48" y="400" font-family="system-ui, sans-serif" font-size="22" fill="#8b949e" font-weight="400">The Era of Scarcity has begun — only ~1M BTC left to mine.</text>
+
+  <!-- Divider -->
+  <line x1="48" y1="478" x2="680" y2="478" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Stats row -->
+  <text x="48" y="508" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">March 9, 2026</text>
+  <text x="48" y="528" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b">Historical Milestone</text>
+
+  <text x="240" y="508" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">~114 years remaining</text>
+  <text x="240" y="528" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Until final satoshi</text>
+
+  <text x="440" y="508" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">Est. 3–4M BTC</text>
+  <text x="440" y="528" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444">Permanently lost</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="595" width="1200" height="35" fill="rgba(255,255,255,0.02)"/>
+  <rect x="0" y="594" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="600" y="617" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="middle">degen0x.com · Crypto intelligence for every level</text>
+</svg>

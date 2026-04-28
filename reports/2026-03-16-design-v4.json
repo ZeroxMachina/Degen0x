@@ -1,0 +1,49 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited movement-network-guide and based-rollups-preconfirmations-guide for UX/accessibility issues; created static OG images (1200x630 SVG+PNG) for both guides; added breadcrumb nav, BackToTop, aria-labels, Next.js Link components, and mobile table scroll fixes.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added accessible breadcrumb navigation (nav aria-label='Breadcrumb' with aria-hidden separators) to movement-network-guide page",
+          "Added accessible breadcrumb navigation (nav aria-label='Breadcrumb' with aria-hidden separators) to based-rollups-preconfirmations-guide page",
+          "Added aria-label='Table of contents' to ToC nav element on movement-network-guide for screen reader accessibility",
+          "Added aria-label='Table of contents' to ToC nav element on based-rollups-preconfirmations-guide for screen reader accessibility",
+          "Replaced all raw <a> internal links with Next.js <Link> components on movement-network-guide (7 links) for client-side navigation and prefetching",
+          "Added BackToTop component to movement-network-guide for long-page scroll UX",
+          "Added BackToTop component to based-rollups-preconfirmations-guide for long-page scroll UX",
+          "Applied responsive clamp() to movement-network-guide h1 fontSize (was fixed value, now clamp(1.8rem, 4vw, 2.5rem)) for better mobile readability",
+          "Added min-width: 560px to movement-network-guide comparison table (Movement vs Solana vs Aptos vs Sui) for proper horizontal scroll on mobile"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: movement-network-guide (1200x630) — SVG + PNG with indigo/cyan gradient, parallel execution thread visualization (4 threads with tx blocks), 4 stat cards (160K+ TPS, $200M+ TVL, 160+ Projects, <$0.001 Fee), feature pills (MoveVM, EVM Compatible, Celestia DA, 10B $MOVE)",
+          "OG image: based-rollups-guide (1200x630) — SVG + PNG with indigo/cyan gradient, based rollup transaction flow diagram (User > L1 Validators > Ethereum Block > Finalized with preconf branch showing ~100ms), comparison cards (Traditional vs Based sequencing), EIP-7917 reference, feature pills (L1 Sequencing, ~100ms, No Sequencer, Composable)"
+        ]
+      },
+      {
+        "title": "Files Modified",
+        "items": [
+          "src/app/learn/movement-network-guide/page.tsx — Added breadcrumb nav, BackToTop import, aria-label on ToC nav, responsive h1 clamp(), min-width on comparison table, replaced 7 raw <a> tags with Next.js <Link> components",
+          "src/app/learn/based-rollups-preconfirmations-guide/page.tsx — Added breadcrumb nav, BackToTop import and component, aria-label on ToC nav"
+        ]
+      },
+      {
+        "title": "Files Created",
+        "items": [
+          "public/og-movement-network-guide.svg — OG image SVG source (1200x630)",
+          "public/og-movement-network-guide.png — OG image PNG for social sharing (72KB)",
+          "public/og-based-rollups-guide.svg — OG image SVG source (1200x630)",
+          "public/og-based-rollups-guide.png — OG image PNG for social sharing (85KB)",
+          "reports/2026-03-16-design-v4.json — this report"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

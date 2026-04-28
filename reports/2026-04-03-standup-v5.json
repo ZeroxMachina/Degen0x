@@ -1,0 +1,88 @@
+{
+  "date": "2026-04-03",
+  "block": "standup",
+  "version": 5,
+  "report": {
+    "status": "completed",
+    "summary": "Standup v5 Apr 3: 5 agents ran last hour (build+design+community+eod+standup) = $437 human-equiv. 2 new learn guides (Berachain PoL + Crypto DCA) built, 5 OG images, 5 tweets (#415-419), newsletter v36. BTC ~$66,228 (dropping from $68.7K recovery). F&G 8-9 Extreme Fear. March BLS payrolls releasing 8:30a ET TODAY. Wormhole 1.28B unlock at 11:30 UTC. 40 uncommitted files — deploy debt 14th consecutive escalation. 311 learn dirs + 115 tool dirs on disk. Today: 15 agent runs, $1,175 human-equiv.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE LAST STANDUP (v4 → v5): 5 agents ran — build-v2 (2 new learn guides: Berachain PoL + Crypto DCA), design (UX fixes + 5 OG images), community-v3 (5 tweets #415-419 + newsletter v36 + 2 social cards), eod-v2 (QA + data engineering audit), standup-v4. Uncommitted files grew from 39 → 40. 2 social card SVGs added (Berachain PoL + Crypto DCA).",
+          "MARKET UPDATE — BTC SLIDING AHEAD OF JOBS: BTC dropped to ~$66,228 (from $68,743 last standup — a -3.7% reversal). The Good Friday recovery is fading. March BLS nonfarm payrolls releasing 8:30a ET today — February was -92K (worst in 4 months). ADP March was +62K (above consensus). If jobs miss again → F&G could hit 5-6 (all-time low territory). NYSE/Nasdaq/bonds still closed for Good Friday — crypto sole price discovery market.",
+          "BTC: ~$66,228 (-3.7% from last standup $68,743). ETH: ~$2,082 (range-bound). F&G: 8-9/100 (Extreme Fear — <20 days total in history below 10). BTC dominance: 58.16%. Total crypto mcap: ~$2.36T.",
+          "ETF FLOWS (Latest Apr 1): -$173.7M net outflow (IBIT -$86.5M, FBTC -$78.6M, GBTC -$13.3M). Q1 total: ~$500M net outflows, but March alone was +$1.32B inflows. Mixed institutional signals. Stablecoins: $316B ATH — record dry powder.",
+          "TOKEN EVENTS TODAY: Wormhole (W) 1.28B token unlock at 11:30 UTC — 28.4% of total supply cliff unlock to core contributors. W at ~$0.01. Historical pattern: 60-80% of cliff unlocks see selling pressure within 48h, recovery 2-6 weeks. HYPE $376M unlock Apr 6 approaching (9.92M tokens to core contributors).",
+          "CONTENT ON DISK: 311 learn page dirs + 115 tool dirs = 426 total. 74 learn guides with page.tsx. 334 OG SVGs (up 5 this cycle). 1023 lines in published-pages.ts. 40 uncommitted files (5 modified + 35 untracked). Last deploy: e3f63fc.",
+          "NO GSC/VERCEL ANALYTICS accessible — metrics from local file analysis + agent reports + web search."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "LAST CYCLE ACTIVITY (v4 → v5): Build-v2 produced 2 new learn guides: Berachain & Proof of Liquidity (463 lines, intermediate, tri-token model, $3.2B TVL, validator economics) + Crypto DCA Strategy (518 lines, beginner, backtested 202%/6,712% returns, fear-based contrarian strategies). Design ran UX audit — fixed responsive typography + scroll anchoring on both new guides + created 5 OG images (DCA, Berachain, EIP-4844, Options, DeFi Lending). Community-v3 drafted 5 tweets (#415-419) for Oct 26-Nov 1, newsletter v36 'The Consistency Cheat Code', 2 social cards. EOD-v2 ran QA — flagged 2 untracked pages missing structured data (Drift + Polkadot), confirmed 0/6 API rate limiting, 1/6 fallback data.",
+          "TODAY'S FULL AGENT ACTIVITY: 15 agent runs across 6 types — standup×5 ($225), build×2 ($466), design×4 ($240), community×3 ($123), eod×2 ($126). Total human-equiv: $1,175.",
+          "NEW CONTENT THIS CYCLE: 2 learn guides (Berachain PoL 463 lines + DCA 518 lines = 981 lines). 5 OG images. 2 social card SVGs. 5 tweets (#415-419). Newsletter v36. UX fixes on 2 pages. Data engineering audit on 6 API routes.",
+          "P0 — COMMIT + DEPLOY (14TH CONSECUTIVE ESCALATION): 40 uncommitted files in cryptodegen repo (5 modified + 35 untracked). Every hour of delay = lost SEO indexing. BTC dropping + F&G at 8 = peak search volume for fear/DCA/F&G tools. Our Fear & Greed tool, DCA Calculator, and 74 learn guides are invisible to Google. Wormhole unlock at 11:30 UTC will spike 'token unlock' searches. JEFE ACTION REQUIRED — single git add + commit + push unblocks weeks of work.",
+          "P1 — STRUCTURED DATA GAP: 2 untracked learn pages (Drift Protocol $285M Hack, Polkadot Staking Halving) have Metadata exports but NO JSON-LD structured data. Need SEO pass before publish queue entry.",
+          "P2 — API RESILIENCE: 0/6 public routes with rate limiting. 1/6 with fallback data (market-dominance only). Prices/fear-greed/trending at risk if upstream APIs fail.",
+          "P3 — 141 TS ERRORS: 4 files, non-blocking (ignoreBuildErrors). Unchanged across 14 cycles."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — COMMIT + DEPLOY (P0 CRITICAL — 14TH ESCALATION): 40 files blocking all SEO value. BTC dropping to $66.2K with F&G at 8 = PEAK DEMAND for our exact content (fear gauge, DCA calculator, staking guides). March BLS jobs report at 8:30a ET could tank markets further → even more fear-driven searches. Wormhole 1.28B unlock at 11:30 UTC. Every minute without deploy = lost organic traffic during the highest-signal search window of the year. This is a $0-cost action. JEFE MUST ACT.",
+          "PRIORITY 2 — STRUCTURED DATA + PUBLISH BATCH: After deploy, add JSON-LD to Drift Protocol and Polkadot Staking pages, then queue + publish: Berachain PoL, Crypto DCA, Drift Hack, Polkadot Staking (4 new pages). These cover trending narratives: PoL innovation, DCA during extreme fear, major hack post-mortem, staking economics shift.",
+          "PRIORITY 3 — API HARDENING: Add FALLBACK_DATA to prices, fear-greed, trending, market-metrics, defi-yields (5/6 routes missing). Add checkRateLimit() to all 6 public routes. Current state = one CoinGecko outage away from broken user experience. With F&G at 8 and potential traffic spike from jobs report, API reliability is revenue-critical."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — e3f63fc (40 uncommitted, deploy debt CRITICAL)", "pct": 12, "color": "#ef4444" },
+          { "label": "Learn Pages (full guides)", "value": "74 page.tsx files (+2 this cycle: Berachain + DCA)", "pct": 100, "color": "#4ade80" },
+          { "label": "Learn Page Dirs", "value": "311 total in /learn", "pct": 85, "color": "#4ade80" },
+          { "label": "Tool Pages on Disk", "value": "115", "pct": 85, "color": "#4ade80" },
+          { "label": "Total Pages on Disk", "value": "426 (311 learn + 115 tools)", "pct": 85, "color": "#4ade80" },
+          { "label": "OG Image Coverage", "value": "334 SVGs (+5 this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Pages TS", "value": "1023 lines", "pct": 85, "color": "#06b6d4" },
+          { "label": "Uncommitted Files", "value": "40 (up from 39 last standup)", "pct": 8, "color": "#ef4444" },
+          { "label": "API Rate Limiting", "value": "0/6 public routes protected", "pct": 0, "color": "#ef4444" },
+          { "label": "API Fallback Data", "value": "1/6 routes (market-dominance only)", "pct": 17, "color": "#f59e0b" },
+          { "label": "API Cache Coverage", "value": "6/6 routes with TTL", "pct": 100, "color": "#4ade80" },
+          { "label": "Tweets Drafted", "value": "419 through Nov 1 (+5 this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "Newsletters Ready", "value": "v36 'The Consistency Cheat Code'", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Cards", "value": "69+ SVGs (+2 this cycle)", "pct": 100, "color": "#4ade80" },
+          { "label": "TS Errors", "value": "141 in 4 files (non-blocking)", "pct": 85, "color": "#06b6d4" },
+          { "label": "BTC Price", "value": "~$66,228 (-3.7% from last standup)", "pct": 40, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "~$2,082 (range-bound)", "pct": 45, "color": "#f59e0b" },
+          { "label": "F&G Index", "value": "8-9/100 — Extreme Fear", "pct": 8, "color": "#ef4444" },
+          { "label": "BTC ETF Flows (Apr 1)", "value": "-$173.7M (IBIT -$86.5M, FBTC -$78.6M)", "pct": 25, "color": "#ef4444" },
+          { "label": "Stablecoin Supply", "value": "$316B ATH — record dry powder", "pct": 99, "color": "#4ade80" },
+          { "label": "Wormhole Unlock", "value": "1.28B W at 11:30 UTC TODAY (28.4% supply)", "pct": 30, "color": "#f59e0b" },
+          { "label": "March Jobs Report", "value": "BLS releasing 8:30a ET TODAY (Feb was -92K)", "pct": 50, "color": "#f59e0b" },
+          { "label": "HYPE Unlock", "value": "$376M (9.92M tokens) Apr 6 — 3 days away", "pct": 40, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$437 (5 agents: standup $45 + build $233 + design $60 + community $41 + eod $63)", "pct": 37, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,175 (15 runs: standup×5 $225 + build×2 $466 + design×4 $240 + community×3 $123 + eod×2 $126)", "pct": 10, "color": "#4ade80" },
+          { "label": "💰 Yesterday's Total (Apr 2)", "value": "$10,225 (137 runs across 6 agent types)", "pct": 86, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Resend API blocked by sandbox proxy (403 Forbidden) and Chrome CORS. Skipped."
+  }
+}

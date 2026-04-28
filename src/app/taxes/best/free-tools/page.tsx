@@ -1,0 +1,272 @@
+import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import ProductCard from "@/components/ProductCard";
+import FAQSection from "@/components/FAQSection";
+import { TAX_PRODUCTS } from "@/data/taxes";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import { Product } from "@/lib/types";
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+export const metadata: Metadata = {
+  title: "Free Tools — Crypto Tools",
+  description: "Free crypto tax software and tools. Calculate taxes without paying fees. DeFi, staking, NFTs. Find the best free tax calculator for your needs.",
+  alternates: { canonical: "/taxes/best/free-tools" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+
+const freeToolProducts: Product[] = [
+  {
+    name: "TaxBit (Free Tier)",
+    slug: "taxbit",
+    rating: 4.5,
+    description:
+      "TaxBit offers free crypto tax reports through its network of partner exchanges. If you trade on a supported exchange, you can generate IRS-ready tax forms at no cost with automatic transaction importing.",
+    pros: ["Completely free through partner exchanges", "IRS-compliant reports", "Automatic data import", "All cost basis methods supported"],
+    cons: ["Only free through partner exchanges", "Limited DeFi support", "Fewer integrations than paid tools"],
+    fees: "Free",
+    bestFor: "Exchange users wanting free reports",
+    affiliateUrl: "https://degen0x.com/go/taxbit",
+    category: "taxes",
+    featured: true,
+  },
+  {
+    name: "Koinly (Free Portfolio Tracker)",
+    slug: "koinly",
+    rating: 4.8,
+    description:
+      "Koinly offers a free portfolio tracking tier that lets you import transactions from 800+ exchanges and wallets. While tax report generation requires a paid plan, the free tier provides excellent portfolio overview and transaction tracking.",
+    pros: ["Free portfolio tracking", "800+ exchange integrations", "DeFi transaction tracking", "Unlimited transaction imports on free tier"],
+    cons: ["Tax reports require paid plan", "Some features locked behind paywall", "No tax form generation on free tier"],
+    fees: "Free (portfolio only)",
+    bestFor: "Portfolio tracking with upgrade option",
+    affiliateUrl: "https://degen0x.com/go/koinly",
+    category: "taxes",
+    featured: true,
+  },
+  {
+    name: "CoinTracker (Free Tier)",
+    slug: "cointracker",
+    rating: 4.6,
+    description:
+      "CoinTracker provides a free plan for users with 25 or fewer transactions per year. The free tier includes portfolio tracking, capital gains preview, and basic tax reporting features.",
+    pros: ["Free for up to 25 transactions", "Portfolio tracking included", "TurboTax integration on all tiers", "Clean interface"],
+    cons: ["25 transaction limit is very restrictive", "Most users will need paid plan", "DeFi transactions count toward limit"],
+    fees: "Free (25 transactions)",
+    bestFor: "Low-volume investors",
+    affiliateUrl: "https://degen0x.com/go/cointracker",
+    category: "taxes",
+  },
+];
+
+const freeFaqs = [
+  {
+    question: "Is there truly free crypto tax software?",
+    answer:
+      "Yes. TaxBit offers genuinely free tax reports through its exchange partner network. Koinly and CoinTracker have free tiers with limitations. TaxBit is the best option for completely free tax reports if you trade on a supported exchange.",
+  },
+  {
+    question: "What are the limitations of free crypto tax tools?",
+    answer:
+      "Free tiers typically limit the number of transactions, restrict access to tax report generation, or only work with specific exchanges. Most free tools provide portfolio tracking but require a paid upgrade for actual tax form generation.",
+  },
+  {
+    question: "Should I use free or paid crypto tax software?",
+    answer:
+      "If you have fewer than 25 transactions and only use major exchanges, a free tool may be sufficient. If you use DeFi, trade frequently, or need detailed tax reports, a paid plan from Koinly or CryptoTaxCalculator will save you time and reduce errors.",
+  },
+  {
+    question: "Can I do my crypto taxes manually for free?",
+    answer:
+      "Yes, but it is extremely time-consuming. You would need to export transactions from every exchange and wallet, calculate cost basis for each trade, apply the correct tax lot method, and fill out IRS Form 8949 manually. For more than a handful of transactions, software is strongly recommended.",
+  },
+];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/taxes/best' },
+    { '@type': 'ListItem', position: 4, name: 'Free Tools', },
+  ],
+};
+
+export default function BestFreeToolsPage() {
+  return (
+    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Free Tools — Crypto Tools"
+        description="Free crypto tax software and tools. Calculate taxes without paying fees. DeFi, staking, NFTs. Find the best free tax calculator for your needs."
+        url="/taxes/best/free-tools"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/best/free-tools" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/best/free-tools" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2026-04-13"
+        updatedDate="2026-04-13"
+        section="taxes"
+      />      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Crypto Taxes", href: "/taxes" },
+          { label: "Best Solutions", href: "/taxes/best" },
+          { label: "Free Tax Tools", href: "/taxes/best/free-tools" },
+        ]}
+      />
+
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
+          Best Free Crypto Tax Tools ({CURRENT_YEAR})
+        </h1>
+        <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
+          You do not need to spend money to handle your crypto taxes. We have identified the
+          best free and freemium crypto tax tools that help you track transactions, estimate
+          your tax liability, and generate basic reports without a paid subscription.
+        </p>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-2">
+          Last updated: {CURRENT_MONTH} {CURRENT_YEAR}
+        </p>
+      </div>
+
+      <AffiliateDisclosure />
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Free Options Ranked</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto tax compliance is a mess, but ignoring it is worse. We focus on practical approaches that balance accuracy with the reality that most exchanges have incomplete records.
+          </p>
+        </div>
+        <div className="grid gap-6">
+          {freeToolProducts.map((product, i) => (
+            <ProductCard key={product.slug} product={product} rank={i + 1} categorySlug="taxes" />
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Free vs Paid: What You Get</h2>
+        <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-semibold text-[var(--color-success)] mb-3">Free Tier Features</h3>
+              <ul className="space-y-2 text-sm text-[var(--color-text-secondary)]">
+                <li>Portfolio tracking and overview</li>
+                <li>Transaction import from exchanges</li>
+                <li>Basic capital gains preview</li>
+                <li>Cost basis calculation (limited)</li>
+                <li>Price alerts and notifications</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-[var(--color-primary)] mb-3">Paid Plan Extras</h3>
+              <ul className="space-y-2 text-sm text-[var(--color-text-secondary)]">
+                <li>Full tax report generation (Form 8949, Schedule D)</li>
+                <li>TurboTax / H&R Block integration</li>
+                <li>DeFi transaction auto-categorization</li>
+                <li>NFT profit/loss tracking</li>
+                <li>International tax form support</li>
+                <li>Tax loss harvesting insights</li>
+                <li>Priority customer support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Other Free Resources</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <Link href="/taxes/calculators/tax-calculator"
+            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
+          >
+            <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Free Tax Calculator</h3>
+            <p className="text-xs text-[var(--color-text-secondary)]">Estimate your crypto tax liability for free</p>
+          </Link>
+          <Link href="/taxes/calculators/tax-calculator"
+          >
+            <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Capital Gains Calculator</h3>
+            <p className="text-xs text-[var(--color-text-secondary)]">Calculate capital gains on crypto trades</p>
+          </Link>
+        </div>
+      </section>
+
+      <FAQSection faqs={freeFaqs} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Free Tools \u2014 Crypto Tools", "description": "Explore Free Tools on degen0x. Free crypto tools and in-depth analysis.", "url": "https://degen0x.com/taxes/best/free-tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+          <div style={{
+        marginTop: "32px",
+        padding: "24px",
+        backgroundColor: "#111827",
+        borderRadius: "12px",
+        border: "1px solid #374151"
+      }}>
+        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
+          <Link href="/learn" style={{
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }}>
+            All Learning Guides
+          </Link>
+          <Link href="/tools" style={{
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }}>
+            Crypto Tools
+          </Link>
+          <Link href="/compare" style={{
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }}>
+            Compare Projects
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
+}

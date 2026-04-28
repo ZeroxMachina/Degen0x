@@ -1,0 +1,36 @@
+{
+  "date": "2026-03-24",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audit and polish for today's two new learn guides (Crypto Tax-Loss Harvesting, Cold Storage & Seed Phrase Security). Fixed missing BackToTop rendering, added scroll-margin-top for TOC anchor navigation, improved accessibility font sizes, and added aria-label to navigation. Both OG images already existed from the build cycle.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Cold Storage guide: Added <BackToTop /> component rendering (was imported but never rendered — users couldn't scroll back to top on this long-form article)",
+          "Cold Storage guide: Added scrollMarginTop: 80 to all 9 section anchors so Table of Contents links scroll to the correct position without content hiding behind the header",
+          "Cold Storage guide: Bumped 10+ instances of fontSize: 12px to 13px across badge tags, table cells, recommendation cards, multi-sig platform cards, and related resource links — improving readability and moving closer to WCAG AA minimum font size requirements",
+          "Tax-Loss Harvesting guide: Added aria-label='Table of contents' to the TOC nav element for improved screen reader accessibility",
+          "Noted style inconsistency: Tax guide uses Tailwind classes, Cold Storage guide uses inline styles with a style constants object — recommend standardizing in a future refactor"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: crypto-tax-loss-harvesting-guide-2026 (1200x630 SVG) — already existed from build cycle, verified correct with gradient accent bar, green/red gain-loss chart decoration",
+          "OG image: cold-storage-seed-phrase-security-guide-2026 (1200x630 SVG) — already existed from build cycle, verified correct with shield icon and hardware wallet outline decorations"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/crypto-tax-loss-harvesting-guide-2026 — well-structured, consistent Tailwind styling, proper scroll-mt-20 on sections, BackToTop present, FAQs with structured data, related articles section, minor accessibility improvement applied",
+          "/learn/cold-storage-seed-phrase-security-guide-2026 — multiple UX fixes applied (BackToTop, scroll anchors, font sizes), good content structure with security warnings, hardware wallet comparison table with horizontal scroll, CTA section, and related resources",
+          "/daily-challenge — verified existing page, OG image uses dynamic API route, clean minimal page wrapper"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>degen0x — Option 1: Dual Feature Blocks</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #000; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; min-height: 100vh; }
+  a { text-decoration: none; color: inherit; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 56px;
+    background: rgba(0,0,0,0.85); backdrop-filter: blur(12px);
+    border-bottom: 1px solid #1c1c1e;
+  }
+  .logo { font-size: 18px; font-weight: 900; background: linear-gradient(135deg,#6366f1,#06b6d4); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .nav-links { display: flex; gap: 24px; font-size: 13px; color: #8e8e93; }
+  .nav-links a:hover { color: #fff; }
+  .nav-cta { background: #6366f1; color: #fff; font-size: 13px; font-weight: 600; padding: 7px 16px; border-radius: 20px; }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative; overflow: hidden;
+    padding: 80px 24px 64px; text-align: center;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.12) 0%, transparent 70%);
+  }
+  .hero-label { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #818cf8; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(36px, 6vw, 72px); font-weight: 900; line-height: 1.06; letter-spacing: -0.03em; margin-bottom: 20px; }
+  .hero h1 span { background: linear-gradient(135deg,#6366f1,#06b6d4); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .hero p { max-width: 540px; margin: 0 auto 32px; color: #8e8e93; font-size: 17px; line-height: 1.65; }
+  .hero-level-pills { display: inline-flex; background: #1c1c1e; border: 1px solid #2c2c2e; border-radius: 40px; padding: 4px; gap: 4px; margin-bottom: 32px; }
+  .level-pill { padding: 8px 20px; border-radius: 36px; font-size: 13px; font-weight: 600; cursor: pointer; color: #8e8e93; transition: all .15s; }
+  .level-pill.active { background: #fff; color: #000; }
+  .hero-btns { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .btn-primary { background: linear-gradient(135deg,#6366f1,#4f46e5); color: #fff; font-weight: 700; font-size: 15px; padding: 14px 28px; border-radius: 14px; transition: opacity .15s; }
+  .btn-ghost { color: #8e8e93; font-size: 14px; font-weight: 500; padding: 14px 20px; border: 1px solid #2c2c2e; border-radius: 14px; }
+
+  /* ── OPTION 1: DUAL FEATURE BLOCKS ── */
+  .feature-blocks {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; max-width: 1100px; margin: 0 auto 56px;
+    padding: 0 24px;
+  }
+  @media (max-width: 700px) { .feature-blocks { grid-template-columns: 1fr; } }
+
+  /* COURSES BLOCK */
+  .courses-block {
+    background: linear-gradient(145deg, #0f0c29, #1a1040, #0f0c29);
+    border: 1px solid #2c2458;
+    border-radius: 24px; overflow: hidden; position: relative;
+    padding: 28px;
+  }
+  .courses-block::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 50% at 30% 0%, rgba(99,102,241,0.25) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .block-label { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #818cf8; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+  .block-title { font-size: 26px; font-weight: 900; line-height: 1.15; margin-bottom: 8px; }
+  .block-sub { font-size: 14px; color: #8e8e93; line-height: 1.55; margin-bottom: 20px; }
+
+  /* XP Bar */
+  .xp-bar-wrap { background: rgba(255,255,255,0.07); border-radius: 12px; padding: 12px 14px; margin-bottom: 18px; border: 1px solid rgba(99,102,241,0.2); }
+  .xp-bar-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .xp-level { font-size: 13px; font-weight: 700; }
+  .xp-num { font-size: 12px; color: #818cf8; font-weight: 600; }
+  .xp-track { height: 6px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden; }
+  .xp-fill { height: 100%; width: 37%; background: linear-gradient(90deg, #6366f1, #06b6d4); border-radius: 99px; }
+
+  /* Learning path */
+  .learning-path { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; }
+  .path-step { display: flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 6px 10px; font-size: 12px; }
+  .path-step.done { background: rgba(99,102,241,0.2); border-color: rgba(99,102,241,0.4); color: #a5b4fc; }
+  .path-step.active { background: rgba(99,102,241,0.3); border-color: #6366f1; color: #fff; box-shadow: 0 0 12px rgba(99,102,241,0.3); }
+  .path-arrow { color: #3a3a3c; font-size: 10px; }
+
+  .block-cta { display: inline-flex; align-items: center; gap-6px; background: linear-gradient(135deg,#6366f1,#4f46e5); color: #fff; font-weight: 700; font-size: 14px; padding: 12px 22px; border-radius: 12px; gap: 8px; }
+  .block-stats { display: flex; gap: 16px; margin-top: 16px; }
+  .block-stat { font-size: 11px; color: #636366; display: flex; align-items: center; gap: 4px; }
+  .block-stat strong { color: #aeaeb2; }
+
+  /* ECOSYSTEM BLOCK */
+  .ecosystem-block {
+    background: linear-gradient(145deg, #001a1a, #001f2e, #000f1a);
+    border: 1px solid #0d3347;
+    border-radius: 24px; overflow: hidden; position: relative;
+    padding: 28px;
+  }
+  .ecosystem-block::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 40% at 80% 0%, rgba(6,182,212,0.2) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* dApp mini grid */
+  .dapp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 18px; }
+  .dapp-mini {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 10px 8px; text-align: center;
+    transition: border-color .15s, background .15s;
+    cursor: pointer;
+  }
+  .dapp-mini:hover { background: rgba(255,255,255,0.08); border-color: rgba(6,182,212,0.3); }
+  .dapp-mini-logo { font-size: 22px; margin-bottom: 5px; }
+  .dapp-mini-name { font-size: 10px; font-weight: 700; color: #e5e5ea; margin-bottom: 3px; }
+  .dapp-mini-chain { font-size: 9px; color: #636366; }
+  .dapp-mini-rating { font-size: 9px; color: #ffd60a; margin-top: 2px; }
+
+  /* chain pills row */
+  .chain-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+  .chain-pill { font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid; cursor: pointer; transition: opacity .15s; }
+  .chain-pill:hover { opacity: 0.8; }
+
+  .eco-cta { display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #0891b2, #06b6d4); color: #000; font-weight: 800; font-size: 14px; padding: 12px 22px; border-radius: 12px; }
+
+  /* ── DIVIDER LABEL ── */
+  .section-label {
+    max-width: 1100px; margin: 0 auto 20px; padding: 0 24px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .section-label span { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #636366; }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: #1c1c1e; }
+
+  /* ── CARDS SECTION ── */
+  .cards-section { max-width: 1100px; margin: 0 auto 48px; padding: 0 24px; }
+  .cards-section h2 { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+  .cards-section p { color: #8e8e93; font-size: 14px; margin-bottom: 20px; }
+  .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  @media (max-width: 768px) { .card-grid { grid-template-columns: repeat(2,1fr); } }
+  .card {
+    background: #1c1c1e; border: 1px solid #2c2c2e; border-radius: 14px;
+    padding: 14px; transition: border-color .15s;
+  }
+  .card:hover { border-color: #48484a; }
+  .card-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .card-desc { font-size: 11px; color: #8e8e93; line-height: 1.4; margin-bottom: 10px; }
+  .card-tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+
+  /* ── OPTION BADGE ── */
+  .option-badge {
+    position: fixed; top: 68px; right: 16px; z-index: 200;
+    background: linear-gradient(135deg,#6366f1,#06b6d4); color: #fff;
+    font-size: 12px; font-weight: 800; padding: 8px 14px; border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(99,102,241,0.4);
+  }
+</style>
+</head>
+<body>
+
+<div class="option-badge">Option 1 — Dual Feature Blocks</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">degen0x</div>
+  <div class="nav-links">
+    <a href="#">Learn</a>
+    <a href="#" style="color:#818cf8;font-weight:600">Courses</a>
+    <a href="#" style="color:#06b6d4;font-weight:600">Ecosystem</a>
+    <a href="#">Tools</a>
+    <a href="#">Compare</a>
+  </div>
+  <a href="#" class="nav-cta">Connect Wallet</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label">⬡ Our Mission</div>
+  <h1>Onboard the Next<br /><span>1 Billion Users</span><br />to Crypto</h1>
+  <p>Free tools, honest guides, structured courses, and every dApp — all in one place. No account needed. No paywall. Ever.</p>
+  <div class="hero-level-pills">
+    <div class="level-pill active">I'm New</div>
+    <div class="level-pill">Intermediate</div>
+    <div class="level-pill">Degen</div>
+  </div>
+  <br />
+  <div class="hero-btns">
+    <a href="#" class="btn-primary">Start Learning Free →</a>
+    <a href="#" class="btn-ghost">Browse all 92+ tools</a>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════════╗ -->
+<!-- ║  OPTION 1 — DUAL FEATURE BLOCKS             ║ -->
+<!-- ╚══════════════════════════════════════════════╝ -->
+<div style="max-width:1100px;margin:0 auto 8px;padding:0 24px;">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+    <span style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#636366;">Platform</span>
+    <div style="flex:1;height:1px;background:#1c1c1e;"></div>
+  </div>
+</div>
+
+<div class="feature-blocks">
+
+  <!-- COURSES BLOCK -->
+  <div class="courses-block">
+    <div class="block-label">🎓 Structured Learning</div>
+    <div class="block-title">Learn Crypto.<br />Earn XP. Level Up.</div>
+    <div class="block-sub">5 courses, 50+ lessons, interactive quizzes. From complete beginner to DeFi power user — tracked and gamified.</div>
+
+    <!-- XP progress bar (shows if user has started) -->
+    <div class="xp-bar-wrap">
+      <div class="xp-bar-top">
+        <div class="xp-level">⚡ Level 2 — Apprentice</div>
+        <div class="xp-num">185 / 500 XP</div>
+      </div>
+      <div class="xp-track"><div class="xp-fill"></div></div>
+    </div>
+
+    <!-- Learning path arrows -->
+    <div style="font-size:11px;color:#636366;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;">Your Path</div>
+    <div class="learning-path">
+      <div class="path-step done">✓ 🎓 Crypto 101</div>
+      <span class="path-arrow">→</span>
+      <div class="path-step active">🛡️ Security</div>
+      <span class="path-arrow">→</span>
+      <div class="path-step">🏛️ DeFi</div>
+      <span class="path-arrow">→</span>
+      <div class="path-step">◎ Solana</div>
+      <span class="path-arrow">→</span>
+      <div class="path-step">⚡ L2s</div>
+    </div>
+
+    <a href="#" class="block-cta">Continue Learning →</a>
+    <div class="block-stats">
+      <div class="block-stat">📚 <strong>5</strong> Courses</div>
+      <div class="block-stat">⚡ <strong>3,050</strong> XP</div>
+      <div class="block-stat">🏆 <strong>5</strong> Badges</div>
+      <div class="block-stat">🆓 Always free</div>
+    </div>
+  </div>
+
+  <!-- ECOSYSTEM BLOCK -->
+  <div class="ecosystem-block">
+    <div class="block-label" style="color:#06b6d4;">📱 dApp Ecosystem</div>
+    <div class="block-title">Every dApp.<br />Every Chain.</div>
+    <div class="block-sub">36+ protocols across Ethereum, Solana, Base, Arbitrum and more. Filter, compare, and learn about any dApp.</div>
+
+    <!-- Chain filter pills -->
+    <div class="chain-pills">
+      <span class="chain-pill" style="background:rgba(98,126,234,0.15);color:#627EEA;border-color:rgba(98,126,234,0.3);">⟠ Ethereum</span>
+      <span class="chain-pill" style="background:rgba(20,241,149,0.12);color:#14F195;border-color:rgba(20,241,149,0.25);">◎ Solana</span>
+      <span class="chain-pill" style="background:rgba(0,82,255,0.15);color:#5b8aff;border-color:rgba(0,82,255,0.3);">🔵 Base</span>
+      <span class="chain-pill" style="background:rgba(40,160,240,0.15);color:#28A0F0;border-color:rgba(40,160,240,0.3);">🔷 Arbitrum</span>
+      <span class="chain-pill" style="background:#1c1c1e;color:#636366;border-color:#2c2c2e;">+ 11 more</span>
+    </div>
+
+    <!-- 6 dApps mini grid -->
+    <div class="dapp-grid">
+      <div class="dapp-mini">
+        <div class="dapp-mini-logo">🦄</div>
+        <div class="dapp-mini-name">Uniswap</div>
+        <div class="dapp-mini-chain">⟠ Ethereum</div>
+        <div class="dapp-mini-rating">★ 4.8</div>
+      </div>
+      <div class="dapp-mini">
+        <div class="dapp-mini-logo">🪐</div>
+        <div class="dapp-mini-name">Jupiter</div>
+        <div class="dapp-mini-chain">◎ Solana</div>
+        <div class="dapp-mini-rating">★ 4.9</div>
+      </div>
+      <div class="dapp-mini">
+        <div class="dapp-mini-logo">👻</div>
+        <div class="dapp-mini-name">Aave</div>
+        <div class="dapp-mini-chain">⟠ + 5</div>
+        <div class="dapp-mini-rating">★ 4.9</div>
+      </div>
+      <div class="dapp-mini">
+        <div class="dapp-mini-logo">✈️</div>
+        <div class="dapp-mini-name">Aerodrome</div>
+        <div class="dapp-mini-chain">🔵 Base</div>
+        <div class="dapp-mini-rating">★ 4.6</div>
+      </div>
+      <div class="dapp-mini">
+        <div class="dapp-mini-logo">💧</div>
+        <div class="dapp-mini-name">Hyperliquid</div>
+        <div class="dapp-mini-chain">⟠ Ethereum</div>
+        <div class="dapp-mini-rating">★ 4.9</div>
+      </div>
+      <div class="dapp-mini" style="background:rgba(6,182,212,0.06);border-color:rgba(6,182,212,0.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;">
+        <div style="font-size:18px;">→</div>
+        <div style="font-size:10px;font-weight:700;color:#06b6d4;">View all 36+</div>
+      </div>
+    </div>
+
+    <a href="#" class="eco-cta">Browse Ecosystem →</a>
+    <div class="block-stats" style="margin-top:16px;">
+      <div class="block-stat" style="color:#636366">🔗 <strong style="color:#aeaeb2">36+</strong> dApps</div>
+      <div class="block-stat" style="color:#636366">⛓️ <strong style="color:#aeaeb2">15</strong> Chains</div>
+      <div class="block-stat" style="color:#636366">📂 <strong style="color:#aeaeb2">16</strong> Categories</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── REST OF HOMEPAGE (existing sections, dimmed to show context) ── -->
+<div style="opacity:0.4">
+  <div class="section-label"><span>Tools</span></div>
+  <div class="cards-section">
+    <h2>Tools that make it easy</h2>
+    <p>Simple, free tools to help you get started. No signup required.</p>
+    <div class="card-grid">
+      <div class="card"><div class="card-title">Crypto Converter</div><div class="card-desc">Real-time prices, 10+ coins</div><span class="card-tag" style="background:#22c55e20;color:#22c55e">Popular</span></div>
+      <div class="card"><div class="card-title">DCA Calculator</div><div class="card-desc">Plan your investment strategy</div><span class="card-tag" style="background:#818cf820;color:#818cf8">Popular</span></div>
+      <div class="card"><div class="card-title">Portfolio Tracker</div><div class="card-desc">Monitor your holdings</div><span class="card-tag" style="background:#06b6d420;color:#06b6d4">Easy</span></div>
+      <div class="card"><div class="card-title">Gas Tracker</div><div class="card-desc">Check transaction fees live</div><span class="card-tag" style="background:#f59e0b20;color:#f59e0b">Live</span></div>
+    </div>
+  </div>
+
+  <div class="section-label"><span>Learn</span></div>
+  <div class="cards-section">
+    <h2>Learn at your own pace</h2>
+    <p>35+ guides written from scratch. No jargon.</p>
+    <div class="card-grid">
+      <div class="card"><div class="card-title">What is Bitcoin?</div><div class="card-desc">The original cryptocurrency explained</div><span class="card-tag" style="background:#22c55e20;color:#22c55e">8 min</span></div>
+      <div class="card"><div class="card-title">What is Ethereum?</div><div class="card-desc">Smart contracts and the world computer</div><span class="card-tag" style="background:#818cf820;color:#818cf8">10 min</span></div>
+      <div class="card"><div class="card-title">What is DeFi?</div><div class="card-desc">Decentralized finance without the bank</div><span class="card-tag" style="background:#06b6d420;color:#06b6d4">12 min</span></div>
+      <div class="card"><div class="card-title">Crypto Wallets</div><div class="card-desc">Your keys, your coins</div><span class="card-tag" style="background:#f59e0b20;color:#f59e0b">6 min</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:32px;color:#3a3a3c;font-size:12px;">degen0x · Option 1 Mockup — Dual Feature Blocks</div>
+</body>
+</html>

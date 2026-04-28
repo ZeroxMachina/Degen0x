@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited hyperliquid-hip3-tokenized-futures-guide for UX/accessibility issues; created static OG image (1200x630 SVG+PNG) with market volume bar chart and stat cards; added ToC aria-label, mobile table min-widths + WebkitOverflowScrolling for both data tables, full calculator accessibility overhaul (fieldset, htmlFor/id associations, aria-pressed, aria-live, aria-valuemin/max/now on range slider), and descriptive OG alt text.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added aria-label='Table of Contents' to ToC <nav> on hyperliquid-hip3-tokenized-futures-guide for screen reader accessibility",
+          "Added minWidth: 700 to HIP-3 markets table (5 columns: Market, Asset, Category, Vol, Why) for proper mobile horizontal scroll",
+          "Added minWidth: 520 to TradFi vs HIP-3 comparison table (3 columns) for mobile scroll support",
+          "Added WebkitOverflowScrolling: 'touch' to both table scroll containers for smooth iOS scrolling",
+          "Added role='region' and aria-label to Hip3FundingCalculator container for screen reader landmark navigation",
+          "Converted market selector from div to semantic <fieldset>/<legend> for proper form grouping",
+          "Added aria-pressed and descriptive aria-label to all 5 market selector buttons (CL-USDC, XYZ100, GC, SI, TSLA)",
+          "Added aria-pressed and aria-label to Long/Short direction toggle buttons",
+          "Added htmlFor='hip3-collateral' on collateral label + id on input for label-input association",
+          "Added htmlFor='hip3-leverage' on leverage label + id on range input for label-input association",
+          "Added aria-valuemin, aria-valuemax, aria-valuenow, and aria-label on leverage range slider",
+          "Added htmlFor='hip3-funding-rate' on funding rate label + id on input for label-input association",
+          "Added aria-live='polite' aria-atomic='true' on results container so screen readers announce calculation updates",
+          "Updated OG image alt text to be descriptive with key metrics ($1.2B OI, CL-USDC $1.62B vol, 500K HYPE, 24/7)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: hyperliquid-hip3-guide (1200x630) — SVG + PNG with dark gradient background, brand accent bars (indigo→cyan→amber), category badges (DeFi, Tokenized Futures, March 2026), 5 stat cards (Open Interest $1.2B+, CL-USDC 24h Vol $1.62B, Creation Stake 500K HYPE, Trading Hours 24/7/365, KYC None), horizontal bar chart showing market volumes (CL-USDC, XYZ100, GC, SI, TSLA), architecture flow diagram (Wallet→HyperEVM, Oracle→Mark Price, pmUSDH→Yield), subtle grid pattern and decorative glow circles"
+        ]
+      },
+      {
+        "title": "Files Modified",
+        "items": [
+          "src/app/learn/hyperliquid-hip3-tokenized-futures-guide/page.tsx — Added ToC aria-label, 2 tables with minWidth + WebkitOverflowScrolling, descriptive OG alt text",
+          "src/components/Hip3FundingCalculator.tsx — Full accessibility overhaul: role/aria-label on container, fieldset/legend for market selector, aria-pressed on toggle buttons, htmlFor/id on 3 inputs, aria-value* on range slider, aria-live on results"
+        ]
+      },
+      {
+        "title": "Files Created",
+        "items": [
+          "public/og-hyperliquid-hip3-guide.svg — OG image SVG source (1200x630)",
+          "public/og-hyperliquid-hip3-guide.png — OG image PNG for social sharing",
+          "reports/2026-03-16-design-v6.json — this report"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

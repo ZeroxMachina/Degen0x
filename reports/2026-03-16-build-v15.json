@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-16",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Built two new learn guides — Jupiter DEX (Solana DeFi superapp, 658 lines) and Ondo Finance (RWA tokenization leader, 793 lines) — filling key content gaps for top-50 crypto projects with no existing coverage.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "Content audit: reviewed all 516 published pages and 121 learn guides to identify gaps — confirmed Jupiter and Ondo had zero coverage despite being top-50 by market cap",
+          "Jupiter DEX: Solana's largest DEX aggregator, $2.6-3.5B TVL, 95% aggregator market share, evolved into full DeFi superapp with 250x perps, JupUSD stablecoin (Ethena partnership), Polymarket prediction market integration, Chainlink oracle integration. JUP token $0.17, ~$590M market cap, ATH $2.00",
+          "Ondo Finance: dominant RWA tokenization protocol, $2.52B TVL (404% YoY growth), largest issuer of tokenized US Treasuries (USDY >$1B on 9 chains) and tokenized stocks (202 assets, $963M value, 58.56% market share). State Street + Galaxy $200M SWEEP fund. Citadels for Islamic finance. ONDO token $0.28, ~$1.37B market cap"
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "Jupiter guide (658 lines, ~3,500 words): What Jupiter is, how routing works, JUP token economics, core features (swaps, 250x perps, limit orders, liquid staking, JupUSD, token launches), Jupiter vs Raydium vs Orca comparison table, 6 risk categories, getting started guide, future outlook. 6-question FAQ.",
+          "Ondo Finance guide (793 lines, ~3,500 words): USDY and OUSG products, tokenized equities expansion, ONDO token governance with token-TVL disconnect analysis, SWEEP institutional fund, Citadels (Shariah-compliant), Ondo vs Maple vs Centrifuge comparison table, 7 risk categories including regulatory exposure. 5+ question FAQ."
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/jupiter-solana-guide", "status": "pass" },
+          { "slug": "/learn/ondo-finance-rwa-guide", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "Jupiter title: 'Jupiter Guide 2026: Solana's DeFi Superapp | degen0x' (52 chars, under 60 limit)",
+          "Jupiter keywords: 13 targeted (Jupiter DEX, JUP token, Solana DeFi superapp, etc.)",
+          "Ondo title: 'Ondo Finance Guide 2026: Tokenized Treasuries, Stocks & RWA Protocol' + degen0x suffix",
+          "Ondo keywords: 8 targeted (Ondo Finance, USDY, OUSG, RWA, tokenized treasuries, etc.)",
+          "Both pages: Article + FAQ structured data schemas, OpenGraph + Twitter cards, Breadcrumb + BackToTop components",
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts",
+          "Bug fix: removed 'use client' from Ondo page that would have broken Next.js metadata export",
+          "Bug fix: trimmed Jupiter title from 91 to 52 chars (was over Google's 60-char display limit)"
+        ]
+      }
+    ],
+    "files_created": [
+      "src/app/learn/jupiter-solana-guide/page.tsx",
+      "src/app/learn/ondo-finance-rwa-guide/page.tsx",
+      "reports/2026-03-16-build-v15.json"
+    ],
+    "files_modified": [
+      "src/lib/published-pages.ts"
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold", "programmer"]
+  }
+}

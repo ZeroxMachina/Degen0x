@@ -1,0 +1,78 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close: 2 new learn guides built (Governance Security Attack Vectors + Funding Rate Arbitrage) and added to PUBLISH_QUEUE. EIP-7702 + Passkey Wallets promoted to PUBLISHED. TS errors stable at 142. Git locks Day 10 — 807 uncommitted files.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new PUBLISH_QUEUE pages confirmed: /learn/governance-security-attack-vectors-2026 and /learn/funding-rate-arbitrage-guide-2026 — both page.tsx present",
+          "Previous cycle's queue items (EIP-7702 + Passkey Wallets) successfully promoted to PUBLISHED_PAGES",
+          "All 8 pages from today's batches 4-7 verified present: lido-v3-stvaults, institutional-crypto-adoption, cross-chain-messaging, onchain-gaming, solana-liquid-staking, corporate-crypto-treasury, eip-7702, passkey-wallets",
+          "Total TS errors stable at 142 (unchanged): lido-v3-stvaults (94), structured-data.examples (40), crypto-arbitrage-strategies (4), institutional-crypto-adoption (2), crypto-index-funds (2)",
+          "Published slugs: 519 entries / 502 unique (up from 517/500 — 2 new published + 2 new queue items)",
+          "17 duplicate slug entries in published-pages.ts — unchanged, cleanup still needed",
+          "103 published slugs missing page.tsx — unchanged carry-over",
+          "Build bypasses TS errors via ignoreBuildErrors: true in next.config.ts"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 core API routes present and configured: /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields",
+          "Cache TTLs verified: prices (swr:120s), trending (swr:600s), fear-greed (swr:1200s), market-metrics (swr:120s), market-dominance (swr:600s)",
+          "defi-yields uses dynamic CACHE_DURATION variable for SWR — not a bug, uses template literal. Behavior correct.",
+          "Rate limiter coverage: only cache-stats and health routes use checkRateLimit — 0/6 core data routes covered (carry-over P1)",
+          "CoinGecko free tier risk persists — no API key configured",
+          "No code changes to API routes this cycle"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Git lock files persist: .git/HEAD.lock (Mar 16) + .git/index.lock (Mar 16) — DAY 10 of blocker",
+          "807 uncommitted files (up from 803 in v5 — 4 new files from 2 new guide pages)",
+          "48 files changed vs last commit (e999560) with 4,409 insertions / 3,464 deletions",
+          "Last deployed commit: e999560 (Mar 17) — 'publish: promote 2 pages to production (Day 62)'",
+          "Deploy gap: ~170+ pages built locally but not live in production — Day 8 since last push",
+          "next.config.ts has ignoreBuildErrors: true — Vercel builds will bypass TS errors when eventually deployed",
+          "CRITICAL: Jefe must manually run: rm .git/index.lock .git/HEAD.lock && git add -A && git commit && git push"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 2 learn guides scaffolded — Governance Security Attack Vectors + Funding Rate Arbitrage",
+          "PROMOTED THIS CYCLE: EIP-7702 Smart Accounts + Passkey Embedded Wallets moved from queue to published",
+          "PUBLISH_QUEUE replenished: 2 items (governance-security, funding-rate-arbitrage) ready for next promotion",
+          "TS errors stable at 142 — no regressions from this cycle's work",
+          "TODAY'S REPORTS: 33 total (standup×6, build×6, community×6, design×6, publish×5, eod×6)",
+          "CARRY-OVER [P0]: Git locks Day 10 — 807 files, ~170+ page deploy gap. Jefe action required.",
+          "CARRY-OVER [P1]: 103 published slugs missing page.tsx (wallets, taxes, investing, learn fundamentals)",
+          "CARRY-OVER [P1]: 142 TS errors across 5 files — stable but needs cleanup sprint",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes",
+          "CARRY-OVER [P2]: 17 duplicate slugs in published-pages.ts",
+          "NEXT CYCLE: Promote governance-security + funding-rate-arbitrage from queue to published"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "502 unique", "pct": 83, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items", "pct": 10, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "142 (stable)", "pct": 30, "color": "#f59e0b" },
+          { "label": "API Routes Health", "value": "6/6 present", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "Missing page.tsx", "value": "103 slugs", "pct": 20, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "807", "pct": 5, "color": "#ef4444" },
+          { "label": "Git Lock Status", "value": "Day 10 blocked", "pct": 5, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "8 days", "pct": 10, "color": "#ef4444" },
+          { "label": "New Pages (this cycle)", "value": "2 built + 2 promoted", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
+  <circle cx="170" cy="100" r="85" fill="#06b6d4" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1040" cy="510" r="120" fill="#0891b2" opacity="0.06" filter="url(#glow)"/>
+  <rect x="60" y="60" width="160" height="40" rx="20" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="2"/>
+  <text x="140" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#06b6d4" text-anchor="middle">TRADING</text>
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="42" font-weight="bold" fill="url(#titleGradient)">Hyperliquid Trading Guide</text>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">Master perpetual DEX trading on Hyperliquid</text>
+  <g>
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
+    <rect x="790" y="340" width="20" height="80" rx="2" fill="#06b6d4" opacity="0.85"/>
+    <rect x="820" y="280" width="20" height="140" rx="2" fill="#06b6d4" opacity="0.9"/>
+    <rect x="850" y="300" width="20" height="120" rx="2" fill="#06b6d4" opacity="0.8"/>
+    <rect x="880" y="260" width="20" height="160" rx="2" fill="#06b6d4" opacity="0.85"/>
+    <rect x="910" y="320" width="20" height="100" rx="2" fill="#06b6d4" opacity="0.9"/>
+    <rect x="940" y="290" width="20" height="130" rx="2" fill="#06b6d4" opacity="0.8"/>
+    <rect x="970" y="300" width="20" height="120" rx="2" fill="#06b6d4" opacity="0.85"/>
+    <line x1="780" y1="430" x2="1010" y2="430" stroke="#1e293b" stroke-width="1" opacity="0.5"/>
+    <path d="M 790 340 L 820 280 L 850 300 L 880 260" stroke="#22c55e" stroke-width="2" fill="none" opacity="0.8"/>
+    <text x="900" y="410" font-family="system-ui, sans-serif" font-size="14" fill="#06b6d4" text-anchor="middle">Price Action</text>
+  </g>
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
+</svg>

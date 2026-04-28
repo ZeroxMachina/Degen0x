@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="50%" stop-color="#0d1428"/>
+      <stop offset="100%" stop-color="#0a0f20"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative gradient circles -->
+  <circle cx="150" cy="500" r="200" fill="#4f46e5" opacity="0.06" filter="url(#softGlow)"/>
+  <circle cx="1050" cy="130" r="180" fill="#0891b2" opacity="0.05" filter="url(#softGlow)"/>
+  <circle cx="600" cy="600" r="250" fill="#d97706" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- Logo area -->
+  <text x="60" y="60" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#818cf8" letter-spacing="0.05em">degen0x</text>
+  <text x="145" y="60" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6e7681" letter-spacing="0.02em">.com</text>
+
+  <!-- CONVERGENCE THURSDAY badge -->
+  <rect x="60" y="80" width="280" height="32" rx="16" fill="#ef4444" opacity="0.15"/>
+  <rect x="60" y="80" width="280" height="32" rx="16" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+  <circle cx="78" cy="96" r="4" fill="#ef4444" filter="url(#glow)"/>
+  <text x="90" y="101" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ef4444" letter-spacing="0.08em">CONVERGENCE THURSDAY</text>
+
+  <!-- Main title -->
+  <text x="60" y="165" font-family="Inter, -apple-system, sans-serif" font-size="46" font-weight="900" fill="url(#brandGrad)" letter-spacing="-0.02em">3 Catalysts. 1 Day.</text>
+  <text x="60" y="215" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#8b949e">March 27, 2026 — The Biggest Day of Q1</text>
+
+  <!-- Three catalyst cards -->
+
+  <!-- Card 1: Options Expiry -->
+  <rect x="60" y="250" width="340" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="285" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#06b6d4" letter-spacing="0.06em">OPTIONS EXPIRY</text>
+  <text x="80" y="330" font-family="Inter, -apple-system, sans-serif" font-size="42" font-weight="900" fill="#e6edf3">$13.5B</text>
+  <text x="80" y="360" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#8b949e">Largest Q1 expiry on Deribit</text>
+  <text x="80" y="390" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#6e7681">BTC max pain: $75K–$86K</text>
+
+  <!-- Card 2: SEC ETF Rulings -->
+  <rect x="430" y="250" width="340" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="450" y="285" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#f59e0b" letter-spacing="0.06em">SEC ETF RULINGS</text>
+  <text x="450" y="330" font-family="Inter, -apple-system, sans-serif" font-size="42" font-weight="900" fill="#e6edf3">91 Apps</text>
+  <text x="450" y="360" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#8b949e">Across 24 tokens incl. XRP, SOL</text>
+  <text x="450" y="390" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#6e7681">XRP commodity deadline: Mar 27</text>
+
+  <!-- Card 3: ETF Options Uncapped -->
+  <rect x="800" y="250" width="340" height="160" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="820" y="285" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#22c55e" letter-spacing="0.06em">OPTIONS UNCAPPED</text>
+  <text x="820" y="330" font-family="Inter, -apple-system, sans-serif" font-size="42" font-weight="900" fill="#e6edf3">11 Funds</text>
+  <text x="820" y="360" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="400" fill="#8b949e">NYSE/Nasdaq/Cboe limits removed</text>
+  <text x="820" y="390" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#6e7681">$IBIT $FBTC $ETHA + 8 more</text>
+
+  <!-- Market context bar -->
+  <rect x="60" y="440" width="1080" height="80" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- BTC Price -->
+  <text x="100" y="475" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6e7681">BTC</text>
+  <text x="100" y="500" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#e6edf3">$71,300</text>
+
+  <!-- Divider -->
+  <line x1="230" y1="455" x2="230" y2="510" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Fear & Greed -->
+  <text x="270" y="475" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6e7681">FEAR &amp; GREED</text>
+  <text x="270" y="500" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#ef4444">11 — Extreme Fear</text>
+
+  <!-- Divider -->
+  <line x1="470" y1="455" x2="470" y2="510" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Stablecoins -->
+  <text x="510" y="475" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6e7681">STABLECOINS</text>
+  <text x="510" y="500" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#22c55e">$313B ATH</text>
+
+  <!-- Divider -->
+  <line x1="680" y1="455" x2="680" y2="510" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- ETF Inflows -->
+  <text x="720" y="475" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6e7681">MAR ETF INFLOWS</text>
+  <text x="720" y="500" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#f59e0b">$2.5B</text>
+
+  <!-- Divider -->
+  <line x1="880" y1="455" x2="880" y2="510" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Tax Countdown -->
+  <text x="920" y="475" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6e7681">TAX DEADLINE</text>
+  <text x="920" y="500" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#d97706">21 days</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="550" width="1200" height="80" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="595" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#818cf8">degen0x.com</text>
+  <text x="210" y="595" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#6e7681">Free tools &amp; guides — 533+ pages — No signup</text>
+  <text x="1080" y="595" font-family="Inter, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#6e7681" text-anchor="end">Mar 27, 2026</text>
+
+  <!-- Bottom gradient accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-27T19:10:00Z",
+  "briefing_id": "briefing-2026-04-27-19",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-27-19-001",
+      "headline": "Four central banks — Fed, ECB, BoJ, BoE — all set rates this week as crypto holds $2.71T",
+      "slug": "central-banks-rate-week-crypto-271t",
+      "tldr": "Bank of Japan, Federal Reserve, ECB and Bank of England each deliver policy decisions this week, the densest macro window of 2026 so far.",
+      "why_it_matters": "Why it matters: Synchronized rate signals will reset the dollar trade that has moved in near-perfect opposition to BTC for nearly four years, dictating whether the $79K wall finally breaks.",
+      "the_details": [
+        "Crypto market cap sits at $2.71T, up 1.7% in 24 hours, with $66.6B in trading volume.",
+        "Q1 GDP and March PCE inflation print alongside Visa, Mastercard, Robinhood and Galaxy earnings.",
+        "BTC-dollar inverse correlation is at its most extreme reading in almost four years per CoinDesk."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-27T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-19-002",
+      "headline": "Spot Solana ETF inflows crater 92% to $34M as institutional risk appetite cools",
+      "slug": "solana-etf-inflows-crater-92-percent",
+      "tldr": "Spot SOL ETF net inflows fell from $419M in November 2025 to just $34M in April 2026, a 92% collapse signaling weakening institutional demand.",
+      "why_it_matters": "Why it matters: Solana was supposed to be the next ETF growth story after BTC and ETH, but the flow drought caps near-term price upside and undercuts the L1 rotation thesis.",
+      "the_details": [
+        "SOL trades near $86.47 with a $49.8B market cap, ranking seventh.",
+        "Solana Fear & Greed Index sits at 33, deeper into Fear than the broader market's 47.",
+        "Firedancer is still targeting 1M TPS in 2026; Alpenglow has cut finality below 200ms."
+      ],
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "altcoins",
+      "impact": "high",
+      "timestamp": "2026-04-27T10:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-19-003",
+      "headline": "SEC staff says crypto UI providers can skip broker-dealer registration under new conditions",
+      "slug": "sec-crypto-ui-broker-dealer-no-action",
+      "tldr": "The SEC's Trading and Markets division issued guidance on April 13 telling Covered User Interface Providers they will not face enforcement absent broker-dealer registration if conditions are met.",
+      "why_it_matters": "Why it matters: This is the first explicit safe harbor for front-end aggregators and DEX UIs — directly de-risking products like Uniswap interface, 1inch and Jupiter under U.S. law.",
+      "the_details": [
+        "Joint SEC-CFTC March 17 release classifies BTC, ETH, SOL, XRP and LINK as digital commodities.",
+        "FDIC, Treasury and FinCEN/OFAC GENIUS Act stablecoin rules are out for comment through June 2-9.",
+        "SEC Chair Atkins has shifted the agency from 'enforcement heavy' to 'rulemaking mode' at his one-year mark."
+      ],
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T08:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-19-004",
+      "headline": "Aave plants $14.7B TVL flag on Solana via Sunrise DeFi as cross-chain liquidity war heats up",
+      "slug": "aave-solana-sunrise-defi-launch",
+      "tldr": "Aave's deployment to Solana through Sunrise DeFi routes Ethereum-backed liquidity into SVM execution, layering on top of Solana's existing $5.6B DeFi base.",
+      "why_it_matters": "Why it matters: This tests whether Solana speed actually drives net-new lending demand or just siphons Ethereum liquidity — the answer will set the template for every L1 expansion.",
+      "the_details": [
+        "Ethereum still anchors over $12B of Aave's $14.7B total TVL.",
+        "Aave saw $8.4B in deposits leave in 48 hours after the April KelpDAO and Drift exploits.",
+        "Solana DeFi TVL stands near $5.6B, the largest non-EVM DeFi base."
+      ],
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-27T09:15:00Z"
+    },
+    {
+      "id": "story-2026-04-27-19-005",
+      "headline": "The Block names Steve Chung CEO alongside $10M Foresight Ventures raise",
+      "slug": "the-block-steve-chung-ceo-foresight",
+      "tldr": "Crypto media outlet The Block appointed veteran media operator Steve Chung as CEO with a fresh $10M check from Foresight Ventures.",
+      "why_it_matters": "Why it matters: Crypto media has been bleeding for years; a fresh raise plus an outside CEO signals the data-and-research playbook is the model investors will fund next cycle.",
+      "the_details": [
+        "Larry Cermak shifts to President, focused on research and product.",
+        "Foresight Ventures is leading the round, doubling down on info infrastructure.",
+        "TOKEN2049 Dubai was just pushed to 2027 amid heightened UAE security risks."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/398948/the-block-appoints-steve-chung-ceo",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-27T14:00:00Z"
+    }
+  ]
+}

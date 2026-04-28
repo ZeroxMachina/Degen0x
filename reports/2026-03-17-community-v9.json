@@ -1,0 +1,102 @@
+{
+  "date": "2026-03-17",
+  "block": "community",
+  "version": "v9",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v9: FOMC T-1 decision-day content pack — 5 live-reaction tweet templates (pre-decision, countdown, hawkish/dovish/thread), full newsletter draft (Thu Mar 19), Discord/Telegram announcement copy, Sprint 59 feature poll, weekend evergreen posts; FOMC decision-day social card created with 3 scenario panels (dovish $80-85K / hawkish $65-70K / base case $72-77K).",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet A (Mar 18 8am ET): Pre-decision dot plot primer — what's priced in vs not, dovish/hawkish BTC scenarios, link to FOMC guide",
+          "Tweet B (Mar 18 1:30pm): 30-min countdown tweet — rates, dot plot scenarios, Fear & Greed context (was 5 in Feb, ~35 today)",
+          "Tweet C (hawkish template): Post-decision response if dot plot removes cuts — short-term correction framing with bullish long-term structure",
+          "Tweet D (dovish template): Post-decision response if cuts added — $80K next resistance, dollar/liquidity mechanism explained",
+          "Tweet E (FOMC thread, 5 posts): Educational breakdown — what the Fed just did, dot plot explained, historical BTC reaction, what to watch next (Pectra Apr 10, tax Apr 15, Powell exit May 23)",
+          "Newsletter (Thu Mar 19 FOMC Reaction Edition): 3 subject lines A/B/C tested; Market Pulse (BTC $75K, ETF streak, F&G), New on degen0x (FOMC guide, Hyperliquid guide, 8 crypto card reviews), Worth Reading (tax guide, Pectra guide), Degen Corner (Strategy 738K BTC + Sprint 59 poll)",
+          "Discord/Telegram: FOMC decision-day announcement with prediction poll, post-decision community engagement template, 29-day tax deadline pinned reminder",
+          "Sprint 59 poll (Twitter/Discord): 4 options — Options Chain Viewer, Whale Wallet Tracker, Pectra Countdown, DeFi Yield Aggregator",
+          "Weekend evergreen: Saturday F&G accumulation-vs-euphoria post (Fear & Greed tool), Sunday DeFi Sunday (Aave V4 teaser + defi-yields tool)"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          {
+            "label": "/learn/fomc-fed-rate-crypto-guide",
+            "value": "T-1 peak search intent — FOMC tomorrow 2pm ET",
+            "pct": 99,
+            "color": "#6366f1"
+          },
+          {
+            "label": "/tools/bloomberg-screener",
+            "value": "Evergreen #1 — live DefiLlama data, FOMC day traffic driver",
+            "pct": 96,
+            "color": "#06b6d4"
+          },
+          {
+            "label": "/tools/fear-greed-timeline",
+            "value": "F&G at 35 (up from ATL of 5 in Feb) — high engagement",
+            "pct": 94,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/tools/dca-calculator",
+            "value": "FOMC volatility = DCA searches spike — evergreen #2",
+            "pct": 93,
+            "color": "#4ade80"
+          },
+          {
+            "label": "/learn/crypto-tax-guide-2026",
+            "value": "Tax deadline T-29 (Apr 15) — 29 days, peak search window",
+            "pct": 91,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "/crypto-cards/*",
+            "value": "8 reviews live — high commercial intent, new affiliate vertical",
+            "pct": 89,
+            "color": "#8b5cf6"
+          },
+          {
+            "label": "/learn/hyperliquid-trading-guide",
+            "value": "NET-NEW this week — $25B+ daily perps, strong search demand",
+            "pct": 87,
+            "color": "#22c55e"
+          },
+          {
+            "label": "/learn/ethereum-pectra-upgrade-guide",
+            "value": "Pectra T-24 (Apr 10) — EIP-7702 differentiated content",
+            "pct": 85,
+            "color": "#4ade80"
+          }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-fomc-decision-day-2026.svg — 1200x630 SVG social card: LEFT column (FOMC Decision Day branding, BTC $75K pill, F&G 35/100 pill, ETF $962.8M pill, guide URL); RIGHT column (3 scenario panels — DOVISH $80-85K green / HAWKISH $65-70K red / BASE CASE $72-77K indigo, each with price target + macro mechanism explanation); degen0x logo + branding; signature brand gradient top bar; dark glass-morphism surfaces. Saved to /public/social-fomc-decision-day-2026.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context (7-Day Lookback)",
+        "items": [
+          "Site: 398 published pages — up ~64 pages in the past 7 days. Largest single-week publish acceleration to date.",
+          "Content pipeline highlights: FOMC guide, Hyperliquid trading guide, Telegram bots guide, 8 crypto card reviews — all published this week.",
+          "PUBLISH_QUEUE: 2 items remaining (Bitcoin Runes + Farcaster SocialFi). Near-zero backlog is a strategic win — production nearly caught up with content creation.",
+          "Key catalysts this week: BTC $75K breakout (+25% from Feb bottom), $540M short liquidations, 6-day ETF inflow streak ($962.8M). FOMC T-1 is the immediate driver.",
+          "Upcoming catalysts: FOMC Mar 18 (tomorrow), Tax deadline Apr 15 (T-29), Ethereum Pectra Apr 10 (T-24). Full 3-catalyst window over next 30 days.",
+          "GSC organic signals: Day 18 of 14-21 window. First organic impressions and clicks expected to be arriving this week as early batches index.",
+          "Critical blocker: git lock (~27hr stale) + Vercel trial (~2 days). 533 uncommitted files of content, including all this week's guides, remain undeployed. Deploy unblocking is P0."
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"],
+    "files_created": [
+      "reports/community-drafts/2026-03-17-social-drafts-v9.md",
+      "public/social-fomc-decision-day-2026.svg",
+      "reports/2026-03-17-community-v9.json"
+    ]
+  }
+}

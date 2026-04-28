@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0d1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.25"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="200" cy="150" r="200" fill="url(#purpleGlow)"/>
+  <circle cx="1000" cy="480" r="250" fill="url(#cyanGlow)"/>
+
+  <!-- Glass card -->
+  <rect x="60" y="80" width="1080" height="460" rx="20" ry="20"
+        fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Logo area -->
+  <text x="100" y="130" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="0.1em">DEGEN0X</text>
+
+  <!-- Main title -->
+  <text x="100" y="200" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Liquid Staking &amp; Restaking</text>
+  <text x="100" y="260" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="#8b5cf6" letter-spacing="-0.02em">The ETH Yield Stack Explained</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="310" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">stETH → EigenLayer → AVS rewards — how yield layers compound</text>
+
+  <!-- Yield flow visualization -->
+  <!-- Step 1: Stake ETH -->
+  <rect x="100" y="360" width="220" height="80" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.4)" stroke-width="1"/>
+  <text x="210" y="393" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8" text-anchor="middle">STAKE ETH</text>
+  <text x="210" y="418" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3" text-anchor="middle">~3.5% APY</text>
+
+  <!-- Arrow 1 -->
+  <text x="345" y="408" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#6e7681">→</text>
+
+  <!-- Step 2: Liquid Staking -->
+  <rect x="380" y="360" width="220" height="80" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.4)" stroke-width="1"/>
+  <text x="490" y="393" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#06b6d4" text-anchor="middle">LIQUID STAKING</text>
+  <text x="490" y="418" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3" text-anchor="middle">stETH / rETH</text>
+
+  <!-- Arrow 2 -->
+  <text x="625" y="408" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#6e7681">→</text>
+
+  <!-- Step 3: Restake -->
+  <rect x="660" y="360" width="220" height="80" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.4)" stroke-width="1"/>
+  <text x="770" y="393" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b5cf6" text-anchor="middle">RESTAKE</text>
+  <text x="770" y="418" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3" text-anchor="middle">EigenLayer</text>
+
+  <!-- Arrow 3 -->
+  <text x="905" y="408" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#6e7681">→</text>
+
+  <!-- Step 4: Extra Yield -->
+  <rect x="940" y="360" width="180" height="80" rx="12" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+  <text x="1030" y="393" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#22c55e" text-anchor="middle">TOTAL YIELD</text>
+  <text x="1030" y="418" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#22c55e" text-anchor="middle">5-8%+ APY</text>
+
+  <!-- Stats row -->
+  <text x="100" y="490" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681">$15B+ EigenLayer TVL</text>
+  <text x="400" y="490" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681">4 LST providers compared</text>
+  <text x="700" y="490" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681">3,500+ word deep dive</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="550" width="1200" height="80" fill="rgba(0,0,0,0.3)"/>
+  <text x="100" y="598" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#8b949e">degen0x.com</text>
+  <text x="1100" y="598" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">Free tools. No signup. Just alpha.</text>
+</svg>

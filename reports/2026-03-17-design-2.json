@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-17",
+  "block": "design",
+  "cycle": 2,
+  "report": {
+    "status": "completed",
+    "summary": "UX audit of 8 newly published pages; fixed accessibility font sizes on 3 pages (yield-bearing-stablecoins, chain-abstraction, gpu-compute), added BackToTop to chain-abstraction, increased tab touch targets to 44px+ on 2 pages.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added BackToTop component to /learn/chain-abstraction (was missing — import + render)",
+          "Increased tab button padding from 12px to 14px on /learn/yield-bearing-stablecoins and /learn/chain-abstraction (touch target compliance: 44px+ height)",
+          "Bumped all fontSize: 13 → 14 across 3 pages (yield-bearing-stablecoins, chain-abstraction, gpu-compute) for WCAG body text minimum",
+          "Bumped all fontSize: 12 → 13 for stat labels, badges, and tag text across all 3 pages",
+          "Fixed fontSize: 11 → 13 on 4 code block examples in /learn/chain-abstraction (were severely undersized)"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (No Action Needed)",
+        "items": [
+          "Crypto Payroll Guide 2026: proper server component with Metadata, OG images, Breadcrumb, BackToTop, StructuredData",
+          "Solana ETF Guide 2026: proper server component with full SEO setup and accessibility compliance",
+          "DeFi Insurance Guide 2026: clean layout, proper structured data, OG images configured",
+          "Fluid Protocol Guide: well-structured with FAQ schema and article schema",
+          "Karak Network Guide: proper metadata, OG images, structured data"
+        ]
+      },
+      {
+        "title": "OG Image Status",
+        "items": [
+          "5 server-component pages have properly configured OG images via /api/og endpoint (crypto-payroll, solana-etf, defi-insurance, fluid-protocol, karak-network)",
+          "GPU compute guide: OG images configured correctly in Metadata export",
+          "2 client-component pages (yield-bearing-stablecoins, chain-abstraction) lack server-side OG metadata — architectural limitation of 'use client' pages; noted for future refactor to split into server wrapper + client component"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/crypto-payroll-guide-2026 (pass)",
+          "/learn/solana-etf-guide-2026 (pass)",
+          "/learn/yield-bearing-stablecoins (fixed: font sizes, tab touch targets)",
+          "/learn/defi-insurance-guide-2026 (pass)",
+          "/learn/decentralized-gpu-compute-networks-guide (fixed: font sizes)",
+          "/learn/fluid-protocol-guide (pass)",
+          "/learn/karak-network-guide (pass)",
+          "/learn/chain-abstraction (fixed: BackToTop, font sizes, tab touch targets, code block sizes)"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

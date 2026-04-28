@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="redDrop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="200" r="180" fill="#ef4444" opacity="0.04"/>
+  <circle cx="150" cy="450" r="140" fill="#f59e0b" opacity="0.03"/>
+  <circle cx="800" cy="500" r="100" fill="#6366f1" opacity="0.03"/>
+
+  <!-- Logo area -->
+  <text x="60" y="65" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#818cf8" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Category badges -->
+  <rect x="60" y="100" width="130" height="28" rx="6" fill="#ef444420" stroke="#ef444440" stroke-width="1"/>
+  <text x="125" y="119" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#f87171" text-anchor="middle">Trade War</text>
+
+  <rect x="200" y="100" width="100" height="28" rx="6" fill="#f59e0b20" stroke="#f59e0b40" stroke-width="1"/>
+  <text x="250" y="119" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#fbbf24" text-anchor="middle">Macro</text>
+
+  <rect x="310" y="100" width="90" height="28" rx="6" fill="#6366f120" stroke="#6366f140" stroke-width="1"/>
+  <text x="355" y="119" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#818cf8" text-anchor="middle">2026</text>
+
+  <!-- Title -->
+  <text x="60" y="195" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Tariffs &amp; Trade War:</text>
+  <text x="60" y="250" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.02em">Impact on Crypto Markets</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="295" font-family="Inter, Arial, sans-serif" font-size="18" fill="#8b949e">How US-China tariffs, reciprocal trade policies, and macro</text>
+  <text x="60" y="320" font-family="Inter, Arial, sans-serif" font-size="18" fill="#8b949e">uncertainty are reshaping crypto prices and DeFi flows.</text>
+
+  <!-- Impact cards -->
+  <g transform="translate(60, 360)">
+    <!-- BTC impact card -->
+    <rect x="0" y="0" width="250" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="20" y="30" font-family="Inter, Arial, sans-serif" font-size="12" fill="#8b949e" font-weight="600">BTC Drawdown</text>
+    <text x="20" y="70" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#ef4444">-35%</text>
+    <text x="20" y="100" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6e7681">from ATH on tariff escalation</text>
+
+    <!-- ETH impact card -->
+    <rect x="270" y="0" width="250" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="290" y="30" font-family="Inter, Arial, sans-serif" font-size="12" fill="#8b949e" font-weight="600">ETH Correlation</text>
+    <text x="290" y="70" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#f59e0b">0.78</text>
+    <text x="290" y="100" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6e7681">with S&amp;P 500 during trade war</text>
+
+    <!-- Stablecoin flow card -->
+    <rect x="540" y="0" width="250" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="560" y="30" font-family="Inter, Arial, sans-serif" font-size="12" fill="#8b949e" font-weight="600">Stablecoin Inflows</text>
+    <text x="560" y="70" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#22c55e">+$12B</text>
+    <text x="560" y="100" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6e7681">flight to safety in USDT/USDC</text>
+
+    <!-- DeFi TVL card -->
+    <rect x="810" y="0" width="250" height="120" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="830" y="30" font-family="Inter, Arial, sans-serif" font-size="12" fill="#8b949e" font-weight="600">DeFi TVL Impact</text>
+    <text x="830" y="70" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800" fill="#f87171">-22%</text>
+    <text x="830" y="100" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6e7681">total locked value decline Q1</text>
+  </g>
+
+  <!-- Timeline bar at bottom -->
+  <g transform="translate(60, 520)">
+    <rect x="0" y="0" width="1080" height="60" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="20" y="18" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6e7681" font-weight="600">TARIFF TIMELINE</text>
+
+    <!-- Timeline dots -->
+    <circle cx="80" cy="40" r="6" fill="#ef4444"/>
+    <text x="80" y="55" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Jan '25</text>
+    <text x="80" y="30" font-family="Inter, Arial, sans-serif" font-size="9" fill="#f87171" text-anchor="middle">10% China</text>
+
+    <line x1="86" y1="40" x2="274" y2="40" stroke="#30363d" stroke-width="1"/>
+
+    <circle cx="280" cy="40" r="6" fill="#ef4444"/>
+    <text x="280" y="55" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Feb '25</text>
+    <text x="280" y="30" font-family="Inter, Arial, sans-serif" font-size="9" fill="#f87171" text-anchor="middle">+25% MX/CA</text>
+
+    <line x1="286" y1="40" x2="474" y2="40" stroke="#30363d" stroke-width="1"/>
+
+    <circle cx="480" cy="40" r="8" fill="#f59e0b"/>
+    <text x="480" y="55" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Apr '25</text>
+    <text x="480" y="30" font-family="Inter, Arial, sans-serif" font-size="9" fill="#fbbf24" text-anchor="middle">Reciprocal</text>
+
+    <line x1="488" y1="40" x2="674" y2="40" stroke="#30363d" stroke-width="1"/>
+
+    <circle cx="680" cy="40" r="6" fill="#f59e0b"/>
+    <text x="680" y="55" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">Mid '25</text>
+    <text x="680" y="30" font-family="Inter, Arial, sans-serif" font-size="9" fill="#fbbf24" text-anchor="middle">Escalation</text>
+
+    <line x1="686" y1="40" x2="874" y2="40" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+
+    <circle cx="880" cy="40" r="6" fill="#6366f1"/>
+    <text x="880" y="55" font-family="Inter, Arial, sans-serif" font-size="9" fill="#8b949e" text-anchor="middle">2026</text>
+    <text x="880" y="30" font-family="Inter, Arial, sans-serif" font-size="9" fill="#818cf8" text-anchor="middle">Ongoing</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="20" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="624" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6e7681">degen0x.com</text>
+  <text x="1140" y="624" font-family="Inter, Arial, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">Updated March 2026</text>
+</svg>

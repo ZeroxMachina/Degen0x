@@ -1,0 +1,68 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v11: 142 TS errors across 5 files (4 learn pages + structured-data.examples.ts) — up from 15 last cycle due to unescaped JSX in 4 new learn guides. 6/6 API route files present. Cache TTLs properly configured (fear-greed 600s, trending 300s, market-metrics 60s, market-dominance 300s). 529 published slugs, 426 with page.tsx (103 legacy gaps unchanged). 2 new untracked learn pages (Grayscale HYPE ETF, Nasdaq Tokenized Equities) ready to commit. 13 modified + 16 untracked files pending. git index.lock still present. No new deploys since batch commit 21aaf5b.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "529 published slugs, 426 with page.tsx files — 103 legacy slugs still missing (unchanged)",
+          "142 TypeScript errors total across 5 files: crypto-arbitrage-strategies (4 errors), crypto-index-funds (2), institutional-crypto-adoption (2), lido-v3-stvaults (119), structured-data.examples (15)",
+          "All 4 new learn page errors are JSX escaping issues (unescaped '>' and '$' chars) — fixable with simple escaping",
+          "lido-v3-stvaults has the most errors (119) — likely a malformed JSX block at line 865",
+          "2 new untracked learn pages built this cycle: grayscale-hype-etf-defi-guide, nasdaq-tokenized-equities-trading-guide-2026",
+          "Production site cannot be reached from sandbox (egress blocked) — relying on last cycle's 13/13 critical page checks",
+          "No new Vercel deploy since commit 21aaf5b — new pages not yet live"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6/6 core API route files present: fear-greed, trending, market-metrics, market-dominance, prices, defi-yields",
+          "Cache TTLs verified in source: fear-greed s-maxage=600 + SWR=1200, trending s-maxage=300 + SWR=600, market-metrics s-maxage=60 + SWR=120, market-dominance s-maxage=300 + SWR=600",
+          "CARRY-OVER [P1]: /api/market-metrics was 404 in production last cycle — cannot verify fix from sandbox",
+          "CARRY-OVER [P2]: Fear & Greed data was 2 days stale (Mar 23) as of last cycle — upstream API or cache issue",
+          "Rate limiter middleware still only applied to /api/health — other routes unprotected (pre-existing, low priority)",
+          "No new API routes added this cycle; notifications/feed route created but untracked"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Latest deploy: batch commit 21aaf5b (170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes)",
+          "No new deploy triggered this cycle — 13 modified + 16 untracked files pending commit",
+          "git index.lock still present — blocks new commits until manually cleared",
+          "Local build cannot run (sandbox OOM) — Vercel build is source of truth",
+          "New notifications API route (src/app/api/notifications/feed/) and data file created but not committed",
+          "globals.css modified — could affect visual rendering across all pages (needs visual QA post-deploy)"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED this cycle: 2 new learn pages (Grayscale HYPE ETF, Nasdaq Tokenized Equities), notifications feed API stub, community social drafts v10-v11, 4 SVG social cards",
+          "CARRY-OVER for next cycle: (1) Fix 142 TS errors in 4 learn pages, (2) Clear index.lock and commit pending files, (3) Verify /api/market-metrics 404 fix in prod, (4) Investigate F&G data staleness",
+          "BLOCKERS requiring Jefe's attention: git index.lock prevents commits — needs manual 'rm .git/index.lock' or force clear",
+          "Published page count: 529 slugs (+1 from last cycle). Total page.tsx: ~1,174 (+2 new untracked)",
+          "Day 72 of launch. 59 agent runs today. Thu Mar 27 convergence day approaching: $14.16B options expiry + SEC 91 ETF rulings"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Slugs", "value": "529", "pct": 85, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "426/529", "pct": 81, "color": "#06b6d4" },
+          { "label": "TypeScript Errors", "value": "142 (5 files)", "pct": 25, "color": "#f59e0b" },
+          { "label": "API Routes Present", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache TTLs Configured", "value": "4/4 checked", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "29", "pct": 30, "color": "#f59e0b" },
+          { "label": "Git Lock Status", "value": "index.lock present", "pct": 10, "color": "#ef4444" },
+          { "label": "Prod Reachable", "value": "No (sandbox block)", "pct": 0, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

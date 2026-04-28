@@ -1,0 +1,48 @@
+{
+  "date": "2026-03-28",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited 4 new pages from today's build cycle, fixed component consistency issues on TON and SUI pages (added Breadcrumb + BackToTop), created 2 missing OG images, and added complete OpenGraph metadata.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "TON DeFi page: Replaced manual inline <nav> breadcrumb with reusable Breadcrumb component (adds BreadcrumbList structured data automatically)",
+          "SUI DeFi page: Replaced manual inline <nav> breadcrumb with reusable Breadcrumb component for consistency",
+          "TON DeFi page: Added BackToTop component (was missing, inconsistent with LST and RWA pages)",
+          "SUI DeFi page: Added BackToTop component (was missing, inconsistent with LST and RWA pages)",
+          "TON DeFi page: Added complete OpenGraph images array with dimensions (1200x630) and alt text to metadata",
+          "SUI DeFi page: Added complete OpenGraph images array with dimensions (1200x630) and alt text to metadata",
+          "TON DeFi page: Added publishedTime, modifiedTime, and authors to OpenGraph metadata",
+          "SUI DeFi page: Added publishedTime, modifiedTime, and authors to OpenGraph metadata",
+          "Fixed OG image references from .png to .svg to match actual file format (both pages)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-ton-defi-guide.svg (1200x630) — Dark theme with TON branding (#0088CC), Telegram Mini Apps flow diagram, key stats (TVL $150-300M, 1B+ users, 4.86% yield), protocol labels (STON.fi, DeDust, EVAA)",
+          "OG image: og-sui-defi-guide.svg (1200x630) — Dark theme with Sui branding (#6fbcf0), protocol TVL bar chart (Suilend $745M, Navi $723M, Momentum $551M, Cetus $255M), key stats ($2.6B TVL, +220% YoY, <400ms finality)"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Informational)",
+        "items": [
+          "LST Comparison and RWA Yield pages: Properly use Breadcrumb + BackToTop components — no issues found",
+          "TON page uses <details>/<summary> for FAQ accordion (semantic HTML) while other pages use static divs — good pattern but inconsistent across site",
+          "SUI page renders FAQs via faq.mainEntity mapping instead of a simple array — works but differs from other pages",
+          "All 4 pages lack ARIA labels on interactive elements — noted for future accessibility sprint",
+          "All 4 pages have good responsive patterns: grid-cols-2 md:grid-cols-4, overflow-x-auto on tables, flex-wrap on badges"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_modified": [
+      "src/app/learn/ton-defi-ecosystem-guide-2026/page.tsx",
+      "src/app/learn/sui-defi-ecosystem-guide-2026/page.tsx",
+      "public/og-ton-defi-guide.svg",
+      "public/og-sui-defi-guide.svg"
+    ]
+  }
+}

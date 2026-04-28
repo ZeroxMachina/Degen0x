@@ -1,0 +1,72 @@
+{
+  "date": "2026-03-24",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v8: 20 learn guides promoted today (batches 1-9), publish queue nearly drained (4 remaining). TS errors unchanged at 46 across 3 files. 746 uncommitted files, 7 days since last deploy — P0 deploy risk persists.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "TYPESCRIPT: 46 errors across 3 files (unchanged from v7). Affected: crypto-arbitrage-strategies-guide-2026/page.tsx, crypto-index-funds-guide-2026/page.tsx, structured-data.examples.ts.",
+          "PAGE AUDIT: 467 unique published slugs, 364 have page.tsx (78%), 103 missing (served via dynamic catch-all routes or absent). No change from v7.",
+          "TODAY'S PAGES: 20 learn guides promoted across 9 batches (bitcoin-mining, zk-coprocessors, berachain, celestia, depin, scroll-zkevm, polymarket, etc).",
+          "KNOWN 404s: /compare/exchanges and /trading still missing page.tsx — carried over.",
+          "LIVE VERIFICATION: Egress to degen0x.com blocked from this environment — cannot verify HTTP 200s on production.",
+          "BUILD GATE: 46 TS errors are non-blocking for Next.js production build. No new regressions this cycle."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "ALL 6 CORE API ROUTE FILES PRESENT: fear-greed, trending, market-metrics, market-dominance, prices, defi-yields — all have route.ts locally.",
+          "BONUS ROUTES: 7 additional API routes found (cache-stats, health, news-rss, newsletter, notifications, standup-email, subscribe).",
+          "CACHE TTLs VERIFIED: fear-greed 10min, trending 5min, market-metrics 60s, market-dominance 5min, prices 60s, defi-yields configurable. All use stale-while-revalidate at 2x.",
+          "CARRY-OVER [P1]: /api/market-metrics route.ts exists locally but was never committed — still 404 in production.",
+          "CARRY-OVER [P1]: Rate limiting only on /api/health and /api/cache-stats. 6 core data routes remain unprotected.",
+          "LIVE HEALTH CHECK: Cannot verify — egress blocked from this environment."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "LAST DEPLOY: Commit e999560 (Mar 17) — 7 days since last deploy. Zero commits since.",
+          "UNCOMMITTED WORK: 746 items (698 untracked, 48 modified). Up from 740 in v7 — delta is new report/community files.",
+          "CRITICAL FILES UNCOMMITTED: middleware.ts (+2 lines), published-pages.ts (+146 lines). Core routing and indexing config not in production.",
+          "DEPLOY RISK [P0]: 7 days and 746 files uncommitted. All pages promoted since Mar 17 exist only locally.",
+          "SITE STATUS: Cannot verify from this environment (egress blocked)."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: 20 learn guides promoted to PUBLISHED_PAGES across 9 batches (Mar 24 builds).",
+          "PUBLISH QUEUE: Nearly drained — 4 pages remaining (sei-network, advanced-staking, crypto-tax-loss-harvesting, cold-storage-seed-phrase).",
+          "TOTAL PUBLISHED: 467 unique slugs in PUBLISHED_PAGES (up from ~460 at start of today).",
+          "ACTION REQUIRED [P0]: Commit and deploy immediately. 7 days of drift between local and production is critical risk. All 20+ pages promoted since Mar 17 are invisible to Google.",
+          "ACTION REQUIRED [P1]: Fix 46 TS errors in 3 files (mainly unescaped > chars in JSX and structured-data.examples.ts syntax issues).",
+          "ACTION REQUIRED [P1]: Commit /api/market-metrics to fix production 404.",
+          "CARRY-OVER: Wire rate limiters to 6 core API routes, build /trading page, drain final 4 queue items, add JSON-LD to pages missing structured data."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages Total", "value": "467 unique slugs", "pct": 92, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "364/467 (78%)", "pct": 78, "color": "#f59e0b" },
+          { "label": "Pages Promoted Today", "value": "20 learn guides", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue Remaining", "value": "4 pages", "pct": 95, "color": "#4ade80" },
+          { "label": "API Route Files", "value": "6/6 core + 7 bonus", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache TTLs Configured", "value": "6/6 routes", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript Errors", "value": "46 errors / 3 files", "pct": 12, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "746 items", "pct": 5, "color": "#ef4444" },
+          { "label": "Days Since Deploy", "value": "7 days", "pct": 10, "color": "#ef4444" },
+          { "label": "Rate-Limited Routes", "value": "2/8 (25%)", "pct": 25, "color": "#ef4444" },
+          { "label": "New Regressions", "value": "0", "pct": 100, "color": "#4ade80" },
+          { "label": "Delta from v7", "value": "+6 files, 0 TS errors change", "pct": 90, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

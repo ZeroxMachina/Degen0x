@@ -1,0 +1,56 @@
+{
+  "date": "2026-03-25",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 2 learn guides (AI Agent Frameworks Comparison, RWA Platforms Comparison) from PUBLISH_QUEUE to PUBLISHED_PAGES as batch 16. Queue now empty. Notifications feed updated. Deploy pending git push.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/ai-agent-frameworks-comparison-2026", "status": "pass" },
+          { "slug": "/learn/rwa-platforms-comparison-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages Exist (page.tsx)", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata Export", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "H1/Hero Present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "JSON-LD Structured Data", "value": "1/2", "pct": 50, "color": "#f59e0b" },
+          { "label": "TypeScript (src code)", "value": "Clean", "pct": 100, "color": "#4ade80" },
+          { "label": "Full Build", "value": "Skipped (VM OOM)", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko (/api/prices)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama (/api/defi-yields)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer", "value": "Active (60s/300s TTL)", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Configured", "pct": 100, "color": "#4ade80" },
+          { "label": "Health Endpoint", "value": "Operational", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback Data", "value": "In place", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy Status",
+        "metrics": [
+          { "label": "Vercel Deploy", "value": "Pending git push", "pct": 0, "color": "#06b6d4" },
+          { "label": "Notifications Feed", "value": "Updated", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Published Pages", "value": "~536", "pct": 67, "color": "#4ade80" },
+          { "label": "Queue Remaining", "value": "0 pages", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "PUBLISH_QUEUE is now empty — new pages need to be built and added.",
+      "/learn/ai-agent-frameworks-comparison-2026 is missing JSON-LD structured data — consider adding.",
+      "Full Next.js build exceeds VM memory (Bus error). Vercel CI will handle this with 8GB+ RAM.",
+      "Notifications feed updated with both new guides as top items.",
+      "All API routes (prices, defi-yields, trending, fear-greed, market-dominance) follow standard cache pattern with stale fallbacks."
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1425"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e6edf3"/>
+      <stop offset="100%" stop-color="#c9d1d9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="250" r="200" fill="#6366f1" opacity="0.06"/>
+  <circle cx="150" cy="500" r="120" fill="#7c3aed" opacity="0.04"/>
+
+  <!-- Thematic icon: Lock/Shield with padlock -->
+  <g opacity="0.14" transform="translate(920, 200)">
+    <!-- Shield background -->
+    <path d="M -40 -50 L -40 0 Q 0 50 40 40 Q 0 50 0 50 Q 0 50 -40 40 L -40 0 Z" fill="none" stroke="#6366f1" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Padlock body -->
+    <rect x="-20" y="5" width="40" height="35" rx="4" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+    <!-- Padlock shackle (top arc) -->
+    <path d="M -15 5 Q -15 -20 15 -20 Q 15 5 15 5" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Padlock keyhole -->
+    <circle cx="0" cy="18" r="3" fill="#6366f1" opacity="0.7"/>
+    <!-- Decorative checkmark inside shield -->
+    <path d="M -8 10 L -2 16 L 10 2" stroke="#6366f1" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+
+  <!-- Category badge -->
+  <rect x="60" y="180" width="110" height="32" rx="16" fill="#6366f1" opacity="0.2"/>
+  <text x="115" y="201" fill="#6366f1" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Privacy</text>
+
+  <!-- Title (two lines) -->
+  <text x="60" y="280" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.02em">On-Chain Privacy</text>
+  <text x="60" y="335" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.02em">Infrastructure Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="390" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="20">Zero-knowledge proofs, mixers &amp; private transactions</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="550" width="1200" height="80" fill="#0a0f1e" opacity="0.8"/>
+  <text x="60" y="598" fill="#6366f1" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">degen0x</text>
+  <text x="170" y="598" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="16">degen0x.com</text>
+  <text x="1060" y="598" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="14" text-anchor="end">2026 Guide</text>
+</svg>

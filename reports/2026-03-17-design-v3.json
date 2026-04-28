@@ -1,0 +1,55 @@
+{
+  "date": "2026-03-17",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX polish for today's new build pages — fixed OG image type from 'page' to 'learn' for correct theming, added Twitter card images, added comprehensive ARIA labels and semantic landmarks, improved responsive stats grid layout, and added 44px min-height touch targets to CTA buttons on both Bitcoin Runes and Farcaster SocialFi guides.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Bitcoin Runes: Fixed OG image type from 'page' to 'learn' — now renders with blue gradient + book icon instead of generic purple/pink",
+          "Bitcoin Runes: Added Twitter card images array (was missing, no image on Twitter shares)",
+          "Bitcoin Runes: Changed stats grid from grid-cols-2 to grid-cols-2 sm:grid-cols-3 for better tablet display",
+          "Bitcoin Runes: Added role=list and aria-label to stats grid (6 stats: Category Market Cap, Top Token, etc.) with per-item aria-labels",
+          "Bitcoin Runes: Added aria-label and scope='col' to Runes vs BRC-20 vs Ordinals comparison table",
+          "Bitcoin Runes: Added role=list and aria-label to Top Runes Tokens section with per-token aria-labels (name, mcap, volume)",
+          "Bitcoin Runes: Added role=list and aria-label to Risks section with role=listitem on each risk",
+          "Bitcoin Runes: Converted bottom CTA div to semantic <nav> with aria-label='Related Bitcoin ecosystem guides'",
+          "Bitcoin Runes: Added min-height 44px touch targets to all CTA buttons (BTCFi Guide, Ordinals Guide, Bitcoin L2s)",
+          "Farcaster SocialFi: Fixed OG image type from 'page' to 'learn' — same theming fix as above",
+          "Farcaster SocialFi: Added Twitter card images array (was missing)",
+          "Farcaster SocialFi: Changed stats grid from grid-cols-2 to grid-cols-2 sm:grid-cols-3 for better tablet display",
+          "Farcaster SocialFi: Added role=list and aria-label to stats grid (6 stats: Peak DAU, Current DAU, etc.) with per-item aria-labels",
+          "Farcaster SocialFi: Added aria-label and scope='col' to Farcaster vs Lens Protocol comparison table",
+          "Farcaster SocialFi: Added role=list and aria-label to Challenges section with role=listitem on each challenge",
+          "Farcaster SocialFi: Converted bottom CTA div to semantic <nav> with aria-label='Related Web3 infrastructure guides'",
+          "Farcaster SocialFi: Added min-height 44px touch targets to all CTA buttons (AI Agents, Account Abstraction, Smart Wallets)"
+        ]
+      },
+      {
+        "title": "OG Images & Social Metadata Fixed",
+        "items": [
+          "OG image: Bitcoin Runes (/api/og?title=Bitcoin+Runes+Guide+2026&category=Learn&type=learn) — 1200x630, was type=page (wrong gradient), now type=learn (blue gradient + book icon)",
+          "OG image: Farcaster SocialFi (/api/og?title=Farcaster+%26+SocialFi+Guide+2026&category=Learn&type=learn) — 1200x630, same fix",
+          "Twitter card images added to both pages (were completely missing from twitter metadata config)"
+        ]
+      },
+      {
+        "title": "Audit Findings (No Fix Required)",
+        "items": [
+          "Both pages already have proper Breadcrumb component with correct hierarchy (Home > Learn > Guide Title)",
+          "Both pages already have ArticleStructuredData and FAQStructuredData schemas — no changes needed",
+          "Both pages use proper semantic <article> wrapper and consistent heading hierarchy (h1 > h2 > h3)",
+          "Both pages have proper internal cross-links to related learn guides",
+          "Both pages have disclaimer sections with appropriate warning styling"
+        ]
+      }
+    ],
+    "files_changed": [
+      "src/app/learn/bitcoin-runes-guide-2026/page.tsx (OG type fix, Twitter images, ARIA labels, responsive grid, semantic nav, touch targets)",
+      "src/app/learn/farcaster-socialfi-guide-2026/page.tsx (OG type fix, Twitter images, ARIA labels, responsive grid, semantic nav, touch targets)"
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

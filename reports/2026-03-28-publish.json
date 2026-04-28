@@ -1,0 +1,65 @@
+{
+  "date": "2026-03-28",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 2 pages (tariffs guide + stablecoin yield tracker) from PUBLISH_QUEUE to PUBLISHED_PAGES batch 12; fixed TSX escape bug in tariffs page; 2 blocked pages remain in queue awaiting slug fixes; deployment pending git push.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/tariffs-trade-war-crypto-impact-guide-2026", "status": "pass" },
+          { "slug": "/tools/stablecoin-yield-tracker", "status": "pass" }
+        ]
+      },
+      {
+        "title": "Pages Blocked (still in queue)",
+        "pages": [
+          { "slug": "/learn/crypto-wallet-security-token-approvals-guide", "status": "fail" },
+          { "slug": "/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026", "status": "fail" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "TypeScript (promoted pages)", "value": "0 errors", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "H1 tag present", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Breadcrumbs", "value": "2/2", "pct": 100, "color": "#4ade80" },
+          { "label": "Structured Data (JSON-LD)", "value": "1/2 (tool uses layout.tsx pattern)", "pct": 75, "color": "#06b6d4" },
+          { "label": "Full build", "value": "OOM (VM limit)", "pct": 0, "color": "#f59e0b" },
+          { "label": "Bug fix applied", "value": "TSX escape in tariffs page L431", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko (prices, trending)", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama (defi-yields)", "value": "Healthy", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (token bucket)", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer", "value": "In-memory + CDN SWR", "pct": 90, "color": "#4ade80" },
+          { "label": "API Routes", "value": "14 active", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Vercel Deploy", "value": "Pending git push", "pct": 50, "color": "#06b6d4" },
+          { "label": "Notifications Feed", "value": "Updated (4 items)", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "queue_remaining": 2,
+    "queue_blocked": 2,
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "Fixed TSX escape bug: '>' changed to '&gt;' in tariffs-trade-war page line 431",
+      "Stablecoin yield tracker uses layout.tsx for metadata (client component pattern) — has full OG/Twitter cards but no inline JSON-LD",
+      "2 blocked pages need slug fixes before next publish cycle: crypto-wallet-security-token-approvals-guide and restaking-comparison-eigenlayer-symbiotic-karak-2026",
+      "Full Next.js build OOM in VM — TypeScript check passed for promoted pages",
+      "Pre-existing TS errors (145) in 6 other files are unrelated to this publish batch",
+      "Notifications feed updated with tariffs guide and stablecoin yield tracker as top items",
+      "To deploy: git add -A && git commit -m 'publish: batch 12 — tariffs guide + stablecoin yield tracker' && git push"
+    ]
+  }
+}

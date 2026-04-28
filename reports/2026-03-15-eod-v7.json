@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-15",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v7 — production stable post-redeploy (babylon-protocol page live); PUBLISH_QUEUE fully drained to 0; 292 pages indexed; Sprint 59 apostrophe blocker and rate-limiting gap still open; Vercel Pro trial now ~6 days.",
+    "sections": [
+      {
+        "title": "QA",
+        "items": [
+          "✅ Production stable — build safety net confirmed: ignoreBuildErrors:true, staticGenerationMaxConcurrency:4, workerThreads:false, output:standalone",
+          "✅ DELTA vs v6: /learn/babylon-protocol-bitcoin-staking promoted to PUBLISHED_PAGES via publish-v7 run — page.tsx exists, metadata confirmed, redeploy triggered (Ede7aPH2k)",
+          "✅ PUBLISH_QUEUE now EMPTY — 0 items queued; all pages promoted as of Mar 15 cycle close",
+          "🔴 CARRY-OVER: Build 1b4a15e (Sprint 59) still FAILED — unescaped apostrophe in AICourseRecommendations.tsx line 96 ('you're' in single-quoted string); 57 TS errors across 2 files — unchanged from v6",
+          "✅ No new TypeScript error sources — same 2 files: AICourseRecommendations.tsx (17 errors) and structured-data.examples.ts (40 errors)",
+          "⚠️ CARRY-OVER: 100/292 published pages still missing page.tsx — pre-existing dynamic [slug] route architecture; no regression",
+          "✅ No new regressions introduced this cycle — 24 files changed in HEAD~1 batch, none introducing new error sources"
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "items": [
+          "✅ All 6 public API routes structurally present and healthy: /api/prices, /api/fear-greed, /api/trending, /api/market-metrics, /api/market-dominance, /api/defi-yields",
+          "✅ Ops routes /api/health and /api/cache-stats live (added in 1b4a15e) — health route has rate limiting (checkRateLimit), cache-stats has 5-req limit",
+          "✅ Cache TTLs confirmed stable: prices 60s, fear-greed 600s, trending 300s, market-dominance 300s, defi-yields dynamic (CACHE_DURATION*2), market-metrics 60s",
+          "⚠️ CARRY-OVER: TTL mismatches on 4 routes — fear-greed (s-maxage=600 / revalidate=1200), trending (300/600), market-metrics (60/120), defi-yields (dynamic/dynamic) — minor inconsistencies, no user impact",
+          "🔴 CARRY-OVER: Rate limiting still 0/6 on public data routes — /api/health and /api/cache-stats are the only rate-limited endpoints; security gap on all live data APIs",
+          "⚠️ CARRY-OVER: Fallback data in 2/6 routes (prices partial, market-dominance 4 refs) — 4 routes fully unprotected on total upstream API failure",
+          "✅ No rate limit errors, stale-cascade events, or API failures detected this cycle — pipeline clean"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "✅ Production running on updated deployment Ede7aPH2k (babylon-protocol redeploy triggered via publish-v7) — site accessible, no error spikes",
+          "🔴 CARRY-OVER: Build 1b4a15e (Sprint 59) still FAILED in Vercel — ecosystem/courses routes not live; 1-line AICourseRecommendations.tsx fix unblocks everything",
+          "✅ next.config.ts stable — staticGenerationMaxConcurrency:4, workerThreads:false, output:standalone, webpack __dirname fix, ignoreBuildErrors:true all confirmed",
+          "✅ Middleware clean — 127 lines, single import (next/server), Edge Runtime compliant; pillar pages include solana-alpenglow-guide and onchain-finance-onfi-guide (added last cycle)",
+          "⚠️ URGENT: Vercel Pro trial now ~6 days remaining (down from ~7 in v6) — payment method must be added before expiry to avoid production downgrade",
+          "⚠️ Dubai region (dxb1) still unavailable — Vercel auto-routing, no user-facing impact",
+          "✅ No new deployment failures or performance regressions observed this cycle"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "✅ PUBLISHED: 292 pages in production (up from 290 in v6 — babylon-protocol-bitcoin-staking + correction from v5 accounting)",
+          "✅ QUEUE: 0 items in PUBLISH_QUEUE — fully drained as of this cycle close",
+          "✅ SHIPPED THIS CYCLE: /learn/babylon-protocol-bitcoin-staking promoted, PUBLISH_QUEUE drained, Vercel redeploy confirmed",
+          "🔴 BLOCKER #1 (Jefe action): Fix AICourseRecommendations.tsx line 96 — change unescaped apostrophe in 'you're' to `&apos;` or curly-quote — 1-line fix unlocks Sprint 59 (176 dApps + courses hub) reaching production",
+          "⚠️ BLOCKER #2 (Jefe action): Add Vercel payment method within 6 days — Pro trial expiry imminent, production risk if downgraded",
+          "⚠️ CARRY-OVER: Rate limiting 0/6 public data routes — outstanding since Sprint 38, rising risk as organic traffic grows",
+          "⚠️ CARRY-OVER: Fallback data 2/6 routes (partial) — resilience gap ahead of organic traffic window",
+          "⚠️ CARRY-OVER: 100 pages in published-pages.ts without page.tsx — dynamic route architecture, audit still deferred",
+          "📌 NEXT CYCLE PLAN: No pages to publish (queue empty) — focus should shift to (1) Sprint 59 unblock fix, (2) rate limiting sprint, (3) new content/tools for queue refill"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "Ready", "pct": 100, "color": "#4ade80" },
+          { "label": "Build Health (1b4a15e)", "value": "FAILED", "pct": 0, "color": "#ef4444" },
+          { "label": "Pages Live", "value": "292", "pct": 97, "color": "#4ade80" },
+          { "label": "Queue Depth", "value": "0 (empty)", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "8/8", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiting (data)", "value": "0/6", "pct": 0, "color": "#ef4444" },
+          { "label": "Fallback Coverage", "value": "2/6 partial", "pct": 33, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "57 (2 files)", "pct": 30, "color": "#f59e0b" },
+          { "label": "Vercel Trial", "value": "~6 days left", "pct": 20, "color": "#f59e0b" },
+          { "label": "Middleware Lines", "value": "127 / Edge OK", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Shipped (cycle)", "value": "+2 (net)", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

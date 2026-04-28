@@ -1,0 +1,116 @@
+// ─── Learn Pages: April 3, 2026 (Build v11) ─────────────────────────────────
+// Topics: x402 Protocol AI Agent Payments, Crypto ETFs Complete Guide 2026
+
+import { PageData } from "@/lib/types";
+
+export const x402ProtocolAiAgentPaymentsGuide2026Page: PageData = {
+  slug: "/learn/x402-protocol-ai-agent-payments-guide-2026",
+  title: "x402 Protocol Guide 2026: AI Agent Payments & HTTP 402 Standard | degen0x",
+  description:
+    "Complete guide to the x402 protocol in 2026. Learn how AI agents pay for APIs autonomously using USDC and HTTP 402, the four-component architecture, Base and Solana support, the x402 Foundation, and comparison with Google AP2 and Lightning Network.",
+  category: "learn",
+  subcategory: "infrastructure",
+  tags: [
+    "x402",
+    "ai-agents",
+    "ai-payments",
+    "http-402",
+    "coinbase",
+    "usdc",
+    "base",
+    "solana",
+    "micropayments",
+    "mcp-servers",
+    "x402-foundation",
+    "stripe",
+    "google-ap2",
+    "stablecoins",
+    "programmable-payments",
+  ],
+  publishedAt: "2026-04-03T00:00:00Z",
+  updatedAt: "2026-04-03T00:00:00Z",
+  difficulty: "intermediate",
+  readingTime: 16,
+  wordCount: 3800,
+  status: "queued",
+  seo: {
+    targetKeyword: "x402 protocol ai agent payments guide 2026",
+    titleTag: "x402 Protocol Guide 2026: AI Agent Payments & HTTP 402 Standard | degen0x",
+    metaDescription:
+      "Complete x402 protocol guide for 2026. HTTP 402 payment standard for AI agents, USDC stablecoin payments on Base and Solana, $600M annualized volume, x402 Foundation, and AI payment protocol comparison.",
+    schemas: ["Article", "FAQPage", "BreadcrumbList"],
+    internalLinks: [
+      "/learn/ai-crypto-agents-autonomous-defi-guide-2026",
+      "/learn/stablecoins-explained-guide-2026",
+      "/learn/payfi-crypto-payments-guide-2026",
+      "/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026",
+      "/learn/defai-ai-powered-defi-automation-guide-2026",
+    ],
+  },
+  toc: [
+    { id: "what-is-x402", title: "What Is the x402 Protocol?" },
+    { id: "how-x402-works", title: "How x402 Payments Work" },
+    { id: "ai-agents-mcp", title: "x402 for AI Agents & MCP Servers" },
+    { id: "networks-economics", title: "Supported Networks & Token Economics" },
+    { id: "foundation-ecosystem", title: "The x402 Foundation & Ecosystem" },
+    { id: "protocols-compared", title: "AI Payment Protocols Compared" },
+    { id: "risks", title: "Risks & Considerations" },
+    { id: "faq", title: "Frequently Asked Questions" },
+  ],
+};
+
+export const cryptoEtfsCompleteGuide2026Page: PageData = {
+  slug: "/learn/crypto-etfs-complete-guide-2026",
+  title: "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana, XRP & Beyond | degen0x",
+  description:
+    "Complete guide to crypto ETFs in 2026. Bitcoin, Ethereum, Solana staking ETFs, XRP, Polkadot, Litecoin products, $146B total AUM, SEC approval timeline, and how to invest through traditional finance.",
+  category: "learn",
+  subcategory: "investing",
+  tags: [
+    "crypto-etfs",
+    "bitcoin-etf",
+    "ethereum-etf",
+    "solana-etf",
+    "xrp-etf",
+    "polkadot-etf",
+    "litecoin-etf",
+    "staking-etf",
+    "blackrock-ibit",
+    "fidelity-fbtc",
+    "sec-approval",
+    "institutional-crypto",
+    "spot-etf",
+    "crypto-investing",
+    "etf-staking",
+  ],
+  publishedAt: "2026-04-03T00:00:00Z",
+  updatedAt: "2026-04-03T00:00:00Z",
+  difficulty: "intermediate",
+  readingTime: 18,
+  wordCount: 4200,
+  status: "queued",
+  seo: {
+    targetKeyword: "crypto etfs complete guide 2026 bitcoin ethereum solana xrp",
+    titleTag: "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana, XRP & Beyond | degen0x",
+    metaDescription:
+      "Complete crypto ETF guide for 2026. $146B AUM across 140+ products, Solana staking ETFs with 7% APY, XRP $1.37B inflows, Bitcoin IBIT $54B+, SEC approval timeline, and how to invest.",
+    schemas: ["Article", "FAQPage", "BreadcrumbList"],
+    internalLinks: [
+      "/learn/bitcoin-etf-institutional-guide-2026",
+      "/learn/crypto-staking-guide-2026",
+      "/learn/solana-defi-ecosystem-guide-2026",
+      "/learn/institutional-defi-onchain-finance-guide-2026",
+      "/learn/rwa-tokenization-real-world-assets-guide-2026",
+    ],
+  },
+  toc: [
+    { id: "what-are-crypto-etfs", title: "What Are Crypto ETFs?" },
+    { id: "etf-timeline", title: "The Crypto ETF Timeline: 2024-2026" },
+    { id: "btc-eth-etfs", title: "Bitcoin & Ethereum ETFs: The Foundation" },
+    { id: "altcoin-etfs", title: "Solana, XRP & Altcoin ETFs" },
+    { id: "staking-etfs", title: "Staking ETFs: Earning Yield" },
+    { id: "etfs-compared", title: "Crypto ETFs Compared" },
+    { id: "risks", title: "Risks & Considerations" },
+    { id: "faq", title: "Frequently Asked Questions" },
+  ],
+};

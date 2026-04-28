@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="50%" stop-color="#0a1128"/>
+      <stop offset="100%" stop-color="#080d1c"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="900" cy="200" r="250" fill="#06b6d4" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="300" cy="400" r="200" fill="#8b5cf6" opacity="0.03" filter="url(#softGlow)"/>
+
+  <!-- Top gradient bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad)"/>
+
+  <!-- NEW GUIDE badge -->
+  <rect x="60" y="35" width="100" height="28" rx="14" fill="rgba(99,102,241,0.15)"/>
+  <text x="78" y="54" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#818cf8">NEW GUIDE</text>
+
+  <!-- degen0x logo -->
+  <text x="1070" y="55" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="url(#brandGrad)" letter-spacing="-0.5">degen0x</text>
+
+  <!-- Main title -->
+  <text x="60" y="120" font-family="Inter, sans-serif" font-size="44" font-weight="900" fill="#e6edf3" letter-spacing="-1.5">DECENTRALIZED</text>
+  <text x="60" y="170" font-family="Inter, sans-serif" font-size="44" font-weight="900" fill="url(#brandGrad)" letter-spacing="-1.5">GPU COMPUTE NETWORKS</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="210" font-family="Inter, sans-serif" font-size="18" font-weight="400" fill="#8b949e">The $100B AI compute market is going on-chain</text>
+
+  <!-- Protocol cards row -->
+  <!-- Akash -->
+  <rect x="60" y="250" width="255" height="140" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+  <text x="80" y="282" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#06b6d4">Akash</text>
+  <text x="80" y="305" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#8b949e">General-purpose cloud</text>
+  <rect x="80" y="318" width="120" height="22" rx="11" fill="rgba(6,182,212,0.1)"/>
+  <text x="95" y="333" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#06b6d4">85% cost savings</text>
+  <text x="80" y="370" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">Kubernetes-native ·</text>
+  <text x="80" y="385" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">Reverse auction model</text>
+
+  <!-- Render -->
+  <rect x="335" y="250" width="255" height="140" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="355" y="282" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#8b5cf6">Render</text>
+  <text x="355" y="305" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#8b949e">GPU rendering for 3D/AI</text>
+  <rect x="355" y="318" width="140" height="22" rx="11" fill="rgba(139,92,246,0.1)"/>
+  <text x="370" y="333" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#8b5cf6">Solana-migrated</text>
+  <text x="355" y="370" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">Hollywood studios ·</text>
+  <text x="355" y="385" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">Apple Vision Pro ready</text>
+
+  <!-- io.net -->
+  <rect x="610" y="250" width="255" height="140" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+  <text x="630" y="282" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#f59e0b">io.net</text>
+  <text x="630" y="305" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#8b949e">GPU aggregator marketplace</text>
+  <rect x="630" y="318" width="140" height="22" rx="11" fill="rgba(245,158,11,0.1)"/>
+  <text x="645" y="333" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#f59e0b">1M+ GPUs pooled</text>
+  <text x="630" y="370" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">Clusters from idle ·</text>
+  <text x="630" y="385" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">consumer hardware</text>
+
+  <!-- Bittensor -->
+  <rect x="885" y="250" width="255" height="140" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <text x="905" y="282" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#6366f1">Bittensor</text>
+  <text x="905" y="305" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#8b949e">Decentralized ML training</text>
+  <rect x="905" y="318" width="140" height="22" rx="11" fill="rgba(99,102,241,0.1)"/>
+  <text x="920" y="333" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#6366f1">Subnet architecture</text>
+  <text x="905" y="370" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">Incentivized AI ·</text>
+  <text x="905" y="385" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6e7681">model marketplace</text>
+
+  <!-- Market context bar -->
+  <rect x="60" y="420" width="1080" height="80" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="100" y="450" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681">AI COMPUTE MARKET</text>
+  <text x="100" y="480" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#e6edf3">$100B+</text>
+
+  <rect x="310" y="432" width="1" height="55" fill="rgba(255,255,255,0.08)"/>
+
+  <text x="340" y="450" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681">NVIDIA CHIP DEMAND</text>
+  <text x="340" y="480" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#06b6d4">$1T by 2027</text>
+
+  <rect x="570" y="432" width="1" height="55" fill="rgba(255,255,255,0.08)"/>
+
+  <text x="600" y="450" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681">DEPIN THESIS</text>
+  <text x="600" y="480" font-family="Inter, sans-serif" font-size="26" font-weight="800" fill="#8b5cf6">AI × Crypto</text>
+
+  <rect x="800" y="432" width="1" height="55" fill="rgba(255,255,255,0.08)"/>
+
+  <text x="830" y="450" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#6e7681">NARRATIVE STATUS</text>
+  <rect x="830" y="460" width="90" height="24" rx="12" fill="rgba(34,197,94,0.12)"/>
+  <text x="850" y="477" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#22c55e">SURGING</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="525" width="1200" height="105" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="525" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <text x="60" y="565" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#e6edf3">The AI compute race isn't just cloud vs. cloud anymore.</text>
+  <text x="60" y="590" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#8b949e">Decentralized GPU networks are making AI infrastructure permissionless and 85% cheaper.</text>
+
+  <text x="1140" y="565" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="url(#brandGrad)" text-anchor="end">degen0x.com/learn/decentralized-gpu-compute-networks-guide</text>
+  <text x="1140" y="590" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#6e7681" text-anchor="end">Free tools · No signup · Just data</text>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#brandGrad)"/>
+</svg>

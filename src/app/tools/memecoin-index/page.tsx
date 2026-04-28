@@ -1,0 +1,70 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import MemecoinIndexClient from "./MemecoinIndexClient";
+import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+export const metadata: Metadata = {
+  title: `Meme Coin Index & Tracker 2026 — Live Prices, Volume & Trends | degen0x`,
+  description: `Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
+  keywords: ["meme coin tracker", "meme coin index", "DOGE price", "PEPE price", "meme coin list", "best meme coins"],
+  alternates: { canonical: "/tools/memecoin-index" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Memecoin Index', },
+  ],
+};
+
+export default function MemecoinIndexPage() {
+  return (
+    <>
+      <ArticleSchema
+        headline="Tools"
+        description="Tools"
+        url="/tools/memecoin-index"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/memecoin-index" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/memecoin-index" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/memecoin-index"
+        name="Meme Coin Index & Tracker 2026"
+        description="Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}."
+      />
+      <MemecoinIndexClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Meme Coin Index & Tracker 2026 \u2014 Live Prices, Volume & Trends | degen0x", "description": "Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.", "url": "https://degen0x.com/tools/memecoin-index", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/tools/advanced-charting" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Charting</a>
+  <a href="/tools/ai-trading-signals" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ai Trading Signals</a>
+  <a href="/tools/airdrop-eligibility" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Airdrop Eligibility</a>
+  <a href="/tools/airdrop-tracker" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Airdrop Tracker</a>
+  <a href="/tools/alerts-dashboard" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Alerts Dashboard</a>
+  <a href="/tools/altcoin-etf-tracker" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Altcoin Etf Tracker</a>
+  <a href="/tools/altcoin-season-index" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Altcoin Season Index</a>
+  <a href="/tools/backtesting-engine" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Backtesting Engine</a>
+</nav>
+      </>
+  );
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="a-og-nexo-card-review" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <radialGradient id="g-og-nexo-card-review" cx="80%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="p-og-nexo-card-review" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(99,102,241,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <rect width="1200" height="630" fill="url(#p-og-nexo-card-review)"/>
+  <rect width="1200" height="630" fill="url(#g-og-nexo-card-review)"/>
+
+  <rect x="0" y="0" width="1200" height="4" fill="url(#a-og-nexo-card-review)"/>
+
+  <text x="60" y="80" fill="#818cf8" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="700" letter-spacing="0.05em">degen0x</text>
+
+  <rect x="60" y="120" width="149" height="32" rx="16" fill="#f59e0b" opacity="0.15"/>
+  <text x="80" y="142" fill="#f59e0b" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="0.08em">💳 CARD REVIEW</text>
+
+  <text x="60" y="230" fill="#e6edf3" font-family="Inter,system-ui,sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">
+    <tspan x="60" dy="0">Nexo Card Review</tspan>
+  </text>
+
+  <circle cx="1050" cy="180" r="120" fill="#f59e0b" opacity="0.06"/>
+  <circle cx="1100" cy="280" r="80" fill="#ef4444" opacity="0.04"/>
+  <circle cx="980" cy="350" r="60" fill="#f59e0b" opacity="0.03"/>
+
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.4)"/>
+  <text x="60" y="616" fill="#6e7681" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="500">degen0x.com</text>
+  <text x="1140" y="616" fill="#6e7681" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="500" text-anchor="end">2026</text>
+</svg>

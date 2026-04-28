@@ -1,0 +1,71 @@
+{
+  "date": "2026-04-01",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 2 standup: market green (BTC $68,688 +1.94%, ETH $2,133 +3.75%, SOL $83.86 +1.08%) but F&G stuck at 8 Extreme Fear. 433 uncommitted files — Day 7 without deploy remains the existential P0. No progress on any v1 priorities.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: $68,688.20 (+1.94% 24h) — up ~$150–$976 from v1 standup ($67,712–$68,534). Holding solidly above $68K. Recovery trend intact but still down ~24% YTD for Q1 close.",
+          "ETH: $2,133.05 (+3.75% 24h) — up ~$25 from v1 standup ($2,108). ETH showing relative strength vs BTC today, reclaiming $2,130 level. Still down ~60% YTD.",
+          "SOL: $83.86 (+1.08% 24h) — newly tracked this cycle. Down ~72% YTD. Low volatility session.",
+          "F&G INDEX: 8 (Extreme Fear) — UNCHANGED from v1. Now 54+ day streak in Extreme Fear. Price-sentiment divergence continues: market green, fear accelerating. Historically, readings this low correlate with local bottoms.",
+          "DELTA FROM V1 STANDUP (same day): BTC +$150–$976. ETH +$25. SOL now tracked. F&G unchanged at 8. Uncommitted files 432→433 (+1). Page.tsx count flat at 1,235. No new publishes. Global crypto market cap ~$2.42T.",
+          "GSC/TRAFFIC GAP: Still no direct GSC access from sandbox. 3-day gap (Mar 30–31) in analytics coverage remains unrecovered. Any traffic movements during the deploy drought are untracked."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE STATUS: This is the 2nd standup of Apr 1. Only 1 prior report exists today (v1 standup). No build, publish, design, community, or eod cycles have run yet today.",
+          "V1 PRIORITIES STATUS: (1) Emergency deploy 433 files — NOT DONE, now +1 file. (2) Q1 retrospective content — NOT STARTED. (3) Resume full agent rotation — PARTIAL (only 2 standups so far).",
+          "BLOCKERS (UNCHANGED): P0 — 433 uncommitted files, Day 7 since last deploy (Mar 25, 21aaf5b). P1 — 2 blocked queue items (wallet-security slug mismatch, restaking missing page.tsx). P2 — ~105 legacy slugs missing page.tsx. P3 — 147+ TS errors. P3 — CoinGecko rate limit risk.",
+          "GIT STATUS: 433 files pending. 31 files changed in tracked diff (992 insertions, 595 deletions). Major changes in published-pages.ts (+160 lines), NotificationCenter.tsx refactor, learn page data updates. All invisible to production.",
+          "RISK: Every hour without deploy = lost indexing for 77+ published slugs, 14+ learn pages, 6+ OG images, UX fixes. Compounding SEO debt is now 7 days deep."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — EMERGENCY DEPLOY [DAY 7 — UNCHANGED]: 433 uncommitted files. This has been P0 across 6+ standup reports. Jefe action required: `git add -A && git commit -m 'batch deploy' && git push`. Every additional cycle without deploy compounds indexing debt. The 160-line published-pages.ts update alone unlocks dozens of pages for Google.",
+          "PRIORITY 2 — Q1 RETROSPECTIVE CONTENT (WINDOW CLOSING): April 1 is the ideal publish date for 'Q1 2026 Crypto Market Recap'. BTC -24% YTD, ETH -60%, SOL -72%, F&G at 8. High-intent search traffic window is open NOW but decays rapidly. Build cycle should produce this page today.",
+          "PRIORITY 3 — RUN FULL 6-AGENT ROTATION: Only 2 standup runs today. Need build cycle to produce content, publish cycle to clear queue, design for OG images, community for social presence, and EOD QA. 3-day gap means significant catch-up needed."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "CRITICAL — 433 files pending, Day 7 stale", "pct": 2, "color": "#ef4444" },
+          { "label": "Page.tsx Files on Disk", "value": "1,235 (unchanged from v1)", "pct": 90, "color": "#4ade80" },
+          { "label": "Unique Published Slugs", "value": "~583 (deploy needed to go live)", "pct": 60, "color": "#f59e0b" },
+          { "label": "Publish Queue", "value": "0 active (2 blocked)", "pct": 95, "color": "#4ade80" },
+          { "label": "Missing page.tsx (legacy)", "value": "~105 slugs (~18% gap)", "pct": 17, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "433 (+1 from v1)", "pct": 2, "color": "#ef4444" },
+          { "label": "TS Errors", "value": "147+ (non-blocking)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$68,688.20 (+1.94% 24h)", "pct": 52, "color": "#4ade80" },
+          { "label": "ETH Price", "value": "$2,133.05 (+3.75% 24h)", "pct": 35, "color": "#4ade80" },
+          { "label": "SOL Price", "value": "$83.86 (+1.08% 24h)", "pct": 28, "color": "#4ade80" },
+          { "label": "Fear & Greed", "value": "8 (Extreme Fear — 54+ day streak)", "pct": 8, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$90 (2 standup runs × $45)", "pct": 2, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — api.resend.com blocked from browser (CORS/Failed to fetch). Same sandbox egress limitation as all previous cycles. Manual send or server-side relay needed."
+  }
+}

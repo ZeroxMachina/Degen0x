@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAccent3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1729;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad3)"/>
+  <rect width="1200" height="8" fill="url(#gradAccent3)"/>
+
+  <!-- decorative circles -->
+  <circle cx="170" cy="150" r="52" fill="none" stroke="#4f46e5" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="1060" cy="520" r="48" fill="none" stroke="#0891b2" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="1095" cy="160" r="36" fill="none" stroke="#d97706" stroke-width="1" opacity="0.15"/>
+
+  <!-- decorative staking bars/layers and percentage symbol -->
+  <g opacity="0.35">
+    <!-- staking layer bars -->
+    <rect x="950" y="380" width="70" height="12" fill="none" stroke="#4f46e5" stroke-width="1.5" rx="2"/>
+    <rect x="950" y="405" width="85" height="12" fill="none" stroke="#0891b2" stroke-width="1.5" rx="2"/>
+    <rect x="950" y="430" width="95" height="12" fill="none" stroke="#d97706" stroke-width="1.5" rx="2"/>
+
+    <!-- percentage symbol -->
+    <text x="1050" y="495" font-family="Inter, sans-serif" font-size="56" font-weight="700" fill="#0891b2" opacity="0.4">%</text>
+
+    <!-- small upward arrow for growth -->
+    <line x1="1005" y1="530" x2="1005" y2="505" stroke="#4f46e5" stroke-width="2"/>
+    <polygon points="1005,500 1002,510 1008,510" fill="#4f46e5"/>
+  </g>
+
+  <!-- badge -->
+  <text x="80" y="120" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#06b6d4" opacity="0.9">STAKING</text>
+
+  <!-- title -->
+  <text x="80" y="260" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">Advanced Staking</text>
+  <text x="80" y="310" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">Strategies Guide 2026</text>
+
+  <!-- subtitle -->
+  <text x="80" y="370" font-family="Inter, sans-serif" font-size="17" fill="#8b949e">Maximize validator returns with liquid staking, restaking &amp; DVT</text>
+
+  <!-- degen0x branding -->
+  <text x="1120" y="600" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="end" opacity="0.8">degen0x.com</text>
+
+  <!-- bottom gradient line -->
+  <rect y="622" width="1200" height="8" fill="url(#gradAccent3)" opacity="0.5"/>
+</svg>

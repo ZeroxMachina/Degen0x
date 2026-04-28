@@ -1,0 +1,88 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 14,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v14: BTC $70,600-$71,240 (flat from v13). F&G confirmed 11-14 (Extreme Fear) — 46-day streak intact, v12's 35 claim debunked. NEW: Morgan Stanley filed S-1 for spot BTC ETF (first major US bank), ETH net taker volume $133M (highest since Jul 2022), CLARITY Act nearing Senate markup. Publish queue: 2 items (DeFi insurance + DVT). index.lock NOW 15+ hours. 48 dirty files. ~31 hours to Thu convergence ($14B options + SEC 91 ETFs). 71 agent runs today ($5,555).",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "MARKET UPDATE: BTC $70,600-$71,240 (essentially flat from v13). 24h range $70,450-$71,890. ETH $2,166 (+0.5%), eyeing $2,200 resistance. Volume compressed to $98.7B — market in wait mode before Thu catalysts.",
+          "F&G CONFIRMED: 11-14 (Extreme Fear). Multiple independent sources (Blockchain Magazine, feargreedmeter.com, CoinMarketCap) all confirm single-digit-to-teens reading. The 46-day extreme fear streak is INTACT — v12's claim of 35 is definitively debunked. This matches only COVID crash (Mar 2020), Terra/Luna (Jun 2022), and now Mar 2026 in severity.",
+          "NEW — MORGAN STANLEY SPOT BTC ETF: Filed S-1 amendment for Morgan Stanley Bitcoin Trust (MSBT) on NYSE Arca. First major US bank to issue a spot Bitcoin ETF under its own name. This is a massive institutional signal alongside existing BlackRock IBIT + Fidelity FBTC.",
+          "NEW — ETH BUYER SURGE: Analyst CryptoJack reports ETH net taker volume hit $133M — highest since July 2022. Suggests smart money accumulating at extreme fear levels.",
+          "NEW — CLARITY ACT UPDATE: Stablecoin yield 99% resolved; approaching Senate markup. PLUS House Financial Services Committee held tokenization hearing today as RWA market exceeds $12B on-chain.",
+          "SPOT ETF FLOWS (Mar 24): Net inflow $180M across 11 products. BlackRock IBIT +$215M, Fidelity FBTC +$95M. Institutional accumulation continues despite retail fear.",
+          "OPTIONS EXPIRY (31 hrs): $14B total on Deribit. BTC max pain $75K-$86K. BTC at $71K = below max pain = gravitational pull UP. Put/call 0.85.",
+          "SEC 91 ETF RULING (31 hrs): Final deadline Mar 27 for 91 crypto ETF applications across 24 tokens. Biggest single-day ETF ruling in crypto history.",
+          "LOCAL METRICS: 1,176 page.tsx files. PUBLISH_QUEUE: 2 items (defi-insurance-protocols, distributed-validator-technology). 48 dirty files (11 modified + 37 untracked). 142 TS errors (stable). index.lock 15+ hours."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "🔴 BLOCKER PERSISTS [P0]: git index.lock since 09:58 UTC — now 15+ hours. 48 files stuck. Every hour = missed indexing before Thu catalysts. Jefe: rm .git/index.lock → git add → commit → push → Vercel redeploy.",
+          "DONE SINCE v13: Standup v14 (this cycle). No new build/design/community/publish cycles detected since v13's full rotation.",
+          "PUBLISH_QUEUE: 2 items remaining (defi-insurance-protocols-guide-2026, distributed-validator-technology-dvt-guide-2026). Both have page.tsx, OG images, SEO metadata ready. Blocked by index.lock.",
+          "PUBLISHED STATUS: 535 slugs total, 430 with page.tsx. 103 legacy gaps (wallets, taxes, investing, blog, older guides). 14 new pages published today across batches 8-14.",
+          "CARRY-OVER [P1]: 142 TS errors (119 in lido-v3-stvaults — all JSX escaping). 103 slugs without page.tsx. Pendle metadata conflict. Rate limiter 0/6 routes.",
+          "CARRY-OVER [P2]: 17 duplicate slugs. ~120 learn pages missing OG images. /api/market-metrics 404 in production.",
+          "TODAY'S CUMULATIVE OUTPUT: 24 learn guides built, 24+ OG images, 144 social posts drafted, 28+ SVG cards, 49+ UX fixes across 71 agent cycles."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR index.lock + MASS COMMIT + DEPLOY: 15+ hours blocked, 48 files stuck. Thu convergence is 31 hours away. Morgan Stanley filing + ETH buyer surge + $180M daily ETF inflows = institutional money is positioning NOW. Our content needs to be LIVE when the $14B options expire and SEC rules on 91 ETFs. This is P0.",
+          "PRIORITY 2 — PROMOTE QUEUE BATCH 15: DeFi Insurance Protocols + DVT guides → PUBLISHED_PAGES immediately after index.lock clears. Both fill zero-coverage gaps. DeFi insurance is directly relevant with institutional interest spiking (Morgan Stanley, BlackRock). DVT matters for Ethereum staking narrative as ETH accumulation surges.",
+          "PRIORITY 3 — CAPITALIZE ON INSTITUTIONAL MOMENTUM: Morgan Stanley spot BTC ETF + BlackRock $215M daily inflow + Fidelity $95M + ETH $133M taker volume + CLARITY Act progress = the strongest institutional crypto signal since Jan 2024 ETF approval. We have content for all of this (ETF guides, institutional adoption guide, RWA guide). It just needs to be LIVE on production.",
+          "STRATEGIC SIGNAL: The market structure is classic accumulation — extreme retail fear (F&G 11-14 for 46 days) while institutions aggressively buy ($180M/day ETF inflows, Morgan Stanley filing its own ETF, $313B stablecoin ATH). Historical entries at F&G <25 average +18% in 30 days. Our 535-page content surface area is perfectly positioned for the search volume spike that follows institutional-led recovery. The bottleneck is purely operational: one index.lock file."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel) — needs redeploy for new content", "pct": 75, "color": "#f59e0b" },
+          { "label": "Published Slugs", "value": "535 unique", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (DeFi Insurance + DVT)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Total page.tsx Files", "value": "1,176", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "48 (11 modified + 37 untracked)", "pct": 20, "color": "#f59e0b" },
+          { "label": "Git index.lock", "value": "STILL PRESENT — 15+ hours — blocks all commits", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "142 (5 files, 119 in lido-v3)", "pct": 15, "color": "#f59e0b" },
+          { "label": "API Rate Limiter", "value": "0/6 core routes covered", "pct": 0, "color": "#ef4444" },
+          { "label": "Today's Output", "value": "24 guides, 24+ OGs, 144 posts, 28+ SVGs", "pct": 100, "color": "#4ade80" },
+          { "label": "BTC Price", "value": "$70,600-$71,240 (flat)", "pct": 71, "color": "#06b6d4" },
+          { "label": "ETH Price", "value": "$2,166 (eyeing $2,200)", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "11-14 (Extreme Fear) — 46-day streak CONFIRMED", "pct": 14, "color": "#ef4444" },
+          { "label": "Stablecoins", "value": "$313B ATH (dry powder)", "pct": 97, "color": "#4ade80" },
+          { "label": "Spot BTC ETF Inflows (Mar 24)", "value": "$180M (IBIT $215M, FBTC $95M)", "pct": 90, "color": "#4ade80" },
+          { "label": "Morgan Stanley BTC ETF", "value": "S-1 FILED — first major US bank", "pct": 95, "color": "#4ade80" },
+          { "label": "ETH Net Taker Volume", "value": "$133M — highest since Jul 2022", "pct": 90, "color": "#4ade80" },
+          { "label": "Options Expiry (Thu)", "value": "$14B — max pain $75K-$86K", "pct": 95, "color": "#f59e0b" },
+          { "label": "SEC ETF Deadline (Thu)", "value": "91 applications, 24 tokens", "pct": 97, "color": "#f59e0b" },
+          { "label": "Hours to Thu Convergence", "value": "~31 hours", "pct": 87, "color": "#f59e0b" },
+          { "label": "Tax Deadline", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h (standup)", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$5,555 (71 runs: standup×14 $630 + build×10 $2,330 + publish×11 $605 + design×12 $720 + community×11 $451 + eod×13 $819)", "pct": 47, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "~$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API fetch failed (CORS/network restriction from browser context). Persistent issue across all cycles. Report saved locally."
+  }
+}

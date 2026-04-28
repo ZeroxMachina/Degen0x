@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="50%" stop-color="#0d1225"/>
+      <stop offset="100%" stop-color="#080d1c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="rounded"><rect x="0" y="0" width="1200" height="630" rx="0"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" clip-path="url(#rounded)"/>
+
+  <!-- Ambient glow circles -->
+  <circle cx="200" cy="500" r="200" fill="#f59e0b" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="1000" cy="150" r="180" fill="#ef4444" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- TAX DEADLINE badge -->
+  <rect x="60" y="45" width="180" height="32" rx="16" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="80" cy="61" r="5" fill="#f59e0b">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="95" y="67" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#f59e0b" letter-spacing="0.08em">TAX DEADLINE</text>
+
+  <!-- degen0x logo text -->
+  <text x="1090" y="67" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" text-anchor="end" opacity="0.7">degen0x.com</text>
+
+  <!-- Main title -->
+  <text x="60" y="145" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Crypto Tax Day 2026</text>
+  <text x="60" y="195" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">The IRS Already Has Your Trades</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="240" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">New Form 1099-DA means exchanges report directly to the IRS. Here's what you need to know.</text>
+
+  <!-- Glass cards row -->
+  <!-- Card 1: Form 1099-DA -->
+  <rect x="60" y="280" width="250" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="85" y="315" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.06em">NEW FORM</text>
+  <text x="85" y="355" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#f59e0b">1099-DA</text>
+  <text x="85" y="385" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Exchanges report your</text>
+  <text x="85" y="403" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">trades directly to IRS</text>
+
+  <!-- Card 2: Deadline -->
+  <rect x="335" y="280" width="250" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="360" y="315" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.06em">DEADLINE</text>
+  <text x="360" y="355" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#ef4444">Apr 15</text>
+  <text x="360" y="385" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">File or extend today</text>
+  <text x="360" y="403" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Payment due regardless</text>
+
+  <!-- Card 3: Threshold -->
+  <rect x="610" y="280" width="250" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="635" y="315" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.06em">MINIMUM</text>
+  <text x="635" y="355" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#e6edf3">$0</text>
+  <text x="635" y="385" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">No minimum threshold</text>
+  <text x="635" y="403" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">All crypto activity taxable</text>
+
+  <!-- Card 4: Extension -->
+  <rect x="885" y="280" width="250" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="910" y="315" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#8b949e" letter-spacing="0.06em">EXTENSION TO</text>
+  <text x="910" y="355" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#06b6d4">Oct 15</text>
+  <text x="910" y="385" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">File paperwork later</text>
+  <text x="910" y="403" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">But pay by Apr 15</text>
+
+  <!-- Taxable events row -->
+  <text x="60" y="470" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b949e" letter-spacing="0.06em">TAXABLE EVENTS</text>
+
+  <!-- Event tags -->
+  <rect x="60" y="488" width="120" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="120" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">Selling for USD</text>
+
+  <rect x="195" y="488" width="120" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="255" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">Token Swaps</text>
+
+  <rect x="330" y="488" width="140" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="400" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">Staking Rewards</text>
+
+  <rect x="485" y="488" width="100" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="535" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">Airdrops</text>
+
+  <rect x="600" y="488" width="100" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="650" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">NFT Sales</text>
+
+  <rect x="715" y="488" width="120" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="775" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">DeFi Swaps</text>
+
+  <rect x="850" y="488" width="130" height="30" rx="15" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="915" y="508" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444" text-anchor="middle">Bridge Transfers</text>
+
+  <!-- CTA -->
+  <rect x="60" y="548" width="320" height="44" rx="22" fill="url(#amberGrad)" opacity="0.9"/>
+  <text x="220" y="576" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#080d1c" text-anchor="middle">Calculate Your Tax Liability →</text>
+
+  <!-- Bottom URL -->
+  <text x="60" y="618" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">degen0x.com/tools/tax-calculator</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent)"/>
+</svg>

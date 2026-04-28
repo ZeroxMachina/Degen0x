@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent2)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="150" cy="200" r="180" fill="url(#greenGlow)"/>
+  <circle cx="1050" cy="400" r="220" fill="url(#amberGlow)"/>
+
+  <!-- Glass card -->
+  <rect x="60" y="80" width="1080" height="460" rx="20" ry="20"
+        fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Logo -->
+  <text x="100" y="130" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="#8b949e" letter-spacing="0.1em">DEGEN0X</text>
+
+  <!-- Badge -->
+  <rect x="100" y="150" width="200" height="32" rx="16" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="200" y="172" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22c55e" text-anchor="middle">REGULATION UPDATE</text>
+
+  <!-- Main title -->
+  <text x="100" y="235" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Global Crypto Regulation</text>
+  <text x="100" y="290" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#f59e0b" letter-spacing="-0.02em">Is Accelerating</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="335" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Australia framework passed · OCC custody rule live · CLARITY Act in markup</text>
+
+  <!-- Three regulation cards -->
+  <!-- Australia -->
+  <rect x="100" y="370" width="300" height="100" rx="12" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="120" y="400" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22c55e">AUSTRALIA</text>
+  <text x="380" y="400" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22c55e" text-anchor="end">PASSED</text>
+  <text x="120" y="425" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#e6edf3">Digital Assets Framework</text>
+  <text x="120" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">AFSL required for exchanges</text>
+
+  <!-- US OCC -->
+  <rect x="430" y="370" width="300" height="100" rx="12" fill="rgba(6,182,212,0.1)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="450" y="400" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#06b6d4">UNITED STATES</text>
+  <text x="710" y="400" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#06b6d4" text-anchor="end">LIVE APR 1</text>
+  <text x="450" y="425" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#e6edf3">OCC Custody Rule</text>
+  <text x="450" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">Banks cleared for crypto custody</text>
+
+  <!-- CLARITY Act -->
+  <rect x="760" y="370" width="300" height="100" rx="12" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="780" y="400" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f59e0b">US CONGRESS</text>
+  <text x="1040" y="400" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#f59e0b" text-anchor="end">IN MARKUP</text>
+  <text x="780" y="425" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#e6edf3">CLARITY Act</text>
+  <text x="780" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">72% Polymarket odds for 2026</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="550" width="1200" height="80" fill="rgba(0,0,0,0.3)"/>
+  <text x="100" y="598" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#8b949e">degen0x.com</text>
+  <text x="1100" y="598" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">Free tools. No signup. Just alpha.</text>
+</svg>

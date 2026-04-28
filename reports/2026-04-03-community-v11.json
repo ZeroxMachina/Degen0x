@@ -1,0 +1,91 @@
+{
+  "date": "2026-04-03",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Drafted 5 tweets (#465-469) and Newsletter v46 covering liquid staking/restaking guides, Australia digital assets framework, impermanent loss education, Hyperliquid perp DEX guide, and extreme fear week 3. Created 3 social card SVGs. Analytics: 652 published pages (+5 from cycle 5), F&G at 9, BTC $66,650, ETH $2,057, stablecoin supply $316B ATH.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #465: Liquid Staking Tokens — stETH vs rETH vs cbETH, yield stacking, composability (3-tweet thread, Sat May 17)",
+          "Tweet #466: Restaking & EigenLayer — $15B TVL, AVS economics, yield sustainability (3-tweet thread, Mon May 19)",
+          "Tweet #467: Australia passes Digital Assets Framework + OCC custody rule live — global regulation accelerating (single tweet, Tue May 20)",
+          "Tweet #468: Impermanent Loss explained — LP math, when liquidity providing is profitable vs holding (single tweet, Wed May 21)",
+          "Tweet #469: Extreme Fear Week 3 — infrastructure vs sentiment divergence + Hyperliquid perp DEX spotlight (3-tweet thread, Thu May 22)",
+          "Newsletter v46: 'Liquid Staking, Restaking & the New Custody Era' — DeFi yield guides, regulation roundup, 5 new pages, Hyperliquid growth (Thu May 22)",
+          "Discord/Telegram announcement: 5 new DeFi education guides + Australia/OCC regulation updates (Mon May 19)"
+        ]
+      },
+      {
+        "title": "Social Cards Created",
+        "items": [
+          "2026-04-03-social-card-liquid-staking-restaking.svg — 1200x630 yield flow visualization (Stake ETH → LST → EigenLayer → 5-8% APY) in purple/cyan glass-morphism layout",
+          "2026-04-03-social-card-australia-crypto-regulation.svg — 1200x630 three-country regulation tracker (Australia PASSED, US OCC LIVE, CLARITY Act IN MARKUP) with green/cyan/amber cards",
+          "2026-04-03-social-card-extreme-fear-week3.svg — 1200x630 fear gauge visualization with giant '9' F&G reading, BTC/ETH/stablecoin data, 652 pages counter in red-themed layout"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Index Tool", "value": "+99% relevance", "pct": 99, "color": "#22c55e" },
+          { "label": "DCA Calculator", "value": "+98% relevance", "pct": 98, "color": "#22c55e" },
+          { "label": "Liquid Staking Tokens Guide (NEW)", "value": "+97% relevance", "pct": 97, "color": "#22c55e" },
+          { "label": "Restaking EigenLayer Guide (NEW)", "value": "+96% relevance", "pct": 96, "color": "#4ade80" },
+          { "label": "Stablecoins Explained Guide", "value": "+95% relevance", "pct": 95, "color": "#4ade80" },
+          { "label": "Impermanent Loss Guide (NEW)", "value": "+94% relevance", "pct": 94, "color": "#4ade80" },
+          { "label": "Hyperliquid Trading Guide (NEW)", "value": "+93% relevance", "pct": 93, "color": "#4ade80" },
+          { "label": "DeFi Lending Guide (Ethereum)", "value": "+92% relevance", "pct": 92, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Market Context Driving Content Strategy",
+        "items": [
+          "BTC at $66,650, down 0.82% in 24h — selling pressure from Iran war uncertainty + Trump's address",
+          "ETH at $2,057, down 3.8% from yesterday's open — ETH/BTC ratio at 0.030 (15-month low)",
+          "Total crypto market cap $2.38T, down 2.4% in 24h, trading volume $105.4B",
+          "F&G Index at 9 — three consecutive weeks of extreme fear, longest stretch since Terra-Luna June 2022",
+          "BTC dominance at 56.2%, ETH at 10.3%",
+          "Stablecoin supply at $316B ATH — record dry powder on sidelines",
+          "Australia passed Corporations Amendment (Digital Assets Framework) Bill — first comprehensive crypto regulatory framework",
+          "OCC final rule took effect April 1 — national trust banks authorized for crypto custody",
+          "Ripple National Trust Bank charter progressing toward operational status",
+          "X platform now requires identity checks for accounts posting crypto content",
+          "MARA laid off 15% of employees — shifting toward energy infrastructure",
+          "Sonic Labs: 32.69M unclaimed S tokens to be burned after October 2026",
+          "FOMC April 28-29 remains next major catalyst — BTC moved 5%+ on each of last 4 FOMC days"
+        ]
+      },
+      {
+        "title": "Analytics Summary — Growth Trajectories",
+        "items": [
+          "652 published page slugs total (up from 647 earlier today — 5 new learn guides in cycle 5)",
+          "5 new pages published cycle 5: Impermanent Loss, Hyperliquid Perp DEX, Restaking/EigenLayer, Liquid Staking Tokens, Stablecoins Explained",
+          "2 pages remain in PUBLISH_QUEUE (deferred — need page.tsx scaffolds): bear market recovery, Worldcoin/World ID",
+          "93 additional learn guides remain in Degen0x staging for future publish cycles",
+          "469 total tweets drafted all-time (up from 464 in v45)",
+          "46 newsletter editions total",
+          "97+ OG images/social cards (94 prior + 3 new this cycle)",
+          "Highest growth trajectory: Fear & Greed tool (sustained extreme fear = peak organic search), Liquid staking/restaking content (EigenLayer $15B TVL driving search interest), Stablecoins guide (CLARITY Act + $316B supply ATH), Regulation content (Australia framework + OCC rule = global momentum)"
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"],
+    "content_calendar": {
+      "coverage": "May 17–May 23, 2026",
+      "tweets_drafted": 5,
+      "tweet_range": "#465-469",
+      "newsletter_version": "v46",
+      "newsletter_title": "Liquid Staking, Restaking & the New Custody Era",
+      "social_cards_created": 3,
+      "discord_telegram_announcements": 1
+    },
+    "files_created": [
+      "reports/community-drafts/2026-04-03-social-drafts-v46.md",
+      "reports/community-drafts/2026-04-03-social-card-liquid-staking-restaking.svg",
+      "reports/community-drafts/2026-04-03-social-card-australia-crypto-regulation.svg",
+      "reports/community-drafts/2026-04-03-social-card-extreme-fear-week3.svg",
+      "reports/2026-04-03-community-v11.json"
+    ]
+  }
+}

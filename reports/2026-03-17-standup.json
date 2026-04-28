@@ -1,0 +1,81 @@
+{
+  "date": "2026-03-17",
+  "block": "standup",
+  "version": "v1",
+  "report": {
+    "status": "completed",
+    "summary": "Day 50 standup v1: FOMC T-1 (today/tomorrow). Git lock now ~27 hours — 533 uncommitted files still trapped. 380 PUBLISHED_PAGES (fair-token-launches + peaq-depin promoted to file but undeployed). PUBLISH_QUEUE has 2 items (Hyperliquid + FOMC guide — both FOMC-timely). Yesterday ran 115 agent reports ($10K+ human-equiv). Vercel trial ~2 days. ALL three P0 blockers (git lock, Vercel payment, rate limiter) now CRITICAL with FOMC tomorrow.",
+    "sections": [
+      {
+        "title": "Analytics — Delta Since Yesterday's v24",
+        "items": [
+          "PUBLISHED_PAGES file: 380 slugs (up from 378). Publish-v12 promoted fair-token-launches + peaq-depin to the file. However, NO deploy has occurred — production still running cb65a9d (Day 42). These 380 pages are NOT live until git lock clears and Vercel deploys.",
+          "PUBLISH_QUEUE: 2 items — /learn/hyperliquid-trading-guide + /learn/fomc-fed-rate-crypto-guide. The FOMC guide is critically time-sensitive (FOMC decision is tomorrow Mar 18).",
+          "Build cycle (last report): shipped Hyperliquid Trading Guide (3,500+ words) + FOMC & Crypto Guide (2,800+ words). Both have full SEO (Article + FAQ schema, OG/Twitter cards, 5 internal links each).",
+          "Working tree: 533 uncommitted files (steady from EOD-v20). 43 modified tracked + 490 new untracked. Content velocity yesterday: ~50,000+ words across 16+ guides, 6+ social cards, UX fixes, community calendar through Jun 1.",
+          "42 TS errors unchanged (40 in structured-data.examples.ts + 2 in crypto-index-funds-guide). Non-blocking (ignoreBuildErrors: true).",
+          "Catalysts: FOMC T-1 (Mar 18 decision), Pectra T-24 (Apr 10), Tax deadline T-29 (Apr 15). FOMC guide sitting in queue during peak search interest window.",
+          "Yesterday's agent output: 115 reports across 6 agent types (24 standups, 16 builds, 12 publishes, 16 designs, 27 community, 20 EOD). Human-equivalent: ~$10,083."
+        ]
+      },
+      {
+        "title": "Project Manager — Done vs Carry-Over",
+        "items": [
+          "SHIPPED (to disk, not production) ✅ — 3 new learn guides (Hyperliquid Trading, FOMC Fed Rate, PEAQ DePIN Robotics), 2 pages promoted in PUBLISHED_PAGES file (fair-token-launches, peaq-depin), social calendar extended to Jun 1, UX audit on 4 pages, 6+ SVG social cards.",
+          "NOT SHIPPED (blocked) 🔴 — Zero commits since cb65a9d (Day 42). Zero deploys. All work from 24+ hours of agent cycles is trapped on disk.",
+          "BLOCKER 🔴 [P0] git index.lock + HEAD.lock — NOW ~27 HOURS. Created Mar 16 11:17 (HEAD.lock) and 13:06 (index.lock). 533 uncommitted files. Jefe must run: rm .git/index.lock .git/HEAD.lock",
+          "BLOCKER 🔴 [P0] Vercel trial — ~2 days remaining (down from ~3 yesterday). Site goes dark if not resolved. 380 published pages + 6 API routes + all tools offline.",
+          "BLOCKER 🔴 [P0] Rate limiter 0/6 — FOMC TOMORROW. checkRateLimit() exists but wired to zero API routes. 18th+ consecutive cycle flagged. Traffic spike risk is imminent.",
+          "CARRY-OVER 🟡 [P1] ~102 published slugs on dynamic [slug] route (no dedicated page.tsx).",
+          "CARRY-OVER 🟡 [P1] structured-data.examples.ts → .tsx rename (fixes 40/42 TS errors).",
+          "CARRY-OVER 🟡 [P1] crypto-index-funds-guide JSX fix (2 TS errors).",
+          "CARRY-OVER 🟡 [P1] defi-yields API — no fallback data (returns 500 on DefiLlama failure).",
+          "CARRY-OVER 🟡 [P1] API observability — only 2/6 routes have X-Cache-Source headers.",
+          "CARRY-OVER 🟡 [P2] WalletConnect production Project ID, GitHub Actions secrets, next lint config."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — RESOLVE GIT LOCK FILES (Jefe only, ~2 min). 27 hours stale. Two commands: rm .git/index.lock .git/HEAD.lock → then agents can batch-commit 533 files → push → Vercel auto-deploys. This single action unblocks everything: 380 published pages going live, FOMC guide indexable before tomorrow's decision, rate limiter wirable, TS fixes shippable. ~50K words of content producing zero SEO value while locked.",
+          "PRIORITY 2 — VERCEL PAYMENT (Jefe only, ~5 min). ~2 days left. If trial expires before git lock clears, even unlocking git won't help — there's nowhere to deploy. FOMC traffic spike hits a dead site. This is the existential risk.",
+          "PRIORITY 3 — FOMC CONTENT SPRINT: After git lock clears, immediately: (a) promote Hyperliquid + FOMC guide from PUBLISH_QUEUE → PUBLISHED_PAGES (queue currently at 2), (b) wire checkRateLimit() to all 6 API routes (FOMC protection), (c) commit all 533 files, (d) push → auto-deploy. The FOMC guide must be indexed BEFORE the Fed decision tomorrow afternoon. Every hour of delay is lost search traffic at peak intent.",
+          "STRATEGIC NOTE — We have a unique timing advantage: a fully written, SEO-optimized FOMC & Crypto guide sitting ready to deploy the day before the Fed meeting. Most crypto sites publish reactive content AFTER the decision. If we can get this live and indexed today, we capture the 'what will the Fed do to crypto' search queries at peak volume. The git lock is the only thing between us and a potential traffic spike. Yesterday's 115-report agent sprint produced ~$10K of human-equivalent work — all unrealized value until deployment unblocks."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Total PUBLISHED_PAGES (in file)", "value": "380 slugs", "pct": 76, "color": "#4ade80" },
+          { "label": "Production Deploy", "value": "Stale — cb65a9d Day 42 (378 pages live)", "pct": 15, "color": "#ef4444" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (Hyperliquid + FOMC guide)", "pct": 50, "color": "#06b6d4" },
+          { "label": "Working Tree Uncommitted Files", "value": "533 — git locks ~27 hrs 🔴", "pct": 3, "color": "#ef4444" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 public API routes — FOMC T-1 🔴", "pct": 0, "color": "#ef4444" },
+          { "label": "API Fallback Data", "value": "1/6 routes (5 missing)", "pct": 17, "color": "#ef4444" },
+          { "label": "TS Errors", "value": "42 (structured-data.examples.ts ×40 + crypto-index-funds ×2)", "pct": 65, "color": "#f59e0b" },
+          { "label": "Content Built (undeployed)", "value": "~50,000+ words across 16+ guides", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Calendar Queued", "value": "11+ weeks (through Jun 1)", "pct": 100, "color": "#4ade80" },
+          { "label": "Catalysts", "value": "FOMC T-1 🔴, Pectra T-24, Tax T-29", "pct": 98, "color": "#ef4444" },
+          { "label": "Vercel Trial Remaining", "value": "~2 days 🔴", "pct": 8, "color": "#ef4444" },
+          { "label": "Orphaned Slugs (dynamic route)", "value": "~102 of 380 (~27%)", "pct": 27, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup $45)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$45 (1 cycle, first of day)", "pct": 1, "color": "#4ade80" },
+          { "label": "Yesterday's Total (Mar 16)", "value": "$10,083 (115 reports across 6 agents)", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"]
+  }
+}

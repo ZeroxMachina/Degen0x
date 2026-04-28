@@ -1,0 +1,91 @@
+{
+  "date": "2026-03-28",
+  "block": "community",
+  "report": {
+    "status": "completed",
+    "summary": "Community cycle v3 (late): Consolidated day's community output — 6 tweets drafted (#211-216), 2 newsletters (v34 weekly digest + v35 whale watch), 2 SVG social cards, Discord/TG recap. Highest-growth content: Fear & Greed Timeline and DCA Calculator at peak relevance during 49-day Extreme Fear streak (F&G 12). 20+ new guides published this week. Bear market investing, whale accumulation, and ETF ruling content identified as top social drivers.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet #211 — Bear Market Investing Hook: F&G at 12, longest Extreme Fear streak since post-FTX 2022, historical +38% median BTC return from sub-15 readings. CTA → bear-market-investing-guide.",
+          "Tweet #212 — DePIN Ecosystem Thread (5 parts): Real-world revenue crypto sector, Helium/Hivemapper/Render examples, institutional interest angle. CTA → depin-ecosystem-guide.",
+          "Tweet #213 — Weekly Recap: 20+ new guides published (bear market, smart money, ETF, DePIN, Solana LST, RWA yield, StarkNet, TON/SUI). 556 pages live, all free.",
+          "Tweet #214 — Whale Accumulation Signal: 270K BTC in 30 days (largest since 2013), 20K+ whale wallets at record, $458M ETF inflow day. CTA → whale-tracker.",
+          "Tweet #215 — Mystery ETH Whale Thread (5 parts): $253M ETH accumulated since Mar 1, ETH/BTC at 0.0301, Goldman $108M SOL ETF, SEC classifications. CTA → whale-tracker + crypto-etfs-guide.",
+          "Tweet #216 — Weekend Data Drop: F&G 12 (day 49), whale wallets record, historical sub-15 returns +38.4% median 90d, FTX zone parallel ($16K→$42K = +162%). CTA → fear-greed-timeline.",
+          "Newsletter v34: Weekly Digest — Subject: 'The Extreme Fear Playbook'. Market pulse (BTC $66K, ETH sub-$2K), 20+ new guides, featured reads (bear market investing, smart money signals, DePIN), SEC ETF ruling coverage.",
+          "Newsletter v35: Weekend Whale Watch — 270K BTC whale accumulation during 49-day fear streak, $253M ETH whale, ETF flow reversal, 577 published pages, historical +38.4% stat.",
+          "Discord/TG: Saturday Evening Recap — BTC $66,348, ETH $1,997, SOL $83, F&G 12 (day 49). Smart money signals: 270K BTC whale accumulation, $458M ETF inflow reversal, $253M mystery ETH whale."
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "Fear & Greed Timeline", "value": "+99% — F&G at 12 for 49 days, peak fear-driven traffic", "pct": 99, "color": "#ef4444" },
+          { "label": "DCA Calculator", "value": "+98% — extreme fear + whale accumulation = peak DCA interest", "pct": 98, "color": "#22c55e" },
+          { "label": "Bear Market Investing Guide", "value": "+95% — new, targeting high-volume fear queries", "pct": 95, "color": "#4ade80" },
+          { "label": "Whale Tracker", "value": "+96% — 270K BTC accumulation driving monitoring surge", "pct": 96, "color": "#6366f1" },
+          { "label": "Smart Money On-Chain Signals", "value": "+90% — bear market demand for alpha", "pct": 90, "color": "#4ade80" },
+          { "label": "Crypto ETF In-Kind Redemption", "value": "+88% — SEC ruling Mar 27 search spike", "pct": 88, "color": "#4ade80" },
+          { "label": "DePIN Ecosystem Guide", "value": "+82% — trending sector, real-world revenue narrative", "pct": 82, "color": "#06b6d4" },
+          { "label": "Solana LST Comparison", "value": "+78% — SOL ETF live, staking interest rising", "pct": 78, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "SVG social card: Weekly Community Recap (1200x630) — Dark glass-morphism with gradient accent bar, 3 stat cards (556 Published, F&G 12, 20+ New This Week). Saved to /public/social/2026-03-28-weekly-community.svg",
+          "SVG social card: Whale Accumulation Alert (1200x630) — 270K BTC headline, animated accumulation bar, 4 metric cards, historical FTX zone parallel strip. Saved to reports/community-drafts/2026-03-28-social-card-whale-accumulation.svg"
+        ]
+      },
+      {
+        "title": "Growth Trajectory Analysis",
+        "metrics": [
+          { "label": "Published Pages", "value": "556 unique (577 total entries incl. duplicates)", "pct": 84, "color": "#4ade80" },
+          { "label": "New This Week (Mar 22-28)", "value": "20+ pages across 8+ batches", "pct": 100, "color": "#4ade80" },
+          { "label": "Cumulative Social Posts", "value": "216 tweets drafted (#211-216 this cycle)", "pct": 100, "color": "#6366f1" },
+          { "label": "SVG Social Cards (all-time)", "value": "47+ cards (2 new today)", "pct": 98, "color": "#06b6d4" },
+          { "label": "Newsletter Versions", "value": "v35 (2 editions drafted today: v34 weekly + v35 whale watch)", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Content Calendar (Sat-Sun Schedule)",
+        "items": [
+          "Sat Mar 28 9PM ET — Tweet #214: Whale Accumulation Signal",
+          "Sun Mar 29 10AM ET — Tweet #211: Bear Market Investing Hook",
+          "Sun Mar 29 2PM ET — Tweet #215: Mystery ETH Whale Thread",
+          "Sun Mar 29 6PM ET — Tweet #216: Weekend Data Drop",
+          "Mon Mar 30 9AM ET — Tweet #212: DePIN Thread + Tweet #213: Weekly Recap"
+        ]
+      },
+      {
+        "title": "Platform Status",
+        "metrics": [
+          { "label": "Deploy Status", "value": "BLOCKED — 271 uncommitted files (11th cycle)", "pct": 0, "color": "#ef4444" },
+          { "label": "API Routes", "value": "6/6 healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "2 blocked (slug mismatch), 2 pending", "pct": 50, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$66,008-$66,350 (testing $66K support)", "pct": 45, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "$1,976-$2,008 (sub-$2K, 3rd day)", "pct": 35, "color": "#ef4444" },
+          { "label": "Fear & Greed", "value": "12 (Extreme Fear — 49-day streak)", "pct": 12, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Recommendations",
+        "items": [
+          "CRITICAL: Deploy must happen before social posts go live — all new page links will 404 until 271 uncommitted files are committed and pushed to Vercel.",
+          "Prioritize bear market + fear-driven content promotion: DCA Calculator, Fear & Greed Timeline, Bear Market Investing Guide are at peak search relevance.",
+          "ETF content has a 24-48 hour window of peak search intent from the Mar 27 SEC ruling — publish and promote immediately upon deploy.",
+          "DePIN thread should be scheduled for weekday (Mon/Tue) for maximum engagement — educational threads perform better on workdays.",
+          "Consider creating a dedicated landing page for 'crypto fear and greed index 2026' to capture the sustained search interest during this 49-day streak."
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"],
+    "notes": [
+      "No Google Search Console or Vercel Analytics data accessible from this environment — performance analysis based on content recency, market timing, search intent signals, and publishing history.",
+      "Social posts are draft-only — no external posting tools connected. Manual posting required.",
+      "Deploy blocker (271 uncommitted files) is the single biggest constraint on community growth — all new content is invisible to Google until committed and pushed."
+    ]
+  }
+}

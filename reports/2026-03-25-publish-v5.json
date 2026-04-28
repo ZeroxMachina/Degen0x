@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-25",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Publish queue empty — no new pages to promote. All API integrations healthy. 516 pages currently published. TypeScript check surfaced 5 files with pre-existing JSX escaping issues (142 errors). Full build could not complete in this environment due to 3.8GB RAM limit.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [],
+        "note": "PUBLISH_QUEUE is empty. No pages pending promotion. Total published: 516 pages."
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "TypeScript Check", "value": "5 files with errors", "pct": 97, "color": "#f59e0b" },
+          { "label": "Pre-existing TS Errors", "value": "142", "pct": 97, "color": "#f59e0b" },
+          { "label": "API Routes", "value": "15 routes healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Full Build", "value": "OOM (3.8GB VM)", "pct": 0, "color": "#f59e0b" },
+          { "label": "Published Pages Total", "value": "516", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko /prices", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "CoinGecko /trending", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama /defi-yields", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer", "value": "Configured (60s-300s TTL)", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Circuit Breakers", "value": "Active", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback Data", "value": "Configured", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy",
+        "metrics": [
+          { "label": "Deploy Status", "value": "Skipped (no changes)", "pct": 100, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Known Issues",
+        "metrics": [
+          { "label": "lido-v3-stvaults-guide-2026", "value": "JSX escaping errors", "pct": 0, "color": "#f59e0b" },
+          { "label": "crypto-arbitrage-strategies-guide-2026", "value": "JSX escaping errors", "pct": 0, "color": "#f59e0b" },
+          { "label": "crypto-index-funds-guide-2026", "value": "JSX escaping errors", "pct": 0, "color": "#f59e0b" },
+          { "label": "institutional-crypto-adoption-guide-2026", "value": "JSX escaping errors", "pct": 0, "color": "#f59e0b" },
+          { "label": "structured-data.examples.ts", "value": "Type errors", "pct": 0, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

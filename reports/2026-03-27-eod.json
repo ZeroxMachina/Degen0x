@@ -1,0 +1,64 @@
+{
+  "date": "2026-03-27",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "5 pages published today (crypto-loans calculators, exchange/card best-of pages), 2 queued pages ready for next cycle. 4 learn pages have TS syntax errors (102 total) — pre-existing regression. 6/6 API routes structurally healthy with correct caching. Production site unreachable from sandbox for live verification.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "5 pages published today (2026-03-27): /crypto-loans/calculators/loan-calculator, /crypto-loans/calculators/ltv-calculator, /exchanges/best/bitcoin, /exchanges/best/usa, /crypto-cards/compare/crypto-com-vs-binance-card — all have page.tsx files ✓",
+          "2 pages in PUBLISH_QUEUE: /learn/virtuals-protocol-guide, /learn/grass-protocol-depin-guide — both have page.tsx ready ✓",
+          "554 total published slugs across all categories",
+          "TypeScript errors in 4 learn pages (pre-existing, not new this cycle): lido-v3-stvaults (94 errors — JSX syntax), crypto-arbitrage-strategies (4 errors — unescaped >), institutional-crypto-adoption (2 errors — unescaped $1B), crypto-index-funds (2 errors — unescaped >). These are JSX escaping issues, not logic bugs.",
+          "structured-data.examples.ts has TS errors but is a reference file, not imported into the build",
+          "Local build fails with Bus error (sandbox OOM) — not indicative of Vercel production build health"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API routes have route.ts files and are structurally healthy: prices, fear-greed, trending, market-metrics, market-dominance, defi-yields",
+          "Cache TTLs configured correctly: prices (60s), fear-greed (600s), trending (300s), market-metrics (60-120s), market-dominance (300s), defi-yields (variable)",
+          "All routes implement stale-while-revalidate fallback patterns",
+          "All routes have error fallback responses returning cached/default data on upstream failure",
+          "Cannot verify live API responses from sandbox (egress blocked) — no rate-limit or stale-data issues detectable this cycle"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Vercel project active: prj_2Hn4Kdtu6fM13sSpxsdnmsJWGI75 (cryptodegen)",
+          "Latest commit: 21aaf5b — batch deploy: 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes",
+          "Cannot verify live deployment status from sandbox (network egress blocked for degen0x.com)",
+          "No new deployments triggered this cycle — last deploy was the batch commit",
+          "Local build OOM is sandbox-specific (8GB heap insufficient for 554+ page static gen); Vercel builds have higher memory limits"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "Shipped this cycle: 5 new pages promoted to PUBLISHED_PAGES (crypto-loans calculators, exchange/card pages)",
+          "2 new learn guides built and queued (Virtuals Protocol, GRASS Protocol) — ready for next promotion",
+          "Carry-over: 4 learn pages with TS syntax errors need JSX escaping fixes before next build verification",
+          "No blockers for next cycle — queued pages are ready, just need promotion",
+          "Recommendation: Fix the 4 broken learn pages (especially lido-v3 with 94 errors) in next programmer cycle to maintain clean TS compilation"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "554", "pct": 95, "color": "#4ade80" },
+          { "label": "Queued Pages", "value": "2", "pct": 50, "color": "#06b6d4" },
+          { "label": "API Routes Healthy", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "Today's Publishes", "value": "5", "pct": 80, "color": "#4ade80" },
+          { "label": "TS Errors (non-example)", "value": "102 in 4 files", "pct": 25, "color": "#f59e0b" },
+          { "label": "Build Status (local)", "value": "OOM (sandbox)", "pct": 40, "color": "#f59e0b" },
+          { "label": "Production Reachable", "value": "Untestable", "pct": 50, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

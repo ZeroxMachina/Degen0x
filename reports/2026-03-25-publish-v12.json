@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-25",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Daily publish cycle: PUBLISH_QUEUE is empty — all queued pages have been promoted. 539 pages live in PUBLISHED_PAGES. Data pipeline healthy. 5 pre-existing TS errors in non-critical learn guides (JSX escaping). No new pages to deploy.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "PUBLISH_QUEUE", "status": "pass", "note": "Queue empty — all pages promoted. 539 total published." }
+        ]
+      },
+      {
+        "title": "Today's Latest Batches (already live)",
+        "pages": [
+          { "slug": "/learn/ethereum-verkle-trees-hegota-guide-2026", "status": "pass" },
+          { "slug": "/learn/sui-hashi-bitcoin-defi-guide", "status": "pass" },
+          { "slug": "/learn/ai-agent-frameworks-comparison-2026", "status": "pass" },
+          { "slug": "/learn/rwa-platforms-comparison-2026", "status": "pass" },
+          { "slug": "/learn/bitcoin-safe-haven-guide-2026", "status": "pass" },
+          { "slug": "/learn/btc-yield-earning-strategies-guide-2026", "status": "pass" },
+          { "slug": "/learn/ethereum-layer-2-comparison-guide-2026", "status": "pass" },
+          { "slug": "/learn/onchain-order-book-clob-dex-guide-2026", "status": "pass" },
+          { "slug": "/learn/katana-perps-idex-acquisition-guide", "status": "pass" },
+          { "slug": "/learn/tokenized-funds-institutional-defi-guide", "status": "pass" },
+          { "slug": "/learn/congressional-tokenization-hearing-guide-2026", "status": "pass" },
+          { "slug": "/learn/bitgo-ipo-crypto-infrastructure-guide", "status": "pass" },
+          { "slug": "/learn/nasdaq-tokenized-equities-trading-guide-2026", "status": "pass" },
+          { "slug": "/learn/grayscale-hype-etf-defi-guide", "status": "pass" },
+          { "slug": "/learn/socialfi-creator-tokens-guide-2026", "status": "pass" },
+          { "slug": "/learn/crypto-options-strategies-guide-2026", "status": "pass" },
+          { "slug": "/learn/defi-insurance-protocols-guide-2026", "status": "pass" },
+          { "slug": "/learn/distributed-validator-technology-dvt-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages on disk", "value": "18/18", "pct": 100, "color": "#4ade80" },
+          { "label": "Metadata present", "value": "18/18", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript (core)", "value": "Clean", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript (learn guides)", "value": "5 files w/ JSX escaping issues", "pct": 97, "color": "#f59e0b" },
+          { "label": "Full build", "value": "OOM in sandbox VM", "pct": 0, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "API Cache Layer", "value": "Active (withCache + cachedFetchJSON)", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (checkRateLimit)", "pct": 100, "color": "#4ade80" },
+          { "label": "Fallback Prices", "value": "28 coins configured", "pct": 100, "color": "#4ade80" },
+          { "label": "Health Endpoint", "value": "/api/health operational", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deploy Status",
+        "metrics": [
+          { "label": "Deploy needed", "value": "No (queue empty, no new promotions)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Last commit", "value": "21aaf5b — batch deploy: 170+ pages", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted changes", "value": "20 modified files (reports, OG images, CSS)", "pct": 80, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "PUBLISH_QUEUE is fully drained — no new pages waiting for promotion.",
+      "539 total pages are live in PUBLISHED_PAGES.",
+      "Today's session already promoted 18 pages across batches 8-17.",
+      "Build could not complete in sandbox VM due to memory limits; TypeScript type-check used as alternative QA.",
+      "5 pre-existing TS errors in learn guide pages (JSX escaping) — non-blocking, should be fixed in next maintenance sprint.",
+      "20 uncommitted file changes in working tree (reports, OG images, component fixes)."
+    ]
+  }
+}

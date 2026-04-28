@@ -1,0 +1,60 @@
+{
+  "date": "2026-03-17",
+  "block": "community",
+  "version": "v14",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v14 (Mar 17 Late): Pre-FOMC-decision morning content — 4 new Twitter posts (FOMC decision day reminder, Solana ETF guide launch, Crypto Payroll guide launch, Institutional Credit Markets preview); Discord FOMC morning briefing + post-decision template; newsletter updated with FOMC recap section + 2 new guide spotlights (Solana ETF, Crypto Payroll) added to Thu issue; 2 social cards created (Solana ETF Race 5-issuer comparison + Institutional Credit Markets 4-protocol overview); posting schedule updated through Mar 22; post-decision reaction templates prepared for live fill.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet 1 (Wed AM): FOMC Decision Day reminder — timeline (2PM decision, 2:30PM presser, 3-4PM volatility peak), what to watch (dot plot, GDP/inflation forecasts, Powell tariff tone), BTC $73,700 8-day streak, 'Don't trade the headline. Trade the reaction to the reaction'; links to /learn/fomc-fed-rate-crypto-guide",
+          "Tweet 2 (Wed AM): Solana ETF Guide launch — 6 issuers filed; VanEck (first mover, staking-inclusive), 21Shares (Coinbase custody), Grayscale (GSOL trust convert), Canary (multi-asset), Bitwise (low-cost); approval timeline + staking yield advantage; CTA to /learn/solana-etf-guide-2026",
+          "Tweet 3 (Wed AM): Crypto Payroll Guide launch — getting paid in crypto is mainstream now; Deel/Bitwage/Request Finance platform comparison, tax implications, stablecoin payroll thesis, how to pitch to employer; CTA to /learn/crypto-payroll-guide-2026",
+          "Tweet 4 (Wed AM): Institutional Credit Markets preview — $18.9B active on-chain credit, $33.7B cumulative; Maple Finance ($3.2B TVL, 8x growth), Goldfinch (Ares/Apollo), Centrifuge (RWA infra), Clearpool (hybrid permissioned); 'Under-covered. Under-allocated. Worth understanding.' — hype build for upcoming guide",
+          "Tweet 5 (Wed PM): FOMC reaction TEMPLATE — live fill after 2PM ET decision; dot plot result, BTC/ETH price reaction, key Powell quote, 48h reversal pattern reminder; links to updated FOMC guide + DCA calc",
+          "Discord (Wed AM): FOMC morning briefing — timeline, current BTC setup, 98% hold probability, key watches, prep reading link; live reaction thread announcement",
+          "Discord (Wed PM): Post-decision update TEMPLATE — rate decision result, dot plot, BTC/ETH reaction, Powell quotes, portfolio implications links",
+          "Newsletter updates (Thu Mar 19): Added Market Pulse section (FOMC recap template), 2 new guide spotlights (Solana ETF + Crypto Payroll), consolidated with v14 guides (GPU Compute, DeFi Insurance, Yield-Bearing Stablecoins) for 5-guide newsletter"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/fomc-fed-rate-crypto-guide", "value": "PEAK — decision in <18h; dot plot thread + morning reminder driving clicks", "pct": 98, "color": "#f59e0b" },
+          { "label": "/tools/dca-calculator", "value": "FOMC dip-buying utility + tax season urgency — highest persistent utility", "pct": 97, "color": "#4ade80" },
+          { "label": "/learn/solana-etf-guide-2026", "value": "NEWLY PUBLISHED — first social amplification this cycle; 6-issuer comparison", "pct": 93, "color": "#9945FF" },
+          { "label": "/learn/ethereum-pectra-upgrade-guide", "value": "ETH +13% weekly + 23 days to Pectra mainnet — sustained interest", "pct": 91, "color": "#8b5cf6" },
+          { "label": "/learn/decentralized-gpu-compute-networks-guide", "value": "AI narrative accelerating; first social push in v13-v14 driving traffic", "pct": 90, "color": "#06b6d4" },
+          { "label": "/learn/crypto-ai-intersection", "value": "AI narrative cross-links with GPU Compute guide amplifying both", "pct": 88, "color": "#06b6d4" },
+          { "label": "/learn/crypto-payroll-guide-2026", "value": "NEWLY PUBLISHED — first social amplification; practical utility angle", "pct": 87, "color": "#22c55e" },
+          { "label": "/learn/defi-insurance-guide-2026", "value": "<2% insured angle resonating; second social push cycle", "pct": 86, "color": "#22d3ee" },
+          { "label": "/learn/yield-bearing-stablecoins", "value": "FOMC hold = yield strategies stay relevant; rate-hold positioning", "pct": 84, "color": "#4ade80" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "28 days to April 15 — steady search intent increasing", "pct": 83, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-solana-etf-race-2026.svg — 1200x630 social card: dark theme with Solana purple-green gradient accents; NEW GUIDE + $SOL badges; 'THE SOLANA ETF RACE' title; 5 glass-morphism issuer cards (VanEck purple/first mover, 21Shares cyan/institutional, Grayscale amber/trust convert, Canary purple/multi-asset, Bitwise green/low-cost); right sidebar stat boxes (Staking Yield 6-8%, 6 Issuers Filed); bottom bar with guide URL. Saved to /public/social-solana-etf-race-2026.svg",
+          "social-institutional-credit-markets.svg — 1200x630 social card: dark theme with indigo-amber credit gradient; COMING SOON badge + $18.9B ACTIVE pill; 'ON-CHAIN INSTITUTIONAL CREDIT MARKETS' title in gradient text; 4 protocol cards (Maple indigo/$3.2B TVL/8x growth, Goldfinch amber/Ares-Apollo backing, Centrifuge cyan/RWA infrastructure, Clearpool purple/hybrid permissioned); market context bar ($18.9B active, $33.7B cumulative, SEC-CFTC MOU catalyst, SURGING status); bottom bar with guide URL. Saved to /public/social-institutional-credit-markets.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "FOMC Decision Day (Mar 18): Decision in <18 hours. BTC $73,700 holding with 8-day streak intact. 98% hold probability. Market cap $2.65T. This is the highest-traffic catalyst window in 6 weeks.",
+          "New content amplification: Solana ETF Guide + Crypto Payroll Guide promoted to PUBLISHED in publish-v10 (now 397+ unique slugs) — first social push in this cycle. Institutional Credit Markets guide in PUBLISH_QUEUE as preview/hype build.",
+          "Content pipeline: Maple Finance ecosystem guide + On-Chain Institutional Credit learn guide built in build-v10, added to PUBLISH_QUEUE. Next publish cycle will promote them.",
+          "Newsletter consolidation: Thu Mar 19 issue now features 5 new guides (GPU Compute, DeFi Insurance, Yield-Bearing Stablecoins from v14 + Solana ETF, Crypto Payroll from v15) + FOMC recap as Market Pulse section.",
+          "Site is Day 57, GSC Day 18+ — organic clicks expected to materialize. 397+ published pages. FOMC content perfectly timed for organic arrival window.",
+          "Social drafts saved to /reports/community-drafts/2026-03-17-social-drafts-v15.md",
+          "Social cards saved to /public/social-solana-etf-race-2026.svg and /public/social-institutional-credit-markets.svg",
+          "Posting schedule: Wed AM — FOMC reminder + Solana ETF launch + Crypto Payroll launch + Institutional Credit preview + Discord briefing → Wed PM — FOMC reaction (live) + Discord update → Thu — newsletter with 5 guides + FOMC recap → Fri poll → Sat BTCFi → Sun Aave V4"
+        ]
+      }
+    ],
+    "skills_used": ["communityManager", "analytics", "graphicDesigner"]
+  }
+}

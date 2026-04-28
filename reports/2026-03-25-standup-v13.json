@@ -1,0 +1,81 @@
+{
+  "date": "2026-03-25",
+  "block": "standup",
+  "cycle": 13,
+  "report": {
+    "status": "completed",
+    "summary": "Day 72 standup v13: BTC inches to $71,240 (+0.9% from v12). F&G data conflicting — web sources still show 11-14 (Extreme Fear), v12 claimed 35; flagging for verification. Build-v11 shipped SocialFi Creator Tokens + Crypto Options Strategies guides (~6,700 words). PUBLISH_QUEUE has 2 items ready. 531 published slugs, 1,176 page.tsx files. index.lock STILL blocking commits — now 14+ hours. ~33 hours to Thu convergence: $14B options expiry + SEC 91 ETF rulings. 68 agent runs today ($5,625).",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "MARKET UPDATE: BTC $71,240 (+0.9% from v12's $70,602), holding above $71K after geopolitical relief rally. ETH ~$2,158. Total market cap ~$2.5T. Stablecoins $313B ATH. BTC dominance ~56.5%.",
+          "F&G DATA DISCREPANCY: v12 reported F&G jumped to 35 (Fear), but fresh web sources (Blockchain Magazine, feargreedmeter.com) still show 11-14 (Extreme Fear) for Mar 25. The 46-day extreme fear streak may NOT be broken. Flagging for API-level verification when egress unblocks. Either way, sentiment remains deeply fearful — contrarian signal intact.",
+          "OPTIONS EXPIRY UPDATE (33 hrs): CoinDesk now reports $14B total (up from $13.5B estimate). BTC max pain range tightened to $75K-$86K depending on source. BTC at $71.2K = still below max pain zone. Put/call ratio 0.85 (neutral-slight bullish). Settlement: Thu 08:00 UTC on Deribit.",
+          "SEC 91 ETF RULING (33 hrs): Final deadline Mar 27 for 91 crypto ETF applications across 24 tokens. 16 assets already classified as commodities (Mar 17 ruling). XRP, SOL, LTC, DOGE, ADA, LINK, AVAX, DOT, HBAR + others eligible. Biggest single-day ETF ruling in crypto history.",
+          "DELTA SINCE v12: Build-v11 shipped 2 new learn pages — SocialFi & Creator Tokens Guide (~3,200 words, Farcaster/Lens/Friend.tech) + Crypto Options Strategies Guide (~3,500 words, covered calls/straddles/iron condors). Both added to PUBLISH_QUEUE. EOD-v12 confirmed 531 published slugs, 428 with page.tsx.",
+          "LOCAL METRICS: 1,176 page.tsx files (unchanged from v12). 531 published slugs. PUBLISH_QUEUE: 2 items (socialfi-creator-tokens, crypto-options-strategies). 10 modified + ~17 untracked files pending commit. 142 TS errors (stable). index.lock persists 14+ hours."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "🔴 BLOCKER PERSISTS [P0]: git index.lock present since 09:58 UTC (~14+ hours). ALL commits blocked. 4 promoted pages + 2 queue pages cannot reach production. Every hour uncommitted = missed indexing window before Thursday catalysts. Jefe action required: rm .git/index.lock → git add → commit → Vercel redeploy.",
+          "DONE SINCE v12: Build-v11 shipped SocialFi Creator Tokens + Crypto Options Strategies (2 pages, ~6,700 words). EOD-v12 ran full QA — confirmed 531 slugs, 142 TS errors unchanged, 6/6 API routes healthy. Design-v10, Community-v11, Publish-v10 cycles completed.",
+          "PIPELINE STATUS: PUBLISH_QUEUE has 2 items (socialfi-creator-tokens + crypto-options-strategies) ready for promotion. 531 published slugs. 428/531 have page.tsx (103 legacy gaps). Today's cumulative output: 24 learn guides built, 24+ OG images, 33+ social posts, 28+ SVG cards, 49+ UX fixes.",
+          "CARRY-OVER [P1]: 103 published slugs missing page.tsx. Pendle 'use client' metadata conflict. Rate limiter 0/6 routes. 142 TS errors (119 in lido-v3-stvaults).",
+          "CARRY-OVER [P2]: 17 duplicate slugs. ~120 learn pages missing OG images. F&G API data freshness unclear. /api/market-metrics 404 in production.",
+          "TODAY'S AGENT RUNS: standup×13, build×11, design×11, community×11, publish×10, eod×12 = 68 total."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR index.lock + MASS COMMIT + DEPLOY: 14+ hours blocked. 6+ pages trapped (4 promoted + 2 queued). With Thu convergence 33 hours away, every uncommitted hour is lost search capture. The $14B options expiry + SEC 91 ETF ruling will spike search demand for exactly the content we've built (options-strategies, etf guides, fear-greed tools). This is P0 — nothing else matters until git is unblocked.",
+          "PRIORITY 2 — PROMOTE PUBLISH_QUEUE BATCH 14: SocialFi Creator Tokens + Crypto Options Strategies → PUBLISHED_PAGES immediately after index.lock clears. The options strategies page is directly relevant to Thursday's $14B expiry. SocialFi fills a zero-coverage gap in a $2.4B sector. Move queue → published → commit → deploy.",
+          "PRIORITY 3 — THURSDAY CONVERGENCE FINAL PREP: 33 hours to the biggest convergence event since FTX: $14B options expiry + SEC rules on 91 ETFs for 24 tokens. Ensure all catalyst-relevant pages are live: fear-greed-timeline, options-calculator, crypto-options-strategies-guide, etf-guide, sec-digital-commodities-classification-guide. Community should have social posts pre-loaded. If even half the 91 ETFs are approved, alt season begins and our 531-page surface area becomes critical.",
+          "STRATEGIC SIGNAL: The F&G conflicting data (11-14 vs 35) suggests we're at an inflection point — either sentiment is recovering or still bottoming. Either way, $313B stablecoin ATH = massive dry powder waiting. The SEC commodity classification of 16 assets on Mar 17 was the structural unlock; Mar 27 is the ETF execution day. If BTC reclaims $75K post-options and ETFs are approved, crypto search volume will spike 3-5x. Our content surface area needs to be LIVE before that moment arrives."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel) — needs redeploy for new content", "pct": 75, "color": "#f59e0b" },
+          { "label": "Published Slugs", "value": "531 unique", "pct": 100, "color": "#4ade80" },
+          { "label": "PUBLISH_QUEUE", "value": "2 items (SocialFi + Options Strategies)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Total page.tsx Files", "value": "1,176", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "27+ (10 modified + 17 untracked)", "pct": 20, "color": "#f59e0b" },
+          { "label": "Git index.lock", "value": "STILL PRESENT — 14+ hours — blocks all commits", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "142 (5 files, 119 in lido-v3)", "pct": 15, "color": "#f59e0b" },
+          { "label": "API Rate Limiter", "value": "0/6 core routes covered", "pct": 0, "color": "#ef4444" },
+          { "label": "Today's Output", "value": "24 guides, 24+ OG images, 33+ posts, 28+ SVGs", "pct": 100, "color": "#4ade80" },
+          { "label": "BTC Price", "value": "$71,240 (+0.9% from v12)", "pct": 71, "color": "#4ade80" },
+          { "label": "ETH Price", "value": "~$2,158", "pct": 62, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "11-14 (Extreme Fear) — v12 claimed 35, UNVERIFIED", "pct": 14, "color": "#ef4444" },
+          { "label": "Stablecoins", "value": "$313B ATH (dry powder)", "pct": 97, "color": "#4ade80" },
+          { "label": "Options Expiry (Thu)", "value": "$14B — max pain $75K-$86K (BTC $71.2K = pull UP)", "pct": 95, "color": "#f59e0b" },
+          { "label": "SEC ETF Deadline (Thu)", "value": "91 applications, 24 tokens — biggest ruling day ever", "pct": 97, "color": "#f59e0b" },
+          { "label": "Hours to Thu Convergence", "value": "~33 hours", "pct": 86, "color": "#f59e0b" },
+          { "label": "Tax Deadline", "value": "21 days to April 15", "pct": 70, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6 (all agents)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h (full rotation)", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents: standup $45 + build $233 + publish $55 + design $60 + community $41 + eod $63)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$5,625 (68 runs: standup×13 $585 + build×11 $2,563 + publish×10 $550 + design×11 $660 + community×11 $451 + eod×12 $756 + standup×0.6 $40 rounding)", "pct": 47, "color": "#4ade80" },
+          { "label": "📊 Yesterday's Total (Mar 24)", "value": "$6,097 (78 runs across all 6 agents)", "pct": 51, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API fetch failed (CORS/network restriction from browser context). Persistent issue across all cycles. Report saved locally."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-16",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "Audited aztec-network-guide for UX/accessibility issues; created static OG image (1200x630 SVG+PNG) with privacy shield visualization and key stats; added ToC aria-label, mobile table scroll min-widths for all 3 tables, WebkitOverflowScrolling for smooth iOS scrolling, switched from dynamic /api/og to static PNG, and updated OG alt text with descriptive metrics.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added aria-label='Table of Contents' to ToC nav on aztec-network-guide for screen reader accessibility",
+          "Changed ToC container from <div> to semantic <nav> element for proper landmark navigation",
+          "Added min-width: 480px to PXE vs AVM comparison table (3 columns) for proper mobile horizontal scroll",
+          "Added min-width: 420px to AZTEC Tokenomics table (2 columns) for mobile scroll support",
+          "Added min-width: 560px to competitors comparison table (4 columns: Aztec vs Zcash, Monero, Tornado Cash, Railgun) for mobile scroll",
+          "Added WebkitOverflowScrolling: touch to all 3 table scroll containers for smooth iOS scrolling",
+          "Switched aztec-network-guide OG from dynamic /api/og endpoint to static PNG for faster social card rendering",
+          "Updated OG image alt text to be descriptive with key metrics (3,500+ sequencers, $350M FDV, Ignition Chain, TGE dates)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: aztec-network-guide (1200x630) — SVG + PNG with indigo/purple/cyan gradient, privacy shield visualization with lock icon, ZK proof radiating nodes (PXE, ZK, L2, ETH), 4 stat cards (Sequencers 3,500+, Pre-Sale Raised 19,476 ETH, Token Sale FDV $350M, Max Supply 10.35B), PXE→ZK Proof→Ignition Chain→Ethereum L1 flow diagram, topic pills (Noir Language, Dual State Model, AZTEC Token, TGE Feb 2026)"
+        ]
+      },
+      {
+        "title": "Files Modified",
+        "items": [
+          "src/app/learn/aztec-network-guide/page.tsx — Added ToC aria-label + semantic <nav>, 3 tables with min-width + WebkitOverflowScrolling, switched to static OG PNG, updated alt text"
+        ]
+      },
+      {
+        "title": "Files Created",
+        "items": [
+          "public/og-aztec-network-guide.svg — OG image SVG source (1200x630)",
+          "public/og-aztec-network-guide.png — OG image PNG for social sharing",
+          "reports/2026-03-16-design-v5.json — this report"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

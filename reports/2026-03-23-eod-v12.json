@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-23",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle v12: build-v12 shipped ZKML + AI Agent Identity guides, design-v11 created 2 OG images, community-v11 drafted social content. 2 'use client'+metadata bugs remain (unichain, appchains). Git locks at 7.3 days — 0 commits, 0 deploys, 678 uncommitted changes. No regressions.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "PAGES BUILT SINCE LAST EOD (v11): build-v12 added /learn/zkml-guide-2026 + /learn/ai-agent-identity-nhi-guide. Both are proper server components with Metadata export, StructuredData, Breadcrumb — PASS.",
+          "CRITICAL BUG (carry-over): /learn/unichain-guide-2026 and /learn/appchains-app-specific-rollups-guide-2026 still use 'use client' with metadata export. Next.js silently ignores metadata in client components — SEO titles/descriptions NOT rendered.",
+          "3 pages missing BackToTop component: /learn/onchain-identity-guide, /learn/smart-contract-security-guide, /learn/bitcoin-supply-shock-guide-2026. Minor UX gap.",
+          "3 pages missing StructuredData + Breadcrumb: /learn/nftfi-nft-finance-guide-2026, /learn/solana-blinks-actions-guide-2026, /ecosystem/initia. These were scaffolded with older template.",
+          "ORPHAN AUDIT: 103 slugs in PUBLISHED_PAGES have no matching page.tsx — unchanged from v11. Will 404 if accessed.",
+          "BUILD CONFIG: ignoreBuildErrors:true still masking 42+ TS errors. No regressions on existing published pages.",
+          "TOTAL: 1,110 page.tsx files, 446 slugs in published-pages.ts (341 with matching page.tsx, 103 orphans), 174 pages in PUBLISH_QUEUE."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "API ROUTE HEALTH: All 6 core routes have route.ts files — /api/prices, /api/trending, /api/fear-greed, /api/market-metrics, /api/market-dominance, /api/defi-yields.",
+          "CACHE: 5/6 routes have in-memory caching with TTLs. /api/defi-yields has NO caching — fetches upstream on every request. Carry-over P1.",
+          "FALLBACK DATA: /api/prices has fallback, /api/market-dominance has hardcoded fallback. 4/6 routes (/api/trending, /api/fear-greed, /api/market-metrics, /api/defi-yields) have NO fallback data. /api/defi-yields is worst — no cache AND no fallback, returns 500 on upstream failure.",
+          "RATE LIMITING: 0/6 routes wired to rate limiter. Library exists at src/lib/rate-limiter.ts but unused. Carry-over P1 — now 40+ cycles unfixed.",
+          "X-CACHE-SOURCE: Only /api/prices and /api/market-dominance include diagnostic header. 4/6 routes missing it.",
+          "NO NEW DATA ISSUES this cycle — no API routes were modified."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "DEPLOYMENT BLOCKED: Git locks (HEAD.lock + index.lock) since Mar 16 — now 7.3 days. Cannot commit or push. No Vercel deploy possible.",
+          "LAST DEPLOY: e999560 (Mar 17, 6 days ago). Production running stale build.",
+          "WORKING TREE DRIFT: 678 changed entries (47 modified tracked + 1,186 untracked). Local/production drift is severe and growing every cycle.",
+          "BUILD CONFIG: standalone output, NODE_OPTIONS='--max-old-space-size=8192', ignoreBuildErrors:true. No vercel.json.",
+          "SINCE LAST EOD: build-v12 (ZKML + AI Agent Identity), design-v11 (2 OG images), community-v11 (social content) — all sitting in uncommitted working tree.",
+          "ACTION REQUIRED: rm .git/index.lock .git/HEAD.lock → staged commit → push → Vercel auto-deploy. Recommend staged commits to reduce regression risk from 1,200+ file diff."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE (since eod-v11): build-v12 produced 2 learn guides (ZKML + AI Agent Identity, ~6,200 words combined). design-v11 created 2 OG images + responsive/a11y fixes. community-v11 drafted Fed wipeout content series + newsletter v6.",
+          "NOT SHIPPED: 0 commits, 0 deploys, 0 pages promoted to production. All work accumulates in uncommitted working tree.",
+          "DAY 70 CUMULATIVE: 22+ learn guides built, 16+ OG images, 38+ social posts, 174 pages in PUBLISH_QUEUE, 64 agent reports today. Massive output with zero deploy path.",
+          "BLOCKER [P0 — 7+ DAYS]: Git locks. Single point of failure blocking entire pipeline. Requires manual rm .git/index.lock .git/HEAD.lock.",
+          "BLOCKER [P1]: 2 pages with 'use client'+metadata bug (unichain, appchains) — need programmer fix before promotion.",
+          "CARRY-OVER [P1 — 40+ CYCLES]: Rate limiter not wired on any API route.",
+          "CARRY-OVER [P1 — 40+ CYCLES]: /api/defi-yields missing cache + fallback.",
+          "CARRY-OVER [P2]: 103 orphan slugs, 3 pages missing StructuredData/Breadcrumb, 3 pages missing BackToTop.",
+          "NEXT CYCLE: Clear git locks → fix 2 client-component bugs → staged commit → promote queued pages → deploy."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Total page.tsx Files", "value": "1,110", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Pages (live)", "value": "341 (of 446 slugs)", "pct": 76, "color": "#f59e0b" },
+          { "label": "Publish Queue", "value": "174 pages", "pct": 50, "color": "#f59e0b" },
+          { "label": "Orphan Slugs (404 risk)", "value": "103 pages", "pct": 23, "color": "#ef4444" },
+          { "label": "Days Since Last Deploy", "value": "6 days (e999560, Mar 17)", "pct": 3, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "7.3 days (since Mar 16)", "pct": 2, "color": "#ef4444" },
+          { "label": "Uncommitted Changes", "value": "678 entries (47 mod + 1,186 new)", "pct": 3, "color": "#ef4444" },
+          { "label": "API Route Health", "value": "6/6 present", "pct": 100, "color": "#4ade80" },
+          { "label": "API Cache Coverage", "value": "5/6 routes", "pct": 83, "color": "#f59e0b" },
+          { "label": "API Fallback Coverage", "value": "2/6 routes", "pct": 33, "color": "#ef4444" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "use client Bugs", "value": "2 pages", "pct": 90, "color": "#f59e0b" },
+          { "label": "Agent Runs Today", "value": "64 reports", "pct": 85, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

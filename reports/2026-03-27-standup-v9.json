@@ -1,0 +1,82 @@
+{
+  "date": "2026-03-27",
+  "block": "standup",
+  "version": 9,
+  "report": {
+    "status": "completed",
+    "summary": "9th rotation standup — SEC 91-ETF ruling deadline day, still no official approvals/rejections announced. BTC $66.6K (Fortune 9AM: $66,587), ETH $1,977–$1,989 (sub-$2K, 3rd cycle at these levels). F&G 13 (Extreme Fear, 48+ days). Build v7 added DeFi Lending Comparison + Yield Aggregators guides. Publish v5 promoted 2 more learn pages (shared sequencing, wrapped BTC). Design v7 fixed critical 'use client' bug in DeFi Lending page + 14 UX fixes. 250 uncommitted files (↑12 from v8). 44 agent runs today ($3,795 human-equivalent). Deploy remains P0.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "BTC: $66,223–$68,787 range today. Fortune 9AM: $66,587 (down $2,860 from yesterday). $13.5B options expiry same day as SEC ruling. 2-week low. Geopolitical risk elevated (Iran tensions, Middle East). Down ~$20,660 YoY. No material price movement since v8.",
+          "ETH: $1,977–$1,989. Fortune 9AM: $1,988.69. Sub-$2K for 2nd+ consecutive day. OG ICO whale dumped 11,552 ETH ($23.4M). Options expiry + whale selling compounding downward pressure. Stable since v8.",
+          "F&G INDEX: 13 (Extreme Fear). 48+ consecutive days — longest streak since post-FTX Oct 2022. Dipped to 8 on Mar 24 (cycle low). Historically, sustained sub-15 readings precede 30-90 day reversals with median +38.4% BTC return.",
+          "ETF FLOWS (Mar 26): -$171M single-day outflow (largest in 3+ weeks). All 11 US spot BTC ETFs saw redemptions — broad-based, not issuer-specific. Weekly net outflows $70.71M. Earlier March had $1.53B monthly inflows before reversal.",
+          "SEC ETF RULING — STILL PENDING: 91 applications, 24 tokens, deadline today. No approvals or rejections announced as of this cycle. Commodity classification for 16 tokens (Mar 17 ruling) removed key legal barrier. SOL, LTC first spot approvals possible. DOGE testing ETF wrapper limits. $13.5B options expiry same day. Could see mass extensions pushing timeline to late 2026.",
+          "DELTA FROM v8: Uncommitted files 238→250 (↑12). Build v7 added 2 new learn guides (DeFi Lending Comparison, Yield Aggregators). Publish v5 promoted 2 learn pages (shared sequencing, wrapped BTC) — total published ~881. Design v7 fixed critical 'use client' bug + 13 more UX fixes across 3 pages. Community v8 drafted 3 tweets (#208-210) + SVG social card (mid-cycle dip). EOD v9 confirmed 571 published slugs, 567 in queue, 30+ staged uncommitted pages. Agent runs 38→44 (↑6: eod-v9, community-v8, design-v7, build-v7, publish-v5, this standup)."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "8th FULL CYCLE completed since last standup. All 6 agent types ran. Entering 9th rotation.",
+          "BUILD v7: 2 new learn pages — DeFi Lending Protocol Comparison 2026 (Aave V4, Morpho Blue, Compound V3, Fluid, Spark — ~3200 words, 11 sections + 6 FAQs) and DeFi Yield Aggregators Guide 2026 (Yearn, Beefy, Pendle, Sommelier — ~3000 words, 10 sections + 6 FAQs). Full SEO metadata, Article+FAQ JSON-LD, added to PUBLISH_QUEUE.",
+          "PUBLISH v5: Promoted 2 learn pages from queue: shared-sequencing-decentralized-sequencers-guide-2026 and wrapped-bitcoin-comparison-guide-2026. Total published ~881. 2 remain blocked (wallet security = slug mismatch, restaking comparison = no page.tsx).",
+          "DESIGN v7: Critical bug fix — removed invalid 'use client' directive on DeFi Lending page that broke SSR metadata. Fixed component imports, StructuredData prop name, OG image reference. 14 total UX fixes across DeFi Lending, Yield Aggregators, and Wallet Security pages. 2 new OG images created. 4 deferred findings (style inconsistency, FAQ standardization, data freshness indicators, restaking scaffolding).",
+          "COMMUNITY v8: 3 tweets (#208-210) — BTC mid-cycle dip zone (Benjamin Cowen analysis), Ethereum Hegota fork deprioritization, HASH -25% crash risk management. SVG social card: Mid-Cycle Dip Zone. Newsletter v33 addendum. Discord/TG late-night recap. 210 total tweets drafted.",
+          "EOD-QA v9: 571 published slugs, 567 in queue. 466/571 with page.tsx (82%). All 6 API routes healthy, correct cache TTLs. No regressions. 30+ uncommitted learn pages + 40+ OG images staged.",
+          "BLOCKER [P0]: 250 uncommitted files (↑12 from v8's 238, ↑93 from first cycle's 157). 18+ learn pages, 62+ OG images, all promoted pages, 20+ UX fixes, 25+ tweet drafts — ALL invisible to production. SEC ruling traffic spike could arrive any minute.",
+          "BLOCKER [P1]: 0/6 public API routes use rate limiter. Only /api/health has it.",
+          "CARRY-OVER: 142 TS errors (stable, non-blocking), 105 legacy slugs missing page.tsx, 0/6 API routes rate-limited, 2 items in PUBLISH_QUEUE blocked (wallet security slug mismatch, restaking no page.tsx), 4 design findings deferred."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY [CRITICAL, 9th CONSECUTIVE CYCLE]: 250 uncommitted files. Every asset built today — 18+ learn pages, 62+ OG images, all newly promoted pages, 14 UX/bug fixes, community assets — invisible to Google and users. SEC ruling results could drop any moment. One git commit + Vercel push unlocks everything. This has been P0 for 9 cycles. Jefe: this is the single highest-leverage action available.",
+          "PRIORITY 2 — FIX BLOCKED QUEUE ITEMS: 2 PUBLISH_QUEUE pages blocked — wallet security has slug mismatch (page exists at crypto-wallet-security-guide-2026, queued as crypto-wallet-security-token-approvals-guide), restaking comparison has no page.tsx. Quick fixes: rename/alias the wallet security slug, scaffold restaking page.tsx from the data in learn-20260327.ts.",
+          "PRIORITY 3 — SEC RULING REACTIVE CONTENT: When results drop, immediately build: 'SEC March 27 ETF Ruling: Full Breakdown', 'Which Crypto ETFs Got Approved/Extended', 'What SOL/LTC/DOGE ETF Decisions Mean'. The 4-8 hour post-announcement window is peak search intent. Content pipeline and templates are ready."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE — 250 files pending deploy (CRITICAL)", "pct": 15, "color": "#ef4444" },
+          { "label": "Published Entries", "value": "~881 total (↑2 from publish-v5)", "pct": 98, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "2 pages blocked (slug mismatch + no page.tsx)", "pct": 40, "color": "#f59e0b" },
+          { "label": "Content Built This Cycle", "value": "2 learn pages (DeFi Lending Comparison, Yield Aggregators) + 14 UX fixes + 2 OG images + 3 tweets", "pct": 100, "color": "#4ade80" },
+          { "label": "Content Built Today (all cycles)", "value": "18+ learn pages, 62+ OG images, 20+ UX fixes, 210 tweets, 45+ social cards", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "250 (was 238 at v8, 157 at v1)", "pct": 5, "color": "#ef4444" },
+          { "label": "Page.tsx Coverage", "value": "82% (466/571 published slugs)", "pct": 82, "color": "#4ade80" },
+          { "label": "API Routes", "value": "6/6 present, correct cache TTLs", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "0/6 core routes protected", "pct": 0, "color": "#ef4444" },
+          { "label": "TS Errors", "value": "142 in 5 files (stable, non-blocking)", "pct": 20, "color": "#f59e0b" },
+          { "label": "BTC Price", "value": "$66.6K (2-week low, $13.5B options expiry + SEC deadline)", "pct": 50, "color": "#ef4444" },
+          { "label": "ETH Price", "value": "$1,977–$1,989 (sub-$2K, whale selling pressure)", "pct": 35, "color": "#ef4444" },
+          { "label": "Fear & Greed", "value": "13 (Extreme Fear — 48+ day streak)", "pct": 13, "color": "#ef4444" },
+          { "label": "ETF Flows (Mar 26)", "value": "-$171M (largest single-day outflow in 3+ weeks)", "pct": 15, "color": "#ef4444" },
+          { "label": "SEC ETF Ruling", "value": "PENDING — 91 apps, 24 tokens, deadline today, no results yet", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "1 of 6 (standup only)", "pct": 17, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~0.75h", "pct": 7, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$60/hr (standup rate)", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$45 (1 agent: standup)", "pct": 9, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$3,795 (44 runs: 9×standup $405 + 7×build $1,631 + 5×publish $275 + 7×design $420 + 8×community $328 + 9×eod $567 — from report file counts)", "pct": 32, "color": "#4ade80" },
+          { "label": "Today's Human-Hours", "value": "~112h (44 agent runs)", "pct": 46, "color": "#4ade80" },
+          { "label": "Today's Agent Runs", "value": "44 total (9+7+5+7+8+9 — per report file counts, some may be partial)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "SKIPPED — Chrome fetch to api.resend.com failed (egress proxy block). Same infrastructure limitation as v2-v8. Manual send or allowlist change needed."
+  }
+}

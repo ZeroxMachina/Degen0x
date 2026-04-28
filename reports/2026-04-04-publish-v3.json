@@ -1,0 +1,80 @@
+{
+  "date": "2026-04-04",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Batch 5: Published 5 high-traffic comparison pages (Coinbase vs Kraken, Coinbase vs Robinhood, Crypto.com vs Coinbase, MetaMask vs Trust Wallet, Bitcoin vs Gold). 698 total published pages. Deploy pending manual Vercel redeploy.",
+    "sections": [
+      {
+        "title": "Pages Published (Batch 5)",
+        "pages": [
+          { "slug": "/exchanges/compare/coinbase-vs-kraken", "status": "pass" },
+          { "slug": "/exchanges/compare/coinbase-vs-robinhood", "status": "pass" },
+          { "slug": "/exchanges/compare/crypto-com-vs-coinbase", "status": "pass" },
+          { "slug": "/wallets/compare/metamask-vs-trust-wallet", "status": "pass" },
+          { "slug": "/investing/compare/bitcoin-vs-gold", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with page.tsx", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with Metadata export", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with Breadcrumb", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with ComparisonTable", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with FAQSection", "value": "5/5", "pct": 100, "color": "#4ade80" },
+          { "label": "TS errors in new pages", "value": "0", "pct": 100, "color": "#4ade80" },
+          { "label": "Pre-existing TS errors (other files)", "value": "141 in 4 files", "pct": 50, "color": "#f59e0b" },
+          { "label": "Build (Vercel)", "value": "Expected pass (ignoreBuildErrors:true)", "pct": 90, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko API", "value": "Code healthy (in-memory cache + fallback)", "pct": 95, "color": "#4ade80" },
+          { "label": "DefiLlama API", "value": "Code healthy (cache + chain validation)", "pct": 95, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (token bucket + circuit breakers)", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Strategy", "value": "In-memory + ISR + CDN (verified)", "pct": 100, "color": "#4ade80" },
+          { "label": "Health Endpoint", "value": "/api/health operational", "pct": 100, "color": "#4ade80" },
+          { "label": "Egress Test", "value": "Blocked from sandbox (expected)", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Deploy Status", "value": "Pending — manual Vercel redeploy needed", "pct": 25, "color": "#f59e0b" },
+          { "label": "Reason", "value": "Computer use disabled in this session", "pct": 0, "color": "#ef4444" },
+          { "label": "published-pages.ts", "value": "Updated with 5 new slugs", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Queue Status",
+        "metrics": [
+          { "label": "Total Published Pages", "value": "698", "pct": 57, "color": "#4ade80" },
+          { "label": "Remaining in PUBLISH_QUEUE", "value": "2 (both need page.tsx)", "pct": 5, "color": "#f59e0b" },
+          { "label": "Unpublished with page.tsx", "value": "~282 (compare, reviews, tools)", "pct": 43, "color": "#06b6d4" },
+          { "label": "Pages published today (all batches)", "value": "25", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Today's Cumulative (All 5 Batches)",
+        "metrics": [
+          { "label": "Total pages published today", "value": "25", "pct": 100, "color": "#4ade80" },
+          { "label": "Batch 1 (manual)", "value": "5 learn pages", "pct": 100, "color": "#4ade80" },
+          { "label": "Batch 2 (scheduled)", "value": "5 learn pages", "pct": 100, "color": "#4ade80" },
+          { "label": "Batch 3 (scheduled)", "value": "5 learn pages", "pct": 100, "color": "#4ade80" },
+          { "label": "Batch 4 (scheduled)", "value": "2 tools + 3 comparisons", "pct": 100, "color": "#4ade80" },
+          { "label": "Batch 5 (scheduled)", "value": "5 high-traffic comparisons", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"],
+    "notes": [
+      "Batch 5 focuses on high-traffic comparison pages across exchanges, wallets, and investing — these are strong SEO targets for transactional search queries.",
+      "All 5 promoted pages use the full comparison template: Metadata, Breadcrumb, AffiliateDisclosure, ComparisonTable, and FAQSection components.",
+      "Zero TS errors in newly promoted pages. Pre-existing 141 errors in 4 other files (lido-v3, crypto-arbitrage, rwa-yield, structured-data.examples) — not blocking Vercel builds.",
+      "PUBLISH_QUEUE still has 2 items requiring page.tsx scaffolding (/learn/monad-guide, /learn/zora-attention-markets-guide-2026). ~282 unpublished pages with page.tsx remain in inventory across compare, reviews, and tools categories.",
+      "Deploy requires manual Vercel redeploy — computer use is disabled."
+    ]
+  }
+}

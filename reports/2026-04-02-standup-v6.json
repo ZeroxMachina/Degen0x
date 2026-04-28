@@ -1,0 +1,76 @@
+{
+  "date": "2026-04-02",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Sixth standup Apr 2: 42 learn pages (+4 since v5), 30,404 total lines (+13.2%). New: BTCfi, Wallet Security, Tokenomics, Portfolio Rebalancing guides. Build-v8 + Design + Publish + EOD-v4 ran since last standup. Publish queue emptied (4 promoted). 88 uncommitted files (+8). Day 11 deploy gap persists.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE LAST STANDUP (v5): 4 new learn pages detected — total now 42 (up from 38). New: BTCfi Bitcoin DeFi Guide (1,099 lines), Crypto Portfolio Rebalancing Guide (879 lines), Tokenomics Guide (822 lines), Crypto Wallet Security Guide (755 lines).",
+          "CONTENT VOLUME: 30,404 lines across 42 learn page.tsx files (up from 26,849 — +3,555 lines, +13.2%). Strongest single-cycle growth today. Average page size: 724 lines.",
+          "PUBLISH QUEUE: Emptied this cycle — Euler V2, Hyperlane, Staking, Flash Loans promoted to PUBLISHED_PAGES. 4 new guides (BTCfi, Wallet Security, Tokenomics, Rebalancing) not yet queued.",
+          "DESIGN POLISH: UX audit completed on 4 guides (Euler V2, Hyperlane, Tokenomics, Rebalancing) — fixed OG images, domain mismatches, aria-labels, keyboard focus states, touch targets.",
+          "UNCOMMITTED FILES: cryptodegen 88 files (up from 80 in v5, +10%). Degen0x workspace has no git repo — all 42 learn pages exist only as local files.",
+          "SEO PIPELINE: All new pages confirmed with Metadata exports, Article+FAQPage structured data, comparison tables, and data page entries. No GSC or Vercel Analytics accessible from sandbox."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "CYCLE ACTIVITY: 4 agents ran since last standup — build-v8, design, eod-v4, publish. Today's total: 17 reports (6 standups, 4 builds, 2 community, 1 design, 4 EODs, 1 publish). Highest daily throughput yet.",
+          "COMPLETED SINCE LAST STANDUP: (1) Build-v8 created Tokenomics + Portfolio Rebalancing guides. (2) Design polished 4 guides with UX/a11y fixes. (3) Publish promoted 4 pages from queue → PUBLISHED_PAGES. (4) EOD-v4 confirmed stable TS errors at 141.",
+          "P0 BLOCKER (Day 11, PERSISTENT): No production deploy since commit 3b2dd28 (Apr 1). 42 learn guides + all accumulated changes exist only locally. 88 uncommitted files in cryptodegen. Content stockpile at record size — deploy ROI increasing every cycle.",
+          "P1 — NEW CONTENT UNQUEUED: 4 new guides from this cycle (BTCfi, Wallet Security, Tokenomics, Rebalancing) need adding to PUBLISH_QUEUE. Previous 4 were just promoted — queue is empty.",
+          "P2 — CONTENT VELOCITY: 4 pages/cycle is the highest rate today. At this pace, learn section could hit 50+ pages by end of day if builds continue.",
+          "P3 — CONTENT CALENDAR: 334 tweets drafted through Jul 5 (unchanged). Newsletter v19 ready. Social cards created for AI Tokens Breakout + CLARITY Act."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — DEPLOY AUTHORIZATION (P0, CRITICAL, Day 11): 42 learn guides, 88 uncommitted files, 334 tweet drafts, empty publish queue with 4 new pages ready to refill it — all stuck locally. The content-to-deploy ratio is the worst it's been. A single git commit+push remains the highest-ROI action by an order of magnitude. Every hour of delay is ~724 lines of content generating zero organic impressions.",
+          "PRIORITY 2 — REFILL PUBLISH QUEUE: Queue was just emptied (good!). Next build cycle should add BTCfi, Wallet Security, Tokenomics, and Portfolio Rebalancing to PUBLISH_QUEUE. These are high-value topics: BTCfi (emerging narrative), Wallet Security (evergreen + high search volume), Tokenomics (fundamental education), Rebalancing (practical tool-adjacent).",
+          "PRIORITY 3 — SHIFT FROM CONTENT CREATION TO DEPLOYMENT PREP: With 42 learn guides on disk and the queue cycling properly, the bottleneck is not content — it's shipping. Next cycles should prioritize: (a) committing all accumulated changes, (b) verifying build passes, (c) resolving the 141 TS errors in the 4 known files, (d) pushing to production."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "STALE — Day 11 no deploy", "pct": 2, "color": "#ef4444" },
+          { "label": "Learn Pages on Disk", "value": "42 (+4 since last standup)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Lines (Learn TSX)", "value": "30,404 (+3,555 / +13.2%)", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "0 (emptied — 4 new guides ready to queue)", "pct": 10, "color": "#f59e0b" },
+          { "label": "Pages Promoted This Cycle", "value": "4 (Euler V2, Hyperlane, Staking, Flash Loans)", "pct": 100, "color": "#4ade80" },
+          { "label": "Total page.tsx Files", "value": "42 learn + others", "pct": 80, "color": "#06b6d4" },
+          { "label": "Git — cryptodegen", "value": "main, 88 uncommitted files (+8)", "pct": 15, "color": "#f59e0b" },
+          { "label": "Git — Degen0x", "value": "NO REPO (Day 11)", "pct": 0, "color": "#ef4444" },
+          { "label": "Content Calendar", "value": "334 tweets through Jul 5", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6/6 code-stable", "pct": 100, "color": "#4ade80" },
+          { "label": "API Fallback Coverage", "value": "2/6 routes", "pct": 33, "color": "#f59e0b" },
+          { "label": "TS Errors", "value": "141 (4 files, stable)", "pct": 85, "color": "#06b6d4" },
+          { "label": "UX/A11y Audit", "value": "4 guides polished this cycle", "pct": 100, "color": "#4ade80" },
+          { "label": "Agent Reports Today", "value": "17 (across all agents)", "pct": 95, "color": "#4ade80" },
+          { "label": "Days to Tax Deadline", "value": "13 days (Apr 15)", "pct": 40, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "5 of 6 (build, design, eod, publish, standup)", "pct": 83, "color": "#4ade80" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~8.25h", "pct": 80, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$456 (build $233 + design $60 + eod $63 + publish $55 + standup $45)", "pct": 39, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,651 (standup×6=$270, build×4=$932, community×2=$82, design×1=$60, eod×4=$252, publish×1=$55) — 17 runs", "pct": 14, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email": "Chrome JS fetch to Resend API blocked (CORS/network restriction from browser context) — consistent with all previous cycles"
+  }
+}

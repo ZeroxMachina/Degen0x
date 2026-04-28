@@ -1,0 +1,47 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1629;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d946ef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e6ed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="4" fill="url(#accentGradient)"/>
+  <circle cx="130" cy="115" r="75" fill="#ec4899" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1070" cy="515" r="110" fill="#d946ef" opacity="0.06" filter="url(#glow)"/>
+  <rect x="60" y="60" width="140" height="40" rx="20" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="2"/>
+  <text x="130" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ec4899" text-anchor="middle">DEFI</text>
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="42" font-weight="bold" fill="url(#titleGradient)">Impermanent Loss Guide</text>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-size="20" fill="#8b949e">Calculate & minimize LP losses in DeFi pools</text>
+  <g>
+    <rect x="750" y="80" width="400" height="400" rx="12" fill="#0a1427" opacity="0.5" stroke="#1e293b" stroke-width="1"/>
+    <g>
+      <line x1="800" y1="350" x2="950" y2="350" stroke="#1e293b" stroke-width="1" opacity="0.5"/>
+      <line x1="800" y1="350" x2="800" y2="120" stroke="#1e293b" stroke-width="1" opacity="0.5"/>
+    </g>
+    <path d="M 820 300 L 860 200 L 900 250 L 940 150" stroke="#22c55e" stroke-width="2" fill="none" opacity="0.9"/>
+    <text x="830" y="185" font-family="system-ui, sans-serif" font-size="11" fill="#22c55e" opacity="0.8">Hold</text>
+    <path d="M 820 280 L 860 260 L 900 290 L 940 240" stroke="#ec4899" stroke-width="2" fill="none" opacity="0.8" stroke-dasharray="4,4"/>
+    <text x="865" y="240" font-family="system-ui, sans-serif" font-size="11" fill="#ec4899" opacity="0.8">LP Position</text>
+    <g opacity="0.7">
+      <path d="M 940 150 L 950 160 M 950 160 L 940 170" stroke="#ec4899" stroke-width="1.5" fill="none"/>
+    </g>
+    <text x="900" y="410" font-family="system-ui, sans-serif" font-size="14" fill="#ec4899" text-anchor="middle">Divergent Prices</text>
+  </g>
+  <rect y="600" width="1200" height="30" fill="#0a1427" opacity="0.6"/>
+  <circle cx="60" cy="615" r="10" fill="#6366f1"/>
+  <text x="75" y="621" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">degen0x.com</text>
+</svg>

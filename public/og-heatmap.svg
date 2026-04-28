@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="950" cy="180" r="200" fill="#ef4444" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="180" cy="480" r="150" fill="#22c55e" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Heatmap grid visualization (right side) -->
+  <!-- Row 1 -->
+  <rect x="780" y="140" rx="6" width="72" height="56" fill="#22c55e" opacity="0.7"/>
+  <rect x="860" y="140" rx="6" width="72" height="56" fill="#22c55e" opacity="0.4"/>
+  <rect x="940" y="140" rx="6" width="72" height="56" fill="#ef4444" opacity="0.3"/>
+  <rect x="1020" y="140" rx="6" width="72" height="56" fill="#22c55e" opacity="0.9"/>
+  <!-- Row 2 -->
+  <rect x="780" y="204" rx="6" width="72" height="56" fill="#ef4444" opacity="0.6"/>
+  <rect x="860" y="204" rx="6" width="72" height="56" fill="#22c55e" opacity="0.3"/>
+  <rect x="940" y="204" rx="6" width="72" height="56" fill="#22c55e" opacity="0.6"/>
+  <rect x="1020" y="204" rx="6" width="72" height="56" fill="#ef4444" opacity="0.5"/>
+  <!-- Row 3 -->
+  <rect x="780" y="268" rx="6" width="72" height="56" fill="#22c55e" opacity="0.5"/>
+  <rect x="860" y="268" rx="6" width="72" height="56" fill="#ef4444" opacity="0.8"/>
+  <rect x="940" y="268" rx="6" width="72" height="56" fill="#22c55e" opacity="0.4"/>
+  <rect x="1020" y="268" rx="6" width="72" height="56" fill="#22c55e" opacity="0.7"/>
+  <!-- Row 4 -->
+  <rect x="780" y="332" rx="6" width="72" height="56" fill="#ef4444" opacity="0.4"/>
+  <rect x="860" y="332" rx="6" width="72" height="56" fill="#22c55e" opacity="0.8"/>
+  <rect x="940" y="332" rx="6" width="72" height="56" fill="#ef4444" opacity="0.6"/>
+  <rect x="1020" y="332" rx="6" width="72" height="56" fill="#22c55e" opacity="0.3"/>
+
+  <!-- Cell labels -->
+  <text x="816" y="174" text-anchor="middle" fill="#fff" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" opacity="0.9">BTC</text>
+  <text x="896" y="174" text-anchor="middle" fill="#fff" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" opacity="0.9">ETH</text>
+  <text x="976" y="174" text-anchor="middle" fill="#fff" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" opacity="0.9">SOL</text>
+  <text x="1056" y="174" text-anchor="middle" fill="#fff" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" opacity="0.9">AVAX</text>
+
+  <!-- degen0x branding -->
+  <text x="70" y="80" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" letter-spacing="0.08em">degen0x</text>
+
+  <!-- Title -->
+  <text x="70" y="220" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">Crypto Sentiment</text>
+  <text x="70" y="285" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">Heatmap</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="340" fill="#c9d1d9" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400">Real-time market sentiment across top crypto assets.</text>
+  <text x="70" y="370" fill="#c9d1d9" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400">Spot bullish and bearish trends at a glance.</text>
+
+  <!-- Tags -->
+  <rect x="70" y="420" width="80" height="28" rx="6" fill="#22c55e15" stroke="#22c55e40" stroke-width="1"/>
+  <text x="110" y="439" text-anchor="middle" fill="#22c55e" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">Bullish</text>
+  <rect x="162" y="420" width="80" height="28" rx="6" fill="#ef444415" stroke="#ef444440" stroke-width="1"/>
+  <text x="202" y="439" text-anchor="middle" fill="#ef4444" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">Bearish</text>
+  <rect x="254" y="420" width="90" height="28" rx="6" fill="#d2992215" stroke="#d2992240" stroke-width="1"/>
+  <text x="299" y="439" text-anchor="middle" fill="#d29922" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">Real-Time</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#161b22" opacity="0.8"/>
+  <text x="70" y="612" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="14">degen0x.com/heatmap</text>
+  <text x="1130" y="612" text-anchor="end" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="14">Free Crypto Tools</text>
+</svg>

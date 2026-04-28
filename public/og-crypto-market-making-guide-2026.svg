@@ -1,0 +1,81 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.9" />
+    </linearGradient>
+
+    <radialGradient id="glowCircle1" cx="20%" cy="25%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0" />
+    </radialGradient>
+
+    <radialGradient id="glowCircle2" cx="80%" cy="75%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.10" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#080d1c"/>
+
+  <!-- Decorative gradient circles -->
+  <circle cx="130" cy="140" r="230" fill="url(#glowCircle1)"/>
+  <circle cx="1060" cy="500" r="250" fill="url(#glowCircle2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accentGradient)"/>
+
+  <!-- AMM Curve motif (stylized x*y=k curve) -->
+  <g opacity="0.08">
+    <!-- Axes -->
+    <line x1="880" y1="300" x2="880" y2="580" stroke="url(#mainGradient)" stroke-width="2"/>
+    <line x1="880" y1="580" x2="1160" y2="580" stroke="url(#mainGradient)" stroke-width="2"/>
+    <!-- Curve (x*y=k hyperbola approximation) -->
+    <path d="M 900 320 Q 920 380 950 430 Q 980 470 1020 510 Q 1060 540 1100 555 Q 1130 562 1150 565" fill="none" stroke="url(#mainGradient)" stroke-width="3" stroke-linecap="round"/>
+    <!-- Data points -->
+    <circle cx="920" cy="370" r="5" fill="#10b981" opacity="0.5"/>
+    <circle cx="980" cy="470" r="5" fill="#6366f1" opacity="0.5"/>
+    <circle cx="1060" cy="540" r="5" fill="#ec4899" opacity="0.5"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="160" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#e6edf3" letter-spacing="-1">
+    Crypto Market
+  </text>
+  <text x="60" y="245" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#e6edf3" letter-spacing="-1">
+    Making
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="315" font-family="Arial, sans-serif" font-size="30" font-weight="500" fill="#8b949e">
+    AMMs, Liquidity Providers &amp; Order Books | 2026
+  </text>
+
+  <!-- Gradient line accent -->
+  <line x1="60" y1="340" x2="440" y2="340" stroke="url(#mainGradient)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Tags -->
+  <rect x="60" y="375" width="90" height="36" rx="18" fill="#10b981" opacity="0.15"/>
+  <text x="78" y="399" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#10b981">AMM</text>
+
+  <rect x="165" y="375" width="170" height="36" rx="18" fill="#6366f1" opacity="0.15"/>
+  <text x="188" y="399" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#818cf8">Liquidity Pools</text>
+
+  <rect x="350" y="375" width="190" height="36" rx="18" fill="#ec4899" opacity="0.15"/>
+  <text x="373" y="399" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#ec4899">Impermanent Loss</text>
+
+  <!-- Footer: degen0x.com -->
+  <text x="60" y="590" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#e6edf3">
+    degen0x.com
+  </text>
+
+  <!-- Subtle gradient indicator -->
+  <circle cx="1100" cy="90" r="8" fill="url(#mainGradient)" opacity="0.6"/>
+</svg>

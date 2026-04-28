@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative orbs -->
+  <circle cx="1000" cy="200" r="200" fill="#8b5cf6" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="150" cy="500" r="150" fill="#06b6d4" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Dictionary-style entries (right side) -->
+  <!-- Entry 1 -->
+  <rect x="780" y="140" width="330" height="64" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="800" y="168" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700">DeFi</text>
+  <text x="800" y="190" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12">Decentralized finance — financial services on</text>
+
+  <!-- Entry 2 -->
+  <rect x="780" y="214" width="330" height="64" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="800" y="242" fill="#06b6d4" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700">Staking</text>
+  <text x="800" y="264" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12">Locking tokens to secure a blockchain and</text>
+
+  <!-- Entry 3 -->
+  <rect x="780" y="288" width="330" height="64" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="800" y="316" fill="#22c55e" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700">Yield Farming</text>
+  <text x="800" y="338" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12">Providing liquidity to earn rewards and</text>
+
+  <!-- Entry 4 -->
+  <rect x="780" y="362" width="330" height="64" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="800" y="390" fill="#f97316" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700">Slippage</text>
+  <text x="800" y="412" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="12">Difference between expected and executed</text>
+
+  <!-- Count badge -->
+  <rect x="920" y="440" width="100" height="28" rx="14" fill="#6366f120" stroke="#6366f140" stroke-width="1"/>
+  <text x="970" y="459" text-anchor="middle" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">200+ terms</text>
+
+  <!-- degen0x branding -->
+  <text x="70" y="80" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" letter-spacing="0.08em">degen0x</text>
+
+  <!-- Title -->
+  <text x="70" y="220" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">Crypto</text>
+  <text x="70" y="285" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" letter-spacing="-0.02em">Glossary</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="340" fill="#c9d1d9" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400">Every crypto term explained in plain English.</text>
+  <text x="70" y="370" fill="#c9d1d9" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400">From DeFi to zero-knowledge proofs.</text>
+
+  <!-- Tags -->
+  <rect x="70" y="420" width="90" height="28" rx="6" fill="#6366f115" stroke="#6366f140" stroke-width="1"/>
+  <text x="115" y="439" text-anchor="middle" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">Reference</text>
+  <rect x="172" y="420" width="90" height="28" rx="6" fill="#06b6d415" stroke="#06b6d440" stroke-width="1"/>
+  <text x="217" y="439" text-anchor="middle" fill="#22d3ee" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">Education</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#161b22" opacity="0.8"/>
+  <text x="70" y="612" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="14">degen0x.com/glossary</text>
+  <text x="1130" y="612" text-anchor="end" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="14">Free Crypto Education</text>
+</svg>

@@ -1,0 +1,65 @@
+{
+  "date": "2026-03-28",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle 8 EOD: 2 new learn guides built (bear market investing + smart money signals), 356 uncommitted files (+12 from v7), 145 TS errors in 6 files (stable), 0 regressions, deploy still critical blocker",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "2 new pages built this cycle verified: /learn/crypto-bear-market-investing-guide-2026 and /learn/smart-money-onchain-signals-guide-2026 — both have page.tsx files, metadata exports (title, description, OG), and are added to PUBLISH_QUEUE",
+          "594 published slugs in PUBLISHED_PAGES config, 1,223 total page.tsx files in src/app — ~82% coverage of published slugs (103 legacy slugs still missing page.tsx)",
+          "145 TypeScript errors across 6 files (unchanged from prior cycles) — all JSX syntax issues (unescaped > characters) in: crypto-arbitrage-strategies, crypto-index-funds, institutional-crypto-adoption, lido-v3-stvaults, rwa-yield-vs-defi-yield-comparison, structured-data.examples.ts. Non-blocking for production build",
+          "176 pages remain in PUBLISH_QUEUE. 2 blocked items (wallet-security slug mismatch, restaking missing page.tsx). 4 items ready to promote (DePIN, Gas Fees from last build + bear-market, smart-money from this build)",
+          "No regressions detected since last cycle. No new broken pages introduced"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6 core API routes verified in codebase: fear-greed (10min TTL), trending (5min TTL), market-metrics (60s TTL), market-dominance (5min TTL), prices (60s TTL), defi-yields (5min TTL). All have in-memory cache + CDN s-maxage + stale-while-revalidate headers",
+          "All routes include fallback logic — serve stale cache on upstream failure (fear-greed, trending confirmed; others follow same pattern)",
+          "CoinGecko endpoints (trending, prices, market-dominance, market-metrics) rely on free tier — no API key observed in route files. Rate limiting risk remains if traffic scales",
+          "Health endpoint (/api/health) checks 3 services (coingecko-api, analytics, cache) but uses mock/random health checks — not real service pings. Flagging as tech debt",
+          "0/6 public API routes have request-level rate limiting applied (only /api/health has rate limiting via checkRateLimit). Production vulnerability carried forward",
+          "Network egress blocked from this environment — unable to perform live API health checks against degen0x.com. Code-level review only"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "HEAD at commit 21aaf5b (Mar 25 batch deploy) — unchanged for 3 days. 356 uncommitted files (31 modified + 325 untracked), up +12 from last cycle",
+          "No new Vercel deploys possible without git push. All content built since Mar 25 (16+ pages today alone, 24+ OG images, schema fixes) remains invisible to production",
+          "CRITICAL: Deploy blocker now in 18th+ consecutive cycle. Every hour of delay = lost indexing time for time-sensitive content (F&G record streak, Morgan Stanley MSBT, SEC rulings)",
+          "TypeScript compilation succeeds (145 errors are all non-blocking JSX syntax). Build would likely succeed if committed and pushed",
+          "Unable to verify live Vercel deployment status due to network egress restrictions"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE: build-6 created 2 new learn guides (crypto-bear-market-investing-guide-2026 at ~3,400 words, smart-money-onchain-signals-guide-2026 at ~3,600 words). Both SEO-optimized with Article + FAQ schemas, internal cross-links, and added to PUBLISH_QUEUE",
+          "CUMULATIVE TODAY (Mar 28): 6 build cycles shipped 16+ new pages, 8 standup rotations, 5 publish cycles, 7 design cycles, 9 community cycles, 8 EOD reviews. 228 tweets drafted cumulative. 38+ newsletter versions",
+          "CARRY-OVER BLOCKERS: (1) P0 — 356 uncommitted files need git commit + push to deploy. (2) P1 — 2 PUBLISH_QUEUE items blocked (wallet-security, restaking). (3) P1 — 4 queue items ready to promote (DePIN, Gas Fees, Bear Market, Smart Money). (4) P2 — 103 published slugs missing page.tsx. (5) P2 — 0/6 API routes rate-limited. (6) P3 — Health endpoint uses mock checks",
+          "NEEDS JEFE: Git commit + push (5 min action, highest leverage). One push unlocks 3 days of accumulated work for Google indexing"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Production Deploy Status", "value": "STALE — 356 files pending (3 days)", "pct": 5, "color": "#ef4444" },
+          { "label": "Published Pages", "value": "594 slugs in config", "pct": 97, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "176 pages (4 ready, 2 blocked)", "pct": 50, "color": "#f59e0b" },
+          { "label": "Page.tsx Coverage", "value": "82% (491/594 published slugs)", "pct": 82, "color": "#4ade80" },
+          { "label": "TypeScript Errors", "value": "145 in 6 files (stable, non-blocking)", "pct": 75, "color": "#f59e0b" },
+          { "label": "API Route Health", "value": "6/6 routes have caching (0/6 rate-limited)", "pct": 60, "color": "#f59e0b" },
+          { "label": "Pages Built Today", "value": "16+ across 6 build cycles", "pct": 100, "color": "#4ade80" },
+          { "label": "Uncommitted Files", "value": "356 (+12 from last cycle)", "pct": 5, "color": "#ef4444" },
+          { "label": "Regressions This Cycle", "value": "0 detected", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-03-17",
+  "block": "community",
+  "version": "v4",
+  "report": {
+    "status": "completed",
+    "summary": "Community growth cycle v4 (Mar 17): BTC surged to $75,800 (+25% from Feb bottom) on FOMC Day 1 risk-on rally; drafted 5 tweets + 6-post FOMC thread + FOMC reaction template + Discord/Telegram update + full newsletter; NEW narratives: institutional buying spree (Strategy $1.57B BTC, Bitmine 60,999 ETH), BTC miners pivoting to AI infra (Nebius-Meta $27B, TeraWulf $500M), oil fears easing; created FOMC institutional rally social card; FOMC decision tomorrow 2pm ET; Fear & Greed 15; ETF inflows +$1.3B March.",
+    "sections": [
+      {
+        "title": "Social Content Drafted",
+        "items": [
+          "Tweet 1 (Tue evening): FOMC Day 1 Rally — BTC $75,800, +25% from Feb bottom, ETH +10%, oil fears easing, dot plot is the real variable; CTA to /learn/fomc-fed-rate-crypto-guide",
+          "Tweet 2 (Tue night): Institutional Buying Spree — Strategy $1.57B BTC (761,068 total), Bitmine 60,999 ETH (4.6M total), ETF +$1.3B March, miners +6-12%; CTA to /tools/dca-calculator",
+          "Tweet 3 (Wed morning): AI x Crypto Convergence — Nvidia GTC + BTC miners pivoting to AI infra, Nebius-Meta $27B, TeraWulf $500M Morgan Stanley, Virtuals 17,700 agents; CTA to /ecosystem/virtuals-protocol",
+          "Tweet 4 (Wed afternoon): 5 Crypto Card Reviews live — Bybit, Gemini, Nexo, Fold, BitPay; CTA to /crypto-cards",
+          "Tweet 5 (Wed post-2pm): FOMC Reaction Template — fill-in-the-blank for all 3 scenarios (dovish/neutral/hawkish)",
+          "Twitter Thread (6 posts, Wed pre-2pm): FOMC Deep Dive v4 — updated with $75.8K price, 92%+ hold, Strategy buying, Bernstein bottom call, 3 scenarios with BTC targets, Powell tenure ending",
+          "Discord/Telegram (Tue evening): Full update — BTC $75.8K rally, institutional buying, FOMC preview, 5 crypto card reviews, new guides published",
+          "Newsletter (Thu Mar 19): BTC broke $75K lead; 3 subject lines; Market pulse with institutional buying + ETH surge; 6 new pages (FOMC, Telegram Bots, Virtuals, Crypto Cards, Stacks/sBTC, LRT); Worth reading (Tax guide 28 days, DeFAI guide); Degen Corner: Strategy $1.57B + Bitmine ETH + T. Rowe Price DOGE/SHIB ETF + miners AI pivot"
+        ]
+      },
+      {
+        "title": "Top Performing Content",
+        "metrics": [
+          { "label": "/learn/fomc-fed-rate-crypto-guide", "value": "FOMC Day 1 — decision tomorrow 2pm ET; BTC rallied to $75.8K before decision; 92%+ hold; guide live with 3 scenarios", "pct": 99, "color": "#ef4444" },
+          { "label": "/tools/dca-calculator", "value": "Evergreen #1 — Bernstein bottom call + institutional buying spree + tax season urgency; perennial traffic driver", "pct": 95, "color": "#4ade80" },
+          { "label": "/ecosystem/virtuals-protocol", "value": "AI x Crypto catalyst — Nvidia GTC + miners pivoting + Nebius-Meta $27B; 17,700 agents, $39.5M revenue", "pct": 93, "color": "#8b5cf6" },
+          { "label": "/learn/defai-guide-2026", "value": "DeFAI breakout accelerating — TAO/FET +14%, miners +6-12%, AI infra convergence", "pct": 92, "color": "#8b5cf6" },
+          { "label": "/learn/crypto-tax-guide-2026", "value": "28 days to April 15 — daily urgency compounding; peak search window", "pct": 91, "color": "#f59e0b" },
+          { "label": "/crypto-cards", "value": "5 new reviews published today; high-intent commercial queries for Bybit, Gemini, Nexo, Fold, BitPay", "pct": 88, "color": "#06b6d4" },
+          { "label": "/learn/telegram-trading-bots-guide-2026", "value": "Built today — Trojan $24B+ vol; high search volume for 'telegram trading bot'; Solana narrative", "pct": 87, "color": "#06b6d4" },
+          { "label": "/learn/altcoin-etf-guide-2026", "value": "ETF inflows $1.3B March; T. Rowe Price planning DOGE/SHIB ETF — narrative accelerating", "pct": 85, "color": "#14f195" },
+          { "label": "/learn/liquid-restaking-tokens-compared-2026", "value": "Published today — ETH +10% rally boosting restaking narrative", "pct": 83, "color": "#22c55e" }
+        ]
+      },
+      {
+        "title": "Visual Assets Created",
+        "items": [
+          "social-fomc-institutional-rally.svg — 1200x630 OG card: 4 data cards (BTC $75,800 +25%, ETH +10%, Fear&Greed 15, ETF +$1.3B); mini BTC recovery chart (Feb $60K → $75.8K); institutional buying table (Strategy $1.57B BTC, Bitmine 60,999 ETH); stat bar (Dot Plot 1 Cut, Hold 92%+, Powell May 23, Core PCE 2.8%, Miners +6-12%); dark glass-morphism with purple/cyan/amber ambient glows; FOMC Decision Tomorrow badge; CTA to FOMC guide. Saved to /public/social-fomc-institutional-rally.svg"
+        ]
+      },
+      {
+        "title": "Analytics Context",
+        "items": [
+          "FOMC DAY 1 RISK-ON RALLY: BTC surged to $75,800, up 25% from Feb bottom ($60K). ETH led with +10%. CoinDesk 20 up 5%. DOT +8.5%. Broad risk-on as oil fears ease.",
+          "MARKET DATA (live search): BTC $75,800. ETH +10% (leading). SOL, XRP strong. Global crypto mcap $2.62T (+1%). BTC dominance 56.8%. Trading volume $154B. Fear & Greed 15 (Extreme Fear despite rally).",
+          "INSTITUTIONAL BUYING SPREE: Strategy bought $1.57B BTC (now 761,068 BTC, $57.6B total). Bitmine bought 60,999 ETH (now 4.6M ETH). Tom Lee bullish on crypto amid Iran war. US spot BTC ETFs +$1.3B March (first positive since Oct).",
+          "AI x CRYPTO CONVERGENCE: BTC miners pivoting to AI infra. IREN +6%, Galaxy +8%, Cipher +7%. Nebius-Meta $27B AI deal. TeraWulf $500M Morgan Stanley facility. Plus Nvidia GTC catalyst (TAO/FET +14%).",
+          "NEW CORPORATE NEWS: T. Rowe Price planning DOGE/SHIB crypto ETF. Abra $750M SPAC IPO. OpenSea delayed token launch. SEC dropped BitClout lawsuit. South Korea fined Bithumb $24M.",
+          "FOMC PREVIEW: Decision Mar 18 at 2pm ET, Powell presser 2:30pm. 92%+ hold probability. JPMorgan/Goldman see potential inflation forecast revision to 3.5%. Core PCE at 2.8%. This is first meeting pricing in Iran conflict + tariffs.",
+          "HISTORICAL PATTERN: BTC dropped after 7/8 FOMC meetings. But 48h rebound window is consistent entry point. Bernstein bottom call + Fear 15 + negative perp funding = confluence last seen at BTC $16K.",
+          "PUBLISHED TODAY: 2 learn guides (Stacks/sBTC, LRT), 5 crypto card reviews, 2 pages built (Telegram Bots, Virtuals). Site at 547 published pages. PUBLISH_QUEUE: 2 remaining (Monad, Smart Wallets).",
+          "Social drafts saved to /reports/community-drafts/2026-03-17-social-drafts-v4.md",
+          "Social card saved to /public/social-fomc-institutional-rally.svg",
+          "Posting schedule: Tue evening (FOMC rally + institutional buying + Discord) → Wed morning (AI crypto + FOMC thread) → Wed 2pm+ (reaction template + crypto cards) → Thu (newsletter)"
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "communityManager", "graphicDesigner"]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-03-27",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Quiet cycle: no new commits or deploys. Published pages steady at 560, publish queue at 2, uncommitted files grew 205→215. TS errors and API routes unchanged.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "560 published slugs in PUBLISHED_PAGES (up from 558 last cycle — 2 pages promoted)",
+          "457/560 published slugs have matching page.tsx files; 103 still missing (unchanged backlog)",
+          "142 TypeScript errors across 5 files: 4 learn pages (JSX escaping) + structured-data.examples.ts (reference-only)",
+          "102 TS errors in app files (UNCHANGED): lido-v3-stvaults, crypto-arbitrage, institutional-adoption, crypto-index-funds",
+          "Build uses ignoreBuildErrors: true — TS errors do not block Vercel deploys",
+          "No new regressions detected — error set is stable from prior cycle",
+          "Live site verification blocked by egress proxy — cannot confirm HTTP 200 on production"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "All 6 public API route files present and structurally intact: prices, trending, fear-greed, market-metrics, market-dominance, defi-yields",
+          "Cache TTLs verified: prices (60s/swr120), trending (300s/swr600), fear-greed (600s/swr1200), market-metrics (60s/swr120), market-dominance (300s/swr600), defi-yields (300s/swr600)",
+          "defi-yields has best resilience: circuit breaker (5-fail threshold, 1min reset), retries with exponential backoff, 5s timeout",
+          "market-metrics and market-dominance return HTTP 200 even when serving fallback/simulated data — clients can't distinguish real vs mock",
+          "CRITICAL: 0/6 API routes use the rate limiter module at src/lib/rate-limiter.ts — still unused",
+          "No code changes to API routes this cycle — all stable",
+          "Cannot verify live API responses from sandbox (egress blocked)"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Latest deployed commit: 21aaf5b (batch deploy: 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes)",
+          "215 uncommitted files: 201 untracked + 28 modified (up from 205 last cycle — grew by 10)",
+          "No new commits or deploys since last cycle — production still running commit 21aaf5b",
+          "next.config.ts: standalone output disabled, staticGenerationMaxConcurrency=4, ignoreBuildErrors=true, image cache TTL=86400s",
+          "Security headers configured: X-DNS-Prefetch-Control, X-Content-Type-Options, Referrer-Policy",
+          "Static assets served with immutable cache headers (1yr TTL)",
+          "Cannot verify live Vercel deployment status from sandbox (degen0x.com egress blocked)"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "Delta this cycle: 2 new pages promoted from queue to published (+2 slugs to 560), 10 new uncommitted files (205→215)",
+          "No commits or deploys this cycle — content accumulation continues",
+          "BLOCKER [P0]: 215 uncommitted files need commit + push + Vercel deploy. Gap widening every cycle",
+          "Carry-over [P1]: Fix 4 learn pages with JSX escaping errors — 102 TS errors in app code",
+          "Carry-over [P1]: Add rate limiting to 6 API routes — rate limiter module exists but unused",
+          "Carry-over [P2]: Fix market-metrics and market-dominance to return non-200 status on fallback data",
+          "Carry-over [P2]: 103 published slugs missing page.tsx files (long-standing backlog)",
+          "PUBLISH_QUEUE: 2 pages remaining (desci-decentralized-science, gamblefi-onchain-betting)"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "560", "pct": 96, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "457/560", "pct": 82, "color": "#f59e0b" },
+          { "label": "TS Errors (app files)", "value": "102 in 4 files", "pct": 25, "color": "#f59e0b" },
+          { "label": "API Routes Present", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "API Rate Limiting", "value": "0/6 routes", "pct": 0, "color": "#ef4444" },
+          { "label": "API Fallback Data", "value": "2/6 routes", "pct": 33, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "215", "pct": 7, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "2 remaining", "pct": 90, "color": "#4ade80" },
+          { "label": "Deploys This Cycle", "value": "0", "pct": 0, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

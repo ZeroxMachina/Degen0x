@@ -1,0 +1,41 @@
+{
+  "date": "2026-03-28",
+  "block": "build",
+  "report": {
+    "status": "completed",
+    "summary": "Built 2 new learn guides: DYOR Token Research Guide 2026 (940 lines) and Crypto Leverage Trading Guide 2026 (1203 lines), both with full SEO metadata, structured data, FAQ schemas, and internal linking; added both to PUBLISH_QUEUE.",
+    "sections": [
+      {
+        "title": "Research Brief",
+        "items": [
+          "DYOR (Do Your Own Research): Evergreen high-search-volume topic. Framework covers whitepaper analysis, team verification, tokenomics review, smart contract audits, on-chain data analysis, community evaluation, competitor comparison, and regulatory risk assessment. Referenced real case studies (Terra/Luna collapse, FTX fraud, BitConnect Ponzi). Tools covered: CoinGecko, Etherscan, DefiLlama, Dune Analytics, Bubblemaps, Token Sniffer, Go Plus Security.",
+          "Crypto Leverage Trading: Perp DEX daily volume near $10B in 2026. Hyperliquid leads with 311+ markets, $208B 30d volume, 229K+ active traders, 0.01%/0.035% maker/taker fees. dYdX offers 220+ markets on Cosmos-based chain. Jupiter Perps growing on Solana. Arthur Hayes noted Hyperliquid has lowest slippage for BTC perps in $100K-$10M range. Recommended leverage: beginners 2-5x, intermediate 5-10x, advanced 10-25x.",
+          "Gap analysis confirmed: No DYOR/token research guide existed despite 'how-to-read-crypto-whitepaper' page. No leverage/margin trading guide existed despite perp DEX and options guides."
+        ]
+      },
+      {
+        "title": "Content Created",
+        "items": [
+          "DYOR: How to Research Any Crypto Token Before Buying in 2026 — 940 lines, ~4500 words. 8 sections: DYOR fundamentals, 10-step framework, red flags, essential tools, tokenomics evaluation, on-chain data reading, case studies (good vs bad), printable checklist template. 6 FAQs.",
+          "Crypto Leverage Trading Guide 2026: Margin, Liquidation & Risk Management — 1203 lines, ~5500 words. 9 sections: leverage basics, step-by-step examples, product types, platform comparison table (Hyperliquid/dYdX/Jupiter/Bybit/GMX), liquidation mechanics, risk management strategies, funding rates, common mistakes, tax implications. 6 FAQs."
+        ]
+      },
+      {
+        "title": "Pages Scaffolded",
+        "pages": [
+          { "slug": "/learn/dyor-token-research-guide-2026", "status": "pass" },
+          { "slug": "/learn/crypto-leverage-trading-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "SEO Optimization",
+        "items": [
+          "DYOR guide: title='DYOR: How to Research Any Crypto Token Before Buying in 2026 | degen0x', target keywords=['DYOR crypto', 'how to research crypto tokens', 'crypto due diligence'], ArticleSchema + FAQSchema (6 questions), internal links to 6 related pages",
+          "Leverage guide: title='Crypto Leverage Trading Guide 2026: Margin, Liquidation & Risk Management | degen0x', target keywords=['crypto leverage trading', 'crypto margin trading guide', 'liquidation crypto'], ArticleSchema + FAQSchema (6 questions), internal links to 6 related pages",
+          "Both pages added to PUBLISH_QUEUE in published-pages.ts"
+        ]
+      }
+    ],
+    "skills_used": ["researcher", "contentWriter", "seo", "pageScaffold"]
+  }
+}

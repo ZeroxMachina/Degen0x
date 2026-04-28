@@ -1,0 +1,127 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0a0f22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+    <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative glow circles -->
+  <circle cx="200" cy="300" r="200" fill="#22c55e" opacity="0.04" filter="url(#blur1)"/>
+  <circle cx="900" cy="400" r="250" fill="#d97706" opacity="0.04" filter="url(#blur1)"/>
+  <circle cx="600" cy="100" r="150" fill="#6366f1" opacity="0.04" filter="url(#blur2)"/>
+
+  <!-- Logo -->
+  <text x="80" y="72" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Category badge -->
+  <rect x="80" y="100" width="55" height="28" rx="6" fill="#d97706" opacity="0.2"/>
+  <rect x="80" y="100" width="55" height="28" rx="6" stroke="#d97706" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+  <text x="108" y="119" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" text-anchor="middle">Yield</text>
+
+  <!-- Main title -->
+  <text x="80" y="210" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Stablecoin Yield</text>
+  <text x="80" y="275" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Tracker</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="325" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#8b949e">Compare 15+ yield-bearing stablecoin rates across DeFi</text>
+
+  <!-- Key stats row -->
+  <g transform="translate(80, 370)">
+    <!-- Stat 1: Best APY -->
+    <rect x="0" y="0" width="150" height="80" rx="12" fill="white" opacity="0.03"/>
+    <rect x="0" y="0" width="150" height="80" rx="12" stroke="white" stroke-width="1" stroke-opacity="0.06" fill="none"/>
+    <text x="75" y="35" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#22c55e" text-anchor="middle">9.2%</text>
+    <text x="75" y="58" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="middle">TOP APY</text>
+
+    <!-- Stat 2: TVL -->
+    <rect x="166" y="0" width="150" height="80" rx="12" fill="white" opacity="0.03"/>
+    <rect x="166" y="0" width="150" height="80" rx="12" stroke="white" stroke-width="1" stroke-opacity="0.06" fill="none"/>
+    <text x="241" y="35" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#58a6ff" text-anchor="middle">$51B</text>
+    <text x="241" y="58" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="middle">TOTAL TVL</text>
+
+    <!-- Stat 3: Protocols -->
+    <rect x="332" y="0" width="150" height="80" rx="12" fill="white" opacity="0.03"/>
+    <rect x="332" y="0" width="150" height="80" rx="12" stroke="white" stroke-width="1" stroke-opacity="0.06" fill="none"/>
+    <text x="407" y="35" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#818cf8" text-anchor="middle">15</text>
+    <text x="407" y="58" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="middle">PROTOCOLS</text>
+
+    <!-- Stat 4: Chains -->
+    <rect x="498" y="0" width="150" height="80" rx="12" fill="white" opacity="0.03"/>
+    <rect x="498" y="0" width="150" height="80" rx="12" stroke="white" stroke-width="1" stroke-opacity="0.06" fill="none"/>
+    <text x="573" y="35" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#f0883e" text-anchor="middle">4</text>
+    <text x="573" y="58" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="middle">CHAINS</text>
+  </g>
+
+  <!-- Right side: Mini leaderboard -->
+  <g transform="translate(750, 110)" opacity="0.7">
+    <rect x="0" y="0" width="370" height="400" rx="16" fill="white" opacity="0.03"/>
+    <rect x="0" y="0" width="370" height="400" rx="16" stroke="white" stroke-width="1" stroke-opacity="0.06" fill="none"/>
+
+    <text x="24" y="36" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Top Stablecoin Yields</text>
+    <text x="346" y="36" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681" text-anchor="end">March 2026</text>
+
+    <line x1="24" y1="52" x2="346" y2="52" stroke="white" stroke-opacity="0.06"/>
+
+    <!-- Row 1 -->
+    <text x="24" y="84" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Stargate USDC</text>
+    <text x="24" y="102" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Arbitrum · High Risk</text>
+    <text x="346" y="90" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#f0883e" text-anchor="end">9.20%</text>
+
+    <line x1="24" y1="118" x2="346" y2="118" stroke="white" stroke-opacity="0.04"/>
+
+    <!-- Row 2 -->
+    <text x="24" y="148" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Morpho Blue USDC</text>
+    <text x="24" y="166" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Ethereum · Medium Risk</text>
+    <text x="346" y="155" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#f0883e" text-anchor="end">8.60%</text>
+
+    <line x1="24" y1="182" x2="346" y2="182" stroke="white" stroke-opacity="0.04"/>
+
+    <!-- Row 3 -->
+    <text x="24" y="212" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Fluid USDC</text>
+    <text x="24" y="230" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Ethereum · Medium Risk</text>
+    <text x="346" y="218" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#22c55e" text-anchor="end">7.80%</text>
+
+    <line x1="24" y1="246" x2="346" y2="246" stroke="white" stroke-opacity="0.04"/>
+
+    <!-- Row 4 -->
+    <text x="24" y="276" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">Yearn USDC</text>
+    <text x="24" y="294" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Ethereum · Medium Risk</text>
+    <text x="346" y="282" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#22c55e" text-anchor="end">7.40%</text>
+
+    <line x1="24" y1="310" x2="346" y2="310" stroke="white" stroke-opacity="0.04"/>
+
+    <!-- Row 5 -->
+    <text x="24" y="340" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#e6edf3">USDT Aave Arbitrum</text>
+    <text x="24" y="358" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#6e7681">Arbitrum · Low Risk</text>
+    <text x="346" y="346" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#22c55e" text-anchor="end">6.10%</text>
+
+    <text x="185" y="390" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="middle">+ 10 more protocols →</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#080d1c" opacity="0.8"/>
+  <text x="80" y="616" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="600" fill="#6366f1">degen0x.com</text>
+  <text x="1120" y="616" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681" text-anchor="end">Free · Real-Time · Filter by Risk</text>
+</svg>

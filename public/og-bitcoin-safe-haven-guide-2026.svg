@@ -1,0 +1,104 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-safe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="accent-safe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="gold-accent" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <filter id="glow-safe">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg-safe)"/>
+
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent-safe)"/>
+
+  <!-- Background decorative circles -->
+  <circle cx="950" cy="100" r="150" fill="#f59e0b" opacity="0.02"/>
+  <circle cx="1050" cy="250" r="100" fill="#fcd34d" opacity="0.03"/>
+  <circle cx="980" cy="480" r="120" fill="#d97706" opacity="0.025"/>
+
+  <!-- Shield icon visualization on right -->
+  <g opacity="0.7" filter="url(#glow-safe)">
+    <!-- Shield outline -->
+    <path d="M 1020 150 L 1080 150 L 1080 260 Q 1080 300 1050 330 Q 1020 300 1020 260 Z"
+          fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Shield checkmark -->
+    <polyline points="1035,280 1045,295 1065,270" fill="none" stroke="#fcd34d" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Gold vs BTC comparison bars -->
+  <g opacity="0.6" filter="url(#glow-safe)">
+    <!-- Gold bar -->
+    <rect x="950" y="420" width="25" height="120" rx="3" fill="url(#gold-accent)"/>
+    <text x="962" y="555" fill="#f59e0b" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Gold</text>
+
+    <!-- BTC bar -->
+    <rect x="1000" y="480" width="25" height="60" rx="3" fill="#0891b2"/>
+    <text x="1012" y="555" fill="#06d6d6" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">BTC</text>
+
+    <!-- Trending arrow -->
+    <path d="M 1065 480 L 1090 450 L 1090 470" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Logo: degen0x top-left -->
+  <g>
+    <circle cx="60" cy="45" r="30" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <text x="60" y="52" fill="#0891b2" font-family="Inter, sans-serif" font-size="24" font-weight="700" text-anchor="middle">0x</text>
+    <text x="110" y="52" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="700">degen0x</text>
+  </g>
+
+  <!-- Category badges -->
+  <g>
+    <!-- Bitcoin badge -->
+    <rect x="60" y="100" width="90" height="32" rx="6" fill="rgba(245, 158, 11, 0.2)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="105" y="122" fill="#fcd34d" font-family="Inter, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Bitcoin</text>
+
+    <!-- Analysis badge -->
+    <rect x="170" y="100" width="90" height="32" rx="6" fill="rgba(8, 145, 178, 0.2)" stroke="#0891b2" stroke-width="1"/>
+    <text x="215" y="122" fill="#06d6d6" font-family="Inter, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Analysis</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="220" fill="#ffffff" font-family="Inter, sans-serif" font-size="56" font-weight="700">Bitcoin Safe Haven</text>
+  <text x="60" y="280" fill="#ffffff" font-family="Inter, sans-serif" font-size="48" font-weight="700">Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="330" fill="#8b949e" font-family="Inter, sans-serif" font-size="18" font-weight="400">Is BTC a Hedge Against Geopolitical Risk?</text>
+
+  <!-- Stats cards -->
+  <g>
+    <!-- Card 1: Gold $5K -->
+    <rect x="60" y="380" width="140" height="90" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="130" y="410" fill="#fcd34d" font-family="Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">$5K</text>
+    <text x="130" y="435" fill="#8b949e" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Gold Price</text>
+
+    <!-- Card 2: BTC -47% -->
+    <rect x="220" y="380" width="140" height="90" rx="8" fill="rgba(79, 70, 229, 0.1)" stroke="#4f46e5" stroke-width="1"/>
+    <text x="290" y="410" fill="#a8b5ff" font-family="Inter, sans-serif" font-size="22" font-weight="700" text-anchor="middle">-47%</text>
+    <text x="290" y="435" fill="#8b949e" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">2024 Move</text>
+
+    <!-- Card 3: ETF Flows -->
+    <rect x="380" y="380" width="140" height="90" rx="8" fill="rgba(8, 145, 178, 0.1)" stroke="#0891b2" stroke-width="1"/>
+    <text x="450" y="410" fill="#06d6d6" font-family="Inter, sans-serif" font-size="18" font-weight="700" text-anchor="middle">ETF</text>
+    <text x="450" y="435" fill="#8b949e" font-family="Inter, sans-serif" font-size="12" font-weight="500" text-anchor="middle">Flows</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="615" fill="#6e7681" font-family="Inter, sans-serif" font-size="13" font-weight="500">degen0x.com</text>
+</svg>

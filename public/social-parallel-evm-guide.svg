@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="50%" style="stop-color:#0f1629"/>
+      <stop offset="100%" style="stop-color:#080d1c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="300" cy="200" r="200" fill="#6366f1" opacity="0.04" filter="url(#softglow)"/>
+  <circle cx="800" cy="350" r="250" fill="#06b6d4" opacity="0.03" filter="url(#softglow)"/>
+  <circle cx="1000" cy="150" r="150" fill="#22c55e" opacity="0.03" filter="url(#softglow)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- LEFT SIDE -->
+
+  <!-- Badge -->
+  <rect x="60" y="50" width="180" height="44" rx="22" fill="#6366f1" opacity="0.15"/>
+  <rect x="60" y="50" width="180" height="44" rx="22" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <text x="150" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#6366f1" text-anchor="middle">SCALING THE EVM</text>
+
+  <!-- Title -->
+  <text x="60" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="#e6edf3">Parallel EVM</text>
+  <text x="60" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="url(#accent)">Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#8b949e">How Monad, Sei &amp; MegaETH Are Scaling Ethereum</text>
+
+  <!-- TPS comparison bar -->
+  <g transform="translate(60, 270)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="1.5">TRANSACTIONS PER SECOND</text>
+
+    <!-- Ethereum bar -->
+    <rect x="0" y="15" width="480" height="32" rx="6" fill="rgba(255,255,255,0.03)"/>
+    <rect x="0" y="15" width="7" height="32" rx="3" fill="#8b949e"/>
+    <text x="15" y="36" font-family="system-ui, sans-serif" font-size="12" fill="#8b949e">Ethereum</text>
+    <text x="470" y="36" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#8b949e" text-anchor="end">~15 TPS</text>
+
+    <!-- Monad bar -->
+    <rect x="0" y="53" width="480" height="32" rx="6" fill="rgba(255,255,255,0.03)"/>
+    <rect x="0" y="53" width="48" height="32" rx="3" fill="#6366f1"/>
+    <text x="58" y="74" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">Monad</text>
+    <text x="470" y="74" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#6366f1" text-anchor="end">10,000 TPS</text>
+
+    <!-- Sei bar -->
+    <rect x="0" y="91" width="480" height="32" rx="6" fill="rgba(255,255,255,0.03)"/>
+    <rect x="0" y="91" width="136" height="32" rx="3" fill="#06b6d4"/>
+    <text x="146" y="112" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">Sei</text>
+    <text x="470" y="112" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#06b6d4" text-anchor="end">28,300 TPS</text>
+
+    <!-- MegaETH bar -->
+    <rect x="0" y="129" width="480" height="32" rx="6" fill="rgba(255,255,255,0.03)"/>
+    <rect x="0" y="129" width="480" height="32" rx="3" fill="#22c55e" opacity="0.3"/>
+    <text x="15" y="150" font-family="system-ui, sans-serif" font-size="12" fill="#e6edf3">MegaETH</text>
+    <text x="470" y="150" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#22c55e" text-anchor="end">100,000+ TPS (target)</text>
+  </g>
+
+  <!-- Protocol cards -->
+  <g transform="translate(60, 450)">
+    <!-- Monad card -->
+    <rect x="0" y="0" width="155" height="85" rx="12" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+    <text x="15" y="22" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#6366f1">Monad</text>
+    <text x="15" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">L1 | $244M raised</text>
+    <text x="15" y="56" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">Mainnet Nov 2025</text>
+    <text x="15" y="74" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">$153M TVL</text>
+
+    <!-- Sei card -->
+    <rect x="170" y="0" width="155" height="85" rx="12" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+    <text x="185" y="22" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#06b6d4">Sei</text>
+    <text x="185" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">L1 | Cosmos-based</text>
+    <text x="185" y="56" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">390ms finality</text>
+    <text x="185" y="74" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">28.3K batched</text>
+
+    <!-- MegaETH card -->
+    <rect x="340" y="0" width="155" height="85" rx="12" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+    <text x="355" y="22" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e">MegaETH</text>
+    <text x="355" y="40" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">L2 | 10ms blocks</text>
+    <text x="355" y="56" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">Specialized hardware</text>
+    <text x="355" y="74" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#e6edf3">100K+ target</text>
+  </g>
+
+  <!-- RIGHT SIDE: Parallel execution visual -->
+  <g transform="translate(620, 55)">
+    <rect x="0" y="0" width="520" height="435" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <text x="260" y="35" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" text-anchor="middle" letter-spacing="1.5">SEQUENTIAL vs PARALLEL EXECUTION</text>
+
+    <!-- Sequential (slow) -->
+    <g transform="translate(30, 55)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ef4444">SEQUENTIAL (Ethereum today)</text>
+
+      <!-- Sequential blocks -->
+      <rect x="0" y="12" width="60" height="30" rx="5" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+      <text x="30" y="32" font-family="system-ui, monospace" font-size="10" fill="#ef4444" text-anchor="middle">TX 1</text>
+
+      <text x="68" y="32" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+
+      <rect x="80" y="12" width="60" height="30" rx="5" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+      <text x="110" y="32" font-family="system-ui, monospace" font-size="10" fill="#ef4444" text-anchor="middle">TX 2</text>
+
+      <text x="148" y="32" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+
+      <rect x="160" y="12" width="60" height="30" rx="5" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+      <text x="190" y="32" font-family="system-ui, monospace" font-size="10" fill="#ef4444" text-anchor="middle">TX 3</text>
+
+      <text x="228" y="32" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+
+      <rect x="240" y="12" width="60" height="30" rx="5" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+      <text x="270" y="32" font-family="system-ui, monospace" font-size="10" fill="#ef4444" opacity="0.5" text-anchor="middle">TX 4</text>
+
+      <text x="340" y="32" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">SLOW</text>
+    </g>
+
+    <!-- Parallel (fast) -->
+    <g transform="translate(30, 125)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#22c55e">PARALLEL (Monad, Sei, MegaETH)</text>
+
+      <!-- Parallel lanes -->
+      <rect x="0" y="12" width="60" height="30" rx="5" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1" opacity="0.7"/>
+      <text x="30" y="32" font-family="system-ui, monospace" font-size="10" fill="#6366f1" text-anchor="middle">TX 1</text>
+
+      <rect x="0" y="48" width="60" height="30" rx="5" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1" opacity="0.7"/>
+      <text x="30" y="68" font-family="system-ui, monospace" font-size="10" fill="#06b6d4" text-anchor="middle">TX 2</text>
+
+      <rect x="0" y="84" width="60" height="30" rx="5" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="1" opacity="0.7"/>
+      <text x="30" y="104" font-family="system-ui, monospace" font-size="10" fill="#22c55e" text-anchor="middle">TX 3</text>
+
+      <rect x="0" y="120" width="60" height="30" rx="5" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+      <text x="30" y="140" font-family="system-ui, monospace" font-size="10" fill="#f59e0b" text-anchor="middle">TX 4</text>
+
+      <!-- Merge arrow -->
+      <text x="68" y="50" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+      <text x="68" y="86" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+      <text x="68" y="68" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+      <text x="68" y="104" font-family="system-ui, sans-serif" font-size="14" fill="#6e7681">→</text>
+
+      <!-- Result block -->
+      <rect x="85" y="45" width="80" height="80" rx="10" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1.5" opacity="0.7"/>
+      <text x="125" y="78" font-family="system-ui, sans-serif" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="600">ALL DONE</text>
+      <text x="125" y="96" font-family="system-ui, sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Simultaneously</text>
+
+      <text x="200" y="86" font-family="system-ui, sans-serif" font-size="11" fill="#22c55e" font-weight="700">1000x FASTER</text>
+    </g>
+
+    <!-- Techniques list -->
+    <g transform="translate(30, 310)">
+      <text x="0" y="0" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6e7681" letter-spacing="1.5">HOW IT WORKS</text>
+
+      <rect x="0" y="12" width="450" height="28" rx="6" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.15)" stroke-width="1"/>
+      <text x="12" y="31" font-family="system-ui, sans-serif" font-size="11" fill="#6366f1" font-weight="600">Optimistic Execution</text>
+      <text x="170" y="31" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">Assume no conflicts, rollback if needed</text>
+
+      <rect x="0" y="46" width="450" height="28" rx="6" fill="rgba(6,182,212,0.06)" stroke="rgba(6,182,212,0.15)" stroke-width="1"/>
+      <text x="12" y="65" font-family="system-ui, sans-serif" font-size="11" fill="#06b6d4" font-weight="600">State Access Lists</text>
+      <text x="170" y="65" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">Predict which storage slots each TX touches</text>
+
+      <rect x="0" y="80" width="450" height="28" rx="6" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+      <text x="12" y="99" font-family="system-ui, sans-serif" font-size="11" fill="#22c55e" font-weight="600">Pipelining</text>
+      <text x="170" y="99" font-family="system-ui, sans-serif" font-size="11" fill="#8b949e">Overlap execution, I/O, and consensus</text>
+    </g>
+  </g>
+
+  <!-- Brand bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="rgba(0,0,0,0.4)"/>
+  <rect x="0" y="598" width="1200" height="2" fill="url(#brand)"/>
+  <text x="60" y="620" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="url(#brand)">degen0x</text>
+  <text x="135" y="620" font-family="system-ui, sans-serif" font-size="12" fill="#6e7681">degen0x.com/learn/parallel-evm-guide</text>
+</svg>

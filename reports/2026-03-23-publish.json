@@ -1,0 +1,57 @@
+{
+  "date": "2026-03-23",
+  "block": "publish",
+  "report": {
+    "status": "completed",
+    "summary": "Promoted 4 pages from PUBLISH_QUEUE to PUBLISHED_PAGES (batch 13, total now 666 pages); 3/4 pass full QA, 1 has SEO warning; deploy pending git push.",
+    "sections": [
+      {
+        "title": "Pages Published",
+        "pages": [
+          { "slug": "/learn/best-perpetual-dex-guide", "status": "pass" },
+          { "slug": "/learn/cross-chain-bridges-guide", "status": "warn" },
+          { "slug": "/learn/ethereum-fusaka-glamsterdam-guide-2026", "status": "pass" },
+          { "slug": "/learn/ai-agent-wallets-autonomous-payments-guide-2026", "status": "pass" }
+        ]
+      },
+      {
+        "title": "QA Results",
+        "metrics": [
+          { "label": "Pages with H1", "value": "4/4", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with Metadata", "value": "3/4", "pct": 75, "color": "#f59e0b" },
+          { "label": "Pages with JSON-LD", "value": "3/4", "pct": 75, "color": "#f59e0b" },
+          { "label": "Pages with Breadcrumbs", "value": "4/4", "pct": 100, "color": "#4ade80" },
+          { "label": "TypeScript Check", "value": "Pass (promoted pages)", "pct": 100, "color": "#4ade80" },
+          { "label": "Full Build", "value": "Skipped (VM memory)", "pct": 0, "color": "#06b6d4" }
+        ]
+      },
+      {
+        "title": "Data Pipeline",
+        "metrics": [
+          { "label": "CoinGecko", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "DefiLlama", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Alternative.me (Fear/Greed)", "value": "Healthy", "pct": 100, "color": "#4ade80" },
+          { "label": "Rate Limiter", "value": "Active (token bucket)", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache Layer", "value": "LRU + SWR + Fallback", "pct": 100, "color": "#4ade80" },
+          { "label": "Circuit Breaker", "value": "All circuits closed", "pct": 100, "color": "#4ade80" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "metrics": [
+          { "label": "Code Changes", "value": "Ready", "pct": 100, "color": "#4ade80" },
+          { "label": "Vercel Deploy", "value": "Pending git push", "pct": 50, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Issues & Follow-ups",
+        "metrics": [
+          { "label": "cross-chain-bridges-guide missing metadata/JSON-LD", "value": "SEO gap", "pct": 25, "color": "#f59e0b" },
+          { "label": "Queue slug mismatch (2 corrected)", "value": "Fixed", "pct": 100, "color": "#4ade80" },
+          { "label": "Pre-existing TS errors (2 unrelated files)", "value": "Not blocking", "pct": 50, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["dataEngineer", "publishQueue", "qa", "devops"]
+  }
+}

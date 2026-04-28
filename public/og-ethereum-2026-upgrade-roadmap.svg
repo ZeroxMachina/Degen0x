@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="roadmapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="950" cy="180" r="200" fill="#8b5cf6" opacity="0.05" filter="url(#softGlow)"/>
+  <circle cx="180" cy="480" r="150" fill="#06b6d4" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="1100" cy="500" r="100" fill="#6366f1" opacity="0.04" filter="url(#softGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Upgrade timeline/roadmap flow diagram (vertical, right side) -->
+  <!-- Vertical connecting line -->
+  <line x1="1050" y1="160" x2="1050" y2="350" stroke="url(#roadmapGrad)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Node 1: Pectra -->
+  <circle cx="1050" cy="160" r="12" fill="#6366f1" stroke="#818cf8" stroke-width="2"/>
+  <rect x="920" y="148" width="110" height="24" rx="6" fill="#6366f615" stroke="#6366f140" stroke-width="1"/>
+  <text x="975" y="165" text-anchor="middle" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Pectra (Live)</text>
+
+  <!-- Node 2: Fusaka -->
+  <circle cx="1050" cy="230" r="12" fill="#8b5cf6" stroke="#a78bfa" stroke-width="2"/>
+  <rect x="920" y="218" width="110" height="24" rx="6" fill="#8b5cf615" stroke="#8b5cf640" stroke-width="1"/>
+  <text x="975" y="235" text-anchor="middle" fill="#a78bfa" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Fusaka (2026)</text>
+
+  <!-- Node 3: Glamsterdam -->
+  <circle cx="1050" cy="300" r="12" fill="#06b6d4" stroke="#22d3ee" stroke-width="2"/>
+  <rect x="920" y="288" width="110" height="24" rx="6" fill="#06b6d415" stroke="#06b6d440" stroke-width="1"/>
+  <text x="975" y="305" text-anchor="middle" fill="#22d3ee" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Glamsterdam</text>
+
+  <!-- Node 4: Hegota -->
+  <circle cx="1050" cy="350" r="12" fill="#22c55e" stroke="#4ade80" stroke-width="2"/>
+  <rect x="920" y="338" width="110" height="24" rx="6" fill="#22c55e15" stroke="#22c55e40" stroke-width="1"/>
+  <text x="975" y="355" text-anchor="middle" fill="#4ade80" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Hegota</text>
+
+  <!-- degen0x logo -->
+  <circle cx="60" cy="48" r="16" fill="none" stroke="url(#roadmapGrad)" stroke-width="2"/>
+  <text x="60" y="53" text-anchor="middle" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="800">0x</text>
+  <text x="88" y="53" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">degen0x</text>
+
+  <!-- Category badges -->
+  <rect x="48" y="100" width="100" height="26" rx="13" fill="#6366f615" stroke="#6366f140" stroke-width="1"/>
+  <text x="98" y="117" text-anchor="middle" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Ethereum</text>
+
+  <rect x="156" y="100" width="60" height="26" rx="13" fill="#06b6d415" stroke="#06b6d440" stroke-width="1"/>
+  <text x="186" y="117" text-anchor="middle" fill="#22d3ee" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Learn</text>
+
+  <!-- Title -->
+  <text x="48" y="178" fill="url(#titleGrad)" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.02em">Ethereum 2026 Roadmap</text>
+  <text x="48" y="225" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="700" letter-spacing="-0.01em">Fusaka, Glamsterdam &amp; What&apos;s Next</text>
+
+  <!-- Subtitle -->
+  <text x="48" y="305" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="400">PeerDAS 8× blob expansion · ePBS · Stateless clients · Path to 100K TPS</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1: Blob Capacity -->
+  <rect x="48" y="345" width="170" height="75" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="68" y="372" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Blob Capacity</text>
+  <text x="68" y="400" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">48/block (8×)</text>
+
+  <!-- Card 2: Data Savings -->
+  <rect x="230" y="345" width="170" height="75" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="250" y="372" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Data Savings</text>
+  <text x="250" y="400" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">~85% Less</text>
+
+  <!-- Card 3: Gas Limit -->
+  <rect x="412" y="345" width="170" height="75" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="432" y="372" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Gas Limit</text>
+  <text x="432" y="400" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">150M (3.3×)</text>
+
+  <!-- Card 4: Next Up -->
+  <rect x="594" y="345" width="170" height="75" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="614" y="372" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Next Up</text>
+  <text x="614" y="400" fill="#e6edf3" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">Glamsterdam</text>
+
+  <!-- Topic pills -->
+  <rect x="48" y="505" width="110" height="28" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="103" y="523" text-anchor="middle" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">PeerDAS</text>
+
+  <rect x="168" y="505" width="130" height="28" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="233" y="523" text-anchor="middle" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Enshrined PBS</text>
+
+  <rect x="308" y="505" width="140" height="28" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="378" y="523" text-anchor="middle" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Stateless Clients</text>
+
+  <rect x="458" y="505" width="150" height="28" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="533" y="523" text-anchor="middle" fill="#8b949e" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="500">Full Danksharding</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="575" width="1200" height="55" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="575" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+  <text x="48" y="607" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500">degen0x.com</text>
+  <text x="1152" y="607" text-anchor="end" fill="#6e7681" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400">Complete Guide · March 2026</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent)"/>
+</svg>

@@ -1,0 +1,73 @@
+{
+  "date": "2026-03-24",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v9: All checks via live Chrome verification. 5/6 API routes healthy (market-metrics still 404 in prod). 20 pages promoted today remain invisible — 7+ days since last deploy. No new regressions, 0 delta from v8 on TS errors or page counts.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "LIVE SITE: Homepage returns 200, renders correctly with market ticker, navigation, and content sections all functional.",
+          "CORE PAGES VERIFIED (Chrome): /tools 200, /learn 200, /tools/dca-calculator 200 — all core pillar pages serving.",
+          "RECENTLY PROMOTED PAGES: /learn/bitcoin-mining-guide-2026 → 404, /learn/zk-coprocessors-guide-2026 → 404. Confirms all 20 pages promoted today are NOT live in production (deploy gap).",
+          "TYPESCRIPT: 46 errors across 3 files — unchanged from v8. Non-blocking for Next.js build (ignoreBuildErrors: true).",
+          "PAGE AUDIT: 492 slugs in PUBLISHED_PAGES (up from 467 in v8 count — recount shows 492 unique slug entries). 748 uncommitted items.",
+          "NO NEW REGRESSIONS this cycle. Existing known issues (missing /compare/exchanges page.tsx, /trading route) persist."
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "LIVE API HEALTH (Chrome fetch): /api/prices → 200 (67KB, fresh CoinGecko data with real BTC/ETH/SOL prices), /api/trending → 200 (3.5KB, trending coins present), /api/fear-greed → 200 (2.6KB, value=8 'Extreme Fear' dated Mar 23), /api/market-dominance → 200, /api/defi-yields → 200.",
+          "CONFIRMED 404: /api/market-metrics → 404 in production. Route file exists locally but was never committed/deployed. P1 carry-over from v8.",
+          "FEAR-GREED DATA: Value 8 dated 2026-03-23 — 1 day lag. Likely normal if upstream alternative.me updates daily, but worth monitoring if it doesn't refresh tomorrow.",
+          "CACHE TTLs: All 6 route files verified locally — fear-greed 10min, trending 5min, market-metrics 60s, market-dominance 5min, prices 60s, defi-yields configurable. Stale-while-revalidate at 2x on all.",
+          "RATE LIMITING: Still only on /api/health and /api/cache-stats. 6 core data routes remain unprotected — P1 carry-over."
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "LAST DEPLOY: Commit e999560 (Mar 17, 'publish: promote 2 pages to production Day 62') — now 7 days since last deploy.",
+          "PRODUCTION STATUS: Site is UP and serving. Homepage, core tools, and 5/6 API routes all returning 200.",
+          "UNCOMMITTED WORK: 748 items (700 untracked, 47 modified, 1 deleted). Up from 746 in v8 — delta is new report files.",
+          "CRITICAL UNCOMMITTED: middleware.ts, published-pages.ts (+268 lines from deployed version), 20+ new page routes, /api/market-metrics route. None of this is in production.",
+          "DEPLOY RISK [P0]: 7 days drift. All pages promoted since Mar 17 are invisible to Google. Every hour without deploy = lost indexing opportunity."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED THIS CYCLE (v9): No new pages promoted since v8. This is a verification-only cycle confirming v8 findings via live Chrome checks.",
+          "CUMULATIVE TODAY: 20+ learn guides promoted to PUBLISHED_PAGES locally across 9 build batches.",
+          "PUBLISH QUEUE: ~4 pages remaining (sei-network, advanced-staking, crypto-tax-loss-harvesting, cold-storage-seed-phrase) — unchanged from v8.",
+          "TOTAL PUBLISHED SLUGS: 492 in local published-pages.ts (production still running ~460 from Mar 17 deploy).",
+          "ACTION REQUIRED [P0]: Commit all changes and deploy to Vercel immediately. 7 days of drift is critical.",
+          "ACTION REQUIRED [P1]: Fix /api/market-metrics 404 by including route in next commit.",
+          "ACTION REQUIRED [P1]: Fix 46 TS errors in 3 files before they compound.",
+          "CARRY-OVER: Rate-limit 6 core API routes, build /trading page, drain final 4 queue items, add JSON-LD to pages missing structured data."
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Homepage Status", "value": "200 OK", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "5/6 (market-metrics 404)", "pct": 83, "color": "#f59e0b" },
+          { "label": "Published Slugs (local)", "value": "492", "pct": 92, "color": "#4ade80" },
+          { "label": "Pages Promoted Today", "value": "20 learn guides", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue Remaining", "value": "4 pages", "pct": 95, "color": "#4ade80" },
+          { "label": "Core Pages Live", "value": "3/3 checked (200)", "pct": 100, "color": "#4ade80" },
+          { "label": "Recently Promoted Live", "value": "0/2 checked (404)", "pct": 0, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "46 errors / 3 files", "pct": 12, "color": "#f59e0b" },
+          { "label": "Uncommitted Files", "value": "748 items", "pct": 5, "color": "#ef4444" },
+          { "label": "Days Since Deploy", "value": "7 days", "pct": 10, "color": "#ef4444" },
+          { "label": "Rate-Limited Routes", "value": "2/8 (25%)", "pct": 25, "color": "#ef4444" },
+          { "label": "New Regressions", "value": "0", "pct": 100, "color": "#4ade80" },
+          { "label": "Delta from v8", "value": "+2 files, 0 code changes", "pct": 95, "color": "#06b6d4" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

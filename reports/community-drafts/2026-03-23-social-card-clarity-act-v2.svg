@@ -1,0 +1,84 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0f1729"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow2">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accent2)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="180" r="160" fill="url(#purpleGlow)" filter="url(#softGlow2)" opacity="0.5"/>
+  <circle cx="100" cy="480" r="100" fill="#0891b2" opacity="0.04" filter="url(#softGlow2)"/>
+
+  <!-- Logo -->
+  <text x="60" y="60" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="0.05em">degen0x</text>
+
+  <!-- Regulation icon -->
+  <text x="60" y="160" font-size="56">⚖️</text>
+
+  <!-- Main headline -->
+  <text x="130" y="148" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">CLARITY Act</text>
+  <text x="60" y="205" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#818cf8">Stablecoin Yield Compromise Reached</text>
+  <text x="60" y="245" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#8b949e">Biggest US crypto regulation milestone since ETF approvals</text>
+
+  <!-- Two-column rule boxes -->
+  <!-- Banned -->
+  <rect x="60" y="275" width="520" height="110" rx="16" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="80" y="305" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444" letter-spacing="0.08em">BANNED</text>
+  <text x="80" y="335" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">Passive stablecoin yield</text>
+  <text x="80" y="365" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="400" fill="#8b949e">Earning interest just for holding USDC/USDT</text>
+
+  <!-- Allowed -->
+  <rect x="600" y="275" width="540" height="110" rx="16" fill="rgba(34,197,94,0.06)" stroke="rgba(34,197,94,0.2)" stroke-width="1"/>
+  <text x="620" y="305" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e" letter-spacing="0.08em">ALLOWED</text>
+  <text x="620" y="335" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#e6edf3">Activity-based rewards</text>
+  <text x="620" y="365" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="400" fill="#8b949e">Payments, transfers, DeFi usage incentives</text>
+
+  <!-- Key milestones -->
+  <text x="60" y="430" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#6e7681" letter-spacing="0.08em">REGULATORY MILESTONES — MARCH 2026</text>
+
+  <rect x="60" y="450" width="340" height="65" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="475" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">18 Digital Commodities</text>
+  <text x="80" y="500" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400" fill="#8b949e">SEC + CFTC joint classification</text>
+
+  <rect x="420" y="450" width="340" height="65" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="440" y="475" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#22c55e">BTC &amp; ETH: Non-Securities</text>
+  <text x="440" y="500" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400" fill="#8b949e">SEC Chair Atkins confirmed</text>
+
+  <rect x="780" y="450" width="360" height="65" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="800" y="475" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#f59e0b">Senate Hearing: Late April</text>
+  <text x="800" y="500" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400" fill="#8b949e">Bipartisan + White House backing</text>
+
+  <!-- Timeline indicator -->
+  <rect x="60" y="540" width="1080" height="3" fill="rgba(255,255,255,0.06)" rx="1"/>
+  <rect x="60" y="540" width="750" height="3" fill="url(#accent2)" rx="1" opacity="0.8"/>
+  <circle cx="810" cy="541" r="6" fill="#0891b2" filter="url(#glow2)"/>
+  <text x="790" y="570" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#0891b2">WE ARE HERE</text>
+
+  <!-- Bottom bar -->
+  <rect y="618" width="1200" height="12" fill="url(#accent2)" opacity="0.6"/>
+  <text x="1060" y="604" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6e7681">degen0x.com</text>
+</svg>

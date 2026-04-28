@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-24",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX-audited and polished 2 new learn guides (onchain identity, leveraged tokens) — fixed missing OG metadata, added responsive typography, improved breadcrumb navigation with Home link and ARIA labels, and added back-to-top links.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Leveraged Tokens page: Added missing OG image URL and Twitter card image to metadata (og-leveraged-tokens-guide-2026.svg was created but not referenced)",
+          "Onchain Identity page: Made title responsive with text-4xl md:text-5xl (was fixed text-5xl, too large on mobile)",
+          "Both pages: Added Home link to breadcrumb navigation for proper wayfinding",
+          "Both pages: Added aria-label='Breadcrumb' to nav elements and aria-hidden='true' to separator characters for screen reader accessibility",
+          "Both pages: Changed root wrapper to semantic <article> element (leveraged tokens was using <div>)",
+          "Both pages: Added 'Back to top' link at page bottom for long-scroll usability"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: onchain-identity-reputation-guide-2026 (1200x630) — verified valid SVG with identity-themed decorative elements (fingerprint circles, verification checkmark, ID card outline)",
+          "OG image: leveraged-tokens-guide-2026 (1200x630) — verified valid SVG with leverage-themed arrows and multiplier symbols"
+        ]
+      },
+      {
+        "title": "Audit Notes (No Action Needed)",
+        "items": [
+          "Both pages follow degen0x dark theme consistently (#0d1117 bg, #c9d1d9 text, #58a6ff links)",
+          "Tables use overflow-x-auto for mobile horizontal scroll — good pattern",
+          "FAQ sections well-structured with card-based layout — rich snippet opportunity noted for future StructuredData integration",
+          "Content hierarchy follows scan-first principle: gradient title > subtitle > reading time > TOC > sections",
+          "Related articles grids use responsive md:grid-cols-2 and md:grid-cols-3 — mobile-safe"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_modified": [
+      "src/app/learn/leveraged-tokens-guide-2026/page.tsx",
+      "src/app/learn/onchain-identity-reputation-guide-2026/page.tsx"
+    ],
+    "pages_audited": [
+      "/learn/onchain-identity-reputation-guide-2026",
+      "/learn/leveraged-tokens-guide-2026"
+    ]
+  }
+}

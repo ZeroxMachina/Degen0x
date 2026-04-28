@@ -1,0 +1,90 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1524"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent bar top -->
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="950" cy="120" r="180" fill="#4f46e5" opacity="0.06"/>
+  <circle cx="1050" cy="400" r="120" fill="#0891b2" opacity="0.05"/>
+  <circle cx="200" cy="500" r="100" fill="#d97706" opacity="0.04"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(80, 80)" filter="url(#glow)">
+    <path d="M30 8 L30 8 L55 18 L55 40 C55 58 45 72 30 78 C15 72 5 58 5 40 L5 18 Z" fill="url(#shieldGrad)" opacity="0.9"/>
+    <path d="M22 42 L28 48 L40 34" stroke="#e6edf3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- degen0x logo text -->
+  <text x="145" y="115" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#818cf8">degen0x</text>
+
+  <!-- Title -->
+  <text x="80" y="220" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="url(#titleGrad)">Crypto Custody Guide</text>
+  <text x="80" y="280" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#e6edf3">2026</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="330" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#8b949e">MPC vs Multisig vs Cold Storage — Compared</text>
+
+  <!-- Tech chips -->
+  <g transform="translate(80, 380)">
+    <!-- MPC chip -->
+    <rect x="0" y="0" width="120" height="40" rx="8" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="1"/>
+    <text x="60" y="25" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8" text-anchor="middle">MPC Wallets</text>
+
+    <!-- Multisig chip -->
+    <rect x="140" y="0" width="120" height="40" rx="8" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1"/>
+    <text x="200" y="25" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#22d3ee" text-anchor="middle">Multisig</text>
+
+    <!-- Cold Storage chip -->
+    <rect x="280" y="0" width="140" height="40" rx="8" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="1"/>
+    <text x="350" y="25" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#fbbf24" text-anchor="middle">Cold Storage</text>
+
+    <!-- Institutional chip -->
+    <rect x="440" y="0" width="150" height="40" rx="8" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="515" y="25" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#a78bfa" text-anchor="middle">Institutional</text>
+  </g>
+
+  <!-- Provider logos area -->
+  <g transform="translate(80, 460)">
+    <text x="0" y="15" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#6e7681">Top Providers:</text>
+    <text x="120" y="15" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b949e">Coinbase Custody · Anchorage · Fireblocks · BitGo · Copper</text>
+  </g>
+
+  <!-- Market stat -->
+  <g transform="translate(800, 380)">
+    <rect x="0" y="0" width="320" height="100" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="24" y="35" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#8b949e">Custody Market 2026</text>
+    <text x="24" y="70" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="800" fill="#22c55e">$3.69B</text>
+    <text x="185" y="70" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#8b949e">→ $7.74B by 2032</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect y="600" width="1200" height="30" fill="rgba(255,255,255,0.03)"/>
+  <text x="80" y="621" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#6e7681">degen0x.com</text>
+  <text x="1120" y="621" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#6e7681" text-anchor="end">March 2026</text>
+</svg>

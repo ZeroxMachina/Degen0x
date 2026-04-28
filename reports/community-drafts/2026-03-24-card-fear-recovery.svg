@@ -1,0 +1,111 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0f1729"/>
+    </linearGradient>
+    <linearGradient id="brandGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="fearToNeutral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#brandGrad2)"/>
+
+  <!-- Decorative orbs -->
+  <circle cx="1000" cy="200" r="180" fill="#f59e0b" opacity="0.05" filter="url(#glow2)"/>
+  <circle cx="150" cy="450" r="200" fill="#ef4444" opacity="0.04" filter="url(#glow2)"/>
+
+  <!-- Badge -->
+  <rect x="60" y="50" width="240" height="36" rx="18" fill="#f59e0b" opacity="0.15"/>
+  <text x="180" y="74" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle" letter-spacing="1.5">SENTIMENT RECOVERY</text>
+
+  <!-- Main Title -->
+  <text x="60" y="145" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="#e6edf3" letter-spacing="-0.02em">Fear &amp; Greed: 11 → 33</text>
+  <text x="60" y="200" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="#f59e0b" letter-spacing="-0.01em">48-Day Extreme Fear Streak Broken</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="245" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#8b949e">Fastest recovery from extreme fear since FTX — here's what the data says</text>
+
+  <!-- Fear gauge visualization -->
+  <rect x="60" y="280" width="700" height="120" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Gauge track -->
+  <rect x="90" y="325" width="640" height="12" rx="6" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Gauge labels -->
+  <text x="90" y="315" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#ef4444" font-weight="600">EXTREME FEAR</text>
+  <text x="280" y="315" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#f59e0b" font-weight="600">FEAR</text>
+  <text x="440" y="315" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" font-weight="600">NEUTRAL</text>
+  <text x="580" y="315" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22c55e" font-weight="600">GREED</text>
+  <text x="680" y="315" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#22c55e" font-weight="600">EXTREME</text>
+
+  <!-- Extreme fear zone fill -->
+  <rect x="90" y="325" width="160" height="12" rx="6" fill="#ef4444" opacity="0.3"/>
+
+  <!-- Fear zone fill (current) -->
+  <rect x="90" y="325" width="212" height="12" rx="6" fill="url(#fearToNeutral)" opacity="0.6"/>
+
+  <!-- Old position marker (11) -->
+  <circle cx="160" cy="331" r="8" fill="#ef4444" stroke="#080d1c" stroke-width="2"/>
+  <text x="160" y="370" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#ef4444" text-anchor="middle">11</text>
+  <text x="160" y="386" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Mar 20</text>
+
+  <!-- Arrow -->
+  <line x1="185" y1="331" x2="280" y2="331" stroke="#8b949e" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="280,326 290,331 280,336" fill="#8b949e"/>
+
+  <!-- New position marker (33) -->
+  <circle cx="300" cy="331" r="10" fill="#f59e0b" stroke="#080d1c" stroke-width="2"/>
+  <text x="300" y="370" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b" text-anchor="middle">33</text>
+  <text x="300" y="386" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">Mar 24</text>
+
+  <!-- +22 label -->
+  <rect x="340" y="360" width="60" height="28" rx="14" fill="#22c55e" opacity="0.15"/>
+  <text x="370" y="379" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" fill="#22c55e" text-anchor="middle">+22</text>
+
+  <!-- Right side stat boxes -->
+  <rect x="800" y="280" width="340" height="55" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="820" y="315" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#0891b2">BTC</text>
+  <text x="1120" y="315" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#e6edf3" text-anchor="end">$70,600</text>
+
+  <rect x="800" y="345" width="340" height="55" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="820" y="380" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#8b5cf6">STABLECOINS</text>
+  <text x="1120" y="380" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800" fill="#22c55e" text-anchor="end">$312B ATH</text>
+
+  <!-- Key signals row -->
+  <rect x="60" y="420" width="350" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="80" y="450" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#22c55e">SPOT ETF INFLOWS</text>
+  <text x="80" y="480" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#e6edf3">6 Straight Days</text>
+
+  <rect x="425" y="420" width="335" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="445" y="450" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f59e0b">FEAR STREAK</text>
+  <text x="445" y="480" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#f59e0b">48 Days — Broken</text>
+
+  <rect x="775" y="420" width="365" height="80" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="795" y="450" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#0891b2">CLARITY ACT</text>
+  <text x="795" y="480" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#e6edf3">99% Done</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="540" width="1200" height="90" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="540" width="1200" height="1" fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Branding -->
+  <text x="60" y="593" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="url(#brandGrad2)">degen0x</text>
+  <text x="170" y="593" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#6e7681">.com/tools/fear-greed-timeline</text>
+
+  <text x="1140" y="593" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681" text-anchor="end">March 24, 2026</text>
+</svg>

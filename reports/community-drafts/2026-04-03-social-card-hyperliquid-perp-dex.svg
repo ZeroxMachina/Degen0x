@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1c"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="50%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent2)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="1000" cy="120" r="200" fill="#06b6d4" opacity="0.05" filter="url(#glow2)"/>
+  <circle cx="150" cy="480" r="140" fill="#8b5cf6" opacity="0.04" filter="url(#glow2)"/>
+
+  <!-- Order book visualization -->
+  <g transform="translate(750, 130)">
+    <rect x="0" y="0" width="380" height="340" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="190" y="35" text-anchor="middle" fill="#8b949e" font-family="Inter, sans-serif" font-size="13" font-weight="600">ON-CHAIN ORDER BOOK</text>
+
+    <!-- Sell orders (red) -->
+    <text x="30" y="65" fill="#ef4444" font-family="Inter, sans-serif" font-size="11" font-weight="600">ASKS</text>
+    <rect x="30" y="75" width="320" height="14" rx="3" fill="rgba(239,68,68,0.08)"/>
+    <rect x="200" y="75" width="150" height="14" rx="3" fill="rgba(239,68,68,0.2)"/>
+    <text x="40" y="86" fill="#ef4444" font-family="monospace" font-size="10">66,580</text>
+    <text x="330" y="86" text-anchor="end" fill="#8b949e" font-family="monospace" font-size="10">2.45</text>
+
+    <rect x="30" y="95" width="320" height="14" rx="3" fill="rgba(239,68,68,0.08)"/>
+    <rect x="230" y="95" width="120" height="14" rx="3" fill="rgba(239,68,68,0.15)"/>
+    <text x="40" y="106" fill="#ef4444" font-family="monospace" font-size="10">66,560</text>
+    <text x="330" y="106" text-anchor="end" fill="#8b949e" font-family="monospace" font-size="10">1.82</text>
+
+    <rect x="30" y="115" width="320" height="14" rx="3" fill="rgba(239,68,68,0.08)"/>
+    <rect x="260" y="115" width="90" height="14" rx="3" fill="rgba(239,68,68,0.1)"/>
+    <text x="40" y="126" fill="#ef4444" font-family="monospace" font-size="10">66,540</text>
+    <text x="330" y="126" text-anchor="end" fill="#8b949e" font-family="monospace" font-size="10">0.95</text>
+
+    <!-- Spread -->
+    <rect x="30" y="140" width="320" height="30" rx="3" fill="rgba(255,255,255,0.03)"/>
+    <text x="190" y="160" text-anchor="middle" fill="#06b6d4" font-family="Inter, sans-serif" font-size="13" font-weight="700">$66,503.00</text>
+
+    <!-- Buy orders (green) -->
+    <text x="30" y="195" fill="#22c55e" font-family="Inter, sans-serif" font-size="11" font-weight="600">BIDS</text>
+    <rect x="30" y="205" width="320" height="14" rx="3" fill="rgba(34,197,94,0.08)"/>
+    <rect x="260" y="205" width="90" height="14" rx="3" fill="rgba(34,197,94,0.1)"/>
+    <text x="40" y="216" fill="#22c55e" font-family="monospace" font-size="10">66,490</text>
+    <text x="330" y="216" text-anchor="end" fill="#8b949e" font-family="monospace" font-size="10">1.12</text>
+
+    <rect x="30" y="225" width="320" height="14" rx="3" fill="rgba(34,197,94,0.08)"/>
+    <rect x="220" y="225" width="130" height="14" rx="3" fill="rgba(34,197,94,0.15)"/>
+    <text x="40" y="236" fill="#22c55e" font-family="monospace" font-size="10">66,470</text>
+    <text x="330" y="236" text-anchor="end" fill="#8b949e" font-family="monospace" font-size="10">2.08</text>
+
+    <rect x="30" y="245" width="320" height="14" rx="3" fill="rgba(34,197,94,0.08)"/>
+    <rect x="180" y="245" width="170" height="14" rx="3" fill="rgba(34,197,94,0.2)"/>
+    <text x="40" y="256" fill="#22c55e" font-family="monospace" font-size="10">66,450</text>
+    <text x="330" y="256" text-anchor="end" fill="#8b949e" font-family="monospace" font-size="10">3.41</text>
+
+    <!-- Stats -->
+    <text x="190" y="300" text-anchor="middle" fill="#8b949e" font-family="Inter, sans-serif" font-size="11">100K+ TPS · 0.2s finality · Zero gas</text>
+    <text x="190" y="320" text-anchor="middle" fill="#06b6d4" font-family="Inter, sans-serif" font-size="13" font-weight="600">$4B+ daily volume</text>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(60, 45)">
+    <circle cx="18" cy="18" r="18" fill="#6366f1" opacity="0.2"/>
+    <text x="18" y="24" text-anchor="middle" fill="#818cf8" font-family="Inter, sans-serif" font-size="16" font-weight="800">0x</text>
+    <text x="48" y="25" fill="#8b949e" font-family="Inter, sans-serif" font-size="14" font-weight="500">degen0x.com</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="60" y="170" fill="#e6edf3" font-family="Inter, sans-serif" font-size="48" font-weight="800" letter-spacing="-0.02em">Hyperliquid</text>
+  <text x="60" y="230" fill="url(#cyanGrad)" font-family="Inter, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.02em">The Perp DEX Eating</text>
+  <text x="60" y="285" fill="url(#cyanGrad)" font-family="Inter, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.02em">CEX Market Share</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="340" fill="#8b949e" font-family="Inter, sans-serif" font-size="20">1,004-line complete trading guide.</text>
+  <text x="60" y="370" fill="#8b949e" font-family="Inter, sans-serif" font-size="20">HyperBFT · On-chain order book · HYPE tokenomics.</text>
+
+  <!-- Key stats row -->
+  <g transform="translate(60, 410)">
+    <rect x="0" y="0" width="160" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="20" y="28" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">TPS</text>
+    <text x="20" y="55" fill="#06b6d4" font-family="Inter, sans-serif" font-size="22" font-weight="700">100K+</text>
+
+    <rect x="180" y="0" width="160" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="200" y="28" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">FINALITY</text>
+    <text x="200" y="55" fill="#8b5cf6" font-family="Inter, sans-serif" font-size="22" font-weight="700">0.2 sec</text>
+
+    <rect x="360" y="0" width="160" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="380" y="28" fill="#8b949e" font-family="Inter, sans-serif" font-size="12">GAS FEES</text>
+    <text x="380" y="55" fill="#22c55e" font-family="Inter, sans-serif" font-size="22" font-weight="700">$0.00</text>
+  </g>
+
+  <!-- Bottom URL -->
+  <text x="60" y="565" fill="#6e7681" font-family="Inter, sans-serif" font-size="14">degen0x.com/learn/hyperliquid-perp-dex-trading-guide-2026</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent2)"/>
+</svg>

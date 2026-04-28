@@ -1,0 +1,77 @@
+{
+  "date": "2026-03-23",
+  "block": "standup",
+  "report": {
+    "status": "completed",
+    "summary": "Day 70 standup #4: Since last standup, build-v3 added 2 more guides (MegaETH + Story Protocol), publish-v2 promoted 5 ecosystem pages (Chainlink/dYdX/GMX/Ethena/Jupiter), design-v3 polished accessibility. Published slugs now 427 (+7 from v2 standup). Git locks persist 7 days — 637 uncommitted files, 0 deploys, 0 commits. All 6 agents ran this cycle ($497). Today's total: 16 agent runs ($1,391).",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "CONTENT DELTA (vs standup v2): +2 learn guides built (MegaETH Real-Time L2 + Story Protocol IP Tokenization), +5 ecosystem deep-dives published (Chainlink, dYdX, GMX, Ethena, Jupiter). PUBLISHED_PAGES grew 420→427 (+7 slugs). PUBLISH_QUEUE now empty — both new guides promoted.",
+          "DESIGN DELTA: TEE + Solana DeFi guides received ARIA accessibility labels, responsive padding fixes, and data source attribution sections. 2 OG images verified brand-compliant.",
+          "COMMUNITY DELTA: 6 social posts + 5-part ecosystem thread + Discord/TG announcement drafted. 2 SVG social cards created (MegaETH spotlight + Ecosystem expansion).",
+          "SEO RISK UNCHANGED: 7 days without deploy. Production running e999560 (Mar 17). 427 slugs declared vs ~315 deployed = ~112 pages invisible to Google. Gap widened +7 from last standup.",
+          "ORPHAN AUDIT: 103 slugs in PUBLISHED_PAGES with no page.tsx — unchanged. Will 404 in production.",
+          "GIT DRIFT: 637 uncommitted files (+2 from last standup), 47 tracked modifications, +4,288/-3,463 lines."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v2: Build-v3 produced 2 learn guides (MegaETH 824 lines, Story Protocol 763 lines) with full SEO/structured data. Publish-v2 promoted 5 ecosystem pages to PUBLISHED_PAGES. Design-v3 added ARIA labels + data source attribution to TEE + Solana DeFi guides. Community-v3 drafted 6 social posts + SVG cards. EOD-v3 ran full QA/data/devops audit — confirmed 427 slugs, 637 files, all API routes healthy.",
+          "TODAY'S CUMULATIVE OUTPUT: 6 learn guides built, 5 ecosystem pages published, 4+ OG images, 8+ social posts + 2 SVG cards, 3 full QA cycles, 3 design audits, 16 agent runs across 3 full rotations.",
+          "BLOCKER [P0 — 7 DAYS]: Git locks (.git/HEAD.lock + .git/index.lock) since Mar 16. Blocks ALL commits and deploys. Resolution: rm .git/index.lock .git/HEAD.lock",
+          "BLOCKER [P1]: 2 of 6 recent pages (smart-contract-security, onchain-identity) still missing StructuredData/Breadcrumb/BackToTop. 4 newer pages have them.",
+          "CARRY-OVER [P1 — 37+ CYCLES]: /api/defi-yields returns 500 on upstream failure (no fallback data).",
+          "CARRY-OVER [P1 — 37+ CYCLES]: Rate limiter not wired on any of 6 core API routes.",
+          "CARRY-OVER [P2]: 103 orphan slugs, next lint misconfigured, cache header inconsistency on 4/6 API routes."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS AND DEPLOY: 7 days blocked. 4,288 insertions at risk. rm .git/index.lock .git/HEAD.lock → commit → push → verify Vercel. This is the only action that matters right now.",
+          "PRIORITY 2 — FIX 2 BROKEN PAGES: smart-contract-security and onchain-identity need StructuredData/Breadcrumb/BackToTop. Use the 4 working pages as templates. Quick patch before the deploy commit.",
+          "PRIORITY 3 — ZERO NEW CONTENT UNTIL DEPLOYED: 427 slugs declared, ~315 in production. Content pipeline is producing faster than shipping. Pause builds entirely until git locks cleared and production matches local. ROI on ops > content until gap closes.",
+          "STRATEGIC NOTE: 3 full agent rotations today produced 6 guides + 5 ecosystem pages + social assets + QA. Production saw zero of it. The bottleneck is purely operational — a single rm command unlocks $4K+ of accumulated work."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Published Page Slugs (declared)", "value": "427", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Actually in Production", "value": "~315 (last deploy Mar 17)", "pct": 74, "color": "#f59e0b" },
+          { "label": "Deploy Gap", "value": "~112 pages not live", "pct": 26, "color": "#ef4444" },
+          { "label": "Publish Queue", "value": "0 (all promoted)", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Built Today", "value": "6 learn guides + 5 ecosystem", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages Needing Fix", "value": "2 (missing SEO components)", "pct": 67, "color": "#f59e0b" },
+          { "label": "Orphan Slugs (no page.tsx)", "value": "103", "pct": 24, "color": "#f59e0b" },
+          { "label": "Days Since Last Commit", "value": "7 (Mar 17, e999560)", "pct": 3, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "7 days (since Mar 16)", "pct": 2, "color": "#ef4444" },
+          { "label": "Uncommitted Changes", "value": "637 files / +4,288 -3,463 lines", "pct": 5, "color": "#ef4444" },
+          { "label": "API Routes Healthy", "value": "6/6", "pct": 100, "color": "#4ade80" },
+          { "label": "API Fallback Coverage", "value": "5/6 routes", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 routes", "pct": 0, "color": "#ef4444" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "6 of 6", "pct": 100, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~10.25h", "pct": 100, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$497 (6 agents × full rotation)", "pct": 100, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$1,391 (16 runs: standup×3 $135, build×3 $699, publish×2 $110, design×3 $180, community×3 $123, eod×3 $189)", "pct": 12, "color": "#4ade80" },
+          { "label": "Agent Runs Today", "value": "16 runs across 6 types (3 full rotations)", "pct": 100, "color": "#06b6d4" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — sandbox network blocked outbound HTTPS to api.resend.com (403 tunnel forbidden). Report saved locally."
+  }
+}

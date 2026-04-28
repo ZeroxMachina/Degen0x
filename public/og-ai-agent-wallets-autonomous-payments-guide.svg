@@ -1,0 +1,91 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1a2d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative glows -->
+  <circle cx="150" cy="350" r="280" fill="#06b6d4" opacity="0.05"/>
+  <circle cx="1000" cy="150" r="300" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="600" cy="600" r="200" fill="#f59e0b" opacity="0.03"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Logo -->
+  <text x="60" y="70" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#8b949e" letter-spacing="2">degen0x</text>
+
+  <!-- Category badges -->
+  <rect x="60" y="100" width="52" height="28" rx="14" fill="rgba(6,182,212,0.25)" stroke="rgba(6,182,212,0.5)" stroke-width="1"/>
+  <text x="77" y="119" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#22d3ee">AI</text>
+
+  <rect x="122" y="100" width="85" height="28" rx="14" fill="rgba(139,92,246,0.2)" stroke="rgba(139,92,246,0.4)" stroke-width="1"/>
+  <text x="139" y="119" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#a78bfa">Wallets</text>
+
+  <rect x="217" y="100" width="90" height="28" rx="14" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.4)" stroke-width="1"/>
+  <text x="233" y="119" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#fbbf24">Payments</text>
+
+  <!-- Title -->
+  <text x="60" y="195" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-1">AI Agent Wallets &amp;</text>
+  <text x="60" y="250" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="-1">Autonomous Crypto</text>
+  <text x="60" y="305" font-family="Inter, system-ui, sans-serif" font-size="44" font-weight="800" fill="url(#aiGrad)" letter-spacing="-1">Payments Guide 2026</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="350" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#8b949e">x402 protocol, Alchemy, World AgentKit, Coinbase &amp; enterprise adoption</text>
+
+  <!-- Platform cards panel -->
+  <g transform="translate(740, 100)">
+    <rect x="0" y="0" width="400" height="280" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="24" y="35" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b949e" letter-spacing="1">KEY PLATFORMS</text>
+
+    <!-- x402 -->
+    <rect x="24" y="55" width="352" height="44" rx="10" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+    <text x="44" y="82" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#22d3ee">x402</text>
+    <text x="130" y="82" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#e6edf3">HTTP Micropayments Protocol</text>
+
+    <!-- Alchemy -->
+    <rect x="24" y="110" width="352" height="44" rx="10" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+    <text x="44" y="137" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#818cf8">Alchemy</text>
+    <text x="130" y="137" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#e6edf3">Agentic Wallets on Base</text>
+
+    <!-- World AgentKit -->
+    <rect x="24" y="165" width="352" height="44" rx="10" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+    <text x="44" y="192" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#a78bfa">World</text>
+    <text x="130" y="192" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#e6edf3">AgentKit + Proof of Human</text>
+
+    <!-- Coinbase -->
+    <rect x="24" y="220" width="352" height="44" rx="10" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+    <text x="44" y="247" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fbbf24">Coinbase</text>
+    <text x="130" y="247" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#e6edf3">Enterprise Agent Wallets</text>
+  </g>
+
+  <!-- Stats row -->
+  <g transform="translate(740, 410)">
+    <rect x="0" y="0" width="190" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="20" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">MARKET BY 2030</text>
+    <text x="20" y="52" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#22d3ee">$3-5 Trillion</text>
+
+    <rect x="205" y="0" width="190" height="70" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="225" y="28" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#8b949e">FORTUNE 500</text>
+    <text x="225" y="52" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#a78bfa">80% Using AI</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="rgba(0,0,0,0.3)"/>
+  <text x="60" y="607" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#8b949e">degen0x.com</text>
+  <text x="1050" y="607" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#6e7681">2026 Guide</text>
+</svg>

@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-25",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audited 2 new learn guides (DeFi Insurance, DVT), created 2 OG images (1200x630 SVG), and implemented 6 UX refinements including semantic HTML, accessibility, and mobile table improvements.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "DVT guide: Wrapped in semantic <article> tag instead of React fragment for better SEO and accessibility",
+          "DVT guide: Added aria-label to Table of Contents nav element",
+          "DeFi Insurance: Added aria-label to Table of Contents nav element",
+          "DeFi Insurance: Protocol cards now show all 5 protocols instead of only top 3 (Neptune Mutual and Etherisc were previously hidden from card view)",
+          "DeFi Insurance: Added role='region', aria-label, and tabIndex to comparison table wrapper for keyboard-accessible scrolling",
+          "DVT guide: Added role='region', aria-label, tabIndex, and minWidth to SSV vs Obol comparison table for mobile scroll accessibility",
+          "Both pages: Added WebkitOverflowScrolling touch for smooth mobile table scrolling"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: defi-insurance-protocols-guide-2026 (1200x630 SVG) — dark theme with shield decorations, DeFi/Insurance/Intermediate badges, key stats ($1T+ TVL, <2% insured, $18M+ claims), protocol names listed",
+          "OG image: distributed-validator-technology-dvt-guide-2026 (1200x630 SVG) — dark theme with DVT network node visualization, Staking/DVT/Intermediate badges, key stats (4M+ ETH, $2B staked, 1,000+ operators), topic tags"
+        ]
+      },
+      {
+        "title": "UX Audit Findings (Deferred)",
+        "items": [
+          "Style inconsistency between pages: DeFi Insurance uses 26px H2 / 48px sections; DVT uses 32px H2 / 60px sections — recommend standardizing in a shared article layout component",
+          "FAQ styling differs: Insurance uses card-based Q/A; DVT uses borderBottom dividers — recommend picking one pattern for all learn guides",
+          "Neither page has a data freshness indicator (e.g., 'Prices from CoinGecko') — recommend adding for trust signals",
+          "ToC links lack focus:outline styles — recommend adding 2px solid #6366f1 outline on :focus-visible across all learn guides"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"],
+    "files_created": [
+      "public/og-defi-insurance-protocols-guide-2026.svg",
+      "public/og-distributed-validator-technology-dvt-guide-2026.svg"
+    ],
+    "files_modified": [
+      "src/app/learn/defi-insurance-protocols-guide-2026/page.tsx",
+      "src/app/learn/distributed-validator-technology-dvt-guide-2026/page.tsx"
+    ]
+  }
+}

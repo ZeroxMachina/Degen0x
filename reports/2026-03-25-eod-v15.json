@@ -1,0 +1,73 @@
+{
+  "date": "2026-03-25",
+  "block": "eod",
+  "report": {
+    "status": "completed",
+    "summary": "Cycle-close v15: 37 pages published today across 17 batches — all verified with page.tsx. Publish queue empty. 6/6 API routes healthy with correct cache TTLs. git index.lock STILL blocking commits (since 09:58) — 80 pending changes stuck. No new deploy this cycle.",
+    "sections": [
+      {
+        "title": "QA Tester",
+        "items": [
+          "520 unique published slugs total, 417 with page.tsx — 103 legacy gaps unchanged from prior cycles",
+          "All 37 pages published today (batches 1-17) verified: every page.tsx file exists",
+          "Batch 17 (latest): Ethereum Verkle Trees & Hegota Guide 2026 + Sui Hashi Bitcoin DeFi Guide — both scaffolded at 14:23 today",
+          "6 modified learn pages in working tree (bitgo-ipo, congressional-hearing, institutional-adoption, katana-perps, lido-v3, tokenized-funds) — likely JSX escaping fixes from earlier cycles",
+          "10 new OG SVGs generated (untracked) for recent batches including ai-agent-frameworks, rwa-platforms, nasdaq-tokenized-equities, socialfi-creator-tokens, etc.",
+          "Production site unreachable from sandbox (egress blocked) — cannot verify HTTP 200 remotely; local page.tsx audit is green",
+          "No new regressions detected from static file analysis"
+        ]
+      },
+      {
+        "title": "Data Engineer",
+        "items": [
+          "6/6 core API routes present and structurally sound: prices (60s), fear-greed (600s), trending (300s), market-metrics (60s), market-dominance (300s), defi-yields (300s)",
+          "All routes implement in-memory cache + Cache-Control + stale-while-revalidate + fallback data pattern",
+          "Health endpoint (/api/health) rate-limited at 100 req/min, checks CoinGecko, analytics, and cache services",
+          "Additional API routes available: cache-stats, news-rss, newsletter, notifications, og, subscribe, standup-email",
+          "No code changes to API routes this cycle — all stable",
+          "No rate limit or stale data issues detectable from code analysis — live verification blocked by sandbox egress"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "items": [
+          "Latest deployed commit: 21aaf5b (batch deploy: 170+ pages, 18 guides, 5 ecosystem pages, OG images, UX fixes)",
+          "No new deploy triggered this cycle — all current changes are local only",
+          "BLOCKER PERSISTS: .git/index.lock created at 09:58 today — still blocking all git operations after 4+ hours",
+          "Working tree: 21 modified files + 59 untracked files = 80 total pending changes",
+          "Modified files include: published-pages.ts (37 new pages today), globals.css, NotificationCenter, WhaleAlertFeed, 6 learn page fixes, 5 OG SVG updates, 5 report updates",
+          "next.config.ts healthy: standalone output, staticGenerationMaxConcurrency=4, image optimization with AVIF/WebP",
+          "ACTION NEEDED: rm .git/index.lock → stage all changes → commit → trigger Vercel deploy to push 17 batches live"
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "SHIPPED: 37 pages added to published-pages.ts today across 17 batches (learn guides + 5 ecosystem deep-dives + 1 funding-rate-tracker tool)",
+          "SHIPPED: Batch 17 built this cycle — Ethereum Verkle Trees/Hegota Guide + Sui Hashi Bitcoin DeFi Guide",
+          "PUBLISH QUEUE: Empty — all queued pages have been promoted to PUBLISHED_PAGES",
+          "DELTA since v14: +2 pages (batch 17), +2 build reports, queue fully drained",
+          "CARRY-OVER: Resolve git index.lock, commit 80 pending changes, trigger Vercel deploy",
+          "CARRY-OVER: Fix JSX escaping TS errors in 6 learn pages (unescaped > and $ characters)",
+          "CARRY-OVER: 103 published slugs without page.tsx (long-standing legacy gap — wallets, taxes, investing, blog, older learn guides)",
+          "BLOCKER FOR JEFE: git index.lock must be cleared before any deploy can proceed — this has persisted all day across 15+ review cycles"
+        ]
+      },
+      {
+        "title": "Metrics",
+        "metrics": [
+          { "label": "Published Pages", "value": "520 unique", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages with page.tsx", "value": "417 / 520 (80%)", "pct": 80, "color": "#f59e0b" },
+          { "label": "Today's Pages Verified", "value": "37 / 37", "pct": 100, "color": "#4ade80" },
+          { "label": "API Routes Healthy", "value": "6 / 6", "pct": 100, "color": "#4ade80" },
+          { "label": "Cache TTLs Correct", "value": "6 / 6", "pct": 100, "color": "#4ade80" },
+          { "label": "Publish Queue", "value": "0 (empty)", "pct": 100, "color": "#4ade80" },
+          { "label": "Git Status", "value": "BLOCKED (index.lock)", "pct": 0, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "80 files", "pct": 5, "color": "#ef4444" },
+          { "label": "Deploy Status", "value": "Stale (21aaf5b)", "pct": 30, "color": "#f59e0b" }
+        ]
+      }
+    ],
+    "skills_used": ["qa", "dataEngineer", "devops", "pm"]
+  }
+}

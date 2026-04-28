@@ -1,0 +1,46 @@
+{
+  "date": "2026-03-23",
+  "block": "design",
+  "report": {
+    "status": "completed",
+    "summary": "UX audited and polished today's two build-cycle pages (Unichain Guide 2026, Appchains & App-Specific Rollups Guide 2026). Created OG images for both, added mobile table scroll hints, ToC accessibility improvements (aria-label, hover underlines, focus-visible states), and related links hover effects.",
+    "sections": [
+      {
+        "title": "UX Improvements",
+        "items": [
+          "Added aria-label='Table of Contents' on ToC containers for both pages — improves screen reader navigation and semantic HTML",
+          "Appchains page: Converted ToC container from div to semantic <nav> element with aria-label for proper landmark navigation",
+          "Added hover underline on all 9 ToC links in appchains page (unichain page already had them) — improves discoverability of clickable items",
+          "Added focus-visible outline (2px solid #6366f1 with 2px offset) on all ToC links in both pages for keyboard navigation accessibility",
+          "Added '← scroll to see all columns →' hint text below all data tables on both pages (1 table on unichain, 2 tables on appchains) — guides mobile users to discover scrollable content",
+          "Added hover/focus effects on 6 Related Learning links in appchains page — underline + semi-transparent blue background (rgba(88,166,255,0.08)) with border-radius for better click targets",
+          "Added OG image metadata references to unichain page (was missing openGraph.images and twitter.images fields)",
+          "Both pages use shared Breadcrumb and BackToTop components (consistent with codebase convention)"
+        ]
+      },
+      {
+        "title": "Visuals Created",
+        "items": [
+          "OG image: og-unichain-guide-2026.svg (1200x630) — dark theme with blue gradient title, 3 stat cards (~1 sec block time, 95% gas savings, 100+ ecosystem protocols), OP Stack architecture diagram (Ethereum → OP Stack → Unichain → TEE/Flashbots + Uniswap v4), topic pills, degen0x branding",
+          "OG image: og-appchains-2026.svg (1200x630) — dark theme with blue gradient title, 4 framework cards (OP Stack, Cosmos SDK, Arb Orbit, Polygon CDK), appchain evolution flow diagram (Shared L1 → Shared L2 → Appchains → DeFi/Gaming/Social/Enterprise), 3 stat boxes, topic pills, degen0x branding"
+        ]
+      },
+      {
+        "title": "Pages Audited",
+        "items": [
+          "/learn/unichain-guide-2026 — ~930 lines, 8 sections + FAQ, 1 comparison table (5 columns), feature cards, bridging guide. UX: Added ToC focus states, aria-label, table scroll hint, OG image metadata.",
+          "/learn/appchains-app-specific-rollups-guide-2026 — ~838 lines, 9 sections + FAQ, 2 data tables (4 columns each), related learning section. UX: Converted ToC to nav element, added hover underlines + focus states, table scroll hints, related link hover effects."
+        ]
+      },
+      {
+        "title": "Notes",
+        "items": [
+          "SVG OG images created — PNG conversion still needed for production social previews (metadata references .png files)",
+          "No new TypeScript errors introduced — verified with npx tsc --noEmit",
+          "Backlog from previous design report: 5 pages still missing OG images (megaeth, nftfi, story-protocol, solana-blinks, bitcoin-supply-shock)"
+        ]
+      }
+    ],
+    "skills_used": ["uxDesigner", "graphicDesigner", "programmer"]
+  }
+}

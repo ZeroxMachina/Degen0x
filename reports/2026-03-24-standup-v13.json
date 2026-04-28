@@ -1,0 +1,92 @@
+{
+  "date": "2026-03-24",
+  "block": "standup",
+  "cycle": 13,
+  "report": {
+    "status": "completed",
+    "summary": "Day 71 standup v13: Build-9 shipped RaaS Providers guide (~501 lines) + Staking-as-a-Service guide (~728 lines) — both queued. Design-v12 created 3 OG images + fixed broken OG ref + accessibility improvements. Community-v11 drafted 5 tweets (#97-101 incl. 6-part EigenLayer thread) + newsletter v21 + 2 SVG cards. Publish-v6 promoted SDP Guide + Agentic Payments (queue emptied, refilled by build-9). EOD-v12 confirmed 498 published slugs, 769 uncommitted items. Git locks Day 8 — deploy gap ~160 pages. 63 agent runs today.",
+    "sections": [
+      {
+        "title": "Analytics",
+        "items": [
+          "DELTA SINCE STANDUP v12: 5 agents ran (build-9, design-v12, community-v11, publish-v6, eod-v12). 63 total runs today (standup×13, build×9, design×12, community×11, publish×6, eod×12).",
+          "BUILD-9 OUTPUT: 2 new learn guides — RaaS Providers Compared 2026 (~501 lines, covers Conduit/Caldera/Gelato/AltLayer, modular stack, $354M market by 2032) + Staking-as-a-Service Providers Compared 2026 (~728 lines, covers Lido/Kiln/Figment/P2P.org/Coinbase, $33.3B AUM projected, institutional vs retail matrix). Both added to PUBLISH_QUEUE.",
+          "DESIGN-v12: Created 3 OG images (RaaS guide, Staking providers, Funding Rate Tracker). Fixed broken OG image reference on funding rate tracker (.png→.svg). Fixed duplicate-word typo in RaaS guide. Added accessibility attrs (aria-label, scope) to comparison tables.",
+          "PUBLISH-v6: Promoted SDP Guide + Agentic Payments Protocols to PUBLISHED_PAGES. Queue emptied then refilled by build-9 with RaaS + Staking-as-a-Service. 498 published slugs total.",
+          "COMMUNITY-v11 OUTPUT: 5 social posts (#97-101: 6-part EigenLayer restaking thread, SDP enterprise launch, BlackRock ETHB staked ETF, F&G divergence contrarian, restaking companion) + newsletter v21 (Thu Mar 27) + 2 SVG cards (restaking architecture diagram + SDP enterprise launch) + content calendar v25 (11 posts through Mar 27).",
+          "EOD-v12: 498 published slugs (+4 from v11). 769 uncommitted items (+7 from v11, all report files). 46 TS errors unchanged. Deploy drift 7 days. 5/6 API routes healthy (market-metrics still 404).",
+          "MARKET (from production APIs): BTC ~$69,382 (softening from $71K earlier). ETH ~$2,160. SOL ~$90. F&G 11 (Extreme Fear Day 47). BTC dominance 56.36%. Total market cap $2.46T. CoinGecko API 65ms response, healthy."
+        ]
+      },
+      {
+        "title": "Project Manager",
+        "items": [
+          "DONE SINCE STANDUP v12: build-9 (RaaS guide + Staking guide), design-v12 (3 OG images + UX/accessibility fixes), community-v11 (5 tweets + newsletter v21 + 2 SVGs), publish-v6 (2 pages promoted), eod-v12 (verification). 5 agents ran = $452 human-equivalent.",
+          "PIPELINE HEALTH: PUBLISH_QUEUE at 2 items (RaaS guide, Staking-as-a-Service guide). Queue rotation working — emptied and refilled within one cycle. 61+ guides built, 66+ OG images, 131+ social posts, 52+ SVG cards, 21 newsletters.",
+          "TOTAL INVENTORY: 498 published slugs in PUBLISHED_PAGES. 1,142 page.tsx files locally. ~338 live in production (stale Mar 17 commit e999560). Deploy gap: ~160 pages.",
+          "BLOCKER [P0 — DAY 8]: Git locks (.git/HEAD.lock + .git/index.lock) still present since Mar 16. 769 uncommitted files. ALL content since Mar 17 is local-only. Jefe action required: rm .git/index.lock .git/HEAD.lock → git add . → git commit → git push.",
+          "BLOCKER [P1]: /api/market-metrics returns 404 in production — route.ts exists locally but never committed.",
+          "CARRY-OVER [P1]: /trading and /trading/learn return 404 — hub page.tsx missing.",
+          "CARRY-OVER [P1]: TS errors at 46 across 3 files (crypto-arbitrage unescaped >, crypto-index-funds, structured-data.examples.ts).",
+          "CARRY-OVER [P1]: Rate limiter coverage 0/6 core API routes.",
+          "BUG FIXED THIS CYCLE: Broken OG image reference on funding rate tracker (.png→.svg). Duplicate-word typo in RaaS guide. Accessibility improvements on comparison tables.",
+          "TODAY'S AGENT RUNS: standup×13, build×9, design×12, community×11, publish×6, eod×12 = 63 runs."
+        ]
+      },
+      {
+        "title": "CEO — Next Cycle Priorities",
+        "items": [
+          "PRIORITY 1 — CLEAR GIT LOCKS + DEPLOY 160-PAGE BACKLOG: Deploy gap at ~160 pages (498 declared vs ~338 live). 8 days of content invisible to Google. BTC softening to ~$69K but institutional narratives compounding (ETF $2.5B inflows, BlackRock ETHB, Invesco $900M tokenized fund, Solana SDP). One unlock + push = 47% content increase deployed instantly. April 15 tax deadline 22 days away — Tax-Loss Harvesting guide window closing.",
+          "PRIORITY 2 — PROMOTE RaaS + STAKING-AS-A-SERVICE GUIDES: 2 new items in PUBLISH_QUEUE. RaaS captures the modular blockchain narrative ($354M market, 100+ rollups live). Staking-as-a-Service captures institutional staking surge ($33.3B projected AUM, BlackRock ETHB as catalyst). Both are infrastructure-level guides that compound with existing content (EigenLayer restaking, liquid staking, modular blockchain stack guides).",
+          "PRIORITY 3 — AMPLIFY RESTAKING + SDP SOCIAL CONTENT: Community-v11 drafted a 6-part EigenLayer restaking thread — our first social push on $20B TVR story. SDP enterprise launch tweets timed for today's Mastercard/WU/Worldpay news cycle. 11 posts scheduled through Mar 27 via content calendar v25. Ensure timely posting to capture peak attention windows.",
+          "STRATEGIC NOTE: Day 71 — 63 agent runs producing $4,939 human-equivalent work at ~$0 marginal cost. Content pipeline is now self-sustaining: build creates → publish promotes → design polishes → community amplifies → eod verifies → standup tracks. Three OG images and accessibility fixes this cycle show design audit catching issues that build/scaffold miss (broken .png ref would have caused blank social previews). Critical path unchanged: git locks → deploy → index → rank."
+        ]
+      },
+      {
+        "title": "Site Metrics",
+        "metrics": [
+          { "label": "Production Status", "value": "LIVE (Vercel operational)", "pct": 100, "color": "#4ade80" },
+          { "label": "Published Slugs (declared)", "value": "498 (+4 since v12 via promotion)", "pct": 100, "color": "#4ade80" },
+          { "label": "Pages in Production", "value": "~338 (stale commit e999560, Mar 17)", "pct": 68, "color": "#ef4444" },
+          { "label": "Deploy Gap", "value": "~160 pages not live (32% unreachable)", "pct": 32, "color": "#ef4444" },
+          { "label": "PUBLISH_QUEUE", "value": "2 pages (RaaS Guide, Staking-as-a-Service)", "pct": 95, "color": "#4ade80" },
+          { "label": "Total page.tsx Files", "value": "1,142", "pct": 100, "color": "#4ade80" },
+          { "label": "Total Guides Built", "value": "61+ guides, 66+ OG images", "pct": 100, "color": "#4ade80" },
+          { "label": "Social Content", "value": "131+ posts, 52+ SVG cards, 21 newsletters", "pct": 100, "color": "#4ade80" },
+          { "label": "Days Since Last Deploy", "value": "7 (Mar 17, e999560)", "pct": 1, "color": "#ef4444" },
+          { "label": "Git Lock Age", "value": "8 days (since Mar 16)", "pct": 1, "color": "#ef4444" },
+          { "label": "Uncommitted Files", "value": "769", "pct": 5, "color": "#ef4444" },
+          { "label": "TypeScript Errors", "value": "46 (unchanged, 3 files)", "pct": 25, "color": "#f59e0b" },
+          { "label": "API Routes Healthy", "value": "5/6 (market-metrics 404)", "pct": 83, "color": "#f59e0b" },
+          { "label": "Rate Limiter Coverage", "value": "0/6 core routes", "pct": 0, "color": "#ef4444" },
+          { "label": "BTC Price", "value": "~$69,382 (softening from $71K)", "pct": 65, "color": "#f59e0b" },
+          { "label": "ETH Price", "value": "~$2,160", "pct": 60, "color": "#06b6d4" },
+          { "label": "SOL Price", "value": "~$90", "pct": 55, "color": "#06b6d4" },
+          { "label": "Fear & Greed Index", "value": "11 (Extreme Fear — Day 47)", "pct": 11, "color": "#ef4444" },
+          { "label": "BTC Dominance", "value": "56.36%", "pct": 56, "color": "#06b6d4" },
+          { "label": "Total Market Cap", "value": "$2.46T", "pct": 50, "color": "#06b6d4" },
+          { "label": "Stablecoins Market Cap", "value": "$304-320B ATH", "pct": 97, "color": "#4ade80" },
+          { "label": "CoinGecko API Response", "value": "65ms (healthy)", "pct": 95, "color": "#4ade80" },
+          { "label": "March Close Countdown", "value": "5 days — 7-month red streak at stake", "pct": 79, "color": "#f59e0b" }
+        ]
+      },
+      {
+        "title": "Agent Cost vs Human",
+        "metrics": [
+          { "label": "Agents That Ran This Cycle", "value": "5 of 6 (build, design, community, publish, eod)", "pct": 83, "color": "#06b6d4" },
+          { "label": "Human-Hours This Cycle (actual)", "value": "~9.5h (5 agents)", "pct": 93, "color": "#4ade80" },
+          { "label": "Blended Rate", "value": "~$48/hr", "pct": 100, "color": "#06b6d4" },
+          { "label": "💰 Actual Cost — Past Hour", "value": "$452 (5 agents: build $233 + design $60 + community $41 + publish $55 + eod $63)", "pct": 83, "color": "#4ade80" },
+          { "label": "💰 Actual Cost — Today's Sprint", "value": "$4,939 (63 runs: standup×13 $585, build×9 $2,097, design×12 $720, community×11 $451, publish×6 $330, eod×12 $756)", "pct": 100, "color": "#4ade80" },
+          { "label": "Reference: Full Day (24 cycles)", "value": "~$11,928", "pct": 85, "color": "#06b6d4" },
+          { "label": "Reference: Full Week", "value": "~$83,496", "pct": 70, "color": "#06b6d4" },
+          { "label": "Annualized Human Equivalent", "value": "~$4.34M/yr", "pct": 60, "color": "#06b6d4" },
+          { "label": "Marginal Agent Cost", "value": "~$0", "pct": 100, "color": "#4ade80" },
+          { "label": "⚠️ Deploy-Blocked Waste", "value": "$4,939 today — all content local-only until git locks cleared", "pct": 0, "color": "#ef4444" }
+        ]
+      }
+    ],
+    "skills_used": ["analytics", "pm", "ceo"],
+    "email_status": "skipped — Resend API unreachable from both sandbox (egress blocked) and Chrome (CORS/network). Persistent issue since v13. Report saved locally."
+  }
+}
