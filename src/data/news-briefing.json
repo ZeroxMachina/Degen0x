@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T14:05:00Z",
-  "briefing_id": "briefing-2026-04-29-14",
+  "generated_at": "2026-04-29T15:10:00Z",
+  "briefing_id": "briefing-2026-04-29-15",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-14-001",
-      "headline": "Aave goes live natively on Solana, $15B lending stack lands on the L1",
-      "slug": "aave-native-solana-15b-deposits",
-      "tldr": "Aave deployed natively on Solana via Sunrise DeFi, opening its $15B global lending pool to Solana wallets and frontends.",
-      "why_it_matters": "Why it matters: Solana DeFi gains the largest non-EVM lending market overnight, raising the floor for SOL TVL competition with Ethereum L2s.",
+      "id": "story-2026-04-29-15-001",
+      "headline": "Bitcoin spot volume cracks below $8B, lowest since October 2023",
+      "slug": "bitcoin-spot-volume-below-8b-lowest-since-october-2023",
+      "tldr": "Bitcoin's daily spot turnover has slipped under $8 billion, the thinnest tape in 18 months and a setup that historically precedes outsized moves.",
+      "why_it_matters": "Why it matters: Liquidity droughts amplify slippage and stop runs, so a quiet $77K can violently retag $80K or $74K once a single whale prints size.",
       "the_details": [
-        "Trading is live across Jupiter, Backpack, Phantom, Raydium, and Meteora at launch.",
-        "Aave's pre-launch global deposits sit near $15B, with Solana now a first-class deployment target.",
-        "Move follows Solana stablecoin supply hitting $17B and RWA TVL crossing $1.85B in April."
+        "CoinDesk's April 29 Daybook flags volume below $8B, the lowest reading since October 2023.",
+        "BTC trades around $77,160 into Powell's final FOMC, up $818 on the day but still $17K below year-ago levels.",
+        "Coinbase premium flipped negative this week, signaling US desks have stepped back from the bid."
       ],
-      "source": "Blockonomi",
-      "source_url": "https://blockonomi.com/aave-goes-live-on-solana-in-defi-first-as-price-prediction-targets-500-and-pepeto-offers-100x-from-84/",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-29T14:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-14-002",
-      "headline": "Warsh Fed confirmation odds hit 97% as DOJ closes Powell probe, BTC catches a bid",
-      "slug": "warsh-fed-97-percent-doj-powell-probe-closed",
-      "tldr": "DOJ ended its criminal probe of Jerome Powell on April 24, lifting the last political block on Kevin Warsh's confirmation as next Fed chair.",
-      "why_it_matters": "Why it matters: A confirmed Warsh tilts FOMC dovish in crypto's read, pulling rate-cut odds and risk-asset positioning forward into Q3.",
-      "the_details": [
-        "Prediction markets price Warsh confirmation at 97% after Pirro announced probe closure on April 24.",
-        "BTC up 18% on the month into FOMC, with $2.5B in April spot ETF inflows backstopping the bid.",
-        "Fed's inspector general now handles the $2.5B HQ renovation cost-overrun review."
-      ],
-      "source": "CNBC",
-      "source_url": "https://www.cnbc.com/2026/04/24/fed-powell-doj-warsh-trump.html",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
       "category": "markets",
       "impact": "high",
       "timestamp": "2026-04-29T13:30:00Z"
     },
     {
-      "id": "story-2026-04-29-14-003",
-      "headline": "Lightspark ships Bitcoin wallet built for AI agents under David Marcus",
-      "slug": "lightspark-ai-agent-bitcoin-wallet-marcus",
-      "tldr": "Ex-Meta crypto chief David Marcus unveiled a Lightspark Bitcoin wallet that lets AI agents transact autonomously over Lightning.",
-      "why_it_matters": "Why it matters: Programmable BTC payments for autonomous agents pushes Bitcoin beyond store-of-value into machine-to-machine commerce rails.",
+      "id": "story-2026-04-29-15-002",
+      "headline": "StanChart: DeFi 'bent not broken' after $300M industry backstop steadies Kelp damage",
+      "slug": "standard-chartered-defi-bent-not-broken-aave-kelp-300m-backstop",
+      "tldr": "Standard Chartered says DeFi proved resilient after a $300M Aave-led rescue absorbed the $292M Kelp DAO hit and reanchored deposits.",
+      "why_it_matters": "Why it matters: A working private backstop dampens contagion narratives and pushes back the 'DeFi is dead' takes that flared after the LayerZero bridge drain.",
       "the_details": [
-        "Wallet targets agent-driven payments like API calls, content licensing, and inference settlement.",
-        "Rides Lightning Network for sub-second, sub-cent settlement at scale.",
-        "Ships as Marcus pushes Lightspark's enterprise Bitcoin and stablecoin payments business."
+        "Aave deposits had cratered ~38% and active loans ~31% in the days after the April 18 Kelp exploit.",
+        "Industry backstop hit $300M, including Consensys' 30K ETH pledge and BitMine's 101,901 ETH top-up.",
+        "Standard Chartered's Geoff Kendrick frames the episode as a stress test that DeFi materially passed."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2026/04/29/defi-shaken-by-usd292-million-hack-but-showing-resilience-standard-chartered-says",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-29T12:45:00Z"
+    },
+    {
+      "id": "story-2026-04-29-15-003",
+      "headline": "April 2026 already crypto's worst hack month since Bybit, with $606M lost in 18 days",
+      "slug": "april-2026-worst-crypto-hack-month-since-bybit-606m",
+      "tldr": "Crypto protocols have shed $606M+ to exploits in the first 18 days of April, the largest monthly bleed since the $1.4B Bybit breach in February 2025.",
+      "why_it_matters": "Why it matters: Bridge failures and admin-key compromises now drive the loss curve, raising the bar on insurer pricing and accelerating chain-abstraction risk reviews.",
+      "the_details": [
+        "Drift Protocol bled $285M on April 1 in an attack tied to suspected DPRK-linked social engineering.",
+        "Kelp DAO lost $292M on April 18 via a LayerZero bridge exploit that stranded rsETH across 20 chains.",
+        "Drift plus Kelp account for roughly 95% of April's losses and ~75% of all 2026 crypto theft to date."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-28T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-29-15-004",
+      "headline": "Polygon hard-forks today, retooling fees and laying groundwork for next scaling phase",
+      "slug": "polygon-hard-fork-april-29-2026-scaling-upgrade",
+      "tldr": "Polygon is shipping a network-wide hard fork on April 29 to tune performance and prepare the chain for its next round of scaling upgrades.",
+      "why_it_matters": "Why it matters: With POL still trying to defend altseason relevance, a clean fork keeps validators aligned and gives builders a predictable runway into Q3 throughput work.",
+      "the_details": [
+        "Hard fork goes live April 29, 2026, targeting performance improvements and fee mechanics.",
+        "Validators and node operators were instructed to upgrade clients ahead of the activation block.",
+        "Upgrade lands as POL underperforms the broad altcoin tape with the CMC altseason index at 39/100."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
       "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-29T13:00:00Z"
+      "timestamp": "2026-04-29T08:00:00Z"
     },
     {
-      "id": "story-2026-04-29-14-004",
-      "headline": "Judge denies Sam Bankman-Fried retrial bid, calls 'new evidence' baseless",
-      "slug": "sbf-retrial-denied-judge",
-      "tldr": "A US judge rejected Sam Bankman-Fried's motion for a new trial, ruling his fresh-evidence and prosecutorial-misconduct claims unsupported.",
-      "why_it_matters": "Why it matters: Closes a remaining legal off-ramp for SBF and locks in the FTX wind-down narrative as creditor distributions continue through 2026.",
+      "id": "story-2026-04-29-15-005",
+      "headline": "Stablecoin market sheds $892M as Kelp aftershock pulls USDC down 1% week-on-week",
+      "slug": "stablecoin-market-sheds-892m-usdc-down-week-kelp-aftershock",
+      "tldr": "DeFi unwind from the Kelp breach has carved $892M out of stablecoin float, with USDC slipping ~1% on the week and Tether tightening its grip on share.",
+      "why_it_matters": "Why it matters: Stablecoin float is the cleanest proxy for onchain risk appetite, so a Tether-skewed outflow signals defensive rotation, not capitulation.",
       "the_details": [
-        "Court called the new-evidence claim 'inconsistent with facts' and dismissed prosecutor allegations as 'baseless.'",
-        "Ruling preserves SBF's 25-year sentence handed down in March 2024.",
-        "Comes as FTX estate continues multi-billion-dollar creditor payouts on schedule."
+        "Aggregate stablecoin float dropped $892M in the wake of the April 18 KelpDAO breach.",
+        "USDT sits at $189.78B with 59.19% market share, consolidating dominance after exits.",
+        "USDC fell ~$794M between April 19-26 to $77.79B, a 1.01% weekly drawdown."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
-      "category": "regulation",
+      "source": "Bitcoin Ethereum News",
+      "source_url": "https://bitcoinethereumnews.com/tech/stablecoin-market-sheds-892m-as-kelpdao-breach-triggers-defi-unwind/",
+      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-29T12:30:00Z"
-    },
-    {
-      "id": "story-2026-04-29-14-005",
-      "headline": "Tropykus halts deposits and loans, v1 users have until July 2026 to withdraw",
-      "slug": "tropykus-v1-shutdown-july-2026",
-      "tldr": "Bitcoin-denominated lending protocol Tropykus is sunsetting v1, suspending deposits and loans and urging users to pull funds before July 2026.",
-      "why_it_matters": "Why it matters: Another small DeFi protocol exiting underscores the long-tail consolidation as TVL concentrates into Aave, Morpho, and Sky.",
-      "the_details": [
-        "All v1 deposits and loans suspended effective immediately.",
-        "Hard withdrawal deadline set for July 2026.",
-        "Team has not committed to a v2 timeline at the announcement."
-      ],
-      "source": "Coingabbar",
-      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-market-update-today-april-29-btc-eth-price-fell",
-      "category": "defi",
-      "impact": "medium",
-      "timestamp": "2026-04-29T12:00:00Z"
+      "timestamp": "2026-04-28T20:00:00Z"
     }
   ]
 }
