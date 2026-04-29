@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T17:39:00Z",
-  "briefing_id": "briefing-2026-04-29-17",
+  "generated_at": "2026-04-29T19:08:00Z",
+  "briefing_id": "briefing-2026-04-29-19",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-17-001",
-      "headline": "Aave bleeds $8.45B in 48 hours as DeFi TVL craters $13B post-KelpDAO",
-      "slug": "aave-deposit-exodus-defi-tvl-13b-drop-kelpdao",
-      "tldr": "Aave depositors yanked $8.45B in two days after attackers used stolen rsETH as collateral, dragging DeFi TVL down $13.21B.",
-      "why_it_matters": "Why it matters: Restaking collateral just became the contagion vector everyone feared — every cross-chain LST is now in lender risk-committee crosshairs.",
+      "id": "story-2026-04-29-19-001",
+      "headline": "Bitcoin slides to $76,340 ahead of Fed as $80K rejection draws third straight failure",
+      "slug": "bitcoin-76k-fed-decision-80k-rejection",
+      "tldr": "BTC opened 1.3% lower at $76,340 Wednesday, with Coinbase premium turning negative as traders brace for the Fed decision later today.",
+      "why_it_matters": "Why it matters: Repeated $80K failures plus weakening US demand sets up a deeper flush if Powell signals no near-term rate cuts.",
       "the_details": [
-        "Aave deposits fell $8.45B over 48 hours; total DeFi TVL slid $13.21B since the April 19 exploit.",
-        "DeFi United coalition pitched a coordinated unwind plan to absorb the 116,500 unbacked rsETH minted by the attacker.",
-        "April hack tally now sits at $606M across 12 incidents — already 79% of 2026's $770M YTD losses."
+        "BTC twice rejected at $80,000 over the last week before sliding to $76,340 open on April 29.",
+        "Coinbase premium index has flipped negative, signaling US institutional buyers stepping back.",
+        "ETH, XRP and SOL all down 1–4% on the week, with XRP taking the worst hit."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-29T15:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-17-002",
-      "headline": "Bitcoin spot volume cracks below $8B — thinnest tape since October 2023",
-      "slug": "bitcoin-spot-volume-8b-thinnest-since-october-2023",
-      "tldr": "BTC daily spot volume slid under $8B with price at $77,160, leaving the order book paper-thin ahead of today's Fed decision.",
-      "why_it_matters": "Why it matters: Drained liquidity historically front-runs violent moves — small flows can crank vol in either direction this week.",
-      "the_details": [
-        "BTC printed $77,160.91 at 9:30am ET; ETH opened $2,289 and ticked up to $2,330 by 7:24am ET.",
-        "Volume is the lowest in roughly 18 months, per CoinDesk's daybook desk.",
-        "Traders are derisking ahead of the Fed meeting and an extended Strait of Hormuz closure scenario."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
       "category": "bitcoin",
       "impact": "high",
-      "timestamp": "2026-04-29T13:30:00Z"
+      "timestamp": "2026-04-29T13:38:00Z"
     },
     {
-      "id": "story-2026-04-29-17-003",
-      "headline": "Western Union to mint USDPT stablecoin on Solana, eyes remittance flows",
-      "slug": "western-union-usdpt-stablecoin-solana-remittance",
-      "tldr": "Western Union confirmed plans to launch USDPT on Solana, pulling its multi-billion-dollar remittance corridor onto a public chain.",
-      "why_it_matters": "Why it matters: A 174-year-old payments incumbent picking Solana validates the chain as a TradFi settlement layer — and squeezes Circle's USDC mindshare.",
+      "id": "story-2026-04-29-19-002",
+      "headline": "SEC-CFTC joint taxonomy carves BTC, ETH, SOL, XRP, LINK as digital commodities",
+      "slug": "sec-cftc-five-category-token-taxonomy",
+      "tldr": "Joint SEC-CFTC guidance sorts crypto into five buckets and names the top five large-caps as digital commodities, ending years of jurisdictional ambiguity.",
+      "why_it_matters": "Why it matters: A clean commodities label for ETH, SOL, XRP and LINK clears the runway for futures, ETFs and bank custody at scale.",
       "the_details": [
-        "USDPT will live natively on Solana, leveraging sub-second settlement for cross-border payouts.",
-        "Move arrives as Circle eyes $150B USDC supply by H2 2026, up from $112B on April 10.",
-        "Stablecoin sector hit a record $315B market cap in Q1 with $28T in transaction volume."
+        "Five categories: digital commodities, digital collectibles, digital tools, stablecoins, digital securities.",
+        "FDIC dropped proposed GENIUS Act stablecoin rules April 7; FinCEN/OFAC followed with PPSI AML rules April 8.",
+        "CFTC Innovation Task Force named April 10 to write the framework for crypto, AI and prediction markets."
       ],
-      "source": "OpenPR",
-      "source_url": "https://www.openpr.com/news/4489430/best-crypto-to-buy-in-april-2026-morgan-stanley-goes-stablecoin",
-      "category": "adoption",
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "category": "regulation",
       "impact": "high",
       "timestamp": "2026-04-29T12:00:00Z"
     },
     {
-      "id": "story-2026-04-29-17-004",
-      "headline": "Upbit halts POL deposits and withdrawals as Polygon hard fork lands today",
-      "slug": "upbit-pol-suspension-polygon-hard-fork-april-29",
-      "tldr": "Korea's Upbit froze POL deposits and withdrawals starting April 29 ahead of a Polygon hard fork targeting scalability and security.",
-      "why_it_matters": "Why it matters: A clean fork keeps Polygon's institutional pipeline on schedule — a flubbed one ices payments rails for weeks.",
+      "id": "story-2026-04-29-19-003",
+      "headline": "April crypto hack toll hits $606M across 12 incidents in 18 days; Lazarus dominates",
+      "slug": "april-2026-crypto-hacks-606m-lazarus",
+      "tldr": "DeFi has bled $606M to exploits in just 18 days of April, with North Korea's Lazarus Group fingerprints on the two biggest hits.",
+      "why_it_matters": "Why it matters: A $770M YTD security tab plus state-actor attribution will harden insurer pricing and accelerate the institutional flight from cross-chain bridges.",
       "the_details": [
-        "Upbit, Korea's largest exchange by KRW volume, paused POL transfers as a precautionary step.",
-        "Hard fork targets throughput improvements and additional consensus-layer security guarantees.",
-        "POL slid into the suspension window with altcoin sentiment still fragile (CMC Altseason index at 39/100)."
+        "Kelp DAO drained $292M April 19 via misconfigured LayerZero bridge minting 116,500 unbacked rsETH.",
+        "Drift Protocol lost $285M April 1 via fake CVT token, oracle manipulation and compromised admin key.",
+        "2026 YTD DeFi hack losses now near $770M, on pace to eclipse 2024's full-year total."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-29T08:00:00Z"
+      "source": "TheStreet Crypto",
+      "source_url": "https://www.thestreet.com/crypto/markets/major-defi-hack-becomes-the-largest-of-2026-yet",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-29T10:00:00Z"
     },
     {
-      "id": "story-2026-04-29-17-005",
-      "headline": "CLARITY Act markup slips from April to May with no firm date",
-      "slug": "clarity-act-markup-delayed-april-may-2026",
-      "tldr": "The U.S. crypto market structure bill missed its April markup window and now lacks a confirmed date in May despite Treasury and Coinbase backing.",
-      "why_it_matters": "Why it matters: Every week of slippage gives the SEC-CFTC joint guidance more runway as the de facto rulebook — and pushes any U.S. token-launch unlock into Q3.",
+      "id": "story-2026-04-29-19-004",
+      "headline": "CLARITY Act markup slips into May with no firm date, killing April catalyst",
+      "slug": "clarity-act-markup-slips-may",
+      "tldr": "The CLARITY Act markup that traders pegged as April's main upside catalyst has been pushed to May with no confirmed date set.",
+      "why_it_matters": "Why it matters: With CLARITY off the table, BTC loses its main near-term legislative tailwind right as macro headwinds re-enter the room.",
       "the_details": [
-        "Over 100 firms including Coinbase and Ripple signed an April 23 letter pressing the Senate Banking Committee to schedule the markup.",
-        "Treasury Secretary publicly endorsed the bill earlier this month; Coinbase CEO dropped opposition.",
-        "Bill would codify the digital-commodity vs. digital-security split currently set by the March 17 SEC-CFTC release."
+        "Bill drafted to settle SEC vs CFTC jurisdictional lines for digital assets.",
+        "April markup window has formally closed with no May date confirmed by House leadership.",
+        "Traders had front-run the markup; positioning is now unwinding into a thinner tape."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "source": "DL News",
+      "source_url": "https://www.dlnews.com/articles/regulation/key-dates-for-us-crypto-regulation-in-2026/",
       "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-29T10:00:00Z"
+      "timestamp": "2026-04-29T09:00:00Z"
+    },
+    {
+      "id": "story-2026-04-29-19-005",
+      "headline": "Morgan Stanley, JPMorgan debut as Consensus Miami sponsors as Wall Street books $10T into May 5",
+      "slug": "consensus-miami-2026-morgan-stanley-jpmorgan",
+      "tldr": "Consensus Miami's institutional share nearly doubles to ~35% of 15,000 attendees, with TradFi heavyweights now headline sponsors.",
+      "why_it_matters": "Why it matters: $10T in AUM physically showing up validates that the institutional thesis is past pilot stage and into allocation mode.",
+      "the_details": [
+        "Morgan Stanley and JPMorgan are debut sponsors at the May 5–7 Miami event.",
+        "CFTC Chair Michael Selig, Sen. Ashley Moody and White House's Patrick Witt attend a Consensus event for the first time.",
+        "Conference expects 15,000+ attendees; institutional share rises to ~35% representing ~$10T in AUM."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-29T14:00:00Z"
     }
   ]
 }

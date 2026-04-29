@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-29-011",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin slides to $76,340 ahead of Fed as $80K rejection draws third straight failure",
+    "message": "BTC opened 1.3% lower at $76,340 Wednesday, with Coinbase premium turning negative as traders brace for the Fed decision later today.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-29-010",
     "type": "news",
     "title": "\ud83d\udcf0 Aave bleeds $8.45B in 48 hours as DeFi TVL craters $13B post-KelpDAO",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 Kelp DAO drained for $292M as LayerZero bridge bug freezes Aave, Spark, Fluid",
     "message": "An attacker drained 116,500 rsETH (~$292M, 18% of supply) via Kelp DAO's LayerZero bridge, the largest DeFi exploit of 2026.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-005",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin cracks $77K as 3% slide erases a full week of ETF-fueled gains",
-    "message": "BTC slid nearly 3% to break below $77,000, wiping out the seven-day rally that briefly tagged the $80K wall.",
     "actionUrl": "/news",
     "date": "2026-04-28"
   }
