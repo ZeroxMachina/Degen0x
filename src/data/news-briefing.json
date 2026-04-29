@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T16:07:00Z",
-  "briefing_id": "briefing-2026-04-29-16",
+  "generated_at": "2026-04-29T17:39:00Z",
+  "briefing_id": "briefing-2026-04-29-17",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-16-001",
-      "headline": "SEC-CFTC joint guidance puts BTC, ETH, SOL, XRP, LINK in 'digital commodity' bucket",
-      "slug": "sec-cftc-digital-commodity-classification",
-      "tldr": "A landmark joint interpretation between the SEC and CFTC sorts crypto assets into five legal categories, ending years of jurisdictional limbo.",
-      "why_it_matters": "Why it matters: Naming BTC, ETH, SOL, XRP, and LINK as digital commodities hands the CFTC primary oversight of the largest tokens and clears a path for spot products built around them.",
+      "id": "story-2026-04-29-17-001",
+      "headline": "Aave bleeds $8.45B in 48 hours as DeFi TVL craters $13B post-KelpDAO",
+      "slug": "aave-deposit-exodus-defi-tvl-13b-drop-kelpdao",
+      "tldr": "Aave depositors yanked $8.45B in two days after attackers used stolen rsETH as collateral, dragging DeFi TVL down $13.21B.",
+      "why_it_matters": "Why it matters: Restaking collateral just became the contagion vector everyone feared — every cross-chain LST is now in lender risk-committee crosshairs.",
       "the_details": [
-        "The framework defines five buckets: digital commodities, digital collectibles, digital tools, stablecoins, and digital securities.",
-        "CFTC commits to administering the Commodity Exchange Act consistent with the SEC interpretation, ending overlapping enforcement risk.",
-        "Coalition of 100+ crypto firms is now pushing the Senate Banking Committee to mark up the Clarity Act on the same framework."
-      ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-29T14:30:00Z"
-    },
-    {
-      "id": "story-2026-04-29-16-002",
-      "headline": "Spot bitcoin ETFs string together 8-day, $2.1B inflow run as BTC reclaims $77K",
-      "slug": "btc-etf-eight-day-inflow-streak",
-      "tldr": "U.S. spot bitcoin ETFs absorbed $2.1 billion across eight straight sessions through April 23, dragging cumulative net inflows since launch to $58 billion.",
-      "why_it_matters": "Why it matters: Institutional demand has turned the year's ETF flows positive even while short-term holders distribute, creating the first sustained structural bid since February.",
-      "the_details": [
-        "April monthly inflows hit $2.43 billion, fully erasing Q1 outflows; total ETF assets now sit at $102 billion.",
-        "BTC trades at $77,160 on Wednesday after a 13% April rally, with Ethereum at $2,330.",
-        "Capital is rotating into ETH funds, which logged a record $11.68 billion cumulative inflow."
+        "Aave deposits fell $8.45B over 48 hours; total DeFi TVL slid $13.21B since the April 19 exploit.",
+        "DeFi United coalition pitched a coordinated unwind plan to absorb the 116,500 unbacked rsETH minted by the attacker.",
+        "April hack tally now sits at $606M across 12 incidents — already 79% of 2026's $770M YTD losses."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-etfs-just-pulled-usd2-billion-in-8-days-while-short-term-holders-quietly-started-selling",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-29T13:45:00Z"
-    },
-    {
-      "id": "story-2026-04-29-16-003",
-      "headline": "Consensys, Joseph Lubin pledge up to 30,000 ETH to rsETH bridge-exploit recovery",
-      "slug": "consensys-lubin-rseth-recovery-pledge",
-      "tldr": "Consensys and founder Joseph Lubin are committing up to 30,000 ETH to DeFi United's rescue effort for Kelp DAO users hit by the April 18 LayerZero bridge exploit.",
-      "why_it_matters": "Why it matters: A name-brand backstop turns the patchy Aave-led rescue into a credible industry-wide standard for handling cross-chain failures.",
-      "the_details": [
-        "Kelp DAO lost roughly $293 million on April 18 after an attacker minted 116,500 unbacked rsETH and borrowed against it on Aave.",
-        "Aave's TVL dropped from $26.4B to about $20B in the hours after the exploit, prompting the coordinated rescue.",
-        "Lido, EtherFi, and other LST issuers had already committed parts of the $300M industry pledge before the Consensys add-on."
-      ],
-      "source": "Yahoo Finance / DeFi United",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
+      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
       "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-29T12:10:00Z"
+      "timestamp": "2026-04-29T15:00:00Z"
     },
     {
-      "id": "story-2026-04-29-16-004",
-      "headline": "IRS digital-asset cost-basis reporting now mandatory for every U.S. crypto broker",
-      "slug": "irs-broker-cost-basis-reporting-live",
-      "tldr": "From April 15, every U.S. digital-asset broker must report customer cost basis to the IRS, ending the wallet-tracking grace period traders have enjoyed since 2022.",
-      "why_it_matters": "Why it matters: Mandatory reporting closes the largest crypto tax loophole and sets up automated audits on every centralized exchange withdrawal starting next filing season.",
+      "id": "story-2026-04-29-17-002",
+      "headline": "Bitcoin spot volume cracks below $8B — thinnest tape since October 2023",
+      "slug": "bitcoin-spot-volume-8b-thinnest-since-october-2023",
+      "tldr": "BTC daily spot volume slid under $8B with price at $77,160, leaving the order book paper-thin ahead of today's Fed decision.",
+      "why_it_matters": "Why it matters: Drained liquidity historically front-runs violent moves — small flows can crank vol in either direction this week.",
       "the_details": [
-        "Rule applies to centralized exchanges, custodial wallets, and payment processors handling over $10K in annual digital-asset volume.",
-        "FinCEN and OFAC also rolled out parallel AML rules for primary providers of stablecoin infrastructure on April 8.",
-        "FDIC and Treasury proposed companion stablecoin issuer and 'substantially similar' state-regime rules earlier in April."
+        "BTC printed $77,160.91 at 9:30am ET; ETH opened $2,289 and ticked up to $2,330 by 7:24am ET.",
+        "Volume is the lowest in roughly 18 months, per CoinDesk's daybook desk.",
+        "Traders are derisking ahead of the Fed meeting and an extended Strait of Hormuz closure scenario."
       ],
-      "source": "Latham & Watkins US Crypto Policy Tracker",
-      "source_url": "https://www.lw.com/en/us-crypto-policy-tracker/regulatory-developments",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-29T13:30:00Z"
+    },
+    {
+      "id": "story-2026-04-29-17-003",
+      "headline": "Western Union to mint USDPT stablecoin on Solana, eyes remittance flows",
+      "slug": "western-union-usdpt-stablecoin-solana-remittance",
+      "tldr": "Western Union confirmed plans to launch USDPT on Solana, pulling its multi-billion-dollar remittance corridor onto a public chain.",
+      "why_it_matters": "Why it matters: A 174-year-old payments incumbent picking Solana validates the chain as a TradFi settlement layer — and squeezes Circle's USDC mindshare.",
+      "the_details": [
+        "USDPT will live natively on Solana, leveraging sub-second settlement for cross-border payouts.",
+        "Move arrives as Circle eyes $150B USDC supply by H2 2026, up from $112B on April 10.",
+        "Stablecoin sector hit a record $315B market cap in Q1 with $28T in transaction volume."
+      ],
+      "source": "OpenPR",
+      "source_url": "https://www.openpr.com/news/4489430/best-crypto-to-buy-in-april-2026-morgan-stanley-goes-stablecoin",
+      "category": "adoption",
+      "impact": "high",
+      "timestamp": "2026-04-29T12:00:00Z"
+    },
+    {
+      "id": "story-2026-04-29-17-004",
+      "headline": "Upbit halts POL deposits and withdrawals as Polygon hard fork lands today",
+      "slug": "upbit-pol-suspension-polygon-hard-fork-april-29",
+      "tldr": "Korea's Upbit froze POL deposits and withdrawals starting April 29 ahead of a Polygon hard fork targeting scalability and security.",
+      "why_it_matters": "Why it matters: A clean fork keeps Polygon's institutional pipeline on schedule — a flubbed one ices payments rails for weeks.",
+      "the_details": [
+        "Upbit, Korea's largest exchange by KRW volume, paused POL transfers as a precautionary step.",
+        "Hard fork targets throughput improvements and additional consensus-layer security guarantees.",
+        "POL slid into the suspension window with altcoin sentiment still fragile (CMC Altseason index at 39/100)."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-29T08:00:00Z"
+    },
+    {
+      "id": "story-2026-04-29-17-005",
+      "headline": "CLARITY Act markup slips from April to May with no firm date",
+      "slug": "clarity-act-markup-delayed-april-may-2026",
+      "tldr": "The U.S. crypto market structure bill missed its April markup window and now lacks a confirmed date in May despite Treasury and Coinbase backing.",
+      "why_it_matters": "Why it matters: Every week of slippage gives the SEC-CFTC joint guidance more runway as the de facto rulebook — and pushes any U.S. token-launch unlock into Q3.",
+      "the_details": [
+        "Over 100 firms including Coinbase and Ripple signed an April 23 letter pressing the Senate Banking Committee to schedule the markup.",
+        "Treasury Secretary publicly endorsed the bill earlier this month; Coinbase CEO dropped opposition.",
+        "Bill would codify the digital-commodity vs. digital-security split currently set by the March 17 SEC-CFTC release."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
       "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-29T11:20:00Z"
-    },
-    {
-      "id": "story-2026-04-29-16-005",
-      "headline": "Japan's Bitbank rolls out crypto credit card that pays bills directly in BTC",
-      "slug": "bitbank-japan-crypto-credit-card",
-      "tldr": "Japanese exchange Bitbank launched a credit card letting users settle monthly bills from their on-exchange crypto holdings, with 0.5% cashback paid in BTC.",
-      "why_it_matters": "Why it matters: Direct exchange-to-merchant rails in a G7 jurisdiction normalize crypto as a spending account, not just an investment, and pressure card networks to follow.",
-      "the_details": [
-        "Bills are deducted from the user's Bitbank balance and converted at the time of statement settlement.",
-        "Cashback is paid back into BTC on the 1st of the month at a flat 0.5% on all qualifying spend.",
-        "Launch follows Japan's 2026 FSA reclassification of crypto as a financial product, easing custodial card-network partnerships."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/399102/japans-bitbank-crypto-credit-card",
-      "category": "adoption",
-      "impact": "medium",
-      "timestamp": "2026-04-27T23:00:00Z"
+      "timestamp": "2026-04-29T10:00:00Z"
     }
   ]
 }
