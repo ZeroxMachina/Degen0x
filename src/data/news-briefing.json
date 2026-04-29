@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T23:06:49Z",
-  "briefing_id": "briefing-2026-04-28-23",
+  "generated_at": "2026-04-29T00:05:00Z",
+  "briefing_id": "briefing-2026-04-29-00",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-23-001",
-      "headline": "BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
-      "slug": "btc-slides-76k-umich-sentiment-atl-281m-liquidations",
-      "tldr": "Bitcoin failed at $80K and bled to $76,342 Tuesday as consumer sentiment crashed to a record low and traders unwound risk hours before the Fed.",
-      "why_it_matters": "Why it matters: Macro is now overriding crypto-native flows \u2014 a dovish Powell tomorrow is the only thing standing between BTC and a retest of the $65K March lows.",
+      "id": "story-2026-04-29-00-001",
+      "headline": "Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
+      "slug": "western-union-usdpt-solana-stablecoin",
+      "tldr": "Remittance giant Western Union is pivoting to blockchain rails with USDPT, a Solana stablecoin issued by Anchorage Digital Bank.",
+      "why_it_matters": "Why it matters: A 175-year-old payments incumbent with $200B+ in annual flows just chose Solana over its own legacy network — a TradFi distribution unlock for stablecoins.",
       "the_details": [
-        "BTC opened at $77,368 and printed an intraday low of $76,342.57 by 9 a.m. ET; long liquidations topped $281M.",
-        "University of Michigan consumer sentiment fell to 49.8, an all-time low, with 1-year inflation expectations jumping to 4.8% from 3.8%.",
-        "Total crypto market cap dropped 2.53% to $2.54T as the Fear & Greed Index slid to 39 \u2014 back in fear territory."
+        "USDPT will be issued by Anchorage Digital Bank, the only OCC-chartered crypto bank in the US.",
+        "Solana picked for sub-cent fees and sub-second finality vs. Western Union's ~5% remittance take rate.",
+        "Launch positions WU to compete with Circle's USDC and Tether's USDT in regulated payment corridors."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-27-2026-prices-hold-ahead-of-potential-peace-talks-and-fed-meeting-114927492.html",
+      "category": "adoption",
+      "impact": "high",
+      "timestamp": "2026-04-28T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-29-00-002",
+      "headline": "FOMC decision today as BTC-USD inverse correlation hits 4-year extreme near $77K",
+      "slug": "fomc-decision-btc-dollar-correlation",
+      "tldr": "Bitcoin trades around $77K into Wednesday's Fed decision with BTC-DXY moving in near-perfect opposition, the most extreme in nearly four years.",
+      "why_it_matters": "Why it matters: BTC has decoupled from risk and re-coupled to the dollar — a dovish Powell could uncork the next leg, while a hawkish surprise breaks the $76K floor.",
+      "the_details": [
+        "Two-day FOMC meeting wraps April 29 with markets pricing no change but watching forward guidance closely.",
+        "BTC pulled back from $80K resistance to $76,500 after UMich sentiment hit ATL of 49.8 and inflation expectations jumped to 4.8%.",
+        "USDT supply grew $5B in April, fueling speculation of a fresh bid if Powell tilts dovish."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T23:06:49Z"
+      "timestamp": "2026-04-28T22:00:00Z"
     },
     {
-      "id": "story-2026-04-28-23-002",
-      "headline": "DeFi United unveils rescue plan for $292M Kelp DAO exploit with 107K rsETH stuck in Aave",
-      "slug": "defi-united-kelp-dao-rescue-plan-aave-rseth",
-      "tldr": "A coalition of crypto projects released a technical proposal Tuesday to restore rsETH backing after the Lazarus-linked Kelp DAO bridge drain.",
-      "why_it_matters": "Why it matters: Roughly 107,000 unbacked rsETH are still collateralizing positions in Aave and Compound \u2014 a coordinated unwind is the only way to avoid cascading liquidations across DeFi blue chips.",
+      "id": "story-2026-04-29-00-003",
+      "headline": "SEC's Atkins teases tokenization 'innovation exemption' and Strategic Bitcoin Reserve unveil",
+      "slug": "sec-atkins-innovation-exemption-strategic-btc-reserve",
+      "tldr": "SEC Chair Paul Atkins said an innovation exemption for on-chain tokenized securities is coming 'in the weeks ahead,' alongside a Strategic Bitcoin Reserve announcement.",
+      "why_it_matters": "Why it matters: A formal sandbox for tokenized securities could pull trillions of TradFi assets on-chain — and a Strategic Reserve reveal would be the most structurally bullish BTC catalyst since the ETF approval.",
       "the_details": [
-        "Attacker forged a bridge message that minted 116,500 rsETH on Ethereum without backing on April 18, draining ~$292M.",
-        "Coalition spans multiple blockchain teams aiming to socialize losses and reseed reserves rather than freeze contracts.",
-        "Drift Protocol's earlier $285M Solana drain on April 1 \u2014 also tied to North Korea's Lazarus Group \u2014 pushed April hack losses past $606M."
+        "Atkins ended 'regulation through enforcement' and committed to joint SEC-CFTC guidance at Bitcoin 2026 in Las Vegas.",
+        "White House digital assets advisor Patrick Witt confirmed Strategic Bitcoin Reserve specifics will land in coming weeks.",
+        "SEC and CFTC signed a historic MoU April 2026 (press release 2026-26) formalizing the harmonized framework."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/28/a-crypto-coalition-releases-technical-proposal-to-save-aave-users-from-a-massive-token-exploit",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T23:06:49Z"
-    },
-    {
-      "id": "story-2026-04-28-23-003",
-      "headline": "100+ crypto firms led by Coinbase, Ripple press Senate to mark up Clarity Act now",
-      "slug": "100-firms-press-senate-clarity-act-markup",
-      "tldr": "A coalition of more than 100 crypto firms is pushing the Senate Banking Committee to advance the Clarity Act and codify the SEC-CFTC division of crypto oversight.",
-      "why_it_matters": "Why it matters: Without legislation, the March SEC-CFTC joint interpretive release is just guidance \u2014 a future administration could rip it up overnight, leaving builders back in regulatory limbo.",
-      "the_details": [
-        "March 17 SEC-CFTC joint release laid out a 5-category token taxonomy across 68 pages, superseding the 2019 framework.",
-        "Coalition demands include developer protections, easier disclosure rules, and locked-in stablecoin reward preservation.",
-        "April 13 SEC statement already cleared 'Covered User Interface Providers' to operate without broker-dealer registration."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-28T23:06:49Z"
+      "timestamp": "2026-04-27T21:00:00Z"
     },
     {
-      "id": "story-2026-04-28-23-004",
-      "headline": "Injective v1.19.0 mainnet upgrade goes live with new INJ buyback mechanism",
-      "slug": "injective-v119-mainnet-upgrade-inj-buyback",
-      "tldr": "Injective shipped its v1.19.0 mainnet upgrade at 14:30 UTC Tuesday, activating a new token buyback engine that reroutes protocol revenue into INJ.",
-      "why_it_matters": "Why it matters: Hardcoded buybacks turn Injective's exchange fees into a structural sink for INJ supply \u2014 an aggressive flywheel pitch as L1 token economics come back into vogue.",
+      "id": "story-2026-04-29-00-004",
+      "headline": "Injective mainnet upgrade goes live with new INJ buyback mechanism",
+      "slug": "injective-mainnet-upgrade-inj-buyback",
+      "tldr": "Injective shipped its April 28 mainnet upgrade adding faster execution, refined on-chain modules, and a new token buyback mechanism for INJ.",
+      "why_it_matters": "Why it matters: A protocol-level buyback turns Injective fees into structural INJ demand — a real-yield narrative at a moment when altcoins desperately need one.",
       "the_details": [
-        "Bybit, Binance and other CEXs paused INJ deposits and withdrawals from 13:30 UTC for the upgrade window.",
-        "New buyback module is positioned as a competitive answer to Hyperliquid's revenue-driven HYPE bid.",
-        "Upgrade lands as Bittensor (TAO) and other AI-adjacent alts log +47% YTD even with BTC dominance pinned at 60%."
+        "Upgrade improves execution speed and reliability for DeFi apps and on-chain trading on Injective.",
+        "Buyback mechanism redirects a share of network revenue into open-market INJ purchases.",
+        "Goes live as Bitcoin dominance sits at 60% and CMC Altcoin Season Index reads 39 — deep in 'Bitcoin Season.'"
       ],
       "source": "CryptoNewsZ",
       "source_url": "https://www.cryptonewsz.com/injective-mainnet-upgrade-april-28-rollout/",
-      "category": "infrastructure",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-28T23:06:49Z"
+      "timestamp": "2026-04-28T14:00:00Z"
     },
     {
-      "id": "story-2026-04-28-23-005",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as organizers cite heightened UAE security risks",
-      "slug": "token2049-dubai-postponed-2027-uae-security",
-      "tldr": "TOKEN2049's Dubai stop has been moved to 2027, with organizers pointing to elevated regional security risks tied to the Iran conflict.",
-      "why_it_matters": "Why it matters: Losing the Middle East's flagship crypto event for a year strips a major deal-flow venue and signals that geopolitics is now bleeding into the conference and capital-formation calendar.",
+      "id": "story-2026-04-29-00-005",
+      "headline": "TOKEN2049 Dubai pushed to 2027 amid heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027",
+      "tldr": "Organizers moved TOKEN2049 Dubai to 2027, citing heightened security risks in the UAE tied to regional Iran tensions.",
+      "why_it_matters": "Why it matters: The Middle East has been crypto's growth corridor — pulling its flagship event signals Iran-conflict spillover is now serious enough to disrupt industry calendars and capital flows.",
       "the_details": [
-        "Organizers cited heightened security concerns in the UAE, the same Iran-tension backdrop driving the latest UMich inflation spike.",
-        "Singapore stop remains the only confirmed 2026 TOKEN2049 \u2014 concentrating Asian crypto activity into a single venue.",
-        "Move follows a wave of relocated industry events as funds rebalance travel and side-event spend toward Asia and the U.S."
+        "TOKEN2049 Dubai is one of the two flagship industry conferences alongside its Singapore counterpart.",
+        "Postponement follows escalating US-Iran tensions that have already weighed on BTC since April 20.",
+        "Major sponsor and travel commitments rerouted; Singapore October 2026 event remains on calendar."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
-      "category": "adoption",
+      "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-28T23:06:49Z"
+      "timestamp": "2026-04-28T16:00:00Z"
     }
   ]
 }

@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-29-001",
+    "type": "news",
+    "title": "\ud83d\udcf0 Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
+    "message": "Remittance giant Western Union is pivoting to blockchain rails with USDPT, a Solana stablecoin issued by Anchorage Digital Bank.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-28-024",
     "type": "news",
     "title": "\ud83d\udcf0 BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 Four central banks \u2014 Fed, ECB, BoJ, BoE \u2014 all set rates this week as crypto holds $2.71T",
     "message": "Bank of Japan, Federal Reserve, ECB and Bank of England each deliver policy decisions this week, the densest macro window of 2026 so far.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-019",
-    "type": "news",
-    "title": "\ud83d\udcf0 April crypto hacks blow past $606M in 18 days as Lazarus Group bags two of three biggest hauls",
-    "message": "Crypto protocols lost $606M across 12 incidents in the first 18 days of April, the worst month since February 2025.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
