@@ -1,8 +1,16 @@
 [
   {
+    "id": "feed-2026-04-29-003",
+    "type": "news",
+    "title": "📰 SEC Chair Atkins unveils 'Project Crypto' at Bitcoin 2026, classifies most tokens as non-securities",
+    "message": "Paul Atkins debuted a Commission-wide initiative at Bitcoin 2026 establishing a five-category token taxonomy that pulls most digital assets out of securities law.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-29-002",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin stalls at $79.4K as Coinbase premium flips negative for first time since April 8",
+    "title": "📰 Bitcoin stalls at $79.4K as Coinbase premium flips negative for first time since April 8",
     "message": "BTC's rally faded near $79,400 and slipped to ~$77K as US institutional demand cooled into the FOMC decision.",
     "actionUrl": "/news",
     "date": "2026-04-29"
@@ -10,7 +18,7 @@
   {
     "id": "feed-2026-04-29-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
+    "title": "📰 Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
     "message": "Remittance giant Western Union is pivoting to blockchain rails with USDPT, a Solana stablecoin issued by Anchorage Digital Bank.",
     "actionUrl": "/news",
     "date": "2026-04-29"
@@ -18,7 +26,7 @@
   {
     "id": "feed-2026-04-28-024",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
+    "title": "📰 BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
     "message": "Bitcoin failed at $80K and bled to $76,342 Tuesday as consumer sentiment crashed to a record low and traders unwound risk hours before the Fed.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -26,7 +34,7 @@
   {
     "id": "feed-2026-04-28-023",
     "type": "news",
-    "title": "\ud83d\udcf0 FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
+    "title": "📰 FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
     "message": "The Fed wraps its two-day meeting Wednesday with crypto traders de-risked and BTC stalling under $78,000 ahead of the rate call.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -34,7 +42,7 @@
   {
     "id": "feed-2026-04-28-022",
     "type": "news",
-    "title": "\ud83d\udcf0 Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
+    "title": "📰 Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
     "message": "DeFi United proposed using Aave to neutralize 116,500 unbacked rsETH and stabilize markets after the $292M KelpDAO bridge exploit.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -42,7 +50,7 @@
   {
     "id": "feed-2026-04-28-021",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC, CFTC unite at Bitcoin 2026 to tease Strategic Reserve and tokenization sandbox",
+    "title": "📰 SEC, CFTC unite at Bitcoin 2026 to tease Strategic Reserve and tokenization sandbox",
     "message": "U.S. regulators showed a unified front at Bitcoin 2026 in Las Vegas, signaling innovation exemptions and a Strategic Bitcoin Reserve announcement within weeks.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -50,7 +58,7 @@
   {
     "id": "feed-2026-04-28-020",
     "type": "news",
-    "title": "\ud83d\udcf0 Four central banks set rates this week as BTC gets rejected below $80K",
+    "title": "📰 Four central banks set rates this week as BTC gets rejected below $80K",
     "message": "BOJ, Fed, ECB and BOE all decide policy this week, putting Bitcoin's stalled $80K breakout at the mercy of a synchronized macro print.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -58,7 +66,7 @@
   {
     "id": "feed-2026-04-28-019",
     "type": "news",
-    "title": "\ud83d\udcf0 U Michigan sentiment craters to 49.8 ATL, inflation expectations spike to 4.8% \u2014 BTC stalls at $76.5K",
+    "title": "📰 U Michigan sentiment craters to 49.8 ATL, inflation expectations spike to 4.8% — BTC stalls at $76.5K",
     "message": "Consumer confidence hit a record low and one-year inflation expectations jumped a full point, freezing Bitcoin's bid back to $80K.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -66,7 +74,7 @@
   {
     "id": "feed-2026-04-28-018",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
+    "title": "📰 BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
     "message": "Bitcoin gave back the $80K reclaim attempt as traders de-risk into a Fed, BOJ, ECB and BOE rate-decision week.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -74,7 +82,7 @@
   {
     "id": "feed-2026-04-28-017",
     "type": "news",
-    "title": "\ud83d\udcf0 Aave-led DeFi rescue tops $300M as industry tries to plug Kelp DAO's $292M hole",
+    "title": "📰 Aave-led DeFi rescue tops $300M as industry tries to plug Kelp DAO's $292M hole",
     "message": "Consensys, Lido, EtherFi and others have pledged into a $300M+ recovery vehicle to backstop Aave bad debt from the April 19 Kelp DAO exploit.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -82,7 +90,7 @@
   {
     "id": "feed-2026-04-28-016",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC slides under $77K, ETH below $2,300 ahead of Fed as $2.65T crypto market sheds 2.3%",
+    "title": "📰 BTC slides under $77K, ETH below $2,300 ahead of Fed as $2.65T crypto market sheds 2.3%",
     "message": "Bitcoin pulled back to $76,472 and Ether to $2,278 as traders de-risked into Wednesday's FOMC, lopping 2.3% off total crypto market cap.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -90,7 +98,7 @@
   {
     "id": "feed-2026-04-28-015",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC's Atkins unveils tokenization sandbox as Lummis vows CLARITY Act push",
+    "title": "📰 SEC's Atkins unveils tokenization sandbox as Lummis vows CLARITY Act push",
     "message": "U.S. regulators flashed a unified pro-crypto signal at Bitcoin 2026, with the SEC, CFTC and White House aligning on a tokenization framework.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -98,7 +106,7 @@
   {
     "id": "feed-2026-04-28-014",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin loses $77K as Hormuz standoff lifts oil to 3-week high",
+    "title": "📰 Bitcoin loses $77K as Hormuz standoff lifts oil to 3-week high",
     "message": "Bitcoin slid below $77,000 and ether and Solana followed lower as the closed Strait of Hormuz pushed oil to its highest level in three weeks.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -106,7 +114,7 @@
   {
     "id": "feed-2026-04-28-013",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin slips back to $78K as $80K wall holds before Wednesday's FOMC",
+    "title": "📰 Bitcoin slips back to $78K as $80K wall holds before Wednesday's FOMC",
     "message": "Bitcoin pulled back from above $79,000 to trade near $78,100 as macro headwinds and a consumer sentiment crash keep bulls bottled up.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -114,7 +122,7 @@
   {
     "id": "feed-2026-04-28-012",
     "type": "news",
-    "title": "\ud83d\udcf0 TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
+    "title": "📰 TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
     "message": "TOKEN2049 organizers delayed the flagship Dubai conference to 2027, citing escalating security risks across the UAE region.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -122,7 +130,7 @@
   {
     "id": "feed-2026-04-28-011",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC stalls at $80K wall as crypto market sheds 2.3% to $2.65T",
+    "title": "📰 BTC stalls at $80K wall as crypto market sheds 2.3% to $2.65T",
     "message": "Bitcoin failed a fourth attempt at $80,000 and slid to $77,005, pulling total crypto market cap down 2.3% to $2.65 trillion ahead of this week's Fed decision.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -130,7 +138,7 @@
   {
     "id": "feed-2026-04-28-010",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC's Atkins teases tokenization sandbox via 'innovation exemptions' window",
+    "title": "📰 SEC's Atkins teases tokenization sandbox via 'innovation exemptions' window",
     "message": "SEC Chair Paul Atkins said the agency will launch innovation exemptions in the coming weeks, letting firms pilot on-chain tokenization and securitization under a regulated carve-out.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -138,7 +146,7 @@
   {
     "id": "feed-2026-04-28-009",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin slips below $77K, ETH wobbles at $2,328 as traders eye Wednesday FOMC",
+    "title": "📰 Bitcoin slips below $77K, ETH wobbles at $2,328 as traders eye Wednesday FOMC",
     "message": "BTC failed to hold the $80K wall and dropped under $77K with ETH at $2,328 as macro-cautious traders position into the Fed's April 29 decision.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -146,7 +154,7 @@
   {
     "id": "feed-2026-04-28-008",
     "type": "news",
-    "title": "\ud83d\udcf0 April crypto hacks hit $606M in 18 days \u2014 worst month since Bybit's Feb 2025 breach",
+    "title": "📰 April crypto hacks hit $606M in 18 days — worst month since Bybit's Feb 2025 breach",
     "message": "Crypto protocols have lost $606M to hacks in just the first 18 days of April, the worst monthly tally since Bybit's February 2025 breach.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -154,7 +162,7 @@
   {
     "id": "feed-2026-04-28-007",
     "type": "news",
-    "title": "\ud83d\udcf0 BlackRock's IBIT logs record $983M daily inflow as BTC rejects $80K wall",
+    "title": "📰 BlackRock's IBIT logs record $983M daily inflow as BTC rejects $80K wall",
     "message": "IBIT pulled its biggest daily haul in six months even as bitcoin briefly tagged $79K and rolled back into range.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -162,7 +170,7 @@
   {
     "id": "feed-2026-04-28-006",
     "type": "news",
-    "title": "\ud83d\udcf0 Kelp DAO drained for $292M as LayerZero bridge bug freezes Aave, Spark, Fluid",
+    "title": "📰 Kelp DAO drained for $292M as LayerZero bridge bug freezes Aave, Spark, Fluid",
     "message": "An attacker drained 116,500 rsETH (~$292M, 18% of supply) via Kelp DAO's LayerZero bridge, the largest DeFi exploit of 2026.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -170,7 +178,7 @@
   {
     "id": "feed-2026-04-28-005",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin cracks $77K as 3% slide erases a full week of ETF-fueled gains",
+    "title": "📰 Bitcoin cracks $77K as 3% slide erases a full week of ETF-fueled gains",
     "message": "BTC slid nearly 3% to break below $77,000, wiping out the seven-day rally that briefly tagged the $80K wall.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -178,7 +186,7 @@
   {
     "id": "feed-2026-04-28-004",
     "type": "news",
-    "title": "\ud83d\udcf0 April crypto hacks blow past $606M, worst month since Bybit's $1.4B breach",
+    "title": "📰 April crypto hacks blow past $606M, worst month since Bybit's $1.4B breach",
     "message": "Crypto protocols have lost more than $606 million across 12 incidents in April, the worst monthly toll since Bybit's $1.4B hack in February 2025.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -186,7 +194,7 @@
   {
     "id": "feed-2026-04-28-003",
     "type": "news",
-    "title": "\ud83d\udcf0 Four central banks decide rates this week, with FOMC the main event for crypto",
+    "title": "📰 Four central banks decide rates this week, with FOMC the main event for crypto",
     "message": "Bank of Japan, Federal Reserve, ECB and Bank of England all set rate policy this week, with markets pricing zero Fed cuts.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -194,7 +202,7 @@
   {
     "id": "feed-2026-04-28-002",
     "type": "news",
-    "title": "\ud83d\udcf0 April crypto hacks hit $606M, worst month since Feb 2025 as DeFi TVL bleeds $13B",
+    "title": "📰 April crypto hacks hit $606M, worst month since Feb 2025 as DeFi TVL bleeds $13B",
     "message": "April losses to crypto exploits topped $606M across 12 incidents, triggering a $13B DeFi TVL exodus in 48 hours.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -202,7 +210,7 @@
   {
     "id": "feed-2026-04-28-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Strategy stockpile hits 818,334 BTC at $62B cost basis, ~3.9% of supply",
+    "title": "📰 Strategy stockpile hits 818,334 BTC at $62B cost basis, ~3.9% of supply",
     "message": "Saylor's Strategy now holds 818,334 BTC bought for nearly $62 billion at an average $75,537 per coin, the largest corporate stash ever.",
     "actionUrl": "/news",
     "date": "2026-04-28"
@@ -210,7 +218,7 @@
   {
     "id": "feed-2026-04-27-024",
     "type": "news",
-    "title": "\ud83d\udcf0 FOMC week pins crypto: BTC stuck below $80K as traders price zero rate cuts",
+    "title": "📰 FOMC week pins crypto: BTC stuck below $80K as traders price zero rate cuts",
     "message": "Bitcoin trades near $78K and Ether near $2,330 as the FOMC meeting becomes the week's defining macro catalyst with markets pricing no cut.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -218,7 +226,7 @@
   {
     "id": "feed-2026-04-27-023",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin rejects $80K, slides under $78K as Iran peace headlines and oil weigh",
+    "title": "📰 Bitcoin rejects $80K, slides under $78K as Iran peace headlines and oil weigh",
     "message": "BTC failed at $80,000 and dropped roughly 2% below $78,000 as caution dominated despite Iran offering a fresh war-ending proposal to Washington.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -226,16 +234,8 @@
   {
     "id": "feed-2026-04-27-022",
     "type": "news",
-    "title": "\ud83d\udcf0 April becomes 2026's worst hack month at $606M as Lazarus claims 95% of losses",
+    "title": "📰 April becomes 2026's worst hack month at $606M as Lazarus claims 95% of losses",
     "message": "Crypto hacks crossed $606M in April across 12 incidents, with North Korea's Lazarus Group behind the Drift and KelpDAO breaches that drove 95% of losses.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-021",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin stalls at $80K wall despite IBIT's record $983M single-day inflow",
-    "message": "BTC pulled back from $79K to $77,700 as concentrated sell orders capped gains, even after BlackRock's IBIT logged its biggest inflow in six months.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
