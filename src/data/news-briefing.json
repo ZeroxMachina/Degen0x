@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T22:06:09Z",
-  "briefing_id": "briefing-2026-04-29-22",
+  "generated_at": "2026-04-29T23:08:14Z",
+  "briefing_id": "briefing-2026-04-29-23",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-22-001",
-      "headline": "Bitcoin spot volume crashes below $8B — lowest since October 2023",
-      "slug": "bitcoin-volume-crashes-below-8b-october-2023-low",
-      "tldr": "Spot BTC volume slipped under $8 billion this week, the thinnest tape since late 2023, leaving prices exposed to violent moves.",
-      "why_it_matters": "Why it matters: Liquidity droughts historically precede sharp directional breaks — thin order books mean a single large flow can swing BTC several percent.",
+      "id": "story-2026-04-29-23-001",
+      "headline": "FOMC decision lands tomorrow with BTC pinned at $77,794 and bid thinning",
+      "slug": "fomc-april-30-bitcoin-pinned-77k",
+      "tldr": "Bitcoin holds $77,794 into the April 30 FOMC after stalling 2% below Wednesday's $79,388 high as ether, XRP and SOL all close red.",
+      "why_it_matters": "Why it matters: A hawkish surprise lands on a thin order book \u2014 spot volume just hit the lowest since October 2023 \u2014 so any Powell pivot or tape-bomb gets amplified into outsized moves.",
       "the_details": [
-        "BTC traded $77,500 Wednesday after repeatedly rejecting the $80,000 ceiling earlier this week.",
-        "Total crypto market cap shed 0.6% to $2.64 trillion as the Fear & Greed Index sat at 26 (extreme fear).",
-        "BlackRock's IBIT led another session of net outflows from US spot Bitcoin ETFs."
+        "BTC trades $77,794 on April 29, +0.4% over 24h but $1,594 off Wednesday's intraday high.",
+        "FOMC announces rates April 30 \u2014 third meeting of 2026 and first since the April ETF inflow wave.",
+        "ETH, XRP and SOL all closed in the red, signaling risk-off positioning ahead of the print."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-29T14:00:00Z"
+      "timestamp": "2026-04-29T23:08:14Z"
     },
     {
-      "id": "story-2026-04-29-22-002",
-      "headline": "CLARITY Act markup slips into May as Polymarket odds collapse 64% to 47%",
-      "slug": "clarity-act-markup-slips-may-polymarket-odds-collapse",
-      "tldr": "The Senate Banking Committee's market-structure markup slid past its April target into an undated May window, gutting passage odds.",
-      "why_it_matters": "Why it matters: Every week of delay pushes a US digital-asset framework deeper into election-year gridlock — the policy bid under altcoins is fading in real time.",
+      "id": "story-2026-04-29-23-002",
+      "headline": "Strategy's STRC swallowed 77,000 BTC YTD \u2014 9.6x every US spot ETF combined",
+      "slug": "strategy-strc-77000-btc-dwarfs-etfs",
+      "tldr": "Saylor's STRC vehicle has hoovered roughly 77,000 BTC in 2026 versus just 8,000 BTC of net inflows across every US spot Bitcoin ETF combined, per River.",
+      "why_it_matters": "Why it matters: One balance-sheet buyer is now the marginal price-setter for Bitcoin \u2014 not BlackRock, not Fidelity \u2014 concentrating supply risk in a single Nasdaq-listed equity story.",
       "the_details": [
-        "Polymarket odds for a 2026 CLARITY bill passage fell from 64% in early April to 47% on Monday.",
-        "Over 100 firms including Coinbase and Ripple signed a letter pressing the Senate to schedule the markup.",
-        "XRP led the week's altcoin selloff, down ~4%, with BTC, ETH and SOL all 1–4% lower."
+        "STRC pulled in 77,000 BTC YTD, dwarfing the 8,000 BTC net for all US spot BTC ETFs combined.",
+        "MSTR stock jumped 37% after April's $2.54B BTC purchase announcement, per Bitcoin Magazine.",
+        "River projects Strategy could cross 1 million BTC of holdings by late 2026 if pace holds."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "source": "Bitcoin.com News",
+      "source_url": "https://news.bitcoin.com/strategy-could-reach-1-million-bitcoin-by-late-2026-river-notes-strc-inflows-dwarf-etf-net-gains/",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-29T23:08:14Z"
+    },
+    {
+      "id": "story-2026-04-29-23-003",
+      "headline": "SEC-CFTC joint guidance ratifies BTC, ETH, SOL, XRP, LINK as digital commodities",
+      "slug": "sec-cftc-joint-token-taxonomy-april-2026",
+      "tldr": "The SEC and CFTC inked a joint interpretation declaring most digital assets non-securities and naming BTC, ETH, SOL, XRP and LINK as digital commodities.",
+      "why_it_matters": "Why it matters: The two-year jurisdictional standoff is over on paper \u2014 exchanges can list these five without an SEC registration overhang, unlocking institutional desks that were sidelined on legal risk.",
+      "the_details": [
+        "Joint interpretation creates a five-bucket taxonomy: digital commodities, collectibles, tools, stablecoins, securities.",
+        "BTC, ETH, SOL, XRP, LINK explicitly named as digital commodities under CFTC oversight.",
+        "Lands amid GENIUS Act stablecoin rulemakings \u2014 FDIC (April 7), Treasury (April 3), FinCEN/OFAC (April 8)."
+      ],
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-29T13:00:00Z"
+      "timestamp": "2026-04-29T23:08:14Z"
     },
     {
-      "id": "story-2026-04-29-22-003",
-      "headline": "Lazarus Group tied to 95% of April's $620M crypto hack carnage",
-      "slug": "lazarus-group-95-percent-april-620m-hack-carnage",
-      "tldr": "On-chain forensics now attribute the Drift and Kelp DAO exploits — together $577M — to North Korea's Lazarus Group, the worst hack month since Feb 2025.",
-      "why_it_matters": "Why it matters: A single state-backed actor punching twin nine-figure holes in DeFi rewrites the threat model — bridge and admin-key risk just became geopolitical risk.",
+      "id": "story-2026-04-29-23-004",
+      "headline": "DeFi United closes 100,000 ETH war-chest to backstop rsETH after $292M KelpDAO drain",
+      "slug": "defi-united-100k-eth-rseth-recovery",
+      "tldr": "A DeFi United coalition raised over 100,000 ETH to restore rsETH backing after the April 18 LayerZero-vector exploit drained roughly $292 million from KelpDAO.",
+      "why_it_matters": "Why it matters: Community recapitalization \u2014 not a Tether-style bailout \u2014 sets the new norm for cross-chain LRT failures, but it locks restakers into multi-month redemption queues to absorb the loss.",
       "the_details": [
-        "April losses hit $620M across 18 days, the worst single month since the February 2025 spike.",
-        "Drift Protocol was drained for $285M on April 1; Kelp DAO lost 116,500 rsETH (~$292M) on April 18.",
-        "Bridge failures and admin-key exploits dominated the attack surface, per Live Bitcoin News."
+        "100,000+ ETH committed to make rsETH holders whole after the April 18 bridge exploit.",
+        "KelpDAO breach drained ~$292M, the largest DeFi exploit of 2026 and 95% of April losses with Drift.",
+        "Jefferies warns the marquee hacks could chill Wall Street's near-term DeFi tokenization appetite."
       ],
-      "source": "Crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-29T12:00:00Z"
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/news-analysis/2026/04/19/defi-is-dead-crypto-community-scrambles-after-usd292-million-hack-exposes-cross-chain-risks",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-29T23:08:14Z"
     },
     {
-      "id": "story-2026-04-29-22-004",
-      "headline": "Morgan Stanley and JPMorgan debut as Consensus Miami sponsors May 5–7",
-      "slug": "morgan-stanley-jpmorgan-debut-consensus-miami-sponsors",
-      "tldr": "Two of Wall Street's biggest banks signed on as first-time Consensus sponsors, joining CFTC chair Selig and senator Ashley Moody on the May agenda.",
-      "why_it_matters": "Why it matters: Money-center banks paying to be in the room — not just speak — signals the institutional onboarding cycle has shifted from curiosity to commitment.",
+      "id": "story-2026-04-29-23-005",
+      "headline": "Morgan Stanley and JPMorgan turn Consensus Miami sponsors as TradFi crashes May 5-7",
+      "slug": "consensus-miami-morgan-stanley-jpmorgan-sponsors",
+      "tldr": "Morgan Stanley and JPMorgan are sponsoring \u2014 not just speaking at \u2014 Consensus Miami May 5-7, headlining the most institutional-heavy lineup the conference has hosted.",
+      "why_it_matters": "Why it matters: Bulge-bracket sponsorships convert crypto from satellite to core line item in TradFi marketing budgets \u2014 a structural buy signal even if BTC chops sideways into the event.",
       "the_details": [
-        "Morgan Stanley and JPMorgan are debut sponsors of Consensus Miami, May 5–7.",
-        "CFTC Chairman Michael Selig and Senator Ashley Moody headline the policy track.",
-        "White House crypto official Patrick Witt will appear at a Consensus event for the first time."
+        "Morgan Stanley and JPMorgan listed as sponsors, not just speakers, per CoinDesk reporting.",
+        "Conference dates May 5-7 in Miami with federal policymakers and crypto pioneers on bill.",
+        "Marks first time both bulge-brackets have committed sponsorship dollars to a Consensus event."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-29T15:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-22-005",
-      "headline": "Polygon hard fork triggers Upbit POL deposit halt at 11:00 UTC",
-      "slug": "polygon-hard-fork-upbit-pol-deposit-halt",
-      "tldr": "South Korea's Upbit suspended POL deposits and withdrawals from 11:00 UTC Wednesday for a Polygon network upgrade focused on performance and scaling.",
-      "why_it_matters": "Why it matters: Korea is Polygon's deepest spot venue — even a clean fork can briefly break liquidity routes and amplify slippage on POL pairs.",
-      "the_details": [
-        "Upbit halted POL deposits and withdrawals at 11:00 UTC on April 29, 2026.",
-        "The hard fork targets throughput improvements and prepares Polygon for further scaling work.",
-        "Trading remains live on Upbit; only on-chain transfers are paused during the upgrade window."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-29T11:00:00Z"
+      "timestamp": "2026-04-29T23:08:14Z"
     }
   ]
 }
