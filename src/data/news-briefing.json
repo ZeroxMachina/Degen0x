@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T03:07:00Z",
-  "briefing_id": "briefing-2026-04-29-03",
+  "generated_at": "2026-04-29T14:05:00Z",
+  "briefing_id": "briefing-2026-04-29-14",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-03-001",
-      "headline": "Bitcoin loses $77K as Hormuz oil shock and Fed jitters crush risk appetite",
-      "slug": "bitcoin-loses-77k-hormuz-oil-fed",
-      "tldr": "BTC fell ~3% below $77,000 Tuesday after twice failing $80K, dragging ETH and SOL down as oil topped $100.",
-      "why_it_matters": "Why it matters: A weaker Coinbase premium plus rising oil signals US demand is fading just as the Fed wraps its meeting Wednesday — tightening odds, not cuts.",
+      "id": "story-2026-04-29-14-001",
+      "headline": "Aave goes live natively on Solana, $15B lending stack lands on the L1",
+      "slug": "aave-native-solana-15b-deposits",
+      "tldr": "Aave deployed natively on Solana via Sunrise DeFi, opening its $15B global lending pool to Solana wallets and frontends.",
+      "why_it_matters": "Why it matters: Solana DeFi gains the largest non-EVM lending market overnight, raising the floor for SOL TVL competition with Ethereum L2s.",
       "the_details": [
-        "BTC opened $77,368 Tuesday and slid to $76,472 by 7:10 a.m. ET; ETH dipped to $2,278.",
-        "Brent held above $100 on a Strait of Hormuz standoff, complicating the Fed's inflation outlook.",
-        "Coinbase premium turned negative, signaling US sellers are leading the move down."
+        "Trading is live across Jupiter, Backpack, Phantom, Raydium, and Meteora at launch.",
+        "Aave's pre-launch global deposits sit near $15B, with Solana now a first-class deployment target.",
+        "Move follows Solana stablecoin supply hitting $17B and RWA TVL crossing $1.85B in April."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/28/bitcoin-loses-usd77-000-ether-solana-slide-as-hormuz-standoff-lifts-oil-to-3-week-high",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-29T03:07:00Z"
-    },
-    {
-      "id": "story-2026-04-29-03-002",
-      "headline": "Aave-led coalition unveils $292M Kelp DAO recovery plan after cross-chain bridge exploit",
-      "slug": "aave-kelp-dao-recovery-plan-292m",
-      "tldr": "DeFi United, a coalition led by Aave, detailed a technical strategy Tuesday to restore the $292M rsETH backing drained April 19.",
-      "why_it_matters": "Why it matters: First credible industry self-rescue since Ronin — sets the playbook for cross-chain restitution as 'DeFi is dead' takes hold among holders stranded on 20 chains.",
-      "the_details": [
-        "Hacker drained 116,500 rsETH (~18% of supply) via Kelp's LayerZero bridge on April 19, the year's largest exploit.",
-        "Recovery plan covers wrapped ether stranded across 20 chains, the structural blocker to a clean unwind.",
-        "Kelp DAO breach edged out the $285M Drift Protocol hack from April 1, blamed on DPRK social engineering."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/news-analysis/2026/04/19/defi-is-dead-crypto-community-scrambles-after-usd292-million-hack-exposes-cross-chain-risks",
+      "source": "Blockonomi",
+      "source_url": "https://blockonomi.com/aave-goes-live-on-solana-in-defi-first-as-price-prediction-targets-500-and-pepeto-offers-100x-from-84/",
       "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-29T03:07:00Z"
+      "timestamp": "2026-04-29T14:00:00Z"
     },
     {
-      "id": "story-2026-04-29-03-003",
-      "headline": "Robinhood Q1: crypto revenue craters 47% to $134M, prediction markets save the quarter",
-      "slug": "robinhood-q1-crypto-revenue-prediction-markets",
-      "tldr": "Robinhood's Q1 crypto revenue fell 47% to $134M, but record prediction-market volume drove total revenue up 15% to $1.07B.",
-      "why_it_matters": "Why it matters: Retail rotation from spot crypto into election/event markets is now visible at the income-statement level — a structural shift, not a one-quarter blip.",
+      "id": "story-2026-04-29-14-002",
+      "headline": "Warsh Fed confirmation odds hit 97% as DOJ closes Powell probe, BTC catches a bid",
+      "slug": "warsh-fed-97-percent-doj-powell-probe-closed",
+      "tldr": "DOJ ended its criminal probe of Jerome Powell on April 24, lifting the last political block on Kevin Warsh's confirmation as next Fed chair.",
+      "why_it_matters": "Why it matters: A confirmed Warsh tilts FOMC dovish in crypto's read, pulling rate-cut odds and risk-asset positioning forward into Q3.",
       "the_details": [
-        "Crypto revenue $134M, down 47% YoY; total revenue $1.07B, up 15%.",
-        "Prediction-market bets hit a record, offsetting the trading slowdown across spot crypto.",
-        "Earnings drop ahead of the Fed decision Wednesday, with Galaxy and Coinbase still on deck this week."
+        "Prediction markets price Warsh confirmation at 97% after Pirro announced probe closure on April 24.",
+        "BTC up 18% on the month into FOMC, with $2.5B in April spot ETF inflows backstopping the bid.",
+        "Fed's inspector general now handles the $2.5B HQ renovation cost-overrun review."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "source": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/04/24/fed-powell-doj-warsh-trump.html",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-29T03:07:00Z"
+      "timestamp": "2026-04-29T13:30:00Z"
     },
     {
-      "id": "story-2026-04-29-03-004",
-      "headline": "April crypto hacks hit $606M in 18 days — worst month since Bybit's $1.4B",
-      "slug": "april-crypto-hacks-606m-worst-month",
-      "tldr": "Crypto protocols lost $606M in the first 18 days of April, making it the worst hack month since the Bybit breach in February 2025.",
-      "why_it_matters": "Why it matters: Attackers have pivoted from smart-contract bugs to private-key and signing-infrastructure compromises — security budgets aimed at Solidity audits are misallocated.",
+      "id": "story-2026-04-29-14-003",
+      "headline": "Lightspark ships Bitcoin wallet built for AI agents under David Marcus",
+      "slug": "lightspark-ai-agent-bitcoin-wallet-marcus",
+      "tldr": "Ex-Meta crypto chief David Marcus unveiled a Lightspark Bitcoin wallet that lets AI agents transact autonomously over Lightning.",
+      "why_it_matters": "Why it matters: Programmable BTC payments for autonomous agents pushes Bitcoin beyond store-of-value into machine-to-machine commerce rails.",
       "the_details": [
-        "April losses are 3.7x larger than Q1 combined; YTD theft now ~$771.8M across 47 incidents.",
-        "Drift ($285M) and Kelp DAO ($292M) account for the bulk; both involved authorization or bridge layers, not contracts.",
-        "Cumulative crypto hack losses have crossed $17B over the past decade per industry trackers."
+        "Wallet targets agent-driven payments like API calls, content licensing, and inference settlement.",
+        "Rides Lightning Network for sub-second, sub-cent settlement at scale.",
+        "Ships as Marcus pushes Lightspark's enterprise Bitcoin and stablecoin payments business."
       ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-29T03:07:00Z"
-    },
-    {
-      "id": "story-2026-04-29-03-005",
-      "headline": "Visa teams with Tether co-founder Reeve Collins to build onchain banks",
-      "slug": "visa-tether-cofounder-onchain-banks",
-      "tldr": "Visa is partnering with Tether co-founder Reeve Collins on onchain banking rails aimed at under-banked users globally.",
-      "why_it_matters": "Why it matters: A network operator with billions of cards greenlighting stablecoin-native banking pulls regulated payment infra further into crypto's lane — neobanks should be nervous.",
-      "the_details": [
-        "Project targets stablecoin payments infrastructure for under-banked populations rather than US/EU retail.",
-        "Reeve Collins co-founded Tether in 2014; this is his first major Visa-tier distribution deal.",
-        "Aligns with Q1 stablecoin market cap hitting $317B (>50% YoY) and tx volume of $28T."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
       "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-29T03:07:00Z"
+      "timestamp": "2026-04-29T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-29-14-004",
+      "headline": "Judge denies Sam Bankman-Fried retrial bid, calls 'new evidence' baseless",
+      "slug": "sbf-retrial-denied-judge",
+      "tldr": "A US judge rejected Sam Bankman-Fried's motion for a new trial, ruling his fresh-evidence and prosecutorial-misconduct claims unsupported.",
+      "why_it_matters": "Why it matters: Closes a remaining legal off-ramp for SBF and locks in the FTX wind-down narrative as creditor distributions continue through 2026.",
+      "the_details": [
+        "Court called the new-evidence claim 'inconsistent with facts' and dismissed prosecutor allegations as 'baseless.'",
+        "Ruling preserves SBF's 25-year sentence handed down in March 2024.",
+        "Comes as FTX estate continues multi-billion-dollar creditor payouts on schedule."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
+      "category": "regulation",
+      "impact": "medium",
+      "timestamp": "2026-04-29T12:30:00Z"
+    },
+    {
+      "id": "story-2026-04-29-14-005",
+      "headline": "Tropykus halts deposits and loans, v1 users have until July 2026 to withdraw",
+      "slug": "tropykus-v1-shutdown-july-2026",
+      "tldr": "Bitcoin-denominated lending protocol Tropykus is sunsetting v1, suspending deposits and loans and urging users to pull funds before July 2026.",
+      "why_it_matters": "Why it matters: Another small DeFi protocol exiting underscores the long-tail consolidation as TVL concentrates into Aave, Morpho, and Sky.",
+      "the_details": [
+        "All v1 deposits and loans suspended effective immediately.",
+        "Hard withdrawal deadline set for July 2026.",
+        "Team has not committed to a v2 timeline at the announcement."
+      ],
+      "source": "Coingabbar",
+      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-market-update-today-april-29-btc-eth-price-fell",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-29T12:00:00Z"
     }
   ]
 }

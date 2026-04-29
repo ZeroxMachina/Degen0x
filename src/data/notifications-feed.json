@@ -1,5 +1,29 @@
 [
   {
+    "id": "feed-2026-04-29-007",
+    "type": "news",
+    "title": "\ud83d\udcf0 Aave goes live natively on Solana, $15B lending stack lands on the L1",
+    "message": "Aave deployed natively on Solana via Sunrise DeFi, opening its $15B global lending pool to Solana wallets and frontends.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
+    "id": "feed-2026-04-29-006",
+    "type": "news",
+    "title": "\ud83d\udcf0 Powell's last FOMC: 99% hold odds at 3.50-3.75% as crypto derisks $200M into the print",
+    "message": "Traders price near 99% odds the Fed holds at 3.50-3.75% in Powell's final meeting as Chair, with $200M of crypto positioning unwound ahead of the 2pm ET decision.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
+    "id": "feed-2026-04-29-005",
+    "type": "news",
+    "title": "\ud83d\udcf0 DeFi United war chest tops 100K ETH as Consensys, Bitmine pile into rsETH rescue",
+    "message": "Consensys pledged up to 30,000 ETH and Bitmine added 101,901 ETH as the Kelp DAO recovery fund crosses 100K ETH this week.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-29-004",
     "type": "news",
     "title": "\ud83d\udcf0 Bitcoin loses $77K as Hormuz oil shock and Fed jitters crush risk appetite",
@@ -214,29 +238,5 @@
     "message": "April losses to crypto exploits topped $606M across 12 incidents, triggering a $13B DeFi TVL exodus in 48 hours.",
     "actionUrl": "/news",
     "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-001",
-    "type": "news",
-    "title": "\ud83d\udcf0 Strategy stockpile hits 818,334 BTC at $62B cost basis, ~3.9% of supply",
-    "message": "Saylor's Strategy now holds 818,334 BTC bought for nearly $62 billion at an average $75,537 per coin, the largest corporate stash ever.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-27-024",
-    "type": "news",
-    "title": "\ud83d\udcf0 FOMC week pins crypto: BTC stuck below $80K as traders price zero rate cuts",
-    "message": "Bitcoin trades near $78K and Ether near $2,330 as the FOMC meeting becomes the week's defining macro catalyst with markets pricing no cut.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-023",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin rejects $80K, slides under $78K as Iran peace headlines and oil weigh",
-    "message": "BTC failed at $80,000 and dropped roughly 2% below $78,000 as caution dominated despite Iran offering a fresh war-ending proposal to Washington.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
   }
 ]
