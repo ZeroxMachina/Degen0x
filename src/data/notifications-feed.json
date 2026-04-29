@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-29-012",
+    "type": "news",
+    "title": "\ud83d\udcf0 DeFi coalition unveils 116,500 rsETH recovery blueprint for $292M Kelp DAO exploit",
+    "message": "A DeFi United-led group published a step-by-step plan to re-back the 116,500 unbacked rsETH minted in this month's Kelp DAO bridge hack.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-29-011",
     "type": "news",
     "title": "\ud83d\udcf0 Bitcoin slides to $76,340 ahead of Fed as $80K rejection draws third straight failure",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 BlackRock's IBIT logs record $983M daily inflow as BTC rejects $80K wall",
     "message": "IBIT pulled its biggest daily haul in six months even as bitcoin briefly tagged $79K and rolled back into range.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-006",
-    "type": "news",
-    "title": "\ud83d\udcf0 Kelp DAO drained for $292M as LayerZero bridge bug freezes Aave, Spark, Fluid",
-    "message": "An attacker drained 116,500 rsETH (~$292M, 18% of supply) via Kelp DAO's LayerZero bridge, the largest DeFi exploit of 2026.",
     "actionUrl": "/news",
     "date": "2026-04-28"
   }

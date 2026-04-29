@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T19:08:00Z",
-  "briefing_id": "briefing-2026-04-29-19",
+  "generated_at": "2026-04-29T21:10:18Z",
+  "briefing_id": "briefing-2026-04-29-21",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-19-001",
-      "headline": "Bitcoin slides to $76,340 ahead of Fed as $80K rejection draws third straight failure",
-      "slug": "bitcoin-76k-fed-decision-80k-rejection",
-      "tldr": "BTC opened 1.3% lower at $76,340 Wednesday, with Coinbase premium turning negative as traders brace for the Fed decision later today.",
-      "why_it_matters": "Why it matters: Repeated $80K failures plus weakening US demand sets up a deeper flush if Powell signals no near-term rate cuts.",
+      "id": "story-2026-04-29-21-001",
+      "headline": "DeFi coalition unveils 116,500 rsETH recovery blueprint for $292M Kelp DAO exploit",
+      "slug": "defi-coalition-kelp-rseth-recovery-plan",
+      "tldr": "A DeFi United-led group published a step-by-step plan to re-back the 116,500 unbacked rsETH minted in this month's Kelp DAO bridge hack.",
+      "why_it_matters": "Why it matters: a credible coordinated fix could halt the contagion that has already cost Aave $6B+ in TVL and dragged DeFi's stack down $13B in 48 hours.",
       "the_details": [
-        "BTC twice rejected at $80,000 over the last week before sliding to $76,340 open on April 29.",
-        "Coinbase premium index has flipped negative, signaling US institutional buyers stepping back.",
-        "ETH, XRP and SOL all down 1–4% on the week, with XRP taking the worst hit."
+        "Plan targets restoration of backing for 116,500 unbacked rsETH minted via the forged cross-chain message.",
+        "Coalition includes Aave-aligned contributors after Aave V3 ate stolen-rsETH collateral on April 18-19.",
+        "Aave token still down 16% on the month; Kelp tab now $292M, the largest single exploit of 2026."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/28/a-crypto-coalition-releases-technical-proposal-to-save-aave-users-from-a-massive-token-exploit",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-29T21:10:18Z"
+    },
+    {
+      "id": "story-2026-04-29-21-002",
+      "headline": "US judge denies Sam Bankman-Fried retrial bid, calls misconduct claims baseless",
+      "slug": "sbf-retrial-denied-april-2026",
+      "tldr": "A federal judge rejected Sam Bankman-Fried's motion for a new trial, dismissing his alleged new evidence and prosecutorial-misconduct narrative.",
+      "why_it_matters": "Why it matters: closes the last clean appellate runway for SBF and locks in the legal precedent shaping every future US crypto-fraud case.",
+      "the_details": [
+        "Judge ruled the proffered new evidence and misconduct allegations failed the threshold for retrial.",
+        "SBF remains on a 25-year sentence after his 2023 conviction on seven counts including wire fraud.",
+        "Ruling lands as the SEC-CFTC March 17 joint framework reshapes how fraud cases get charged."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-29T21:10:18Z"
+    },
+    {
+      "id": "story-2026-04-29-21-003",
+      "headline": "Lightspark CEO David Marcus debuts Bitcoin wallet built for AI agents",
+      "slug": "lightspark-bitcoin-wallet-ai-agents",
+      "tldr": "Lightspark unveiled a Bitcoin wallet that lets autonomous AI agents send and receive payments, built on Lightning rails.",
+      "why_it_matters": "Why it matters: opens a programmable money lane for agent-to-agent commerce \u2014 the first credible BTC primitive aimed at the AI x payments stack.",
+      "the_details": [
+        "Wallet announced at the 2026 Lightspark conference by CEO and ex-PayPal/Meta exec David Marcus.",
+        "Targets machine-speed micropayments via Lightning Network with agent-controlled keys.",
+        "Slots into the broader push to bridge AI inference billing onto crypto rails."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-29T21:10:18Z"
+    },
+    {
+      "id": "story-2026-04-29-21-004",
+      "headline": "Tropykus sunsets V1 Bitcoin lending app, gives users until July to withdraw",
+      "slug": "tropykus-v1-shutdown-july-2026",
+      "tldr": "Bitcoin lending protocol Tropykus suspended deposits and new loans on its V1, urging users to pull funds before the July 2026 cutoff.",
+      "why_it_matters": "Why it matters: another BTC-native lender retiring V1 underscores how thin the post-Celsius/BlockFi BTC-yield market has become.",
+      "the_details": [
+        "Tropykus halted deposits and new originations on V1 effective immediately.",
+        "Hard withdrawal deadline set for July 2026; users left after that face manual recovery.",
+        "Fits a wider pattern of BTC-yield desks consolidating around Lightning and on-chain wrappers."
       ],
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
       "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-29T13:38:00Z"
-    },
-    {
-      "id": "story-2026-04-29-19-002",
-      "headline": "SEC-CFTC joint taxonomy carves BTC, ETH, SOL, XRP, LINK as digital commodities",
-      "slug": "sec-cftc-five-category-token-taxonomy",
-      "tldr": "Joint SEC-CFTC guidance sorts crypto into five buckets and names the top five large-caps as digital commodities, ending years of jurisdictional ambiguity.",
-      "why_it_matters": "Why it matters: A clean commodities label for ETH, SOL, XRP and LINK clears the runway for futures, ETFs and bank custody at scale.",
-      "the_details": [
-        "Five categories: digital commodities, digital collectibles, digital tools, stablecoins, digital securities.",
-        "FDIC dropped proposed GENIUS Act stablecoin rules April 7; FinCEN/OFAC followed with PPSI AML rules April 8.",
-        "CFTC Innovation Task Force named April 10 to write the framework for crypto, AI and prediction markets."
-      ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-29T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-19-003",
-      "headline": "April crypto hack toll hits $606M across 12 incidents in 18 days; Lazarus dominates",
-      "slug": "april-2026-crypto-hacks-606m-lazarus",
-      "tldr": "DeFi has bled $606M to exploits in just 18 days of April, with North Korea's Lazarus Group fingerprints on the two biggest hits.",
-      "why_it_matters": "Why it matters: A $770M YTD security tab plus state-actor attribution will harden insurer pricing and accelerate the institutional flight from cross-chain bridges.",
-      "the_details": [
-        "Kelp DAO drained $292M April 19 via misconfigured LayerZero bridge minting 116,500 unbacked rsETH.",
-        "Drift Protocol lost $285M April 1 via fake CVT token, oracle manipulation and compromised admin key.",
-        "2026 YTD DeFi hack losses now near $770M, on pace to eclipse 2024's full-year total."
-      ],
-      "source": "TheStreet Crypto",
-      "source_url": "https://www.thestreet.com/crypto/markets/major-defi-hack-becomes-the-largest-of-2026-yet",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-29T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-19-004",
-      "headline": "CLARITY Act markup slips into May with no firm date, killing April catalyst",
-      "slug": "clarity-act-markup-slips-may",
-      "tldr": "The CLARITY Act markup that traders pegged as April's main upside catalyst has been pushed to May with no confirmed date set.",
-      "why_it_matters": "Why it matters: With CLARITY off the table, BTC loses its main near-term legislative tailwind right as macro headwinds re-enter the room.",
-      "the_details": [
-        "Bill drafted to settle SEC vs CFTC jurisdictional lines for digital assets.",
-        "April markup window has formally closed with no May date confirmed by House leadership.",
-        "Traders had front-run the markup; positioning is now unwinding into a thinner tape."
-      ],
-      "source": "DL News",
-      "source_url": "https://www.dlnews.com/articles/regulation/key-dates-for-us-crypto-regulation-in-2026/",
-      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-29T09:00:00Z"
+      "timestamp": "2026-04-29T21:10:18Z"
     },
     {
-      "id": "story-2026-04-29-19-005",
-      "headline": "Morgan Stanley, JPMorgan debut as Consensus Miami sponsors as Wall Street books $10T into May 5",
-      "slug": "consensus-miami-2026-morgan-stanley-jpmorgan",
-      "tldr": "Consensus Miami's institutional share nearly doubles to ~35% of 15,000 attendees, with TradFi heavyweights now headline sponsors.",
-      "why_it_matters": "Why it matters: $10T in AUM physically showing up validates that the institutional thesis is past pilot stage and into allocation mode.",
+      "id": "story-2026-04-29-21-005",
+      "headline": "Wall Street arrives in force at Consensus Miami: institutions now 35% of audience, $10T AUM",
+      "slug": "consensus-miami-2026-wall-street-tradfi",
+      "tldr": "Morgan Stanley and JPMorgan are sponsoring Consensus Miami 2026, with institutional attendance nearly doubling to ~35% of the 15,000-strong crowd.",
+      "why_it_matters": "Why it matters: TradFi flow desks aren't tourists anymore \u2014 sponsorship dollars from MS and JPM signal the institutional capture of crypto's flagship event.",
       "the_details": [
-        "Morgan Stanley and JPMorgan are debut sponsors at the May 5–7 Miami event.",
-        "CFTC Chair Michael Selig, Sen. Ashley Moody and White House's Patrick Witt attend a Consensus event for the first time.",
-        "Conference expects 15,000+ attendees; institutional share rises to ~35% representing ~$10T in AUM."
+        "Consensus Miami runs May 5-7, 2026 with 15,000+ expected attendees.",
+        "Institutional share of audience near 35%, representing roughly $10 trillion in AUM.",
+        "Roster includes federal policymakers and TradFi sponsors alongside crypto natives."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-29T14:00:00Z"
+      "timestamp": "2026-04-29T21:10:18Z"
     }
   ]
 }
