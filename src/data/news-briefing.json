@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T02:06:00Z",
-  "briefing_id": "briefing-2026-04-29-02",
+  "generated_at": "2026-04-29T03:07:00Z",
+  "briefing_id": "briefing-2026-04-29-03",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-02-001",
-      "headline": "SEC Chair Atkins unveils 'Project Crypto' at Bitcoin 2026, classifies most tokens as non-securities",
-      "slug": "sec-atkins-project-crypto-bitcoin-2026",
-      "tldr": "Paul Atkins debuted a Commission-wide initiative at Bitcoin 2026 establishing a five-category token taxonomy that pulls most digital assets out of securities law.",
-      "why_it_matters": "Why it matters: A formal SEC taxonomy ends years of regulation-by-enforcement and unlocks clearer registration paths for issuers, exchanges and DeFi front-ends.",
+      "id": "story-2026-04-29-03-001",
+      "headline": "Bitcoin loses $77K as Hormuz oil shock and Fed jitters crush risk appetite",
+      "slug": "bitcoin-loses-77k-hormuz-oil-fed",
+      "tldr": "BTC fell ~3% below $77,000 Tuesday after twice failing $80K, dragging ETH and SOL down as oil topped $100.",
+      "why_it_matters": "Why it matters: A weaker Coinbase premium plus rising oil signals US demand is fading just as the Fed wraps its meeting Wednesday — tightening odds, not cuts.",
       "the_details": [
-        "Atkins unveiled Project Crypto on the Bitcoin 2026 mainstage in Las Vegas, where 40,000+ attendees gathered April 27-29.",
-        "The framework builds on the joint SEC-CFTC interpretive release from March 17, 2026 that introduced the five-bucket taxonomy.",
-        "Follows the April 13 SEC staff statement carving out 'Covered User Interface Providers' from broker-dealer registration."
-      ],
-      "source": "Investing News Network",
-      "source_url": "https://investingnews.com/cryptocurrency-market-recap/",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-28T20:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-02-002",
-      "headline": "Western Union pivots to blockchain, launches Solana-based stablecoin USDPT with Anchorage",
-      "slug": "western-union-usdpt-solana-stablecoin",
-      "tldr": "The 175-year-old remittance giant unveiled USDPT, a Solana-powered dollar stablecoin issued via Anchorage Digital Bank under the GENIUS Act framework.",
-      "why_it_matters": "Why it matters: A legacy money-transfer giant choosing Solana over private rails validates the chain as institutional payments infrastructure and pressures Visa, Mastercard, and SWIFT.",
-      "the_details": [
-        "USDPT will issue from Anchorage Digital Bank, the first OCC-chartered crypto bank, satisfying GENIUS Act stablecoin requirements.",
-        "Western Union processes ~$300B in cross-border volume annually across 200+ countries and 130+ currencies.",
-        "Announcement coincides with FDIC stablecoin rulemaking notices issued earlier this month."
-      ],
-      "source": "Investing News Network",
-      "source_url": "https://investingnews.com/cryptocurrency-market-recap/",
-      "category": "adoption",
-      "impact": "high",
-      "timestamp": "2026-04-28T18:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-02-003",
-      "headline": "Fed wraps two-day meeting today as US consumer sentiment crashes to all-time low 49.8",
-      "slug": "fed-meeting-april-29-consumer-sentiment-record-low",
-      "tldr": "The FOMC concludes its policy meeting Wednesday with crypto markets pinned by a Michigan sentiment print at a record-low 49.8 and 1-year inflation expectations spiking to 4.8%.",
-      "why_it_matters": "Why it matters: A dovish Fed could re-ignite the late-March BTC rally from sub-$65K, while any hawkish surprise risks dragging spot back through $76,500 support.",
-      "the_details": [
-        "University of Michigan consumer sentiment index hit 49.8, the lowest reading on record, driven by Iran-conflict inflation pressures.",
-        "1-year inflation expectations jumped to 4.8% in April from 3.8% in March, a level the Fed actively tries to anchor.",
-        "BTC trades near $76,500 after stalling at $80,000 resistance; ETH at $2,322, down 0.7% over 24h."
+        "BTC opened $77,368 Tuesday and slid to $76,472 by 7:10 a.m. ET; ETH dipped to $2,278.",
+        "Brent held above $100 on a Strait of Hormuz standoff, complicating the Fed's inflation outlook.",
+        "Coinbase premium turned negative, signaling US sellers are leading the move down."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
+      "source_url": "https://www.coindesk.com/markets/2026/04/28/bitcoin-loses-usd77-000-ether-solana-slide-as-hormuz-standoff-lifts-oil-to-3-week-high",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T22:00:00Z"
+      "timestamp": "2026-04-29T03:07:00Z"
     },
     {
-      "id": "story-2026-04-29-02-004",
-      "headline": "Solana spot ETF inflows collapse 92% to $34M in April from $419M peak in November 2025",
-      "slug": "solana-etf-inflows-collapse-92-percent",
-      "tldr": "Spot SOL ETF demand has cratered from $419M monthly inflows last November to just $34M in April, even as Firedancer and Alpenglow upgrade milestones land.",
-      "why_it_matters": "Why it matters: Institutional appetite for non-BTC ETF wrappers is fading fast — a warning sign for upcoming XRP, LTC, and DOGE ETF issuers banking on similar flows.",
+      "id": "story-2026-04-29-03-002",
+      "headline": "Aave-led coalition unveils $292M Kelp DAO recovery plan after cross-chain bridge exploit",
+      "slug": "aave-kelp-dao-recovery-plan-292m",
+      "tldr": "DeFi United, a coalition led by Aave, detailed a technical strategy Tuesday to restore the $292M rsETH backing drained April 19.",
+      "why_it_matters": "Why it matters: First credible industry self-rescue since Ronin — sets the playbook for cross-chain restitution as 'DeFi is dead' takes hold among holders stranded on 20 chains.",
       "the_details": [
-        "SOL trades at $86.47 with a $49.8B market cap, ranking 7th by capitalization.",
-        "Alpenglow upgrade went live, cutting transaction finality below 200ms; Firedancer targets 1M TPS from current ~1,300.",
-        "Alameda estate unstaked $16M of SOL on April 13, possibly for FTX creditor distributions, adding sell pressure."
+        "Hacker drained 116,500 rsETH (~18% of supply) via Kelp's LayerZero bridge on April 19, the year's largest exploit.",
+        "Recovery plan covers wrapped ether stranded across 20 chains, the structural blocker to a clean unwind.",
+        "Kelp DAO breach edged out the $285M Drift Protocol hack from April 1, blamed on DPRK social engineering."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-28T16:00:00Z"
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/news-analysis/2026/04/19/defi-is-dead-crypto-community-scrambles-after-usd292-million-hack-exposes-cross-chain-risks",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-29T03:07:00Z"
     },
     {
-      "id": "story-2026-04-29-02-005",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks force largest crypto event to relocate",
-      "slug": "token2049-dubai-postponed-2027-uae-security",
-      "tldr": "Organizers postponed the flagship Dubai conference to 2027, citing heightened regional security risks tied to the ongoing Iran conflict.",
-      "why_it_matters": "Why it matters: The MENA crypto-event vacuum likely shifts capital and deal flow toward Singapore, Hong Kong and Riyadh — and signals geopolitical risk now eclipses regulatory risk for global gatherings.",
+      "id": "story-2026-04-29-03-003",
+      "headline": "Robinhood Q1: crypto revenue craters 47% to $134M, prediction markets save the quarter",
+      "slug": "robinhood-q1-crypto-revenue-prediction-markets",
+      "tldr": "Robinhood's Q1 crypto revenue fell 47% to $134M, but record prediction-market volume drove total revenue up 15% to $1.07B.",
+      "why_it_matters": "Why it matters: Retail rotation from spot crypto into election/event markets is now visible at the income-statement level — a structural shift, not a one-quarter blip.",
       "the_details": [
-        "TOKEN2049 Dubai typically draws 15,000+ attendees and is one of the two largest annual crypto conferences globally.",
-        "Postponement decision attributed to UAE security situation amid the regional Iran conflict.",
-        "Comes as Bitcoin 2026 in Las Vegas pulled record 40,000+ attendees April 27-29."
+        "Crypto revenue $134M, down 47% YoY; total revenue $1.07B, up 15%.",
+        "Prediction-market bets hit a record, offsetting the trading slowdown across spot crypto.",
+        "Earnings drop ahead of the Fed decision Wednesday, with Galaxy and Coinbase still on deck this week."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-29T03:07:00Z"
+    },
+    {
+      "id": "story-2026-04-29-03-004",
+      "headline": "April crypto hacks hit $606M in 18 days — worst month since Bybit's $1.4B",
+      "slug": "april-crypto-hacks-606m-worst-month",
+      "tldr": "Crypto protocols lost $606M in the first 18 days of April, making it the worst hack month since the Bybit breach in February 2025.",
+      "why_it_matters": "Why it matters: Attackers have pivoted from smart-contract bugs to private-key and signing-infrastructure compromises — security budgets aimed at Solidity audits are misallocated.",
+      "the_details": [
+        "April losses are 3.7x larger than Q1 combined; YTD theft now ~$771.8M across 47 incidents.",
+        "Drift ($285M) and Kelp DAO ($292M) account for the bulk; both involved authorization or bridge layers, not contracts.",
+        "Cumulative crypto hack losses have crossed $17B over the past decade per industry trackers."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-29T03:07:00Z"
+    },
+    {
+      "id": "story-2026-04-29-03-005",
+      "headline": "Visa teams with Tether co-founder Reeve Collins to build onchain banks",
+      "slug": "visa-tether-cofounder-onchain-banks",
+      "tldr": "Visa is partnering with Tether co-founder Reeve Collins on onchain banking rails aimed at under-banked users globally.",
+      "why_it_matters": "Why it matters: A network operator with billions of cards greenlighting stablecoin-native banking pulls regulated payment infra further into crypto's lane — neobanks should be nervous.",
+      "the_details": [
+        "Project targets stablecoin payments infrastructure for under-banked populations rather than US/EU retail.",
+        "Reeve Collins co-founded Tether in 2014; this is his first major Visa-tier distribution deal.",
+        "Aligns with Q1 stablecoin market cap hitting $317B (>50% YoY) and tx volume of $28T."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/",
       "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-28T14:00:00Z"
+      "timestamp": "2026-04-29T03:07:00Z"
     }
   ]
 }
