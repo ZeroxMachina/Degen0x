@@ -1,91 +1,91 @@
 {
-  "generated_at": "2026-04-29T00:05:00Z",
-  "briefing_id": "briefing-2026-04-29-00",
+  "generated_at": "2026-04-29T01:05:00Z",
+  "briefing_id": "briefing-2026-04-29-01",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-00-001",
-      "headline": "Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
-      "slug": "western-union-usdpt-solana-stablecoin",
-      "tldr": "Remittance giant Western Union is pivoting to blockchain rails with USDPT, a Solana stablecoin issued by Anchorage Digital Bank.",
-      "why_it_matters": "Why it matters: A 175-year-old payments incumbent with $200B+ in annual flows just chose Solana over its own legacy network — a TradFi distribution unlock for stablecoins.",
+      "id": "story-2026-04-29-01-001",
+      "headline": "Bitcoin stalls at $79.4K as Coinbase premium flips negative for first time since April 8",
+      "slug": "bitcoin-stalls-79k-coinbase-premium-negative",
+      "tldr": "BTC's rally faded near $79,400 and slipped to ~$77K as US institutional demand cooled into the FOMC decision.",
+      "why_it_matters": "Why it matters: A negative Coinbase premium plus price under the $79.2K short-term holder cost basis sets up a fresh bid-test for risk assets the moment Powell speaks.",
       "the_details": [
-        "USDPT will be issued by Anchorage Digital Bank, the only OCC-chartered crypto bank in the US.",
-        "Solana picked for sub-cent fees and sub-second finality vs. Western Union's ~5% remittance take rate.",
-        "Launch positions WU to compete with Circle's USDC and Tether's USDT in regulated payment corridors."
-      ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-27-2026-prices-hold-ahead-of-potential-peace-talks-and-fed-meeting-114927492.html",
-      "category": "adoption",
-      "impact": "high",
-      "timestamp": "2026-04-28T20:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-00-002",
-      "headline": "FOMC decision today as BTC-USD inverse correlation hits 4-year extreme near $77K",
-      "slug": "fomc-decision-btc-dollar-correlation",
-      "tldr": "Bitcoin trades around $77K into Wednesday's Fed decision with BTC-DXY moving in near-perfect opposition, the most extreme in nearly four years.",
-      "why_it_matters": "Why it matters: BTC has decoupled from risk and re-coupled to the dollar — a dovish Powell could uncork the next leg, while a hawkish surprise breaks the $76K floor.",
-      "the_details": [
-        "Two-day FOMC meeting wraps April 29 with markets pricing no change but watching forward guidance closely.",
-        "BTC pulled back from $80K resistance to $76,500 after UMich sentiment hit ATL of 49.8 and inflation expectations jumped to 4.8%.",
-        "USDT supply grew $5B in April, fueling speculation of a fresh bid if Powell tilts dovish."
+        "BTC dropped from $79,400 toward $77,000 as the Coinbase premium index turned negative for the first time since April 8.",
+        "Price fell below the $79,200 short-term holder average cost basis, a level that historically triggers reflexive selling.",
+        "ETH traded at $2,322.95, down 0.7% on the day, with traders eyeing $2,800-$3,000 if the Fed signals dovish."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "source_url": "https://www.coindesk.com",
       "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-29T00:30:00Z"
+    },
+    {
+      "id": "story-2026-04-29-01-002",
+      "headline": "April crypto exploits hit $606M in 18 days, 3.7x the entire Q1 2026 total",
+      "slug": "april-crypto-hacks-606m-q1-multiple",
+      "tldr": "Eighteen days of April have erased $606.2M to hacks, dwarfing Q1's $165.5M and reframing 2026's security narrative.",
+      "why_it_matters": "Why it matters: The pace forces protocols, custodians, and insurers to reprice cross-chain risk in real time, with knock-on effects for DeFi TVL and bridge usage.",
+      "the_details": [
+        "Cumulative April losses reached $606.2M by April 18, versus $165.5M for all of Q1 2026.",
+        "The Drift Protocol $285M exploit on April 1 and Kelp DAO's $292M hit on April 19 anchor the surge.",
+        "Smaller hits include CoW Swap's $1.2M domain hijack on April 14 and a $13.74M drain at Russia-linked Grinex."
+      ],
+      "source": "AInvest",
+      "source_url": "https://www.ainvest.com/news/april-606m-hack-surge-liquidity-flow-shock-2604/",
+      "category": "security",
       "impact": "high",
       "timestamp": "2026-04-28T22:00:00Z"
     },
     {
-      "id": "story-2026-04-29-00-003",
-      "headline": "SEC's Atkins teases tokenization 'innovation exemption' and Strategic Bitcoin Reserve unveil",
-      "slug": "sec-atkins-innovation-exemption-strategic-btc-reserve",
-      "tldr": "SEC Chair Paul Atkins said an innovation exemption for on-chain tokenized securities is coming 'in the weeks ahead,' alongside a Strategic Bitcoin Reserve announcement.",
-      "why_it_matters": "Why it matters: A formal sandbox for tokenized securities could pull trillions of TradFi assets on-chain — and a Strategic Reserve reveal would be the most structurally bullish BTC catalyst since the ETF approval.",
+      "id": "story-2026-04-29-01-003",
+      "headline": "Aave rallies DeFi consortium to backstop Kelp DAO's $292M cross-chain exploit",
+      "slug": "aave-defi-bailout-kelp-dao-292m",
+      "tldr": "Aave is leading a DeFi partner push to contain fallout from the $292M Kelp DAO hack as TVL bled from $26.4B to ~$20B.",
+      "why_it_matters": "Why it matters: A coordinated industry bailout, even informal, is a stress test for whether DeFi can self-insure cross-chain bridge risk without sovereign or CEX backstops.",
       "the_details": [
-        "Atkins ended 'regulation through enforcement' and committed to joint SEC-CFTC guidance at Bitcoin 2026 in Las Vegas.",
-        "White House digital assets advisor Patrick Witt confirmed Strategic Bitcoin Reserve specifics will land in coming weeks.",
-        "SEC and CFTC signed a historic MoU April 2026 (press release 2026-26) formalizing the harmonized framework."
+        "Hacker tricked LayerZero's EndpointV2 contract into releasing 116,500 rsETH from the Kelp bridge.",
+        "Aave token fell over 18% on the weekend as depositors yanked funds, prompting the bailout coordination.",
+        "DeFi TVL dropped from $26.4B on April 18 to roughly $20B by April 19 morning, per DefiLlama."
       ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
-      "category": "regulation",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
+      "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-27T21:00:00Z"
+      "timestamp": "2026-04-28T21:00:00Z"
     },
     {
-      "id": "story-2026-04-29-00-004",
-      "headline": "Injective mainnet upgrade goes live with new INJ buyback mechanism",
-      "slug": "injective-mainnet-upgrade-inj-buyback",
-      "tldr": "Injective shipped its April 28 mainnet upgrade adding faster execution, refined on-chain modules, and a new token buyback mechanism for INJ.",
-      "why_it_matters": "Why it matters: A protocol-level buyback turns Injective fees into structural INJ demand — a real-yield narrative at a moment when altcoins desperately need one.",
+      "id": "story-2026-04-29-01-004",
+      "headline": "Israel approves first regulated stablecoin BILS, built natively on Solana",
+      "slug": "israel-bils-stablecoin-solana",
+      "tldr": "Israeli regulators greenlit BILS, the country's first regulated stablecoin, developed in partnership with the Solana network.",
+      "why_it_matters": "Why it matters: Sovereign-grade stablecoin issuance on Solana strengthens the chain's pitch as the default payments rail and pressures Ethereum L2s on policy capture.",
       "the_details": [
-        "Upgrade improves execution speed and reliability for DeFi apps and on-chain trading on Injective.",
-        "Buyback mechanism redirects a share of network revenue into open-market INJ purchases.",
-        "Goes live as Bitcoin dominance sits at 60% and CMC Altcoin Season Index reads 39 — deep in 'Bitcoin Season.'"
+        "BILS is Israel's first stablecoin to receive formal regulatory approval, per CoinDesk reporting.",
+        "The token is engineered on Solana, leveraging sub-second finality enabled by the Alpenglow upgrade.",
+        "Approval lands the same week Western Union unveiled USDPT, also Solana-based, signaling chain consolidation for FX rails."
       ],
-      "source": "CryptoNewsZ",
-      "source_url": "https://www.cryptonewsz.com/injective-mainnet-upgrade-april-28-rollout/",
-      "category": "altcoins",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-28T14:00:00Z"
+      "timestamp": "2026-04-28T18:00:00Z"
     },
     {
-      "id": "story-2026-04-29-00-005",
-      "headline": "TOKEN2049 Dubai pushed to 2027 amid heightened UAE security risks",
-      "slug": "token2049-dubai-postponed-2027",
-      "tldr": "Organizers moved TOKEN2049 Dubai to 2027, citing heightened security risks in the UAE tied to regional Iran tensions.",
-      "why_it_matters": "Why it matters: The Middle East has been crypto's growth corridor — pulling its flagship event signals Iran-conflict spillover is now serious enough to disrupt industry calendars and capital flows.",
+      "id": "story-2026-04-29-01-005",
+      "headline": "Solana Company raises $8M from Mirae Asset and HashKey Capital",
+      "slug": "solana-company-8m-mirae-hashkey",
+      "tldr": "Solana Company closed an $8M strategic round backed by Mirae Asset and HashKey Capital, doubling down on Asia distribution.",
+      "why_it_matters": "Why it matters: Tier-1 Korean and Hong Kong capital tilts Solana's growth axis toward Asia just as Firedancer targets a 1M TPS jump.",
       "the_details": [
-        "TOKEN2049 Dubai is one of the two flagship industry conferences alongside its Singapore counterpart.",
-        "Postponement follows escalating US-Iran tensions that have already weighed on BTC since April 20.",
-        "Major sponsor and travel commitments rerouted; Singapore October 2026 event remains on calendar."
+        "Mirae Asset and HashKey Capital led the $8M strategic share sale.",
+        "SOL trades near $86.47 with a $49.8B market cap, ranked 7th by market cap.",
+        "Firedancer upgrade is targeting throughput from ~1,300 to 1M TPS over the course of 2026."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
-      "category": "infrastructure",
+      "source": "Crypto.news",
+      "source_url": "https://crypto.news/will-solana-price-rebound-as-it-breaks-multi-year-bearish-channel/",
+      "category": "adoption",
       "impact": "medium",
       "timestamp": "2026-04-28T16:00:00Z"
     }

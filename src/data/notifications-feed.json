@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-29-002",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin stalls at $79.4K as Coinbase premium flips negative for first time since April 8",
+    "message": "BTC's rally faded near $79,400 and slipped to ~$77K as US institutional demand cooled into the FOMC decision.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-29-001",
     "type": "news",
     "title": "\ud83d\udcf0 Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 Bitcoin stalls at $80K wall despite IBIT's record $983M single-day inflow",
     "message": "BTC pulled back from $79K to $77,700 as concentrated sell orders capped gains, even after BlackRock's IBIT logged its biggest inflow in six months.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-020",
-    "type": "news",
-    "title": "\ud83d\udcf0 Four central banks \u2014 Fed, ECB, BoJ, BoE \u2014 all set rates this week as crypto holds $2.71T",
-    "message": "Bank of Japan, Federal Reserve, ECB and Bank of England each deliver policy decisions this week, the densest macro window of 2026 so far.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
