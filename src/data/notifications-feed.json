@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-29-009",
+    "type": "news",
+    "title": "📰 SEC-CFTC joint guidance puts BTC, ETH, SOL, XRP, LINK in 'digital commodity' bucket",
+    "message": "A landmark joint interpretation between the SEC and CFTC sorts crypto assets into five legal categories, ending years of jurisdictional limbo.",
+    "actionUrl": "/news",
+    "date": "2026-04-29"
+  },
+  {
     "id": "feed-2026-04-29-008",
     "type": "news",
     "title": "📰 Bitcoin spot volume cracks below $8B, lowest since October 2023",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "📰 April crypto hacks blow past $606M, worst month since Bybit's $1.4B breach",
     "message": "Crypto protocols have lost more than $606 million across 12 incidents in April, the worst monthly toll since Bybit's $1.4B hack in February 2025.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-003",
-    "type": "news",
-    "title": "📰 Four central banks decide rates this week, with FOMC the main event for crypto",
-    "message": "Bank of Japan, Federal Reserve, ECB and Bank of England all set rate policy this week, with markets pricing zero Fed cuts.",
     "actionUrl": "/news",
     "date": "2026-04-28"
   }

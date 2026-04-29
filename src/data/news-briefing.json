@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T15:10:00Z",
-  "briefing_id": "briefing-2026-04-29-15",
+  "generated_at": "2026-04-29T16:07:00Z",
+  "briefing_id": "briefing-2026-04-29-16",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-15-001",
-      "headline": "Bitcoin spot volume cracks below $8B, lowest since October 2023",
-      "slug": "bitcoin-spot-volume-below-8b-lowest-since-october-2023",
-      "tldr": "Bitcoin's daily spot turnover has slipped under $8 billion, the thinnest tape in 18 months and a setup that historically precedes outsized moves.",
-      "why_it_matters": "Why it matters: Liquidity droughts amplify slippage and stop runs, so a quiet $77K can violently retag $80K or $74K once a single whale prints size.",
+      "id": "story-2026-04-29-16-001",
+      "headline": "SEC-CFTC joint guidance puts BTC, ETH, SOL, XRP, LINK in 'digital commodity' bucket",
+      "slug": "sec-cftc-digital-commodity-classification",
+      "tldr": "A landmark joint interpretation between the SEC and CFTC sorts crypto assets into five legal categories, ending years of jurisdictional limbo.",
+      "why_it_matters": "Why it matters: Naming BTC, ETH, SOL, XRP, and LINK as digital commodities hands the CFTC primary oversight of the largest tokens and clears a path for spot products built around them.",
       "the_details": [
-        "CoinDesk's April 29 Daybook flags volume below $8B, the lowest reading since October 2023.",
-        "BTC trades around $77,160 into Powell's final FOMC, up $818 on the day but still $17K below year-ago levels.",
-        "Coinbase premium flipped negative this week, signaling US desks have stepped back from the bid."
+        "The framework defines five buckets: digital commodities, digital collectibles, digital tools, stablecoins, and digital securities.",
+        "CFTC commits to administering the Commodity Exchange Act consistent with the SEC interpretation, ending overlapping enforcement risk.",
+        "Coalition of 100+ crypto firms is now pushing the Senate Banking Committee to mark up the Clarity Act on the same framework."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
-      "category": "markets",
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-29T13:30:00Z"
+      "timestamp": "2026-04-29T14:30:00Z"
     },
     {
-      "id": "story-2026-04-29-15-002",
-      "headline": "StanChart: DeFi 'bent not broken' after $300M industry backstop steadies Kelp damage",
-      "slug": "standard-chartered-defi-bent-not-broken-aave-kelp-300m-backstop",
-      "tldr": "Standard Chartered says DeFi proved resilient after a $300M Aave-led rescue absorbed the $292M Kelp DAO hit and reanchored deposits.",
-      "why_it_matters": "Why it matters: A working private backstop dampens contagion narratives and pushes back the 'DeFi is dead' takes that flared after the LayerZero bridge drain.",
+      "id": "story-2026-04-29-16-002",
+      "headline": "Spot bitcoin ETFs string together 8-day, $2.1B inflow run as BTC reclaims $77K",
+      "slug": "btc-etf-eight-day-inflow-streak",
+      "tldr": "U.S. spot bitcoin ETFs absorbed $2.1 billion across eight straight sessions through April 23, dragging cumulative net inflows since launch to $58 billion.",
+      "why_it_matters": "Why it matters: Institutional demand has turned the year's ETF flows positive even while short-term holders distribute, creating the first sustained structural bid since February.",
       "the_details": [
-        "Aave deposits had cratered ~38% and active loans ~31% in the days after the April 18 Kelp exploit.",
-        "Industry backstop hit $300M, including Consensys' 30K ETH pledge and BitMine's 101,901 ETH top-up.",
-        "Standard Chartered's Geoff Kendrick frames the episode as a stress test that DeFi materially passed."
+        "April monthly inflows hit $2.43 billion, fully erasing Q1 outflows; total ETF assets now sit at $102 billion.",
+        "BTC trades at $77,160 on Wednesday after a 13% April rally, with Ethereum at $2,330.",
+        "Capital is rotating into ETH funds, which logged a record $11.68 billion cumulative inflow."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/29/defi-shaken-by-usd292-million-hack-but-showing-resilience-standard-chartered-says",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-etfs-just-pulled-usd2-billion-in-8-days-while-short-term-holders-quietly-started-selling",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-29T13:45:00Z"
+    },
+    {
+      "id": "story-2026-04-29-16-003",
+      "headline": "Consensys, Joseph Lubin pledge up to 30,000 ETH to rsETH bridge-exploit recovery",
+      "slug": "consensys-lubin-rseth-recovery-pledge",
+      "tldr": "Consensys and founder Joseph Lubin are committing up to 30,000 ETH to DeFi United's rescue effort for Kelp DAO users hit by the April 18 LayerZero bridge exploit.",
+      "why_it_matters": "Why it matters: A name-brand backstop turns the patchy Aave-led rescue into a credible industry-wide standard for handling cross-chain failures.",
+      "the_details": [
+        "Kelp DAO lost roughly $293 million on April 18 after an attacker minted 116,500 unbacked rsETH and borrowed against it on Aave.",
+        "Aave's TVL dropped from $26.4B to about $20B in the hours after the exploit, prompting the coordinated rescue.",
+        "Lido, EtherFi, and other LST issuers had already committed parts of the $300M industry pledge before the Consensys add-on."
+      ],
+      "source": "Yahoo Finance / DeFi United",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-april-29-2026-values-continue-to-fall-this-week-113845501.html",
       "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-29T12:45:00Z"
+      "timestamp": "2026-04-29T12:10:00Z"
     },
     {
-      "id": "story-2026-04-29-15-003",
-      "headline": "April 2026 already crypto's worst hack month since Bybit, with $606M lost in 18 days",
-      "slug": "april-2026-worst-crypto-hack-month-since-bybit-606m",
-      "tldr": "Crypto protocols have shed $606M+ to exploits in the first 18 days of April, the largest monthly bleed since the $1.4B Bybit breach in February 2025.",
-      "why_it_matters": "Why it matters: Bridge failures and admin-key compromises now drive the loss curve, raising the bar on insurer pricing and accelerating chain-abstraction risk reviews.",
+      "id": "story-2026-04-29-16-004",
+      "headline": "IRS digital-asset cost-basis reporting now mandatory for every U.S. crypto broker",
+      "slug": "irs-broker-cost-basis-reporting-live",
+      "tldr": "From April 15, every U.S. digital-asset broker must report customer cost basis to the IRS, ending the wallet-tracking grace period traders have enjoyed since 2022.",
+      "why_it_matters": "Why it matters: Mandatory reporting closes the largest crypto tax loophole and sets up automated audits on every centralized exchange withdrawal starting next filing season.",
       "the_details": [
-        "Drift Protocol bled $285M on April 1 in an attack tied to suspected DPRK-linked social engineering.",
-        "Kelp DAO lost $292M on April 18 via a LayerZero bridge exploit that stranded rsETH across 20 chains.",
-        "Drift plus Kelp account for roughly 95% of April's losses and ~75% of all 2026 crypto theft to date."
+        "Rule applies to centralized exchanges, custodial wallets, and payment processors handling over $10K in annual digital-asset volume.",
+        "FinCEN and OFAC also rolled out parallel AML rules for primary providers of stablecoin infrastructure on April 8.",
+        "FDIC and Treasury proposed companion stablecoin issuer and 'substantially similar' state-regime rules earlier in April."
       ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T18:00:00Z"
-    },
-    {
-      "id": "story-2026-04-29-15-004",
-      "headline": "Polygon hard-forks today, retooling fees and laying groundwork for next scaling phase",
-      "slug": "polygon-hard-fork-april-29-2026-scaling-upgrade",
-      "tldr": "Polygon is shipping a network-wide hard fork on April 29 to tune performance and prepare the chain for its next round of scaling upgrades.",
-      "why_it_matters": "Why it matters: With POL still trying to defend altseason relevance, a clean fork keeps validators aligned and gives builders a predictable runway into Q3 throughput work.",
-      "the_details": [
-        "Hard fork goes live April 29, 2026, targeting performance improvements and fee mechanics.",
-        "Validators and node operators were instructed to upgrade clients ahead of the activation block.",
-        "Upgrade lands as POL underperforms the broad altcoin tape with the CMC altseason index at 39/100."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
-      "category": "infrastructure",
+      "source": "Latham & Watkins US Crypto Policy Tracker",
+      "source_url": "https://www.lw.com/en/us-crypto-policy-tracker/regulatory-developments",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-29T08:00:00Z"
+      "timestamp": "2026-04-29T11:20:00Z"
     },
     {
-      "id": "story-2026-04-29-15-005",
-      "headline": "Stablecoin market sheds $892M as Kelp aftershock pulls USDC down 1% week-on-week",
-      "slug": "stablecoin-market-sheds-892m-usdc-down-week-kelp-aftershock",
-      "tldr": "DeFi unwind from the Kelp breach has carved $892M out of stablecoin float, with USDC slipping ~1% on the week and Tether tightening its grip on share.",
-      "why_it_matters": "Why it matters: Stablecoin float is the cleanest proxy for onchain risk appetite, so a Tether-skewed outflow signals defensive rotation, not capitulation.",
+      "id": "story-2026-04-29-16-005",
+      "headline": "Japan's Bitbank rolls out crypto credit card that pays bills directly in BTC",
+      "slug": "bitbank-japan-crypto-credit-card",
+      "tldr": "Japanese exchange Bitbank launched a credit card letting users settle monthly bills from their on-exchange crypto holdings, with 0.5% cashback paid in BTC.",
+      "why_it_matters": "Why it matters: Direct exchange-to-merchant rails in a G7 jurisdiction normalize crypto as a spending account, not just an investment, and pressure card networks to follow.",
       "the_details": [
-        "Aggregate stablecoin float dropped $892M in the wake of the April 18 KelpDAO breach.",
-        "USDT sits at $189.78B with 59.19% market share, consolidating dominance after exits.",
-        "USDC fell ~$794M between April 19-26 to $77.79B, a 1.01% weekly drawdown."
+        "Bills are deducted from the user's Bitbank balance and converted at the time of statement settlement.",
+        "Cashback is paid back into BTC on the 1st of the month at a flat 0.5% on all qualifying spend.",
+        "Launch follows Japan's 2026 FSA reclassification of crypto as a financial product, easing custodial card-network partnerships."
       ],
-      "source": "Bitcoin Ethereum News",
-      "source_url": "https://bitcoinethereumnews.com/tech/stablecoin-market-sheds-892m-as-kelpdao-breach-triggers-defi-unwind/",
-      "category": "markets",
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/399102/japans-bitbank-crypto-credit-card",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T20:00:00Z"
+      "timestamp": "2026-04-27T23:00:00Z"
     }
   ]
 }
