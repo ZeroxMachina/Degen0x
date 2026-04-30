@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T16:08:00Z",
-  "briefing_id": "briefing-2026-04-30-16",
+  "generated_at": "2026-04-30T17:08:00Z",
+  "briefing_id": "briefing-2026-04-30-17",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-16-001",
-      "headline": "Iran-strike fears hammer crypto: BTC bottoms at $75.7K, ETH at $2.25K week lows",
-      "slug": "iran-strike-fears-hammer-crypto-btc-eth-week-lows",
-      "tldr": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7%.",
-      "why_it_matters": "Why it matters: Risk-off flows are gutting the April rally narrative just as seasonality was set to underwrite a May bid.",
+      "id": "story-2026-04-30-17-001",
+      "headline": "Wasabi Protocol drained for $4.5M after deployer admin key compromise",
+      "slug": "wasabi-protocol-admin-key-hack-4-5m",
+      "tldr": "Attackers seized Wasabi's deployer key, swapped vault contracts to malicious versions, and drained roughly $4.5M across Ethereum and Base.",
+      "why_it_matters": "Why it matters: Admin-key takeovers keep beating audits — every perp DEX without timelocks or multisig deployers is one social-engineered laptop away from being the next Wasabi.",
       "the_details": [
-        "BTC opened $75,752 — lowest since April 22 — before bouncing to $76,130 by 7:18 a.m. ET.",
-        "ETH opened $2,252, lowest since April 13, rebounding to $2,268 alongside BTC's recovery.",
-        "Fear & Greed Index sits at 33 (Fear); Brent crude jumped 7.1% to $126 on Strait of Hormuz chatter."
+        "Compromised key granted attacker admin rights, then upgraded vaults — wWETH, sUSDC, wBITCON, wPEPE, Long Pool on Ethereum got drained.",
+        "Base deployment hit on the same key: sUSDC, wWETH, sBTC, sVIRTUAL, sAERO, sBRETT vaults all swept.",
+        "Brings April 2026 DeFi losses past $606M across 30+ incidents — worst hack month since the Bybit breach."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-april-30-2026-values-moving-lower-each-morning-this-week-113359674.html",
-      "category": "markets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/30/wasabi-protocol-drained-for-usd4-5-million-in-apparent-admin-key-compromise",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-30T15:30:00Z"
+    },
+    {
+      "id": "story-2026-04-30-17-002",
+      "headline": "Lazarus owns April: $577M in two hits drives 76% of 2026 crypto theft",
+      "slug": "lazarus-april-2026-577m-trm-labs",
+      "tldr": "TRM Labs pins 76% of 2026 hack losses on North Korea after $292M KelpDAO and $285M Drift exploits in a single month.",
+      "why_it_matters": "Why it matters: State-actor concentration means defense isn't a protocol problem anymore — it's a geopolitical one, and Treasury's OFAC reach now follows every drained address.",
+      "the_details": [
+        "Drift Protocol attack on April 1 cost $285M; KelpDAO breach on April 18 hit $292M — both attributed to Lazarus.",
+        "Cumulative DPRK theft since 2017 has topped $6 billion per TRM Labs' April 30 report.",
+        "Smaller April hits stack up: Resolv Labs $23M, Grinex $13.74M, Volo $3.5M, CoW Swap $1.2M, Wasabi $4.5M."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs",
+      "category": "security",
       "impact": "high",
       "timestamp": "2026-04-30T13:00:00Z"
     },
     {
-      "id": "story-2026-04-30-16-002",
-      "headline": "Bitcoin spot ETFs bleed third straight day at $138M; ether funds shed $88M",
-      "slug": "bitcoin-etfs-third-straight-outflow-day-138m",
-      "tldr": "Spot BTC ETFs lost $137.77M on April 29, a third consecutive outflow day, led by IBIT and FBTC; ETH ETFs dropped $87.73M.",
-      "why_it_matters": "Why it matters: Three days of outflows undercuts the April-absorbed-$1.7B framing — institutions are de-risking ahead of May macro prints.",
+      "id": "story-2026-04-30-17-003",
+      "headline": "Banks lobby to slow GENIUS Act rollout as Agora sprints for stablecoin charter",
+      "slug": "banks-genius-act-delay-agora-charter",
+      "tldr": "Major US banks are pressing for an extended comment window on stablecoin rulemaking while Agora races to be first chartered under the GENIUS Act.",
+      "why_it_matters": "Why it matters: The first non-bank to land a federal stablecoin charter resets the competitive map — banks know it, which is exactly why they want the clock slowed.",
       "the_details": [
-        "BlackRock IBIT led with -$54.73M; Fidelity FBTC -$36.13M on April 29.",
-        "Ether spot ETFs lost $87.73M in the same session.",
-        "Macro overhang: 30-year US Treasury yield hit 5% as bond rout deepens alongside oil shock."
+        "FDIC notice of proposed rulemaking sets requirements for FDIC-supervised payment stablecoin issuers under the GENIUS Act.",
+        "Bank trade groups requesting longer public comment periods before full implementation kicks in.",
+        "Agora is publicly pushing ahead with charter applications, betting on speed-to-market."
       ],
-      "source": "CryptoTimes",
-      "source_url": "https://www.cryptotimes.io/2026/04/30/crypto-market-today-btc-eth-xrp-slide-as-etf-outflows-deepen/",
-      "category": "markets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/coindesk-news/2026/04/29/banks-push-to-slow-stablecoin-law-as-agora-races-for-charter",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-30T12:30:00Z"
+      "timestamp": "2026-04-30T12:00:00Z"
     },
     {
-      "id": "story-2026-04-30-16-003",
-      "headline": "Western Union picks Solana for May launch of USDPT cross-border stablecoin",
-      "slug": "western-union-usdpt-solana-may-launch",
-      "tldr": "Western Union confirmed USDPT, a Solana-based stablecoin, will launch in May 2026 as an internal cross-border settlement rail.",
-      "why_it_matters": "Why it matters: A 170-year remittance giant routing flows over Solana validates the chain as a real-world payments venue against Tron and Ethereum.",
+      "id": "story-2026-04-30-17-004",
+      "headline": "Bitcoin trading volume in freefall — pattern that rarely ends quietly",
+      "slug": "bitcoin-trading-volume-collapse-warning",
+      "tldr": "BTC volume is collapsing into April's close even as price hovers at $76K, a setup that historically precedes sharp directional moves.",
+      "why_it_matters": "Why it matters: Thin liquidity plus geopolitical risk plus rising 30-year yields at 5% is a coiled spring — when volume returns, gap risk goes both ways.",
       "the_details": [
-        "USDPT launches May 2026 on Solana as WU's internal settlement layer.",
-        "Targets cross-border corridors currently dominated by Tether USDT on Tron.",
-        "Lands days after MoneyGram and Stripe expanded their own stablecoin payout rails."
+        "BTC opened April 30 at $75,752, lowest since mid-month, before bouncing to $76,316 by 8:45am ET.",
+        "Spot BTC ETFs logged $137.77M outflow on April 29 — third consecutive day of bleeding.",
+        "Fear & Greed Index sits at 33; CoinDesk flags falling volume as historically pre-volatile signal."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "adoption",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
+      "category": "bitcoin",
       "impact": "medium",
-      "timestamp": "2026-04-30T11:45:00Z"
+      "timestamp": "2026-04-30T11:00:00Z"
     },
     {
-      "id": "story-2026-04-30-16-004",
-      "headline": "Solana's Alpenglow upgrade targets 80x finality boost: 12s to 150ms in 2026",
-      "slug": "solana-alpenglow-upgrade-finality-150ms",
-      "tldr": "Solana's pending Alpenglow consensus upgrade aims to cut block finality from roughly 12 seconds to about 150 milliseconds — an 80x speed-up.",
-      "why_it_matters": "Why it matters: Sub-second finality reframes Solana as a credible settlement layer for HFT, payments, and CEX-grade UX before any L2 catches up.",
+      "id": "story-2026-04-30-17-005",
+      "headline": "100+ crypto firms pressure Senate to mark up Clarity Act this session",
+      "slug": "crypto-firms-senate-clarity-act-markup",
+      "tldr": "Coinbase, Ripple and over 100 firms signed a letter urging the Senate Banking Committee to advance the Clarity Act on market structure.",
+      "why_it_matters": "Why it matters: SEC-CFTC joint guidance only goes so far — without statutory clarity, every token issuer still trades under enforcement risk that capital won't tolerate forever.",
       "the_details": [
-        "Finality drops from ~12,000ms to ~150ms — roughly 80x faster.",
-        "Replaces TowerBFT with new Votor and Rotor consensus components.",
-        "Rollout scheduled across 2026 with testnet activation already underway."
+        "Letter targets Senate Banking Committee markup, citing March 17 SEC-CFTC joint interpretive release as foundation.",
+        "Industry argues delay risks pushing tokenized assets and stablecoin issuance offshore despite GENIUS Act passage.",
+        "Form 1099-DA cost-basis reporting now in effect for brokers, raising compliance stakes for unregulated venues."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/01/03/ethereum-and-solana-set-the-stage-for-2026-s-defi-reboot",
-      "category": "infrastructure",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-30T10:30:00Z"
-    },
-    {
-      "id": "story-2026-04-30-16-005",
-      "headline": "AllUnity ports MiCA-compliant EURAU euro stablecoin to Solana",
-      "slug": "allunity-eurau-euro-stablecoin-solana",
-      "tldr": "Germany's AllUnity expanded its MiCA-compliant EURAU euro stablecoin to Solana as the euro-pegged market doubled since early 2025.",
-      "why_it_matters": "Why it matters: Euro liquidity on Solana stacked with WU's USDPT positions the chain as a multi-fiat onchain payments hub, not just a memecoin venue.",
-      "the_details": [
-        "EURAU now lives on Solana alongside its existing Ethereum deployment.",
-        "Euro stablecoin market cap has doubled since January 2025 on MiCA tailwinds.",
-        "AllUnity is backed by DWS, Flow Traders, and Galaxy under German BaFin oversight."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "defi",
-      "impact": "medium",
-      "timestamp": "2026-04-30T09:15:00Z"
+      "timestamp": "2026-04-30T10:00:00Z"
     }
   ]
 }

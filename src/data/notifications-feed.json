@@ -1,10 +1,42 @@
 [
   {
+    "id": "feed-2026-04-30-034",
+    "type": "news",
+    "title": "📰 Wasabi Protocol drained for $4.5M after deployer admin key compromise",
+    "message": "Attackers seized Wasabi's deployer key, swapped vault contracts to malicious versions, and drained roughly $4.5M across Ethereum and Base.",
+    "actionUrl": "/news",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-024",
+    "type": "news",
+    "title": "📰 AllUnity ports MiCA-compliant EURAU euro stablecoin to Solana",
+    "message": "DWS-backed AllUnity is taking EURAU multi-chain — the deep-dive on MiCA's EMT track and what licensed euro stablecoins mean for EU on-chain payments.",
+    "actionUrl": "/learn/mica-regulation-eu-crypto-compliance-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-023",
+    "type": "news",
+    "title": "📰 Bitcoin spot ETFs bleed third straight day at $138M; ether funds shed $88M",
+    "message": "Three consecutive outflow days led by IBIT and FBTC undercut the April-absorbed-$1.7B framing — the institutional-flow guide on what it signals.",
+    "actionUrl": "/learn/bitcoin-etf-institutional-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-022",
+    "type": "system",
+    "title": "🛠 ETF Tracker — live spot BTC + ETH flow board",
+    "message": "Watching the third outflow day live? Our ETF tracker surfaces IBIT, FBTC and ETH spot flows so you can see the rotation in real time.",
+    "actionUrl": "/tools/etf-tracker",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-021",
     "type": "news",
     "title": "📰 Iran-strike fears hammer crypto: BTC bottoms at $75.7K, ETH at $2.25K week lows",
-    "message": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7%.",
-    "actionUrl": "/news",
+    "message": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7% — the safe-haven framing under a geopolitical shock.",
+    "actionUrl": "/learn/bitcoin-safe-haven-guide-2026",
     "date": "2026-04-30"
   },
   {
@@ -204,38 +236,6 @@
     "type": "news",
     "title": "📰 Aave bleeds $8.45B in 48 hours as DeFi TVL craters $13B post-KelpDAO",
     "message": "Aave depositors yanked $8.45B in two days after attackers used stolen rsETH as collateral, dragging DeFi TVL down $13.21B.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-009",
-    "type": "news",
-    "title": "📰 SEC-CFTC joint guidance puts BTC, ETH, SOL, XRP, LINK in 'digital commodity' bucket",
-    "message": "A landmark joint interpretation between the SEC and CFTC sorts crypto assets into five legal categories, ending years of jurisdictional limbo.",
-    "actionUrl": "/learn/sec-cftc-digital-commodity-classification-guide-2026",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-008",
-    "type": "news",
-    "title": "📰 Bitcoin spot volume cracks below $8B, lowest since October 2023",
-    "message": "Bitcoin's daily spot turnover has slipped under $8 billion, the thinnest tape in 18 months and a setup that historically precedes outsized moves.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-007",
-    "type": "news",
-    "title": "📰 Aave goes live natively on Solana, $15B lending stack lands on the L1",
-    "message": "Aave deployed natively on Solana via Sunrise DeFi, opening its $15B global lending pool to Solana wallets and frontends.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-006",
-    "type": "news",
-    "title": "📰 Powell's last FOMC: 99% hold odds at 3.50-3.75% as crypto derisks $200M into the print",
-    "message": "Traders price near 99% odds the Fed holds at 3.50-3.75% in Powell's final meeting as Chair, with $200M of crypto positioning unwound ahead of the 2pm ET decision.",
     "actionUrl": "/news",
     "date": "2026-04-29"
   }
