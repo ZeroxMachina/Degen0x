@@ -1,5 +1,37 @@
 [
   {
+    "id": "feed-2026-04-30-018",
+    "type": "news",
+    "title": "📰 GENIUS Act dual-track: $10B threshold splits issuers between state regimes and OCC",
+    "message": "Treasury's stablecoin framework lets sub-$10B issuers opt into qualifying state regimes while $10B+ issuers move to OCC supervision — the deep-dive on the new classification map.",
+    "actionUrl": "/learn/sec-cftc-digital-commodity-classification-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-017",
+    "type": "news",
+    "title": "📰 Banks ask Treasury to delay GENIUS Act 60 days as OCC framework lags",
+    "message": "Banking groups are lobbying for stacked 60-day comment extensions on three GENIUS Act stablecoin rules — a successful delay drags issuer licensing into late 2026.",
+    "actionUrl": "/learn/genius-act-stablecoin-guide",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-016",
+    "type": "news",
+    "title": "📰 Pump.fun pivots to value capture: 50% of revenue, perpetual buyback-burn",
+    "message": "After years of mercenary memecoin supply, Pump.fun's permanent buyback-and-burn is the most aggressive token-revenue alignment yet from a top-five Solana fee generator.",
+    "actionUrl": "/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-015",
+    "type": "news",
+    "title": "📰 Pump.fun torches $370M of PUMP, sets new bar for memecoin tokenomics",
+    "message": "Solana's top memecoin launchpad burned $370M of PUMP and locked in a 50% revenue buyback — the tokenomics deep-dive on what changed.",
+    "actionUrl": "/learn/pump-fun-memecoins",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-014",
     "type": "news",
     "title": "📰 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities",
