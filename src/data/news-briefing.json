@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T15:08:00Z",
-  "briefing_id": "briefing-2026-04-30-15",
+  "generated_at": "2026-04-30T16:08:00Z",
+  "briefing_id": "briefing-2026-04-30-16",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-15-001",
-      "headline": "Lazarus owns April: crypto hack toll crests $620M, 95% from one DPRK crew",
-      "slug": "lazarus-owns-april-crypto-hack-toll-620m-dprk",
-      "tldr": "April 2026 is the worst month for crypto theft since February 2025, with $620M+ drained across 12 incidents and Lazarus behind the two biggest.",
-      "why_it_matters": "Why it matters: Two cross-chain bridges and a single compromised admin key gave one nation-state nearly $580M — the attack surface narrative is no longer code, it's keys and people.",
+      "id": "story-2026-04-30-16-001",
+      "headline": "Iran-strike fears hammer crypto: BTC bottoms at $75.7K, ETH at $2.25K week lows",
+      "slug": "iran-strike-fears-hammer-crypto-btc-eth-week-lows",
+      "tldr": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7%.",
+      "why_it_matters": "Why it matters: Risk-off flows are gutting the April rally narrative just as seasonality was set to underwrite a May bid.",
       "the_details": [
-        "Kelp DAO bridge drained for $292M on April 19, freezing rsETH collateral across Aave, SparkLend, Fluid and Upshift.",
-        "Drift Protocol lost $285M on April 1 via fake-token oracle manipulation through a compromised admin key.",
-        "Year-to-date 2026 theft hits ~$771.8M across 47 incidents, per April recap data."
+        "BTC opened $75,752 — lowest since April 22 — before bouncing to $76,130 by 7:18 a.m. ET.",
+        "ETH opened $2,252, lowest since April 13, rebounding to $2,268 alongside BTC's recovery.",
+        "Fear & Greed Index sits at 33 (Fear); Brent crude jumped 7.1% to $126 on Strait of Hormuz chatter."
       ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-april-30-2026-values-moving-lower-each-morning-this-week-113359674.html",
+      "category": "markets",
       "impact": "high",
       "timestamp": "2026-04-30T13:00:00Z"
     },
     {
-      "id": "story-2026-04-30-15-002",
-      "headline": "Banks push to slow GENIUS Act rollout as Agora races OCC for stablecoin charter",
-      "slug": "banks-push-slow-genius-act-agora-occ-charter",
-      "tldr": "Major U.S. banks are asking regulators for extended GENIUS Act comment windows while crypto-native issuer Agora sprints to lock in an OCC charter first.",
-      "why_it_matters": "Why it matters: First-mover advantage on a federal stablecoin charter could lock in a multi-year moat — banks know it, which is why they're trying to slow the clock.",
+      "id": "story-2026-04-30-16-002",
+      "headline": "Bitcoin spot ETFs bleed third straight day at $138M; ether funds shed $88M",
+      "slug": "bitcoin-etfs-third-straight-outflow-day-138m",
+      "tldr": "Spot BTC ETFs lost $137.77M on April 29, a third consecutive outflow day, led by IBIT and FBTC; ETH ETFs dropped $87.73M.",
+      "why_it_matters": "Why it matters: Three days of outflows undercuts the April-absorbed-$1.7B framing — institutions are de-risking ahead of May macro prints.",
       "the_details": [
-        "Banking groups want extended public comment periods on FDIC and OCC stablecoin rulemakings before full implementation.",
-        "Agora is filing for federal trust charter to issue stablecoins under direct OCC oversight.",
-        "GENIUS Act enacted late 2025 splits issuers by size — sub-$10B can opt into state regimes, $10B+ move to OCC."
+        "BlackRock IBIT led with -$54.73M; Fidelity FBTC -$36.13M on April 29.",
+        "Ether spot ETFs lost $87.73M in the same session.",
+        "Macro overhang: 30-year US Treasury yield hit 5% as bond rout deepens alongside oil shock."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/coindesk-news/2026/04/29/banks-push-to-slow-stablecoin-law-as-agora-races-for-charter",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-29T20:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-15-003",
-      "headline": "BTC closes April defensive at $76K even as ETFs absorb $1.7B, biggest haul since October",
-      "slug": "btc-closes-april-defensive-76k-etf-inflows-biggest-since-october",
-      "tldr": "Bitcoin enters May on the back foot near $76,130 even as spot BTC ETFs absorbed roughly $1.7B in April — the largest monthly inflow since October 2025.",
-      "why_it_matters": "Why it matters: Institutional bid is the only thing keeping BTC propped against 5% 30-year yields and Iran tape — strip ETF flows and the chart looks materially worse.",
-      "the_details": [
-        "BTC opened April 30 at $75,752, lowest since April 13, before bouncing to $76,130 by 7:18 a.m. ET.",
-        "April crypto market cap rose ~10% to ~$2.7T; BTC +16% on the month, ETH +14% to ~$2,268.",
-        "Macro headwinds — U.S. 30-year yields at 5%, Iran energy risk — capping further upside into May."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
-      "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-30T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-15-004",
-      "headline": "BTC spot volume craters into month-end, setting up an asymmetric vol break",
-      "slug": "btc-spot-volume-craters-month-end-asymmetric-vol-break",
-      "tldr": "Bitcoin trading volume is falling fast heading into May, a setup that historically resolves with violent directional moves rather than slow drift.",
-      "why_it_matters": "Why it matters: Compressed volume plus crowded long funding equals trapdoor risk on either side — options desks are pricing wider tails into the May FOMC window.",
-      "the_details": [
-        "Spot volumes on top venues at multi-month lows even as ETF flows stay positive.",
-        "Whale wallets adding longs while perps funding stays deeply negative — a rare divergence.",
-        "Analysts flag $80K overhead resistance and $73K macro support as next break levels."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
+      "source": "CryptoTimes",
+      "source_url": "https://www.cryptotimes.io/2026/04/30/crypto-market-today-btc-eth-xrp-slide-as-etf-outflows-deepen/",
       "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-29T18:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-30T12:30:00Z"
     },
     {
-      "id": "story-2026-04-30-15-005",
-      "headline": "TOKEN2049 Dubai shoved to 2027 as UAE security risks force flagship event delay",
-      "slug": "token2049-dubai-pushed-2027-uae-security-risks",
-      "tldr": "Organizers postponed TOKEN2049 Dubai to 2027 citing heightened regional security risks in the UAE tied to the ongoing Iran conflict.",
-      "why_it_matters": "Why it matters: The Gulf has become crypto's de facto deal venue — losing the year's biggest Middle East summit reroutes BD pipelines and capital intros for 12+ months.",
+      "id": "story-2026-04-30-16-003",
+      "headline": "Western Union picks Solana for May launch of USDPT cross-border stablecoin",
+      "slug": "western-union-usdpt-solana-may-launch",
+      "tldr": "Western Union confirmed USDPT, a Solana-based stablecoin, will launch in May 2026 as an internal cross-border settlement rail.",
+      "why_it_matters": "Why it matters: A 170-year remittance giant routing flows over Solana validates the chain as a real-world payments venue against Tron and Ethereum.",
       "the_details": [
-        "Decision driven by escalating regional tensions and energy-market volatility, per organizers.",
-        "TOKEN2049 Singapore remains the flagship Asia event for 2026; Dubai now slated to return 2027.",
-        "Knock-on effect on side-event sponsors and token launch calendars eyeing UAE liquidity."
+        "USDPT launches May 2026 on Solana as WU's internal settlement layer.",
+        "Targets cross-border corridors currently dominated by Tether USDT on Tron.",
+        "Lands days after MoneyGram and Stripe expanded their own stablecoin payout rails."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-29T15:00:00Z"
+      "timestamp": "2026-04-30T11:45:00Z"
+    },
+    {
+      "id": "story-2026-04-30-16-004",
+      "headline": "Solana's Alpenglow upgrade targets 80x finality boost: 12s to 150ms in 2026",
+      "slug": "solana-alpenglow-upgrade-finality-150ms",
+      "tldr": "Solana's pending Alpenglow consensus upgrade aims to cut block finality from roughly 12 seconds to about 150 milliseconds — an 80x speed-up.",
+      "why_it_matters": "Why it matters: Sub-second finality reframes Solana as a credible settlement layer for HFT, payments, and CEX-grade UX before any L2 catches up.",
+      "the_details": [
+        "Finality drops from ~12,000ms to ~150ms — roughly 80x faster.",
+        "Replaces TowerBFT with new Votor and Rotor consensus components.",
+        "Rollout scheduled across 2026 with testnet activation already underway."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/01/03/ethereum-and-solana-set-the-stage-for-2026-s-defi-reboot",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-30T10:30:00Z"
+    },
+    {
+      "id": "story-2026-04-30-16-005",
+      "headline": "AllUnity ports MiCA-compliant EURAU euro stablecoin to Solana",
+      "slug": "allunity-eurau-euro-stablecoin-solana",
+      "tldr": "Germany's AllUnity expanded its MiCA-compliant EURAU euro stablecoin to Solana as the euro-pegged market doubled since early 2025.",
+      "why_it_matters": "Why it matters: Euro liquidity on Solana stacked with WU's USDPT positions the chain as a multi-fiat onchain payments hub, not just a memecoin venue.",
+      "the_details": [
+        "EURAU now lives on Solana alongside its existing Ethereum deployment.",
+        "Euro stablecoin market cap has doubled since January 2025 on MiCA tailwinds.",
+        "AllUnity is backed by DWS, Flow Traders, and Galaxy under German BaFin oversight."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-30T09:15:00Z"
     }
   ]
 }

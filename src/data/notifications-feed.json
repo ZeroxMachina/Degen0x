@@ -1,5 +1,21 @@
 [
   {
+    "id": "feed-2026-04-30-021",
+    "type": "news",
+    "title": "📰 Iran-strike fears hammer crypto: BTC bottoms at $75.7K, ETH at $2.25K week lows",
+    "message": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7%.",
+    "actionUrl": "/news",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-020",
+    "type": "system",
+    "title": "🛠 New tool: Stablecoin Charter Tracker (GENIUS Act issuer status)",
+    "message": "Live status for who has filed for, received, or is exempt from a federal OCC trust charter under the GENIUS Act — Circle, Agora, Tether USA₮, Paxos, Ripple RLUSD and more.",
+    "actionUrl": "/tools/stablecoin-charter-tracker",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-019",
     "type": "news",
     "title": "📰 Lazarus owns April: crypto hack toll crests $620M, 95% from one DPRK crew",
@@ -220,22 +236,6 @@
     "type": "news",
     "title": "📰 Powell's last FOMC: 99% hold odds at 3.50-3.75% as crypto derisks $200M into the print",
     "message": "Traders price near 99% odds the Fed holds at 3.50-3.75% in Powell's final meeting as Chair, with $200M of crypto positioning unwound ahead of the 2pm ET decision.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-005",
-    "type": "news",
-    "title": "📰 DeFi United war chest tops 100K ETH as Consensys, Bitmine pile into rsETH rescue",
-    "message": "Consensys pledged up to 30,000 ETH and Bitmine added 101,901 ETH as the Kelp DAO recovery fund crosses 100K ETH this week.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-004",
-    "type": "news",
-    "title": "📰 Bitcoin loses $77K as Hormuz oil shock and Fed jitters crush risk appetite",
-    "message": "BTC fell ~3% below $77,000 Tuesday after twice failing $80K, dragging ETH and SOL down as oil topped $100.",
     "actionUrl": "/news",
     "date": "2026-04-29"
   }
