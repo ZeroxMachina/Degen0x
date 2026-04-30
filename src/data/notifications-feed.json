@@ -1,5 +1,53 @@
 [
   {
+    "id": "feed-2026-04-30-040",
+    "type": "news",
+    "title": "📰 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities in joint guidance",
+    "message": "A joint SEC-CFTC interpretation establishes a token taxonomy that explicitly carves the top five names out of securities law.",
+    "actionUrl": "/news",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-039",
+    "type": "news",
+    "title": "📰 100+ crypto firms push Senate to mark up CLARITY Act this session",
+    "message": "Industry signs an open letter demanding a market-structure markup — the deep-dive on what CLARITY codifies and the path to law.",
+    "actionUrl": "/learn/clarity-act-crypto-guide",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-038",
+    "type": "news",
+    "title": "📰 Bitcoin trading volume in freefall — pattern that rarely ends quietly",
+    "message": "Why thinning BTC participation into FOMC tends to resolve into defensive regimes — how the safe-haven framing reads from here.",
+    "actionUrl": "/learn/bitcoin-safe-haven-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-037",
+    "type": "news",
+    "title": "📰 Banks lobby to slow GENIUS Act as Agora sprints for stablecoin charter",
+    "message": "60-day delay request meets Agora's federal-charter sprint — the deep-dive on the OCC framework, dual-track rules and what changes if rollout slips.",
+    "actionUrl": "/learn/genius-act-stablecoin-guide",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-036",
+    "type": "news",
+    "title": "📰 Lazarus owns April: $577M in two hits drives 76% of 2026 crypto theft",
+    "message": "TRM Labs pins KelpDAO + Drift drains on the DPRK crew — TTPs, laundering paths and OFAC reach in the canonical Lazarus guide.",
+    "actionUrl": "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-035",
+    "type": "news",
+    "title": "📰 Wasabi Protocol drained for $4.5M after deployer admin-key compromise",
+    "message": "Single-EOA admin key swapped vault contracts on Ethereum + Base — multisig deployers and timelocks close this exact attack path.",
+    "actionUrl": "/learn/multisig-wallets-shared-crypto-security-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-034",
     "type": "news",
     "title": "📰 Wasabi Protocol drained for $4.5M after deployer admin key compromise",
@@ -190,53 +238,5 @@
     "message": "MegaETH ships its token generation event and opens claims, putting the real-time L2 thesis on the public market.",
     "actionUrl": "/learn/megaeth-real-time-blockchain-layer-2-guide-2026",
     "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-001",
-    "type": "news",
-    "title": "📰 April crypto hacks crack $620M after Kelp DAO and Drift back-to-back drains",
-    "message": "April losses from crypto exploits topped $620M across 12 incidents, the worst single month since February 2025 and 3x Q1 combined.",
-    "actionUrl": "/learn/drift-protocol-285m-hack-analysis-2026",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-29-027",
-    "type": "news",
-    "title": "📰 FOMC decision lands tomorrow with BTC pinned at $77,794 and bid thinning",
-    "message": "Bitcoin holds $77,794 into the April 30 FOMC after stalling 2% below Wednesday's $79,388 high as ether, XRP and SOL all close red.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-013",
-    "type": "news",
-    "title": "📰 Bitcoin spot volume crashes below $8B — lowest since October 2023",
-    "message": "Spot BTC volume slipped under $8 billion this week, the thinnest tape since late 2023, leaving prices exposed to violent moves.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-012",
-    "type": "news",
-    "title": "📰 DeFi coalition unveils 116,500 rsETH recovery blueprint for $292M Kelp DAO exploit",
-    "message": "A DeFi United-led group published a step-by-step plan to re-back the 116,500 unbacked rsETH minted in this month's Kelp DAO bridge hack.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-011",
-    "type": "news",
-    "title": "📰 Bitcoin slides to $76,340 ahead of Fed as $80K rejection draws third straight failure",
-    "message": "BTC opened 1.3% lower at $76,340 Wednesday, with Coinbase premium turning negative as traders brace for the Fed decision later today.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-010",
-    "type": "news",
-    "title": "📰 Aave bleeds $8.45B in 48 hours as DeFi TVL craters $13B post-KelpDAO",
-    "message": "Aave depositors yanked $8.45B in two days after attackers used stolen rsETH as collateral, dragging DeFi TVL down $13.21B.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
   }
 ]
