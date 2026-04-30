@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-29T23:08:14Z",
-  "briefing_id": "briefing-2026-04-29-23",
+  "generated_at": "2026-04-30T00:08:00Z",
+  "briefing_id": "briefing-2026-04-30-00",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-29-23-001",
-      "headline": "FOMC decision lands tomorrow with BTC pinned at $77,794 and bid thinning",
-      "slug": "fomc-april-30-bitcoin-pinned-77k",
-      "tldr": "Bitcoin holds $77,794 into the April 30 FOMC after stalling 2% below Wednesday's $79,388 high as ether, XRP and SOL all close red.",
-      "why_it_matters": "Why it matters: A hawkish surprise lands on a thin order book \u2014 spot volume just hit the lowest since October 2023 \u2014 so any Powell pivot or tape-bomb gets amplified into outsized moves.",
+      "id": "story-2026-04-30-00-001",
+      "headline": "April crypto hacks crack $620M after Kelp DAO and Drift back-to-back drains",
+      "slug": "april-2026-crypto-hacks-620m-kelp-drift",
+      "tldr": "April losses from crypto exploits topped $620M across 12 incidents, the worst single month since February 2025 and 3x Q1 combined.",
+      "why_it_matters": "Why it matters: Cross-chain bridges and admin keys are bleeding faster than insurance funds, freezing DeFi blue chips and validating institutional reluctance to hold protocol risk on-chain.",
       "the_details": [
-        "BTC trades $77,794 on April 29, +0.4% over 24h but $1,594 off Wednesday's intraday high.",
-        "FOMC announces rates April 30 \u2014 third meeting of 2026 and first since the April ETF inflow wave.",
-        "ETH, XRP and SOL all closed in the red, signaling risk-off positioning ahead of the print."
+        "Kelp DAO lost $292M on April 19 after an attacker drained 116,500 rsETH (~18% of supply) via the LayerZero bridge.",
+        "Drift Protocol shed $285M on April 1 in a North Korea-linked social-engineering attack using pre-signed authorizations.",
+        "Aave, SparkLend, Fluid, Upshift and CoW Swap all triggered emergency freezes during the Kelp aftermath."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
+      "source": "Live Bitcoin News",
+      "source_url": "https://www.livebitcoinnews.com/april-2026-crypto-hacks-hit-620m-as-bridge-failures-and-admin-exploits-dominate-attacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-29T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-30-00-002",
+      "headline": "MegaETH token generation event lands today after years of fast-L2 hype",
+      "slug": "megaeth-tge-april-30-2026",
+      "tldr": "MegaETH's MEGA token launches today, finally putting a price on Ethereum's most-anticipated real-time Layer 2.",
+      "why_it_matters": "Why it matters: A live MEGA market lets the market re-rate the entire fast-L2 thesis — Base, Arbitrum and Optimism now compete with a chain pitching 100k TPS sub-10ms blocks.",
+      "the_details": [
+        "TGE date confirmed for April 30, 2026 in CoinDesk's Crypto Week Ahead schedule.",
+        "MegaETH targets 100,000 TPS with 10ms block times, positioning as the fastest Ethereum L2 in production.",
+        "Listing flow will test whether 2026's altcoin season index — currently 33-38/100 — has any capacity for new high-FDV launches."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-30T00:00:00Z"
+    },
+    {
+      "id": "story-2026-04-30-00-003",
+      "headline": "Five-front macro pile-on hits today: FOMC, ECB, BoE, US Q1 GDP and PCE",
+      "slug": "macro-pile-on-april-30-2026-fomc-ecb-boe-gdp-pce",
+      "tldr": "Crypto faces the densest macro print of the quarter today as Fed, ECB and BoE all decide rates while US Q1 GDP and March PCE drop in the same window.",
+      "why_it_matters": "Why it matters: Three central banks plus two top-tier US data prints means BTC's compressed implied vol gets one shot to break — directionally, the move sets the tone for May.",
+      "the_details": [
+        "Bank of England and ECB rate decisions, US Q1 GDP, March PCE Price Index and Initial Jobless Claims all land April 30.",
+        "BTC enters the day pinned near $77,794 with spot volume below $8B, the thinnest tape since October 2023.",
+        "Spot Bitcoin ETFs absorbed roughly $1.7B in April, the largest monthly haul since October 2025."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-29T23:08:14Z"
+      "timestamp": "2026-04-30T00:00:00Z"
     },
     {
-      "id": "story-2026-04-29-23-002",
-      "headline": "Strategy's STRC swallowed 77,000 BTC YTD \u2014 9.6x every US spot ETF combined",
-      "slug": "strategy-strc-77000-btc-dwarfs-etfs",
-      "tldr": "Saylor's STRC vehicle has hoovered roughly 77,000 BTC in 2026 versus just 8,000 BTC of net inflows across every US spot Bitcoin ETF combined, per River.",
-      "why_it_matters": "Why it matters: One balance-sheet buyer is now the marginal price-setter for Bitcoin \u2014 not BlackRock, not Fidelity \u2014 concentrating supply risk in a single Nasdaq-listed equity story.",
+      "id": "story-2026-04-30-00-004",
+      "headline": "Meta pays creators in stablecoins via Stripe as Visa rail hits $7B run rate",
+      "slug": "meta-stablecoin-creator-payouts-visa-7b-run-rate",
+      "tldr": "Meta is now paying select creators in stablecoins through Stripe while Visa's stablecoin settlement network reaches a $7B annualized volume.",
+      "why_it_matters": "Why it matters: Stablecoins just crossed from crypto rail into mainstream payouts — Web2 distribution at this scale is what bank-issued stablecoins under the GENIUS Act were built for.",
       "the_details": [
-        "STRC pulled in 77,000 BTC YTD, dwarfing the 8,000 BTC net for all US spot BTC ETFs combined.",
-        "MSTR stock jumped 37% after April's $2.54B BTC purchase announcement, per Bitcoin Magazine.",
-        "River projects Strategy could cross 1 million BTC of holdings by late 2026 if pace holds."
+        "Meta's creator payout pilot uses Stripe-issued stablecoins, expanding beyond bank-only disbursements.",
+        "Visa's stablecoin settlement volume now runs at roughly $7B annualized after recent corridor expansion.",
+        "FDIC opened GENIUS Act stablecoin rulemaking in April, putting bank issuers on a clearer compliance path."
       ],
-      "source": "Bitcoin.com News",
-      "source_url": "https://news.bitcoin.com/strategy-could-reach-1-million-bitcoin-by-late-2026-river-notes-strc-inflows-dwarf-etf-net-gains/",
-      "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-29T23:08:14Z"
-    },
-    {
-      "id": "story-2026-04-29-23-003",
-      "headline": "SEC-CFTC joint guidance ratifies BTC, ETH, SOL, XRP, LINK as digital commodities",
-      "slug": "sec-cftc-joint-token-taxonomy-april-2026",
-      "tldr": "The SEC and CFTC inked a joint interpretation declaring most digital assets non-securities and naming BTC, ETH, SOL, XRP and LINK as digital commodities.",
-      "why_it_matters": "Why it matters: The two-year jurisdictional standoff is over on paper \u2014 exchanges can list these five without an SEC registration overhang, unlocking institutional desks that were sidelined on legal risk.",
-      "the_details": [
-        "Joint interpretation creates a five-bucket taxonomy: digital commodities, collectibles, tools, stablecoins, securities.",
-        "BTC, ETH, SOL, XRP, LINK explicitly named as digital commodities under CFTC oversight.",
-        "Lands amid GENIUS Act stablecoin rulemakings \u2014 FDIC (April 7), Treasury (April 3), FinCEN/OFAC (April 8)."
-      ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-29T23:08:14Z"
-    },
-    {
-      "id": "story-2026-04-29-23-004",
-      "headline": "DeFi United closes 100,000 ETH war-chest to backstop rsETH after $292M KelpDAO drain",
-      "slug": "defi-united-100k-eth-rseth-recovery",
-      "tldr": "A DeFi United coalition raised over 100,000 ETH to restore rsETH backing after the April 18 LayerZero-vector exploit drained roughly $292 million from KelpDAO.",
-      "why_it_matters": "Why it matters: Community recapitalization \u2014 not a Tether-style bailout \u2014 sets the new norm for cross-chain LRT failures, but it locks restakers into multi-month redemption queues to absorb the loss.",
-      "the_details": [
-        "100,000+ ETH committed to make rsETH holders whole after the April 18 bridge exploit.",
-        "KelpDAO breach drained ~$292M, the largest DeFi exploit of 2026 and 95% of April losses with Drift.",
-        "Jefferies warns the marquee hacks could chill Wall Street's near-term DeFi tokenization appetite."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/news-analysis/2026/04/19/defi-is-dead-crypto-community-scrambles-after-usd292-million-hack-exposes-cross-chain-risks",
-      "category": "defi",
-      "impact": "medium",
-      "timestamp": "2026-04-29T23:08:14Z"
-    },
-    {
-      "id": "story-2026-04-29-23-005",
-      "headline": "Morgan Stanley and JPMorgan turn Consensus Miami sponsors as TradFi crashes May 5-7",
-      "slug": "consensus-miami-morgan-stanley-jpmorgan-sponsors",
-      "tldr": "Morgan Stanley and JPMorgan are sponsoring \u2014 not just speaking at \u2014 Consensus Miami May 5-7, headlining the most institutional-heavy lineup the conference has hosted.",
-      "why_it_matters": "Why it matters: Bulge-bracket sponsorships convert crypto from satellite to core line item in TradFi marketing budgets \u2014 a structural buy signal even if BTC chops sideways into the event.",
-      "the_details": [
-        "Morgan Stanley and JPMorgan listed as sponsors, not just speakers, per CoinDesk reporting.",
-        "Conference dates May 5-7 in Miami with federal policymakers and crypto pioneers on bill.",
-        "Marks first time both bulge-brackets have committed sponsorship dollars to a Consensus event."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch",
+      "source": "Crypto.news",
+      "source_url": "https://crypto.news/bitget-research-bitcoin-outlook-april-2026/",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-29T23:08:14Z"
+      "timestamp": "2026-04-29T15:00:00Z"
+    },
+    {
+      "id": "story-2026-04-30-00-005",
+      "headline": "Western Union to launch USDPT stablecoin on Solana as May settlement rail",
+      "slug": "western-union-usdpt-solana-may-2026",
+      "tldr": "Western Union confirmed a May 2026 launch for USDPT, a US-dollar stablecoin built on Solana for institutional cross-border settlement.",
+      "why_it_matters": "Why it matters: A 170-year-old remittance giant choosing Solana over Ethereum or a private chain hands SOL its strongest TradFi distribution proof point yet.",
+      "the_details": [
+        "USDPT will go live in May 2026 as Western Union's institutional settlement token.",
+        "Solana hits the launch with Alpenglow consensus rolling out, cutting confirmation times further.",
+        "SOL trades near $85.97 with the altcoin season index at 33-38/100, leaving headroom if the WU news lands."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/01/03/ethereum-and-solana-set-the-stage-for-2026-s-defi-reboot",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-29T18:00:00Z"
     }
   ]
 }
