@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T00:08:00Z",
-  "briefing_id": "briefing-2026-04-30-00",
+  "generated_at": "2026-04-30T11:08:00Z",
+  "briefing_id": "briefing-2026-04-30-11",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-00-001",
-      "headline": "April crypto hacks crack $620M after Kelp DAO and Drift back-to-back drains",
-      "slug": "april-2026-crypto-hacks-620m-kelp-drift",
-      "tldr": "April losses from crypto exploits topped $620M across 12 incidents, the worst single month since February 2025 and 3x Q1 combined.",
-      "why_it_matters": "Why it matters: Cross-chain bridges and admin keys are bleeding faster than insurance funds, freezing DeFi blue chips and validating institutional reluctance to hold protocol risk on-chain.",
+      "id": "story-2026-04-30-11-001",
+      "headline": "Fed holds at 3.75% with 4 dissents — most since 1992 — as Powell exits May 15",
+      "slug": "fed-holds-3-75-four-dissents-powell-exit",
+      "tldr": "The FOMC kept the policy band at 3.75% but four officials dissented, the widest split since 1992, capping Powell's final presser before his May 15 term end.",
+      "why_it_matters": "Why it matters: A fractured committee plus a chair handover injects policy-path uncertainty just as crypto risk leans into a quiet-tape rate hold.",
       "the_details": [
-        "Kelp DAO lost $292M on April 19 after an attacker drained 116,500 rsETH (~18% of supply) via the LayerZero bridge.",
-        "Drift Protocol shed $285M on April 1 in a North Korea-linked social-engineering attack using pre-signed authorizations.",
-        "Aave, SparkLend, Fluid, Upshift and CoW Swap all triggered emergency freezes during the Kelp aftermath."
+        "Hold matched ~95% market-implied odds, but four dissents was the highest count at any FOMC since 1992.",
+        "Powell confirmed May 15, 2026 as his final day as chair; succession watch now drives front-end pricing.",
+        "BTC drifted 0.37% lower to $76,177 post-decision; ETH slipped 0.95% to $2,267 as rate-cut optimism cooled."
       ],
-      "source": "Live Bitcoin News",
-      "source_url": "https://www.livebitcoinnews.com/april-2026-crypto-hacks-hit-620m-as-bridge-failures-and-admin-exploits-dominate-attacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-29T20:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-00-002",
-      "headline": "MegaETH token generation event lands today after years of fast-L2 hype",
-      "slug": "megaeth-tge-april-30-2026",
-      "tldr": "MegaETH's MEGA token launches today, finally putting a price on Ethereum's most-anticipated real-time Layer 2.",
-      "why_it_matters": "Why it matters: A live MEGA market lets the market re-rate the entire fast-L2 thesis — Base, Arbitrum and Optimism now compete with a chain pitching 100k TPS sub-10ms blocks.",
-      "the_details": [
-        "TGE date confirmed for April 30, 2026 in CoinDesk's Crypto Week Ahead schedule.",
-        "MegaETH targets 100,000 TPS with 10ms block times, positioning as the fastest Ethereum L2 in production.",
-        "Listing flow will test whether 2026's altcoin season index — currently 33-38/100 — has any capacity for new high-FDV launches."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
-      "category": "infrastructure",
-      "impact": "high",
-      "timestamp": "2026-04-30T00:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-00-003",
-      "headline": "Five-front macro pile-on hits today: FOMC, ECB, BoE, US Q1 GDP and PCE",
-      "slug": "macro-pile-on-april-30-2026-fomc-ecb-boe-gdp-pce",
-      "tldr": "Crypto faces the densest macro print of the quarter today as Fed, ECB and BoE all decide rates while US Q1 GDP and March PCE drop in the same window.",
-      "why_it_matters": "Why it matters: Three central banks plus two top-tier US data prints means BTC's compressed implied vol gets one shot to break — directionally, the move sets the tone for May.",
-      "the_details": [
-        "Bank of England and ECB rate decisions, US Q1 GDP, March PCE Price Index and Initial Jobless Claims all land April 30.",
-        "BTC enters the day pinned near $77,794 with spot volume below $8B, the thinnest tape since October 2023.",
-        "Spot Bitcoin ETFs absorbed roughly $1.7B in April, the largest monthly haul since October 2025."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "source": "CoinGabbar",
+      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/fed-interest-rate-us-inflation-powell-fomc-meeting-update-2026",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-30T00:00:00Z"
+      "timestamp": "2026-04-30T11:08:00Z"
     },
     {
-      "id": "story-2026-04-30-00-004",
-      "headline": "Meta pays creators in stablecoins via Stripe as Visa rail hits $7B run rate",
-      "slug": "meta-stablecoin-creator-payouts-visa-7b-run-rate",
-      "tldr": "Meta is now paying select creators in stablecoins through Stripe while Visa's stablecoin settlement network reaches a $7B annualized volume.",
-      "why_it_matters": "Why it matters: Stablecoins just crossed from crypto rail into mainstream payouts — Web2 distribution at this scale is what bank-issued stablecoins under the GENIUS Act were built for.",
+      "id": "story-2026-04-30-11-002",
+      "headline": "SEC-CFTC joint guidance brands BTC, ETH, SOL, XRP, LINK as digital commodities",
+      "slug": "sec-cftc-token-taxonomy-commodities",
+      "tldr": "A joint SEC-CFTC interpretation released a token taxonomy classifying the five largest non-stable assets as digital commodities, ending years of jurisdictional limbo.",
+      "why_it_matters": "Why it matters: A formal commodities tag for ETH, SOL, XRP and LINK clears the path for spot ETFs, futures listings and bank custody under CFTC primacy.",
       "the_details": [
-        "Meta's creator payout pilot uses Stripe-issued stablecoins, expanding beyond bank-only disbursements.",
-        "Visa's stablecoin settlement volume now runs at roughly $7B annualized after recent corridor expansion.",
-        "FDIC opened GENIUS Act stablecoin rulemaking in April, putting bank issuers on a clearer compliance path."
+        "Taxonomy splits crypto into digital commodities, collectibles, tools, stablecoins and digital securities.",
+        "SEC Chair Paul Atkins called the parallel MOU 'a roadmap for a new era of harmonization' between agencies.",
+        "Pairs with FDIC's GENIUS Act stablecoin rulemaking and the IRS Form 1099-DA cost-basis regime live since April 15."
       ],
-      "source": "Crypto.news",
-      "source_url": "https://crypto.news/bitget-research-bitcoin-outlook-april-2026/",
-      "category": "adoption",
-      "impact": "medium",
-      "timestamp": "2026-04-29T15:00:00Z"
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-30T11:08:00Z"
     },
     {
-      "id": "story-2026-04-30-00-005",
-      "headline": "Western Union to launch USDPT stablecoin on Solana as May settlement rail",
-      "slug": "western-union-usdpt-solana-may-2026",
-      "tldr": "Western Union confirmed a May 2026 launch for USDPT, a US-dollar stablecoin built on Solana for institutional cross-border settlement.",
-      "why_it_matters": "Why it matters: A 170-year-old remittance giant choosing Solana over Ethereum or a private chain hands SOL its strongest TradFi distribution proof point yet.",
+      "id": "story-2026-04-30-11-003",
+      "headline": "MEGA goes live: MegaETH TGE prints with Coinbase pre-listing already wired",
+      "slug": "megaeth-mega-tge-coinbase-prelisting",
+      "tldr": "MegaETH's MEGA token launched today after all 10 Mega Mafia apps cleared the 100k-tx KPI gate, with Coinbase pre-listing already in place.",
+      "why_it_matters": "Why it matters: A KPI-gated TGE plus tier-one CEX day-one liquidity is the new template fast-L2 launches will be judged against.",
       "the_details": [
-        "USDPT will go live in May 2026 as Western Union's institutional settlement token.",
-        "Solana hits the launch with Alpenglow consensus rolling out, cutting confirmation times further.",
-        "SOL trades near $85.97 with the altcoin season index at 33-38/100, leaving headroom if the WU news lands."
+        "Polymarket April 30 contract pinned at 97.4% YES into the print, $349,577 USDC daily volume on the date market alone.",
+        "TGE was triggered April 23 once 10 incubated apps each crossed 100,000 verified mainnet transactions over 30 days.",
+        "Coinbase pre-listing live; total MegaETH-related markets cleared $462,687 in 24h USDC volume pre-launch."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/01/03/ethereum-and-solana-set-the-stage-for-2026-s-defi-reboot",
+      "source": "Crypto Briefing",
+      "source_url": "https://cryptobriefing.com/megaeth-token-generation-event-set-for-april-30-with-coinbase-pre-listing/",
+      "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-30T11:08:00Z"
+    },
+    {
+      "id": "story-2026-04-30-11-004",
+      "headline": "Meta turns Colombia and Philippines creators on to USDC payouts via Solana, Polygon",
+      "slug": "meta-usdc-creator-payouts-solana-polygon",
+      "tldr": "Meta enabled USDC creator payouts in Colombia and the Philippines on Solana and Polygon rails, marking its first serious blockchain push since Diem's collapse.",
+      "why_it_matters": "Why it matters: A 3B-user platform routing real creator income through Solana and Polygon is the cleanest stablecoin distribution unlock since PayPal's PYUSD.",
+      "the_details": [
+        "USDC payouts route via Solana and Polygon, both selected for sub-cent fees and stablecoin throughput.",
+        "Colombia and Philippines first — both top-10 remittance corridors with high stablecoin penetration.",
+        "First Meta on-chain product since Diem's 2022 wind-down, signaling renewed institutional comfort post-GENIUS Act."
+      ],
+      "source": "CoinGabbar",
+      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/crypto-market-update-april-30-btc-eth-xrp-doge-sol-trend-today",
       "category": "adoption",
+      "impact": "high",
+      "timestamp": "2026-04-30T11:08:00Z"
+    },
+    {
+      "id": "story-2026-04-30-11-005",
+      "headline": "Coinbase opens WRON-USD spot trading on May 1 as Ronin liquidity ramps",
+      "slug": "coinbase-wron-usd-spot-listing",
+      "tldr": "Coinbase will enable WRON-USD spot trading from May 1, giving Ronin's gaming token its first US tier-one fiat pair after years of offshore-only liquidity.",
+      "why_it_matters": "Why it matters: A US tier-one fiat pair for a gaming-chain native asset tests whether SEC-CFTC's new commodities tag actually accelerates listings.",
+      "the_details": [
+        "WRON-USD goes live on Coinbase May 1, 2026 — first tier-one US fiat pair for the Ronin native asset.",
+        "Listing follows the SEC-CFTC joint guidance treating non-stable, non-security tokens as digital commodities.",
+        "Lands into a soft tape: total crypto market cap at $2.63T, volume $107.3B, both down on the day."
+      ],
+      "source": "CoinGabbar",
+      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/crypto-market-update-april-30-btc-eth-xrp-doge-sol-trend-today",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-29T18:00:00Z"
+      "timestamp": "2026-04-30T11:08:00Z"
     }
   ]
 }
