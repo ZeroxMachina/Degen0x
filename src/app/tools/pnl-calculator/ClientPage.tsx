@@ -1,9 +1,8 @@
 'use client';
 
-"use client";
-
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -15,6 +14,46 @@ interface TradeEntry {
   amount: number;
   fees: number;
 }
+
+// ── Shared styles ────────────────────────────────────────────────────────────
+const inputStyle: React.CSSProperties = {
+  width: "100%",
+  padding: "10px 14px",
+  borderRadius: 8,
+  border: "1px solid var(--color-border)",
+  background: "var(--color-bg)",
+  color: "var(--color-text)",
+  fontSize: 14,
+  fontWeight: 600,
+  outline: "none",
+  transition: "border-color 0.2s, box-shadow 0.2s",
+};
+
+const labelStyle: React.CSSProperties = {
+  display: "block",
+  fontSize: 12,
+  fontWeight: 600,
+  color: "var(--color-text-secondary)",
+  marginBottom: 6,
+  textTransform: "uppercase",
+  letterSpacing: "0.04em",
+};
+
+const metricCardStyle: React.CSSProperties = {
+  background: "var(--color-bg)",
+  borderRadius: 10,
+  padding: 12,
+  border: "1px solid var(--color-border)",
+  transition: "border-color 0.2s, box-shadow 0.2s",
+};
+
+const sectionStyle: React.CSSProperties = {
+  background: "var(--color-surface)",
+  borderRadius: 16,
+  border: "1px solid var(--color-border)",
+  padding: 28,
+  marginBottom: 32,
+};
 
 // ── Utility Functions ────────────────────────────────────────────────────────
 function formatUSD(value: number): string {
@@ -44,9 +83,9 @@ function calculateTradeMetrics(
   if (isShort) {
     const shortProfit = (buyPrice - sellPrice) * amount;
     const shortFees = investmentAmount * (feePercent / 100);
-    const pnl = shortProfit - shortFees;
     const grossProfit = shortProfit * leverage;
     const leveragedPnl = grossProfit - shortFees;
+    const pnl = shortProfit - shortFees;
     const pnlPercent = (pnl / investmentAmount) * 100;
     const roi = ((leveragedPnl - investmentAmount) / investmentAmount) * 100;
     const breakEven = sellPrice;
@@ -145,7 +184,7 @@ export default function PnLCalculatorPage() {
     let totalInvested = 0;
     let totalReturn = 0;
     let winCount = 0;
-    let tradeResults: { id: string; pnl: number; pnlPercent: number }[] = [];
+    const tradeResults: { id: string; pnl: number; pnlPercent: number }[] = [];
 
     trades.forEach(trade => {
       const invested = trade.amount * trade.buyPrice;
@@ -178,15 +217,60 @@ export default function PnLCalculatorPage() {
   const estimatedTax = taxGain * (taxBracket / 100);
   const afterTaxProfit = taxGain - estimatedTax;
 
+  // Dynamic color helpers
+  const profitColor = "var(--color-success)";
+  const lossColor = "var(--color-danger)";
+  const pnlColor = isProfitable ? profitColor : lossColor;
+
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg)" }}>
+      {/* Focus-visible + hover styles */}
+      <style>{`
+        .pnl-input:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: -1px;
+          border-color: var(--color-primary);
+        }
+        .pnl-input:hover {
+          border-color: color-mix(in srgb, var(--color-primary) 50%, var(--color-border));
+        }
+        .pnl-btn:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: 2px;
+        }
+        .pnl-btn:hover {
+          filter: brightness(1.1);
+        }
+        .pnl-select:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: -1px;
+          border-color: var(--color-primary);
+        }
+        .pnl-metric-card:hover {
+          border-color: color-mix(in srgb, var(--color-primary) 30%, var(--color-border));
+          box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+        }
+        .pnl-trade-row:hover {
+          box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .pnl-remove-btn:hover {
+          background: color-mix(in srgb, var(--color-danger) 10%, transparent);
+          color: var(--color-danger);
+          border-color: var(--color-danger);
+        }
+        .pnl-remove-btn:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: 2px;
+        }
+      `}</style>
+
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px 80px" }}>
         <Breadcrumb items={[{ label: "Tools", href: "/tools" }, { label: "P&L Calculator", href: "/tools/pnl-calculator" }]} />
 
         {/* Header */}
         <div style={{ marginBottom: 40 }}>
           <h1 style={{ fontSize: 32, fontWeight: 900, color: "var(--color-text)", marginBottom: 8 }}>
-            💰 Crypto Profit & Loss Calculator
+            Crypto Profit & Loss Calculator
           </h1>
           <p style={{ color: "var(--color-text-secondary)", fontSize: 15 }}>
             Calculate trade P&L instantly with leverage, fees, multi-trade tracking, and tax estimation.
@@ -196,88 +280,64 @@ export default function PnLCalculatorPage() {
         {/* ═══════════════════════════════════════════════════════════════════════════════ */}
         {/* SECTION 1: TRADE CALCULATOR */}
         {/* ═══════════════════════════════════════════════════════════════════════════════ */}
-        <div style={{ background: "var(--color-surface)", borderRadius: 16, border: "1px solid var(--color-border)", padding: 28, marginBottom: 32 }}>
+        <div style={sectionStyle}>
           <h2 style={{ fontSize: 22, fontWeight: 800, color: "var(--color-text)", marginBottom: 20, display: "flex", alignItems: "center", gap: 8 }}>
-            📊 Trade Calculator
+            Trade Calculator
           </h2>
 
           {/* Controls Grid */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 20 }}>
             {/* Buy Price */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Buy Price ($)
-              </label>
+              <label style={labelStyle}>Buy Price ($)</label>
               <input
                 type="number"
+                className="pnl-input"
                 value={buyPrice}
                 onChange={e => setBuyPrice(Number(e.target.value))}
-                style={{
-                  width: "100%",
-                  padding: "10px 14px",
-                  borderRadius: 8,
-                  border: "1px solid var(--color-border)",
-                  background: "var(--color-bg)",
-                  color: "var(--color-text)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                }}
+                style={inputStyle}
               />
             </div>
 
             {/* Sell Price */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Sell Price ($)
-              </label>
+              <label style={labelStyle}>Sell Price ($)</label>
               <input
+                type="number"
+                className="pnl-input"
                 value={sellPrice}
                 onChange={e => setSellPrice(Number(e.target.value))}
-                style={{
-                  width: "100%",
-                  padding: "10px 14px",
-                  borderRadius: 8,
-                  border: "1px solid var(--color-border)",
-                  background: "var(--color-bg)",
-                  color: "var(--color-text)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                }}
+                style={inputStyle}
               />
             </div>
 
             {/* Investment / Quantity Toggle */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
+              <label style={labelStyle}>
                 {useQuantity ? "Quantity (coins)" : "Investment ($)"}
               </label>
               <div style={{ display: "flex", gap: 6 }}>
                 <input
+                  type="number"
+                  className="pnl-input"
                   value={useQuantity ? quantity : investAmount}
                   onChange={e => (useQuantity ? setQuantity(Number(e.target.value)) : setInvestAmount(Number(e.target.value)))}
-                  style={{
-                    flex: 1,
-                    padding: "10px 14px",
-                    borderRadius: 8,
-                    border: "1px solid var(--color-border)",
-                    background: "var(--color-bg)",
-                    color: "var(--color-text)",
-                    fontSize: 14,
-                    fontWeight: 600,
-                  }}
+                  style={{ ...inputStyle, flex: 1 }}
                 />
                 <button
+                  className="pnl-btn"
                   onClick={() => setUseQuantity(!useQuantity)}
                   style={{
                     padding: "10px 12px",
                     borderRadius: 8,
                     border: "1px solid var(--color-border)",
-                    background: "#6366f120",
-                    color: "#818cf8",
+                    background: "color-mix(in srgb, var(--color-primary) 12%, transparent)",
+                    color: "var(--color-primary-light)",
                     fontSize: 12,
                     fontWeight: 700,
                     cursor: "pointer",
                     whiteSpace: "nowrap",
+                    transition: "background 0.2s, border-color 0.2s",
                   }}
                 >
                   Toggle
@@ -287,86 +347,70 @@ export default function PnLCalculatorPage() {
 
             {/* Fee % */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Fee %
-              </label>
+              <label style={labelStyle}>Fee %</label>
               <input
+                type="number"
+                className="pnl-input"
                 value={feePercent}
                 onChange={e => setFeePercent(Number(e.target.value))}
                 step="0.1"
-                style={{
-                  width: "100%",
-                  padding: "10px 14px",
-                  borderRadius: 8,
-                  border: "1px solid var(--color-border)",
-                  background: "var(--color-bg)",
-                  color: "var(--color-text)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                }}
+                style={inputStyle}
               />
             </div>
 
             {/* Leverage */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Leverage (1-100x)
-              </label>
+              <label style={labelStyle}>Leverage (1-100x)</label>
               <input
+                type="number"
+                className="pnl-input"
                 value={leverage}
                 onChange={e => setLeverage(Math.min(100, Math.max(1, Number(e.target.value))))}
                 min="1"
                 max="100"
-                style={{
-                  width: "100%",
-                  padding: "10px 14px",
-                  borderRadius: 8,
-                  border: "1px solid var(--color-border)",
-                  background: "var(--color-bg)",
-                  color: "var(--color-text)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                }}
+                style={inputStyle}
               />
             </div>
 
             {/* Long/Short */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Position
-              </label>
+              <label style={labelStyle}>Position</label>
               <div style={{ display: "flex", gap: 6 }}>
                 <button
+                  className="pnl-btn"
                   onClick={() => setIsShort(false)}
                   style={{
                     flex: 1,
                     padding: "10px 14px",
                     borderRadius: 8,
-                    border: `1px solid ${!isShort ? "#22c55e" : "var(--color-border)"}`,
-                    background: !isShort ? "#22c55e20" : "transparent",
-                    color: !isShort ? "#22c55e" : "var(--color-text-secondary)",
+                    border: `1px solid ${!isShort ? "var(--color-success)" : "var(--color-border)"}`,
+                    background: !isShort ? "color-mix(in srgb, var(--color-success) 12%, transparent)" : "transparent",
+                    color: !isShort ? "var(--color-success)" : "var(--color-text-secondary)",
                     fontSize: 13,
                     fontWeight: 700,
                     cursor: "pointer",
+                    transition: "background 0.2s, border-color 0.2s, color 0.2s",
                   }}
                 >
-                  📈 Long
+                  Long
                 </button>
                 <button
+                  className="pnl-btn"
                   onClick={() => setIsShort(true)}
                   style={{
                     flex: 1,
                     padding: "10px 14px",
                     borderRadius: 8,
-                    border: `1px solid ${isShort ? "#f85149" : "var(--color-border)"}`,
-                    background: isShort ? "#f8514920" : "transparent",
-                    color: isShort ? "#f85149" : "var(--color-text-secondary)",
+                    border: `1px solid ${isShort ? "var(--color-danger)" : "var(--color-border)"}`,
+                    background: isShort ? "color-mix(in srgb, var(--color-danger) 12%, transparent)" : "transparent",
+                    color: isShort ? "var(--color-danger)" : "var(--color-text-secondary)",
                     fontSize: 13,
                     fontWeight: 700,
                     cursor: "pointer",
+                    transition: "background 0.2s, border-color 0.2s, color 0.2s",
                   }}
                 >
-                  📉 Short
+                  Short
                 </button>
               </div>
             </div>
@@ -376,9 +420,11 @@ export default function PnLCalculatorPage() {
           <div style={{ marginTop: 28 }}>
             {/* Main P&L Display */}
             <div style={{
-              background: `linear-gradient(135deg, ${isProfitable ? "#22c55e40" : "#f8514940"}, ${isProfitable ? "#16a34a40" : "#dc262640"})`,
+              background: isProfitable
+                ? "linear-gradient(135deg, color-mix(in srgb, var(--color-success) 25%, transparent), color-mix(in srgb, var(--color-success) 20%, transparent))"
+                : "linear-gradient(135deg, color-mix(in srgb, var(--color-danger) 25%, transparent), color-mix(in srgb, var(--color-danger) 20%, transparent))",
               borderRadius: 12,
-              border: `1px solid ${isProfitable ? "#22c55e80" : "#f8514980"}`,
+              border: `1px solid color-mix(in srgb, ${pnlColor} 50%, transparent)`,
               padding: 24,
               marginBottom: 20,
               textAlign: "center",
@@ -389,12 +435,12 @@ export default function PnLCalculatorPage() {
               <div style={{
                 fontSize: 42,
                 fontWeight: 900,
-                color: isProfitable ? "#22c55e" : "#f85149",
+                color: pnlColor,
                 marginBottom: 8,
               }}>
                 {formatUSD(tradeMetrics.pnl)}
               </div>
-              <div style={{ fontSize: 18, fontWeight: 800, color: isProfitable ? "#22c55e" : "#f85149" }}>
+              <div style={{ fontSize: 18, fontWeight: 800, color: pnlColor }}>
                 {formatPercent(tradeMetrics.pnlPercent)}
               </div>
             </div>
@@ -402,16 +448,16 @@ export default function PnLCalculatorPage() {
             {/* Metrics Grid */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 12 }}>
               {[
-                { label: "P&L %", value: formatPercent(tradeMetrics.pnlPercent), color: isProfitable ? "#22c55e" : "#f85149" },
-                { label: "ROI", value: formatPercent(tradeMetrics.roi), color: isProfitable ? "#22c55e" : "#f85149" },
-                { label: "Entry", value: formatUSD(buyPrice), color: "#6366f1" },
-                { label: "Exit", value: formatUSD(sellPrice), color: "#6366f1" },
-                { label: "Fees", value: formatUSD(tradeMetrics.fees), color: "#F3BA2F" },
-                { label: "Investment", value: formatUSD(tradeMetrics.investmentAmount), color: "#06b6d4" },
+                { label: "P&L %", value: formatPercent(tradeMetrics.pnlPercent), color: pnlColor },
+                { label: "ROI", value: formatPercent(tradeMetrics.roi), color: pnlColor },
+                { label: "Entry", value: formatUSD(buyPrice), color: "var(--color-primary)" },
+                { label: "Exit", value: formatUSD(sellPrice), color: "var(--color-primary)" },
+                { label: "Fees", value: formatUSD(tradeMetrics.fees), color: "var(--color-accent)" },
+                { label: "Investment", value: formatUSD(tradeMetrics.investmentAmount), color: "var(--color-secondary)" },
                 { label: "Break-even", value: formatUSD(tradeMetrics.breakEven), color: "#9945FF" },
-                ...(leverage > 1 ? [{ label: "Liquidation", value: formatUSD(tradeMetrics.liquidationPrice), color: "#f85149" }] : []),
+                ...(leverage > 1 ? [{ label: "Liquidation", value: formatUSD(tradeMetrics.liquidationPrice), color: "var(--color-danger)" }] : []),
               ].map((m, i) => (
-                <div key={i} style={{ background: "var(--color-bg)", borderRadius: 10, padding: 12, border: "1px solid var(--color-border)" }}>
+                <div key={i} className="pnl-metric-card" style={metricCardStyle}>
                   <div style={{ fontSize: 11, color: "var(--color-text-secondary)", marginBottom: 4, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.04em" }}>
                     {m.label}
                   </div>
@@ -427,9 +473,9 @@ export default function PnLCalculatorPage() {
         {/* ═══════════════════════════════════════════════════════════════════════════════ */}
         {/* SECTION 2: MULTI-TRADE TRACKER */}
         {/* ═══════════════════════════════════════════════════════════════════════════════ */}
-        <div style={{ background: "var(--color-surface)", borderRadius: 16, border: "1px solid var(--color-border)", padding: 28, marginBottom: 32 }}>
+        <div style={sectionStyle}>
           <h2 style={{ fontSize: 22, fontWeight: 800, color: "var(--color-text)", marginBottom: 20, display: "flex", alignItems: "center", gap: 8 }}>
-            📈 Multi-Trade Tracker
+            Multi-Trade Tracker
           </h2>
 
           {/* Add Trade Form */}
@@ -444,82 +490,58 @@ export default function PnLCalculatorPage() {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 12, marginBottom: 12 }}>
                 <input
                   type="text"
+                  className="pnl-input"
                   placeholder="Coin name (BTC, ETH...)"
                   value={multiCoinName}
                   onChange={e => setMultiCoinName(e.target.value)}
-                  style={{
-                    padding: "10px 14px",
-                    borderRadius: 8,
-                    border: "1px solid var(--color-border)",
-                    background: "var(--color-surface)",
-                    color: "var(--color-text)",
-                    fontSize: 13,
-                  }}
+                  style={{ ...inputStyle, background: "var(--color-surface)", fontSize: 13 }}
                 />
                 <input
+                  type="number"
+                  className="pnl-input"
                   placeholder="Buy price"
                   value={multiBuyPrice || ""}
                   onChange={e => setMultiBuyPrice(Number(e.target.value))}
-                  style={{
-                    padding: "10px 14px",
-                    borderRadius: 8,
-                    border: "1px solid var(--color-border)",
-                    background: "var(--color-surface)",
-                    color: "var(--color-text)",
-                    fontSize: 13,
-                  }}
+                  style={{ ...inputStyle, background: "var(--color-surface)", fontSize: 13 }}
                 />
                 <input
+                  type="number"
+                  className="pnl-input"
                   placeholder="Sell price"
                   value={multiSellPrice || ""}
                   onChange={e => setMultiSellPrice(Number(e.target.value))}
-                  style={{
-                    padding: "10px 14px",
-                    borderRadius: 8,
-                    border: "1px solid var(--color-border)",
-                    background: "var(--color-surface)",
-                    color: "var(--color-text)",
-                    fontSize: 13,
-                  }}
+                  style={{ ...inputStyle, background: "var(--color-surface)", fontSize: 13 }}
                 />
                 <input
+                  type="number"
+                  className="pnl-input"
                   placeholder="Amount"
                   value={multiAmount || ""}
                   onChange={e => setMultiAmount(Number(e.target.value))}
                   step="0.001"
-                  style={{
-                    padding: "10px 14px",
-                    borderRadius: 8,
-                    border: "1px solid var(--color-border)",
-                    background: "var(--color-surface)",
-                    color: "var(--color-text)",
-                    fontSize: 13,
-                  }}
+                  style={{ ...inputStyle, background: "var(--color-surface)", fontSize: 13 }}
                 />
                 <input
+                  type="number"
+                  className="pnl-input"
                   placeholder="Fees %"
                   value={multiTradeFees || ""}
                   onChange={e => setMultiTradeFees(Number(e.target.value))}
-                  style={{
-                    padding: "10px 14px",
-                    borderRadius: 8,
-                    border: "1px solid var(--color-border)",
-                    background: "var(--color-surface)",
-                    color: "var(--color-text)",
-                    fontSize: 13,
-                  }}
+                  style={{ ...inputStyle, background: "var(--color-surface)", fontSize: 13 }}
                 />
                 <button
+                  className="pnl-btn"
                   onClick={addTrade}
                   style={{
                     padding: "10px 16px",
                     borderRadius: 8,
-                    border: "1px solid #6366f1",
-                    background: "#6366f120",
-                    color: "#818cf8",
+                    border: "1px solid var(--color-primary)",
+                    background: "color-mix(in srgb, var(--color-primary) 12%, transparent)",
+                    color: "var(--color-primary-light)",
                     fontSize: 13,
                     fontWeight: 700,
                     cursor: "pointer",
+                    transition: "background 0.2s, border-color 0.2s",
                   }}
                 >
                   + Add Trade
@@ -536,14 +558,15 @@ export default function PnLCalculatorPage() {
                 const grossProfit = (trade.sellPrice - trade.buyPrice) * trade.amount;
                 const fees = invested * (trade.fees / 100);
                 const pnl = grossProfit - fees;
-                const isProfitable = pnl >= 0;
+                const tradeIsProfitable = pnl >= 0;
+                const tradeColor = tradeIsProfitable ? "var(--color-success)" : "var(--color-danger)";
 
                 return (
-                  <div key={trade.id} style={{
+                  <div key={trade.id} className="pnl-trade-row" style={{
                     background: "var(--color-bg)",
                     borderRadius: 10,
-                    border: `1px solid ${isProfitable ? "#22c55e40" : "#f8514940"}`,
-                    borderLeft: `4px solid ${isProfitable ? "#22c55e" : "#f85149"}`,
+                    border: `1px solid color-mix(in srgb, ${tradeColor} 25%, transparent)`,
+                    borderLeft: `4px solid ${tradeColor}`,
                     padding: 14,
                     marginBottom: 10,
                     display: "flex",
@@ -551,6 +574,7 @@ export default function PnLCalculatorPage() {
                     alignItems: "center",
                     flexWrap: "wrap",
                     gap: 12,
+                    transition: "box-shadow 0.2s",
                   }}>
                     <div style={{ flex: 1, minWidth: 150 }}>
                       <div style={{ fontWeight: 700, color: "var(--color-text)", fontSize: 14 }}>
@@ -561,14 +585,15 @@ export default function PnLCalculatorPage() {
                       </div>
                     </div>
                     <div style={{ textAlign: "right" }}>
-                      <div style={{ fontSize: 14, fontWeight: 800, color: isProfitable ? "#22c55e" : "#f85149" }}>
+                      <div style={{ fontSize: 14, fontWeight: 800, color: tradeColor }}>
                         {formatUSD(pnl)}
                       </div>
-                      <div style={{ fontSize: 11, color: isProfitable ? "#22c55e" : "#f85149", marginTop: 2 }}>
+                      <div style={{ fontSize: 11, color: tradeColor, marginTop: 2 }}>
                         {formatPercent((pnl / invested) * 100)}
                       </div>
                     </div>
                     <button
+                      className="pnl-remove-btn"
                       onClick={() => removeTrade(trade.id)}
                       style={{
                         padding: "6px 10px",
@@ -578,6 +603,7 @@ export default function PnLCalculatorPage() {
                         color: "var(--color-text-secondary)",
                         fontSize: 12,
                         cursor: "pointer",
+                        transition: "background 0.2s, color 0.2s, border-color 0.2s",
                       }}
                     >
                       Remove
@@ -592,12 +618,12 @@ export default function PnLCalculatorPage() {
           {trades.length > 0 && (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 12 }}>
               {[
-                { label: "Total Invested", value: formatUSD(multiTradeMetrics.totalInvested), color: "#06b6d4" },
-                { label: "Total Return", value: formatUSD(multiTradeMetrics.totalPnl), color: multiTradeMetrics.totalPnl >= 0 ? "#22c55e" : "#f85149" },
-                { label: "Overall P&L %", value: formatPercent(multiTradeMetrics.pnlPercent), color: multiTradeMetrics.totalPnl >= 0 ? "#22c55e" : "#f85149" },
-                { label: "Win Rate", value: `${multiTradeMetrics.winRate.toFixed(0)}%`, color: multiTradeMetrics.winRate >= 50 ? "#22c55e" : "#F3BA2F" },
+                { label: "Total Invested", value: formatUSD(multiTradeMetrics.totalInvested), color: "var(--color-secondary)" },
+                { label: "Total Return", value: formatUSD(multiTradeMetrics.totalPnl), color: multiTradeMetrics.totalPnl >= 0 ? "var(--color-success)" : "var(--color-danger)" },
+                { label: "Overall P&L %", value: formatPercent(multiTradeMetrics.pnlPercent), color: multiTradeMetrics.totalPnl >= 0 ? "var(--color-success)" : "var(--color-danger)" },
+                { label: "Win Rate", value: `${multiTradeMetrics.winRate.toFixed(0)}%`, color: multiTradeMetrics.winRate >= 50 ? "var(--color-success)" : "var(--color-accent)" },
               ].map((m, i) => (
-                <div key={i} style={{ background: "var(--color-bg)", borderRadius: 10, padding: 14, border: "1px solid var(--color-border)", textAlign: "center" }}>
+                <div key={i} className="pnl-metric-card" style={{ ...metricCardStyle, padding: 14, textAlign: "center" }}>
                   <div style={{ fontSize: 10, color: "var(--color-text-secondary)", marginBottom: 6, fontWeight: 600, textTransform: "uppercase" }}>
                     {m.label}
                   </div>
@@ -619,68 +645,61 @@ export default function PnLCalculatorPage() {
         {/* ═══════════════════════════════════════════════════════════════════════════════ */}
         {/* SECTION 3: TAX ESTIMATOR */}
         {/* ═══════════════════════════════════════════════════════════════════════════════ */}
-        <div style={{ background: "var(--color-surface)", borderRadius: 16, border: "1px solid var(--color-border)", padding: 28 }}>
+        <div style={{ ...sectionStyle, marginBottom: 0 }}>
           <h2 style={{ fontSize: 22, fontWeight: 800, color: "var(--color-text)", marginBottom: 20, display: "flex", alignItems: "center", gap: 8 }}>
-            🏛️ Tax Estimator
+            Tax Estimator
           </h2>
 
           {/* Tax Inputs */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 16, marginBottom: 24 }}>
             {/* Gain amount */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Capital Gain ($)
-              </label>
+              <label style={labelStyle}>Capital Gain ($)</label>
               <input
+                type="number"
+                className="pnl-input"
                 value={taxGain}
                 onChange={e => setTaxGain(Number(e.target.value))}
-                style={{
-                  width: "100%",
-                  padding: "10px 14px",
-                  borderRadius: 8,
-                  border: "1px solid var(--color-border)",
-                  background: "var(--color-bg)",
-                  color: "var(--color-text)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                }}
+                style={inputStyle}
               />
             </div>
 
             {/* Holding period */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Holding Period
-              </label>
+              <label style={labelStyle}>Holding Period</label>
               <div style={{ display: "flex", gap: 6 }}>
                 <button
+                  className="pnl-btn"
                   onClick={() => setIsLongTerm(false)}
                   style={{
                     flex: 1,
                     padding: "10px 14px",
                     borderRadius: 8,
-                    border: `1px solid ${!isLongTerm ? "#F3BA2F" : "var(--color-border)"}`,
-                    background: !isLongTerm ? "#F3BA2F20" : "transparent",
-                    color: !isLongTerm ? "#F3BA2F" : "var(--color-text-secondary)",
+                    border: `1px solid ${!isLongTerm ? "var(--color-accent)" : "var(--color-border)"}`,
+                    background: !isLongTerm ? "color-mix(in srgb, var(--color-accent) 12%, transparent)" : "transparent",
+                    color: !isLongTerm ? "var(--color-accent)" : "var(--color-text-secondary)",
                     fontSize: 12,
                     fontWeight: 700,
                     cursor: "pointer",
+                    transition: "background 0.2s, border-color 0.2s, color 0.2s",
                   }}
                 >
                   Short (&lt; 1yr)
                 </button>
                 <button
+                  className="pnl-btn"
                   onClick={() => setIsLongTerm(true)}
                   style={{
                     flex: 1,
                     padding: "10px 14px",
                     borderRadius: 8,
-                    border: `1px solid ${isLongTerm ? "#22c55e" : "var(--color-border)"}`,
-                    background: isLongTerm ? "#22c55e20" : "transparent",
-                    color: isLongTerm ? "#22c55e" : "var(--color-text-secondary)",
+                    border: `1px solid ${isLongTerm ? "var(--color-success)" : "var(--color-border)"}`,
+                    background: isLongTerm ? "color-mix(in srgb, var(--color-success) 12%, transparent)" : "transparent",
+                    color: isLongTerm ? "var(--color-success)" : "var(--color-text-secondary)",
                     fontSize: 12,
                     fontWeight: 700,
                     cursor: "pointer",
+                    transition: "background 0.2s, border-color 0.2s, color 0.2s",
                   }}
                 >
                   Long (&gt; 1yr)
@@ -690,22 +709,12 @@ export default function PnLCalculatorPage() {
 
             {/* Tax bracket */}
             <div>
-              <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 6, textTransform: "uppercase", letterSpacing: "0.04em" }}>
-                Tax Bracket
-              </label>
+              <label style={labelStyle}>Tax Bracket</label>
               <select
+                className="pnl-select"
                 value={taxBracket}
                 onChange={e => setTaxBracket(Number(e.target.value))}
-                style={{
-                  width: "100%",
-                  padding: "10px 14px",
-                  borderRadius: 8,
-                  border: "1px solid var(--color-border)",
-                  background: "var(--color-bg)",
-                  color: "var(--color-text)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                }}
+                style={{ ...inputStyle, cursor: "pointer" }}
               >
                 <option value={10}>10% (Lowest)</option>
                 <option value={22}>22% (Middle)</option>
@@ -718,17 +727,17 @@ export default function PnLCalculatorPage() {
 
           {/* Tax Results */}
           <div style={{
-            background: `linear-gradient(135deg, #f8514920, #f8514940)`,
+            background: "linear-gradient(135deg, color-mix(in srgb, var(--color-danger) 12%, transparent), color-mix(in srgb, var(--color-danger) 20%, transparent))",
             borderRadius: 12,
-            border: "1px solid #f8514960",
+            border: "1px solid color-mix(in srgb, var(--color-danger) 35%, transparent)",
             padding: 24,
           }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 20 }}>
               {[
-                { label: "Capital Gain", value: formatUSD(taxGain), color: "#6366f1" },
-                { label: "Tax Owed", value: formatUSD(estimatedTax), color: "#f85149" },
-                { label: "After-Tax Profit", value: formatUSD(afterTaxProfit), color: "#22c55e" },
-                { label: "Effective Rate", value: `${(taxBracket * (taxGain > 0 ? 1 : 0)).toFixed(1)}%`, color: "#F3BA2F" },
+                { label: "Capital Gain", value: formatUSD(taxGain), color: "var(--color-primary)" },
+                { label: "Tax Owed", value: formatUSD(estimatedTax), color: "var(--color-danger)" },
+                { label: "After-Tax Profit", value: formatUSD(afterTaxProfit), color: "var(--color-success)" },
+                { label: "Effective Rate", value: `${(taxBracket * (taxGain > 0 ? 1 : 0)).toFixed(1)}%`, color: "var(--color-accent)" },
               ].map((m, i) => (
                 <div key={i} style={{ textAlign: "center" }}>
                   <div style={{ fontSize: 11, color: "var(--color-text-secondary)", marginBottom: 6, fontWeight: 600, textTransform: "uppercase" }}>
@@ -748,22 +757,23 @@ export default function PnLCalculatorPage() {
           </div>
         </div>
       </div>
-    
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "Pnl Calculator",
-              "url": "https://degen0x.com/tools/pnl-calculator",
-              "applicationCategory": "FinanceApplication",
-              "operatingSystem": "Web",
-              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-            })
-          }}
-        />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Crypto P&L Calculator",
+            "url": "https://degen0x.com/tools/pnl-calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          })
+        }}
+      />
+      <BackToTop />
       <RelatedContent category="tools" currentSlug="/tools/pnl-calculator" />
-      </div>
+    </div>
   );
 }
