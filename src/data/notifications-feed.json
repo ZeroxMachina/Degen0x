@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-30-014",
+    "type": "news",
+    "title": "📰 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities",
+    "message": "A joint SEC-CFTC interpretation lays out a unified token taxonomy and explicitly designates the five biggest assets as digital commodities.",
+    "actionUrl": "/news",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-013",
     "type": "news",
     "title": "📰 Solana Alpenglow targets 150ms finality — 80x faster, votes move off-chain",
@@ -228,54 +236,6 @@
     "type": "news",
     "title": "📰 FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
     "message": "The Fed wraps its two-day meeting Wednesday with crypto traders de-risked and BTC stalling under $78,000 ahead of the rate call.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-022",
-    "type": "news",
-    "title": "📰 Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
-    "message": "DeFi United proposed using Aave to neutralize 116,500 unbacked rsETH and stabilize markets after the $292M KelpDAO bridge exploit.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-021",
-    "type": "news",
-    "title": "📰 SEC, CFTC unite at Bitcoin 2026 to tease Strategic Reserve and tokenization sandbox",
-    "message": "U.S. regulators showed a unified front at Bitcoin 2026 in Las Vegas, signaling innovation exemptions and a Strategic Bitcoin Reserve announcement within weeks.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-020",
-    "type": "news",
-    "title": "📰 Four central banks set rates this week as BTC gets rejected below $80K",
-    "message": "BOJ, Fed, ECB and BOE all decide policy this week, putting Bitcoin's stalled $80K breakout at the mercy of a synchronized macro print.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-019",
-    "type": "news",
-    "title": "📰 U Michigan sentiment craters to 49.8 ATL, inflation expectations spike to 4.8% — BTC stalls at $76.5K",
-    "message": "Consumer confidence hit a record low and one-year inflation expectations jumped a full point, freezing Bitcoin's bid back to $80K.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-018",
-    "type": "news",
-    "title": "📰 BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
-    "message": "Bitcoin gave back the $80K reclaim attempt as traders de-risk into a Fed, BOJ, ECB and BOE rate-decision week.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-017",
-    "type": "news",
-    "title": "📰 Aave-led DeFi rescue tops $300M as industry tries to plug Kelp DAO's $292M hole",
-    "message": "Consensys, Lido, EtherFi and others have pledged into a $300M+ recovery vehicle to backstop Aave bad debt from the April 19 Kelp DAO exploit.",
     "actionUrl": "/news",
     "date": "2026-04-28"
   }

@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T13:23:00Z",
-  "briefing_id": "briefing-2026-04-30-13",
+  "generated_at": "2026-04-30T14:10:00Z",
+  "briefing_id": "briefing-2026-04-30-14",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-13-001",
-      "headline": "Spot BTC ETFs pull $1.7B in April as Strategy stacks 56,238 BTC for $4.1B",
-      "slug": "spot-btc-etfs-april-inflows-strategy-accumulation",
-      "tldr": "Spot Bitcoin ETFs logged about $1.7B in April net inflows, the largest monthly haul since October 2025, while Strategy added 56,238 BTC.",
-      "why_it_matters": "Why it matters: Institutional bid is absorbing supply even as price chops sideways, narrowing float ahead of any May break.",
+      "id": "story-2026-04-30-14-001",
+      "headline": "SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities in joint interpretation",
+      "slug": "sec-cftc-joint-interpretation-digital-commodities",
+      "tldr": "A joint SEC-CFTC interpretation lays out a unified token taxonomy and explicitly designates the five biggest assets as digital commodities.",
+      "why_it_matters": "Why it matters: This kills the Howey ambiguity that has shadowed major altcoins for a decade and clears the runway for staked-asset ETFs and bank custody.",
       "the_details": [
-        "April spot BTC ETF net inflows of approximately $1.7 billion mark the heaviest monthly print since October 2025.",
-        "Strategy (MSTR) bought 56,238 BTC worth roughly $4.1 billion during the month, per filings cited by Bitget Research.",
-        "Total crypto market cap rose ~10% in April to about $2.7T, with BTC up 16% and ETH up 14%."
+        "Joint SEC-CFTC interpretation defines five token classes: digital commodities, collectibles, tools, stablecoins, and digital securities.",
+        "BTC, ETH, SOL, XRP and LINK are named directly as digital commodities, putting them firmly under CFTC oversight.",
+        "Agencies signed a Memorandum of Understanding to coordinate enforcement and rulemaking across the new framework."
       ],
-      "source": "Yahoo Finance / Bitget Research",
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-30T13:30:00Z"
+    },
+    {
+      "id": "story-2026-04-30-14-002",
+      "headline": "BTC slides to $75,752 as Trump weighs new Iran strikes; ETH cracks $2,252",
+      "slug": "btc-iran-strait-of-hormuz-risk-off",
+      "tldr": "Bitcoin opened at its lowest level in over a week and ethereum at a two-week low after reports of fresh US military planning around Iran.",
+      "why_it_matters": "Why it matters: Crypto is trading like a high-beta risk asset again; geopolitical headlines now move BTC harder than the Fed does.",
+      "the_details": [
+        "BTC opened at $75,752.12 Thursday — lowest open in over a week — and recovered to $76,130 by 7:18 a.m. ET.",
+        "ETH opened at $2,252.45, the weakest print since April 13, before clawing back to $2,268.50.",
+        "Trigger: reports Trump is weighing additional Iran action to force renewed peace talks and reopen the Strait of Hormuz."
+      ],
+      "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-april-30-2026-values-moving-lower-each-morning-this-week-113359674.html",
-      "category": "adoption",
+      "category": "markets",
       "impact": "high",
       "timestamp": "2026-04-30T11:30:00Z"
     },
     {
-      "id": "story-2026-04-30-13-002",
-      "headline": "DeFi bleeds $606M across 12 exploits in 18 days as Kelp DAO contagion lingers",
-      "slug": "defi-606m-april-exploits-kelp-dao-contagion",
-      "tldr": "April losses across DeFi protocols hit $606M in 18 days, headlined by Kelp DAO's $293M bridge drain and Drift's $285M April 1 exploit.",
-      "why_it_matters": "Why it matters: Two North Korea-linked attacks in a single month are forcing Aave, SparkLend and Fluid to freeze markets and rethink cross-chain LRT collateral.",
+      "id": "story-2026-04-30-14-003",
+      "headline": "Pump.fun torches $370M in PUMP, commits 50% of revenue to perpetual buyback-burn",
+      "slug": "pumpfun-370m-buyback-burn-program",
+      "tldr": "Solana memecoin launchpad Pump.fun burned $370M of PUMP and locked in a permanent buyback-burn funded by half of platform revenue.",
+      "why_it_matters": "Why it matters: This is the most aggressive token-revenue alignment yet from a top-five fee generator and sets a new bar for memecoin platform tokenomics.",
       "the_details": [
-        "Kelp DAO lost ~$293M on April 19 after a misconfigured LayerZero bridge let an attacker mint 116,500 unbacked rsETH across 20 chains.",
-        "Drift Protocol was drained for $285M on April 1 via pre-signed Solana 'durable nonces' authorizations, attributed to Trader Traitor.",
-        "Smaller hits: Dango bridge aggregator lost $410K; Silo Finance bled $392K on April 3 from a misconfigured oracle."
+        "$370M of PUMP tokens already burned; future burns will run as a buyback-and-burn program.",
+        "50% of net revenue earmarked for buybacks; remaining 50% reserved for 'big bets' over the next 5-10 years.",
+        "Pump.fun has been a top fee generator on Solana, pivoting from pure mercenary supply to value capture."
       ],
-      "source": "CoinDesk / Live Bitcoin News",
-      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-30T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-13-003",
-      "headline": "BTC closes April defensive at $76K as 30-year yield hits 5% and oil rips",
-      "slug": "btc-april-close-defensive-76k-yields",
-      "tldr": "Bitcoin opened April 30 at $75,752 — its lowest open in over a week — before recovering to $76,130 as yields and Iran-tied oil pressure risk assets.",
-      "why_it_matters": "Why it matters: A 50/100-day moving average bullish crossover is loading, but rising bond yields and a 4-year-high BTC-DXY inverse correlation set up a binary May.",
-      "the_details": [
-        "BTC opened $75,752.12 on April 30, the lowest weekly open; ETH opened $2,252.45, lowest since April 13.",
-        "U.S. 30-year Treasury yield touched 5%, weighing on long-duration risk assets including crypto.",
-        "CryptoQuant flags rising profit-taking risk as exchange inflows jump back near 76K cycle highs."
-      ],
-      "source": "CoinDesk Daybook",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
-      "category": "markets",
-      "impact": "high",
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/399288/pump-fun-burns-370-million-pump",
+      "category": "altcoins",
+      "impact": "medium",
       "timestamp": "2026-04-30T12:00:00Z"
     },
     {
-      "id": "story-2026-04-30-13-004",
-      "headline": "Senate market-structure bill markup slips to May as 100+ firms pile pressure",
-      "slug": "senate-market-structure-bill-may-slip",
-      "tldr": "Sen. Tillis confirmed the Senate Banking Committee will not mark up the crypto market-structure bill in April, pushing the vote into May.",
-      "why_it_matters": "Why it matters: The slip extends regulatory limbo for U.S. exchanges and DeFi, but a 100+ firm coalition led by Coinbase and Ripple is now openly lobbying for a May markup.",
+      "id": "story-2026-04-30-14-004",
+      "headline": "Banks lobby Treasury to slow GENIUS Act rollout; seek 60-day comment extension",
+      "slug": "banks-genius-act-stablecoin-delay",
+      "tldr": "Banking groups asked Treasury and FDIC to extend comment periods on three GENIUS Act stablecoin rules until after the OCC finishes its own framework.",
+      "why_it_matters": "Why it matters: A successful delay drags issuer licensing into late 2026, bullish for incumbent USDC and USDT, bearish for bank-issued stablecoin contenders.",
       "the_details": [
-        "Sen. Thom Tillis (R-N.C.) said the Banking Committee will not hold an April amend-and-vote hearing on the bill.",
-        "A coalition of 100+ crypto firms, including Coinbase and Ripple, sent letters urging Senate action on the Clarity Act framework.",
-        "Slip pushes legislative timing closer to summer recess, raising risk that 2026 passage stalls into Q4."
+        "Treasury, FinCEN and OFAC issued GENIUS Act proposals on April 1, 7, and 8 covering reserves, AML, and state-vs-federal jurisdiction.",
+        "Dual track: issuers under $10B can opt into qualifying state regimes; above $10B must move to OCC supervision.",
+        "Bankers want 60-day extensions stacked on top of the OCC's parallel rulemaking before any final framework lands."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/398197/senate-crypto-bill-faces-april-setback",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/22/banks-seek-to-slow-down-implementation-of-crypto-s-genius-act-on-stablecoin-oversight",
       "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-30T09:00:00Z"
+      "impact": "medium",
+      "timestamp": "2026-04-30T10:00:00Z"
     },
     {
-      "id": "story-2026-04-30-13-005",
-      "headline": "Solana Alpenglow upgrade targets 150ms finality — 80x faster than today",
-      "slug": "solana-alpenglow-simd-0326-150ms-finality",
-      "tldr": "Solana's pending Alpenglow consensus overhaul (SIMD-0326) aims to cut block finality from ~12 seconds to roughly 150 milliseconds by moving validator votes off-chain.",
-      "why_it_matters": "Why it matters: Sub-second finality would put Solana ahead of every L1 on settlement speed and unlock HFT-grade DeFi just as RWA value on the chain crossed $1.85B.",
+      "id": "story-2026-04-30-14-005",
+      "headline": "Solana ETFs draw $11.3M weekly inflow as Israel approves SOL-native stablecoin BILS",
+      "slug": "solana-etf-inflows-bils-stablecoin",
+      "tldr": "SOL ETFs recorded $11.3M of weekly inflows while Israel greenlit BILS, the first regulated stablecoin issued on Solana.",
+      "why_it_matters": "Why it matters: ETF demand is fading even with regulatory wins — SOL needs a real consumer payments moment, not just policy tailwinds, to retake $100.",
       "the_details": [
-        "SIMD-0326 (Alpenglow) compresses finality from ~12s to ~150ms by relocating validator vote processing off-chain.",
-        "Solana RWA value surpassed $1.85B and stablecoin supply on the chain hit $17B in April.",
-        "DoubleZero Edge launched real-time Solana data feeds on April 16 to complement the latency push for traders."
+        "Solana ETFs pulled $11.31M last week but April total of $39.93M is the sixth straight monthly decline.",
+        "Israel approved BILS stablecoin on Solana on April 28, the first sovereign-tier stablecoin issued natively on the chain.",
+        "SOL trading near $85.97 on Binance with the Alpenglow ~150ms finality upgrade still ahead as a 2026 catalyst."
       ],
-      "source": "Crypto.com / AInvest",
-      "source_url": "https://crypto.com/en/coins-ai/solana/latest-news",
-      "category": "infrastructure",
+      "source": "Crypto Briefing",
+      "source_url": "https://cryptobriefing.com/solana-etfs-see-113m-weekly-inflows-as-150-target-looms/",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-30T08:00:00Z"
+      "timestamp": "2026-04-30T09:00:00Z"
     }
   ]
 }
