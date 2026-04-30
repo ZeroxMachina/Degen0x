@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
+
+const ogImage = `${SITE_URL}/api/og?title=Funding+Rate+Arbitrage+Guide+2026&category=Learn&type=article`;
 
 export const metadata: Metadata = {
   title: "Funding Rate Arbitrage Guide 2026: Delta-Neutral Perp Strategies | degen0x",
@@ -24,20 +27,21 @@ export const metadata: Metadata = {
     title: "Funding Rate Arbitrage Guide 2026: Delta-Neutral Perp Strategies",
     description:
       "Complete guide to funding rate arbitrage. Cash-and-carry, cross-exchange arb, and delta-neutral strategies for 5-25% APY on perpetual futures.",
-    url: "https://degen0x.com/learn/funding-rate-arbitrage-guide-2026",
+    url: `${SITE_URL}/learn/funding-rate-arbitrage-guide-2026`,
     type: "article",
     publishedTime: "2026-03-25T00:00:00Z",
-    modifiedTime: "2026-03-25T00:00:00Z",
+    modifiedTime: "2026-04-30T00:00:00Z",
     authors: ["degen0x Team"],
-    images: [{ url: "https://degen0x.com/og-funding-rate-arbitrage-guide-2026.svg", width: 1200, height: 630, alt: "Funding Rate Arbitrage Guide 2026 — degen0x" }],
+    images: [{ url: ogImage, width: 1200, height: 630, alt: "Funding Rate Arbitrage Guide 2026 — degen0x" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Funding Rate Arbitrage Guide 2026 | degen0x",
     description:
       "Delta-neutral perp strategies: cash-and-carry, cross-exchange arb, and funding rate capture. 5-25% APY with managed risk.",
-    images: ["https://degen0x.com/og-funding-rate-arbitrage-guide-2026.svg"],
+    images: [ogImage],
   },
+  alternates: { canonical: `${SITE_URL}/learn/funding-rate-arbitrage-guide-2026` },
 };
 
 export default function FundingRateArbitrageLayout({
