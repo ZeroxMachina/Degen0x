@@ -1,13 +1,49 @@
-'use client';
-
 "use client";
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AuthoritySources from '@/components/AuthoritySources';
-
 import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+/* ── Focus-ring + hover + mobile-grid styles ── */
+const POLISH_CSS = `
+  .dca-btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  .dca-btn:hover {
+    filter: brightness(1.12);
+    transform: translateY(-1px);
+  }
+  .dca-input:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-color: var(--color-primary);
+  }
+  .dca-select:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  .dca-card {
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .dca-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 12px rgba(99,102,241,0.08);
+  }
+  .dca-table-row {
+    transition: background-color 0.15s;
+  }
+  .dca-table-row:hover {
+    background-color: var(--color-bg);
+  }
+  @media (max-width: 640px) {
+    .dca-asset-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .dca-results-grid { grid-template-columns: 1fr !important; }
+  }
+`;
 
 // ── Types ────────────────────────────────────────────────────────────────────
 type Frequency = "daily" | "weekly" | "bi-weekly" | "monthly";
@@ -212,6 +248,7 @@ export default function DCACalculatorPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg)" }}>
+      <style dangerouslySetInnerHTML={{ __html: POLISH_CSS }} />
       <SoftwareApplicationSchema
         url="https://degen0x.com/tools/dca-calculator"
         name="What is Dollar Cost Averaging?"
@@ -230,7 +267,7 @@ export default function DCACalculatorPage() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24, marginBottom: 32 }}>
+        <div className="dca-results-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24, marginBottom: 32 }}>
           {/* ── Input Panel ── */}
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {/* Asset selection */}
@@ -238,9 +275,10 @@ export default function DCACalculatorPage() {
               <label style={{ display: "block", fontSize: 12, fontWeight: 700, color: "var(--color-text-secondary)", marginBottom: 8, textTransform: "uppercase", letterSpacing: "0.06em" }}>
                 Select Asset
               </label>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
+              <div className="dca-asset-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8 }}>
                 {Object.entries(CRYPTO_ASSETS).map(([key, value]) => (
                   <button
+                    className="dca-btn"
                     key={key}
                     onClick={() => {
                       setSelectedAsset(key);
@@ -274,6 +312,7 @@ export default function DCACalculatorPage() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--color-text-secondary)" }}>$</span>
                 <input
+                  className="dca-input"
                   type="number"
                   value={investmentAmount}
                   onChange={(e) => setInvestmentAmount(Math.max(1, parseFloat(e.target.value) || 0))}
@@ -299,6 +338,7 @@ export default function DCACalculatorPage() {
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
                 {(["daily", "weekly", "bi-weekly", "monthly"] as const).map((freq) => (
                   <button
+                    className="dca-btn"
                     key={freq}
                     onClick={() => setFrequency(freq)}
                     style={{
@@ -326,6 +366,7 @@ export default function DCACalculatorPage() {
               </label>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
                 <select
+                  className="dca-select"
                   value={startMonth}
                   onChange={(e) => setStartMonth(parseInt(e.target.value))}
                   style={{
@@ -346,6 +387,7 @@ export default function DCACalculatorPage() {
                   ))}
                 </select>
                 <select
+                  className="dca-select"
                   value={startYear}
                   onChange={(e) => setStartYear(parseInt(e.target.value))}
                   style={{
@@ -376,6 +418,7 @@ export default function DCACalculatorPage() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--color-text-secondary)" }}>$</span>
                 <input
+                  className="dca-input"
                   value={useOverride ? overridePrice : currentPrice}
                   onChange={(e) => {
                     setUseOverride(true);
@@ -447,7 +490,7 @@ export default function DCACalculatorPage() {
                     fontSize: 20,
                     fontWeight: 800,
                     marginTop: 4,
-                    color: stats.pnl >= 0 ? "#22c55e" : "#f85149"
+                    color: stats.pnl >= 0 ? "var(--color-success)" : "var(--color-danger)"
                   }}>
                     {formatCurrency(stats.pnl)}
                   </div>
@@ -455,6 +498,7 @@ export default function DCACalculatorPage() {
                     fontSize: 12,
                     fontWeight: 700,
                     marginTop: 2,
+                    color: stats.pnl >= 0 ? "var(--color-success)" : "var(--color-danger)",
                   }}>
                     {stats.pnl >= 0 ? "+" : ""}{stats.pnlPercent.toFixed(1)}%
                   </div>
@@ -490,16 +534,16 @@ export default function DCACalculatorPage() {
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, fontSize: 13 }}>
                 <div>
                   <div style={{ color: "var(--color-text-secondary)", fontSize: 11, marginBottom: 4 }}>DCA Portfolio Value</div>
-                  <div style={{ fontWeight: 700, color: "#22c55e" }}>{formatCurrency(stats.currentValue)}</div>
+                  <div style={{ fontWeight: 700, color: "var(--color-success)" }}>{formatCurrency(stats.currentValue)}</div>
                 </div>
                 <div>
                   <div style={{ color: "var(--color-text-secondary)", fontSize: 11, marginBottom: 4 }}>Lump Sum Value</div>
-                  <div style={{ fontWeight: 700, color: "#f85149" }}>{formatCurrency(stats.lumpSumValue)}</div>
+                  <div style={{ fontWeight: 700, color: "var(--color-danger)" }}>{formatCurrency(stats.lumpSumValue)}</div>
                 </div>
               </div>
               <div style={{ marginTop: 8, padding: "8px 12px", background: "var(--color-bg)", borderRadius: 8, fontSize: 12 }}>
                 <div style={{
-                  color: stats.currentValue >= stats.lumpSumValue ? "#22c55e" : "#f85149",
+                  color: stats.currentValue >= stats.lumpSumValue ? "var(--color-success)" : "var(--color-danger)",
                   fontWeight: 700
                 }}>
                   {stats.currentValue >= stats.lumpSumValue ? "✓ DCA outperformed" : "✗ Lump sum was better"}
@@ -551,7 +595,7 @@ export default function DCACalculatorPage() {
                           style={{
                             width: "100%",
                             height: `${gainHeight}%`,
-                            background: "#22c55e",
+                            background: "var(--color-success)",
                             borderRadius: 3,
                           }}
                         />
@@ -561,7 +605,7 @@ export default function DCACalculatorPage() {
                           style={{
                             width: "100%",
                             height: `${Math.abs(gainHeight)}%`,
-                            background: "#f85149",
+                            background: "var(--color-danger)",
                             borderRadius: 3,
                           }}
                         />
@@ -582,7 +626,7 @@ export default function DCACalculatorPage() {
                   <span style={{ color: "var(--color-text-secondary)" }}>Amount Invested</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                  <div style={{ width: 12, height: 12, background: "#22c55e", borderRadius: 2 }} />
+                  <div style={{ width: 12, height: 12, background: "var(--color-success)", borderRadius: 2 }} />
                   <span style={{ color: "var(--color-text-secondary)" }}>Gains</span>
                 </div>
               </div>
@@ -611,7 +655,7 @@ export default function DCACalculatorPage() {
                 {monthlyBreakdown.map((entry, i) => {
                   const totalCoins = purchases.slice(0, purchases.indexOf(entry) + 1).reduce((s, p) => s + p.coins, 0);
                   return (
-                    <tr key={i} style={{ borderBottom: "1px solid var(--color-border)" }}>
+                    <tr key={i} className="dca-table-row" style={{ borderBottom: "1px solid var(--color-border)" }}>
                       <td style={{ padding: "12px", color: "var(--color-text)" }}>{entry.date.toLocaleDateString()}</td>
                       <td style={{ padding: "12px", textAlign: "right", color: asset.color, fontWeight: 600 }}>{formatPrice(entry.price)}</td>
                       <td style={{ padding: "12px", textAlign: "right", color: "var(--color-text)" }}>{formatCurrency(entry.amount)}</td>
@@ -643,7 +687,7 @@ export default function DCACalculatorPage() {
               content: "With DCA, you don't need to worry about buying at the peak. By spreading purchases over time, you average out the price volatility and reduce the risk of making a large investment at the worst possible time."
             },
             {
-              title: "Emotionally Discipline",
+              title: "Emotional Discipline",
               icon: "💪",
               content: "Automatic recurring purchases create a disciplined investment approach. You stay committed through market cycles without being swayed by short-term price movements or FOMO."
             },
@@ -663,7 +707,7 @@ export default function DCACalculatorPage() {
               content: "DCA performs well in bull markets (you capture the gains) and bear markets (you accumulate at lower prices). The strategy is agnostic to market direction when you have a long-term horizon."
             },
           ].map((item, i) => (
-            <div key={i} style={{ background: "var(--color-surface)", borderRadius: 12, border: "1px solid var(--color-border)", padding: 20 }}>
+            <div key={i} className="dca-card" style={{ background: "var(--color-surface)", borderRadius: 12, border: "1px solid var(--color-border)", padding: 20 }}>
               <div style={{ fontSize: 24, marginBottom: 8 }}>{item.icon}</div>
               <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--color-text)", marginBottom: 8 }}>{item.title}</h3>
               <p style={{ fontSize: 13, color: "var(--color-text-secondary)", lineHeight: 1.6 }}>{item.content}</p>
@@ -676,23 +720,9 @@ export default function DCACalculatorPage() {
           <strong>⚠️ Disclaimer:</strong> This calculator uses simulated historical price data for educational purposes. Past performance is not indicative of future results. DCA does not guarantee profits or protect against losses in declining markets. This is not financial advice. Always do your own research and consult with a financial advisor before making investment decisions.
         </div>
       </div>
-    
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "Dca Calculator",
-              "url": "https://degen0x.com/tools/dca-calculator",
-              "applicationCategory": "FinanceApplication",
-              "operatingSystem": "Web",
-              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-            })
-          }}
-        />
       <AuthoritySources url="/tools/dca-calculator" />
       <RelatedContent category="tools" currentSlug="/tools/dca-calculator" />
-      </div>
+      <BackToTop />
+    </div>
   );
 }

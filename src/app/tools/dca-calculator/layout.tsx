@@ -5,6 +5,9 @@ const SITE_URL = "https://degen0x.com";
 export const metadata: Metadata = {
   title: "DCA Calculator — Dollar Cost Averaging Simulator | degen0x",
   description: "Simulate dollar-cost averaging strategies for Bitcoin, Ethereum, and 100+ cryptocurrencies with historical performance data.",
+  alternates: {
+    canonical: `${SITE_URL}/tools/dca-calculator`,
+  },
   openGraph: {
     title: "DCA Calculator — Dollar Cost Averaging Simulator | degen0x",
     description: "Simulate dollar-cost averaging strategies for Bitcoin, Ethereum, and 100+ cryptocurrencies with historical performance data.",
