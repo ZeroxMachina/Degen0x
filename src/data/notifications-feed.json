@@ -1,5 +1,45 @@
 [
   {
+    "id": "feed-2026-04-30-013",
+    "type": "news",
+    "title": "📰 Solana Alpenglow targets 150ms finality — 80x faster, votes move off-chain",
+    "message": "SIMD-0326 rewires Solana consensus to cut block finality from ~12s to ~150ms by moving validator votes off-chain. The deep-dive on what changes for MEV and DEX UX.",
+    "actionUrl": "/learn/solana-alpenglow-consensus-upgrade-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-012",
+    "type": "news",
+    "title": "📰 Senate market-structure markup slips to May — what the CLARITY Act actually does",
+    "message": "Tillis confirmed the Senate Banking markup will not happen in April. Inside the CLARITY Act framework — what it codifies for commodities, securities, and DeFi.",
+    "actionUrl": "/learn/clarity-act-crypto-guide",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-011",
+    "type": "news",
+    "title": "📰 BTC closes April defensive at $76K as 30-year yield hits 5% — the macro read",
+    "message": "5% long yields and Iran-tied oil pressure are pushing BTC into the May rate-path window. Decision-day playbook for the post-FOMC tape.",
+    "actionUrl": "/learn/fomc-fed-rate-crypto-guide",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-010",
+    "type": "news",
+    "title": "📰 DeFi bleeds $606M across 12 exploits in 18 days as Kelp DAO contagion lingers",
+    "message": "Drift's $285M and Kelp DAO's $293M headlined April's $606M exploit run. Inside the post-mortem cluster — attack paths and lessons for protocol risk.",
+    "actionUrl": "/learn/drift-protocol-285m-hack-analysis-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-009",
+    "type": "news",
+    "title": "📰 Coinbase opens WRON-USD spot trading May 1 — Ronin's first US tier-one pair",
+    "message": "After years of offshore-only liquidity, Ronin's gaming token gets a tier-one US fiat pair. The deep-dive on Sky Mavis, Axie Infinity and gaming-first L2 design.",
+    "actionUrl": "/learn/blockchain-gaming-gamefi-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-008",
     "type": "news",
     "title": "📰 Spot BTC ETFs pull $1.7B in April as Strategy stacks 56,238 BTC for $4.1B",
