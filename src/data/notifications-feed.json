@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-30-019",
+    "type": "news",
+    "title": "📰 Lazarus owns April: crypto hack toll crests $620M, 95% from one DPRK crew",
+    "message": "April 2026 is the worst month for crypto theft since February 2025, with $620M+ drained across 12 incidents and Lazarus behind the two biggest.",
+    "actionUrl": "/news",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-018",
     "type": "news",
     "title": "📰 GENIUS Act dual-track: $10B threshold splits issuers between state regimes and OCC",
@@ -230,45 +238,5 @@
     "message": "BTC fell ~3% below $77,000 Tuesday after twice failing $80K, dragging ETH and SOL down as oil topped $100.",
     "actionUrl": "/news",
     "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-003",
-    "type": "news",
-    "title": "📰 SEC Chair Atkins unveils 'Project Crypto' at Bitcoin 2026, classifies most tokens as non-securities",
-    "message": "Paul Atkins debuted a Commission-wide initiative at Bitcoin 2026 establishing a five-category token taxonomy that pulls most digital assets out of securities law.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-002",
-    "type": "news",
-    "title": "📰 Bitcoin stalls at $79.4K as Coinbase premium flips negative for first time since April 8",
-    "message": "BTC's rally faded near $79,400 and slipped to ~$77K as US institutional demand cooled into the FOMC decision.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-29-001",
-    "type": "news",
-    "title": "📰 Western Union to launch Solana-powered USDPT stablecoin with Anchorage Digital",
-    "message": "Remittance giant Western Union is pivoting to blockchain rails with USDPT, a Solana stablecoin issued by Anchorage Digital Bank.",
-    "actionUrl": "/news",
-    "date": "2026-04-29"
-  },
-  {
-    "id": "feed-2026-04-28-024",
-    "type": "news",
-    "title": "📰 BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
-    "message": "Bitcoin failed at $80K and bled to $76,342 Tuesday as consumer sentiment crashed to a record low and traders unwound risk hours before the Fed.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
-  },
-  {
-    "id": "feed-2026-04-28-023",
-    "type": "news",
-    "title": "📰 FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
-    "message": "The Fed wraps its two-day meeting Wednesday with crypto traders de-risked and BTC stalling under $78,000 ahead of the rate call.",
-    "actionUrl": "/news",
-    "date": "2026-04-28"
   }
 ]

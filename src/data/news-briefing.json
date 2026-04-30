@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T14:10:00Z",
-  "briefing_id": "briefing-2026-04-30-14",
+  "generated_at": "2026-04-30T15:08:00Z",
+  "briefing_id": "briefing-2026-04-30-15",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-14-001",
-      "headline": "SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities in joint interpretation",
-      "slug": "sec-cftc-joint-interpretation-digital-commodities",
-      "tldr": "A joint SEC-CFTC interpretation lays out a unified token taxonomy and explicitly designates the five biggest assets as digital commodities.",
-      "why_it_matters": "Why it matters: This kills the Howey ambiguity that has shadowed major altcoins for a decade and clears the runway for staked-asset ETFs and bank custody.",
+      "id": "story-2026-04-30-15-001",
+      "headline": "Lazarus owns April: crypto hack toll crests $620M, 95% from one DPRK crew",
+      "slug": "lazarus-owns-april-crypto-hack-toll-620m-dprk",
+      "tldr": "April 2026 is the worst month for crypto theft since February 2025, with $620M+ drained across 12 incidents and Lazarus behind the two biggest.",
+      "why_it_matters": "Why it matters: Two cross-chain bridges and a single compromised admin key gave one nation-state nearly $580M — the attack surface narrative is no longer code, it's keys and people.",
       "the_details": [
-        "Joint SEC-CFTC interpretation defines five token classes: digital commodities, collectibles, tools, stablecoins, and digital securities.",
-        "BTC, ETH, SOL, XRP and LINK are named directly as digital commodities, putting them firmly under CFTC oversight.",
-        "Agencies signed a Memorandum of Understanding to coordinate enforcement and rulemaking across the new framework."
+        "Kelp DAO bridge drained for $292M on April 19, freezing rsETH collateral across Aave, SparkLend, Fluid and Upshift.",
+        "Drift Protocol lost $285M on April 1 via fake-token oracle manipulation through a compromised admin key.",
+        "Year-to-date 2026 theft hits ~$771.8M across 47 incidents, per April recap data."
       ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-30T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-30-15-002",
+      "headline": "Banks push to slow GENIUS Act rollout as Agora races OCC for stablecoin charter",
+      "slug": "banks-push-slow-genius-act-agora-occ-charter",
+      "tldr": "Major U.S. banks are asking regulators for extended GENIUS Act comment windows while crypto-native issuer Agora sprints to lock in an OCC charter first.",
+      "why_it_matters": "Why it matters: First-mover advantage on a federal stablecoin charter could lock in a multi-year moat — banks know it, which is why they're trying to slow the clock.",
+      "the_details": [
+        "Banking groups want extended public comment periods on FDIC and OCC stablecoin rulemakings before full implementation.",
+        "Agora is filing for federal trust charter to issue stablecoins under direct OCC oversight.",
+        "GENIUS Act enacted late 2025 splits issuers by size — sub-$10B can opt into state regimes, $10B+ move to OCC."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/coindesk-news/2026/04/29/banks-push-to-slow-stablecoin-law-as-agora-races-for-charter",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-30T13:30:00Z"
+      "timestamp": "2026-04-29T20:00:00Z"
     },
     {
-      "id": "story-2026-04-30-14-002",
-      "headline": "BTC slides to $75,752 as Trump weighs new Iran strikes; ETH cracks $2,252",
-      "slug": "btc-iran-strait-of-hormuz-risk-off",
-      "tldr": "Bitcoin opened at its lowest level in over a week and ethereum at a two-week low after reports of fresh US military planning around Iran.",
-      "why_it_matters": "Why it matters: Crypto is trading like a high-beta risk asset again; geopolitical headlines now move BTC harder than the Fed does.",
+      "id": "story-2026-04-30-15-003",
+      "headline": "BTC closes April defensive at $76K even as ETFs absorb $1.7B, biggest haul since October",
+      "slug": "btc-closes-april-defensive-76k-etf-inflows-biggest-since-october",
+      "tldr": "Bitcoin enters May on the back foot near $76,130 even as spot BTC ETFs absorbed roughly $1.7B in April — the largest monthly inflow since October 2025.",
+      "why_it_matters": "Why it matters: Institutional bid is the only thing keeping BTC propped against 5% 30-year yields and Iran tape — strip ETF flows and the chart looks materially worse.",
       "the_details": [
-        "BTC opened at $75,752.12 Thursday — lowest open in over a week — and recovered to $76,130 by 7:18 a.m. ET.",
-        "ETH opened at $2,252.45, the weakest print since April 13, before clawing back to $2,268.50.",
-        "Trigger: reports Trump is weighing additional Iran action to force renewed peace talks and reopen the Strait of Hormuz."
+        "BTC opened April 30 at $75,752, lowest since April 13, before bouncing to $76,130 by 7:18 a.m. ET.",
+        "April crypto market cap rose ~10% to ~$2.7T; BTC +16% on the month, ETH +14% to ~$2,268.",
+        "Macro headwinds — U.S. 30-year yields at 5%, Iran energy risk — capping further upside into May."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-april-30-2026-values-moving-lower-each-morning-this-week-113359674.html",
-      "category": "markets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
+      "category": "bitcoin",
       "impact": "high",
-      "timestamp": "2026-04-30T11:30:00Z"
-    },
-    {
-      "id": "story-2026-04-30-14-003",
-      "headline": "Pump.fun torches $370M in PUMP, commits 50% of revenue to perpetual buyback-burn",
-      "slug": "pumpfun-370m-buyback-burn-program",
-      "tldr": "Solana memecoin launchpad Pump.fun burned $370M of PUMP and locked in a permanent buyback-burn funded by half of platform revenue.",
-      "why_it_matters": "Why it matters: This is the most aggressive token-revenue alignment yet from a top-five fee generator and sets a new bar for memecoin platform tokenomics.",
-      "the_details": [
-        "$370M of PUMP tokens already burned; future burns will run as a buyback-and-burn program.",
-        "50% of net revenue earmarked for buybacks; remaining 50% reserved for 'big bets' over the next 5-10 years.",
-        "Pump.fun has been a top fee generator on Solana, pivoting from pure mercenary supply to value capture."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/399288/pump-fun-burns-370-million-pump",
-      "category": "altcoins",
-      "impact": "medium",
       "timestamp": "2026-04-30T12:00:00Z"
     },
     {
-      "id": "story-2026-04-30-14-004",
-      "headline": "Banks lobby Treasury to slow GENIUS Act rollout; seek 60-day comment extension",
-      "slug": "banks-genius-act-stablecoin-delay",
-      "tldr": "Banking groups asked Treasury and FDIC to extend comment periods on three GENIUS Act stablecoin rules until after the OCC finishes its own framework.",
-      "why_it_matters": "Why it matters: A successful delay drags issuer licensing into late 2026, bullish for incumbent USDC and USDT, bearish for bank-issued stablecoin contenders.",
+      "id": "story-2026-04-30-15-004",
+      "headline": "BTC spot volume craters into month-end, setting up an asymmetric vol break",
+      "slug": "btc-spot-volume-craters-month-end-asymmetric-vol-break",
+      "tldr": "Bitcoin trading volume is falling fast heading into May, a setup that historically resolves with violent directional moves rather than slow drift.",
+      "why_it_matters": "Why it matters: Compressed volume plus crowded long funding equals trapdoor risk on either side — options desks are pricing wider tails into the May FOMC window.",
       "the_details": [
-        "Treasury, FinCEN and OFAC issued GENIUS Act proposals on April 1, 7, and 8 covering reserves, AML, and state-vs-federal jurisdiction.",
-        "Dual track: issuers under $10B can opt into qualifying state regimes; above $10B must move to OCC supervision.",
-        "Bankers want 60-day extensions stacked on top of the OCC's parallel rulemaking before any final framework lands."
+        "Spot volumes on top venues at multi-month lows even as ETF flows stay positive.",
+        "Whale wallets adding longs while perps funding stays deeply negative — a rare divergence.",
+        "Analysts flag $80K overhead resistance and $73K macro support as next break levels."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/22/banks-seek-to-slow-down-implementation-of-crypto-s-genius-act-on-stablecoin-oversight",
-      "category": "regulation",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/29/bitcoin-trading-volume-is-falling-fast-that-rarely-ends-smoothly",
+      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-30T10:00:00Z"
+      "timestamp": "2026-04-29T18:00:00Z"
     },
     {
-      "id": "story-2026-04-30-14-005",
-      "headline": "Solana ETFs draw $11.3M weekly inflow as Israel approves SOL-native stablecoin BILS",
-      "slug": "solana-etf-inflows-bils-stablecoin",
-      "tldr": "SOL ETFs recorded $11.3M of weekly inflows while Israel greenlit BILS, the first regulated stablecoin issued on Solana.",
-      "why_it_matters": "Why it matters: ETF demand is fading even with regulatory wins — SOL needs a real consumer payments moment, not just policy tailwinds, to retake $100.",
+      "id": "story-2026-04-30-15-005",
+      "headline": "TOKEN2049 Dubai shoved to 2027 as UAE security risks force flagship event delay",
+      "slug": "token2049-dubai-pushed-2027-uae-security-risks",
+      "tldr": "Organizers postponed TOKEN2049 Dubai to 2027 citing heightened regional security risks in the UAE tied to the ongoing Iran conflict.",
+      "why_it_matters": "Why it matters: The Gulf has become crypto's de facto deal venue — losing the year's biggest Middle East summit reroutes BD pipelines and capital intros for 12+ months.",
       "the_details": [
-        "Solana ETFs pulled $11.31M last week but April total of $39.93M is the sixth straight monthly decline.",
-        "Israel approved BILS stablecoin on Solana on April 28, the first sovereign-tier stablecoin issued natively on the chain.",
-        "SOL trading near $85.97 on Binance with the Alpenglow ~150ms finality upgrade still ahead as a 2026 catalyst."
+        "Decision driven by escalating regional tensions and energy-market volatility, per organizers.",
+        "TOKEN2049 Singapore remains the flagship Asia event for 2026; Dubai now slated to return 2027.",
+        "Knock-on effect on side-event sponsors and token launch calendars eyeing UAE liquidity."
       ],
-      "source": "Crypto Briefing",
-      "source_url": "https://cryptobriefing.com/solana-etfs-see-113m-weekly-inflows-as-150-target-looms/",
-      "category": "altcoins",
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-30T09:00:00Z"
+      "timestamp": "2026-04-29T15:00:00Z"
     }
   ]
 }
