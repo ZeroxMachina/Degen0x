@@ -5,6 +5,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import { findBriefingCrossLink } from "@/lib/briefing-cross-links";
 
 // ── Types ──────────────────────────────────────────────────
 interface BriefingStory {
@@ -131,8 +132,9 @@ export default async function BriefingStoryPage({ params }: Props) {
   const others = briefing.stories.filter((s) => s.slug !== story.slug).slice(0, 4);
   const cat = categoryColor(story.category);
   const impact = IMPACT_STYLES[story.impact];
+  const crossLink = findBriefingCrossLink(story);
 
-  const jsonLd = {
+  const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: story.headline,
@@ -151,6 +153,12 @@ export default async function BriefingStoryPage({ params }: Props) {
     },
     isBasedOn: story.source_url,
   };
+  if (crossLink) {
+    // Surface the canonical deep-dive guide as a structured-data
+    // related link so search engines can connect the briefing to the
+    // long-lived explainer.
+    jsonLd.relatedLink = `${SITE_URL}${crossLink.href}`;
+  }
 
   return (
     <>
@@ -182,41 +190,41 @@ export default async function BriefingStoryPage({ params }: Props) {
           >
             {impact.label}
           </span>
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-[#636366]">
             {formatDateTime(story.timestamp)}
           </span>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-[var(--color-text)] leading-tight tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight tracking-tight">
           {story.headline}
         </h1>
 
         {/* TL;DR */}
-        <section className="mt-6 p-5 rounded-2xl bg-[var(--color-bg-card)] border border-[var(--color-border)]">
-          <div className="text-[10px] font-black tracking-widest uppercase text-[var(--color-accent)] mb-2">
+        <section className="mt-6 p-5 rounded-2xl bg-[#0f1013] border border-[#1c1c1e]">
+          <div className="text-[10px] font-black tracking-widest uppercase text-[#f59e0b] mb-2">
             TL;DR
           </div>
-          <p className="text-lg text-[var(--color-text)] leading-relaxed">{story.tldr}</p>
+          <p className="text-lg text-white leading-relaxed">{story.tldr}</p>
         </section>
 
         {/* Why it matters */}
         <section className="mt-6">
-          <h2 className="text-[11px] font-black tracking-widest uppercase text-[var(--color-primary)] mb-2">
+          <h2 className="text-[11px] font-black tracking-widest uppercase text-[#818cf8] mb-2">
             Why it matters
           </h2>
-          <p className="text-[var(--color-text-secondary)] leading-relaxed">{story.why_it_matters}</p>
+          <p className="text-[#adadad] leading-relaxed">{story.why_it_matters}</p>
         </section>
 
         {/* The details */}
         {story.the_details?.length > 0 && (
           <section className="mt-8">
-            <h2 className="text-[11px] font-black tracking-widest uppercase text-[var(--color-success,#22c55e)] mb-3">
+            <h2 className="text-[11px] font-black tracking-widest uppercase text-[#22c55e] mb-3">
               The details
             </h2>
             <ul className="space-y-3">
               {story.the_details.map((d, i) => (
-                <li key={i} className="flex gap-3 text-[var(--color-text)] leading-relaxed">
-                  <span className="text-[var(--color-text-secondary)] opacity-50 shrink-0">•</span>
+                <li key={i} className="flex gap-3 text-[#d4d4d4] leading-relaxed">
+                  <span className="text-[#636366] shrink-0">•</span>
                   <span>{d}</span>
                 </li>
               ))}
@@ -224,20 +232,43 @@ export default async function BriefingStoryPage({ params }: Props) {
           </section>
         )}
 
+        {/* Canonical deep-dive cross-link (build-cycle overlay) */}
+        {crossLink && (
+          <section className="mt-8">
+            <Link
+              href={crossLink.href}
+              className="block p-5 rounded-2xl bg-gradient-to-br from-[#1a1730] to-[#0f1013] border border-[#6366f1]/30 hover:border-[#6366f1]/70 transition-all"
+            >
+              <div className="text-[10px] font-black tracking-widest uppercase text-[#6366f1] mb-2">
+                Read the deep-dive guide
+              </div>
+              <div className="text-base font-bold text-white leading-snug">
+                {crossLink.label}
+              </div>
+              <p className="text-sm text-[#adadad] leading-relaxed mt-2">
+                {crossLink.blurb}
+              </p>
+              <div className="text-xs font-semibold text-[#818cf8] mt-3">
+                Continue on {SITE_NAME} →
+              </div>
+            </Link>
+          </section>
+        )}
+
         {/* Source attribution */}
-        <section className="mt-10 p-5 rounded-2xl bg-[var(--color-bg-card)] border border-[var(--color-border)]">
-          <div className="text-[10px] font-black tracking-widest uppercase text-[var(--color-text-secondary)] mb-2">
+        <section className="mt-10 p-5 rounded-2xl bg-[#0f1013] border border-[#1c1c1e]">
+          <div className="text-[10px] font-black tracking-widest uppercase text-[#8e8e93] mb-2">
             Primary source
           </div>
           <a
             href={story.source_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[var(--color-accent)] font-semibold hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
+            className="inline-flex items-center gap-2 text-[#f59e0b] font-semibold hover:underline"
           >
             Read the original report on {story.source} ↗
           </a>
-          <p className="text-xs text-[var(--color-text-secondary)] mt-3">
+          <p className="text-xs text-[#636366] mt-3">
             degen0x summarizes, contextualizes, and curates. All credit to the reporting
             outlet. This briefing was generated {formatDateTime(briefing.generated_at)}.
           </p>
@@ -245,19 +276,19 @@ export default async function BriefingStoryPage({ params }: Props) {
 
         {/* Related stories */}
         {others.length > 0 && (
-          <section className="mt-12 pt-8 border-t border-[var(--color-border)]">
-            <h2 className="text-lg font-bold text-[var(--color-text)] mb-4">More in this briefing</h2>
+          <section className="mt-12 pt-8 border-t border-[#1c1c1e]">
+            <h2 className="text-lg font-bold text-white mb-4">More in this briefing</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {others.map((s) => (
                 <Link
                   key={s.slug}
                   href={`/news/briefing/${s.slug}`}
-                  className="p-4 rounded-xl bg-[var(--color-bg-card)] border border-[var(--color-border)] hover:border-[var(--color-primary)]/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] transition-all"
+                  className="p-4 rounded-xl bg-[#0f1013] border border-[#1c1c1e] hover:border-[#6366f1]/50 transition-all"
                 >
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--color-text-secondary)] mb-1">
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-[#636366] mb-1">
                     {s.category} · {s.source}
                   </div>
-                  <div className="text-sm font-bold text-[var(--color-text)] leading-snug">{s.headline}</div>
+                  <div className="text-sm font-bold text-white leading-snug">{s.headline}</div>
                 </Link>
               ))}
             </div>
@@ -267,7 +298,7 @@ export default async function BriefingStoryPage({ params }: Props) {
         <div className="mt-10 text-center">
           <Link
             href="/news"
-            className="text-sm text-[var(--color-primary)] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] font-semibold"
+            className="text-sm text-[#6366f1] hover:underline font-semibold"
           >
             ← Back to all news
           </Link>

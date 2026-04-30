@@ -1,10 +1,26 @@
 [
   {
+    "id": "feed-2026-04-30-003",
+    "type": "news",
+    "title": "📰 5-front macro pile-on today: FOMC + ECB + BoE + US Q1 GDP + PCE",
+    "message": "Five major macro events land in a single tape, with the Fed decision the keystone for crypto risk pricing into May.",
+    "actionUrl": "/learn/fomc-fed-rate-crypto-guide",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-002",
+    "type": "news",
+    "title": "📰 MegaETH TGE lands today after years of fast-L2 hype",
+    "message": "MegaETH ships its token generation event and opens claims, putting the real-time L2 thesis on the public market.",
+    "actionUrl": "/learn/megaeth-real-time-blockchain-layer-2-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-001",
     "type": "news",
     "title": "📰 April crypto hacks crack $620M after Kelp DAO and Drift back-to-back drains",
     "message": "April losses from crypto exploits topped $620M across 12 incidents, the worst single month since February 2025 and 3x Q1 combined.",
-    "actionUrl": "/news",
+    "actionUrl": "/learn/drift-protocol-285m-hack-analysis-2026",
     "date": "2026-04-30"
   },
   {
