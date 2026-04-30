@@ -257,7 +257,8 @@ export default function SecCftcMouCryptoGuidePage() {
               <strong>Nov 2025:</strong> Solana staking ETFs (BSOL, VSOL) approved and launched—first staking ETFs in the US.<br />
               <strong>Mar 10, 2026:</strong> Senators attempt to advance Clarity Act with stablecoin yield compromise.<br />
               <strong>Mar 11, 2026:</strong> SEC-CFTC MOU signed. BTC and ETH formally classified as digital commodities.<br />
-              <strong>Mar 12, 2026:</strong> BlackRock launches ETHB (staked Ethereum ETF). $15.5M first-day volume.
+              <strong>Mar 12, 2026:</strong> BlackRock launches ETHB (staked Ethereum ETF). $15.5M first-day volume.<br />
+              <strong>Apr 29, 2026:</strong> Joint SEC-CFTC interpretation extends the framework, naming BTC, ETH, SOL, XRP and LINK in the &quot;digital commodity&quot; bucket. See the <Link href="/learn/sec-cftc-digital-commodity-classification-guide-2026" style={{ color: S.blue, textDecoration: "none" }}>SEC-CFTC Digital Commodity Classification Guide 2026</Link> for the five-bucket breakdown.
             </div>
           </div>
 
@@ -535,6 +536,7 @@ export default function SecCftcMouCryptoGuidePage() {
           <h2 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: 16 }}>Related Articles</h2>
           <div style={{ display: "grid", gap: 8 }}>
             {[
+              { title: "SEC-CFTC Digital Commodity Classification Guide 2026", href: "/learn/sec-cftc-digital-commodity-classification-guide-2026" },
               { title: "Clarity Act Crypto Guide", href: "/learn/clarity-act-crypto-guide" },
               { title: "Crypto Regulations 2026", href: "/learn/crypto-regulations-2026" },
               { title: "Staked Crypto ETFs Guide 2026", href: "/learn/staked-crypto-etfs-guide-2026" },
