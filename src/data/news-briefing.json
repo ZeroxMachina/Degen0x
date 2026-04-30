@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T18:08:00Z",
-  "briefing_id": "briefing-2026-04-30-18",
+  "generated_at": "2026-04-30T19:43:52Z",
+  "briefing_id": "briefing-2026-04-30-19",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-18-001",
-      "headline": "SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities in joint guidance",
-      "slug": "sec-cftc-joint-guidance-digital-commodities",
-      "tldr": "A joint SEC-CFTC interpretation establishes a token taxonomy that explicitly carves the top five names out of securities law.",
-      "why_it_matters": "Why it matters: Years of jurisdictional ambiguity collapse into a single roadmap, clearing runway for spot listings, ETF expansions, and CFTC-regulated derivatives on majors.",
+      "id": "story-2026-04-30-19-001",
+      "headline": "Banks push to slow stablecoin law as Agora races for federal charter",
+      "slug": "banks-slow-stablecoin-law-agora-charter",
+      "tldr": "US banks are lobbying to delay key stablecoin rules just as Agora pushes for a national bank charter under the GENIUS Act framework.",
+      "why_it_matters": "Why it matters: Bank pushback could carve out distribution lanes that lock crypto-native issuers out of T+0 settlement and Fed rails just as the rules are being written.",
       "the_details": [
-        "Taxonomy splits assets into digital commodities, collectibles, tools, stablecoins, and securities — most live tokens land outside SEC turf.",
-        "SEC Chair Paul Atkins frames the updated MOU as the end of duplicative registration regimes that he says have stifled US innovation.",
-        "Guidance lands alongside April's GENIUS Act rulemakings from FDIC, Treasury, FinCEN and OFAC — the full federal stack is finally moving in lockstep."
+        "Bank groups want longer transition windows on reserve, capital, and disclosure rules tied to GENIUS Act stablecoin issuance.",
+        "Agora is racing for a national trust charter that would let it custody reserves and issue across the US under a single regime.",
+        "Treasury and OCC face pressure to finalize implementing rules before midterm political calendar tightens."
       ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/coindesk-news/2026/04/29/banks-push-to-slow-stablecoin-law-as-agora-races-for-charter",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-30T15:00:00Z"
+      "timestamp": "2026-04-30T19:43:52Z"
     },
     {
-      "id": "story-2026-04-30-18-002",
-      "headline": "BTC closes April defensive at $76K as 30-year yield hits 5% and Iran risk lingers",
-      "slug": "bitcoin-april-close-defensive-yields",
-      "tldr": "Bitcoin opened the month's final session at $75,752 — its lowest in over a week — with seasonality flipping bullish for May despite macro headwinds.",
-      "why_it_matters": "Why it matters: A higher-for-longer Fed plus a 5% long-bond yield is the harshest setup for risk assets in years, yet a 50/100-day golden cross is forming — the May tape will test which signal wins.",
+      "id": "story-2026-04-30-19-002",
+      "headline": "North Korea drove 76% of 2026 crypto theft, $6B stolen since 2017: TRM Labs",
+      "slug": "north-korea-76-percent-2026-crypto-theft-trm",
+      "tldr": "TRM Labs says DPRK-linked actors account for 76% of stolen crypto so far in 2026, with cumulative theft since 2017 now over $6 billion.",
+      "why_it_matters": "Why it matters: The concentration of risk in one state actor reframes hack defense from generic security hygiene to targeted nation-state threat modeling for every protocol team.",
       "the_details": [
-        "ETH tagged $2,220 support after the FOMC, triggering $149.7M in liquidations; BTC longs lost $110M alone.",
-        "BTC is still up roughly 13% in April even after the late-month fade, and historical May seasonality plus ETF inflows tilt bullish.",
-        "Funding stayed deeply negative while whales added longs — a classic squeeze setup if macro pressure eases into the Fed's June meeting."
+        "TRM Labs report attributes the bulk of 2026 losses to DPRK groups including Lazarus and TraderTraitor.",
+        "Bridges, custodial wallets, and admin-key compromises remain the dominant attack surface.",
+        "OFAC has expanded sanctions on mixers and OTC desks tied to DPRK laundering rails through April."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-30T19:43:52Z"
+    },
+    {
+      "id": "story-2026-04-30-19-003",
+      "headline": "BTC, ETH, XRP slide as spot ETF outflows deepen heading into May",
+      "slug": "btc-eth-xrp-slide-etf-outflows-deepen",
+      "tldr": "Bitcoin, ether, and XRP fell Thursday morning as spot crypto ETF outflows extended a multi-day streak ahead of the Fed decision week.",
+      "why_it_matters": "Why it matters: Persistent ETF redemptions are draining the marginal bid that powered the 2025 leg up, leaving spot supply concentrated with weaker hands into a thin May tape.",
+      "the_details": [
+        "BTC opened at $75,752 \u2014 its lowest open in over a week \u2014 before recovering to $76,130 by 7:18am ET.",
+        "ETH opened at $2,252, the lowest print since April 13, before edging to $2,268.",
+        "Crypto Times tracks consecutive net-outflow days across the major US spot BTC and ETH ETFs."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-april-30-2026-values-moving-lower-each-morning-this-week-113359674.html",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-30T19:43:52Z"
+    },
+    {
+      "id": "story-2026-04-30-19-004",
+      "headline": "BTC closes worst April since 2022 but May seasonality flips bullish",
+      "slug": "btc-april-close-may-seasonality-bullish",
+      "tldr": "Bitcoin ended April defensive near $76K, but historical May returns and post-halving cycle data lean bullish according to CoinDesk traders.",
+      "why_it_matters": "Why it matters: A bullish seasonal setup colliding with weak ETF flows and shrinking volume sets up a high-variance May where positioning, not narrative, will dominate.",
+      "the_details": [
+        "BTC has averaged positive May returns in post-halving years across the past three cycles.",
+        "Analysts cite 30-year yields near 5% and lingering Iran risk as macro overhangs to the seasonal tailwind.",
+        "BTC spot volume has been falling fast \u2014 a setup that historically resolves in sharp moves either direction."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-30T13:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-18-003",
-      "headline": "April finishes worst crypto-hack month in over a year as bridges and admin keys collapse",
-      "slug": "april-2026-worst-crypto-hack-month",
-      "tldr": "The month closes with roughly $620M drained across 12 incidents, with bridge failures and admin-key compromises dominating the loss column.",
-      "why_it_matters": "Why it matters: The pattern is clear — DeFi's biggest attack surface in 2026 is not smart-contract math, it's centralized operational keys and cross-chain plumbing.",
-      "the_details": [
-        "Drift Protocol ($285M, April 1) and Kelp DAO ($292M, April 19) account for the vast majority of the haul.",
-        "Smaller hits piled up: CoW Swap lost $1.2M to a domain hijack, Dango bridge $410K to a contract bug, Silo Finance $392K to a misconfigured oracle.",
-        "Wasabi Protocol's late-April $4.5M deployer-key drain underlines the recurring admin-permission failure mode across the month."
-      ],
-      "source": "Live Bitcoin News",
-      "source_url": "https://www.livebitcoinnews.com/april-2026-crypto-hacks-hit-620m-as-bridge-failures-and-admin-exploits-dominate-attacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-30T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-30-18-004",
-      "headline": "Aave Horizon RWA market hits $550M in deposits as tokenized Treasuries go live as collateral",
-      "slug": "aave-horizon-rwa-550m-deposits",
-      "tldr": "Aave's institutional-only Horizon market lets qualified entities post tokenized US Treasuries as collateral for stablecoin loans.",
-      "why_it_matters": "Why it matters: This is the cleanest bridge yet between TradFi balance sheets and on-chain liquidity — and it's onboarding real money while DeFi-at-large is still nursing the Kelp wound.",
-      "the_details": [
-        "Horizon's $550M in net deposits is a standout amid Aave's $6B+ TVL drop after the April 19 Kelp exploit.",
-        "Tokenized Treasuries serve as collateral for stablecoin borrows, giving institutions on-chain leverage without selling the underlying.",
-        "Aave also deployed natively on Solana on April 27 via the Sunrise bridge, extending its multi-chain footprint as it rebuilds confidence."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/aave/latest-updates/",
-      "category": "defi",
+      "category": "bitcoin",
       "impact": "medium",
-      "timestamp": "2026-04-30T10:00:00Z"
+      "timestamp": "2026-04-30T19:43:52Z"
     },
     {
-      "id": "story-2026-04-30-18-005",
-      "headline": "XRP sentiment rockets into FOMO zone after Rakuten Pay partnership lands",
-      "slug": "xrp-rakuten-pay-partnership-fomo",
-      "tldr": "XRP's social-sentiment ratio spiked into the FOMO band on April 29 as Rakuten Pay confirmed an XRP rails integration in Japan.",
-      "why_it_matters": "Why it matters: A Japanese super-app payments integration is the first credible mainstream consumer rail for XRP since the SEC overhang lifted — adoption optionality is finally re-pricing.",
+      "id": "story-2026-04-30-19-005",
+      "headline": "Aptos leads CoinDesk 20 with 4.4% pop as nearly all index assets rise",
+      "slug": "aptos-leads-coindesk-20-altcoins-rise",
+      "tldr": "Aptos jumped 4.4% to lead the CoinDesk 20 higher Thursday, with nearly every index constituent posting gains despite weak BTC tape.",
+      "why_it_matters": "Why it matters: Alt strength while BTC drifts lower hints at rotation back into higher-beta names \u2014 the first such tape behavior since the April risk-off began.",
       "the_details": [
-        "Rakuten Pay reaches tens of millions of Japanese users, immediately broadening XRP's real-world utility surface.",
-        "The pop comes with BTC dominance at 60% and CMC's Altcoin Season Index at just 39/100 — clean alpha against a sleepy alt tape.",
-        "Comes days after the SEC-CFTC guidance explicitly listed XRP as a digital commodity, removing the last regulatory cloud."
+        "APT led the index, with broad participation across L1s and infra tokens.",
+        "CoinDesk 20 covers the largest, most liquid digital assets ex-stablecoins.",
+        "Rotation tape contrasts with this week's $-DXY correlation that has dragged BTC."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/ethereum/latest-updates/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/coindesk-indices/2026/04/30/coindesk-20-performance-update-aptos-apt-gains-4-4-as-nearly-all-assets-rise",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-29T22:00:00Z"
+      "timestamp": "2026-04-30T19:43:52Z"
     }
   ]
 }
