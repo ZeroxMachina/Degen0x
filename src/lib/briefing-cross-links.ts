@@ -41,6 +41,122 @@ interface TokenRule {
 type Rule = SlugRule | TokenRule;
 
 const RULES: Rule[] = [
+  // ── 2026-05-01 briefing-09 anchors (BTC $76,200 floor + 64% odds
+  //    Kalshi reclaim LEAD-1, GENIUS Act June 2026 comment-window
+  //    LEAD-2, JPMorgan $90K→$77K bitcoin production-cost cut LEAD-3,
+  //    Standard Chartered SOL $250 / 2030 $2,000 payments pivot
+  //    LEAD-4, Galaxy $216M Q1 loss + Novogratz AI-data-center
+  //    pivot LEAD-5). Cost-basis collision at $77K (LEAD-1 spot ↔
+  //    LEAD-3 marginal cost) is the headline pattern; cluster
+  //    half-life 2-4 cycles (anchor decays once BTC moves >5% off
+  //    the $76K floor). ────────────────────────────────────────
+  {
+    kind: "exactSlug",
+    slug: "btc-clings-76k-prediction-markets-64-pct",
+    link: {
+      href: "/learn/crypto-liquidations-defi-leverage-guide-2026",
+      label: "Crypto liquidations — DeFi leverage guide",
+      blurb:
+        "Why BTC pinned the 23.6% Fib retracement at $76,200 with $110M+ in longs liquidated — how cascade mechanics, funding-rate flips and Kalshi reclaim odds interact at key technical support.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "genius-act-stablecoin-rules-june-deadline",
+    link: {
+      href: "/learn/genius-act-stablecoin-guide",
+      label: "GENIUS Act — stablecoin charter playbook",
+      blurb:
+        "What the June 2026 FDIC, Treasury and FinCEN comment windows actually move: the GENIUS Act framework, the SEC-CFTC token taxonomy, and how a fragmented rollout reshapes who can issue stablecoins onshore.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "jpmorgan-bitcoin-production-cost-77k",
+    link: {
+      href: "/learn/bitcoin-mining-guide-2026",
+      label: "Bitcoin mining — economics and cost-basis guide",
+      blurb:
+        "Why JPMorgan's $90K → $77K marginal-cost cut matters: production-cost models are the most-watched floor for miner viability, and a $77K floor a hair above the $76,200 spot leaves thin margin for higher-cost rigs.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "stanchart-solana-2026-target-250",
+    link: {
+      href: "/learn/jupiter-solana-guide",
+      label: "Solana ecosystem — DeFi & payments deep-dive",
+      blurb:
+        "How Standard Chartered's near-term SOL cut to $250 frames against the long-run $2,000 payments thesis — memecoin volume erosion, the $1.75B May altcoin-unlock window, and the stablecoin-rails reframing for Solana through 2030.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "galaxy-q1-216m-loss-data-centers",
+    link: {
+      href: "/learn/decentralized-gpu-compute-networks-render-akash-guide-2026",
+      label: "Decentralized GPU compute — Render & Akash guide",
+      blurb:
+        "Why crypto-native firms like Galaxy are bridging into AI data-center expansion to ride compute demand and backstop slowing trading revenue — and how Render, Akash and DePIN compute networks fit alongside hyperscaler capex.",
+    },
+  },
+
+  // ── 2026-05-01 briefing-09 token-match fallbacks (forward-value
+  //    overlay so the BTC-76K-floor / $77K-mining-cost / SOL-$250 /
+  //    Galaxy-AI-data-center anchors keep resolving as briefings
+  //    roll over and the cluster compounds across the 2-4 cycle
+  //    half-life window) ──────────────────────────────────────
+  {
+    kind: "tokenMatch",
+    tokens: ["bitcoin", "76,200", "support"],
+    link: {
+      href: "/learn/crypto-liquidations-defi-leverage-guide-2026",
+      label: "Crypto liquidations — DeFi leverage guide",
+      blurb:
+        "How the $76,200 23.6% Fib floor reads against cascade mechanics, funding-rate flips and Kalshi reclaim odds — a leverage-and-liquidation primer for the BTC support-floor regime.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["bitcoin", "production", "cost"],
+    link: {
+      href: "/learn/bitcoin-mining-guide-2026",
+      label: "Bitcoin mining — economics and cost-basis guide",
+      blurb:
+        "Why bitcoin's marginal production cost is the most-watched miner-viability floor — how hash-rate, energy mix and ASIC efficiency price into the $77K cost-basis read.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["jpmorgan", "bitcoin"],
+    link: {
+      href: "/learn/bitcoin-mining-guide-2026",
+      label: "Bitcoin mining — economics and cost-basis guide",
+      blurb:
+        "How JPMorgan's bitcoin production-cost estimate frames the miner-margin floor and why a downward revision tightens stress for higher-cost rigs.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["standard", "chartered", "solana"],
+    link: {
+      href: "/learn/jupiter-solana-guide",
+      label: "Solana ecosystem — DeFi & payments deep-dive",
+      blurb:
+        "When a top-tier bank revises its SOL target, what's actually moving: memecoin volume, May altcoin unlocks, and the long-run stablecoin / micropayments reframing for Solana.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["galaxy", "data", "centers"],
+    link: {
+      href: "/learn/decentralized-gpu-compute-networks-render-akash-guide-2026",
+      label: "Decentralized GPU compute — Render & Akash guide",
+      blurb:
+        "How crypto-native firms pivoting to AI data centers stack against Render, Akash and DePIN compute networks — the compute-demand thesis behind the Galaxy / Novogratz reframe.",
+    },
+  },
+
   // ── 2026-04-30 briefing-18 anchors (post-FOMC pivot — RWA + Japan
   //    payments + April-hack-month consolidation: SEC-CFTC joint
   //    guidance recur-evolved 5+ cycles [DEFERRED — anchor exhaustion],
