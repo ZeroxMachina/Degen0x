@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution from "@/components/AuthorAttribution";
 import RelatedContent from "@/components/RelatedContent";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "Perp PnL Calculator | degen0x",
@@ -119,12 +120,17 @@ const structuredData = {
   },
 };
 
-const linkStyle: React.CSSProperties = { color: "#58a6ff", textDecoration: "none" };
+const linkStyle: React.CSSProperties = {
+  color: "var(--color-primary)",
+  textDecoration: "none",
+  borderRadius: 2,
+  outline: "none",
+};
 const h1Style: React.CSSProperties = {
   fontSize: 36,
   fontWeight: 800,
   marginBottom: 16,
-  background: "linear-gradient(135deg, #f97316, #ef4444)",
+  background: "linear-gradient(135deg, var(--color-accent), var(--color-danger))",
   WebkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
   backgroundClip: "text",
@@ -135,14 +141,14 @@ const h2Style: React.CSSProperties = {
   fontWeight: 700,
   marginTop: 40,
   marginBottom: 16,
-  color: "#f97316",
+  color: "var(--color-accent)",
 };
 const h3Style: React.CSSProperties = {
   fontSize: 18,
   fontWeight: 700,
   marginTop: 24,
   marginBottom: 12,
-  color: "#e6edf3",
+  color: "var(--color-text)",
 };
 const badgeStyle: React.CSSProperties = {
   padding: "6px 12px",
@@ -154,23 +160,23 @@ const badgeStyle: React.CSSProperties = {
   display: "inline-block",
 };
 const infoBoxStyle: React.CSSProperties = {
-  background: "#161b22",
-  border: "1px solid #30363d",
+  background: "var(--color-bg-card)",
+  border: "1px solid var(--color-border)",
   borderRadius: 12,
   padding: 20,
   marginBottom: 24,
   lineHeight: 1.8,
 };
 const codeBoxStyle: React.CSSProperties = {
-  background: "#0d1117",
-  border: "1px solid #30363d",
+  background: "var(--color-bg)",
+  border: "1px solid var(--color-border)",
   borderRadius: 8,
   padding: "16px 20px",
   marginBottom: 24,
   fontFamily:
     "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace",
   fontSize: 14,
-  color: "#e6edf3",
+  color: "var(--color-text)",
   overflowX: "auto",
 };
 
@@ -179,13 +185,41 @@ export default function PerpPnlCalculator() {
     <article
       id="top"
       style={{
-        background: "#0d1117",
-        color: "#e6edf3",
+        background: "var(--color-bg)",
+        color: "var(--color-text)",
         minHeight: "100vh",
         padding: "40px 20px",
         scrollBehavior: "smooth",
       }}
     >
+      <style>{`
+        .perp-link:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: 2px;
+          border-radius: 2px;
+        }
+        .perp-link:hover {
+          text-decoration: underline;
+          opacity: 0.9;
+        }
+        .perp-breadcrumb:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: 2px;
+          border-radius: 2px;
+        }
+        .perp-breadcrumb:hover {
+          color: var(--color-text) !important;
+        }
+        .perp-toc-link:focus-visible {
+          outline: 2px solid var(--color-primary);
+          outline-offset: 2px;
+          border-radius: 2px;
+        }
+        .perp-toc-link:hover {
+          text-decoration: underline;
+          opacity: 0.85;
+        }
+      `}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -194,33 +228,33 @@ export default function PerpPnlCalculator() {
       <div style={{ maxWidth: 800, margin: "0 auto" }}>
         <nav
           aria-label="Breadcrumb"
-          style={{ marginBottom: 20, fontSize: 13, color: "#8b949e" }}
+          style={{ marginBottom: 20, fontSize: 13, color: "var(--color-text-secondary)" }}
         >
-          <Link href="/" style={{ color: "#8b949e", textDecoration: "none" }}>
+          <Link href="/" className="perp-breadcrumb" style={{ color: "var(--color-text-secondary)", textDecoration: "none" }}>
             Home
           </Link>
           <span style={{ margin: "0 6px" }}>›</span>
-          <Link href="/tools" style={{ color: "#8b949e", textDecoration: "none" }}>
+          <Link href="/tools" className="perp-breadcrumb" style={{ color: "var(--color-text-secondary)", textDecoration: "none" }}>
             Tools
           </Link>
           <span style={{ margin: "0 6px" }}>›</span>
-          <span style={{ color: "#c9d1d9" }}>Perp PnL Calculator</span>
+          <span style={{ color: "var(--color-text)" }}>Perp PnL Calculator</span>
         </nav>
 
         <div style={{ marginBottom: 32 }}>
           <div>
-            <span style={{ ...badgeStyle, background: "#f97316", color: "#fff" }}>
+            <span style={{ ...badgeStyle, background: "var(--color-accent)", color: "#fff" }}>
               Tools
             </span>
-            <span style={{ ...badgeStyle, background: "#3d444d", color: "#e6edf3" }}>
+            <span style={{ ...badgeStyle, background: "var(--color-border)", color: "var(--color-text)" }}>
               Intermediate
             </span>
-            <span style={{ ...badgeStyle, background: "#1f6feb", color: "#fff" }}>
+            <span style={{ ...badgeStyle, background: "var(--color-primary)", color: "#fff" }}>
               Leverage &amp; Margin
             </span>
           </div>
           <h1 style={h1Style}>Perp PnL Calculator</h1>
-          <p style={{ fontSize: 16, color: "#8b949e", marginBottom: 20 }}>
+          <p style={{ fontSize: 16, color: "var(--color-text-secondary)", marginBottom: 20 }}>
             Total PnL on a perpetual position is price PnL plus funding accrual
             minus fees — three line items, three different mechanics. Below
             are the documented formulas for longs and shorts, the funding-PnL
@@ -233,7 +267,7 @@ export default function PerpPnlCalculator() {
               display: "flex",
               gap: 24,
               fontSize: 14,
-              color: "#8b949e",
+              color: "var(--color-text-secondary)",
               marginBottom: 24,
             }}
           >
@@ -251,14 +285,14 @@ export default function PerpPnlCalculator() {
           section="tools"
         />
 
-        <div style={{ ...infoBoxStyle, borderColor: "#1f6feb" }}>
-          <strong style={{ color: "#58a6ff" }}>Why funding matters more in 2026.</strong>
+        <div style={{ ...infoBoxStyle, borderColor: "var(--color-primary)" }}>
+          <strong style={{ color: "var(--color-primary)" }}>Why funding matters more in 2026.</strong>
           <p
             style={{
               marginTop: 12,
               marginBottom: 0,
               fontSize: 14,
-              color: "#c9d1d9",
+              color: "var(--color-text)",
             }}
           >
             With BTC spot volume thin and perp open interest concentrated, the
@@ -267,7 +301,7 @@ export default function PerpPnlCalculator() {
             after fees. The math on this page splits price PnL, funding PnL,
             and fees into independent line items so you can see which one
             actually drove the outcome. See the{" "}
-            <Link href="/tools/funding-rate-tracker" style={linkStyle}>
+            <Link href="/tools/funding-rate-tracker" className="perp-link" style={linkStyle}>
               funding rate tracker
             </Link>{" "}
             for live cross-venue funding context.
@@ -278,46 +312,46 @@ export default function PerpPnlCalculator() {
           aria-label="Table of Contents"
           style={{ ...infoBoxStyle, marginBottom: 32 }}
         >
-          <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: "var(--color-text)" }}>
             Table of Contents
           </h3>
-          <ol style={{ marginLeft: 20, color: "#58a6ff" }}>
+          <ol style={{ marginLeft: 20, color: "var(--color-primary)" }}>
             <li style={{ marginBottom: 8 }}>
-              <a href="#first-principles" style={linkStyle}>Perp PnL From First Principles</a>
+              <a href="#first-principles" className="perp-toc-link" style={linkStyle}>Perp PnL From First Principles</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#price-pnl" style={linkStyle}>Price PnL — Long and Short</a>
+              <a href="#price-pnl" className="perp-toc-link" style={linkStyle}>Price PnL — Long and Short</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#funding-pnl" style={linkStyle}>Funding PnL Mechanics</a>
+              <a href="#funding-pnl" className="perp-toc-link" style={linkStyle}>Funding PnL Mechanics</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#fees" style={linkStyle}>Fees — Taker, Maker, and Rebates</a>
+              <a href="#fees" className="perp-toc-link" style={linkStyle}>Fees — Taker, Maker, and Rebates</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#worked-examples" style={linkStyle}>Three Worked Examples</a>
+              <a href="#worked-examples" className="perp-toc-link" style={linkStyle}>Three Worked Examples</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#roe-vs-roi" style={linkStyle}>ROE vs ROI — Which to Track</a>
+              <a href="#roe-vs-roi" className="perp-toc-link" style={linkStyle}>ROE vs ROI — Which to Track</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#mtm-vs-realized" style={linkStyle}>Mark-to-Market vs Realized</a>
+              <a href="#mtm-vs-realized" className="perp-toc-link" style={linkStyle}>Mark-to-Market vs Realized</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#cross-margin" style={linkStyle}>PnL Accounting in Cross Margin</a>
+              <a href="#cross-margin" className="perp-toc-link" style={linkStyle}>PnL Accounting in Cross Margin</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#tax-reporting" style={linkStyle}>Tax and Reporting Considerations</a>
+              <a href="#tax-reporting" className="perp-toc-link" style={linkStyle}>Tax and Reporting Considerations</a>
             </li>
             <li style={{ marginBottom: 8 }}>
-              <a href="#faq" style={linkStyle}>FAQ</a>
+              <a href="#faq" className="perp-toc-link" style={linkStyle}>FAQ</a>
             </li>
           </ol>
         </nav>
 
         <section id="first-principles" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>1. Perp PnL From First Principles</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             A perpetual futures contract has no expiry. The contract tracks
             spot via a periodic funding payment between longs and shorts that
             pulls the perp price toward the index. Because the contract
@@ -327,7 +361,7 @@ export default function PerpPnlCalculator() {
             settled while you held it, minus every fee charged at entry and
             exit (and any liquidation fee if the engine closed the position).
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             On a fast intraday trade, fees and funding are usually a small
             fraction of price PnL and most traders ignore them. On a
             multi-day or multi-week hold — common for trend-following or
@@ -337,13 +371,13 @@ export default function PerpPnlCalculator() {
             harvesting a one-sided funding regime.
           </p>
           <div style={infoBoxStyle}>
-            <strong style={{ color: "#e6edf3" }}>One sentence summary</strong>
+            <strong style={{ color: "var(--color-text)" }}>One sentence summary</strong>
             <p
               style={{
                 marginTop: 12,
                 marginBottom: 0,
                 fontSize: 14,
-                color: "#c9d1d9",
+                color: "var(--color-text)",
               }}
             >
               total_pnl = price_pnl + funding_pnl − fees, where each component
@@ -355,7 +389,7 @@ export default function PerpPnlCalculator() {
 
         <section id="price-pnl" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>2. Price PnL — Long and Short</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             For a linear perpetual (settled in USD or a USD-pegged stable
             against an underlying like BTC or ETH), the price PnL formulas
             are direct:
@@ -364,14 +398,14 @@ export default function PerpPnlCalculator() {
 {`Long:   price_pnl = (exit_price − entry_price) × position_size
 Short:  price_pnl = (entry_price − exit_price) × position_size`}
           </pre>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             <code>position_size</code> is the number of contract units —
             BTC count, ETH count, etc. — not USD notional. If your venue
             quotes size in USD (some inverse perps and a few legacy linear
             interfaces), divide by entry price to get unit count first, then
             apply the formula in the unit space.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             For inverse perpetuals (settled in the underlying — e.g., a
             BTC-margined BTC perp on Bitmex or Bybit), the formula reverses:
             price_pnl in BTC equals position_size_in_USD × (1/entry_price −
@@ -383,7 +417,7 @@ Short:  price_pnl = (entry_price − exit_price) × position_size`}
 
         <section id="funding-pnl" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>3. Funding PnL Mechanics</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Funding rate is the periodic payment between longs and shorts
             that pulls the perp mark toward spot. Positive funding =&gt; longs
             pay shorts (perp is trading rich vs spot). Negative funding =&gt;
@@ -399,14 +433,14 @@ Short receives if funding_rate > 0,  pays    if  funding_rate < 0
 funding_pnl = − Σ funding_payments  (long)
 funding_pnl = + Σ funding_payments  (short)`}
           </pre>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Funding intervals vary by venue: Binance, Bybit, OKX settle
             every 8 hours; Hyperliquid and dYdX settle every 1 hour; some
             smaller venues settle every 4 hours. The published rate is the
             per-interval rate on most venues — confirm in the docs because
             a few venues quote annualized.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Annualizing per-interval funding for comparison purposes:
             multiply per-interval rate by intervals-per-year (1095 for 8h,
             8760 for 1h). A 0.01% per-8h funding rate equates to roughly
@@ -414,13 +448,13 @@ funding_pnl = + Σ funding_payments  (short)`}
             multi-month hold.
           </p>
           <div style={infoBoxStyle}>
-            <strong style={{ color: "#facc15" }}>Funding-rate trap on size scaling</strong>
+            <strong style={{ color: "var(--color-accent)" }}>Funding-rate trap on size scaling</strong>
             <p
               style={{
                 marginTop: 12,
                 marginBottom: 0,
                 fontSize: 14,
-                color: "#c9d1d9",
+                color: "var(--color-text)",
               }}
             >
               Funding scales with notional, not margin. Doubling leverage
@@ -435,7 +469,7 @@ funding_pnl = + Σ funding_payments  (short)`}
 
         <section id="fees" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>4. Fees — Taker, Maker, and Rebates</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Major perp venues charge per-fill fees on the position notional.
             Taker fees (you cross the spread) are usually 2–5 bps; maker
             fees (you provide liquidity) are usually 0–2 bps and sometimes
@@ -449,14 +483,14 @@ Round-trip taker on Binance @ 4 bps:  0.04% × 2 = 0.08% of notional
 Round-trip taker on Hyperliquid @ 3.5 bps: 0.07% of notional
 Maker entry + taker exit on Bybit @ 1+5.5: 0.065% of notional`}
           </pre>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             For high-frequency strategies, fee tier matters more than
             funding for hold periods under a few hours. For positions held
             longer than ~24 hours, funding usually dominates fees as the
             cost-of-carry. Match the fee accounting to the hold horizon
             you&apos;re analyzing.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             VIP tier fees, BNB/exchange-token discounts, and referral
             rebates compound — a 25% referral discount on a 4 bp taker fee
             takes round-trip fees from 0.08% to 0.06%, which is a meaningful
@@ -469,7 +503,7 @@ Maker entry + taker exit on Bybit @ 1+5.5: 0.065% of notional`}
           <h2 style={h2Style}>5. Three Worked Examples</h2>
 
           <h3 style={h3Style}>Example A: 5x BTC long, 2-day hold, positive funding regime</h3>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             You enter long BTC at $76,000 with $10,000 margin posting a 5x
             position ($50,000 notional ≈ 0.658 BTC). You exit two days later
             at $78,000. Funding ran +0.012% per 8h for the entire hold (six
@@ -491,7 +525,7 @@ total_pnl  = $1,316 − $36 − $40
 ROE        = $1,240 / $10,000 = +12.40%
 ROI        = $1,240 / $50,000 = +2.48%`}
           </pre>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Direction was the dominant driver — funding plus fees combined
             cost ~5.8% of the price PnL, which is in the typical range for
             a multi-day hold in normal-funding conditions. ROE of 12.4% on
@@ -501,7 +535,7 @@ ROI        = $1,240 / $50,000 = +2.48%`}
           </p>
 
           <h3 style={h3Style}>Example B: 10x ETH short, 7-day hold, persistently positive funding</h3>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             You enter short ETH at $3,000 with $5,000 margin posting a 10x
             position ($50,000 notional ≈ 16.667 ETH). You exit a week later
             at $2,940. Funding ran +0.025% per 8h for the entire week (21
@@ -524,21 +558,21 @@ total_pnl  = $1,000 + $262.50 − $50
 ROE        = $1,212.50 / $5,000 = +24.25%
 ROI        = $1,212.50 / $50,000 = +2.43%`}
           </pre>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             The short captured a small directional move and harvested a
             persistent funding stream worth ~26% of the price PnL. In rich
             perp regimes — common around major-narrative tops — the
             funding component can flip a flat-to-slightly-losing
             directional call into a winning trade. This is the structural
             edge funding-rate-arb strategies exploit (see the{" "}
-            <Link href="/tools/funding-rate-arbitrage-calculator" style={linkStyle}>
+            <Link href="/tools/funding-rate-arbitrage-calculator" className="perp-link" style={linkStyle}>
               funding rate arbitrage calculator
             </Link>{" "}
             for the delta-neutral version).
           </p>
 
           <h3 style={h3Style}>Example C: 20x SOL long, fast intraday flush</h3>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             You enter long SOL at $200 with $1,000 margin posting a 20x
             position ($20,000 notional = 100 SOL). 90 minutes later you
             exit at $204. No funding settlement crossed the hold window.
@@ -559,7 +593,7 @@ total_pnl  = $400 − $0 − $20
 ROE        = $380 / $1,000  = +38.00%
 ROI        = $380 / $20,000 = +1.90%`}
           </pre>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Fast intraday trades have negligible funding exposure. The fee
             line is the dominant non-price drag — at 20x leverage, fees ate
             5% of the price PnL on a single round-trip. High-frequency
@@ -570,30 +604,30 @@ ROI        = $380 / $20,000 = +1.90%`}
 
         <section id="roe-vs-roi" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>6. ROE vs ROI — Which to Track</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             ROE (return on equity) divides PnL by margin posted. ROI (return
             on investment) divides PnL by position notional. They tell
             different stories:
           </p>
           <div style={infoBoxStyle}>
-            <p style={{ marginBottom: 12, color: "#c9d1d9" }}>
-              <strong style={{ color: "#22c55e" }}>ROI is directional accuracy.</strong>{" "}
+            <p style={{ marginBottom: 12, color: "var(--color-text)" }}>
+              <strong style={{ color: "var(--color-success)" }}>ROI is directional accuracy.</strong>{" "}
               At 1% ROI, the price moved 1% in your favor net of carry —
               regardless of leverage. Two traders with the same conviction
               and exit, one at 2x and one at 20x, will print roughly the
               same ROI. ROI is the metric to compare directional skill
               across positions of different sizes.
             </p>
-            <p style={{ marginBottom: 12, color: "#c9d1d9" }}>
-              <strong style={{ color: "#facc15" }}>ROE is capital efficiency.</strong>{" "}
+            <p style={{ marginBottom: 12, color: "var(--color-text)" }}>
+              <strong style={{ color: "var(--color-accent)" }}>ROE is capital efficiency.</strong>{" "}
               At 20% ROE, the position returned 20% of the cash you put up.
               The 20x trader who got the same direction as the 2x trader
               prints 10x the ROE — at 10x the survival-distance risk. ROE
               is the metric to compare across leverage choices and to size
               for drawdown tolerance.
             </p>
-            <p style={{ marginBottom: 0, color: "#c9d1d9" }}>
-              <strong style={{ color: "#ef4444" }}>The trap.</strong> Most
+            <p style={{ marginBottom: 0, color: "var(--color-text)" }}>
+              <strong style={{ color: "var(--color-danger)" }}>The trap.</strong> Most
               venue interfaces display ROE as the headline number on the
               position panel. Comparing ROE across positions of different
               leverage paints high-leverage trades as &quot;more skilled&quot;
@@ -605,7 +639,7 @@ ROI        = $380 / $20,000 = +1.90%`}
 
         <section id="mtm-vs-realized" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>7. Mark-to-Market vs Realized</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Realized PnL crystallizes when a position closes — by your exit
             order, by liquidation, or by ADL. Mark-to-market (unrealized)
             PnL is what the position panel shows while open: it&apos;s
@@ -613,18 +647,18 @@ ROI        = $380 / $20,000 = +1.90%`}
             an index of multiple spot exchanges plus a moving-average
             smoother — not the last trade on the venue itself.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Two practical implications. First, a wick on the venue&apos;s
             tape may not move the mark, so unrealized PnL won&apos;t reflect
             the wick even though traders saw the print. Second, this is
             why the engine sometimes doesn&apos;t liquidate at the published
             liquidation price — see the{" "}
-            <Link href="/tools/liquidation-price-calculator" style={linkStyle}>
+            <Link href="/tools/liquidation-price-calculator" className="perp-link" style={linkStyle}>
               liquidation price calculator
             </Link>{" "}
             for the mark-vs-index detail.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             For tax purposes most jurisdictions treat realized PnL as the
             taxable event, with mark-to-market not triggering until the
             position is closed. A few jurisdictions (and some institutional
@@ -636,13 +670,13 @@ ROI        = $380 / $20,000 = +1.90%`}
 
         <section id="cross-margin" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>8. PnL Accounting in Cross Margin</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             Per-position PnL math is identical in cross or isolated mode —
             price PnL, funding PnL, and fees compute the same way against
             the position&apos;s entry, size, and venue parameters. What
             changes in cross mode is the margin denominator for ROE.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             In cross margin, the margin pool is total account equity (cash
             + unrealized PnL across all positions). Per-position ROE
             against that pool understates the per-position capital
@@ -652,7 +686,7 @@ ROI        = $380 / $20,000 = +1.90%`}
             which is reasonable but not directly comparable to an isolated
             ROE figure.
           </p>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             For a clean read, track per-position ROI for directional
             skill (margin-mode independent), and account-level ROE for
             capital efficiency (account_pnl / starting_account_equity).
@@ -664,38 +698,38 @@ ROI        = $380 / $20,000 = +1.90%`}
 
         <section id="tax-reporting" style={{ scrollMarginTop: 24 }}>
           <h2 style={h2Style}>9. Tax and Reporting Considerations</h2>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             For tax purposes, the components are usually treated separately
             in jurisdictions that have made any explicit ruling on perps:
           </p>
           <div style={infoBoxStyle}>
-            <p style={{ marginBottom: 12, color: "#c9d1d9" }}>
-              <strong style={{ color: "#e6edf3" }}>Realized price PnL.</strong>{" "}
+            <p style={{ marginBottom: 12, color: "var(--color-text)" }}>
+              <strong style={{ color: "var(--color-text)" }}>Realized price PnL.</strong>{" "}
               Treated as a capital gain/loss on closing in most
               jurisdictions; some treat perps as ordinary income depending
               on holding period and trader classification.
             </p>
-            <p style={{ marginBottom: 12, color: "#c9d1d9" }}>
-              <strong style={{ color: "#e6edf3" }}>Funding payments.</strong>{" "}
+            <p style={{ marginBottom: 12, color: "var(--color-text)" }}>
+              <strong style={{ color: "var(--color-text)" }}>Funding payments.</strong>{" "}
               Often treated as ordinary income (received) or interest
               expense (paid), separate from the underlying capital gain on
               the position. Some jurisdictions roll funding into the
               capital position; rules vary.
             </p>
-            <p style={{ marginBottom: 0, color: "#c9d1d9" }}>
-              <strong style={{ color: "#e6edf3" }}>Fees.</strong>{" "}
+            <p style={{ marginBottom: 0, color: "var(--color-text)" }}>
+              <strong style={{ color: "var(--color-text)" }}>Fees.</strong>{" "}
               Generally deductible from the capital gain calculation as
               cost basis adjustments. Maker rebates received are usually
               treated as ordinary income.
             </p>
           </div>
-          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
+          <p style={{ marginBottom: 16, lineHeight: 1.8, color: "var(--color-text)" }}>
             The trade-history CSV from the venue is the authoritative
             ground-truth. Crypto tax tools (Koinly, CoinTracker, Recap, et
             al.) ingest the CSV and apply jurisdiction-specific
             classification — but they don&apos;t replace a crypto-aware
             accountant for non-trivial perp activity. The{" "}
-            <Link href="/tools/crypto-tax-calculator-free" style={linkStyle}>
+            <Link href="/tools/crypto-tax-calculator-free" className="perp-link" style={linkStyle}>
               crypto tax calculator
             </Link>{" "}
             is a starting point, not a replacement for professional advice.
@@ -709,13 +743,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               What is the perp PnL formula for a long?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               total_pnl = (exit_price − entry_price) × position_size − Σ
               funding_payments − fees. Position size is unit count, not USD
               notional. Funding sums across every settlement crossed. Fees
@@ -727,13 +761,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               What is the perp PnL formula for a short?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               total_pnl = (entry_price − exit_price) × position_size + Σ
               funding_payments − fees. Funding sign flips because shorts
               receive when funding is positive. Other terms identical to
@@ -745,13 +779,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               How do I calculate funding PnL on a perpetual position?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               funding_pnl = position_notional × funding_rate × intervals_held,
               with the sign per direction (long pays in positive funding,
               short receives). Most venues settle every 8h; Hyperliquid and
@@ -763,13 +797,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               What is the difference between ROE and ROI on a perp position?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               ROI = total_pnl / position_notional (directional accuracy).
               ROE = total_pnl / margin_posted (capital efficiency). Same
               direction, more leverage = same ROI, higher ROE. Track both;
@@ -781,13 +815,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               How does mark-to-market PnL differ from realized PnL on a perp?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               Realized PnL crystallizes when the position closes. Mark PnL
               is computed continuously against the venue&apos;s mark price —
               an index of multiple spots plus a smoother — not the last
@@ -799,13 +833,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               Are fees included in the displayed PnL on perp venues?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               Behavior varies. Order-history PnL is usually net of fees;
               live position-panel PnL is sometimes pre-fee. Always
               reconcile against the trade-history CSV for tax and reporting.
@@ -817,13 +851,13 @@ ROI        = $380 / $20,000 = +1.90%`}
               style={{
                 fontSize: 15,
                 fontWeight: 700,
-                color: "#58a6ff",
+                color: "var(--color-primary)",
                 marginBottom: 10,
               }}
             >
               How does cross margin change perp PnL accounting?
             </h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
+            <p style={{ color: "var(--color-text)", fontSize: 14, lineHeight: 1.7, marginBottom: 0 }}>
               Per-position PnL math is identical. The ROE denominator
               changes — cross-margin ROE uses total account equity, which
               dilutes per-position ROE. For comparison across modes, track
@@ -837,7 +871,7 @@ ROI        = $380 / $20,000 = +1.90%`}
             ...infoBoxStyle,
             marginTop: 48,
             fontSize: 13,
-            color: "#8b949e",
+            color: "var(--color-text-secondary)",
           }}
         >
           <strong>Disclaimer:</strong> This content is for informational
@@ -854,45 +888,45 @@ ROI        = $380 / $20,000 = +1.90%`}
           style={{
             marginTop: 32,
             paddingTop: 24,
-            borderTop: "1px solid #30363d",
+            borderTop: "1px solid var(--color-border)",
             fontSize: 14,
-            color: "#8b949e",
+            color: "var(--color-text-secondary)",
           }}
         >
           <p style={{ marginBottom: 16 }}>Suggested reading:</p>
           <ul style={{ marginLeft: 20, lineHeight: 1.9 }}>
             <li>
-              <Link href="/tools/liquidation-price-calculator" style={linkStyle}>
+              <Link href="/tools/liquidation-price-calculator" className="perp-link" style={linkStyle}>
                 Liquidation Price Calculator
               </Link>
             </li>
             <li>
-              <Link href="/tools/funding-rate-arbitrage-calculator" style={linkStyle}>
+              <Link href="/tools/funding-rate-arbitrage-calculator" className="perp-link" style={linkStyle}>
                 Funding Rate Arbitrage Calculator
               </Link>
             </li>
             <li>
-              <Link href="/tools/funding-rate-tracker" style={linkStyle}>
+              <Link href="/tools/funding-rate-tracker" className="perp-link" style={linkStyle}>
                 Funding Rate Tracker
               </Link>
             </li>
             <li>
-              <Link href="/tools/pnl-calculator" style={linkStyle}>
+              <Link href="/tools/pnl-calculator" className="perp-link" style={linkStyle}>
                 Generic PnL Calculator
               </Link>
             </li>
             <li>
-              <Link href="/tools/crypto-profit-calculator" style={linkStyle}>
+              <Link href="/tools/crypto-profit-calculator" className="perp-link" style={linkStyle}>
                 Crypto Profit Calculator
               </Link>
             </li>
             <li>
-              <Link href="/tools/crypto-tax-calculator-free" style={linkStyle}>
+              <Link href="/tools/crypto-tax-calculator-free" className="perp-link" style={linkStyle}>
                 Crypto Tax Calculator
               </Link>
             </li>
             <li>
-              <Link href="/tools/crypto-liquidation-tracker" style={linkStyle}>
+              <Link href="/tools/crypto-liquidation-tracker" className="perp-link" style={linkStyle}>
                 Crypto Liquidation Tracker
               </Link>
             </li>
@@ -903,6 +937,7 @@ ROI        = $380 / $20,000 = +1.90%`}
         category="tools"
         currentSlug="/tools/perp-pnl-calculator"
       />
+      <BackToTop />
     </article>
   );
 }
