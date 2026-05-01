@@ -1,5 +1,45 @@
 [
   {
+    "id": "feed-2026-05-01-001",
+    "type": "news",
+    "title": "\ud83d\udcf0 Western Union to launch USDPT, Solana-based stablecoin, this month to replace SWIFT internally",
+    "message": "Western Union will roll out USDPT, a Solana-issued dollar stablecoin, in May to settle internal agent transfers and bypass SWIFT.",
+    "actionUrl": "/news",
+    "date": "2026-05-01"
+  },
+  {
+    "id": "feed-2026-04-30-047",
+    "type": "news",
+    "title": "\ud83d\udcf0 Aptos leads CoinDesk 20 with 4.4% pop as nearly all index assets rise",
+    "message": "Why Aptos keeps showing up at the top of altcoin index moves \u2014 the canonical Move VM L1 deep-dive on throughput, institutional roadmap, and how APT lines up against Sui.",
+    "actionUrl": "/learn/aptos-blockchain-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-046",
+    "type": "news",
+    "title": "\ud83d\udcf0 BTC closes worst April since 2022 but May seasonality flips bullish",
+    "message": "How a defensive April close near $76K reads against historical May returns and post-halving cycle data \u2014 the safe-haven framing for choppy tape between FOMCs.",
+    "actionUrl": "/learn/bitcoin-safe-haven-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-045",
+    "type": "news",
+    "title": "\ud83d\udcf0 BTC, ETH, XRP slide as spot ETF outflows deepen heading into May",
+    "message": "Multi-day spot-ETF outflow streaks across BTC, ETH and XRP into the May Fed window \u2014 institutional-positioning read versus the April-absorbed inflow base.",
+    "actionUrl": "/learn/bitcoin-etf-institutional-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
+    "id": "feed-2026-04-30-044",
+    "type": "news",
+    "title": "\ud83d\udcf0 North Korea drove 76% of 2026 crypto theft, $6B stolen since 2017: TRM Labs",
+    "message": "TRM Labs's 2026 attribution: DPRK-linked actors now drive 76% of stolen crypto this year and over $6B cumulatively since 2017 \u2014 the canonical Lazarus / OFAC guide.",
+    "actionUrl": "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
+    "date": "2026-04-30"
+  },
+  {
     "id": "feed-2026-04-30-043",
     "type": "news",
     "title": "\ud83d\udcf0 Banks push to slow stablecoin law as Agora races for federal charter",
@@ -197,46 +237,6 @@
     "title": "\ud83d\udcf0 DeFi bleeds $606M across 12 exploits in 18 days as Kelp DAO contagion lingers",
     "message": "Drift's $285M and Kelp DAO's $293M headlined April's $606M exploit run. Inside the post-mortem cluster \u2014 attack paths and lessons for protocol risk.",
     "actionUrl": "/learn/drift-protocol-285m-hack-analysis-2026",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-009",
-    "type": "news",
-    "title": "\ud83d\udcf0 Coinbase opens WRON-USD spot trading May 1 \u2014 Ronin's first US tier-one pair",
-    "message": "After years of offshore-only liquidity, Ronin's gaming token gets a tier-one US fiat pair. The deep-dive on Sky Mavis, Axie Infinity and gaming-first L2 design.",
-    "actionUrl": "/learn/blockchain-gaming-gamefi-guide-2026",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-008",
-    "type": "news",
-    "title": "\ud83d\udcf0 Spot BTC ETFs pull $1.7B in April as Strategy stacks 56,238 BTC for $4.1B",
-    "message": "Spot Bitcoin ETFs logged about $1.7B in April net inflows, the largest monthly haul since October 2025, while Strategy added 56,238 BTC.",
-    "actionUrl": "/news",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-007",
-    "type": "news",
-    "title": "\ud83d\udcf0 Inside the SEC-CFTC MoU that paved the way for the 5-asset commodities call",
-    "message": "How the SEC-CFTC Memorandum of Understanding cleared decades of jurisdictional limbo before this week\u2019s digital-commodity guidance \u2014 the institutional backstory.",
-    "actionUrl": "/learn/sec-cftc-mou-crypto-guide",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-006",
-    "type": "news",
-    "title": "\ud83d\udcf0 Powell\u2019s last hold: how the 4-dissent FOMC reshapes the crypto Fed-path read",
-    "message": "Decision-day playbook for a fractured FOMC and the Powell-exit handover \u2014 what it means for BTC, ETH and the rate-cut clock.",
-    "actionUrl": "/learn/fomc-fed-rate-crypto-guide",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-005",
-    "type": "news",
-    "title": "\ud83d\udcf0 SEC-CFTC joint guidance brands BTC, ETH, SOL, XRP, LINK as digital commodities",
-    "message": "A formal commodities tag for the top-five non-stable assets clears the path for spot ETFs, futures listings and bank custody under CFTC primacy \u2014 the deep-dive on the new 5-asset taxonomy.",
-    "actionUrl": "/learn/sec-cftc-digital-commodity-classification-guide-2026",
     "date": "2026-04-30"
   }
 ]

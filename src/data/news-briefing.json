@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-30T19:43:52Z",
-  "briefing_id": "briefing-2026-04-30-19",
+  "generated_at": "2026-05-01T06:48:27Z",
+  "briefing_id": "briefing-2026-05-01-06",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-30-19-001",
-      "headline": "Banks push to slow stablecoin law as Agora races for federal charter",
-      "slug": "banks-slow-stablecoin-law-agora-charter",
-      "tldr": "US banks are lobbying to delay key stablecoin rules just as Agora pushes for a national bank charter under the GENIUS Act framework.",
-      "why_it_matters": "Why it matters: Bank pushback could carve out distribution lanes that lock crypto-native issuers out of T+0 settlement and Fed rails just as the rules are being written.",
+      "id": "story-2026-05-01-06-001",
+      "headline": "Western Union to launch USDPT, Solana-based stablecoin, this month to replace SWIFT internally",
+      "slug": "western-union-usdpt-solana-stablecoin-launch-may-2026",
+      "tldr": "Western Union will roll out USDPT, a Solana-issued dollar stablecoin, in May to settle internal agent transfers and bypass SWIFT.",
+      "why_it_matters": "Why it matters: A 174-year-old remittance giant moving its settlement layer onto Solana validates stablecoin rails for legacy payments — and pumps real cash flow into SOL fees.",
       "the_details": [
-        "Bank groups want longer transition windows on reserve, capital, and disclosure rules tied to GENIUS Act stablecoin issuance.",
-        "Agora is racing for a national trust charter that would let it custody reserves and issue across the US under a single regime.",
-        "Treasury and OCC face pressure to finalize implementing rules before midterm political calendar tightens."
+        "USDPT will act as Western Union's internal settlement asset between agents in 200+ countries, cutting reliance on SWIFT.",
+        "Launch slots into Solana's Q3 Alpenglow upgrade roadmap, which targets ~150ms finality versus today's ~12s.",
+        "SOL ETF inflows fell to $39.93M in April — the weakest month since the products launched in October 2025."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/coindesk-news/2026/04/29/banks-push-to-slow-stablecoin-law-as-agora-races-for-charter",
-      "category": "regulation",
+      "source": "MEXC News / Blockdaemon",
+      "source_url": "https://www.mexc.com/news/979918",
+      "category": "adoption",
       "impact": "high",
-      "timestamp": "2026-04-30T19:43:52Z"
+      "timestamp": "2026-05-01T05:00:00Z"
     },
     {
-      "id": "story-2026-04-30-19-002",
-      "headline": "North Korea drove 76% of 2026 crypto theft, $6B stolen since 2017: TRM Labs",
-      "slug": "north-korea-76-percent-2026-crypto-theft-trm",
-      "tldr": "TRM Labs says DPRK-linked actors account for 76% of stolen crypto so far in 2026, with cumulative theft since 2017 now over $6 billion.",
-      "why_it_matters": "Why it matters: The concentration of risk in one state actor reframes hack defense from generic security hygiene to targeted nation-state threat modeling for every protocol team.",
+      "id": "story-2026-05-01-06-002",
+      "headline": "April was crypto's worst month for hacks ever: $629M stolen across ~30 incidents",
+      "slug": "april-2026-worst-crypto-hack-month-629m-stolen",
+      "tldr": "Crypto lost roughly $629.69M across 28-30 separate exploits in April 2026, making it the costliest hack month on record.",
+      "why_it_matters": "Why it matters: One attack a day is now the baseline. Banks eyeing on-chain rails — Jefferies flagged this — are pausing pilots until DeFi proves it can defend bridges.",
       "the_details": [
-        "TRM Labs report attributes the bulk of 2026 losses to DPRK groups including Lazarus and TraderTraitor.",
-        "Bridges, custodial wallets, and admin-key compromises remain the dominant attack surface.",
-        "OFAC has expanded sanctions on mixers and OTC desks tied to DPRK laundering rails through April."
+        "KelpDAO lost ~$292M on April 18 after a misconfigured LayerZero setting let an attacker mint 116,500 unbacked rsETH.",
+        "Drift Protocol on Solana was drained of $285M on April 1, traced to a six-month DPRK-linked intelligence operation.",
+        "Vercel disclosed an April 20 breach that may have leaked customer API keys, forcing crypto teams to rotate credentials."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs",
+      "source": "CryptoTimes / CoinDesk",
+      "source_url": "https://www.cryptotimes.io/2026/04/30/629m-lost-april-2026-marks-worst-month-for-crypto-hacks/",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-30T19:43:52Z"
+      "timestamp": "2026-04-30T18:00:00Z"
     },
     {
-      "id": "story-2026-04-30-19-003",
-      "headline": "BTC, ETH, XRP slide as spot ETF outflows deepen heading into May",
-      "slug": "btc-eth-xrp-slide-etf-outflows-deepen",
-      "tldr": "Bitcoin, ether, and XRP fell Thursday morning as spot crypto ETF outflows extended a multi-day streak ahead of the Fed decision week.",
-      "why_it_matters": "Why it matters: Persistent ETF redemptions are draining the marginal bid that powered the 2025 leg up, leaving spot supply concentrated with weaker hands into a thin May tape.",
+      "id": "story-2026-05-01-06-003",
+      "headline": "JPMorgan pegs Bitcoin support at $77K, stays 'positive' on crypto into 2026",
+      "slug": "jpmorgan-bitcoin-support-77k-positive-crypto-2026",
+      "tldr": "JPMorgan analysts see $77,000 as the floor for BTC and stay constructive on 2026 flows, betting Clarity Act passage reignites institutional buying.",
+      "why_it_matters": "Why it matters: A bulge-bracket bank publicly defending a $77K floor gives long-only desks cover to buy the dip — and ties future upside to Washington moving the Clarity Act.",
       "the_details": [
-        "BTC opened at $75,752 \u2014 its lowest open in over a week \u2014 before recovering to $76,130 by 7:18am ET.",
-        "ETH opened at $2,252, the lowest print since April 13, before edging to $2,268.",
-        "Crypto Times tracks consecutive net-outflow days across the major US spot BTC and ETH ETFs."
+        "Kalshi prediction markets price a 64% probability BTC holds above $76,000 through tomorrow's 5pm EDT close.",
+        "BTC closed April up ~13%, but $110M in leveraged longs were liquidated as Fed signaled higher-for-longer rates.",
+        "Grok's near-term BTC target sits at $88K-$95K; ETH projection range is $2,500-$2,800."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-april-30-2026-values-moving-lower-each-morning-this-week-113359674.html",
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/389706/jpmorgan-bitcoin-support-77000-positive-crypto-2026",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-30T19:43:52Z"
+      "timestamp": "2026-04-30T22:00:00Z"
     },
     {
-      "id": "story-2026-04-30-19-004",
-      "headline": "BTC closes worst April since 2022 but May seasonality flips bullish",
-      "slug": "btc-april-close-may-seasonality-bullish",
-      "tldr": "Bitcoin ended April defensive near $76K, but historical May returns and post-halving cycle data lean bullish according to CoinDesk traders.",
-      "why_it_matters": "Why it matters: A bullish seasonal setup colliding with weak ETF flows and shrinking volume sets up a high-variance May where positioning, not narrative, will dominate.",
+      "id": "story-2026-05-01-06-004",
+      "headline": "Standard Chartered cuts Solana 2026 target to $250, sees pivot from memecoins to micropayments",
+      "slug": "standard-chartered-solana-target-250-micropayments-pivot",
+      "tldr": "StanChart trimmed its end-2026 SOL target to $250 but lifted the 2030 forecast to $2,000, citing a shift to stablecoin micropayments.",
+      "why_it_matters": "Why it matters: The bank is signaling Solana's bull case is no longer pump.fun rotation — it's payments throughput. Western Union's USDPT lands directly into that thesis.",
       "the_details": [
-        "BTC has averaged positive May returns in post-halving years across the past three cycles.",
-        "Analysts cite 30-year yields near 5% and lingering Iran risk as macro overhangs to the seasonal tailwind.",
-        "BTC spot volume has been falling fast \u2014 a setup that historically resolves in sharp moves either direction."
+        "End-2026 SOL price target cut to $250 from prior estimate; 2030 target raised to $2,000.",
+        "Memecoin-driven fee revenue has slumped while stablecoin transfer volume on Solana keeps climbing.",
+        "Solana DeFi TVL hit $11.5B with lending markets at $3.6B by end of 2025."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
-      "category": "bitcoin",
-      "impact": "medium",
-      "timestamp": "2026-04-30T19:43:52Z"
-    },
-    {
-      "id": "story-2026-04-30-19-005",
-      "headline": "Aptos leads CoinDesk 20 with 4.4% pop as nearly all index assets rise",
-      "slug": "aptos-leads-coindesk-20-altcoins-rise",
-      "tldr": "Aptos jumped 4.4% to lead the CoinDesk 20 higher Thursday, with nearly every index constituent posting gains despite weak BTC tape.",
-      "why_it_matters": "Why it matters: Alt strength while BTC drifts lower hints at rotation back into higher-beta names \u2014 the first such tape behavior since the April risk-off began.",
-      "the_details": [
-        "APT led the index, with broad participation across L1s and infra tokens.",
-        "CoinDesk 20 covers the largest, most liquid digital assets ex-stablecoins.",
-        "Rotation tape contrasts with this week's $-DXY correlation that has dragged BTC."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/coindesk-indices/2026/04/30/coindesk-20-performance-update-aptos-apt-gains-4-4-as-nearly-all-assets-rise",
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/388248/standard-chartered-cuts-solana-2026-target-shift-memecoins-micropayments",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-30T19:43:52Z"
+      "timestamp": "2026-04-30T20:00:00Z"
+    },
+    {
+      "id": "story-2026-05-01-06-005",
+      "headline": "Galaxy posts $216M Q1 loss as Novogratz pivots growth bet to data centers",
+      "slug": "galaxy-216m-q1-loss-novogratz-data-center-pivot",
+      "tldr": "Galaxy Digital reported a $216M Q1 net loss, blaming the crypto 'transition year' while CEO Mike Novogratz doubled down on AI data center buildout.",
+      "why_it_matters": "Why it matters: A bellwether crypto financial firm is reframing itself as an AI infrastructure play. Expect more crypto majors to chase data center revenue as token speculation cools.",
+      "the_details": [
+        "Q1 net loss of $216M driven primarily by mark-to-market crypto price declines.",
+        "Novogratz publicly bullish on Helios data center campus and broader compute leasing pipeline.",
+        "Galaxy joins a growing list of crypto firms — including miners — repositioning hardware for AI workloads."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/399181/galaxy-216-million-q1-loss-crypto-transition-year-novogratz-bullish-data-centers",
+      "category": "markets",
+      "impact": "medium",
+      "timestamp": "2026-04-30T16:00:00Z"
     }
   ]
 }
