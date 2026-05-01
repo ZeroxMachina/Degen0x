@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-05-01T07:08:00Z",
-  "briefing_id": "briefing-2026-05-01-07",
+  "generated_at": "2026-05-01T08:08:00Z",
+  "briefing_id": "briefing-2026-05-01-08",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-05-01-07-001",
-      "headline": "TRM Labs: North Korea-linked hackers drove 76% of 2026 crypto thefts, $577M in 4 months",
-      "slug": "north-korea-76-percent-2026-crypto-thefts-trm-labs",
-      "tldr": "TRM Labs says DPRK-linked groups account for roughly 76% of all crypto theft losses in 2026, stealing about $577M in four months.",
-      "why_it_matters": "Why it matters: A single state actor now dominates on-chain theft, raising the bar for exchange and DeFi opsec and pulling US sanctions enforcement deeper into crypto.",
+      "id": "story-2026-05-01-08-001",
+      "headline": "April 2026 sets record: 30 hacks, $625M+ stolen as DPRK fingerprints dominate",
+      "slug": "april-2026-record-hacks-625m",
+      "tldr": "Crypto's worst month for incidents in over a year saw roughly 30 separate exploits drain north of $625 million, led by Drift and KelpDAO.",
+      "why_it_matters": "Why it matters: Attack vectors have shifted from smart-contract bugs to social engineering and admin-key compromises, putting protocol ops teams — not auditors — on the front line.",
       "the_details": [
-        "DPRK groups stole an estimated $577M across exchanges, DeFi, and cross-chain bridges from January through April 2026.",
-        "TRM ties the surge to in-person social-engineering campaigns, including the $285M Drift drain on April 1.",
-        "North Korea has now stolen more than $6B since 2017, per TRM's running tally."
+        "Drift on Solana lost ~$285M April 1 in a social-engineering theft tied to North Korea's Lazarus Group.",
+        "KelpDAO's LayerZero bridge was spoofed mid-April for an estimated $293M, the largest DeFi hack of 2026 to date.",
+        "Drift and KelpDAO alone account for ~93% of April's losses; Rhea, Grinex, Volo and Sweat round out the tail."
+      ],
+      "source": "Crypto Times",
+      "source_url": "https://www.cryptotimes.io/2026/04/30/629m-lost-april-2026-marks-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-30T22:00:00Z"
+    },
+    {
+      "id": "story-2026-05-01-08-002",
+      "headline": "Wasabi Protocol drained for $4.55M in deployer admin-key compromise",
+      "slug": "wasabi-protocol-admin-key-drain",
+      "tldr": "Perps platform Wasabi Protocol lost about $4.55 million on April 30 after attackers gained control of its deployer admin key on Ethereum and Base.",
+      "why_it_matters": "Why it matters: Yet another small-cap perp DEX falls to a privileged-key compromise — a recurring pattern that's pushing institutional liquidity toward CEXs and venues with formal key management.",
+      "the_details": [
+        "Funds were drained from Ethereum and Base deployments after the deployer's admin key was compromised April 30.",
+        "Wasabi paused contracts post-incident; an on-chain post-mortem is pending.",
+        "Adds to a string of April access-control failures including Volo Vault ($3.5M) and Sweat Foundation ($3.5M)."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/30/north-korean-hackers-are-moving-faster-they-account-for-76-of-crypto-exploits-this-year-trmlabs",
+      "source_url": "https://www.coindesk.com/tech/2026/04/30/wasabi-protocol-drained-for-usd4-5-million-in-apparent-admin-key-compromise",
       "category": "security",
       "impact": "high",
       "timestamp": "2026-04-30T18:00:00Z"
     },
     {
-      "id": "story-2026-05-01-07-002",
-      "headline": "Block discloses 28,355 BTC stack worth $2.2B, $692M held on its own balance sheet",
-      "slug": "block-q1-bitcoin-holdings-2-2-billion",
-      "tldr": "Jack Dorsey's Block reported 28,355 BTC under management as of end-Q1, with 8,997 BTC ($692M) sitting on the corporate balance sheet.",
-      "why_it_matters": "Why it matters: Block joins MicroStrategy and Tesla in normalizing nine-figure BTC treasuries at public fintechs, anchoring institutional demand even as ETFs cool.",
+      "id": "story-2026-05-01-08-003",
+      "headline": "May token unlocks hit $2.24B as APT, STRK and ARB cluster within 96 hours",
+      "slug": "may-token-unlocks-224b-apt-strk-arb",
+      "tldr": "About $2.24B in cliff unlocks lands between April 27 and May 31, with three major L1/L2 unlocks compressed into a four-day window mid-month.",
+      "why_it_matters": "Why it matters: The May 12–16 cluster is the single most consequential window for altcoin price action this month and will test how much OTC absorption capacity actually exists.",
       "the_details": [
-        "Block held 19,357 BTC (~$1.5B) on behalf of customers and 8,997 BTC (~$692M) as a corporate asset.",
-        "Disclosure landed in Block's Q1 2026 results filed April 30.",
-        "Total stack of 28,355 BTC was valued at roughly $2.2B at quarter-end."
+        "Aptos releases ~11.3M APT (~$102M) on May 12; Starknet unlocks ~127M STRK (~$145M) on May 15.",
+        "Arbitrum follows May 16 with ~92.6M ARB (~$90M), stacking three unlocks inside 96 hours.",
+        "The May 4–10 week alone carries $753M in cliff unlocks, the heaviest single week of Q2."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/399123/block-q1-bitcoin",
-      "category": "bitcoin",
-      "impact": "medium",
-      "timestamp": "2026-04-30T21:30:00Z"
-    },
-    {
-      "id": "story-2026-05-01-07-003",
-      "headline": "Spot XRP ETFs lock up 769M tokens; Goldman Sachs surfaces as top holder",
-      "slug": "spot-xrp-etfs-769m-tokens-goldman-top-holder",
-      "tldr": "Five US spot XRP ETFs have absorbed 769M XRP, with Goldman Sachs disclosed as one of the largest institutional holders.",
-      "why_it_matters": "Why it matters: An XRP wrapper on Wall Street's biggest balance sheets cements the SEC-CFTC view that major tokens are commodities, not securities.",
-      "the_details": [
-        "Cumulative spot XRP ETF holdings reached 769M tokens as of April 29 disclosures.",
-        "Goldman Sachs filings show it as a top-tier holder across the issuer cohort.",
-        "Inflows coincide with a Rakuten Pay XRP partnership that pushed sentiment into Santiment's FOMO zone."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/xrp/latest-updates/",
+      "source": "Crypto Times",
+      "source_url": "https://www.cryptotimes.io/2026/04/30/may-token-unlocks-hit-2-24b-as-apt-strk-arb-to-flood-market/",
       "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-30T15:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-30T20:00:00Z"
     },
     {
-      "id": "story-2026-05-01-07-004",
-      "headline": "State Street to launch tokenized fund servicing from Luxembourg by year-end",
-      "slug": "state-street-tokenized-fund-servicing-luxembourg-2026",
-      "tldr": "State Street said it will stand up tokenized fund servicing out of Luxembourg before the end of 2026, via State Street Investment Services.",
-      "why_it_matters": "Why it matters: A multi-trillion-dollar custodian putting fund infrastructure on-chain is a milestone for tokenized real-world assets and EU MiCA-aligned plumbing.",
+      "id": "story-2026-05-01-08-004",
+      "headline": "Bitcoin pinned near $76.2K support as $110M in longs liquidated",
+      "slug": "bitcoin-76k-support-liquidations",
+      "tldr": "BTC is hovering above the $76,200 23.6% Fib retracement after more than $110M in leveraged longs were wiped out, with Kalshi traders pricing only a 37% chance of reclaiming $77K by tomorrow.",
+      "why_it_matters": "Why it matters: A break of $76.2K opens the door to $73.5K — a level that would invalidate the April uptrend and front-run the mid-May altcoin unlock wave with broad-market weakness.",
       "the_details": [
-        "Service will run from State Street Investment Services in Luxembourg, targeting EU-domiciled funds.",
-        "Launch planned by year-end 2026, per April 30 announcement.",
-        "Expands State Street's existing digital-asset custody pilots into core fund admin."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/399171/state-street-tokenized-fund-servicing-luxembourg",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-30T13:45:00Z"
-    },
-    {
-      "id": "story-2026-05-01-07-005",
-      "headline": "Wasabi Protocol drained for $4.55M after deployer admin key compromise",
-      "slug": "wasabi-protocol-4-5m-admin-key-exploit",
-      "tldr": "Perp DEX Wasabi Protocol lost about $4.55M after attackers seized its deployer key and swapped vault contracts on Ethereum and Base.",
-      "why_it_matters": "Why it matters: Yet another single-key compromise — not a smart-contract bug — underscoring how operational security is now the dominant DeFi attack surface.",
-      "the_details": [
-        "Attacker upgraded vault contracts to malicious versions across wWETH, sUSDC, wBITCON, wPEPE, and Long Pool on Ethereum.",
-        "Base-side vaults sUSDC, wWETH, sBTC, sVIRTUAL, sAERO, and sBRETT were also drained.",
-        "Loss pushes 2026 cumulative DeFi exploit total above $770M across 30+ incidents."
+        "Kalshi shows 64% probability BTC holds $76K by 5pm EDT tomorrow; 37% probability it reclaims $77K.",
+        "Over $110M in BTC long positions were liquidated as the Fed signals 'higher for longer' and oil rises on Iran tensions.",
+        "April closed +13% for BTC despite the late-month fade; seasonality favors May with a 13-year average return of ~8%."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/30/wasabi-protocol-drained-for-usd4-5-million-in-apparent-admin-key-compromise",
-      "category": "security",
-      "impact": "medium",
-      "timestamp": "2026-04-30T16:20:00Z"
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-05-01T06:00:00Z"
+    },
+    {
+      "id": "story-2026-05-01-08-005",
+      "headline": "Clarity Act 'ready for hearing' as senator signals May markup momentum",
+      "slug": "clarity-act-may-markup-hearing",
+      "tldr": "The senator holding the Clarity Act says the market-structure bill is ready to move, with more momentum than ever for a May markup.",
+      "why_it_matters": "Why it matters: Clarity is the legislative complement to the SEC/CFTC March MOU — together they would lock in the 'most digital assets are not securities' framework before the next election cycle.",
+      "the_details": [
+        "A Democrat-driven section banning government officials from personal crypto business interests remains the sticky provision.",
+        "Builds on the SEC and CFTC's March 17, 2026 joint interpretation declaring most cryptos non-securities.",
+        "TD Cowen has warned the bill could still slip to 2027 with implementation as late as 2029 if markup stalls."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/news-analysis/2026/04/29/u-s-senator-holding-cards-on-clarity-act-s-next-move-says-it-s-ready-to-get-to-hearing",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-29T16:00:00Z"
     }
   ]
 }
