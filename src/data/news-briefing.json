@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-05-01T06:48:27Z",
-  "briefing_id": "briefing-2026-05-01-06",
+  "generated_at": "2026-05-01T07:08:00Z",
+  "briefing_id": "briefing-2026-05-01-07",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-05-01-06-001",
-      "headline": "Western Union to launch USDPT, Solana-based stablecoin, this month to replace SWIFT internally",
-      "slug": "western-union-usdpt-solana-stablecoin-launch-may-2026",
-      "tldr": "Western Union will roll out USDPT, a Solana-issued dollar stablecoin, in May to settle internal agent transfers and bypass SWIFT.",
-      "why_it_matters": "Why it matters: A 174-year-old remittance giant moving its settlement layer onto Solana validates stablecoin rails for legacy payments — and pumps real cash flow into SOL fees.",
+      "id": "story-2026-05-01-07-001",
+      "headline": "TRM Labs: North Korea-linked hackers drove 76% of 2026 crypto thefts, $577M in 4 months",
+      "slug": "north-korea-76-percent-2026-crypto-thefts-trm-labs",
+      "tldr": "TRM Labs says DPRK-linked groups account for roughly 76% of all crypto theft losses in 2026, stealing about $577M in four months.",
+      "why_it_matters": "Why it matters: A single state actor now dominates on-chain theft, raising the bar for exchange and DeFi opsec and pulling US sanctions enforcement deeper into crypto.",
       "the_details": [
-        "USDPT will act as Western Union's internal settlement asset between agents in 200+ countries, cutting reliance on SWIFT.",
-        "Launch slots into Solana's Q3 Alpenglow upgrade roadmap, which targets ~150ms finality versus today's ~12s.",
-        "SOL ETF inflows fell to $39.93M in April — the weakest month since the products launched in October 2025."
+        "DPRK groups stole an estimated $577M across exchanges, DeFi, and cross-chain bridges from January through April 2026.",
+        "TRM ties the surge to in-person social-engineering campaigns, including the $285M Drift drain on April 1.",
+        "North Korea has now stolen more than $6B since 2017, per TRM's running tally."
       ],
-      "source": "MEXC News / Blockdaemon",
-      "source_url": "https://www.mexc.com/news/979918",
-      "category": "adoption",
-      "impact": "high",
-      "timestamp": "2026-05-01T05:00:00Z"
-    },
-    {
-      "id": "story-2026-05-01-06-002",
-      "headline": "April was crypto's worst month for hacks ever: $629M stolen across ~30 incidents",
-      "slug": "april-2026-worst-crypto-hack-month-629m-stolen",
-      "tldr": "Crypto lost roughly $629.69M across 28-30 separate exploits in April 2026, making it the costliest hack month on record.",
-      "why_it_matters": "Why it matters: One attack a day is now the baseline. Banks eyeing on-chain rails — Jefferies flagged this — are pausing pilots until DeFi proves it can defend bridges.",
-      "the_details": [
-        "KelpDAO lost ~$292M on April 18 after a misconfigured LayerZero setting let an attacker mint 116,500 unbacked rsETH.",
-        "Drift Protocol on Solana was drained of $285M on April 1, traced to a six-month DPRK-linked intelligence operation.",
-        "Vercel disclosed an April 20 breach that may have leaked customer API keys, forcing crypto teams to rotate credentials."
-      ],
-      "source": "CryptoTimes / CoinDesk",
-      "source_url": "https://www.cryptotimes.io/2026/04/30/629m-lost-april-2026-marks-worst-month-for-crypto-hacks/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2026/04/30/north-korean-hackers-are-moving-faster-they-account-for-76-of-crypto-exploits-this-year-trmlabs",
       "category": "security",
       "impact": "high",
       "timestamp": "2026-04-30T18:00:00Z"
     },
     {
-      "id": "story-2026-05-01-06-003",
-      "headline": "JPMorgan pegs Bitcoin support at $77K, stays 'positive' on crypto into 2026",
-      "slug": "jpmorgan-bitcoin-support-77k-positive-crypto-2026",
-      "tldr": "JPMorgan analysts see $77,000 as the floor for BTC and stay constructive on 2026 flows, betting Clarity Act passage reignites institutional buying.",
-      "why_it_matters": "Why it matters: A bulge-bracket bank publicly defending a $77K floor gives long-only desks cover to buy the dip — and ties future upside to Washington moving the Clarity Act.",
+      "id": "story-2026-05-01-07-002",
+      "headline": "Block discloses 28,355 BTC stack worth $2.2B, $692M held on its own balance sheet",
+      "slug": "block-q1-bitcoin-holdings-2-2-billion",
+      "tldr": "Jack Dorsey's Block reported 28,355 BTC under management as of end-Q1, with 8,997 BTC ($692M) sitting on the corporate balance sheet.",
+      "why_it_matters": "Why it matters: Block joins MicroStrategy and Tesla in normalizing nine-figure BTC treasuries at public fintechs, anchoring institutional demand even as ETFs cool.",
       "the_details": [
-        "Kalshi prediction markets price a 64% probability BTC holds above $76,000 through tomorrow's 5pm EDT close.",
-        "BTC closed April up ~13%, but $110M in leveraged longs were liquidated as Fed signaled higher-for-longer rates.",
-        "Grok's near-term BTC target sits at $88K-$95K; ETH projection range is $2,500-$2,800."
+        "Block held 19,357 BTC (~$1.5B) on behalf of customers and 8,997 BTC (~$692M) as a corporate asset.",
+        "Disclosure landed in Block's Q1 2026 results filed April 30.",
+        "Total stack of 28,355 BTC was valued at roughly $2.2B at quarter-end."
       ],
       "source": "The Block",
-      "source_url": "https://www.theblock.co/post/389706/jpmorgan-bitcoin-support-77000-positive-crypto-2026",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-30T22:00:00Z"
+      "source_url": "https://www.theblock.co/post/399123/block-q1-bitcoin",
+      "category": "bitcoin",
+      "impact": "medium",
+      "timestamp": "2026-04-30T21:30:00Z"
     },
     {
-      "id": "story-2026-05-01-06-004",
-      "headline": "Standard Chartered cuts Solana 2026 target to $250, sees pivot from memecoins to micropayments",
-      "slug": "standard-chartered-solana-target-250-micropayments-pivot",
-      "tldr": "StanChart trimmed its end-2026 SOL target to $250 but lifted the 2030 forecast to $2,000, citing a shift to stablecoin micropayments.",
-      "why_it_matters": "Why it matters: The bank is signaling Solana's bull case is no longer pump.fun rotation — it's payments throughput. Western Union's USDPT lands directly into that thesis.",
+      "id": "story-2026-05-01-07-003",
+      "headline": "Spot XRP ETFs lock up 769M tokens; Goldman Sachs surfaces as top holder",
+      "slug": "spot-xrp-etfs-769m-tokens-goldman-top-holder",
+      "tldr": "Five US spot XRP ETFs have absorbed 769M XRP, with Goldman Sachs disclosed as one of the largest institutional holders.",
+      "why_it_matters": "Why it matters: An XRP wrapper on Wall Street's biggest balance sheets cements the SEC-CFTC view that major tokens are commodities, not securities.",
       "the_details": [
-        "End-2026 SOL price target cut to $250 from prior estimate; 2030 target raised to $2,000.",
-        "Memecoin-driven fee revenue has slumped while stablecoin transfer volume on Solana keeps climbing.",
-        "Solana DeFi TVL hit $11.5B with lending markets at $3.6B by end of 2025."
+        "Cumulative spot XRP ETF holdings reached 769M tokens as of April 29 disclosures.",
+        "Goldman Sachs filings show it as a top-tier holder across the issuer cohort.",
+        "Inflows coincide with a Rakuten Pay XRP partnership that pushed sentiment into Santiment's FOMO zone."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/388248/standard-chartered-cuts-solana-2026-target-shift-memecoins-micropayments",
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/xrp/latest-updates/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-30T20:00:00Z"
+      "timestamp": "2026-04-30T15:00:00Z"
     },
     {
-      "id": "story-2026-05-01-06-005",
-      "headline": "Galaxy posts $216M Q1 loss as Novogratz pivots growth bet to data centers",
-      "slug": "galaxy-216m-q1-loss-novogratz-data-center-pivot",
-      "tldr": "Galaxy Digital reported a $216M Q1 net loss, blaming the crypto 'transition year' while CEO Mike Novogratz doubled down on AI data center buildout.",
-      "why_it_matters": "Why it matters: A bellwether crypto financial firm is reframing itself as an AI infrastructure play. Expect more crypto majors to chase data center revenue as token speculation cools.",
+      "id": "story-2026-05-01-07-004",
+      "headline": "State Street to launch tokenized fund servicing from Luxembourg by year-end",
+      "slug": "state-street-tokenized-fund-servicing-luxembourg-2026",
+      "tldr": "State Street said it will stand up tokenized fund servicing out of Luxembourg before the end of 2026, via State Street Investment Services.",
+      "why_it_matters": "Why it matters: A multi-trillion-dollar custodian putting fund infrastructure on-chain is a milestone for tokenized real-world assets and EU MiCA-aligned plumbing.",
       "the_details": [
-        "Q1 net loss of $216M driven primarily by mark-to-market crypto price declines.",
-        "Novogratz publicly bullish on Helios data center campus and broader compute leasing pipeline.",
-        "Galaxy joins a growing list of crypto firms — including miners — repositioning hardware for AI workloads."
+        "Service will run from State Street Investment Services in Luxembourg, targeting EU-domiciled funds.",
+        "Launch planned by year-end 2026, per April 30 announcement.",
+        "Expands State Street's existing digital-asset custody pilots into core fund admin."
       ],
       "source": "The Block",
-      "source_url": "https://www.theblock.co/post/399181/galaxy-216-million-q1-loss-crypto-transition-year-novogratz-bullish-data-centers",
-      "category": "markets",
+      "source_url": "https://www.theblock.co/post/399171/state-street-tokenized-fund-servicing-luxembourg",
+      "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-30T16:00:00Z"
+      "timestamp": "2026-04-30T13:45:00Z"
+    },
+    {
+      "id": "story-2026-05-01-07-005",
+      "headline": "Wasabi Protocol drained for $4.55M after deployer admin key compromise",
+      "slug": "wasabi-protocol-4-5m-admin-key-exploit",
+      "tldr": "Perp DEX Wasabi Protocol lost about $4.55M after attackers seized its deployer key and swapped vault contracts on Ethereum and Base.",
+      "why_it_matters": "Why it matters: Yet another single-key compromise — not a smart-contract bug — underscoring how operational security is now the dominant DeFi attack surface.",
+      "the_details": [
+        "Attacker upgraded vault contracts to malicious versions across wWETH, sUSDC, wBITCON, wPEPE, and Long Pool on Ethereum.",
+        "Base-side vaults sUSDC, wWETH, sBTC, sVIRTUAL, sAERO, and sBRETT were also drained.",
+        "Loss pushes 2026 cumulative DeFi exploit total above $770M across 30+ incidents."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/30/wasabi-protocol-drained-for-usd4-5-million-in-apparent-admin-key-compromise",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-30T16:20:00Z"
     }
   ]
 }

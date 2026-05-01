@@ -1,8 +1,16 @@
 [
   {
+    "id": "feed-2026-05-01-002",
+    "type": "news",
+    "title": "📰 TRM Labs: North Korea-linked hackers drove 76% of 2026 crypto thefts, $577M in 4 months",
+    "message": "TRM Labs says DPRK-linked groups account for roughly 76% of all crypto theft losses in 2026, stealing about $577M in four months.",
+    "actionUrl": "/news",
+    "date": "2026-05-01"
+  },
+  {
     "id": "feed-2026-05-01-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Western Union to launch USDPT, Solana-based stablecoin, this month to replace SWIFT internally",
+    "title": "📰 Western Union to launch USDPT, Solana-based stablecoin, this month to replace SWIFT internally",
     "message": "Western Union will roll out USDPT, a Solana-issued dollar stablecoin, in May to settle internal agent transfers and bypass SWIFT.",
     "actionUrl": "/news",
     "date": "2026-05-01"
@@ -10,39 +18,39 @@
   {
     "id": "feed-2026-04-30-047",
     "type": "news",
-    "title": "\ud83d\udcf0 Aptos leads CoinDesk 20 with 4.4% pop as nearly all index assets rise",
-    "message": "Why Aptos keeps showing up at the top of altcoin index moves \u2014 the canonical Move VM L1 deep-dive on throughput, institutional roadmap, and how APT lines up against Sui.",
+    "title": "📰 Aptos leads CoinDesk 20 with 4.4% pop as nearly all index assets rise",
+    "message": "Why Aptos keeps showing up at the top of altcoin index moves — the canonical Move VM L1 deep-dive on throughput, institutional roadmap, and how APT lines up against Sui.",
     "actionUrl": "/learn/aptos-blockchain-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-046",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC closes worst April since 2022 but May seasonality flips bullish",
-    "message": "How a defensive April close near $76K reads against historical May returns and post-halving cycle data \u2014 the safe-haven framing for choppy tape between FOMCs.",
+    "title": "📰 BTC closes worst April since 2022 but May seasonality flips bullish",
+    "message": "How a defensive April close near $76K reads against historical May returns and post-halving cycle data — the safe-haven framing for choppy tape between FOMCs.",
     "actionUrl": "/learn/bitcoin-safe-haven-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-045",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC, ETH, XRP slide as spot ETF outflows deepen heading into May",
-    "message": "Multi-day spot-ETF outflow streaks across BTC, ETH and XRP into the May Fed window \u2014 institutional-positioning read versus the April-absorbed inflow base.",
+    "title": "📰 BTC, ETH, XRP slide as spot ETF outflows deepen heading into May",
+    "message": "Multi-day spot-ETF outflow streaks across BTC, ETH and XRP into the May Fed window — institutional-positioning read versus the April-absorbed inflow base.",
     "actionUrl": "/learn/bitcoin-etf-institutional-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-044",
     "type": "news",
-    "title": "\ud83d\udcf0 North Korea drove 76% of 2026 crypto theft, $6B stolen since 2017: TRM Labs",
-    "message": "TRM Labs's 2026 attribution: DPRK-linked actors now drive 76% of stolen crypto this year and over $6B cumulatively since 2017 \u2014 the canonical Lazarus / OFAC guide.",
+    "title": "📰 North Korea drove 76% of 2026 crypto theft, $6B stolen since 2017: TRM Labs",
+    "message": "TRM Labs's 2026 attribution: DPRK-linked actors now drive 76% of stolen crypto this year and over $6B cumulatively since 2017 — the canonical Lazarus / OFAC guide.",
     "actionUrl": "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-043",
     "type": "news",
-    "title": "\ud83d\udcf0 Banks push to slow stablecoin law as Agora races for federal charter",
+    "title": "📰 Banks push to slow stablecoin law as Agora races for federal charter",
     "message": "US banks are lobbying to delay key stablecoin rules just as Agora pushes for a national bank charter under the GENIUS Act framework.",
     "actionUrl": "/news",
     "date": "2026-04-30"
@@ -50,23 +58,23 @@
   {
     "id": "feed-2026-04-30-042",
     "type": "news",
-    "title": "\ud83d\udcf0 Aave Horizon RWA market hits $550M as tokenized Treasuries go live as collateral",
-    "message": "How institutional Treasuries become on-chain collateral for stablecoin loans \u2014 the deep-dive on RWA tokenization and the cleanest TradFi-to-DeFi bridge yet.",
+    "title": "📰 Aave Horizon RWA market hits $550M as tokenized Treasuries go live as collateral",
+    "message": "How institutional Treasuries become on-chain collateral for stablecoin loans — the deep-dive on RWA tokenization and the cleanest TradFi-to-DeFi bridge yet.",
     "actionUrl": "/learn/rwa-tokenization-real-world-assets-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-041",
     "type": "news",
-    "title": "\ud83d\udcf0 April finishes worst crypto-hack month in over a year \u2014 $620M across 12 incidents",
-    "message": "Drift's $285M and Kelp DAO's $292M dominate the haul \u2014 the canonical Lazarus / DPRK guide on the crew tied to ~76% of 2026 theft.",
+    "title": "📰 April finishes worst crypto-hack month in over a year — $620M across 12 incidents",
+    "message": "Drift's $285M and Kelp DAO's $292M dominate the haul — the canonical Lazarus / DPRK guide on the crew tied to ~76% of 2026 theft.",
     "actionUrl": "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-040",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities in joint guidance",
+    "title": "📰 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities in joint guidance",
     "message": "A joint SEC-CFTC interpretation establishes a token taxonomy that explicitly carves the top five names out of securities law.",
     "actionUrl": "/news",
     "date": "2026-04-30"
@@ -74,47 +82,47 @@
   {
     "id": "feed-2026-04-30-039",
     "type": "news",
-    "title": "\ud83d\udcf0 100+ crypto firms push Senate to mark up CLARITY Act this session",
-    "message": "Industry signs an open letter demanding a market-structure markup \u2014 the deep-dive on what CLARITY codifies and the path to law.",
+    "title": "📰 100+ crypto firms push Senate to mark up CLARITY Act this session",
+    "message": "Industry signs an open letter demanding a market-structure markup — the deep-dive on what CLARITY codifies and the path to law.",
     "actionUrl": "/learn/clarity-act-crypto-guide",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-038",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin trading volume in freefall \u2014 pattern that rarely ends quietly",
-    "message": "Why thinning BTC participation into FOMC tends to resolve into defensive regimes \u2014 how the safe-haven framing reads from here.",
+    "title": "📰 Bitcoin trading volume in freefall — pattern that rarely ends quietly",
+    "message": "Why thinning BTC participation into FOMC tends to resolve into defensive regimes — how the safe-haven framing reads from here.",
     "actionUrl": "/learn/bitcoin-safe-haven-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-037",
     "type": "news",
-    "title": "\ud83d\udcf0 Banks lobby to slow GENIUS Act as Agora sprints for stablecoin charter",
-    "message": "60-day delay request meets Agora's federal-charter sprint \u2014 the deep-dive on the OCC framework, dual-track rules and what changes if rollout slips.",
+    "title": "📰 Banks lobby to slow GENIUS Act as Agora sprints for stablecoin charter",
+    "message": "60-day delay request meets Agora's federal-charter sprint — the deep-dive on the OCC framework, dual-track rules and what changes if rollout slips.",
     "actionUrl": "/learn/genius-act-stablecoin-guide",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-036",
     "type": "news",
-    "title": "\ud83d\udcf0 Lazarus owns April: $577M in two hits drives 76% of 2026 crypto theft",
-    "message": "TRM Labs pins KelpDAO + Drift drains on the DPRK crew \u2014 TTPs, laundering paths and OFAC reach in the canonical Lazarus guide.",
+    "title": "📰 Lazarus owns April: $577M in two hits drives 76% of 2026 crypto theft",
+    "message": "TRM Labs pins KelpDAO + Drift drains on the DPRK crew — TTPs, laundering paths and OFAC reach in the canonical Lazarus guide.",
     "actionUrl": "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-035",
     "type": "news",
-    "title": "\ud83d\udcf0 Wasabi Protocol drained for $4.5M after deployer admin-key compromise",
-    "message": "Single-EOA admin key swapped vault contracts on Ethereum + Base \u2014 multisig deployers and timelocks close this exact attack path.",
+    "title": "📰 Wasabi Protocol drained for $4.5M after deployer admin-key compromise",
+    "message": "Single-EOA admin key swapped vault contracts on Ethereum + Base — multisig deployers and timelocks close this exact attack path.",
     "actionUrl": "/learn/multisig-wallets-shared-crypto-security-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-034",
     "type": "news",
-    "title": "\ud83d\udcf0 Wasabi Protocol drained for $4.5M after deployer admin key compromise",
+    "title": "📰 Wasabi Protocol drained for $4.5M after deployer admin key compromise",
     "message": "Attackers seized Wasabi's deployer key, swapped vault contracts to malicious versions, and drained roughly $4.5M across Ethereum and Base.",
     "actionUrl": "/news",
     "date": "2026-04-30"
@@ -122,23 +130,23 @@
   {
     "id": "feed-2026-04-30-024",
     "type": "news",
-    "title": "\ud83d\udcf0 AllUnity ports MiCA-compliant EURAU euro stablecoin to Solana",
-    "message": "DWS-backed AllUnity is taking EURAU multi-chain \u2014 the deep-dive on MiCA's EMT track and what licensed euro stablecoins mean for EU on-chain payments.",
+    "title": "📰 AllUnity ports MiCA-compliant EURAU euro stablecoin to Solana",
+    "message": "DWS-backed AllUnity is taking EURAU multi-chain — the deep-dive on MiCA's EMT track and what licensed euro stablecoins mean for EU on-chain payments.",
     "actionUrl": "/learn/mica-regulation-eu-crypto-compliance-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-023",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin spot ETFs bleed third straight day at $138M; ether funds shed $88M",
-    "message": "Three consecutive outflow days led by IBIT and FBTC undercut the April-absorbed-$1.7B framing \u2014 the institutional-flow guide on what it signals.",
+    "title": "📰 Bitcoin spot ETFs bleed third straight day at $138M; ether funds shed $88M",
+    "message": "Three consecutive outflow days led by IBIT and FBTC undercut the April-absorbed-$1.7B framing — the institutional-flow guide on what it signals.",
     "actionUrl": "/learn/bitcoin-etf-institutional-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-022",
     "type": "system",
-    "title": "\ud83d\udee0 ETF Tracker \u2014 live spot BTC + ETH flow board",
+    "title": "🛠 ETF Tracker — live spot BTC + ETH flow board",
     "message": "Watching the third outflow day live? Our ETF tracker surfaces IBIT, FBTC and ETH spot flows so you can see the rotation in real time.",
     "actionUrl": "/tools/etf-tracker",
     "date": "2026-04-30"
@@ -146,23 +154,23 @@
   {
     "id": "feed-2026-04-30-021",
     "type": "news",
-    "title": "\ud83d\udcf0 Iran-strike fears hammer crypto: BTC bottoms at $75.7K, ETH at $2.25K week lows",
-    "message": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7% \u2014 the safe-haven framing under a geopolitical shock.",
+    "title": "📰 Iran-strike fears hammer crypto: BTC bottoms at $75.7K, ETH at $2.25K week lows",
+    "message": "Reports of Trump weighing new Iran action sent BTC to its lowest open in a week as Brent crude spiked 7% — the safe-haven framing under a geopolitical shock.",
     "actionUrl": "/learn/bitcoin-safe-haven-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-020",
     "type": "system",
-    "title": "\ud83d\udee0 New tool: Stablecoin Charter Tracker (GENIUS Act issuer status)",
-    "message": "Live status for who has filed for, received, or is exempt from a federal OCC trust charter under the GENIUS Act \u2014 Circle, Agora, Tether USA\u20ae, Paxos, Ripple RLUSD and more.",
+    "title": "🛠 New tool: Stablecoin Charter Tracker (GENIUS Act issuer status)",
+    "message": "Live status for who has filed for, received, or is exempt from a federal OCC trust charter under the GENIUS Act — Circle, Agora, Tether USA₮, Paxos, Ripple RLUSD and more.",
     "actionUrl": "/tools/stablecoin-charter-tracker",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-019",
     "type": "news",
-    "title": "\ud83d\udcf0 Lazarus owns April: crypto hack toll crests $620M, 95% from one DPRK crew",
+    "title": "📰 Lazarus owns April: crypto hack toll crests $620M, 95% from one DPRK crew",
     "message": "April 2026 is the worst month for crypto theft since February 2025, with $620M+ drained across 12 incidents and Lazarus behind the two biggest.",
     "actionUrl": "/news",
     "date": "2026-04-30"
@@ -170,23 +178,23 @@
   {
     "id": "feed-2026-04-30-018",
     "type": "news",
-    "title": "\ud83d\udcf0 GENIUS Act dual-track: $10B threshold splits issuers between state regimes and OCC",
-    "message": "Treasury's stablecoin framework lets sub-$10B issuers opt into qualifying state regimes while $10B+ issuers move to OCC supervision \u2014 the deep-dive on the new classification map.",
+    "title": "📰 GENIUS Act dual-track: $10B threshold splits issuers between state regimes and OCC",
+    "message": "Treasury's stablecoin framework lets sub-$10B issuers opt into qualifying state regimes while $10B+ issuers move to OCC supervision — the deep-dive on the new classification map.",
     "actionUrl": "/learn/sec-cftc-digital-commodity-classification-guide-2026",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-017",
     "type": "news",
-    "title": "\ud83d\udcf0 Banks ask Treasury to delay GENIUS Act 60 days as OCC framework lags",
-    "message": "Banking groups are lobbying for stacked 60-day comment extensions on three GENIUS Act stablecoin rules \u2014 a successful delay drags issuer licensing into late 2026.",
+    "title": "📰 Banks ask Treasury to delay GENIUS Act 60 days as OCC framework lags",
+    "message": "Banking groups are lobbying for stacked 60-day comment extensions on three GENIUS Act stablecoin rules — a successful delay drags issuer licensing into late 2026.",
     "actionUrl": "/learn/genius-act-stablecoin-guide",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-016",
     "type": "news",
-    "title": "\ud83d\udcf0 Pump.fun pivots to value capture: 50% of revenue, perpetual buyback-burn",
+    "title": "📰 Pump.fun pivots to value capture: 50% of revenue, perpetual buyback-burn",
     "message": "After years of mercenary memecoin supply, Pump.fun's permanent buyback-and-burn is the most aggressive token-revenue alignment yet from a top-five Solana fee generator.",
     "actionUrl": "/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026",
     "date": "2026-04-30"
@@ -194,15 +202,15 @@
   {
     "id": "feed-2026-04-30-015",
     "type": "news",
-    "title": "\ud83d\udcf0 Pump.fun torches $370M of PUMP, sets new bar for memecoin tokenomics",
-    "message": "Solana's top memecoin launchpad burned $370M of PUMP and locked in a 50% revenue buyback \u2014 the tokenomics deep-dive on what changed.",
+    "title": "📰 Pump.fun torches $370M of PUMP, sets new bar for memecoin tokenomics",
+    "message": "Solana's top memecoin launchpad burned $370M of PUMP and locked in a 50% revenue buyback — the tokenomics deep-dive on what changed.",
     "actionUrl": "/learn/pump-fun-memecoins",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-014",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities",
+    "title": "📰 SEC-CFTC name BTC, ETH, SOL, XRP, LINK as digital commodities",
     "message": "A joint SEC-CFTC interpretation lays out a unified token taxonomy and explicitly designates the five biggest assets as digital commodities.",
     "actionUrl": "/news",
     "date": "2026-04-30"
@@ -210,7 +218,7 @@
   {
     "id": "feed-2026-04-30-013",
     "type": "news",
-    "title": "\ud83d\udcf0 Solana Alpenglow targets 150ms finality \u2014 80x faster, votes move off-chain",
+    "title": "📰 Solana Alpenglow targets 150ms finality — 80x faster, votes move off-chain",
     "message": "SIMD-0326 rewires Solana consensus to cut block finality from ~12s to ~150ms by moving validator votes off-chain. The deep-dive on what changes for MEV and DEX UX.",
     "actionUrl": "/learn/solana-alpenglow-consensus-upgrade-guide-2026",
     "date": "2026-04-30"
@@ -218,25 +226,17 @@
   {
     "id": "feed-2026-04-30-012",
     "type": "news",
-    "title": "\ud83d\udcf0 Senate market-structure markup slips to May \u2014 what the CLARITY Act actually does",
-    "message": "Tillis confirmed the Senate Banking markup will not happen in April. Inside the CLARITY Act framework \u2014 what it codifies for commodities, securities, and DeFi.",
+    "title": "📰 Senate market-structure markup slips to May — what the CLARITY Act actually does",
+    "message": "Tillis confirmed the Senate Banking markup will not happen in April. Inside the CLARITY Act framework — what it codifies for commodities, securities, and DeFi.",
     "actionUrl": "/learn/clarity-act-crypto-guide",
     "date": "2026-04-30"
   },
   {
     "id": "feed-2026-04-30-011",
     "type": "news",
-    "title": "\ud83d\udcf0 BTC closes April defensive at $76K as 30-year yield hits 5% \u2014 the macro read",
+    "title": "📰 BTC closes April defensive at $76K as 30-year yield hits 5% — the macro read",
     "message": "5% long yields and Iran-tied oil pressure are pushing BTC into the May rate-path window. Decision-day playbook for the post-FOMC tape.",
     "actionUrl": "/learn/fomc-fed-rate-crypto-guide",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-010",
-    "type": "news",
-    "title": "\ud83d\udcf0 DeFi bleeds $606M across 12 exploits in 18 days as Kelp DAO contagion lingers",
-    "message": "Drift's $285M and Kelp DAO's $293M headlined April's $606M exploit run. Inside the post-mortem cluster \u2014 attack paths and lessons for protocol risk.",
-    "actionUrl": "/learn/drift-protocol-285m-hack-analysis-2026",
     "date": "2026-04-30"
   }
 ]
