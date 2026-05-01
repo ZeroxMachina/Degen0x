@@ -147,12 +147,12 @@ export default function PerpDEXGuidePage() {
             Perpetual futures, or "perps," are derivative contracts that let you trade cryptocurrencies with leverage without an expiration date. Unlike standard futures on centralized exchanges, perpetual DEXs operate entirely on-chain, giving you direct control over your funds and eliminating intermediaries. You can go long or short, trade with 5x, 10x, or even 100x+ leverage depending on the protocol, and your position stays open indefinitely.
           </p>
         {/* editorial-voice */}
-        <div style={{ background: 'var(--card-alt)', border: '1px solid var(--border-alt)', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: 'var(--accent-badge)', fontSize: 15 }}>Why This Matters</strong>
+        <div className="bg-[var(--card-alt)] border border-[var(--border-alt)] rounded-[10px] py-5 px-6 mt-8 mb-8">
+          <div className="flex items-center gap-2 mb-2.5">
+            <span className="text-lg">💡</span>
+            <strong className="text-[var(--accent-badge)] text-[15px]">Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: 'var(--foreground)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+          <p className="text-sm text-[var(--foreground)] leading-[1.7] italic">
             We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
           </p>
         </div>
@@ -260,35 +260,35 @@ export default function PerpDEXGuidePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card)]">
+                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card-alt)] transition-colors">
                     <td className="px-4 py-3 text-[var(--foreground)]">Hyperliquid</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">~$18B+</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">80%+</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">Order Book</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">100x+</td>
                   </tr>
-                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card)]">
+                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card-alt)] transition-colors">
                     <td className="px-4 py-3 text-[var(--foreground)]">dYdX</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">~$2.8B</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">12%</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">Order Book</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">20x</td>
                   </tr>
-                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card)]">
+                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card-alt)] transition-colors">
                     <td className="px-4 py-3 text-[var(--foreground)]">Lighter</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">~$600M</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">2-3%</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">Order Book</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">20x</td>
                   </tr>
-                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card)]">
+                  <tr className="border-b border-[var(--border)] hover:bg-[var(--card-alt)] transition-colors">
                     <td className="px-4 py-3 text-[var(--foreground)]">GRVT</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">~$400M</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">1-2%</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">Order Book</td>
                     <td className="px-4 py-3 text-[var(--foreground)]">20x</td>
                   </tr>
-                  <tr className="hover:bg-[var(--card)]">
+                  <tr className="hover:bg-[var(--card-alt)] transition-colors">
                     <td className="px-4 py-3 text-[var(--foreground)]">GMX</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">~$800M</td>
                     <td className="px-4 py-3 text-[var(--secondary)]">3-4%</td>
@@ -477,7 +477,7 @@ export default function PerpDEXGuidePage() {
 
           <h3 className="text-2xl font-semibold text-[var(--foreground-strong)] mb-3 mt-6">Counterparty Risk on Stablecoins</h3>
           <p className="text-[var(--foreground)] mb-4 leading-relaxed">
-            Most perp DEXs use USDC, USDT, or proprietary stablecoins as collateral. If the stablecoin de-pegs or becomes insecvent, your collateral value plummets. Recent events show stablecoins aren't risk-free—use protocols that allow multiple collateral types.
+            Most perp DEXs use USDC, USDT, or proprietary stablecoins as collateral. If the stablecoin de-pegs or becomes insolvent, your collateral value plummets. Recent events show stablecoins aren't risk-free—use protocols that allow multiple collateral types.
           </p>
 
           <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 my-6">
@@ -637,9 +637,9 @@ export default function PerpDEXGuidePage() {
       </article>
       <BackToTop />
     
-        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid var(--border)", fontSize: "14px" }}>
-          <span style={{ color: "var(--muted)" }}>Related: </span>
-          <a href="/learn/decentralized-gpu-compute-guide-2026" style={{ color: "var(--accent-badge)", marginRight: "1rem" }}>Decentralized Gpu Compute Guide 2026</a>
+        <nav className="mt-8 p-4 border-t border-[var(--border)] text-sm">
+          <span className="text-[var(--muted)]">Related: </span>
+          <Link href="/learn/decentralized-gpu-compute-guide-2026" className="text-[var(--accent-badge)] mr-4 hover:text-[var(--primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm transition-colors">Decentralized Gpu Compute Guide 2026</Link>
         </nav>
 </main>
   );

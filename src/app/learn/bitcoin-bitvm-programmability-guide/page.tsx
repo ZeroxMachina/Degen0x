@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     authors: ["degen0x"],
     images: [
       {
-        url: "https://degen0x.com/og-bitcoin-bitvm-programmability-guide.svg",
+        url: "https://degen0x.com/api/og?title=Bitcoin+BitVM+%26+Programmability&category=Learn&type=learn",
         width: 1200,
         height: 630,
-        alt: "Bitcoin BitVM & Programmability Guide 2026",
+        alt: "Bitcoin BitVM & Programmability Guide 2026 — degen0x",
       },
     ],
   },
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-24T00:00:00Z",
   dateModified: "2026-03-24T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-bitcoin-bitvm-programmability-guide.svg",
+  image: "https://degen0x.com/api/og?title=Bitcoin+BitVM+%26+Programmability&category=Learn&type=learn",
   wordCount: 3000,
 });
 
@@ -76,9 +76,9 @@ export default function BitVMProgrammabilityGuide() {
       <div className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-4xl mx-auto px-6 py-4">
           <nav aria-label="Breadcrumb" className="text-sm text-[var(--muted)]">
-            <a href="/learn" className="hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
+            <Link href="/learn" className="hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
               Learn
-            </a>
+            </Link>
             <span className="mx-2">/</span>
             <span>Bitcoin BitVM & Programmability Guide</span>
           </nav>
@@ -93,7 +93,7 @@ export default function BitVMProgrammabilityGuide() {
             <span className="inline-block bg-[var(--border)] text-[var(--primary)] text-xs font-semibold px-3 py-1 rounded-full">
               Bitcoin
             </span>
-            <span className="inline-block bg-purple-950 text-purple-200 text-xs font-semibold px-3 py-1 rounded-full">
+            <span className="inline-block bg-[var(--card-alt)] text-[var(--secondary)] text-xs font-semibold px-3 py-1 rounded-full">
               Advanced
             </span>
           </div>
@@ -184,12 +184,12 @@ export default function BitVMProgrammabilityGuide() {
             BitVM represents a fundamental shift in how we think about Bitcoin's programmability. Unlike traditional blockchain upgrades that modify consensus rules, BitVM achieves complex computation through clever use of Bitcoin's existing Script capabilities. The paradigm operates on a simple principle: push heavy computation off-chain and use Bitcoin's blockchain only as a settlement and verification layer.
           </p>
         {/* editorial-voice */}
-        <div style={{ background: 'var(--card-alt)', border: '1px solid var(--border-alt)', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: 'var(--accent-badge)', fontSize: 15 }}>Why This Matters</strong>
+        <div className="bg-[var(--card-alt)] border border-[var(--border-alt)] rounded-[10px] py-5 px-6 mt-8 mb-8">
+          <div className="flex items-center gap-2 mb-2.5">
+            <span className="text-lg">💡</span>
+            <strong className="text-[var(--accent-badge)] text-[15px]">Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: 'var(--foreground-strong)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+          <p className="text-sm text-[var(--foreground-strong)] leading-[1.7] italic">
             Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
           </p>
         </div>
@@ -372,7 +372,7 @@ export default function BitVMProgrammabilityGuide() {
           {/* Comparison Table */}
           <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg overflow-hidden mb-8">
             <div className="overflow-x-auto">
-              <table className="w-full text-sm" style={{ minWidth: "700px" }}>
+              <table className="w-full text-sm min-w-[700px]">
                 <thead>
                   <tr className="border-b border-[var(--border)] bg-[var(--background)]">
                     <th className="px-4 py-3 text-left text-[var(--primary)] font-semibold">Project</th>
@@ -626,7 +626,7 @@ export default function BitVMProgrammabilityGuide() {
 
           <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg overflow-hidden mb-8">
             <div className="overflow-x-auto">
-              <table className="w-full text-xs" style={{ minWidth: "700px" }}>
+              <table className="w-full text-xs min-w-[700px]">
                 <thead>
                   <tr className="border-b border-[var(--border)] bg-[var(--background)]">
                     <th className="px-3 py-3 text-left text-[var(--primary)] font-semibold">Approach</th>
@@ -779,7 +779,7 @@ export default function BitVMProgrammabilityGuide() {
 
           <div className="grid gap-4">
             <Link href="/learn/bitcoin-layer-2-guide"
-              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-lg"
+              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]"
             >
               <h3 className="text-[var(--primary)] font-semibold group-hover:text-[var(--secondary)] transition-colors">
                 Bitcoin Layer 2 Guide →
@@ -790,7 +790,7 @@ export default function BitVMProgrammabilityGuide() {
             </Link>
 
             <Link href="/learn/btcfi-bitcoin-defi-guide-2026"
-              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-lg"
+              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]"
             >
               <h3 className="text-[var(--primary)] font-semibold group-hover:text-[var(--secondary)] transition-colors">
                 BTCFi: Bitcoin DeFi Guide 2026 →
@@ -801,7 +801,7 @@ export default function BitVMProgrammabilityGuide() {
             </Link>
 
             <Link href="/learn/zero-knowledge-proofs-zkp-complete-guide-2026"
-              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-lg"
+              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]"
             >
               <h3 className="text-[var(--primary)] font-semibold group-hover:text-[var(--secondary)] transition-colors">
                 Zero-Knowledge Proofs Guide →
@@ -812,7 +812,7 @@ export default function BitVMProgrammabilityGuide() {
             </Link>
 
             <Link href="/learn/cross-chain-bridges-interoperability-guide-2026"
-              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-lg"
+              className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 hover:border-[var(--primary)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]"
             >
               <h3 className="text-[var(--primary)] font-semibold group-hover:text-[var(--secondary)] transition-colors">
                 Bridge Aggregator Tool →

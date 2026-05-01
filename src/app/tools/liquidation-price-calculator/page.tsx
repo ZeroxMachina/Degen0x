@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import AuthorAttribution from "@/components/AuthorAttribution";
 
 /* ── Focus-ring + mobile-grid styles (not expressible in inline style objects) ── */
 const POLISH_CSS = `
@@ -224,6 +225,14 @@ export default function LiquidationPriceCalculatorPage() {
           ]}
         />
 
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-29"
+          updatedDate="2026-04-29"
+          readingTime={4}
+        />
+
         {/* Calculator Card */}
         <div
           className="lpc-grid-2col"
@@ -248,14 +257,15 @@ export default function LiquidationPriceCalculatorPage() {
 
             {/* Side toggle */}
             <div style={{ marginBottom: 20 }}>
-              <label style={{ display: "block", marginBottom: 8, color: "var(--color-text-secondary)", fontSize: "0.9rem" }}>
+              <label id="side-label" style={{ display: "block", marginBottom: 8, color: "var(--color-text-secondary)", fontSize: "0.9rem" }}>
                 Side
               </label>
-              <div style={{ display: "flex", gap: 8 }}>
+              <div style={{ display: "flex", gap: 8 }} role="group" aria-labelledby="side-label">
                 {(["long", "short"] as const).map((s) => (
                   <button
                     key={s}
                     className="lpc-btn"
+                    aria-pressed={side === s}
                     onClick={() => setSide(s)}
                     style={{
                       flex: 1,
@@ -323,6 +333,7 @@ export default function LiquidationPriceCalculatorPage() {
                 step={1}
                 value={leverage}
                 onChange={(e) => setLeverage(Number(e.target.value))}
+                aria-label={`Leverage: ${leverage}x`}
                 style={{ width: "100%" }}
               />
               <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 8 }}>
@@ -453,10 +464,19 @@ export default function LiquidationPriceCalculatorPage() {
                 </tr>
               </thead>
               <tbody>
-                {sensitivity.map((row) => (
-                  <tr key={row.leverage} style={{ borderBottom: "1px solid var(--color-border)" }}>
+                {sensitivity.map((row) => {
+                  const isActive = row.leverage === leverage;
+                  return (
+                  <tr
+                    key={row.leverage}
+                    style={{
+                      borderBottom: "1px solid var(--color-border)",
+                      backgroundColor: isActive ? "color-mix(in srgb, var(--color-primary) 10%, transparent)" : "transparent",
+                      transition: "background-color 0.15s ease",
+                    }}
+                  >
                     <td style={td}>
-                      <strong>{row.leverage}×</strong>
+                      <strong>{row.leverage}×</strong>{isActive && <span style={{ marginLeft: 6, fontSize: "0.75rem", color: "var(--color-primary)", fontWeight: 600 }}>ACTIVE</span>}
                     </td>
                     <td style={td}>{fmtPrice(row.liqPrice)}</td>
                     <td style={{ ...td, color: row.distancePct < 0 ? "var(--color-danger)" : "var(--color-success)" }}>
@@ -464,7 +484,8 @@ export default function LiquidationPriceCalculatorPage() {
                     </td>
                     <td style={td}>{fmtUsd(row.initialMarginUsd)}</td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>
