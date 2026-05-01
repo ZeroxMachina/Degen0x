@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-05-01-004",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin clings to $76,200 support as 64% market odds favor $76K close",
+    "message": "Bitcoin defends technical support near $76,200 as prediction markets price 64% odds the asset closes above $76,000 by 5pm EDT Friday.",
+    "actionUrl": "/news",
+    "date": "2026-05-01"
+  },
+  {
     "id": "feed-2026-05-01-003",
     "type": "news",
     "title": "\ud83d\udcf0 April 2026 sets record: 30 hacks, $625M+ stolen as DPRK fingerprints dominate",
@@ -229,14 +237,6 @@
     "title": "\ud83d\udcf0 Solana Alpenglow targets 150ms finality \u2014 80x faster, votes move off-chain",
     "message": "SIMD-0326 rewires Solana consensus to cut block finality from ~12s to ~150ms by moving validator votes off-chain. The deep-dive on what changes for MEV and DEX UX.",
     "actionUrl": "/learn/solana-alpenglow-consensus-upgrade-guide-2026",
-    "date": "2026-04-30"
-  },
-  {
-    "id": "feed-2026-04-30-012",
-    "type": "news",
-    "title": "\ud83d\udcf0 Senate market-structure markup slips to May \u2014 what the CLARITY Act actually does",
-    "message": "Tillis confirmed the Senate Banking markup will not happen in April. Inside the CLARITY Act framework \u2014 what it codifies for commodities, securities, and DeFi.",
-    "actionUrl": "/learn/clarity-act-crypto-guide",
     "date": "2026-04-30"
   }
 ]

@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-05-01T08:08:00Z",
-  "briefing_id": "briefing-2026-05-01-08",
+  "generated_at": "2026-05-01T09:08:00Z",
+  "briefing_id": "briefing-2026-05-01-09",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-05-01-08-001",
-      "headline": "April 2026 sets record: 30 hacks, $625M+ stolen as DPRK fingerprints dominate",
-      "slug": "april-2026-record-hacks-625m",
-      "tldr": "Crypto's worst month for incidents in over a year saw roughly 30 separate exploits drain north of $625 million, led by Drift and KelpDAO.",
-      "why_it_matters": "Why it matters: Attack vectors have shifted from smart-contract bugs to social engineering and admin-key compromises, putting protocol ops teams — not auditors — on the front line.",
+      "id": "story-2026-05-01-09-001",
+      "headline": "Bitcoin clings to $76,200 support as 64% market odds favor $76K close",
+      "slug": "btc-clings-76k-prediction-markets-64-pct",
+      "tldr": "Bitcoin defends technical support near $76,200 as prediction markets price 64% odds the asset closes above $76,000 by 5pm EDT Friday.",
+      "why_it_matters": "Why it matters: A break below pivots BTC toward $73,500 and risks unwinding April's 13% rally just as May seasonality typically turns bullish.",
       "the_details": [
-        "Drift on Solana lost ~$285M April 1 in a social-engineering theft tied to North Korea's Lazarus Group.",
-        "KelpDAO's LayerZero bridge was spoofed mid-April for an estimated $293M, the largest DeFi hack of 2026 to date.",
-        "Drift and KelpDAO alone account for ~93% of April's losses; Rhea, Grinex, Volo and Sweat round out the tail."
-      ],
-      "source": "Crypto Times",
-      "source_url": "https://www.cryptotimes.io/2026/04/30/629m-lost-april-2026-marks-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-30T22:00:00Z"
-    },
-    {
-      "id": "story-2026-05-01-08-002",
-      "headline": "Wasabi Protocol drained for $4.55M in deployer admin-key compromise",
-      "slug": "wasabi-protocol-admin-key-drain",
-      "tldr": "Perps platform Wasabi Protocol lost about $4.55 million on April 30 after attackers gained control of its deployer admin key on Ethereum and Base.",
-      "why_it_matters": "Why it matters: Yet another small-cap perp DEX falls to a privileged-key compromise — a recurring pattern that's pushing institutional liquidity toward CEXs and venues with formal key management.",
-      "the_details": [
-        "Funds were drained from Ethereum and Base deployments after the deployer's admin key was compromised April 30.",
-        "Wasabi paused contracts post-incident; an on-chain post-mortem is pending.",
-        "Adds to a string of April access-control failures including Volo Vault ($3.5M) and Sweat Foundation ($3.5M)."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/30/wasabi-protocol-drained-for-usd4-5-million-in-apparent-admin-key-compromise",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-30T18:00:00Z"
-    },
-    {
-      "id": "story-2026-05-01-08-003",
-      "headline": "May token unlocks hit $2.24B as APT, STRK and ARB cluster within 96 hours",
-      "slug": "may-token-unlocks-224b-apt-strk-arb",
-      "tldr": "About $2.24B in cliff unlocks lands between April 27 and May 31, with three major L1/L2 unlocks compressed into a four-day window mid-month.",
-      "why_it_matters": "Why it matters: The May 12–16 cluster is the single most consequential window for altcoin price action this month and will test how much OTC absorption capacity actually exists.",
-      "the_details": [
-        "Aptos releases ~11.3M APT (~$102M) on May 12; Starknet unlocks ~127M STRK (~$145M) on May 15.",
-        "Arbitrum follows May 16 with ~92.6M ARB (~$90M), stacking three unlocks inside 96 hours.",
-        "The May 4–10 week alone carries $753M in cliff unlocks, the heaviest single week of Q2."
-      ],
-      "source": "Crypto Times",
-      "source_url": "https://www.cryptotimes.io/2026/04/30/may-token-unlocks-hit-2-24b-as-apt-strk-arb-to-flood-market/",
-      "category": "altcoins",
-      "impact": "high",
-      "timestamp": "2026-04-30T20:00:00Z"
-    },
-    {
-      "id": "story-2026-05-01-08-004",
-      "headline": "Bitcoin pinned near $76.2K support as $110M in longs liquidated",
-      "slug": "bitcoin-76k-support-liquidations",
-      "tldr": "BTC is hovering above the $76,200 23.6% Fib retracement after more than $110M in leveraged longs were wiped out, with Kalshi traders pricing only a 37% chance of reclaiming $77K by tomorrow.",
-      "why_it_matters": "Why it matters: A break of $76.2K opens the door to $73.5K — a level that would invalidate the April uptrend and front-run the mid-May altcoin unlock wave with broad-market weakness.",
-      "the_details": [
-        "Kalshi shows 64% probability BTC holds $76K by 5pm EDT tomorrow; 37% probability it reclaims $77K.",
-        "Over $110M in BTC long positions were liquidated as the Fed signals 'higher for longer' and oil rises on Iran tensions.",
-        "April closed +13% for BTC despite the late-month fade; seasonality favors May with a 13-year average return of ~8%."
+        "BTC trades at the 23.6% Fib retracement at $76,200; expected consolidation range is $76,240–$79,000.",
+        "Prediction markets show 47% odds for a $76,500 close and 37% odds for $77,000 by 5pm EDT.",
+        "Over $110M in leveraged BTC longs were liquidated as Iran-tied oil shock and 'higher-for-longer' Fed weighed on risk."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/30/seasonal-trends-favor-bulls-even-as-bitcoin-ends-april-in-a-defensive-mood",
       "category": "bitcoin",
       "impact": "high",
+      "timestamp": "2026-05-01T09:00:00Z"
+    },
+    {
+      "id": "story-2026-05-01-09-002",
+      "headline": "GENIUS Act stablecoin rules barrel toward June 2026 comment deadline",
+      "slug": "genius-act-stablecoin-rules-june-deadline",
+      "tldr": "Stablecoin issuers face overlapping FDIC, Treasury and FinCEN proposals with comment windows closing in June 2026 as GENIUS Act implementation accelerates.",
+      "why_it_matters": "Why it matters: A fragmented rollout could force issuers to restructure reserves and disclosures before the framework hardens, reshaping who can compete onshore.",
+      "the_details": [
+        "March 17 SEC-CFTC joint interpretation defined a token taxonomy: digital commodities, stablecoins, digital securities, collectibles and tools.",
+        "FDIC, Treasury and FinCEN proposed rules carry June 2026 comment deadlines for stablecoin issuers.",
+        "SEC Chair Paul Atkins said duplicative agency registrations have stifled innovation; new MOU outlines harmonization roadmap."
+      ],
+      "source": "Cleary Gottlieb",
+      "source_url": "https://www.clearygottlieb.com/news-and-insights/publication-listing/2026-digital-assets-regulatory-update-a-landmark-2025-but-more-developments-on-the-horizon",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-05-01T07:00:00Z"
+    },
+    {
+      "id": "story-2026-05-01-09-003",
+      "headline": "JPMorgan slashes bitcoin production cost estimate to $77K from $90K",
+      "slug": "jpmorgan-bitcoin-production-cost-77k",
+      "tldr": "JPMorgan now pegs bitcoin's marginal mining cost at $77,000 — down from $90,000 in January — while keeping a positive 2026 stance on crypto.",
+      "why_it_matters": "Why it matters: Production cost is the most-watched floor model for miner viability; a $13K downward revision tightens stress for higher-cost rigs.",
+      "the_details": [
+        "JPMorgan analysts maintained a 'positive' 2026 crypto view despite the cost cut.",
+        "The new $77K floor sits a hair above current spot near $76,200, leaving thin margin for miners.",
+        "Lands the same week Galaxy posted a $216M Q1 loss in what Novogratz called a 'transition year' for crypto."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/389706/jpmorgan-bitcoin-support-77000-positive-crypto-2026",
+      "category": "markets",
+      "impact": "medium",
       "timestamp": "2026-05-01T06:00:00Z"
     },
     {
-      "id": "story-2026-05-01-08-005",
-      "headline": "Clarity Act 'ready for hearing' as senator signals May markup momentum",
-      "slug": "clarity-act-may-markup-hearing",
-      "tldr": "The senator holding the Clarity Act says the market-structure bill is ready to move, with more momentum than ever for a May markup.",
-      "why_it_matters": "Why it matters: Clarity is the legislative complement to the SEC/CFTC March MOU — together they would lock in the 'most digital assets are not securities' framework before the next election cycle.",
+      "id": "story-2026-05-01-09-004",
+      "headline": "Standard Chartered cuts Solana 2026 target to $250 in payments pivot",
+      "slug": "stanchart-solana-2026-target-250",
+      "tldr": "Standard Chartered lowered its end-2026 SOL target to $250 but raised its long-term forecast to $2,000 by 2030 on a stablecoin and micropayments thesis.",
+      "why_it_matters": "Why it matters: A near-term cut from a top-tier bank could pressure SOL into the May L2 unlock window where APT, STRK and ARB cluster supply hits.",
       "the_details": [
-        "A Democrat-driven section banning government officials from personal crypto business interests remains the sticky provision.",
-        "Builds on the SEC and CFTC's March 17, 2026 joint interpretation declaring most cryptos non-securities.",
-        "TD Cowen has warned the bill could still slip to 2027 with implementation as late as 2029 if markup stalls."
+        "End-2026 SOL target cut to $250, citing memecoin volume erosion and weak retail rotation.",
+        "2030 target raised to $2,000 as the bank reframes Solana around stablecoin rails and micropayments.",
+        "Comes as roughly $1.75B in May altcoin unlocks loom, including $90M ARB on May 16."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/news-analysis/2026/04/29/u-s-senator-holding-cards-on-clarity-act-s-next-move-says-it-s-ready-to-get-to-hearing",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-29T16:00:00Z"
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/388248/standard-chartered-cuts-solana-2026-target-shift-memecoins-micropayments",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-30T18:00:00Z"
+    },
+    {
+      "id": "story-2026-05-01-09-005",
+      "headline": "Galaxy Digital posts $216M Q1 loss as Novogratz pivots bull case to data centers",
+      "slug": "galaxy-q1-216m-loss-data-centers",
+      "tldr": "Galaxy reported a $216 million Q1 net loss while CEO Mike Novogratz reframed the firm's growth story around AI data center expansion.",
+      "why_it_matters": "Why it matters: Crypto-native firms are bridging into AI infrastructure to ride compute demand and backstop slowing trading revenue.",
+      "the_details": [
+        "Galaxy posted a $216M Q1 net loss in what Novogratz labeled a crypto 'transition year.'",
+        "CEO highlighted data center growth as Galaxy's primary 2026 growth vector going forward.",
+        "Earnings hit lands amid broader DAT-model collapse as many crypto vehicles trade below NAV."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/399181/galaxy-216-million-q1-loss-crypto-transition-year-novogratz-bullish-data-centers",
+      "category": "markets",
+      "impact": "medium",
+      "timestamp": "2026-04-30T22:00:00Z"
     }
   ]
 }
