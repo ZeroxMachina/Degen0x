@@ -41,6 +41,151 @@ interface TokenRule {
 type Rule = SlugRule | TokenRule;
 
 const RULES: Rule[] = [
+  // ── 2026-04-30 briefing-18 anchors (post-FOMC pivot — RWA + Japan
+  //    payments + April-hack-month consolidation: SEC-CFTC joint
+  //    guidance recur-evolved 5+ cycles [DEFERRED — anchor exhaustion],
+  //    BTC defensive April close post-FOMC, April $620M hack-month
+  //    monthly summary, Aave Horizon RWA $550M tokenized Treasuries,
+  //    XRP Rakuten Pay [DEFERRED — no canonical target]) ─────────
+  {
+    kind: "exactSlug",
+    slug: "bitcoin-april-close-defensive-yields",
+    link: {
+      href: "/learn/fomc-fed-rate-crypto-guide",
+      label: "FOMC & Fed-rate impact on crypto — full guide",
+      blurb:
+        "How the post-FOMC tape — 30-year yield at 5%, ETH tagged $2,220 support, $149.7M in liquidations — sets up May seasonality and the June rate-path window.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "april-2026-worst-crypto-hack-month",
+    link: {
+      href: "/learn/drift-protocol-285m-hack-analysis-2026",
+      label: "Drift + Kelp DAO — April-2026 hack-cluster post-mortem",
+      blurb:
+        "Inside the $620M April hack-month consolidation — Drift's $285M April-1 drain plus Kelp DAO's $292M April-19 exploit account for the vast majority of the haul, with Wasabi, CoW Swap, Dango and Silo rounding out the bridge + admin-key failure mode.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "aave-horizon-rwa-550m-deposits",
+    link: {
+      href: "/learn/aave-v4-guide",
+      label: "Aave v4 — protocol architecture and Horizon market",
+      blurb:
+        "How Aave's institutional-only Horizon market hit $550M in tokenized-Treasury collateral against a $6B TVL drawdown — and how the v4 architecture and the April-27 Solana deploy via Sunrise extend the multi-chain footprint.",
+    },
+  },
+
+  // ── 2026-04-30 briefing-17 anchors (security-exploit cluster pivot:
+  //    Wasabi admin-key drain, Lazarus April $577M, banks-vs-GENIUS-Act,
+  //    BTC volume freefall, 100+ firms push CLARITY Act) ─────────
+  {
+    kind: "exactSlug",
+    slug: "wasabi-protocol-admin-key-hack-4-5m",
+    link: {
+      href: "/learn/multisig-wallets-shared-crypto-security-guide-2026",
+      label: "Multisig wallets — shared-key security guide",
+      blurb:
+        "Why a single deployer key drained Wasabi for $4.5M — and how multisig deployers, timelocks and shared-signer setups close this exact attack path on perp DEX vaults.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "lazarus-april-2026-577m-trm-labs",
+    link: {
+      href: "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
+      label: "North Korea / Lazarus crypto hacks — full guide",
+      blurb:
+        "Inside Lazarus's $577M April run across KelpDAO and Drift — TTPs, OFAC reach, and how 76% of 2026 crypto theft now traces back to one DPRK crew.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "banks-genius-act-delay-agora-charter",
+    link: {
+      href: "/learn/genius-act-stablecoin-guide",
+      label: "GENIUS Act — stablecoin charter playbook",
+      blurb:
+        "Why bank lobbyists are pushing a 60-day delay while Agora sprints for a federal stablecoin charter — the OCC framework, dual-track rules and what changes if rollout slips.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "bitcoin-trading-volume-collapse-warning",
+    link: {
+      href: "/learn/bitcoin-safe-haven-guide-2026",
+      label: "Bitcoin as a safe-haven — 2026 guide",
+      blurb:
+        "Why BTC trading-volume freefalls historically resolve into defensive regimes, and how the safe-haven framing reads when participation is thinning into FOMC.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "crypto-firms-senate-clarity-act-markup",
+    link: {
+      href: "/learn/clarity-act-crypto-guide",
+      label: "CLARITY Act — crypto market-structure deep-dive",
+      blurb:
+        "What the 100+ firm-signed letter is asking for: a Senate markup that codifies the SEC/CFTC split and gives commodity-side issuers a clear path under CLARITY.",
+    },
+  },
+
+  // ── 2026-04-30 briefing-16 anchors (Iran-strike crypto sell-off,
+  //    BTC ETF 3rd-consec outflow, WU USDPT, Solana Alpenglow,
+  //    AllUnity EURAU MiCA stablecoin) ─────────────────────────
+  {
+    kind: "exactSlug",
+    slug: "iran-strike-fears-hammer-crypto-btc-eth-week-lows",
+    link: {
+      href: "/learn/bitcoin-safe-haven-guide-2026",
+      label: "Bitcoin as a safe-haven — 2026 guide",
+      blurb:
+        "How geopolitical shocks like Iran-strike risk and Brent crude spikes interact with the BTC safe-haven thesis at week-low prints.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "bitcoin-etfs-third-straight-outflow-day-138m",
+    link: {
+      href: "/learn/bitcoin-etf-institutional-guide-2026",
+      label: "Bitcoin ETFs — institutional adoption guide",
+      blurb:
+        "Why three straight outflow days led by IBIT and FBTC undercut the April-absorbed-$1.7B framing and what it signals about institutional positioning into May macro.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "western-union-usdpt-solana-may-launch",
+    link: {
+      href: "/learn/stablecoin-payments-infrastructure-guide-2026",
+      label: "Stablecoin payments infrastructure — 2026 guide",
+      blurb:
+        "Why a 170-year remittance incumbent picked Solana for USDPT, and where the chain sits versus Tron-USDT in the cross-border settlement stack.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "solana-alpenglow-upgrade-finality-150ms",
+    link: {
+      href: "/learn/solana-alpenglow-consensus-upgrade-guide-2026",
+      label: "Solana Alpenglow — consensus-upgrade guide",
+      blurb:
+        "How Alpenglow compresses Solana finality from ~12s to 150ms, the Votor/Rotor architecture, and the implications for MEV and DEX UX.",
+    },
+  },
+  {
+    kind: "exactSlug",
+    slug: "allunity-eurau-euro-stablecoin-solana",
+    link: {
+      href: "/learn/mica-regulation-eu-crypto-compliance-guide-2026",
+      label: "MiCA — EU crypto compliance guide",
+      blurb:
+        "How MiCA's EMT classification and reserve rules shape euro-pegged stablecoins like EURAU, and what a Solana port adds to EU on-chain payments.",
+    },
+  },
+
   // ── 2026-04-30 briefing-13 anchors (post-FOMC tape, BTC ETF
   //    inflows, DeFi exploit run, market-structure bill slip,
   //    Solana Alpenglow upgrade) ──────────────────────────────
@@ -289,6 +434,48 @@ const RULES: Rule[] = [
     },
   },
 
+  // ── briefing-16 generalised fallbacks ──────────────────────
+  {
+    kind: "tokenMatch",
+    tokens: ["iran", "strike"],
+    link: {
+      href: "/learn/bitcoin-safe-haven-guide-2026",
+      label: "Bitcoin as a safe-haven — 2026 guide",
+      blurb:
+        "How Middle-East geopolitical shocks transmit through oil prices into BTC's safe-haven framing.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["etf", "outflow"],
+    link: {
+      href: "/learn/bitcoin-etf-institutional-guide-2026",
+      label: "Bitcoin ETFs — institutional adoption guide",
+      blurb:
+        "How spot BTC ETF outflows reshape the IBIT-led flow regime and what they signal about institutional positioning.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["eurau"],
+    link: {
+      href: "/learn/mica-regulation-eu-crypto-compliance-guide-2026",
+      label: "MiCA — EU crypto compliance guide",
+      blurb:
+        "How MiCA's EMT classification governs euro-pegged stablecoins like EURAU and what a multi-chain port unlocks.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["allunity"],
+    link: {
+      href: "/learn/mica-regulation-eu-crypto-compliance-guide-2026",
+      label: "MiCA — EU crypto compliance guide",
+      blurb:
+        "AllUnity, EURAU and the MiCA EMT track for licensed euro stablecoins on multi-chain rails.",
+    },
+  },
+
   // ── briefing-13 generalised fallbacks ──────────────────────
   {
     kind: "tokenMatch",
@@ -338,6 +525,123 @@ const RULES: Rule[] = [
       label: "Bitcoin ETFs — institutional adoption guide",
       blurb:
         "Strategy's playbook in context: how corporate BTC stacking interacts with the spot-ETF flow regime.",
+    },
+  },
+
+  // ── briefing-17 generalised fallbacks (security-exploit cluster) ──
+  {
+    kind: "tokenMatch",
+    tokens: ["wasabi"],
+    link: {
+      href: "/learn/multisig-wallets-shared-crypto-security-guide-2026",
+      label: "Multisig wallets — shared-key security guide",
+      blurb:
+        "How shared-signer / timelocked deployer setups close the admin-key compromise path that drained Wasabi.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["admin", "key"],
+    link: {
+      href: "/learn/multisig-wallets-shared-crypto-security-guide-2026",
+      label: "Multisig wallets — shared-key security guide",
+      blurb:
+        "Why single-EOA admin keys keep beating audits, and how multisig deployers and timelocks change the threat model.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["lazarus"],
+    link: {
+      href: "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
+      label: "North Korea / Lazarus crypto hacks — full guide",
+      blurb:
+        "TTPs, laundering paths and OFAC reach behind the DPRK crew responsible for ~76% of 2026 crypto theft.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["trm", "labs"],
+    link: {
+      href: "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
+      label: "North Korea / Lazarus crypto hacks — full guide",
+      blurb:
+        "How TRM Labs attributes hack flows to Lazarus and why state-actor concentration reshapes the DeFi defense problem.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["genius", "act"],
+    link: {
+      href: "/learn/genius-act-stablecoin-guide",
+      label: "GENIUS Act — stablecoin charter playbook",
+      blurb:
+        "What the federal-stablecoin-charter regime actually requires of issuers and how the OCC framework lines up against state-track rules.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["stablecoin", "charter"],
+    link: {
+      href: "/learn/genius-act-stablecoin-guide",
+      label: "GENIUS Act — stablecoin charter playbook",
+      blurb:
+        "Why an issuer like Agora pushes for federal status under GENIUS, and what the dual-track rules mean for USDC, USDP and bank-issued tokens.",
+    },
+  },
+
+  // ── briefing-18 generalised fallbacks (post-FOMC pivot — RWA +
+  //    Japan payments + April-hack-month consolidation). These
+  //    catch future briefings that re-anchor on the same themes
+  //    without us touching this file. ──────────────────────────
+  {
+    kind: "tokenMatch",
+    tokens: ["aave", "horizon"],
+    link: {
+      href: "/learn/aave-v4-guide",
+      label: "Aave v4 — protocol architecture and Horizon market",
+      blurb:
+        "How Aave's institutional-only Horizon market opens tokenized-Treasury collateral to qualified entities and where it sits in the v4 architecture.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["horizon", "rwa"],
+    link: {
+      href: "/learn/rwa-tokenization-real-world-assets-guide-2026",
+      label: "RWA tokenization — real-world-asset guide",
+      blurb:
+        "Why tokenized US Treasuries are the cleanest TradFi-to-DeFi bridge yet, and how Aave Horizon's $550M deposits change the institutional-RWA flow regime.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["tokenized", "treasuries"],
+    link: {
+      href: "/learn/rwa-tokenization-real-world-assets-guide-2026",
+      label: "RWA tokenization — real-world-asset guide",
+      blurb:
+        "How tokenized US Treasuries serve as on-chain collateral for stablecoin loans without forcing institutions to sell the underlying.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["hack", "month"],
+    link: {
+      href: "/learn/north-korea-lazarus-crypto-hacks-guide-2026",
+      label: "North Korea / Lazarus crypto hacks — full guide",
+      blurb:
+        "Why April finished the worst hack month in over a year — Drift + Kelp DAO drains alone account for the bulk, with Lazarus attribution driving 76% of 2026 theft.",
+    },
+  },
+  {
+    kind: "tokenMatch",
+    tokens: ["bridge", "failures"],
+    link: {
+      href: "/learn/drift-protocol-285m-hack-analysis-2026",
+      label: "Drift + Kelp DAO — April-2026 hack-cluster post-mortem",
+      blurb:
+        "Why bridge plumbing and admin-key compromises — not smart-contract math — drove the largest losses in the April-2026 hack month.",
     },
   },
 ];
