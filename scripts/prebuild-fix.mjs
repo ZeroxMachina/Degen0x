@@ -93,22 +93,6 @@ function walk(dir) {
 
 walk(join(ROOT, 'src/app'));
 
-// ââ Fix 6: Force ALL pages dynamic via root layout ââââââââââââââââââ
-// Instead of whack-a-mole on individual SSG failures, force the entire
-// app to render dynamically (at request time). This prevents ALL SSG
-// crashes â WalletContext, missing data, undefined refs, etc.
-// Once the build is green we can selectively re-enable static generation.
-const layoutPath = join(ROOT, 'src/app/layout.tsx');
-let layout = readFileSync(layoutPath, 'utf8');
-if (!layout.includes("export const dynamic")) {
-  // Insert after the first import line
-  const firstNewline = layout.indexOf('\n') + 1;
-  layout = layout.slice(0, firstNewline) +
-    "\nexport const dynamic = 'force-dynamic';\n" +
-    layout.slice(firstNewline);
-  writeFileSync(layoutPath, layout);
-  console.log('[prebuild] Forced dynamic rendering on root layout (all pages skip SSG)');
-}
 
 console.log('[prebuild] Done.');
 
