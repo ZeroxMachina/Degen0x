@@ -78,13 +78,6 @@ function walk(dir) {
       console.log('[prebuild] Fixed StructuredData prop schema->data in', full.replace(ROOT + '/', ''));
     }
 
-    // Fix 5: Mismatched .map callback parameter
-    if (src.includes('.map((link)') && src.includes('item.href')) {
-      src = src.replace(/\.map\(\(link\)/g, '.map((item)');
-      changed = true;
-      console.log('[prebuild] Fixed .map((link)->.map((item) in', full.replace(ROOT + '/', ''));
-    }
-
     if (changed) {
       writeFileSync(full, src);
     }
