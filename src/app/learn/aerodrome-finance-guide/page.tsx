@@ -122,7 +122,7 @@ const breadcrumbData = {
 export default function AerodromeFinanceGuide() {
   return (
     <div style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)", minHeight: '100vh', padding: 'clamp(1rem, 3vw, 2rem)' }} className="max-w-4xl mx-auto">
-      <style jsx>{`
+      <style>{`
         a:focus-visible, button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
       `}</style>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />

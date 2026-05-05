@@ -5,7 +5,6 @@ import { notFound } from "next/navigation";
 import LearnPageLayout from "@/components/LearnPage";
 import AuthorAttribution from "@/components/AuthorAttribution";
 import { pages } from "@/data/pages/learn";
-import AuthorAttribution from '@/components/AuthorAttribution';
 
 interface Props { params: Promise<{ slug: string }>; }
 
