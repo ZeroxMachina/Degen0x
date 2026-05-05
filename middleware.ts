@@ -1,75 +1,53 @@
 /**
  * Next.js Middleware for degen0x
  * ─────────────────────────────────────────────────────────────────
- * SEO Strategy: Only 50 pillar pages are indexed.
- * All other pages get noindex, follow to consolidate authority.
+ * SEO Strategy: index by default. Only user-state, admin, and
+ * transient utility paths are noindex'd. This replaces the prior
+ * "50 pillar pages" allow-list, which contradicted the sitemap
+ * (1,500+ URLs advertised vs ~50 indexable) and caused a ~97%
+ * impressions drop after April 21, 2026.
  *
- * NOTE: Pillar pages are inlined here (not imported) because
- * middleware runs on Vercel Edge Runtime which restricts imports.
+ * To noindex a path, add a prefix to NOINDEX_PREFIXES below.
+ * NOTE: matched as prefixes — "/admin" covers "/admin", "/admin/foo",
+ * etc. Paths are normalized to strip trailing slashes before matching.
  * ─────────────────────────────────────────────────────────────────
  */
 
 import { NextRequest, NextResponse } from "next/server";
 
-const PILLAR_PAGES: Set<string> = new Set([
-  "/",
-  "/tools",
-  "/learn",
-  "/exchanges",
-  "/wallets",
-  "/investing",
-  "/taxes",
-  "/nfts",
-  "/defi-lending",
-  "/crypto-cards",
-  "/crypto-loans",
-  "/insurance",
-  "/web3-business",
-  "/spending",
-  "/compare",
-  "/blog",
-  "/exchanges/best",
-  "/wallets/best",
-  "/investing/best",
-  "/taxes/best",
-  "/nfts/best",
-  "/defi-lending/best",
-  "/exchanges/best/beginners",
-  "/exchanges/reviews/binance",
-  "/exchanges/reviews/coinbase",
-  "/exchanges/reviews/kraken",
-  "/exchanges/reviews/bybit",
-  "/exchanges/reviews/okx",
-  "/wallets/reviews/ledger",
-  "/wallets/reviews/trezor",
-  "/wallets/reviews/metamask",
-  "/wallets/reviews/phantom",
-  "/investing/crypto/bitcoin",
-  "/investing/crypto/ethereum",
-  "/investing/crypto/solana",
-  "/investing/crypto/xrp",
-  "/investing/crypto/cardano",
-  "/exchanges/compare/coinbase-vs-binance",
-  "/exchanges/compare/kraken-vs-coinbase",
-  "/wallets/compare/ledger-vs-trezor",
-  "/wallets/compare/metamask-vs-phantom",
-  "/investing/compare/bitcoin-vs-ethereum",
-  "/tools/portfolio-tracker",
-  "/tools/market-heatmap",
-  "/tools/gas-tracker",
-  "/tools/live-prices",
-  "/tools/dca-calculator",
-  "/learn/crypto-glossary",
-  "/learn/account-abstraction",
-  "/learn/solana-alpenglow-guide",
-  "/learn/onchain-finance-onfi-guide",
-  "/investing/staking",
-  "/investing/staking/best",
-]);
+/**
+ * Path prefixes that should be excluded from search indexes.
+ * Keep this list small and only include paths that:
+ *   - expose user-state (dashboards, profiles, settings, notifications)
+ *   - are admin/internal-only
+ *   - are transient/utility (search results, share landing, redirects)
+ *   - are non-content (offline shell, sync endpoints)
+ */
+const NOINDEX_PREFIXES: readonly string[] = [
+  "/admin",
+  "/dashboard",
+  "/profile",
+  "/settings",
+  "/notifications",
+  "/onboarding",
+  "/start",
+  "/search",
+  "/share",
+  "/go",
+  "/offline",
+  "/xp-sync",
+  "/xp-attestation",
+];
 
-function isPillarPage(pathname: string): boolean {
+function isNoindexPath(pathname: string): boolean {
+  // Normalize: strip trailing slash for matching (root "/" stays "/")
   const normalized = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
-  return PILLAR_PAGES.has(normalized);
+  for (const prefix of NOINDEX_PREFIXES) {
+    if (normalized === prefix || normalized.startsWith(prefix + "/")) {
+      return true;
+    }
+  }
+  return false;
 }
 
 export function middleware(request: NextRequest) {
@@ -86,11 +64,15 @@ export function middleware(request: NextRequest) {
 
   const response = NextResponse.next();
 
-  // Normalize pathname for pillar check (strip trailing slash)
-  const normalized = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
-
-  if (isPillarPage(normalized)) {
-    // Pillar page: index, follow — full SEO treatment
+  if (isNoindexPath(pathname)) {
+    // User-state / admin / utility path: noindex, follow (pass link equity)
+    response.headers.set("X-Robots-Tag", "noindex, follow");
+    response.headers.set(
+      "Cache-Control",
+      "public, max-age=1800, s-maxage=43200, stale-while-revalidate=86400"
+    );
+  } else {
+    // Default: index, follow with full snippet/preview directives
     response.headers.set(
       "X-Robots-Tag",
       "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
@@ -98,13 +80,6 @@ export function middleware(request: NextRequest) {
     response.headers.set(
       "Cache-Control",
       "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800"
-    );
-  } else {
-    // Non-pillar page: noindex but still follow (pass link equity)
-    response.headers.set("X-Robots-Tag", "noindex, follow");
-    response.headers.set(
-      "Cache-Control",
-      "public, max-age=1800, s-maxage=43200, stale-while-revalidate=86400"
     );
   }
 
